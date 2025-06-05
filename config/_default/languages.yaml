@@ -23,8 +23,8 @@ en:
 #      - name: 传
 #        url: '#about'
 #        weight: 1
-en:
-  languageCode: zh-Hant
+zh-hant:
+  languageCode: zh-hant
   # contentDir: content/zht  # # omit contentDir if translating by file name.
   title: 可视化作品集 by Oxford Roadmapping
   weight: 3
