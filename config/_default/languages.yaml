@@ -6,14 +6,14 @@
 zh:
   languageCode: zh-Hans
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  contentDir: content/zh
+  # contentDir: content/zh  # omit contentDir if translating by file name.
   title: 可视化作品集 by Oxford Roadmapping
   weight: 1
 
 # Uncomment the lines below to configure your website in a second language.
 en:
   languageCode: en
-  contentDir: content/en
+  # contentDir: content/en  # omit contentDir if translating by file name.
   title: Visualization by Oxford Roadmapping
   weight: 2      
   params:
@@ -25,7 +25,7 @@ en:
 #        weight: 1
 en:
   languageCode: zh-Hant
-  contentDir: content/zht
+  # contentDir: content/zht  # # omit contentDir if translating by file name.
   title: 可视化作品集 by Oxford Roadmapping
   weight: 3
   params:
