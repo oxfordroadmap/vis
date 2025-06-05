@@ -3,20 +3,30 @@
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
 # Default language
-en:
-  languageCode: en-us
+zh:
+  languageCode: zh-Hans
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  contentDir: content/zh
+  title: 可视化作品集 by Oxford Roadmapping
+  weight: 1
 
 # Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
+en:
+  languageCode: en
+  contentDir: content/en
+  title: Visualization by Oxford Roadmapping
+  weight: 2      
+  params:
+    description: Site description in Chinese...
 #  menu:
 #    main:
 #      - name: 传
 #        url: '#about'
 #        weight: 1
+en:
+  languageCode: zh-Hant
+  contentDir: content/zht
+  title: 可视化作品集 by Oxford Roadmapping
+  weight: 3
+  params:
+    description: Site description in Chinese...
