@@ -4,12 +4,12 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: 科研評估🎯
+  - name: 科研评估🎯
     url: 'impact'
     weight: 10
-  - name: 圖富明察💹
+  - name: 图富明察💹
     url: 'about'
     weight: 20
-  - name: 連絡📪
+  - name: 连络📪
     url: '#contact'
     weight: 60
