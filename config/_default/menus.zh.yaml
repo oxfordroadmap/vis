@@ -5,10 +5,10 @@
 
 main:
   - name: 科研评估🎯
-    url: 'impact'
+    url: 'portfolio'
     weight: 10
   - name: 图富明察💹
-    url: 'about'
+    url: 'intro'
     weight: 20
   - name: 连络📪
     url: '#contact'

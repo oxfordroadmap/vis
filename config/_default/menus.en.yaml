@@ -5,10 +5,10 @@
 
 main:
   - name: Impact Analysis🎯
-    url: 'impact'
+    url: 'portfolio'
     weight: 10
   - name: Vis Foresight💹
-    url: 'about'
+    url: 'intro'
     weight: 20
   - name: Contact📪
     url: '#contact'
