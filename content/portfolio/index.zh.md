@@ -24,12 +24,10 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
+        - name: NetZero
+          tag: NetZero
         - name: Other
           tag: Demo
-        - name: NLP
-          tag: NLP
     design:
       columns: '1'
       # view: showcase
