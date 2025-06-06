@@ -15,19 +15,15 @@ en:
   languageCode: en
   # contentDir: content/en  # omit contentDir if translating by file name.
   title: Visualization by Oxford Roadmapping
-  weight: 2      
+  weight: 5      
   params:
     description: Site description in Chinese...
 #  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
 zh-hant:
   languageCode: zh-hant
-  languageName: "正體中文"
+  languageName: 正體中文
   # contentDir: content/zht  # # omit contentDir if translating by file name.
-  title: 可视化作品集 by Oxford Roadmapping
+  title: 可視化作品集 by Oxford Roadmapping
   weight: 3
   params:
     description: Site description in Chinese...
