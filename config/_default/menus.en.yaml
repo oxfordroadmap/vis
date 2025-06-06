@@ -4,9 +4,12 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
-    url: /
+  - name: Impact Analysis🎯
+    url: 'impact'
     weight: 10
-  - name: About
-    url: about/
+  - name: Vis Foresight💹
+    url: 'about'
     weight: 20
+  - name: Contact📪
+    url: '#contact'
+    weight: 60
