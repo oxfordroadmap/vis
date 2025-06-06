@@ -1,8 +1,29 @@
 ---
-title: Recommendation Systems
-summary: Write about your project here...
+title: VisNetZero
+summary: VisNetZero...
+draft: false
+featured: true
+authors:
+  - Han-Teng Liao
 tags:
-  - ML
-date: 2022-01-01
-external_link: http://github.com
+  - NetZero
+  - Green Digital Transformation
+  - 【2023VisCEADs】
+  - 碳排管理
+  - 双化协同（数字化绿色化协同转型）
+  - 双化行动
+  - 数智平台
+  - 技术路线
+  - 商业模式
+  - 精准脱碳
+categories:
+  - 脱碳路线图
+  - 投入产出分析
+  - 网络图可视化
+external_link: https://oxon8.netlify.app/visualization/prj-visnetzero/index.zh
+date: 2023-12-08T08:08:08.888Z
+image:
+  # dir: \assets\media
+  filename: prj-visCEADs.webp
+  preview_only: true
 ---
