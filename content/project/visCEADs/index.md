@@ -1,6 +1,6 @@
 ---
-title: visNetZero
-summary: visNetZero...
+title: visCEADs
+summary: visCEADs...
 draft: false
 featured: true
 authors:
@@ -24,6 +24,6 @@ external_link: https://oxon8.netlify.app/visualization/prj-visnetzero/index.zh
 date: 2023-12-08T08:08:08.888Z
 image:
   # dir: \assets\media\photoBW_Poznan_Factory.jpg
-  filename: prj-visCEADs.webp 
+  filename: photoBW_Poznan_Factory.jpg 
   preview_only: true
 ---
