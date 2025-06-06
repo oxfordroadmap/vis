@@ -1,13 +1,6 @@
 ---
 # 使用部落格範本的簡介小工具
 widget: about.avatar
-
-# 此文件代表頁面的一個部分。
-headless: true
-
-# 此部分的顯示順序。
-weight: 10
-
 author: admin
 #design:
 # background:

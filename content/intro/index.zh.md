@@ -1,13 +1,8 @@
 ---
 # 使用博客模板的简介小部件
 widget: about.avatar
-
-# 此文件代表页面的一个部分。
-headless: true
-
 # 此部分的显示顺序。
 weight: 10
-
 author: admin
 #design:
 # background:
