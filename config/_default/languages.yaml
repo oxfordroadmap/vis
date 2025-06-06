@@ -25,6 +25,7 @@ en:
 #        weight: 1
 zh-hant:
   languageCode: zh-hant
+  languageName: "正體中文"
   # contentDir: content/zht  # # omit contentDir if translating by file name.
   title: 可视化作品集 by Oxford Roadmapping
   weight: 3
