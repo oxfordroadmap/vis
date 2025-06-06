@@ -16,10 +16,12 @@ tags:
   - 技术路线
   - 商业模式
   - 精准脱碳
-categories:
   - 脱碳路线图
   - 投入产出分析
   - 网络图可视化
+categories:
+  - project
+  - portfolio
 external_link: https://oxon8.netlify.app/visualization/prj-visceads/index.zh
 date: 2023-12-08T08:08:08.888Z
 image:
