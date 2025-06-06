@@ -2,7 +2,7 @@
 # 请参阅 https://bootstrap.hugoblox.com/blocks/portfolio/  
 # 此部分显示来自 `content/project/` 的内容。
 title: 'portfolio: project curation page'
-type: landing
+# type: landing
 sections:
   - block: portfolio
     id: projects
