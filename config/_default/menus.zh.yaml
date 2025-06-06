@@ -10,6 +10,6 @@ main:
   - name: 圖富明察💹
     url: 'about'
     weight: 20
-  - name: 连络📪
+  - name: 連絡📪
     url: '#contact'
     weight: 60
