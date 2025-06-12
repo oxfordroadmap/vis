@@ -4,16 +4,16 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: 🏗作品项目
+  - name: 🏗作品項目
     url: 'projects/'
     weight: 10
-  - name: 🤓洞察
+  - name: 🤓洞見
     url: 'post/'
     weight: 30
-  - name: 💪教学培训
+  - name: 💪教學培訓
     url: 'teaching/'
     weight: 50
-  - name: 📜论文
+  - name: 📜論文
     url: 'papers/'
     weight: 88
   - name: 🔗CV
