@@ -16,7 +16,18 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 'Markdown 1 '
+      title: 'Hugo Blox 1 '
+      filters:
+        folders:
+          - post
+        tag: "Hugo Blox"
+    design:
+      view: article-grid
+      columns: 2
+  - block: collection
+    id: posts
+    content:
+      title: 'Markdown 2 '
       filters:
         folders:
           - post

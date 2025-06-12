@@ -6,7 +6,24 @@ design:
   # Default section spacing
   spacing: "2rem"
 
+cascade:
+  - _target:
+      kind: page
+    params:
+      show_breadcrumb: true
+
 sections:
+  - block: collection
+    id: posts
+    content:
+      title: 'Hugo Blox 1 '
+      filters:
+        folders:
+          - post
+        tag: "Hugo Blox"
+    design:
+      view: article-grid
+      columns: 2
   - block: collection
     id: posts
     content:
