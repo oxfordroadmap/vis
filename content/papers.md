@@ -1,11 +1,13 @@
 ---
-title: 'Publications & Talks'
-date: 2023-10-24
+title: 'Papers & Talks'
+date: 2024-12-10
 type: landing
 
 design:
-  spacing: '5rem'
+  spacing: '3rem'
 
+# Page sections
+sections:
   - block: collection
     id: papers
     content:

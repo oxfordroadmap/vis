@@ -1,11 +1,10 @@
 ---
 title: 'Projects'
-date: 2024-05-19
+date: 2024-12-10
 type: landing
 
 design:
-  # Section spacing
-  spacing: '5rem'
+  spacing: '3rem'
 
 # Page sections
 sections:
