@@ -1,6 +1,11 @@
 ---
 title: Posts
-view: article-grid
+type: landing
+
+design:
+  # Default section spacing
+  spacing: "2rem"
+
 cascade:
   - _target:
       kind: page
@@ -11,7 +16,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 'Markdown'
+      title: 'Markdown 1 '
       filters:
         folders:
           - post
@@ -22,7 +27,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 'Hugo'
+      title: 'Hugo 2 '
       filters:
         folders:
           - post
