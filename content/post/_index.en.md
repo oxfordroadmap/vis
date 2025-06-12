@@ -16,7 +16,7 @@ sections:
         folders:
           - post
         tag: "Markdown"
-	design:
+    design:
       view: article-grid
       columns: 3
 sections:
@@ -28,7 +28,7 @@ sections:
         folders:
           - post
         tag: "Hugo"
-	design:
+    design:
       view: date-title-summary
       spacing:
         padding: [0, 0, 0, 0]
