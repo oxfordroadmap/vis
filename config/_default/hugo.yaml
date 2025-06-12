@@ -6,15 +6,15 @@
 # Website name
 title: Hugo Academic CV Theme
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://oxfordroadmap.github.io/vis/'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
+defaultContentLanguage: zh
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: true
 removePathAccents: true
 
 ############################
