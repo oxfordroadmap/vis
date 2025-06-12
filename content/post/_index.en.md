@@ -19,7 +19,6 @@ sections:
     design:
       view: article-grid
       columns: 3
-sections:
   - block: collection
     id: posts
     content:
