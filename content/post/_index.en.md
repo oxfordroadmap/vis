@@ -16,7 +16,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 'Hugo Blox 1 '
+      title: '1 Hugo Blox 1 '
       filters:
         folders:
           - post
@@ -27,7 +27,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 'Markdown 2 '
+      title: '2 Markdown 2 '
       filters:
         folders:
           - post
@@ -38,7 +38,7 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 'Hugo 2 '
+      title: '3 Hugo 3'
       filters:
         folders:
           - post

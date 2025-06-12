@@ -6,34 +6,46 @@ design:
   # Default section spacing
   spacing: "2rem"
 
+cascade:
+  - _target:
+      kind: page
+    params:
+      show_breadcrumb: true
+
 sections:
   - block: collection
     id: posts
     content:
-      title: '文章 Tag "Markdown" only'
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 0
-      # Page type to display. E.g. post, talk, publication...
-      # page_type: post
-      # Filter on criteria
+      title: '1 Hugo Blox 1 '
       filters:
         folders:
           - post
-        #author: ""
-        #category: ""
-        tag: "Markdown"
-        #exclude_featured: false
-        #exclude_future: false
-        #exclude_past: false
-        #publication_type: ""
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+        tag: "Hugo Blox"
     design:
-      # Choose a layout view
-      view: date-title-summary
-      #view: article-grid
+      view: article-grid
+      columns: 2
+  - block: collection
+    id: posts
+    content:
+      title: 2 Markdown 文章
+      filters:
+        folders:
+          - post
+        tag: "Markdown"
+    design:
+      view: article-grid
       columns: 3
-      # Reduce spacing
+  - block: collection
+    id: posts
+    content:
+      title: '3 Hugo '
+      filters:
+        folders:
+          - post
+        tag: "Hugo"
+    design:
+      view: date-title-summary
       spacing:
         padding: [0, 0, 0, 0]
 ---
+
