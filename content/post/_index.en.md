@@ -11,12 +11,26 @@ sections:
   - block: collection
     id: posts
     content:
-      title: 'All posts'
+      title: 'Markdown'
       filters:
         folders:
           - post
-    design:
+        tag: "Markdown"
+	design:
       view: article-grid
       columns: 3
----
+sections:
+  - block: collection
+    id: posts
+    content:
+      title: 'Hugo'
+      filters:
+        folders:
+          - post
+        tag: "Hugo"
+	design:
+      view: date-title-summary
+      spacing:
+        padding: [0, 0, 0, 0]
+ ---
 

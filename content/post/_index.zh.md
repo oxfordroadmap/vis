@@ -15,7 +15,6 @@ sections:
       filters:
         folders:
           - post
-#        tag: 'Second Brain'
     design:
       view: article-grid
       columns: 3

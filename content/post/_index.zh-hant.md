@@ -31,7 +31,7 @@ sections:
     design:
       # Choose a layout view
       view: date-title-summary
-      view: article-grid
+      #view: article-grid
       columns: 3
       # Reduce spacing
       spacing:
