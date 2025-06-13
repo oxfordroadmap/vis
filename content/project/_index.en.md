@@ -23,7 +23,7 @@ sections:
       filters:
         folders:
           - project
-        tag: creations
+        tag: 'creations'
     design:
       view: article-grid
       fill_image: false

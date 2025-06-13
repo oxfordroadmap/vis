@@ -23,7 +23,7 @@ sections:
       filters:
         folders:
           - project
-        tag: 原创 
+        tag: '原创'
     design:
       view: article-grid
       fill_image: false
