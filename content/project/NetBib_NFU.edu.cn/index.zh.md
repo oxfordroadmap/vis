@@ -27,13 +27,13 @@ tags:
   - NetBib
     - [科研成果表现趋势](../../../NetBib/NFU.edu.cn/zh/App01/App01.html)
     - [二级单位层次](/NetBib/NFU.edu.cn/zh/App01/App01.html)
-    - [作者层次](/NetBib/NFU.edu.cn/zh/App02/App02.html)
+    - [作者层次]({{< static "NetBib/NFU.edu.cn/zh/App02/App02.html" >}})
     - 桑基图概览
     - 影响力评估 -- 谷歌学术样本
   - 数据问题
 ```
 
-* [static pdf](uploads/resume.pdf)
+* [static pdf]({{< static "uploads/resume.pdf" >}})
 * [NFU.edu.cn App00](/NetBib/NFU.edu.cn/zh/App00/App00.html)
 * [NFU.edu.cn App01](/NetBib/NFU.edu.cn/zh/App01/App01.html)
 * [NFU.edu.cn App02](/NetBib/NFU.edu.cn/zh/App02/App02.html)
