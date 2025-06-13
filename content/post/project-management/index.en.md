@@ -5,6 +5,7 @@ date: 2023-10-23
 authors:
   - admin
 tags:
+  - '🤓Insights'
   - Hugo Blox
   - Markdown
 image:

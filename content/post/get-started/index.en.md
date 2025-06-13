@@ -13,6 +13,7 @@ authors:
   - Ted
 
 tags:
+  - '🤓Insights'
   - Academic
   - Hugo Blox
   - Markdown

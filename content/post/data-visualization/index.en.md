@@ -5,6 +5,7 @@ date: 2023-10-25
 authors:
   - admin
 tags:
+  - recommendations
   - Hugo
   - Hugo Blox
   - Markdown

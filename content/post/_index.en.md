@@ -1,10 +1,10 @@
 ---
-title: Posts
+title: 🤓Insights, 👍Recommendations, 🧠Cognitive Frames
 type: landing
 
 design:
   # Default section spacing
-  spacing: "2rem"
+  spacing: "1rem"
 
 cascade:
   - _target:
@@ -16,33 +16,33 @@ sections:
   - block: collection
     id: posts
     content:
-      title: '1 Hugo Blox 1 '
+      title: '🤓Insights'
       filters:
         folders:
           - post
-        tag: "Hugo Blox"
+        tag: 'insights'
     design:
       view: article-grid
       columns: 2
   - block: collection
     id: posts
     content:
-      title: '2 Markdown 2 '
+      title: '👍Recommendations'
       filters:
         folders:
           - post
-        tag: "Markdown"
+        tag: 'recommendations'
     design:
       view: article-grid
       columns: 3
   - block: collection
     id: posts
     content:
-      title: '3 Hugo 3'
+      title: '🧠Cognitive Frames'
       filters:
         folders:
           - post
-        tag: "Hugo"
+        tag: "cognitive-frames"
     design:
       view: date-title-summary
       spacing:
