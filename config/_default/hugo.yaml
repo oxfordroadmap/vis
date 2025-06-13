@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: 可视化作品集 Oxfordroadmapping Visualization
 # Website URL
 baseURL: 'https://oxfordroadmap.github.io/vis/'
 
@@ -18,13 +18,35 @@ defaultContentLanguageInSubdir: true
 removePathAccents: true
 
 ############################
+## PAGE OPTIONS
+############################
+
+cascade:
+  # Blog post options
+  - _target:
+      path: /post/**
+    editable: true
+    reading_time: true
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+  # Project options
+  - _target:
+      path: /post/**
+    editable: false
+    reading_time: true
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+    
+############################
 ## ADVANCED
 ############################
 
 build:
   writeStats: true
 enableGitInfo: false
-summaryLength: 120
+summaryLength: 150
 pagination:
   pagerSize: 10
 enableEmoji: true
