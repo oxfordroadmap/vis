@@ -9,6 +9,7 @@ tags:
   - 文献计量
   - AI能力
   - 网络分析
+  - 'theme_creations'
 categories:
   - project
   - portfolio

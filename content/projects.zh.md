@@ -13,15 +13,16 @@ design:
 # Page sections
 sections:
   - block: collection
+    id: 'CaseNetBib'
     content:
-      title: NetBib 分析机构科研成果及影响
+      title: '🔬NetBib 分析机构科研成果及影响'
       text: '采用UTD计量法量化贡献比例，**实证**分析科研成果及影响，做具前瞻的系统决策，如科研经费、人员等的投入产出。'
       # 要显示的页面类型。例如：project。
       filters:
         folders:
           - project
         # Only show content with these tags
-        tag: 'NetBib'
+        tag: 'CaseNetBib'
       sort_by: 'Date'
       sort_ascending: false
     design:
@@ -30,9 +31,9 @@ sections:
       background: {}
       spacing: {padding: [4px, 0, 4px, 0]}
   - block: collection
-    id: '🏗原创'
+    id: 'theme_NetZero'
     content:
-      title: 淨零经济及产业路线
+      title: '🍃淨零经济及产业路线'
       text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
       filters:
         folders:
@@ -70,8 +71,8 @@ sections:
       sort_by: 'Date'
       sort_ascending: false
     design:
-      view: card
-      background: {}
+      view: article-grid
+      columns: 2
       spacing: {padding: [4px, 0, 4px, 0]}
 ---
 
