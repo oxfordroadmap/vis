@@ -1,21 +1,24 @@
 ---
 title: 🗄科研表现--🏫广州南方学院
-subtitle: 以中国私立民办大学为例，探究科研表现的可视化可以给科研人员、学生（本科及硕士生）、学院及大学决策者、等等的参考依据。（利用NetBib项目的[成果一，详见说明](/project/NFU.edu.cn)）
 tags:
   - '🏗原创'
   - NetBib
   - CaseNetBib
   - '广州南方学院'
 date: 2025-05-04
-external_link: https://oxfordroadmap.github.io/vis/NFU.edu.cn/zh/App00/App00.html
 ---
-利用并扩展[**UTD**全球商学院科研排名的计量方法](https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/index.php#methodology)，NetBib项目能将着名数据库如Web of Science（WoS，包括SCIE）、工程索引（EI）等检索（收录）号数据整合并清理进行交互可视化，让真实的科研贡献可以在各层次（如大学、学院、作者）进行比较。
+利用并扩展[**UTD**全球商学院科研排名的计量方法](https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/index.php#methodology)，这里展示NetBib项目案例🗄--'广州南方学院 (NFU.edu.cn)' 的科研表现。
+
+<br/>关于NetBib项目
+* [NFU.edu.cn NetBib 仪表盘 App](/project/NetBib_NFU.edu.cn)
+* [NFU.edu.cn 成果详细说明](/project/NetBib_NFU.edu.cn)
+* [NetBib项目缘起说明](/project/pybibx)
+ 
+<!--more-->
 
 此项目展示产出的可视化产品原型，可以用来改进作者、学院、及大学各层次的数据***可见度***及影响力。这对于机构成长消亡改名等的追踪评价特别有义意。
 
-<!--more-->
-
-就以广州南方学院为例，本可视化的过程及成果发现：
+就以广州南方学院（一家中国私立民办大学）为例，本可视化的过程及成果发现：
 
 1. 机构（如大学）及二级单位（如学院系所科研中心）不止需要统一科研发表的英文名称及常见缩写，更要利用[研究机构标识符 （ROR） ](https://ror.org/search?query=Nanfang+Coll+Guangzhou)及[开放研究员和贡献者标识符 （ORCID）](https://info.orcid.org/zh-CN/%E7%A0%94%E7%A9%B6%E4%BA%BA%E5%91%98/)来验证 ***机构*** 及 ***人员***　的数据的一致性，才能确保在大学及机构排名时能集中成效。
 2. 有不少多作者及多单位的成果发表，因此[**UTD**计量方法](https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/index.php#methodology)更能确保一篇论文不因多作者及多单位 ***（作者贡献计量）通货膨胀*** 的问题。本项目还进一步清洗数据并提供只计第一作者及通讯作者的 UTD_fc （first and correspondence authors）的方法，供使用者选择。

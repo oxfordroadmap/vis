@@ -15,3 +15,11 @@ tags:
 [Han-Teng Liao](/experience) 正在寻求扩展 pybibx 以处理中文引文数据集。
 
 <!--more-->
+
+扩展 pybibx 的项目名为'NetBib'，目前能将着名数据库如Web of Science（WoS，包括SCIE）、工程索引（EI）等检索（收录）号数据整合并清理进行交互可视化，让真实的科研贡献可以在各层次（如大学、学院、作者）进行比较。
+
+'NetBib'利用并扩展[**UTD**全球商学院科研排名的计量方法](https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/index.php#methodology)，下述展示NetBib项目案例🗄--'广州南方学院 (NFU.edu.cn)' 的科研表现。
+
+<br/>关于NetBib项目
+* [NFU.edu.cn NetBib 仪表盘 App](/project/NetBib_NFU.edu.cn)
+* [NFU.edu.cn 成果详细说明](/project/NetBib_NFU.edu.cn)
