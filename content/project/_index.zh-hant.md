@@ -20,7 +20,7 @@ sections:
       filters:
         folders:
           - project
-        tag: "Hugo Blox"
+        tag: "原創"
     design:
       view: article-grid
       columns: 2
@@ -31,7 +31,7 @@ sections:
       filters:
         folders:
           - project
-        tag: "Markdown"
+        tag: "AI能力"
     design:
       view: article-grid
       columns: 3
@@ -42,7 +42,7 @@ sections:
       filters:
         folders:
           - project
-        tag: "Hugo"
+        tag: "🏗原創"
     design:
       view: card
       #view: date-title-summary
