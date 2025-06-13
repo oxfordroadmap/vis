@@ -2,10 +2,10 @@
 title: 🗄科研表现--🏫广州南方学院
 subtitle: 以中国私立民办大学为例，探究科研表现的可视化可以给科研人员、学生（本科及硕士生）、学院及大学决策者、等等的参考依据。（利用NetBib项目的[成果一，详见说明](/project/NFU.edu.cn)）
 tags:
-  - 🏗原创
+  - '🏗原创'
   - NetBib
   - CaseNetBib
-  - 广州南方学院
+  - '广州南方学院'
 date: 2025-05-04
 external_link: https://oxfordroadmap.github.io/vis/NFU.edu.cn/zh/App00/App00.html
 ---
