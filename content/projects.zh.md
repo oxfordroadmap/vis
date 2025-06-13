@@ -42,8 +42,7 @@ sections:
       sort_by: 'Date'
       sort_ascending: false
     design:
-      view: article-grid
-      columns: 2
+      view: card
       background: {}
       spacing: {padding: [4px, 0, 4px, 0]}
   - block: collection
@@ -59,7 +58,8 @@ sections:
       sort_by: 'Date'
       sort_ascending: false
     design:
-      view: card
+      view: article-grid
+      columns: 2
       spacing: {padding: [4px, 0, 4px, 0]}
   - block: collection
     id: '🚧扩充延伸'
