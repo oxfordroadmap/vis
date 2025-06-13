@@ -5,7 +5,7 @@
 
 main:
   - name: 🏗作品項目
-    url: 'projects/'
+    url: 'project/'
     weight: 10
   - name: 🤓洞見
     url: 'post/'
