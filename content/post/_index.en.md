@@ -44,7 +44,8 @@ sections:
           - post
         tag: "cognitive-frames"
     design:
-      view: date-title-summary
+      view: card
+      #view: date-title-summary
       spacing:
         padding: [0, 0, 0, 0]
 ---
