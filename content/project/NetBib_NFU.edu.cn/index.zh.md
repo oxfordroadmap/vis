@@ -22,18 +22,20 @@ tags:
 
 就以广州南方学院（一家中国私立民办大学）为例，本可视化的过程及成果发现：
 
+
 ```markmap
 - 广州南方学院
   - NetBib
     - [科研成果表现趋势](../../../NetBib/NFU.edu.cn/zh/App01/App01.html)
     - [二级单位层次](/NetBib/NFU.edu.cn/zh/App01/App01.html)
-    - [作者层次]({{< static "NetBib/NFU.edu.cn/zh/App02/App02.html" >}})
+    - [作者层次]({{ site.BaseURL }}NetBib/NFU.edu.cn/zh/App02/App02.html)
     - 桑基图概览
     - 影响力评估 -- 谷歌学术样本
   - 数据问题
 ```
 
-* [static pdf]({{< static "uploads/resume.pdf" >}})
+{{ site.BaseURL }}/uploads/resume.pdf
+* [static pdf]({{ site.BaseURL }}/uploads/resume.pdf)
 * [NFU.edu.cn App00](/NetBib/NFU.edu.cn/zh/App00/App00.html)
 * [NFU.edu.cn App01](/NetBib/NFU.edu.cn/zh/App01/App01.html)
 * [NFU.edu.cn App02](/NetBib/NFU.edu.cn/zh/App02/App02.html)
