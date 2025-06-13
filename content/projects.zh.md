@@ -38,7 +38,7 @@ sections:
         folders:
           - project
         # Only show content with these tags
-        tag: 'NetZero净零'
+        tag: 'theme_NetZero'
       sort_by: 'Date'
       sort_ascending: false
     design:
@@ -48,13 +48,13 @@ sections:
   - block: collection
     id: '🏗原创'
     content:
-      title: '🏗原创'
-      text: '原创成果展示利用数据的可视化交互化智能化的加值，提供用户洞察'
+      title: 淨零经济及产业路线2
+      text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
       filters:
         folders:
           - project
         # Only show content with these tags
-        tag: 'NetZero'
+        tag: 'theme_NetZero'
       sort_by: 'Date'
       sort_ascending: false
     design:
@@ -65,11 +65,11 @@ sections:
     id: '🚧扩充延伸'
     content:
       title: '🚧扩充延伸'
-      text: 🚧扩充延伸成果展示开放（自由）协作的能力及潜力
+      text: '🏛️公共行政---🚧扩充延伸成果展示开放（自由）协作的能力及潜力'
       filters:
         folders:
           - project
-        tag: "扩充延伸"
+        tag: "theme_public_adm"
     design:
       view: card
 ---
