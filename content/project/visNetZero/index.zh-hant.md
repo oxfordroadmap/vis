@@ -8,8 +8,8 @@ featured: true
 authors:
   - admin
 tags:
-  - '🏗原创'
-  - 预测建模
+  - '🏗原創'
+  - 預測建模
 categories:
   - project
   - portfolio

@@ -8,9 +8,10 @@ featured: true
 authors:
   - admin
 tags:
-  - 🏗Creations
+  - '🏗Creations'
   - SDA
   - NetZero
+  - 'Network Analysis'
 categories:
   - project
   - portfolio
