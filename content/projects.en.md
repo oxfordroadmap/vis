@@ -4,7 +4,7 @@ date: 2024-12-10
 type: landing
 
 design:
-  spacing: '3rem'
+  spacing: '1rem'
 
 # Page sections
 sections:
@@ -18,5 +18,5 @@ sections:
     design:
       view: article-grid
       fill_image: false
-      columns: 3
+      columns: 2
 ---

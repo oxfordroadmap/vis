@@ -1,14 +1,14 @@
 ---
 title: visNetZero
-summary: visSciImpact
+summary: visNetZero
 external_link: https://oxon8.netlify.app/visualization/prj-visnetzero/index.zh
-date: 2023-12-08T08:08:08.888Z
+date: 2024-12-10T08:08:08.888Z
 draft: false
 featured: true
 authors:
   - admin
 tags:
-  - 🚧Creations
+  - 🏗原创
   - 网络图可视化
 categories:
   - project
