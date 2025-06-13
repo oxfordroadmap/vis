@@ -6,9 +6,11 @@ type: landing
 design:
   spacing: '1rem'
 
+# [Configure cascade](https://gohugo.io/configuration/cascade/)
 cascade:
-  - _target:
+  - target:
       kind: page
+      path: '{/project/**}'
     params:
       show_breadcrumb: true
 

@@ -6,9 +6,11 @@ type: landing
 design:
   spacing: '1rem'
 
+# [Configure cascade](https://gohugo.io/configuration/cascade/)
 cascade:
-  - _target:
+  - target:
       kind: page
+      path: '{/project/**}'
     params:
       show_breadcrumb: true
 
@@ -28,8 +30,8 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: '🚧扩充延伸'
-      text: 🚧扩充延伸成果展示开放（自由）协作的能力及潜力
+      title: '🚧Extensions'
+      text: '🚧Extended outcomes that demonstrate the capabilities and potentials of free and open collaboration'
       filters:
         folders:
           - project
