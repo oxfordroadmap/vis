@@ -10,7 +10,7 @@ design:
 cascade:
   - target:
       kind: page
-      path: '{/project/**}'
+      path: '{/projects,/project/**}'
     params:
       show_breadcrumb: true
 

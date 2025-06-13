@@ -14,6 +14,7 @@ authors:
 
 tags:
   - '🤓Insights'
+  - '🧠Cognitive Frames'
   - Academic
   - Hugo Blox
   - Markdown
