@@ -32,11 +32,11 @@ sections:
     id: '🏗原创'
     content:
       title: '🏗原创'
-      text: 原创成果展示利用数据的可视化交互化智能化的加值，提供用户洞察
+      text: '原创成果展示利用数据的可视化交互化智能化的加值，提供用户洞察'
       filters:
         folders:
           - project
-        tag: "原创"
+        tag: 'AI能力'
     design:
       view: article-grid
       columns: 2
