@@ -10,6 +10,7 @@ authors:
 tags:
   - '🏗原創'
   - 預測建模
+  - 'AI能力'
 categories:
   - project
   - portfolio

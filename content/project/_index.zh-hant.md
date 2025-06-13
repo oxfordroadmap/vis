@@ -19,7 +19,7 @@ sections:
       title: '1 Hugo Blox 1 '
       filters:
         folders:
-          - post
+          - project
         tag: "Hugo Blox"
     design:
       view: article-grid
@@ -30,7 +30,7 @@ sections:
       title: 2 Markdown 文章
       filters:
         folders:
-          - post
+          - project
         tag: "Markdown"
     design:
       view: article-grid
@@ -41,7 +41,7 @@ sections:
       title: '3 Hugo '
       filters:
         folders:
-          - post
+          - project
         tag: "Hugo"
     design:
       view: card
