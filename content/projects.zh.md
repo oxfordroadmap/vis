@@ -6,6 +6,12 @@ type: landing
 design:
   spacing: '1rem'
 
+cascade:
+  - _target:
+      kind: page
+    params:
+      show_breadcrumb: true
+
 # Page sections
 sections:
   - block: collection
