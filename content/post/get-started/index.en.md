@@ -13,8 +13,8 @@ authors:
   - Ted
 
 tags:
-  - '🤓Insights'
-  - '🧠Cognitive Frames'
+  - 'insights'
+  - 'cognitive-frames'
   - Academic
   - Hugo Blox
   - Markdown
