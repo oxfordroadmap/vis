@@ -26,19 +26,27 @@ tags:
 ```markmap
 - 广州南方学院
   - NetBib
-    - [科研成果表现趋势](../../../NetBib/NFU.edu.cn/zh/App01/App01.html)
-    - [二级单位层次](/NetBib/NFU.edu.cn/zh/App01/App01.html)
-    - [作者层次]({{ site.BaseURL }}NetBib/NFU.edu.cn/zh/App02/App02.html)
+    - [科研成果表现趋势](https://oxfordroadmap.github.io/vis/NetBib/NFU.edu.cn/zh/App00/App00.html)
+    - [二级单位层次](https://oxfordroadmap.github.io/vis/NetBib/NFU.edu.cn/zh/App01/App01.html)
+    - [作者层次](https://oxfordroadmap.github.io/vis/NetBib/NFU.edu.cn/zh/App02/App02.html)
     - 桑基图概览
     - 影响力评估 -- 谷歌学术样本
-  - 数据问题
+  - 数据与决策问题
+    -  1. 数据不一致
+      - 使用研究机构标识符 （ROR）
+      - 使用研究员和贡献者标识符 （ORCID）
+    -  2. 作者贡献计量膨胀
+      - 使用 UTD 计量法
+    -  3. 撤稿及重覆投稿
+      - 中长期 ***科学诚信*** 检查
+    -  4. 二级单位识别难，乱
+      - 使用 NetBib 辅助
+      - 提供 ***规范权威*** 机构中英文名
+    -  5. 决策难，乱
+      - 使用 NetBib 应用 UTD 计量法
+      - 科学比较***投入-产出***
 ```
 
-{{ site.BaseURL }}/uploads/resume.pdf
-* [static pdf]({{ site.BaseURL }}/uploads/resume.pdf)
-* [NFU.edu.cn App00](/NetBib/NFU.edu.cn/zh/App00/App00.html)
-* [NFU.edu.cn App01](/NetBib/NFU.edu.cn/zh/App01/App01.html)
-* [NFU.edu.cn App02](/NetBib/NFU.edu.cn/zh/App02/App02.html)
 
 #### 🔭洞察 
 
