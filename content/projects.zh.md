@@ -36,10 +36,13 @@ sections:
       filters:
         folders:
           - project
-        tag: 'AI能力'
+        # Only show content with these tags
+        tag: 'NetBib'
+      sort_by: 'Date'
+      sort_ascending: false
     design:
-      view: article-grid
-      columns: 2
+      view: card
+      spacing: {padding: [4px, 0, 4px, 0]}
   - block: collection
     id: '🚧扩充延伸'
     content:
