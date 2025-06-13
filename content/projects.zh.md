@@ -30,6 +30,23 @@ sections:
       background: {}
       spacing: {padding: [4px, 0, 4px, 0]}
   - block: collection
+    content:
+      title: 淨零经济及产业路线
+      text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
+      # 要显示的页面类型。例如：project。
+      filters:
+        folders:
+          - project
+        # Only show content with these tags
+        tag: 'NetZero净零'
+      sort_by: 'Date'
+      sort_ascending: false
+    design:
+      view: article-grid
+      columns: 2
+      background: {}
+      spacing: {padding: [4px, 0, 4px, 0]}
+  - block: collection
     id: '🏗原创'
     content:
       title: '🏗原创'
@@ -55,24 +72,6 @@ sections:
         tag: "扩充延伸"
     design:
       view: card
-  - block: collection
-    content:
-      title: 淨零经济及产业路线
-      text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
-      # 要显示的页面类型。例如：project。
-      filters:
-        folders:
-          - project
-          - vis
-        # Only show content with these tags
-        tag: 'NetZero净零'
-      sort_by: 'Date'
-      sort_ascending: false
-    design:
-      view: article-grid
-      columns: 2
-      background: {}
-      spacing: {padding: [4px, 0, 4px, 0]}
 ---
 
 

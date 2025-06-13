@@ -9,6 +9,7 @@ authors:
   - admin
 tags:
   - '🏗原创'
+  - NetZero
   - NetZero净零
   - 预测建模
 categories:

@@ -10,6 +10,7 @@ authors:
 tags:
   - '🏗原创'
   - SDA行业脱碳法
+  - NetZero
   - NetZero净零
   - 网络图可视化
 categories:
