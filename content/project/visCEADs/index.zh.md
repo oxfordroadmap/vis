@@ -1,7 +1,5 @@
 ---
 title: visCEADs
-summary: visCEADs...
-external_link: https://oxon8.netlify.app/visualization/prj-visceads/index.zh
 date: 2023-12-10T08:08:08.888Z
 draft: false
 featured: true
@@ -27,3 +25,5 @@ image:
 详细使用说明见[🧰VisCEADs 使用指南](https://oxon8.netlify.app/visualization/prj-visceads/html/index.zh)
 
 <!--more-->
+
+external_link: https://oxon8.netlify.app/visualization/prj-visceads/index.zh

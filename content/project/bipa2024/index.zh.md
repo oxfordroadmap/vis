@@ -1,9 +1,9 @@
 ---
+external_link: https://github.com/blavatnik-index/bipa2024_index
 title: 布拉瓦尼克公共行政指数（Blavatnik Index of Public Administration）
 date: 2025-06-10T08:08:08.888Z
 draft: false
 featured: true
-external_link: https://github.com/blavatnik-index/bipa2024_index
 tags:
   - '🚧扩充延伸'
   - theme_public_adm

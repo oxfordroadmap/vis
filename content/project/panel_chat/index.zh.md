@@ -1,7 +1,7 @@
 ---
+external_link: https://holoviz-topics.github.io/panel-chat-examples/
 title: Panel Chat 面板聊天示例
 date: 2025-03-01
-external_link: https://holoviz-topics.github.io/panel-chat-examples/
 tags:
   - '🚧扩充延伸'
   - '聊天机器人'
