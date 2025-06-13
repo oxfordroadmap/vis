@@ -8,7 +8,7 @@ featured: true
 authors:
   - admin
 tags:
-  - '🏗原創'
+  - '原創'
   - 預測建模
   - 'AI能力'
 categories:

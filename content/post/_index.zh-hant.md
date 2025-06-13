@@ -4,7 +4,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "2rem"
+  spacing: "1rem"
 
 cascade:
   - _target:

@@ -42,7 +42,7 @@ sections:
       filters:
         folders:
           - project
-        tag: "🏗原創"
+        tag: "原創"
     design:
       view: card
       #view: date-title-summary
