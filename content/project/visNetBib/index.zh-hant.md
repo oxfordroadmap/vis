@@ -1,15 +1,15 @@
 ---
-title: visNetBib
-summary: visNetBib 能產出科研成果及影響交互可視化報告，並改良並擴展[Valdecy/pybibx](https://github.com/Valdecy/pybibx)的AI能力
-date: 2025-06-08T08:08:08.888Z
+title: 🧰 NetBib 說明
+summary: NetBib 能產出科研成果及影響交互可視化報告，並改良並擴展[Valdecy/pybibx](https://github.com/Valdecy/pybibx)的AI能力
+date: 2025-02-28T08:08:08.888Z
 draft: false
 featured: true
 tags:
-  - '🏗原創'
+  - 🏗原創
   - NetBib
   - 文獻計量
-  - 'AI能力'
-  - '網絡分析'
+  - AI能力
+  - 網絡分析
 categories:
   - project
   - portfolio

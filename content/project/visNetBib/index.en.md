@@ -1,7 +1,7 @@
 ---
 title: visNetBib
 summary: visNetBib generates interactive visualization reports on the impacts of scientific outcomes, inspired by and making improvements to [Valdecy/pybibx](https://github.com/Valdecy/pybibx) with AI capabilities.
-date: 2025-06-08T08:08:08.888Z
+date: 2025-02-28T08:08:08.888Z
 draft: false
 featured: true
 tags:
