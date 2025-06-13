@@ -7,6 +7,7 @@ tags:
   - '聊天机器人'
   - '人工智能代理人'
   - 'AI能力'
+  - 'theme_extensions'
 ---
 
 [`面板聊天示例 (Panel Chat)`](https://holoviz-topics.github.io/panel-chat-examples/) 功能 [Panel](https://panel.holoviz.org/) 及其 _多模态_ 聊天组件，支持 [LangChain](https://python.langchain.com/docs/get_started/introduction)、[OpenAI](https://openai.com/blog/chatgpt)、[Mistral](https://docs.mistral.ai/)、[Llama](https://ai.meta.com/llama/) 等。 [廖汉腾](/experience) 正在寻求 `面板聊天示例` 的实用扩展，以便实践和学习基于 AI 的交互式数据可视化，从而获得洞察。 

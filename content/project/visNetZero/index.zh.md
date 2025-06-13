@@ -9,9 +9,9 @@ authors:
   - admin
 tags:
   - '🏗原创'
-  - theme_NetZero
   - NetZero净零
   - 预测建模
+  - theme_NetZero
 categories:
   - project
   - portfolio

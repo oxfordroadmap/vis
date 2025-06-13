@@ -14,7 +14,7 @@ design:
 sections:
   - block: collection
     content:
-      title: 分析机构科研成果及影响
+      title: NetBib 分析机构科研成果及影响
       text: '采用UTD计量法量化贡献比例，**实证**分析科研成果及影响，做具前瞻的系统决策，如科研经费、人员等的投入产出。'
       # 要显示的页面类型。例如：project。
       filters:
@@ -30,25 +30,9 @@ sections:
       background: {}
       spacing: {padding: [4px, 0, 4px, 0]}
   - block: collection
-    content:
-      title: 淨零经济及产业路线
-      text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
-      # 要显示的页面类型。例如：project。
-      filters:
-        folders:
-          - project
-        # Only show content with these tags
-        tag: 'theme_NetZero'
-      sort_by: 'Date'
-      sort_ascending: false
-    design:
-      view: card
-      background: {}
-      spacing: {padding: [4px, 0, 4px, 0]}
-  - block: collection
     id: '🏗原创'
     content:
-      title: 淨零经济及产业路线2
+      title: 淨零经济及产业路线
       text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
       filters:
         folders:
@@ -62,16 +46,33 @@ sections:
       columns: 2
       spacing: {padding: [4px, 0, 4px, 0]}
   - block: collection
-    id: '🚧扩充延伸'
+    id: '🏛️公共行政'
     content:
-      title: '🚧扩充延伸'
-      text: '🏛️公共行政---🚧扩充延伸成果展示开放（自由）协作的能力及潜力'
+      title: '🏛️公共行政'
+      text: '🏛️公共行政---展示开放协作的能力及潜力'
       filters:
         folders:
           - project
         tag: "theme_public_adm"
     design:
       view: card
+  - block: collection
+    id: '🚧扩充延伸'
+    content:
+      title: '🚧扩充延伸'
+      text: '成果展示开放（自由）协作的能力及潜力'
+      # 要显示的页面类型。例如：project。
+      filters:
+        folders:
+          - project
+        # Only show content with these tags
+        tag: 'theme_extensions'
+      sort_by: 'Date'
+      sort_ascending: false
+    design:
+      view: card
+      background: {}
+      spacing: {padding: [4px, 0, 4px, 0]}
 ---
 
 
