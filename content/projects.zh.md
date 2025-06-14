@@ -13,72 +13,61 @@ summary: |
   * 🏛️bipa2024 -- 牛津大学公共行政指数🚧
   * 🤖panel_chat, 🧬pybibx -- 展示开放协作的扩充延伸成果🚧
 design:
-  # Section spacing
-  spacing: '1rem'
+  spacing: '0.4rem'
 # Page sections
 sections:
   - block: collection
     id: 'CaseNetBib'
     content:
       title: '🔬NetBib 分析机构科研成果及影响'
-      text: '采用UTD计量法量化贡献比例，**实证**分析科研成果及影响，做具前瞻的系统决策，如科研经费、人员等的投入产出。'
-      # 要显示的页面类型。例如：project。
+      text: '采用UTD计量法，量化贡献比例，做具前瞻决策，系统地分析投入产出。'
       filters:
         folders:
           - project
-        # Only show content with these tags
         tag: 'CaseNetBib'
       sort_by: 'Date'
       sort_ascending: false
     design:
-      view: masonry
-      fill_image: true
-      background: {}
-      spacing: {padding: [4px, 0, 4px, 0]}
+      view: card
+      spacing: {padding: [1rem, 0, 1rem, 0]}
   - block: collection
     id: 'theme_NetZero'
     content:
-      title: '🍃visNetZero visCEADs 淨零经济及产业路线'
-      text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
+      title: '🍃visNetZero 🍃visCEADs 淨零经济及产业路线'
+      text: '利用**产业经济**及**能源排放数据**等实证，系统地可视化投入、产出及排放影响，做战略决策。'
       filters:
-        folders:
-          - project
-        # Only show content with these tags
+        folders: ['project']
         tag: 'theme_NetZero'
       sort_by: 'Date'
       sort_ascending: false
     design:
       view: article-grid
       columns: 2
-      spacing: {padding: [4px, 0, 4px, 0]}
+      spacing: {padding: [1rem, 0, 1rem, 0]}
   - block: collection
-    id: '🏛️公共行政'
+    id: 'theme_public_adm'
     content:
-      title: '🏛️公共行政'
-      text: '🏛️公共行政---展示开放协作的能力及潜力'
+      title: '🏛️公共行政---展示开放协作的能力及潜力'
+      text: '🏛️牛津大学公共行政指数...🚧'
       filters:
-        folders:
-          - project
+        folders: ['project']
         tag: "theme_public_adm"
     design:
       view: card
   - block: collection
-    id: '🚧扩充延伸'
+    id: 'theme_extensions'
     content:
       title: '🚧扩充延伸'
       text: '成果展示开放（自由）协作的能力及潜力'
-      # 要显示的页面类型。例如：project。
       filters:
-        folders:
-          - project
-        # Only show content with these tags
+        folders: ['project']
         tag: 'theme_extensions'
       sort_by: 'Date'
       sort_ascending: false
     design:
       view: article-grid
-      columns: 2
-      spacing: {padding: [4px, 0, 4px, 0]}
+      columns: 3
+      spacing: {padding: [1rem, 0, 1rem, 0]}
 ---
 
 
