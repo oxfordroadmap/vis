@@ -1,21 +1,24 @@
 ---
-# 请参阅 https://bootstrap.hugoblox.com/blocks/portfolio/  
-# 此部分显示来自 `content/project/` 的内容。
+# section (top-level directory) 此部分显示来自 `content/project/` 的内容。
+# 请参阅 [Sections](https://gohugo.io/content-management/sections/)
 type: landing
-
-title: '作品項目'
-date: 2024-12-10
-# Begin multi-line `summary` with YAML's `|` or `|2-` prefix and indent 2 spaces
-summary: |
-  实证可视化，交互智能化，决策系统化。
-  * 🔬NetBib -- 科研成果及影响分析
-  * 🍃visNetZero, 🍃visCEADs -- 淨零经济路线, 淨零产业路线
-  * 🏛️bipa2024 -- 牛津大学公共行政指数🚧
-  * 🤖panel_chat, 🧬pybibx -- 展示开放协作的扩充延伸成果🚧
 design:
   spacing: '0.4rem'
 # Page sections
 sections:
+  - block: markdown
+    id: 'CaseNetBib'
+    content:
+      title: '📝作品項目'
+      subtitle: ''
+      text: |-
+        实证可视化，交互智能化，决策系统化。
+        * 🔬[NetBib](#CaseNetBib) -- 科研成果及影响分析
+        * 🍃visNetZero, 🍃visCEADs -- 淨零经济路线, 淨零产业路线
+        * 🏛️bipa2024 -- 牛津大学公共行政指数🚧
+        * 🤖panel_chat, 🧬pybibx -- 展示开放协作的扩充延伸成果🚧
+    design:
+      columns: '1'
   - block: collection
     id: 'CaseNetBib'
     content:
@@ -32,7 +35,7 @@ sections:
   - block: collection
     id: 'theme_NetZero'
     content:
-      title: '🍃visNetZero 🍃visCEADs 淨零经济及产业路线'
+      title: '🍃visNetZero 🍃visCEADs 淨零经济及产业'
       text: '利用**产业经济**及**能源排放数据**等实证，系统地可视化投入、产出及排放影响，做战略决策。'
       filters:
         folders: ['project']
