@@ -68,7 +68,7 @@ sections:
       sort_ascending: false
     design:
       view: article-grid
-      columns: 3
+      columns: 2
       spacing: {padding: [1rem, 0, 1rem, 0]}
 ---
 <!-- override styles -->

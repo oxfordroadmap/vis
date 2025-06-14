@@ -6,6 +6,10 @@ tags:
   - NetBib
   - CaseNetBib
   - '广州南方学院'
+image:
+preview_only: true
+caption: '🗄广州南方学院 (NFU.edu.cn) NetBib项目案例 App02 截屏'
+focal_point: 'Center'
 ---
 利用并扩展[**UTD**全球商学院科研排名的计量方法](https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/index.php#methodology)，这里展示NetBib项目案例🗄--'广州南方学院 (NFU.edu.cn)' 的科研表现。根据案例实证，点出数据不一致、二级单位识别难或乱等等问题及改进建议。
 
