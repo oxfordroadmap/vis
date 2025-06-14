@@ -47,7 +47,7 @@ sections:
     id: 'theme_public_adm'
     content:
       title: '🏛️公共行政---展示开放协作的能力及潜力'
-      text: '全球政务绩效数据（🏛️牛津大学公共行政指数）智能应用项目
+      text: '全球政务绩效数据（🏛️牛津大学公共行政指数）智能应用项目'
       filters:
         folders: ['project']
         tag: "theme_public_adm"
