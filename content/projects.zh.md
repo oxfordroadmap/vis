@@ -22,8 +22,7 @@ sections:
       title: '🔬NetBib 分析机构科研成果及影响'
       text: '采用UTD计量法，量化贡献比例，做具前瞻决策，系统地分析投入产出。'
       filters:
-        folders:
-          - project
+        folders: ['project']
         tag: 'CaseNetBib'
       sort_by: 'Date'
       sort_ascending: false
@@ -48,7 +47,7 @@ sections:
     id: 'theme_public_adm'
     content:
       title: '🏛️公共行政---展示开放协作的能力及潜力'
-      text: '🏛️牛津大学公共行政指数...🚧'
+      text: '全球政务绩效数据（🏛️牛津大学公共行政指数）智能应用项目
       filters:
         folders: ['project']
         tag: "theme_public_adm"
@@ -69,6 +68,15 @@ sections:
       columns: 3
       spacing: {padding: [1rem, 0, 1rem, 0]}
 ---
-
+<!-- override styles -->
+<style>
+.mb-6 {
+  margin-bottom: 0rem; /*1.5rem*/
+}
+.text-3xl {
+  font-size: 1.75rem;/*1.875rem*/
+  line-height: 1.75rem;/*2.25rem*/
+}
+</style>
 
 
