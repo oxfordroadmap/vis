@@ -1,15 +1,20 @@
 ---
-title: '作品項目'
-subtitle: '利用实证可视化，分析科研成果及影响，做具前瞻战略的系统思考'
-date: 2024-12-10
-type: landing
-
 # 请参阅 https://bootstrap.hugoblox.com/blocks/portfolio/  
 # 此部分显示来自 `content/project/` 的内容。
+type: landing
 
+title: '作品項目'
+date: 2024-12-10
+# Begin multi-line `summary` with YAML's `|` or `|2-` prefix and indent 2 spaces
+summary: |
+  实证可视化，交互智能化，决策系统化。
+  * 🔬NetBib -- 科研成果及影响分析
+  * 🍃visNetZero, 🍃visCEADs -- 淨零经济路线, 淨零产业路线
+  * 🏛️bipa2024 -- 牛津大学公共行政指数🚧
+  * 🤖panel_chat, 🧬pybibx -- 展示开放协作的扩充延伸成果🚧
 design:
+  # Section spacing
   spacing: '1rem'
-
 # Page sections
 sections:
   - block: collection
@@ -33,7 +38,7 @@ sections:
   - block: collection
     id: 'theme_NetZero'
     content:
-      title: '🍃淨零经济及产业路线'
+      title: '🍃visNetZero visCEADs 淨零经济及产业路线'
       text: '利用**产业经济**及**能源排放数据**等实证可视化，分析产业投入及产出及排放影响，做具战略的系统思考。'
       filters:
         folders:
