@@ -7,16 +7,18 @@ tags:
   - CaseNetBib
   - '广州南方学院'
 ---
-利用并扩展[**UTD**全球商学院科研排名的计量方法](https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/index.php#methodology)，这里展示NetBib项目案例🗄--'广州南方学院 (NFU.edu.cn)' 的科研表现。
+利用并扩展[**UTD**全球商学院科研排名的计量方法](https://jsom.utdallas.edu/the-utd-top-100-business-school-research-rankings/index.php#methodology)，这里展示NetBib项目案例🗄--'广州南方学院 (NFU.edu.cn)' 的科研表现。根据案例实证，点出数据不一致、二级单位识别难或乱等等问题及改进建议。
 
-<br/>关于NetBib项目
-* [NFU.edu.cn NetBib 仪表盘 App](/NetBib/NFU.edu.cn/zh/App02/App02.html)
-* [NFU.edu.cn 成果详细说明](/project/NetBib_NFU.edu.cn)
-* [NetBib项目缘起说明](/project/pybibx)
- 
 <!--more-->
 
-此项目展示产出的可视化产品原型，可以用来改进作者、学院、及大学各层次的数据***可见度***及影响力。这对于机构成长消亡改名等的追踪评价特别有义意。
+此项目展示产出的可视化产品原型，可以用来改进作者、学院、及大学各层次的数据***可见度***及影响力。
+
+![](NetBib_NFU.edu.cn_App02.jpg)
+
+### 案例特性
+
+广州南方学院因改制有改名，因此本案例对于机构成长消亡改名等的追踪评价特别有意义。
+
 
 ### 🗄广州南方学院 (NFU.edu.cn)
 
@@ -74,3 +76,13 @@ tags:
 ### 机构标识符及人员标识符
 数据缺失
 [使用 ROR 添加研究机构标识符！ —— ORCID](https://info.orcid.org/zh-CN/%E6%B7%BB%E5%8A%A0%E5%B8%A6%E6%9C%89-ror-%E7%9A%84%E7%A0%94%E7%A9%B6%E6%9C%BA%E6%9E%84%E6%A0%87%E8%AF%86%E7%AC%A6/)
+
+
+-----
+
+## 关于NetBib项目
+
+* [NFU.edu.cn NetBib 仪表盘 App](/NetBib/NFU.edu.cn/zh/App02/App02.html)
+* [NFU.edu.cn 成果详细说明](/project/NetBib_NFU.edu.cn)
+* [NetBib项目缘起说明](/project/pybibx)
+ 
