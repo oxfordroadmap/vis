@@ -22,5 +22,5 @@ Static files
 * {{< link_site_static "/NetBib/NFU.edu.cn/zh/App00/App00.html" >}}
 * {{< link_site_home >}}/NetBib/NFU.edu.cn/zh/App00/App00.html
 * {{< link_site_home_rel >}}/NetBib/NFU.edu.cn/zh/App00/App00.html
-* {{< link_site_static "NetBib/NFU.edu.cn/zh/App00/App00.html" lang='' >}}
-* {{< link_site_static "/NetBib/NFU.edu.cn/zh/App00/App00.html" lang='' >}}
+* {{< link_site_static "NetBib/NFU.edu.cn/zh/App00/App00.html" >}}
+* {{< link_site_static "/NetBib/NFU.edu.cn/zh/App00/App00.html" >}}

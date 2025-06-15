@@ -34,8 +34,7 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
 * {{% ref path="/project/NetBib"   %}}
 * {{% ref path="/project/bipa2024" lang="en" %}}
 
-* {{% ref path="/project/bipa2024" lang='' %}}
-* {{% ref path="/project/NetBib" lang=''  %}}
+
 
 Static files 
 * {{< link_site_static "NetBib/NFU.edu.cn/zh/App00/App00.html" >}}
