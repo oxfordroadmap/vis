@@ -1,5 +1,4 @@
 ---
-external_link: https://github.com/blavatnik-index/bipa2024_index
 title: 布拉瓦尼克公共行政指数
 date: 2025-06-10T08:08:08.888Z
 draft: false
@@ -15,4 +14,17 @@ tags:
 
 <!--more-->
 
+external_link: https://github.com/blavatnik-index/bipa2024_index
+
 旨在通过缺失数据的处理和交互的可视化呈现
+
+
+### 所有项目
+
+```markmap {height="200px"}
+- 实证可视化，交互智能化，决策系统化。
+  * 🔬[NetBib](#CaseNetBib) -- 科研成果及影响分析
+  * [🍃visNetZero, 🍃visCEADs](#theme_NetZero) -- 淨零经济路线, 淨零产业路线
+  * 🏛️[bipa2024](#theme_public_adm) -- 牛津大学公共行政指数🚧
+  * [🤖panel_chat, 🧬pybibx](#theme_extensions) -- 展示开放协作的扩充延伸成果🚧
+```
