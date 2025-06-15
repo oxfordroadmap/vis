@@ -1,12 +1,18 @@
 ### 所有项目
 
-```markmap {height="200px"}
-- 实证可视化，交互智能化，决策系统化。
-  * [🔬 科研成果及影响分析]({{% ref path="/projects#CaseNetBib" %}}) -- [NetBib]({{% ref path="/project/NetBib"  %}})
-    * [🏫广州南方学院 (NFU.edu.cn)]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App02/App02.html" >}})，包括...
-  * [🍃visNetZero, 🍃visCEADs]({{% ref path="/projects#theme_NetZero" %}}) -- 淨零经济路线, 淨零产业路线
-  * 🏛️[牛津大学公共行政指数🚧]({{% ref path="/projects#theme_public_adm" %}}) -- [🏛️bipa2024]({{% ref path="/project/bipa2024" %}})
-  * [展示开放协作的🚧扩充延伸成果]({{% ref path="/projects#theme_extensions" %}}) 
+```markmap {width="720px"}
+- 实证可视化，</br>交互智能化，</br>决策系统化。
+  * [🔬科研成果及影响分析]({{% ref path="/projects#CaseNetBib" %}}) 
+    * [🏫广州南方学院</br> (NFU.edu.cn)]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App02/App02.html" >}})
+      * [历年趋势]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App00/App00.html" >}})
+      * [二级单位]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App01/App01.html" >}})
+      * [人员]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App02/App02.html" >}})
+    * [🔬NetBib]({{% ref path="/project/NetBib"  %}})
+  * [🍃淨零经济与产业路线]({{% ref path="/projects#theme_NetZero" %}})
+    * [🍃💵 visNetZero]({{% ref path="/project/visNetZero" %}})
+    * [🍃🏭 visCEADs]({{% ref path="/project/visCEADs" %}})
+  * [🏛️牛津大学公共行政指数]({{% ref path="/projects#theme_public_adm" %}}) -- [🏛️bipa2024]({{% ref path="/project/bipa2024" %}})
+  * [展示开放协作的</br>🚧扩充延伸成果]({{% ref path="/projects#theme_extensions" %}}) 
     * [🤖panel_chat]({{% ref path="/project/panel_chat" %}})
     * [🧬pybibx]({{% ref path="/project/pybibx" %}})
 ```
