@@ -14,12 +14,23 @@ tags:
 
 <!--more-->
 
+
+
+* {{ relURL "/experience" }}
+* {{ ref . "/experience" }}
+
+
 external_link: https://github.com/blavatnik-index/bipa2024_index
 
 旨在通过缺失数据的处理和交互的可视化呈现
 
 
 ### 所有项目
+* {{ relURL "projects#theme_public_adm" }}
+* {{ relURL "/projects#theme_public_adm" }}
+* {{ ref . "/projects#theme_public_adm" }}
+* {{ ref . "/project/bipa2024" }}
+* {{ ref . "project/bipa2024"  }}
 
 ```markmap {height="200px"}
 - 实证可视化，交互智能化，决策系统化。
@@ -28,3 +39,7 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
   * 🏛️[bipa2024](#theme_public_adm) -- 牛津大学公共行政指数🚧
   * [🤖panel_chat, 🧬pybibx](#theme_extensions) -- 展示开放协作的扩充延伸成果🚧
 ```
+
+
+* {{< link_site_home />}}
+* {{< link_site_home_rel />}}
