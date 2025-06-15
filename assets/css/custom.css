@@ -9,6 +9,14 @@ li.nav-item.dropdown {
     text-align: center;
 }
 
-.hb-sidebar-container {
-    width: 12rem 288px;
+
+@media (min-width: 1024px) {
+    .hb-sidebar-container {
+        top: 4rem;
+        width: 8rem 288px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -ms-flex-item-align: start;
+        align-self: flex-start
+    }
 }
