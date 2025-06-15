@@ -1,6 +1,9 @@
-### 所有项目：实证可视化，交互智能化，决策系统化。
-
-
+#### 所有项目
+```markdown
+{{% callout note %}}
+实证可视化，交互智能化，决策系统化
+{{% /callout %}}
+```
 
 ```markmap {width="720px"}
 * [🔬科研成果及影响分析]({{% ref path="/projects#CaseNetBib" %}}) 
