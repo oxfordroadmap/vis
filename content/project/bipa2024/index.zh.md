@@ -36,6 +36,7 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
 
 
 Static files 
+* {{< link_site_static "NetBib/NFU.edu.cn/zh/App00/App00.html" >}}
 * {{< link_site_static "/NetBib/NFU.edu.cn/zh/App00/App00.html" >}}
 * {{< link_site_home >}}/NetBib/NFU.edu.cn/zh/App00/App00.html
 * {{< link_site_home_rel >}}/NetBib/NFU.edu.cn/zh/App00/App00.html
