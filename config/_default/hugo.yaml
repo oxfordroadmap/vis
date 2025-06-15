@@ -46,7 +46,7 @@ cascade:
 build:
   writeStats: true
 enableGitInfo: false
-summaryLength: 150
+summaryLength: 200
 pagination:
   pagerSize: 10
 enableEmoji: true
