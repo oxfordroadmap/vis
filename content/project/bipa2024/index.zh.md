@@ -41,5 +41,5 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
 ```
 
 
-* {{< link_site_home />}}
-* {{< link_site_home_rel />}}
+* {{< link_site_home >}}
+* {{< link_site_home_rel >}}
