@@ -32,7 +32,6 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
 * {{% ref path="/projects#theme_public_adm" lang="en" %}}
 * {{% ref path="/project/bipa2024" %}}
 * {{% ref path="/project/NetBib"   %}}
-* {{% relref path="/books/book-1" %}}
 * {{% ref path="/project/bipa2024" lang="en" %}}
 
 Static files 
