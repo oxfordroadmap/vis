@@ -6,6 +6,12 @@ featured: true
 tags:
   - '🚧扩充延伸'
   - theme_public_adm
+image:
+  placement: 3
+  preview_only: true
+  focal_point: 'Top'
+# Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
+# filename: featured.webp # Uncomment to load an image from `assets/media/` instead.
 ---
 
 牛津大学的开创性项目——[`布拉瓦尼克公共行政指数（Blavatnik Index of Public Administration）`](https://github.com/blavatnik-index/bipa2024_index)，提供全球政务绩效数据。该2024年指数整合来自**17个不同来源的82个数据点**，覆盖全球**120**个国家地区，并以R源代码和专门网站发布：[https://index.bsg.ox.ac.uk](https://index.bsg.ox.ac.uk/)。
@@ -13,12 +19,6 @@ tags:
 为了推进相关基准比较利用，[廖汉腾]({{% ref path="/experience" %}})利用布拉瓦尼克公共管理指数进行[合成数据和智能应用项目](https://github.com/hanteng/bipa2024_index)，来开展人工智能驱动的洞察。
 
 <!--more-->
-
-* {{ relURL "/experience" }}
-* {{ ref . "/experience" }}
-
-
-external_link: https://github.com/blavatnik-index/bipa2024_index
 
 旨在通过缺失数据的处理和交互的可视化呈现
 
