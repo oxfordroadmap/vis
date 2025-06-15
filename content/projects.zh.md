@@ -11,7 +11,6 @@ sections:
     content:
       title: '📝作品項目'
       subtitle: ''
-      text: {{% include "_snippet_/projects_all" %}}
     design:
       columns: '1'
   - block: collection
