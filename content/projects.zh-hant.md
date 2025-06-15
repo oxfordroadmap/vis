@@ -31,7 +31,7 @@ sections:
       sort_by: 'Date'
       sort_ascending: false
     design:
-      view: masonry
+      view: card
       fill_image: true
       background: {}
       spacing: {padding: [4px, 0, 4px, 0]}

@@ -11,14 +11,7 @@ sections:
     content:
       title: '📝作品項目'
       subtitle: ''
-      text: |-
-        ```markmap {height="200px"}
-        - 实证可视化，交互智能化，决策系统化。
-          * 🔬[NetBib](#CaseNetBib) -- 科研成果及影响分析
-          * [🍃visNetZero, 🍃visCEADs](#theme_NetZero) -- 淨零经济路线, 淨零产业路线
-          * 🏛️[bipa2024](#theme_public_adm) -- 牛津大学公共行政指数🚧
-          * [🤖panel_chat, 🧬pybibx](#theme_extensions) -- 展示开放协作的扩充延伸成果🚧
-        ```
+      text: {{% include "/_snippet_/projects_all.zh" %}}
     design:
       columns: '1'
   - block: collection

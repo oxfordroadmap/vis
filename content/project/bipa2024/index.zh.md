@@ -22,7 +22,7 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
 
 旨在通过缺失数据的处理和交互的可视化呈现
 
-{{% include "_snippet_/projects_all.zh" %}}
+{{% include "/_snippet_/projects_all.zh" %}}
 <!-- [## Include Markdown file | Hugo Blox Docs](https://docs.hugoblox.com/reference/markdown/#include-markdown-file)  
 {{% include "_snippet_/projects_all" %}}
 -->
