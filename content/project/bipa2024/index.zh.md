@@ -23,9 +23,10 @@ image:
 {{% callout warning %}}
 **全球政务绩效**数据实证可视化，交互智能化，决策系统化
 {{% /callout %}}
+
 ## 原项目特性与价值
 
-**`布拉瓦尼克公共行政指数（Blavatnik Index of Public Administration）` ** 於2024年12月发布，[全球排名新加坡第一（唯一亚洲国家），由丹麦、加拿大、挪威和芬兰紧跟其后](https://www.zaobao.com.sg/news/singapore/story20241205-5503178))。两个人口大国的印度和中国分别排在第50和51位。
+**布拉瓦尼克公共行政指数（Blavatnik Index of Public Administration）** 於2024年12月发布，[全球排名新加坡第一（唯一亚洲国家），由丹麦、加拿大、挪威和芬兰紧跟其后](https://www.zaobao.com.sg/news/singapore/story20241205-5503178))。两个人口大国的印度和中国分别排在第50和51位。
 
 {{< figure
   src="bipa2024.webp"
@@ -34,10 +35,12 @@ image:
   caption="布拉瓦尼克公共行政指数 官网 https://index.bsg.ox.ac.uk/"
   class="ma0 w-75" >}}
 
-这项研究由牛津大学的布拉瓦尼克政府学院发布，以协助各国的公共行政部门推动改革改进。[牛津大学布拉瓦尼克政府管理学院是由俄裔美国实业家和慈善家伦纳德·布拉瓦尼克](https://zh.wikipedia.org/wiki/%E5%B8%83%E6%8B%89%E7%93%A6%E7%89%B9%E5%B0%BC%E5%85%8B%E6%94%BF%E5%BA%9C%E5%AD%B8%E9%99%A2)捐助建立，并和世界知名的同领域机构如
-[清华大学公共管理学院](https://www.sppm.tsinghua.edu.cn/info/1003/9367.htm)等进行交流合作。
+这项研究由牛津大学的布拉瓦尼克政府学院发起，以协助各国的公共行政部门推动改革改进。
 
 {{< youtube tYbeEhBYKwM >}} 
+
+[牛津大学布拉瓦尼克政府管理学院是由俄裔美国实业家和慈善家伦纳德·布拉瓦尼克](https://zh.wikipedia.org/wiki/%E5%B8%83%E6%8B%89%E7%93%A6%E7%89%B9%E5%B0%BC%E5%85%8B%E6%94%BF%E5%BA%9C%E5%AD%B8%E9%99%A2)捐助建立，并和世界知名的同领域机构如
+[清华大学公共管理学院](https://www.sppm.tsinghua.edu.cn/info/1003/9367.htm)等进行交流合作。
 
 此研究开创性在于研究过程采用全开放数据及代码，将主流权威的数据源分各方面进行整合并验证统计有效性。其[R源代码及数据于Github网站发布](https://github.com/blavatnik-index/bipa2024_index)。
 
@@ -57,7 +60,7 @@ image:
 ## 🚧扩充延伸
 
 {{% callout success %}}
-**全球政务绩效**数据实证可视化，交互智能化，决策系统化的作法，主要针对数据缺失进行 （智能） 处理（建模，合成数据等）以及整体数据的智能问答系统开发。
+针对数据缺失进行 ***智能处理（建模，合成数据等）*** 以及整体数据的 ***智能问答系统*** 开发，来达成**全球政务绩效**数据实证可视化，交互智能化，决策系统化
 {{% /callout %}}
 
 为了推进相关基准比较利用，[廖汉腾]({{% ref path="/experience" %}})利用布拉瓦尼克公共管理指数进行[合成数据和智能应用项目](https://github.com/hanteng/bipa2024_index)，来开展人工智能驱动的洞察。
