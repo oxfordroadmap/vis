@@ -26,24 +26,18 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
 
 
 ### 所有项目
-* {{ relURL "projects#theme_public_adm" }}
-* {{ relURL "/projects#theme_public_adm" }}
-* {{ ref . "/projects#theme_public_adm" }}
-* {{ ref . "/project/bipa2024" }}
-* {{ ref . "project/bipa2024"  }}
-* [Link B]({{% relref path="/books/book-1" %}})
-* [Link C]({{% relref path="/books/book-1" lang="de" %}})
-* [Link D]({{% relref path="/books/book-1" lang="de" outputFormat="json" %}})
 
 
 * {{% relref path="/projects#theme_public_adm" %}}
 * {{% ref path="/projects#theme_public_adm" lang="en" %}}
-* {{% ref path="/project/bipa202" %}}
+* {{% ref path="/project/bipa2024" %}}
 * {{% ref path="/project/NetBib"   %}}
 * {{% relref path="/books/book-1" %}}
 * {{% ref path="/project/bipa2024" lang="en" %}}
-* {{% relref path="/NetBib/NFU.edu.cn/zh/App00/App00" lang="en" outputFormat="html" %}}
-* {{% ref path="/NetBib/NFU.edu.cn/zh/App00/App00" lang="en" outputFormat="html" %}}
+
+Static files 
+* {{< link_site_home >}}/NetBib/NFU.edu.cn/zh/App00/App00.html
+* {{< link_site_home_rel >}}/NetBib/NFU.edu.cn/zh/App00/App00.html
 
 ```markmap {height="200px"}
 - 实证可视化，交互智能化，决策系统化。
@@ -54,5 +48,3 @@ external_link: https://github.com/blavatnik-index/bipa2024_index
 ```
 
 
-* {{< link_site_home >}}
-* {{< link_site_home_rel >}}
