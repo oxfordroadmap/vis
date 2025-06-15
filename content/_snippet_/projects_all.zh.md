@@ -8,5 +8,5 @@
   * 🏛️[牛津大学公共行政指数🚧]({{% ref path="/projects#theme_public_adm" %}}) -- [🏛️bipa2024]({{% ref path="/project/bipa2024" %}})
   * [展示开放协作的🚧扩充延伸成果]({{% ref path="/projects#theme_extensions" %}}) 
     * [🤖panel_chat]({{% ref path="/project/panel_chat" %}})
-    * [🧬pybibx]({{% ref path="/projects/pybibx" %}})
+    * [🧬pybibx]({{% ref path="/project/pybibx" %}})
 ```
