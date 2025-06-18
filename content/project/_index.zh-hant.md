@@ -1,5 +1,9 @@
 ---
 type: landing
+has_markmap: true
+title: '作品項目'
+aliases: ["/projects/", "/about/prjs" , "/prjs"]
+type: landing
 # section (top-level directory) 此部分顯示來自 `content/project/` 的內容。
 # 請參閱 [Sections](https://gohugo.io/content-management/sections/)
 design:
