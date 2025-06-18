@@ -84,17 +84,6 @@ image:
     * 运用合成数据对缺失数据以交互可视化的方式呈现
 3. 问答系统的智能助手
     * 结合 LLM 与 交互数据可视化的关键排名，建构智能问答系统
-
-
-```markmap
-{{% include "/_snippet_/projects_all_level1" %}}
-```
-
-___
-
-
-{{% include "/_snippet_/projects_all_level1" %}}
-
 ___
 
 {{% include "/_snippet_/projects_callout" %}}
