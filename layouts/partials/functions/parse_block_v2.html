@@ -3,6 +3,7 @@
 {{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
 
 {{ $page := .page }}
+{{/* .......... assigns the .page variable from the current context (likely the top-level homepage or _index.md) to a local variable called $page. This $page is now the actual Hugo Page object for the page being rendered (e.g. the landing page containing the blocks). */}}
 {{ $block := .block }}
 
 {{ $block_type := lower ($block.blox | default $block.block) | default "markdown" }}
@@ -19,8 +20,14 @@
   {{ end }}
 {{ end }}
 
+{{/* Markmap block: Workaround to make Hugo's .Page.Store.Set cascade up to the parent of headless pages */}}
+{{ if (or ($page.Page.Store.Get "has_markmap") $page.Params.has_markmap) }}
+  {{ warnf "BLOCK - promoting has_markmap: %v" ($block.Page.Store.Get "has_markmap") }}
+  {{ $page.Page.Store.Set "has_markmap" true }}
+{{ end }}
+
 {{/* Mermaid block: Workaround to make Hugo's .Page.Store.Set cascade up to the parent of headless pages */}}
-{{ if $block.Page.Store.Get "has_mermaid" }}
+{{ if (or ($page.Page.Store.Get "has_mermaid") $page.Params.has_mermaid) }}
   {{ $page.Page.Store.Set "has_mermaid" true }}
 {{ end }}
 
