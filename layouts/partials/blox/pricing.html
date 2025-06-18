@@ -1,0 +1,58 @@
+{{/* Hugo Blox: Animated Pricing with Markdown-defined Emoji and Button Fix */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $subtitle := $block.content.subtitle | emojify | $page.RenderString }}
+
+<section class="bg-gray-100 rounded-lg shadow-lg border-2 dark:bg-gray-800">
+    <div class="max-w-screen-xl px-1 py-1 mx-auto text-center lg:py-2 lg:px-2">
+        {{ with $title }}
+        <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">{{ . }}</h2>
+        {{ end }}
+        {{ with $subtitle }}
+        <p class="mb-8 text-gray-500 sm:text-xl dark:text-gray-400">{{ . }}</p>
+        {{ end }}
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {{ range $block.content.plans }}
+            <div class="group flex flex-col p-3 mx-auto max-w-lg text-center text-gray-900 bg-white  border-gray-300 dark:bg-gray-900 rounded-lg shadow-lg border-2 border-gray-100 dark:border-gray-600 xl:p-8  dark:text-white transform transition-all duration-300 hover:scale-125 hover:-translate-y-1">
+                {{ with .icon }}
+                <div class="text-3xl mb-2">
+                    <span class="inline-block hover:animate-bounce">{{ . }}</span>
+                </div>
+                {{ end }}
+                {{ with .highlight }}
+                <span class="mb-2 text-sm font-semibold text-indigo-600 uppercase">{{ . }}</span>
+                {{ end }}
+                <h3 class="mb-4 text-2xl font-semibold">{{ .title }}</h3>
+                <p class="mb-4 font-light text-gray-500 sm:text-lg dark:text-gray-400">{{ .description }}</p>
+                <div class="flex justify-center items-baseline my-8">
+                    <span class="mr-2 text-3xl font-extrabold">{{ .price }}</span>
+                    <span class="text-gray-500 dark:text-gray-400">{{ .period }}</span>
+                </div>
+                <ul class="mb-8 mt-8 space-y-4 text-left">
+                    {{ range .features }}
+                    <li class="flex items-center space-x-3">
+                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <span>{{ . }}</span>
+                    </li>
+                    {{ end }}
+                </ul>
+
+                {{ with .button }}
+                {{ $btnText := .text | $page.RenderString }}
+                {{ $btnURL := .url | $page.RenderString }}
+                <a href="{{ $btnURL }}">
+                    <button class="bg-gray-800 text-white dark:bg-gray-100 dark:text-gray-800 font-bold py-2 px-4 rounded">
+                        {{ $btnText }}
+                    </button>
+                </a>
+                {{ end }}
+
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
