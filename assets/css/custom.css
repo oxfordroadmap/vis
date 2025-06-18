@@ -1,0 +1,23 @@
+li.nav-item {
+    font-size: 0.75rem;
+    /* font-size: var(--text-xsm); */
+}
+
+// Custom nav-item size for i18n 
+li.nav-item.dropdown {
+    min-width: 80px;
+    text-align: center;
+}
+
+.hb-sidebar-container {
+    top: 2rem;
+    width: 8rem 288px;
+}
+
+.hbb-section {
+    padding: 2rem;
+    border-radius: 12px !important;
+    border: 3px solid rgb(107 114 128 / var(--tw-text-opacity, 1));
+    box-shadow: 5px 9px 9px rgb(107 114 128 / var(--tw-text-opacity, 1));
+    margin: 2rem;
+}

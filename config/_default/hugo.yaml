@@ -4,19 +4,41 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Hugo Academic CV Theme
+title: 可视化作品集 Oxfordroadmapping Visualization
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://oxfordroadmap.github.io/vis/'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
+defaultContentLanguage: zh
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: true
 removePathAccents: true
 
+############################
+## PAGE OPTIONS
+############################
+
+cascade:
+  # Blog post options
+  - _target:
+      path: /post/**
+    editable: true
+    reading_time: true
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+  # Project options
+  - _target:
+      path: /project/**
+    editable: false
+    reading_time: false
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+    
 ############################
 ## ADVANCED
 ############################
@@ -24,7 +46,7 @@ removePathAccents: true
 build:
   writeStats: true
 enableGitInfo: false
-summaryLength: 30
+summaryLength: 200
 pagination:
   pagerSize: 10
 enableEmoji: true
@@ -33,7 +55,7 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
   authors: '/author/:slug/'
-disableAliases: true
+disableAliases: false
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]
@@ -50,7 +72,11 @@ markup:
   _merge: deep
   highlight:
     lineNos: false
+  goldmark:
+    renderer:
+      unsafe: true
 security:
   _merge: deep
+  enableInlineShortcodes: true
 sitemap:
   _merge: deep

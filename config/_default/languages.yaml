@@ -2,21 +2,69 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
-en:
-  languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+# Languages
+#   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# Default language
+
+### https://github.com/gohugoio/locales/blob/master/zh_Hant/zh_Hant.go
+### https://github.com/gohugoio/locales/blob/master/zh_Hans/zh_Hans.go
+
+zh:
+  languageCode: zh-Hans
+  # contentDir: content/zh  # omit contentDir if translating by file name.
+  title: 可视化作品集 by 牛津路线图 Oxford Roadmapping
+  weight: 1
+  params:
+    description: 本站汇集从科研影响力到净零路线的可视化作品, 展示牛津路线图做战略洞察的实证依据。
+    formats:
+      date:
+        long: 2006 2月28 周日
+        medium: 2006 2月28
+        short: 2006/02/28
+      time:
+        long: 3:04:05 下午
+        medium: 3:04 下午
+        short: 3:04 PM
+      datetime:
+        long: 2006 2月28 周日 3:04:05 下午
+        medium: 2006 2月28 3:04 下午
+        short: 2006/02/28 3:04 PM    
+en:
+  languageCode: en
+  # contentDir: content/en  # omit contentDir if translating by file name.
+  title: Visualization by Oxford Roadmapping
+  weight: 5      
+  params:
+    description: Ranging form Science Impact to Net Zero, this site cureates the visualization works by Oxford Roadmapping for strategic foresight.
+    formats:
+      date:
+        long: Monday, 2 January, 2006
+        short: 2006-01-02
+      time:
+        long: 3:04:05 PM
+        short: 3:04 PM
+      datetime:
+        long: Monday, 2 January, 2006 3:04:05 PM
+        short: 2006-01-02 3:04 PM
+zh-hant:
+  languageCode: zh-hant
+  languageName: 正體中文
+  # contentDir: content/zht  # # omit contentDir if translating by file name.
+  title: 可視化作品集 by 牛津路線圖 Oxford Roadmapping
+  weight: 3
+  params:
+    description: 本站彙整從科研影響力到淨零路線的可視化作品, 展示牛津路線圖做戰略洞察的實依據
+    formats:
+      date:
+        long: 2006 2月28 周日
+        medium: 2006 2月28
+        short: 2006/02/28
+      time:
+        long: 3:04:05 下午
+        medium: 3:04 下午
+        short: 3:04 PM
+      datetime:
+        long: 2006 2月28 周日 3:04:05 下午
+        medium: 2006 2月28 3:04 下午
+        short: 2006/02/28 3:04 PM    
