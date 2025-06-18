@@ -93,7 +93,7 @@
 {{ end }}
 
 {{/* Mermaid */}}
-{{ if (.Page.Store.Get "has_mermaid") }}
+{{ if (or (.Page.Store.Get "has_mermaid") .Params.has_mermaid) }}
   {{ $mermaid_js := resources.Get "dist/lib/mermaid/mermaid.min.js" }}
   {{ $mermaid_config_js := resources.Get "js/hb-mermaid-config.js" }}
   {{ $mermaid_config_js = $mermaid_config_js | resources.Minify }}
@@ -102,7 +102,7 @@
 {{ end }}
 
 {{/* Markmap */}}
-{{ if (.Page.Store.Get "has_markmap") }}
+{{ if (or (.Page.Store.Get "has_markmap") .Params.has_markmap) }}
 <style>
   .markmap > svg {
     width: 100%;
