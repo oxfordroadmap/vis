@@ -1,8 +1,8 @@
 ---
 type: landing
 has_markmap: true
-title: '作品项目'
-aliases: ["/projects/", "/about/prjs" , "/prjs"]
+title: '🏗作品项目'
+aliases: ["/zh-hant/projects/", "/zh-hant/about/prjs" , "/zh-hant/prjs"]
 # section (top-level directory) 此部分显示来自 `content/project/` 的内容。
 # 请参阅 [Sections](https://gohugo.io/content-management/sections/)
 # Page sections
@@ -18,8 +18,8 @@ sections:
   - block: collection
     id: 'CaseNetBib'
     content:
-      title: '🔬NetBib 分析机构科研成果及影响'
-      text: '采用UTD计量法，量化贡献比例，做具前瞻决策，系统地分析投入产出。'
+      title: '🔬 机构科研成果及影响分析'
+      text: '采用UTD计量法，量化贡献比例，做具前瞻决策，系统地分析投入产出。见 [🧰NetBib项目订价]({{% ref path="/project/NetBib"  %}}) 及 [🗄案例NFU]({{% ref path="/project/NetBib_NFU.edu.cn" %}})'
       filters:
         folders: ['project']
         tag: 'CaseNetBib'
@@ -30,8 +30,10 @@ sections:
   - block: collection
     id: 'theme_NetZero'
     content:
-      title: '🍃visNetZero 🍃visCEADs 淨零经济及产业'
-      text: '利用**产业经济**及**能源排放数据**等实证，系统地可视化投入、产出及排放影响，做战略决策。'
+      title: '🍃 净零经济及产业进展及组成'
+      text: |
+        * 透视 **产业经济** 及 **能源排放** 数据，依实证做战略决策
+        * 见 **[🍃💵visNetZero项目]({{% ref path="/project/visNetZero" %}})** 及 **[🍃🏭visCEADs项目]({{% ref path="/project/visCEADs" %}})**
       filters:
         folders: ['project']
         tag: 'theme_NetZero'
@@ -43,8 +45,8 @@ sections:
   - block: collection
     id: 'theme_public_adm'
     content:
-      title: '🏛️公共行政---展示开放协作的能力及潜力'
-      text: '全球政务绩效数据（🏛️牛津大学公共行政指数）智能应用项目'
+      title: '⚖️㊖ 全球政务绩效数据'
+      text: '🏛️牛津大学 公行指数 智能应用（🚧扩充延伸）'
       filters:
         folders: ['project']
         tag: "theme_public_adm"
@@ -53,8 +55,8 @@ sections:
   - block: collection
     id: 'theme_extensions'
     content:
-      title: '🚧扩充延伸'
-      text: '成果展示开放（自由）协作的能力及潜力'
+      title: '🚧 智能应用扩充延伸'
+      text: '展示开放（自由）协作于智能应用的能力：🤖 🧬'
       filters:
         folders: ['project']
         tag: 'theme_extensions'
