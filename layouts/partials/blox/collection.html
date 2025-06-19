@@ -82,7 +82,7 @@
 {{ $columns := $block.design.columns | default "2" }}
 
 {{ if $block.content.title }}
-<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-3 md:px-0 bg-gray-100 rounded-lg shadow-lg border-2 border-gray-500 dark:bg-gray-800 ">
+<div class="px-5 flex flex-col items-center max-w-prose mx-auto gap-1 justify-center bg-gray-100 rounded-lg shadow-lg border-2 border-gray-500 dark:bg-gray-800 ">
   <div class="py-2 text-2xl font-bold text-gray-900 dark:text-white">
     {{ $block.content.title | emojify | $page.RenderString }}
   </div>

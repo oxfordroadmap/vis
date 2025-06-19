@@ -15,6 +15,12 @@ sections:
         {{< details summary="👉所有项目思维导图" open=true class="w-full md:w-auto">}}
         {{% include "/_snippet_/projects_all" %}}
         {{< /details >}}
+    design:
+      css_style: "border: 1px dotted;"
+      css_class: "border-dotted"
+      # Reduce spacing
+      #spacing:
+      #  padding: [0, 0, 0, 0]
   - block: collection
     id: 'CaseNetBib'
     content:
