@@ -1,4 +1,6 @@
 ---
+show_localized: true
+aliases: ["/cv/"]
 title: 'Experience'
 date: 2025-01-25
 type: landing

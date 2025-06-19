@@ -1,4 +1,5 @@
 ---
+show_localized: true
 title: 'Experience'
 date: 2025-01-25
 type: landing

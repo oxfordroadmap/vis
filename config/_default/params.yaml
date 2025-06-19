@@ -35,12 +35,14 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "🔭👀"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} {author} {license}'
+    author: 'Liao, Han-Teng (廖漢騰 廖汉腾)'
+    authorURL: 'https://oxfordroadmap.github.io/vis/cv/'
     license:
       enable: true
       allow_derivatives: false
