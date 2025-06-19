@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: 廖汉腾
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Han-Teng Liao
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Han-Teng
+last_name: Liao
 
 # Status emoji
 status:
@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: 数据科学家
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -30,26 +30,28 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=NAeKcO4AAAAJ
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0003-1081-5599
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:h.liao@ieee.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://twitter.com/hanteng
+ #  - icon: brands/instagram
+ #    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/hanteng
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/in/han-teng-liao-b175b75/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - 人工智能
+  - 开放协作
+  - 净零产业
+  - 地缘政治
+  - 可持续发展
 
 education:
   - area: PhD Artificial Intelligence
