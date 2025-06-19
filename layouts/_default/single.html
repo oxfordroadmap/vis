@@ -9,10 +9,6 @@
   {{ end }}
 {{ end }}
 
-{{ if .Params.show_localized }}
-  {{ partial "functions/page_localized" . }}
-{{ end }}
-
 <div class="mx-auto flex max-w-screen-xl">
   {{ partial "components/sidebar.html" (dict "context" . "no_sidebar" true) }}
   {{ partial "components/toc.html" . }}
