@@ -34,6 +34,8 @@ profiles:
     url: https://scholar.google.com/citations?user=NAeKcO4AAAAJ
   - icon: academicons/orcid
     url: https://orcid.org/0000-0003-1081-5599
+  - icon: brands/WoS
+    url: https://www.webofscience.com/wos/author/record/AAC-5793-2019
   - icon: at-symbol
     url: 'mailto:h.liao@ieee.com'
     label: E-mail Me
