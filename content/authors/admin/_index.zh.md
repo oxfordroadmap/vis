@@ -1,6 +1,7 @@
 ---
 # Display name
 title: 廖汉腾
+aliases: ["/zh/廖汉腾/"]
 
 # Name pronunciation (optional)
 name_pronunciation: Han-Teng Liao
