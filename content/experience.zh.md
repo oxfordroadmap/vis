@@ -1,10 +1,10 @@
 ---
 title: 'Experience'
-date: 2023-10-24
+date: 2025-01-25
 type: landing
 
 design:
-  spacing: '5rem'
+  spacing: '1rem'
 
 # Note: `username` refers to the user's folder name in `content/authors/`
 
@@ -17,7 +17,7 @@ sections:
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download CV
+        text: 下载CV
         url: uploads/resume.pdf
     design:
       css_class: dark
