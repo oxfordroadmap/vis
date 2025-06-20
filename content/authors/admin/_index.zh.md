@@ -56,43 +56,44 @@ interests:
   - 可持续发展
 
 education:
-  - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
-    institution: University of Oxford
+  - area: 哲学博士（DPhil/Ph.D.） 信息、传播与社会科学
+    institution: 牛津大学
     date_start: 2007-10-01
     date_end: 2014-10-31
-    location: Oxford, UK
+    location: 英国牛津
     summary: |-
-      Dissertation examined [collaborative encyclopedias, comparing Chinese Wikipedia and Baidu Baike](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/), supervised by [Professor Ralph Schroeder](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
+      博士论文研究了[协作式百科全书，对比中文维基百科与百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，导师为[拉尔夫·施罗德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
     #button:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
-  - area: M.Sc. Computer Science and Information Engineering
-    institution: National Taiwan University
+  - area: 工学硕士 计算机科学与信息工程
+    institution: 国立台湾大学
     date_start: 2000-08-01
     date_end: 2004-06-30
-    location: Taipei, Taiwan
-    summary: GPA 3.9
-  - area: M.A. Journalism
-    institution: National Taiwan University
+    location: 台湾台北
+    summary: 平均绩点 GPA 3.9
+  - area: 文学硕士 新闻学
+    institution: 国立台湾大学
     date_start: 2000-08-01
     date_end: 2004-06-30
-    location: Taipei, Taiwan
-    summary: GPA 4.0
-  - area: Exchange Program - International Communications and Cultural Studies
-    institution: Macquarie University
+    location: 台湾台北
+    summary: 平均绩点 GPA 4.0
+  - area: 交換生——国际传播与文化研究
+    institution: 麦考瑞大学
     date_start: 2003-02-01
     date_end: 2003-12-31
-    location: Sydney, Australia
-  - area: B.A. Foreign Languages and Literatures / B.Sc. Electrical and Electronic Engineering
-    institution: National Taiwan University
+    location: 澳大利亚悉尼
+  - area: 文学学士 外国文学 / 工学学士 电机与电子工程
+    institution: 国立台湾大学
     date_start: 1994-08-01
     date_end: 2000-06-30
-    location: Taipei, Taiwan
-  - area: Exchange Program - Electrical Engineering & English
-    institution: University of British Columbia
+    location: 台湾台北
+  - area: 交換生——电机工程与英语
+    institution: 不列颠哥伦比亚大学
     date_start: 1998-09-01
     date_end: 1999-08-31
-    location: Vancouver, Canada
+    location: 加拿大温哥华
+
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin

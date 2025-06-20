@@ -56,43 +56,44 @@ interests:
   - 永續發展
 
 education:
-  - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
-    institution: University of Oxford
+  - area: 哲學博士（DPhil/Ph.D.） 資訊、傳播與社會科學
+    institution: 牛津大學
     date_start: 2007-10-01
     date_end: 2014-10-31
-    location: Oxford, UK
+    location: 英國牛津
     summary: |-
-      Dissertation examined [collaborative encyclopedias, comparing Chinese Wikipedia and Baidu Baike](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/), supervised by [Professor Ralph Schroeder](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
+      博士論文探討[協作式百科全書，對比中文維基百科與百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，指導教授為[拉爾夫·施羅德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
     #button:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
-  - area: M.Sc. Computer Science and Information Engineering
-    institution: National Taiwan University
+  - area: 資訊工程學碩士
+    institution: 國立臺灣大學
     date_start: 2000-08-01
     date_end: 2004-06-30
-    location: Taipei, Taiwan
+    location: 臺灣臺北
     summary: GPA 3.9
-  - area: M.A. Journalism
-    institution: National Taiwan University
+  - area: 新聞學碩士
+    institution: 國立臺灣大學
     date_start: 2000-08-01
     date_end: 2004-06-30
-    location: Taipei, Taiwan
+    location: 臺灣臺北
     summary: GPA 4.0
-  - area: Exchange Program - International Communications and Cultural Studies
-    institution: Macquarie University
+  - area: 交換學生計畫——國際傳播與文化研究
+    institution: 澳洲麥考瑞大學
     date_start: 2003-02-01
     date_end: 2003-12-31
-    location: Sydney, Australia
-  - area: B.A. Foreign Languages and Literatures / B.Sc. Electrical and Electronic Engineering
-    institution: National Taiwan University
+    location: 澳洲雪梨
+  - area: 外國語文學學士／電機與電子工程學學士
+    institution: 國立臺灣大學
     date_start: 1994-08-01
     date_end: 2000-06-30
-    location: Taipei, Taiwan
-  - area: Exchange Program - Electrical Engineering & English
-    institution: University of British Columbia
+    location: 臺灣臺北
+  - area: 交換學生計畫——電機工程與英文
+    institution: 加拿大英屬哥倫比亞大學
     date_start: 1998-09-01
     date_end: 1999-08-31
-    location: Vancouver, Canada
+    location: 加拿大溫哥華
+
 work:
   - position: CEO, Data Scientist
     company_name: Oxford Roadmapping
