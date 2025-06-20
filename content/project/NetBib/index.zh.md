@@ -18,7 +18,7 @@ sections:
   - block: pricing
     content:
       title: '产品订价：科研成果及影响NetBib分析'
-      subtitle: 试用一个月至订阅一年
+      subtitle: 试用一个月至订阅一年，订价💵USD $1,000/💴RMB ￥7200 起
       plans:
         - title: 基本方案
           highlight: 试用
