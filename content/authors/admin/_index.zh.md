@@ -57,37 +57,43 @@ interests:
   - 可持续发展
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
+    institution: University of Oxford
+    date_start: 2007-10-01
+    date_end: 2014-10-31
+    location: Oxford, UK
+    summary: |-
+      Dissertation examined [collaborative encyclopedias, comparing Chinese Wikipedia and Baidu Baike](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/), supervised by [Professor Ralph Schroeder](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
+    #button:
+    #  text: 'Read Thesis'
+    #  url: 'https://example.com'
+  - area: M.Sc. Computer Science and Information Engineering
+    institution: National Taiwan University
+    date_start: 2000-08-01
+    date_end: 2004-06-30
+    location: Taipei, Taiwan
+    summary: GPA 3.9
+  - area: M.A. Journalism
+    institution: National Taiwan University
+    date_start: 2000-08-01
+    date_end: 2004-06-30
+    location: Taipei, Taiwan
+    summary: GPA 4.0
+  - area: Exchange Program - International Communications and Cultural Studies
+    institution: Macquarie University
+    date_start: 2003-02-01
+    date_end: 2003-12-31
+    location: Sydney, Australia
+  - area: B.A. Foreign Languages and Literatures / B.Sc. Electrical and Electronic Engineering
+    institution: National Taiwan University
+    date_start: 1994-08-01
+    date_end: 2000-06-30
+    location: Taipei, Taiwan
+  - area: Exchange Program - Electrical Engineering & English
+    institution: University of British Columbia
+    date_start: 1998-09-01
+    date_end: 1999-08-31
+    location: Vancouver, Canada
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
@@ -188,4 +194,4 @@ awards:
 
 ### 关于我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+廖汉腾是一位数据科学家和教育工作者，专注于**开放式协作**、**中国互联网**以及**技术路线图规划**（主要基于**科学计量学**与**设计工作坊**）。凭借在中国、美国和欧洲的跨领域经验，他开发了**产品原型**和**实操教程**，帮助新一代产品经理、政策制定者和开发人员深入理解如何将**人工智能的能力**与**人类价值观**对齐。他的工作融合技术实施与战略远见，赋能未来领袖应对日益复杂的社会技术环境与地缘政治风险。

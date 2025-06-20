@@ -188,4 +188,4 @@ awards:
 
 ### About Me - [关于我]({{% ref path="/experience" lang="zh" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}}) 
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Han-Teng Liao is a data scientist and educator specializing in **open collaboration**, **the Chinese Internet**, and **technology roadmapping**—primarily grounded in **scientometrics** and **design workshops**. Drawing on cross-sectoral experience in China, the United States, and Europe, he develops **working prototypes** and **hands-on tutorials** to equip emerging product managers, policymakers, and developers with critical insights for aligning AI capabilities with human values. His work bridges technical implementation with strategic foresight, empowering future leaders to navigate an increasingly complex sociotechnical landscape and geopolitical shifts.

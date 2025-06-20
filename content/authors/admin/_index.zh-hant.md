@@ -238,4 +238,4 @@ awards:
 
 ### 關於我  - [About Me]({{% ref path="/experience" lang="en" %}}) - [关于我]({{% ref path="/experience" lang="zh" %}})
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+廖漢騰是一位資料科學家與教育工作者，專長於**開放協作**、**中文網際網路研究**以及**技術路線圖規劃**，其研究基礎主要來自**科學計量學**與**設計工作坊**。他結合在中國、美國與歐洲的跨領域經驗，開發**産品原型**與**實作導引教學材料**，協助新一代產品經理、政策制定者與應用開發者掌握將人工智慧能力與人類價值對齊的關鍵洞見。他的工作銜接技術實踐與策略前瞻，賦能未來領導者駕馭日益複雜的社會技術變遷與地緣政治動態。
