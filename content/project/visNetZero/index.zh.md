@@ -8,7 +8,8 @@ authors:
 tags:
   - '🏗原创'
   - NetZero净零
-  - 预测建模
+  - '预测建模'
+  - 'AI能力'
   - theme_NetZero
   - 'theme_creations'
 categories:
