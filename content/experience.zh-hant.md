@@ -1,5 +1,5 @@
 ---
-show_localized: true
+aliases: ["/zh-hant/廖漢騰/"]
 title: 'Experience'
 date: 2025-01-25
 type: landing
