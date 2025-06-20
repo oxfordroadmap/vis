@@ -57,61 +57,111 @@ interests:
   - 永續發展
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
+    institution: University of Oxford
+    date_start: 2007-10-01
+    date_end: 2014-10-31
+    location: Oxford, UK
+    summary: |-
+      Dissertation examined [collaborative encyclopedias, comparing Chinese Wikipedia and Baidu Baike](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/), supervised by [Professor Ralph Schroeder](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
+    #button:
+    #  text: 'Read Thesis'
+    #  url: 'https://example.com'
+  - area: M.Sc. Computer Science and Information Engineering
+    institution: National Taiwan University
+    date_start: 2000-08-01
+    date_end: 2004-06-30
+    location: Taipei, Taiwan
+    summary: GPA 3.9
+  - area: M.A. Journalism
+    institution: National Taiwan University
+    date_start: 2000-08-01
+    date_end: 2004-06-30
+    location: Taipei, Taiwan
+    summary: GPA 4.0
+  - area: Exchange Program - International Communications and Cultural Studies
+    institution: Macquarie University
+    date_start: 2003-02-01
+    date_end: 2003-12-31
+    location: Sydney, Australia
+  - area: B.A. Foreign Languages and Literatures / B.Sc. Electrical and Electronic Engineering
+    institution: National Taiwan University
+    date_start: 1994-08-01
+    date_end: 2000-06-30
+    location: Taipei, Taiwan
+  - area: Exchange Program - Electrical Engineering & English
+    institution: University of British Columbia
+    date_start: 1998-09-01
+    date_end: 1999-08-31
+    location: Vancouver, Canada
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
+  - position: CEO, Data Scientist
+    company_name: Oxford Roadmapping
+    company_url: https://oxon8.netlify.app
+    company_logo: 'icons/brands/oxon8.svg'
+    date_start: 2023-01-01
     date_end: ''
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      * Developed visualization apps and toolkits (e.g. NetBib, visCEADs, and visNetZero) for data-driven decisions in areas such as science research impact, industry economics and Net Zero. 
+      * Delivered three SCIE-indexed Q2 peer-reviewed articles for the research project *Roadmapping for Precision-Decarbonization* before its first expert-panel review.
+      * Submitted ITU technical input document on Green Supply Chain FinTech for Digital Agriculture (FG-AI4A-I-132).
+  - position: Director, Higher Education Impact Assessment Center
+    company_name: Nanfang College of Sun Yat-Sen University
+    company_url: 'https://www.nfu.edu.cn/'
+    company_logo: 'icons/brands/NFU.jpg'
+    date_start: 2019-12-01
+    date_end: 2023-01-01
+    summary: |2-
+      * Developed an undergraduate program of Internet and New Media focusing on modern skills surrounding Product Managers, integrating conceptual knowledge of platform economy and user experience and practical skills from Github, Python, API to Artifical Intelligence (AI).  
+      * Supervised serveral students including three who qualified for early-than-usual graudations.
+      * Founded a university-level research center producing the highest number of indexed articles among peer institutions.
+      * Co-led ESG Data-Driven Decisions Lab with multiple interdisciplinary and UN academic reporting projects.
+      * Chaired WEDC 2019 conference on sustainable development innovation and ecosystems.
+  - position: Associate Professor, Vice-Dean of Internet and New Media
+    company_name: Nanfang College of Sun Yat-Sen University
+    company_url: 'https://www.nfu.edu.cn/'
+    company_logo: 'icons/brands/NFU.jpg'
+    date_start: 2017-01-01
+    date_end: 2021-01-01
+    summary: |2-
+      Developed a capstone course *API, machine learning and AI* recognized as “first-class” by Guangdong Department of Education.
+      Designed and implemented a curriculum of 18 core courses, mentored 7 teachers, and led education innovation projects, with multiple awards.
+  - position: Research Fellow
+    company_name: United Nations University Institute on Computing and Society
+    company_url: 'https://unu.edu/'
+    company_logo: 'icons/brands/unu-logo.svg'
+    date_start: 2015-07-01
+    date_end: 2016-11-30
+    summary: Conducted ICT4D-focused research projects across Asia.
+  - position: Yahoo! Fellow, Institute for the Study of Diplomacy
+    company_name: Georgetown University
+    company_url: 'https://sfs.georgetown.edu/'
+    company_logo: 'icons/brands/Georgetown_logo.webp'
+    date_start: 2010-08-01
+    date_end: 2011-07-31
+    summary: Led research on digital linguistic grouping; organized Chinese Internet Research Conference 2011.
+  - position: Doctoral Fellow, Institute of Sociology
+    company_name: Academia Sinica
+    company_url: 'https://www.sinica.edu.tw/en'
+    company_logo: 'icons/brands/AcademiaSinica.webp'
+    date_start: 2009-08-01
+    date_end: 2010-06-30
+    summary: Conducted advanced research within the doctoral fellowship.
+  - position: Political Warfare Officer (Compulsory Service)
+    company_name: Taiwan Military
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
+    date_start: 2005-11-01
+    date_end: 2006-12-31
+    summary: Completed mandatory service with assignments in information and communication operations.
+  - position: Project Manager, Open Source Software Foundry
+    company_name: Academia Sinica, Institute of Information Science
+    company_url: 'https://www.sinica.edu.tw/en'
+    company_logo: 'icons/brands/AcademiaSinica.webp'
+    date_start: 2004-10-01
+    date_end: 2005-11-30
+    summary: |2-
+      Delivered open platform projects and organized industrial/civic engagement around open source, open data, and open content.
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
