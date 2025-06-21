@@ -57,11 +57,11 @@ interests:
 
 # Skill Sets
 skillsets:
-- [Data Science](#DataScience)
-- [Social Science](#SocialScience)
-- [Software Development](#SoftwareDevelopment)
-- [Open Knowledge](#OpenKnowledge)
-- [Design Workshop](#DesignWorkshop)
+  - Data Science
+  - Social Science
+  - Software Development
+  - Open Knowledge
+  - Design Workshop
 
 education:
   - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
