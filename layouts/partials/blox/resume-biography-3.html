@@ -126,7 +126,7 @@
     {{ with $person.interests }}
     <div class="col-span-3" style="grid-column: 1 / 4;">
       <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
-      <ul class="list-disc list-inside space-y-1 pl-5">
+      <ul class="text-sm list-disc list-inside space-y-1 pl-5">
         {{ range . }}
         <li>
           {{ . | markdownify | emojify }}
@@ -139,7 +139,7 @@
     {{ with $person.skillsets }}
     <div class="col-span-3" style="grid-column: 4 / 7;">
       <div class="section-subheading mb-3">{{ i18n "skillsets" | markdownify }}</div>
-      <ul class="list-disc list-inside space-y-1 pl-5">
+      <ul class="text-sm list-disc list-inside space-y-1 pl-5">
         {{ range . }}
         <li>
           {{ . | markdownify | emojify }}
@@ -152,7 +152,7 @@
     {{ with $person.education }}
     <div class="col-span-6" style="grid-column: 7 / -1;">
       <div class="section-subheading mb-3">{{ i18n "education" | markdownify }}</div>
-      <ul class="">
+      <ul class="text-sm">
         {{ range . }}
         <li class="flex items-start gap-3">
           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
@@ -163,7 +163,7 @@
                 {{ index $d 0 }}
                 {{ end }}
             </p>
-            <p class="text-sm">{{ .area }}</p>
+            <p class="text-xs">{{ .area }}</p>
           </div>
         </li>
         {{ end }}
