@@ -64,7 +64,7 @@ skillsets:
   - 设计工作坊
 
 education:
-  - area: 哲学博士 信息、传播与社会科学
+  - area: 哲学博士（DPhil.） 信息、传播与社会科学
     institution: 牛津大学
     date_start: 2007-10-01
     date_end: 2014-10-31
@@ -103,28 +103,73 @@ education:
     location: 加拿大温哥华
 
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
+  - position: 资料科学家、执行长
+    company_name: 牛津路线图（澳恪森数智科技服务 Oxon8）
+    company_url: https://oxon8.netlify.app
+    company_logo: 'icons/brands/oxon8.svg'
+    date_start: 2023-01-01
     date_end: ''
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      * 开发多款视觉化应用与工具组（如 NetBib、visCEADs 和 visNetZero），协助在科学研究影响力、产业经济学与净零等领域进行资料驱动决策。
+      * 在 *精准减碳路线图规划* 研究专案中，於首次专家审查前完成三篇 SCIE 二区期刊论文。
+      * 提交关於绿色供应链金融科技与数位农业的 ITU 技术输入文件（FG-AI4A-I-132）。
+  - position: 高校影响力研究中心主任
+    company_name: 中山大学南方学院（广州南方学院）
+    company_url: 'https://www.nfu.edu.cn/'
+    company_logo: 'icons/brands/NFU.jpg'
+    date_start: 2019-12-01
+    date_end: 2023-01-01
+    summary: |2-
+      * 开设以产品经理能力为导向的「互联网与新媒体」大学部课程，结合理论与实务，包括平台经济、使用者体验、Github、Python、API 及人工智慧。
+      * 指导多位学生，其中三人提前毕业。
+      * 成立全校最高产出期刊文章的研究中心。
+      * 共同领导 ESG 资料驱动决策实验室，参与多项跨领域与联合国学术报告专案。
+      * 主持 2019 永续创新与生态系会议（WEDC）。
+  - position: 副教授、兼 互联网与新媒体专业主任（及系副主任）
+    company_name: 中山大学南方学院
+    company_url: 'https://www.nfu.edu.cn/'
+    company_logo: 'icons/brands/NFU.jpg'
+    date_start: 2017-01-01
+    date_end: 2021-01-01
+    summary: |2-
+      * 开发 *API、机器学习与人工智慧* 毕业专题课程，获广东省教育厅评选为「一流课程」。
+      * 设计并实施 18 门核心课程，指导 7 位教师并主导多项教育创新专案，屡获奖项。
+  - position: 研究员
+    company_name: '联合国大学—计算与社会研究所'
+    company_url: 'https://unu.edu/'
+    company_logo: 'icons/brands/unu-logo.svg'
+    date_start: 2015-07-01
+    date_end: 2016-11-30
+    summary: 负责资讯与通讯科技促进发展（ICT4D）在亚太地区的研究专案，涵盖数位创新与永续发展等议题。
+  - position: 雅虎研究员, 外交研究所
+    company_name: 乔治城大学
+    company_url: 'https://sfs.georgetown.edu/'
+    company_logo: 'icons/brands/Georgetown_logo.webp'
+    date_start: 2010-08-01
+    date_end: 2011-07-31
+    summary: 主持数位语言群体研究；筹办 2011 年中文网路研究年会。
+  - position: 博士级研究员（访学）社会学研究所
+    company_name: 中央研究院
+    company_url: 'https://www.sinica.edu.tw/en'
+    company_logo: 'icons/brands/AcademiaSinica.webp'
+    date_start: 2009-08-01
+    date_end: 2010-06-30
+    summary: 於博士研究期间执行进阶社会学研究。
+  - position: Political Warfare Officer (Compulsory Service)
+    company_name: 中华民国国军
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    date_start: 2005-11-01
+    date_end: 2006-12-31
+    summary: 完成义务役服役。
+  - position: 专案经理，开放原始码推广计画 OSSF
+    company_name: 中央研究院，资讯科学研究所
+    company_url: 'https://www.sinica.edu.tw/en'
+    company_logo: 'icons/brands/AcademiaSinica.webp'
+    date_start: 2004-10-01
+    date_end: 2005-11-30
+    summary: |2-
+      推动开放平台专案，并组织产业与公民参与活动，涵盖开源软体、开放资料与开放内容。
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`

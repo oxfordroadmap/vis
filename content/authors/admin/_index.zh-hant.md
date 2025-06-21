@@ -64,7 +64,7 @@ skillsets:
   - 設計工作坊
 
 education:
-  - area: 哲學博士（DPhil/Ph.D.） 資訊、傳播與社會科學
+  - area: 哲學博士（Ph.D.） 資訊、傳播與社會科學
     institution: 牛津大學
     date_start: 2007-10-01
     date_end: 2014-10-31
@@ -103,73 +103,74 @@ education:
     location: 加拿大溫哥華
 
 work:
-  - position: CEO, Data Scientist
-    company_name: Oxford Roadmapping
+  - position: 執行長、資料科學家
+    company_name: 牛津路線圖（澳恪森數智科技服務 Oxon8）
     company_url: https://oxon8.netlify.app
     company_logo: 'icons/brands/oxon8.svg'
     date_start: 2023-01-01
     date_end: ''
     summary: |2-
-      * Developed visualization apps and toolkits (e.g. NetBib, visCEADs, and visNetZero) for data-driven decisions in areas such as science research impact, industry economics and Net Zero. 
-      * Delivered three SCIE-indexed Q2 peer-reviewed articles for the research project *Roadmapping for Precision-Decarbonization* before its first expert-panel review.
-      * Submitted ITU technical input document on Green Supply Chain FinTech for Digital Agriculture (FG-AI4A-I-132).
-  - position: Director, Higher Education Impact Assessment Center
-    company_name: Nanfang College of Sun Yat-Sen University
+      * 開發多款視覺化應用與工具組（如 NetBib、visCEADs 和 visNetZero），協助在科學研究影響力、產業經濟學與淨零等領域進行資料驅動決策。
+      * 在 *精準減碳路線圖規劃* 研究專案中，於首次專家審查前完成三篇 SCIE 二區期刊論文。
+      * 提交關於綠色供應鏈金融科技與數位農業的 ITU 技術輸入文件（FG-AI4A-I-132）。
+  - position: 高校影響力研究中心主任
+    company_name: 中山大學南方學院（廣州南方學院）
     company_url: 'https://www.nfu.edu.cn/'
     company_logo: 'icons/brands/NFU.jpg'
     date_start: 2019-12-01
     date_end: 2023-01-01
     summary: |2-
-      * Developed an undergraduate program of Internet and New Media focusing on modern skills surrounding Product Managers, integrating conceptual knowledge of platform economy and user experience and practical skills from Github, Python, API to Artifical Intelligence (AI).  
-      * Supervised serveral students including three who qualified for early-than-usual graudations.
-      * Founded a university-level research center producing the highest number of indexed articles among peer institutions.
-      * Co-led ESG Data-Driven Decisions Lab with multiple interdisciplinary and UN academic reporting projects.
-      * Chaired WEDC 2019 conference on sustainable development innovation and ecosystems.
-  - position: Associate Professor, Vice-Dean of Internet and New Media
-    company_name: Nanfang College of Sun Yat-Sen University
+      * 開設以產品經理能力為導向的「互聯網與新媒體」大學部課程，結合理論與實務，包括平台經濟、使用者體驗、Github、Python、API 及人工智慧。
+      * 指導多位學生，其中三人提前畢業。
+      * 成立全校最高產出期刊文章的研究中心。
+      * 共同領導 ESG 資料驅動決策實驗室，參與多項跨領域與聯合國學術報告專案。
+      * 主持 2019 永續創新與生態系會議（WEDC）。
+  - position: 副教授、兼 互聯網與新媒體專業主任（及系副主任）
+    company_name: 中山大學南方學院
     company_url: 'https://www.nfu.edu.cn/'
     company_logo: 'icons/brands/NFU.jpg'
     date_start: 2017-01-01
     date_end: 2021-01-01
     summary: |2-
-      Developed a capstone course *API, machine learning and AI* recognized as “first-class” by Guangdong Department of Education.
-      Designed and implemented a curriculum of 18 core courses, mentored 7 teachers, and led education innovation projects, with multiple awards.
-  - position: Research Fellow
-    company_name: United Nations University Institute on Computing and Society
+      * 開發 *API、機器學習與人工智慧* 畢業專題課程，獲廣東省教育廳評選為「一流課程」。
+      * 設計並實施 18 門核心課程，指導 7 位教師並主導多項教育創新專案，屢獲獎項。
+  - position: 研究員
+    company_name: '聯合國大學—計算與社會研究所'
     company_url: 'https://unu.edu/'
     company_logo: 'icons/brands/unu-logo.svg'
     date_start: 2015-07-01
     date_end: 2016-11-30
-    summary: Conducted ICT4D-focused research projects across Asia.
-  - position: Yahoo! Fellow, Institute for the Study of Diplomacy
-    company_name: Georgetown University
+    summary: 負責資訊與通訊科技促進發展（ICT4D）在亞太地區的研究專案，涵蓋數位創新與永續發展等議題。
+  - position: 雅虎研究員, 外交研究所
+    company_name: 喬治城大學
     company_url: 'https://sfs.georgetown.edu/'
     company_logo: 'icons/brands/Georgetown_logo.webp'
     date_start: 2010-08-01
     date_end: 2011-07-31
-    summary: Led research on digital linguistic grouping; organized Chinese Internet Research Conference 2011.
-  - position: Doctoral Fellow, Institute of Sociology
-    company_name: Academia Sinica
+    summary: 主持數位語言群體研究；籌辦 2011 年中文網路研究年會。
+  - position: 博士級研究員（訪學）社会学研究所
+    company_name: 中央研究院
     company_url: 'https://www.sinica.edu.tw/en'
     company_logo: 'icons/brands/AcademiaSinica.webp'
     date_start: 2009-08-01
     date_end: 2010-06-30
-    summary: Conducted advanced research within the doctoral fellowship.
+    summary: 於博士研究期間執行進階社會學研究。
   - position: Political Warfare Officer (Compulsory Service)
-    company_name: Taiwan Military
+    company_name: 中華民國國軍
     company_url: ''
     company_logo: ''
     date_start: 2005-11-01
     date_end: 2006-12-31
-    summary: Completed mandatory service with assignments in information and communication operations.
-  - position: Project Manager, Open Source Software Foundry
-    company_name: Academia Sinica, Institute of Information Science
+    summary: 完成義務役服役。
+  - position: 專案經理，開放原始碼推廣計畫 OSSF
+    company_name: 中央研究院，資訊科學研究所
     company_url: 'https://www.sinica.edu.tw/en'
     company_logo: 'icons/brands/AcademiaSinica.webp'
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-
-      Delivered open platform projects and organized industrial/civic engagement around open source, open data, and open content.
+      推動開放平台專案，並組織產業與公民參與活動，涵蓋開源軟體、開放資料與開放內容。
+
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
