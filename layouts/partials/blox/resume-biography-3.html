@@ -120,11 +120,24 @@
 
   {{/* Row2 */}}
 <div class="resume-biography px-1 flex flex-row">
-  <div class="resume-biography px-3 grid grid-cols-2 md:grid-cols-3 justify-between m-3 text-white dark:text-white">
+  <div class="resume-biography px-3 grid grid-cols-2 md:grid-cols-3 justify-between m-3 text-white dark:text-white  ">
 
     {{ with $person.interests }}
     <div class="">
       <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
+      <ul class="list-disc list-inside space-y-1 pl-5">
+        {{ range . }}
+        <li>
+          {{ . | markdownify | emojify }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ with $person.skillsets }}
+    <div class="">
+      <div class="section-subheading mb-3">{{ i18n "skillsets" | markdownify }}</div>
       <ul class="list-disc list-inside space-y-1 pl-5">
         {{ range . }}
         <li>

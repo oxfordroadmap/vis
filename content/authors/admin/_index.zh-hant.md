@@ -55,6 +55,14 @@ interests:
   - 地緣政治
   - 永續發展
 
+# Skill Sets
+skillsets:
+  - [數據科學](#數據科學)
+  - [社會科學](#社會科學)
+  - [軟件開發](#軟件開發)
+  - [開放知識](#開放知識)
+  - [設計工作坊](#設計工作坊)
+
 education:
   - area: 哲學博士（DPhil/Ph.D.） 資訊、傳播與社會科學
     institution: 牛津大學

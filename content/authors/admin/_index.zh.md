@@ -55,8 +55,16 @@ interests:
   - 地缘政治
   - 可持续发展
 
+# Skill Sets
+skillsets:
+  - [数据科学](#数据科学)
+  - [社会科学](#社会科学)
+  - [软件开发](#软件开发)
+  - [开放知识](#开放知识)
+  - [设计工作坊](#设计工作坊)
+
 education:
-  - area: 哲学博士（DPhil/Ph.D.） 信息、传播与社会科学
+  - area: 哲学博士 信息、传播与社会科学
     institution: 牛津大学
     date_start: 2007-10-01
     date_end: 2014-10-31
@@ -72,7 +80,7 @@ education:
     date_end: 2004-06-30
     location: 台湾台北
     summary: 平均绩点 GPA 3.9
-  - area: 文学硕士 新闻学
+  - area: 社会科学硕士 新闻学
     institution: 国立台湾大学
     date_start: 2000-08-01
     date_end: 2004-06-30

@@ -55,6 +55,14 @@ interests:
   - Geo-politics
   - Sustainable Development
 
+# Skill Sets
+skillsets:
+- [Data Science](#DataScience)
+- [Social Science](#SocialScience)
+- [Software Development](#SoftwareDevelopment)
+- [Open Knowledge](#OpenKnowledge)
+- [Design Workshop](#DesignWorkshop)
+
 education:
   - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
     institution: University of Oxford
@@ -72,7 +80,7 @@ education:
     date_end: 2004-06-30
     location: Taipei, Taiwan
     summary: GPA 3.9
-  - area: M.A. Journalism
+  - area: M.S.S. Journalism
     institution: National Taiwan University
     date_start: 2000-08-01
     date_end: 2004-06-30
