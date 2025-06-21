@@ -1,11 +1,11 @@
 ---
 aliases: ["/zh/廖汉腾/"]
-title: 'Experience'
+title: '经历'
 date: 2025-01-25
 type: landing
 
 design:
-  spacing: '1rem'
+  spacing: '1.2rem'
 
 # Note: `username` refers to the user's folder name in `content/authors/`
 

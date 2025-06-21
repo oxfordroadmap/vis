@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 廖漢騰 廖汉腾
+title: 漢騰/汉腾 廖
 
 # Name pronunciation (optional)
 name_pronunciation: Han-Teng Liao
