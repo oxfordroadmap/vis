@@ -157,7 +157,12 @@
         <li class="flex items-start gap-3">
           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
           <div class="description">
-            <p class="course">{{ .institution }}{{ with .date_end }}, {{ index {{ split . "-" }} 0 }}{{ end }}</p>
+            <p class="course">{{ .institution }}
+                {{ with .date_end }},
+                {{ $d := split . "-" }} 
+                {{ index $d 0 }}
+                {{ end }}
+            </p>
             <p class="text-sm">{{ .area }}</p>
           </div>
         </li>
