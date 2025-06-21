@@ -86,7 +86,7 @@ education:
     date_end: 2004-06-30
     location: 台湾台北
     summary: 平均绩点 GPA 4.0
-  - area: 交換生——国际传播与文化研究
+  - area: 交換学生——国际传播与文化研究
     institution: 麦考瑞大学
     date_start: 2003-02-01
     date_end: 2003-12-31
@@ -96,7 +96,7 @@ education:
     date_start: 1994-08-01
     date_end: 2000-06-30
     location: 台湾台北
-  - area: 交換生——电机工程与英语
+  - area: 交換学生——电机工程与英语
     institution: 不列颠哥伦比亚大学
     date_start: 1998-09-01
     date_end: 1999-08-31
