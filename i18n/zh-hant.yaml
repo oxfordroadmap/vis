@@ -101,8 +101,14 @@
 - id: interests
   translation: 研究興趣
 
+- id: skillsets
+  translation: 能力架構
+
 - id: education
   translation: 教育經歷
+
+- id: skills
+  translation: 技能
 
 - id: user_profile_latest
   translation: 最新

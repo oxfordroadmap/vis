@@ -13,10 +13,10 @@
   translation: 回到顶部
 
 - id: home
-  translation: Home
+  translation: 主页
 
 - id: close
-  translation: Close
+  translation: 关闭
 
 - id: languages
   translation: 语言
@@ -101,8 +101,14 @@
 - id: interests
   translation: 科研兴趣
 
+- id: skillsets
+  translation: 能力架构
+
 - id: education
   translation: 教育经历
+
+- id: skills
+  translation: 技能
 
 - id: user_profile_latest
   translation: 最新
