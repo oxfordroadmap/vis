@@ -176,15 +176,16 @@ skillsets:
         icon: custom/CICD
       - name: Retrieval-Augmented Generation
         description: 'Vector, Column-aware, and Graph-based'
-        icon: devicon/rstudio
+        icon: custom/RAG
       - name: Python
         description: 'requests, pydantic, asyncio, and langchain'
-        icon: circle-stack
+        icon: devicon/python
       - name: API & Webhooks
         description: 'RESTful APIs and callbacks'
         icon: custom/webhook
       - name: Prompt Engineering & LLM Orchestration
         description: 'LangChain, LlamaIndex, MCP integration'
+        icon: custom/LangChain
   - name: Software Development
     description: 'support AI agent application development (cloud and web skills)'
     items:
