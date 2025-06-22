@@ -30,9 +30,10 @@
   {{ $color := .color | default "" }}
   {{ $color_border := .color_border | default "" }}
   <div class="w-full lg:w-1/2">
-    <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
-      {{ .name | markdownify | emojify }}
-      {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    {{ $oneskillset := .name | markdownify }}
+    <div {{with $oneskillset}}{{ (printf "id=\"%s\"" .) | safeHTMLAttr }}{{end}} class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
+      {{with $oneskillset}}{{ . }}{{end}}
+      {{ with .description }}<span>{{ . | markdownify | emojify }}</span>{{ end }}
     </div>
     {{ range .items }}
     {{ $pack := or .icon_pack "fas" }}
