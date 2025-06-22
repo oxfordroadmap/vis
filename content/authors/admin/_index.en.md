@@ -173,37 +173,48 @@ work:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
+# [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
+
+skillsets:
+  - name: AI Agent Development
+    description: 'An integrated socio-technical skill set that design and implement AI agent applications.'
+    items:
+      - name: Continuous Integration and Continuous Deployment
+        description: 'intent specification, API integrations or model improvements'
+        icon: devicon/python
+      - name: Retrieval-Augmented Generation
+        description: 'Vector, Column-aware, and Graph-based'
+        icon: devicon/rstudio
+      - name: Python
+        description: 'requests, pydantic, asyncio, and langchain'
+        icon: circle-stack
+      - name: API & Webhooks
+        description: 'RESTful APIs and callbacks'
+        icon: 
+      - name: Prompt Engineering & LLM Orchestration
+        description: 'LangChain, LlamaIndex, MCP integration'
+        icon: 
+  - name: Software Development
+    description: 'A modern cloud and web development skill set that enables AI agent development.'
     items:
       - name: Python
         description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
+        icon: devicon/python
+      - name: RStudio
         description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
+        icon: devicon/rstudio
+      - name: Git Version Control
+        description: 'Github'
         icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+      - name: Product Management
+        description: 'Product Requirements Documents, Agile, Scrum'
+        icon: 
+      - name: Container App
+        description: 'Product Requirements Documents, Agile, Scrum'
+        icon: 
+      - name: Web Building and Design
+        description: 'Hugo, multilingual (i18n/L10n) support, markdown, render hooks, shortcodes, front-end frameworks, asset management, image processing'
+        icon: 
 
 languages:
   - name: English
