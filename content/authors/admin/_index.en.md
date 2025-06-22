@@ -177,11 +177,11 @@ skillsets:
       - name: Retrieval-Augmented Generation
         description: 'Vector, Column-aware, and Graph-based'
         icon: custom/RAG
-      - name: Python
-        description: 'requests, pydantic, asyncio, and langchain'
+      - name: Python for Chatbots
+        description: 'requests, langchain, Gradio, Panel Chat Bot, and Open WebUI'
         icon: devicon/python
       - name: API & Webhooks
-        description: 'RESTful APIs and callbacks'
+        description: 'WebLLM, RESTful APIs and callbacks'
         icon: custom/webhook
       - name: Prompt Engineering & LLM Orchestration
         description: 'LangChain, LlamaIndex, MCP integration'
@@ -190,22 +190,52 @@ skillsets:
     description: 'support AI agent application development (cloud and web skills)'
     items:
       - name: Python
-        description: ''
+        description: 'pydantic, asyncio, and Pyodide, Panel, Pandoc, Flask'
         icon: devicon/python
-      - name: RStudio
-        description: ''
-        icon: devicon/rstudio
       - name: Git Version Control
-        description: 'Github'
-        icon: circle-stack
+        description: 'Github, Git, and Github Actions'
+        icon: devicon/githubactions
       - name: Product Management
         description: 'Product Requirements Documents, Agile, Scrum'
-      - name: Container App
-        description: 'Product Requirements Documents, Agile, Scrum'
+        icon: custom/scrum 
+      - name: Container Solutions
+        description: 'Podman, Kubernetes, Google Clouds, Hugging Face'
+        icon: devicon/googlecloud 
       - name: Web Building and Design
-        description: 'Hugo, multilingual (i18n/L10n) support, markdown, render hooks, shortcodes, front-end frameworks, asset management, image processing'
+        description: 'Hugo, multilingual (i18n/L10n) support, yaml, markdown, mermaid, markmap, render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
+        icon: devicon/devicon-hugo-plain 
   - name: Data Science
+    description: support final decisions in the discovery and delivery loop (analytical)
+    items:
+      - name: Science mapping
+        description: scientometrics, webometrics, bibliometrics, technology roadmapping,
+          and patent databases
+        icon: custom/prediction
+      - name: Digital methods
+        description: sentiment analysis, geo-linguistic analysis, geospatial analysis,
+          digital humanities and platform analysis
+        icon: hero/hand-thumb-up
+      - name: Python
+        description: Jupyter, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim
+        icon: devicon/pytorch
+      - name: RStudio
+        description: "R language and libraries: tidyverse, tidyr, dplyr, ggplot2,
+          bibliometrix"
+        icon: devicon/rstudio
   - name: Social Science
+    description: gain socio-technical understanding and insights from relevant
+      primary and secondary data
+    items:
+      - name: mixed methods
+        description: research design and writing using both quantitative and qualitative
+          methods
+        icon: custom/speech-bubble
+      - name: survey, interviews and panels
+        description: research materials from online and offline environments
+        icon: devicon/networkx
+      - name: market/industry research and policy analysis
+        description: cognitive and knowledge frameworks that make data insightful
+        icon: custom/industry-factory-emission
   - name: Open Knowledge
   - name: Design Workshop
 

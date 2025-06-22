@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- License: MIT. Made by Denali Design: https://github.com/denali-design/denali-icons -->
-<svg width="24px" height="24px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+<svg width="24px" height="24px" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <title>cicd-solid-text</title>
 <text x="32%" y="70%" fill="blue" dominant-baseline="middle" text-anchor="middle" font-size="8">CI</text>
 <text x="65%" y="36%" fill="red" dominant-baseline="middle" text-anchor="middle" font-size="8">CD</text>
