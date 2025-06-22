@@ -210,7 +210,7 @@ skillsets:
       - name: Science mapping
         description: scientometrics, webometrics, bibliometrics, technology roadmapping,
           and patent databases
-        icon: custom/prediction
+        icon: custom/science-mapping
       - name: Digital methods
         description: sentiment analysis, geo-linguistic analysis, geospatial analysis,
           digital humanities and platform analysis
