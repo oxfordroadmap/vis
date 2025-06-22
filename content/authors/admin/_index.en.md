@@ -173,7 +173,7 @@ skillsets:
     items:
       - name: Continuous Integration and Continuous Deployment
         description: 'intent specification, API integrations or model improvements'
-        icon: devicon/python
+        icon: custom/CICD
       - name: Retrieval-Augmented Generation
         description: 'Vector, Column-aware, and Graph-based'
         icon: devicon/rstudio
@@ -182,6 +182,7 @@ skillsets:
         icon: circle-stack
       - name: API & Webhooks
         description: 'RESTful APIs and callbacks'
+        icon: custom/webhook
       - name: Prompt Engineering & LLM Orchestration
         description: 'LangChain, LlamaIndex, MCP integration'
   - name: Software Development
