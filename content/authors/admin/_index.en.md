@@ -190,10 +190,8 @@ skillsets:
         icon: circle-stack
       - name: API & Webhooks
         description: 'RESTful APIs and callbacks'
-        icon: 
       - name: Prompt Engineering & LLM Orchestration
         description: 'LangChain, LlamaIndex, MCP integration'
-        icon: 
   - name: Software Development
     description: 'A modern cloud and web development skill set that enables AI agent development.'
     items:
@@ -208,13 +206,10 @@ skillsets:
         icon: circle-stack
       - name: Product Management
         description: 'Product Requirements Documents, Agile, Scrum'
-        icon: 
       - name: Container App
         description: 'Product Requirements Documents, Agile, Scrum'
-        icon: 
       - name: Web Building and Design
         description: 'Hugo, multilingual (i18n/L10n) support, markdown, render hooks, shortcodes, front-end frameworks, asset management, image processing'
-        icon: 
 
 languages:
   - name: English
