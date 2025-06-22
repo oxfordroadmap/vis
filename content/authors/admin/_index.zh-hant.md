@@ -147,7 +147,7 @@ work:
     date_start: 2009-08-01
     date_end: 2010-06-30
     summary: 於博士研究期間執行進階社會學研究。
-  - position: Political Warfare Officer (Compulsory Service)
+  - position: 政治作戰官 (義務役)
     company_name: 中華民國國軍
     company_url: ''
     company_logo: ''

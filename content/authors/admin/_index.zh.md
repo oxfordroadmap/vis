@@ -147,7 +147,7 @@ work:
     date_start: 2009-08-01
     date_end: 2010-06-30
     summary: 於博士研究期间执行进阶社会学研究。
-  - position: Political Warfare Officer (Compulsory Service)
+  - position: 政治作战官 (义务役)
     company_name: 中华民国国军
     company_url: ''
     company_logo: ''
