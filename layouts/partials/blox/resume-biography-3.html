@@ -142,7 +142,7 @@
       <ul class="text-sm list-disc list-outside space-y-1 pl-1">
         {{ range . }}
         <li>
-          {{ . | markdownify | emojify }}
+          {{ .name | markdownify | emojify }}
         </li>
         {{ end }}
       </ul>

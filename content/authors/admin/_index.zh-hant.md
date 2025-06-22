@@ -55,14 +55,6 @@ interests:
   - 地緣政治
   - 永續發展
 
-# Skill Sets
-skillsets:
-  - 數據科學
-  - 社會科學
-  - 軟件開發
-  - 開放知識
-  - 設計工作坊
-
 education:
   - area: 哲學博士（Ph.D.） 資訊、傳播與社會科學
     institution: 牛津大學
@@ -170,6 +162,50 @@ work:
     date_end: 2005-11-30
     summary: |2-
       推動開放平台專案，並組織產業與公民參與活動，涵蓋開源軟體、開放資料與開放內容。
+
+# Skills
+# Add your own SVG icons to `assets/media/icons/`
+# [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
+# Skill Sets
+skillsets:
+  - name: AI代理開發
+    description: 'An integrated socio-technical skill set that design and implement AI agent applications.'
+    items:
+      - name: Continuous Integration and Continuous Deployment
+        description: 'intent specification, API integrations or model improvements'
+        icon: devicon/python
+      - name: Retrieval-Augmented Generation
+        description: 'Vector, Column-aware, and Graph-based'
+        icon: devicon/rstudio
+      - name: Python
+        description: 'requests, pydantic, asyncio, and langchain'
+        icon: circle-stack
+      - name: API & Webhooks
+        description: 'RESTful APIs and callbacks'
+      - name: Prompt Engineering & LLM Orchestration
+        description: 'LangChain, LlamaIndex, MCP integration'
+  - name: 軟件開發
+    description: 'A modern cloud and web development skill set that enables AI agent development.'
+    items:
+      - name: Python
+        description: ''
+        icon: devicon/python
+      - name: RStudio
+        description: ''
+        icon: devicon/rstudio
+      - name: Git Version Control
+        description: 'Github'
+        icon: circle-stack
+      - name: Product Management
+        description: 'Product Requirements Documents, Agile, Scrum'
+      - name: Container App
+        description: 'Product Requirements Documents, Agile, Scrum'
+      - name: Web Building and Design
+        description: 'Hugo, multilingual (i18n/L10n) support, markdown, render hooks, shortcodes, front-end frameworks, asset management, image processing'
+  - name: 數據科學
+  - name: 社會科學
+  - name: 開放知識
+  - name: 設計工作坊
 
 languages:
   - name: English

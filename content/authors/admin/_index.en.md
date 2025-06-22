@@ -55,14 +55,6 @@ interests:
   - Geo-politics
   - Sustainable Development
 
-# Skill Sets
-skillsets:
-  - Data Science
-  - Social Science
-  - Software Development
-  - Open Knowledge
-  - Design Workshop
-
 education:
   - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
     institution: University of Oxford
@@ -174,7 +166,7 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
-
+# Skill Sets
 skillsets:
   - name: AI Agent Development
     description: 'An integrated socio-technical skill set that design and implement AI agent applications.'
@@ -210,6 +202,10 @@ skillsets:
         description: 'Product Requirements Documents, Agile, Scrum'
       - name: Web Building and Design
         description: 'Hugo, multilingual (i18n/L10n) support, markdown, render hooks, shortcodes, front-end frameworks, asset management, image processing'
+  - name: Data Science
+  - name: Social Science
+  - name: Open Knowledge
+  - name: Design Workshop
 
 languages:
   - name: English
