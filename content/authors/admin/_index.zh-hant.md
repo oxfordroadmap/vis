@@ -169,7 +169,7 @@ work:
 # Skill Sets
 skillsets:
   - name: AI代理開發
-    description: 'An integrated socio-technical skill set that design and implement AI agent applications.'
+    description: 'design and implement AI agent applications (socio-technical skills)'
     items:
       - name: Continuous Integration and Continuous Deployment
         description: 'intent specification, API integrations or model improvements'
@@ -185,7 +185,7 @@ skillsets:
       - name: Prompt Engineering & LLM Orchestration
         description: 'LangChain, LlamaIndex, MCP integration'
   - name: 軟件開發
-    description: 'A modern cloud and web development skill set that enables AI agent development.'
+    description: 'support AI agent application development (cloud and web skills)'
     items:
       - name: Python
         description: ''

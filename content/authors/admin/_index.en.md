@@ -185,7 +185,7 @@ skillsets:
       - name: Prompt Engineering & LLM Orchestration
         description: 'LangChain, LlamaIndex, MCP integration'
   - name: Software Development
-    description: 'A modern cloud and web development skill set that enables AI agent development.'
+    description: 'support AI agent application development (cloud and web skills)'
     items:
       - name: Python
         description: ''
