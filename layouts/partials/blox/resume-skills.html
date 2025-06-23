@@ -32,14 +32,16 @@
   {{ $color_border := .color_border | default "" }}
 
   {{/* One Skillset and Skills */}}
-  {{ $oneskillset := .name | markdownify }}
-  {{ with $oneskillset }}
   <div class="px-6 w-full" >
     <div class="flex flex-col md:flex-row">
       {{/* w-1/4 Grouped (cols/rows): One Skillset and Description */}}
-      <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="w-1/4 mb-5 text-xl font-bold text-gray-900 dark:text-white">
-        {{ . }}
-        {{ with .description }}<span class="text-xs text-nowrap">{{ . | markdownify | emojify }}</span>{{ end }}
+      {{ with .name }}
+        {{ $oneskillset_name := .name | markdownify }}
+          {{ with $oneskillset_name }}
+          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="w-1/4 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
+          {{ end }}{{/* with $oneskillset_name */}}
+      {{end}}
+      {{ with .description }}<span class="text-xs text-nowrap">{{ . | markdownify | emojify }}</span>{{ end }}
       </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
 
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
@@ -75,7 +77,6 @@
       </div><!-- w-3/4 skillset-content flex flex-col -->
     </div><!--   {{/* One Skillsets and Skills */}} -->
   </div>
-  {{ end }}{{/* with $oneskillset */}}
   {{ end }}{{/* range $skillsets */}}
 </div><!-- /div All Skillsets and Descriptions -->
 
