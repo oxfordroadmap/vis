@@ -38,7 +38,7 @@
         {{ with .name }}
         {{ $oneskillset_name := . | markdownify }}
         {{ with $oneskillset_name }}
-          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} style="width: 280px !important;" class="w-1/4 mr-5 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
+          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} style="min-width: 280px !important;" class="mr-5 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
         {{ end }}{{/* with $oneskillset_name */}}
         {{end}}        
         {{ with .description }}<span class="text-xs text-nowrap">{{ . | markdownify | emojify }}</span>{{ end }}
