@@ -168,24 +168,6 @@ work:
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
 # Skill Sets
 skillsets:
-  - name: AI Agent Development
-    description: 'An integrated socio-technical skill set that design and implement AI agent applications.'
-    items:
-      - name: Continuous Integration and Continuous Deployment
-        description: 'intent specification, API integrations or model improvements'
-        icon: custom/CICD
-      - name: Retrieval-Augmented Generation
-        description: 'Vector, Column-aware, and Graph-based'
-        icon: custom/RAG
-      - name: Python for Chatbots
-        description: 'requests, langchain, Gradio, Panel Chat Bot, and Open WebUI'
-        icon: devicon/python
-      - name: API & Webhooks
-        description: 'WebLLM, RESTful APIs and callbacks'
-        icon: custom/webhook
-      - name: Prompt Engineering & LLM Orchestration
-        description: 'LangChain, LlamaIndex, MCP integration'
-        icon: custom/MCP
   - name: Software Development
     description: 'support AI agent application development (cloud and web skills)'
     items:
@@ -236,6 +218,24 @@ skillsets:
       - name: market/industry research and policy analysis
         description: cognitive and knowledge frameworks that make data insightful
         icon: custom/industry-factory-emission
+  - name: AI Agent Development
+    description: 'An integrated socio-technical skill set that design and implement AI agent applications.'
+    items:
+      - name: Continuous Integration and Continuous Deployment
+        description: 'intent specification, API integrations or model improvements'
+        icon: custom/CICD
+      - name: Retrieval-Augmented Generation
+        description: 'Vector, Column-aware, and Graph-based'
+        icon: custom/RAG
+      - name: Python for Chatbots
+        description: 'requests, langchain, Gradio, Panel Chat Bot, and Open WebUI'
+        icon: devicon/python
+      - name: API & Webhooks
+        description: 'WebLLM, RESTful APIs and callbacks'
+        icon: custom/webhook
+      - name: Prompt Engineering & LLM Orchestration
+        description: 'LangChain, LlamaIndex, MCP integration'
+        icon: custom/MCP
   - name: Open Knowledge
   - name: Design Workshop
 
