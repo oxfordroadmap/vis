@@ -40,13 +40,13 @@
         {{ with $oneskillset_name }}
 
         {{/* id: anchoring for href */}}
-          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="mb-5 mr-3 w-full md:w-[12rem] text-xl font-bold text-gray-900 dark:text-white">{{ . }}
+          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="mb-5 mr-3 w-full md:w-[180px] text-xl font-bold text-gray-900 dark:text-white">{{ . }}
         {{ end }}{{/* with $oneskillset_name */}}
         {{end}}        
-        {{ with .description }}<div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-7 py-7">{{ . | markdownify | emojify }}</div>{{ end }}
+        {{ with .description }}<div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-8 py-7">{{ . | markdownify | emojify }}</div>{{ end }}
           </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
-      <div class="skillset-content mb-5 w-auto">
+      <div class="skillset-content mb-5 w-auto grow">
         <div class="flex flex-col">
           {{ range .items }}
           <div class="skills-content">
@@ -58,12 +58,12 @@
             {{ end }}
             
             {{ with .icon }}
-            <span class="skills-icon inline-block leading-4">
+            <span class="skills-icon inline-block leading-8">
               {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em;\"")  }}
             </span>
             {{ end }}
 
-            <span class="skills-name text-gray-700 dark:text-gray-300 leading-6">
+            <span class="skills-name text-gray-700 dark:text-gray-300 leading-8">
               {{ .name | markdownify | emojify }}
               {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
             </span>
