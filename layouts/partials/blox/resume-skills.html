@@ -41,7 +41,7 @@
           <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="w-full md:w-auto md:min-w-[25%] md:max-w-[240px] mr-3 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
         {{ end }}{{/* with $oneskillset_name */}}
         {{end}}        
-        {{ with .description }}<div class="text-xs text-nowrap text-gray-600 dark:text-gray-200">{{ . | markdownify | emojify }}</div>{{ end }}
+        {{ with .description }}<div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-7 py-7">{{ . | markdownify | emojify }}</div>{{ end }}
           </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
       <div style="width: auto !important;" class="w-full md:w-auto skillset-content">
