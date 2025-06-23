@@ -36,7 +36,7 @@
     <div class="flex flex-col md:flex-row">
       {{/* w-1/4 Grouped (cols/rows): One Skillset and Description */}}
       {{ with .name }}
-        {{ $oneskillset_name := .name | markdownify }}
+        {{ $oneskillset_name := . | markdownify }}
           {{ with $oneskillset_name }}
           <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="w-1/4 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
           {{ end }}{{/* with $oneskillset_name */}}
