@@ -168,8 +168,26 @@ work:
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
 # Skill Sets
 skillsets:
-  - name: Software Development
-    description: 'support AI agent application development (cloud and web skills)'
+  - name: Building AI Agents
+    description: 'Harnessing socio-technical expertise to design, develop, and deploy intelligent systems'
+    items:
+      - name: Continuous Integration and Continuous Deployment
+        description: 'intent specification, API integrations or model improvements'
+        icon: custom/CICD
+      - name: Retrieval-Augmented Generation
+        description: 'Vector, Column-aware, and Graph-based'
+        icon: custom/RAG
+      - name: Python for Chatbots
+        description: 'requests, langchain, Gradio, Panel Chat Bot, and Open WebUI'
+        icon: devicon/python
+      - name: API & Webhooks
+        description: 'WebLLM, RESTful APIs and callbacks'
+        icon: custom/webhook
+      - name: Prompt Engineering & LLM Orchestration
+        description: 'LangChain, LlamaIndex, MCP integration'
+        icon: custom/MCP
+  - name: Managing Software Development
+    description: 'executing and owning AI agent solutions with full-stack expertise in cloud and web environments'
     items:
       - name: Python
         description: 'pydantic, asyncio, and Pyodide, Panel, Pandoc, Flask'
@@ -186,8 +204,46 @@ skillsets:
       - name: Web Building and Design
         description: 'Hugo, multilingual (i18n/L10n) support, yaml, markdown, mermaid, markmap, render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
         icon: devicon/devicon-hugo-plain 
-  - name: Data Science
-    description: support final decisions in the discovery and delivery loop (analytical)
+  - name: Open Knowledge
+    description: filtering and disseminating scientific knowledge for sustainable development challenges
+    items:
+      - name: Open Science
+        description: translating scientometric, webometric, bibliometric, and technology roadmapping data for insights
+        icon: custom/science-mapping
+      - name: Open Data
+        description: translating scientometric, webometric, bibliometric, and technology roadmapping insights for insights
+        icon: custom/science-mapping
+      - name: Open Content
+        description: translating scientometric, webometric, bibliometric, and technology roadmapping insights for insights
+        icon: custom/science-mapping
+  - name: Applying Open Knowledge Tools
+    description: Equipping individuals to use patent databases, scientometric and bibliometric tools
+    items:
+      - name: The Lens
+        icon: custom/science-mapping
+      - name: Dimensions AI
+        icon: custom/science-mapping
+      - name: Bibliometrix
+        icon: custom/science-mapping
+      - name: VoSViewer
+        icon: custom/science-mapping
+      - name: SciMAT
+        icon: custom/science-mapping
+  - name: Organizaing Design Workshop
+    description: Facilitating collaborative design sessions to articulate and align value-driven strategies and propositions
+    items:
+      - name: The Lens
+        icon: custom/science-mapping
+      - name: Dimensions AI
+        icon: custom/science-mapping
+      - name: Bibliometrix
+        icon: custom/science-mapping
+      - name: VoSViewer
+        icon: custom/science-mapping
+      - name: SciMAT
+        icon: custom/science-mapping
+  - name: Delivering Data Science
+    description: enabling final decisions in agile discovery-delivery loops with data-driven analysis
     items:
       - name: Science mapping
         description: scientometrics, webometrics, bibliometrics, technology roadmapping,
@@ -218,26 +274,6 @@ skillsets:
       - name: market/industry research and policy analysis
         description: cognitive and knowledge frameworks that make data insightful
         icon: custom/industry-factory-emission
-  - name: AI Agent Development
-    description: 'An integrated socio-technical skill set that design and implement AI agent applications.'
-    items:
-      - name: Continuous Integration and Continuous Deployment
-        description: 'intent specification, API integrations or model improvements'
-        icon: custom/CICD
-      - name: Retrieval-Augmented Generation
-        description: 'Vector, Column-aware, and Graph-based'
-        icon: custom/RAG
-      - name: Python for Chatbots
-        description: 'requests, langchain, Gradio, Panel Chat Bot, and Open WebUI'
-        icon: devicon/python
-      - name: API & Webhooks
-        description: 'WebLLM, RESTful APIs and callbacks'
-        icon: custom/webhook
-      - name: Prompt Engineering & LLM Orchestration
-        description: 'LangChain, LlamaIndex, MCP integration'
-        icon: custom/MCP
-  - name: Open Knowledge
-  - name: Design Workshop
 
 languages:
   - name: English
