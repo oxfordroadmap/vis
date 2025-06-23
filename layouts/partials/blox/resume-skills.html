@@ -12,7 +12,7 @@
 
 {{ if not $person_page }}
 {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your Skill block and create an associated author page if one does not already exist. See https://docs.hugoblox.com/page-builder/#about " $person_page_path }}
-{{end}}
+{{ end }}
 
 {{ $skillsets := $person_page.Params.skillsets }}
 {{ $show_show_skill_percentage := $block.design.show_skill_percentage | default true }}
@@ -66,14 +66,15 @@
             </span>
               {{ if .percent | and $show_show_skill_percentage }}
               <div class="skills-wrapper" {{with $color_border}}{{ (printf "style=\"border-color: %s\"" .) | safeHTMLAttr }}{{end}}>
-                <div class="skills-percent" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}">
+                <div class="skills-percent" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}">
                 </div></div>
-              {{end}}
+           {{ end }}{{/*  range .items  */}}
           </div>    
         </div><!-- class="skills-content" -->
       </div><!-- w-3/4 skillset-content flex flex-col -->
     </div><!--   {{/* One Skillsets and Skills */}} -->
   </div>
-  {{ end }}{{/* One Skillset and Skills */}}
+  {{ end }}{{/* with $oneskillset */}}
+  {{ end }}{{/* range $skillsets */}}
 </div><!-- /div All Skillsets and Descriptions -->
 
