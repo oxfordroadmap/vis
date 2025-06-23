@@ -145,7 +145,7 @@
             {{ with .name }}
             {{ $oneskillset_name := . | markdownify }}
             {{ with $oneskillset_name }}
-              {{ (printf "[%1s](#%1s)" . .) | markdownify }} 
+              {{ (printf "<a href=\"#%1s\">%1s</a>" . .) | markdownify }} 
             {{ end }}{{/* with $oneskillset_name */}}
             {{end}}        
         </li>
