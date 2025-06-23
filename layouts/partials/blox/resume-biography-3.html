@@ -142,7 +142,12 @@
       <ul class="text-sm list-disc list-outside space-y-1 pl-1">
         {{ range . }}
         <li>
-          {{ .name | markdownify | emojify }}
+            {{ with .name }}
+            {{ $oneskillset_name := . | markdownify }}
+            {{ with $oneskillset_name }}
+              {{ (printf "[%1s](#%1s])" . .) | markdownify }} 
+            {{ end }}{{/* with $oneskillset_name */}}
+            {{end}}        
         </li>
         {{ end }}
       </ul>
