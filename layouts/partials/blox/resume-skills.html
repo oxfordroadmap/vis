@@ -35,15 +35,14 @@
   <div class="px-6 w-full" >
     <div class="flex flex-col md:flex-row">
       {{/* w-1/4 Grouped (cols/rows): One Skillset and Description */}}
-      {{ with .name }}
+        {{ with .name }}
         {{ $oneskillset_name := . | markdownify }}
-          {{ with $oneskillset_name }}
+        {{ with $oneskillset_name }}
           <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="w-1/4 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
-          {{ end }}{{/* with $oneskillset_name */}}
-      {{end}}
-      {{ with .description }}<span class="text-xs text-nowrap">{{ . | markdownify | emojify }}</span>{{ end }}
-      </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
-
+        {{ end }}{{/* with $oneskillset_name */}}
+        {{end}}        
+        {{ with .description }}<span class="text-xs text-nowrap">{{ . | markdownify | emojify }}</span>{{ end }}
+          </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
       <div class="w-3/4 skillset-content">
         <div class="flex flex-col">
@@ -72,8 +71,8 @@
                 </div></div>
               {{end}}
            {{ end }}{{/*  range .items  */}}
-          </div>    
-        </div><!-- class="skills-content" -->
+          </div><!-- class="skills-content" -->
+        </div>
       </div><!-- w-3/4 skillset-content flex flex-col -->
     </div><!--   {{/* One Skillsets and Skills */}} -->
   </div>
