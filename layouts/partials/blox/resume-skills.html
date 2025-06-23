@@ -70,8 +70,8 @@
                 <div class="skills-percent" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}">
                 </div></div>
               {{end}}
-           {{ end }}{{/*  range .items  */}}
           </div><!-- class="skills-content" -->
+           {{ end }}{{/*  range .items  */}}
         </div>
       </div><!-- w-3/4 skillset-content flex flex-col -->
     </div><!--   {{/* One Skillsets and Skills */}} -->
