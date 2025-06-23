@@ -38,10 +38,10 @@
         {{ with .name }}
         {{ $oneskillset_name := . | markdownify }}
         {{ with $oneskillset_name }}
-          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} style="max-width: 240px !important;" class="flex-none mr-5 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
+          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="w-full md:w-auto md:min-w-[25%] md:max-w-[240px] mr-3 mb-5 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
         {{ end }}{{/* with $oneskillset_name */}}
         {{end}}        
-        {{ with .description }}<span class="text-xs text-nowrap text-gray-600 dark:text-gray-200">{{ . | markdownify | emojify }}</span>{{ end }}
+        {{ with .description }}<div class="text-xs text-nowrap text-gray-600 dark:text-gray-200">{{ . | markdownify | emojify }}</div>{{ end }}
           </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
       <div style="width: auto !important;" class="w-full md:w-auto skillset-content">
@@ -56,12 +56,12 @@
             {{ end }}
             
             {{ with .icon }}
-            <span class="skills-icon inline-block">
+            <span class="skills-icon inline-block leading-4">
               {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em;\"")  }}
             </span>
             {{ end }}
 
-            <span class="skills-name text-gray-700 dark:text-gray-300">
+            <span class="skills-name text-gray-700 dark:text-gray-300 leading-6">
               {{ .name | markdownify | emojify }}
               {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
             </span>
@@ -75,6 +75,7 @@
         </div>
       </div><!-- w-3/4 skillset-content flex flex-col -->
     </div><!--   {{/* One Skillsets and Skills */}} -->
+    <hr style="border-top: 3px dashed gray;" />
   </div>
   {{ end }}{{/* range $skillsets */}}
 </div><!-- /div All Skillsets and Descriptions -->
