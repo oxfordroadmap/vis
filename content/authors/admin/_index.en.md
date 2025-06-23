@@ -185,7 +185,7 @@ skillsets:
         icon: custom/webhook
       - name: Prompt Engineering & LLM Orchestration
         description: 'LangChain, LlamaIndex, MCP integration'
-        icon: custom/LangChain
+        icon: custom/MCP
   - name: Software Development
     description: 'support AI agent application development (cloud and web skills)'
     items:
