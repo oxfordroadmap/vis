@@ -33,20 +33,20 @@
 
   {{/* One Skillset and Skills */}}
   <div class="px-6 w-full" >
-    <div class="flex flex-col md:flex-row">
+    <div class="grid grid-cols-3 md:grid-cols-1">
       {{/* w-1/4 Grouped (cols/rows): One Skillset-Description */}}
         {{ with .name }}
         {{ $oneskillset_name := . | markdownify }}
         {{ with $oneskillset_name }}
 
         {{/* id: anchoring for href */}}
-          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="mb-5 mr-3 md:w-[180px] shrink text-xl font-bold text-gray-900 dark:text-white">{{ . }}
+          <div {{ (printf "id=\"%s\"" .) | safeHTMLAttr }} class="mb-5 mr-3 text-xl font-bold text-gray-900 dark:text-white">{{ . }}
         {{ end }}{{/* with $oneskillset_name */}}
         {{end}}        
         {{ with .description }}<div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-8 py-7">{{ . | markdownify | emojify }}</div>{{ end }}
           </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
-      <div class="skillset-content mb-5 w-full grow">
+      <div class="skillset-content mb-5 col-span-2">
         <div class="flex flex-col">
           {{ range .items }}
           <div class="skills-content">
