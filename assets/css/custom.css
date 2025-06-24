@@ -77,7 +77,7 @@ li.nav-item.dropdown {
 }
 
 .folded-corner {
-  color: var(currentColor);
+  color: currentColor;
   --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
   --color-perc-40 : hsla(from currentColor h s l / 0.4);
   --color-perc-10 : hsla(from currentColor h s l / 0.1);
@@ -87,7 +87,7 @@ li.nav-item.dropdown {
 }
 
 .folded-corner::before {
-  color: var(currentColor);
+  color: currentColor;
   --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
   --color-perc-10 : hsla(from currentColor h s l / 0.1);
   content: " ";
