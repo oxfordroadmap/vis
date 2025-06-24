@@ -263,13 +263,12 @@ skillsets:
         description: '**Decode** sociotechnical dynamics through methods such as sentiment analysis, geo-linguistic analysis, geospatial analysis, digital humanities and platform analysis'
         icon: hero/hand-thumb-up
       - name: Python
-        description: Jupyter, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim
         icon: devicon/pytorch
       - name: RStudio
         description: "R language and libraries: tidyverse, tidyr, dplyr, ggplot2,
           bibliometrix"
         icon: devicon/rstudio
-        description: '**Operationalize** insight-generation processes using Python and R libraries, by transforming data streams into strategic assets through iterations'
+        description: '**Operationalize** insight-generation processes using Python and R libraries (including Jupyter Lab, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim, etc.), by transforming data streams into strategic assets through iterations'
   - name: Synthesizing Social Science
     description: Extracting socio-technical insight from primary and secondary data to inform innovation, governance, and strategic foresight 
     items:
