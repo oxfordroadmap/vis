@@ -159,7 +159,8 @@
       <div class="section-subheading mb-3">{{ i18n "education" | markdownify }}</div>
       <ul class="text-sm">
         {{ range . }}
-        <li class="flex items-start gap-3">
+        {{ if .degree }}
+        <li class="flex items-start gap-1">
           {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
           <div class="description">
             <p class="course">{{ .institution }}{{ with .date_end }},
@@ -170,7 +171,8 @@
             <p class="text-xs">{{ .area }}</p>
           </div>
         </li>
-        {{ end }}
+        {{ end }}<!-- if .degree  -->
+        {{ end }}<!-- range -->
       </ul>
     </div>
     {{ end }}
