@@ -23,7 +23,7 @@ li.nav-item.dropdown {
 }
 
 .skills-name {
-  text-transform: capitalize;
+  box-shadow: 0.1rem 0.1rem gray;
 }
 
 .folded_corner{
