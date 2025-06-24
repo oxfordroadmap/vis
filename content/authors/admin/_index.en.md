@@ -231,8 +231,8 @@ skillsets:
         icon: custom/bibliometrix
       - name: VoSViewer
         icon: custom/VOSViewer
-      - name: SciMAT
-        icon: custom/science-mapping
+      - name: Publish or Perish
+        icon: custom/academy
   - name: Organizaing Design Workshop
     description: Facilitating collaborative design sessions to articulate and align value-driven strategies and propositions
     items:
