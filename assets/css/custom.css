@@ -22,8 +22,11 @@ li.nav-item.dropdown {
     margin: 1rem;
 }
 
+.section-sub:not(:last-child) {
+    border-top: 2px dotted rgba(127, 127, 127, 0.5) ;
+}
+
 .skills-name {
-  box-shadow: .1rem .1rem rgba(127, 127, 127, 0.2);
   font-size: 0.84rem;
   margin-bottom: 6px;
   text-transform: none;
@@ -34,6 +37,7 @@ li.nav-item.dropdown {
   font-size: 0.72rem;
   margin-bottom: 6px;
   text-transform: none;
+  box-shadow: .1rem .1rem rgba(127, 127, 127, 0.2) ;
 }
 
 .folded_corner{
