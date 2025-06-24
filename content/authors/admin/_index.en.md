@@ -207,7 +207,7 @@ skillsets:
         icon: devicon/googlecloud 
       - name: Web Building and Design
         description: 'Hugo, multilingual (i18n/L10n) support, yaml, markdown, mermaid, markmap, render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
-        icon: devicon/devicon-hugo-plain 
+        icon: devicon/hugo 
   - name: Utilizing Open Knowledge
     description: filtering and disseminating scientific knowledge for sustainable development challenges
     items:

@@ -24,13 +24,26 @@
       {{ $icon = .Content }}
     {{else}}
       {{ warnf "The icon `%s.svg` was not found in your `assets/media/icons/%s/` folder" $name $pack }}
-      {{ $icon = index (index site.Data.icons.brands "icons") "hugo" }}
     {{ end }}
   {{ end }}
 {{ end }}
 
-{{ if .attributes }}
-  {{ $icon = replaceRE "<svg" (printf "<svg %s" .attributes) $icon }}
-{{ end }}
+{{/* Check if we have an SVG icon from built-in packs or user assets */}}
+{{ if $icon }}
+  {{ if .attributes }}
+    {{ $icon = replaceRE "<svg" (printf "<svg %s" .attributes) $icon }}
+  {{ end }}
 
+{{/* Fallback to PNG */}}
+{{ else if $png := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.png" $name)) }}
+  {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $png.RelPermalink $name (.attributes | default "") }}
+
+{{/* Fallback to ICO */}}
+{{ else if $ico := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.ico" $name)) }}
+  {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $ico.RelPermalink $name (.attributes | default "") }}
+
+{{/* Final fallback */}}
+{{ else }}
+  {{ $icon = index (index site.Data.icons.brands "icons") "oxon8" }}
+{{ end }}
 {{- return ($icon | safeHTML) -}}
