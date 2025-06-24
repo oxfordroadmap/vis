@@ -173,38 +173,38 @@ work:
 # Skill Sets
 skillsets:
   - name: Building AI Agents
-    description: 'Harnessing socio-technical expertise to design, develop, and deploy intelligent systems'
+    description: 'Designing and deploying intelligent systems that align with socio-technical goals'
     items:
-      - name: Continuous Integration and Continuous Deployment
-        description: 'intent specification, API integrations, and model improvements'
+      - name: 'CI/CD and API'
+        description: '**Implement** Continuous Integration and Continuous Deployment (CI/CD) by specifying intent, APIs integration goals, and model improvements'
         icon: custom/CICD
-      - name: Retrieval-Augmented Generation
-        description: 'Vector, Column-aware, and Graph-based'
+      - name: 'RAG methods'
+        description: '**Develop** Retrieval-Augmented Generation (RAG) pipelines using vector, column-aware, and graph-based methods'
         icon: custom/RAG
-      - name: Python for Chatbots
-        description: 'requests, langchain, Gradio, Panel Chat Bot, and Open WebUI'
-        icon: devicon/python
-      - name: API & Webhooks
-        description: 'WebLLM, RESTful APIs and callbacks'
+      - name: 'API & Webhooks'
+        description: '**Integrate** APIs and webhooks using RESTful endpoints and callback handlers, including the use of WebLLM'
         icon: custom/webhook
-      - name: Prompt Engineering & LLM Orchestration
-        description: 'LangChain, LlamaIndex, MCP integration'
+      - name: 'Chatbot UI'
+        description: '**Prototype** responsive chatbots and interactive visualizations using Python libraries (requests, Panel Chat Bot, Gradio, Pyodide, etc.) and Open WebUI'
+        icon: custom/openwebui
+      - name: LLM Orchestration
+        description: '**Orchestrate** LLM workflows with LangChain, LlamaIndex, and MCP integrations'
         icon: custom/MCP
   - name: Managing Software Development
-    description: 'executing and owning AI agent solutions with full-stack expertise in cloud and web environments'
+    description: 'Delivering full-stack AI agent solutions across cloud and web environments'
     items:
-      - name: Python
-        description: 'pydantic, asyncio, and Pyodide, Panel, Pandoc, Flask'
-        icon: devicon/python
       - name: Git Version Control
-        description: 'Github, Git, and Github Actions'
+        description: '**Maintain** version control workflows using Git, GitHub, and GitHub Actions'
         icon: devicon/githubactions
       - name: Product Management
-        description: 'Product Requirements Documents, Agile, Scrum'
+        description: '**Define** Product Requirements Documents (PRD) with Agile and Scrum methodology'
         icon: custom/scrum 
+      - name: Python
+        description: '**Utilize** libraries such as param, pydantic, asyncio, Panel, Pandoc, and Flask'
+        icon: devicon/python'
       - name: Container Solutions
-        description: 'Podman, Kubernetes, Google Clouds, Hugging Face'
-        icon: devicon/googlecloud 
+        description: '**Deploy** containerized services using Podman, Kubernetes, HuggingFace and Google Cloud'
+        icon: custom/huggingface-color 
       - name: Web Building and Design
         description: 'Hugo, multilingual (i18n/L10n) support, yaml, markdown, mermaid, markmap, render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
         icon: devicon/hugo 
@@ -216,7 +216,7 @@ skillsets:
         icon: custom/OSI
       - name: Open Data
         description: "empowering progress through actionable, accessible data for infromed, sustainable, and fairer future"
-        icon: custom/wikidatawiki.svg
+        icon: custom/wikidatawiki
       - name: Open Content
         description: "curating and amplifying knowledge to address global development and sustainability challenges"
         icon: custom/Wikimedia
@@ -242,7 +242,7 @@ skillsets:
   - name: Organizaing Design Workshop
     description: Facilitating collaborative design sessions to articulate and align value-driven strategies and propositions
     items:
-      - name: The Lens
+      - name: Strategic Technology Roadmapping
         icon: custom/internet-world
       - name: Design Thinking and Systems Inoovations
         icon: custom/canvas_TBL
