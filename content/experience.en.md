@@ -46,6 +46,7 @@ sections:
       username: admin
     design:
       show_skill_percentage: false
+      css_class: hbb-section
   - block: resume-awards
     content:
       title: Awards
