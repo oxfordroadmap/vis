@@ -228,7 +228,7 @@ skillsets:
       - name: Dimensions AI
         icon: custom/dimensions.ai
       - name: Bibliometrix
-        icon: custom/science-mapping
+        icon: custom/bibliometrix.png
       - name: VoSViewer
         icon: custom/science-mapping
       - name: SciMAT
