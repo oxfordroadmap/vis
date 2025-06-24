@@ -20,11 +20,10 @@
 }
 
 .skills-name {
+  font-size: 0.84rem;
   margin-bottom: 6px;
+  text-transform: none;
   /* color: #888; */ /* Inaccessible */
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 /* .dark .skills-name { */
@@ -32,8 +31,8 @@
 /* } */
 
 .skills-description {
+  font-size: 0.72rem;
   margin-bottom: 6px;
-  font-size: 0.7rem;
   text-transform: none;
 }
 
