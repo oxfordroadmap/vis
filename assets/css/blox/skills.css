@@ -20,7 +20,7 @@
 }
 
 .skills-name {
-  box-shadow: .1rem .1rem rgba(127, 127, 127, 0.2)
+  box-shadow: .1rem .1rem rgba(127, 127, 127, 0.2);
   font-size: 0.84rem;
   margin-bottom: 6px;
   text-transform: none;
