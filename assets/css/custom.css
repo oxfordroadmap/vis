@@ -23,7 +23,7 @@ li.nav-item.dropdown {
 }
 
 .section-sub:not(:last-child) {
-    border-top: 2px dotted rgba(127, 127, 127, 0.5) ;
+    border-bottom: 2px dotted rgba(127, 127, 127, 0.5) ;
 }
 
 .skills-name {
