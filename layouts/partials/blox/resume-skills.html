@@ -34,7 +34,7 @@
   {{ with .description }}{{ $oneskillset_desc := . | markdownify | emojify }}{{ end }}
 
   {{/* One Skillset and Skills */}}
-  {{ with $oneskillset_name }}
+  
   {{/* id: anchoring for href */}}
 
   <div {{ (printf "id=\"%s\"" $oneskillset_name) | safeHTMLAttr }} class="section-sub px-6 w-full" >
