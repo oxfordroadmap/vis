@@ -208,7 +208,7 @@ skillsets:
       - name: Web Building and Design
         description: 'Hugo, multilingual (i18n/L10n) support, yaml, markdown, mermaid, markmap, render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
         icon: devicon/devicon-hugo-plain 
-  - name: Open Knowledge
+  - name: Utilizing Open Knowledge
     description: filtering and disseminating scientific knowledge for sustainable development challenges
     items:
       - name: Open Science
@@ -221,10 +221,10 @@ skillsets:
         description: translating scientometric, webometric, bibliometric, and technology roadmapping insights for insights
         icon: custom/science-mapping
   - name: Applying Open Knowledge Tools
-    description: Equipping individuals to use patent databases, scientometric and bibliometric tools
+    description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation
     items:
       - name: The Lens
-        icon: custom/science-mapping
+        icon: brands/lens.org
       - name: Dimensions AI
         icon: custom/science-mapping
       - name: Bibliometrix
@@ -264,21 +264,18 @@ skillsets:
         description: "R language and libraries: tidyverse, tidyr, dplyr, ggplot2,
           bibliometrix"
         icon: devicon/rstudio
-  - name: Social Science
-    description: gain socio-technical understanding and insights from relevant
-      primary and secondary data
+  - name: Synthesizing Social Science
+    description: gaining socio-technical understanding from  primary and secondary data
     items:
-      - name: mixed methods
-        description: research design and writing using both quantitative and qualitative
-          methods
-        icon: custom/speech-bubble
-      - name: survey, interviews and panels
-        description: research materials from online and offline environments
+      - name: 'Mixed-methods inquiry'
+        description: integrating qualitative and quantitative techniques to reveal complex patterns in human and technical systems
         icon: devicon/networkx
-      - name: market/industry research and policy analysis
-        description: cognitive and knowledge frameworks that make data insightful
+      - name: 'Evidence-based decision support'
+        description:  Synthesizing socio-technical findings (including market and policy reports) to inform strategic planning, innovation, and value alignment, with awareness of cognitive and knowledge frameworks.
         icon: custom/industry-factory-emission
-
+      - name: 'Contextual data interpretation'
+        description: Analyzing behavioral, policy, and cultural data within geopolitical and industrial landscapes, drawing on materials from online and offline environments. 
+        icon: custom/speech-bubble
 languages:
   - name: English
     percent: 100
