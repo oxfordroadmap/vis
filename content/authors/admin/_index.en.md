@@ -224,9 +224,9 @@ skillsets:
     description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation
     items:
       - name: The Lens
-        icon: brands/lens.org
+        icon: custom/lens_org
       - name: Dimensions AI
-        icon: brands/dimensions.ai
+        icon: custom/dimensions.ai
       - name: Bibliometrix
         icon: custom/science-mapping
       - name: VoSViewer
