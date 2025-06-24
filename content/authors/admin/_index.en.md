@@ -172,7 +172,7 @@ skillsets:
     description: 'Harnessing socio-technical expertise to design, develop, and deploy intelligent systems'
     items:
       - name: Continuous Integration and Continuous Deployment
-        description: 'intent specification, API integrations or model improvements'
+        description: 'intent specification, API integrations, and model improvements'
         icon: custom/CICD
       - name: Retrieval-Augmented Generation
         description: 'Vector, Column-aware, and Graph-based'

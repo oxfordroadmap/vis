@@ -69,7 +69,7 @@
             </span>
             {{ end }}
 
-            <span class="skills-name text-xl font-semibold text-gray-700 dark:text-gray-300 leading-8">
+            <span class="skills-name text-xl font-semibold tracking-tight capitalize text-gray-700 dark:text-gray-300 leading-8">
               {{ .name | markdownify | emojify }}
               {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
             </span>
