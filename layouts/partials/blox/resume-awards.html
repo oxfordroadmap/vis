@@ -25,10 +25,10 @@
 <div class="w-full flex flex-col gap-6">
 {{ if $awards }}
 {{ range $idx, $key := sort $awards ".date_start" "desc" }}
-<div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-full p-6 border border-gray-500 folded-corner bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
   {{- $icon := .icon }}
   {{ with $icon }}
-  <div class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3">
+  <div class="w-7 h-7 text-gray-700 dark:text-gray-300 mb-3">
     {{ partial "functions/get_icon" (dict "name" $icon "pack" "brands" "attributes" "style=\"height: 100%;\"")  }}
   </div>
   {{ end}}

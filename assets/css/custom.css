@@ -68,9 +68,9 @@ li.nav-item.dropdown {
   --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
   --color-perc-40 : hsla(from currentColor h s l / 0.4);
   --color-perc-10 : hsla(from currentColor h s l / 0.1);
-  background: linear-gradient(to left bottom, transparent 50%, var(--color-perc-40) 0) no-repeat 100% 0 / 2em 2em, linear-gradient(-135deg, transparent 1.5em, var(--inverted-color) 0);
-  -webkit-filter: drop-shadow(0.2em 0.3em var(--color-perc-10));
-  filter: drop-shadow(0.2em 0.3em var(--color-perc-10));
+  background: linear-gradient(to left bottom, transparent 50%, var(--color-perc-40) 0) no-repeat 100% 0 / 3em 2em, linear-gradient(-146.3deg, transparent 1.5em, var(--inverted-color) 0);
+  -webkit-filter: drop-shadow(.2em .3em rgba(128, 128, 128, 0.5));
+  filter: drop-shadow(.2em .3em rgba(128, 128, 128, 0.5));
 }
 
 .folded-corner::before {
