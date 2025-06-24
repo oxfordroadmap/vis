@@ -1,3 +1,16 @@
+/*
+
+### Future adaption
+# CodePen Home
+CSS3 Box Shadows Effects
+# https://codepen.io/haibnu/pen/DrVweV
+
+
+    box-shadow: 5px 9px 9px rgb(107 114 128 / var(--tw-text-opacity, 1));
+
+
+*/
+
 li.nav-item {
     font-size: 0.75rem;
     /* font-size: var(--text-xsm); */
@@ -23,7 +36,7 @@ li.nav-item.dropdown {
 }
 
 .section-sub:not(:last-child) {
-    border-bottom: 2px dotted rgba(127, 127, 127, 0.5) ;
+    border-bottom: 2px dotted linear-gradient(to right, rgba(127, 127, 127, 0), rgba(127, 127, 127, 0.5)) ;
 }
 
 .skills-name {
@@ -37,7 +50,6 @@ li.nav-item.dropdown {
   font-size: 0.72rem;
   margin-bottom: 6px;
   text-transform: none;
-  box-shadow: .1rem .1rem rgba(127, 127, 127, 0.2) ;
 }
 
 .folded_corner{
