@@ -226,9 +226,9 @@ skillsets:
       - name: The Lens
         icon: custom/lens_org
       - name: Dimensions AI
-        icon: custom/dimensions.ai
+        icon: custom/dimensions_ai
       - name: Bibliometrix
-        icon: custom/bibliometrix.png
+        icon: custom/bibliometrix
       - name: VoSViewer
         icon: custom/science-mapping
       - name: SciMAT
