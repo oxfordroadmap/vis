@@ -176,7 +176,7 @@ skillsets:
     description: 'Designing and deploying intelligent systems that align with socio-technical goals'
     items:
       - name: 'CI/CD and API'
-        description: '**Implement** Continuous Integration and Continuous Deployment (CI/CD) by specifying intent, APIs integration goals, and model improvements'
+        description: '**Implement** Continuous Integration and Continuous Deployment (CI/CD) processes by specifying intent, integrating APIs, and updating model improvements'
         icon: custom/CICD
       - name: 'RAG methods'
         description: '**Develop** Retrieval-Augmented Generation (RAG) pipelines using vector, column-aware, and graph-based methods'
@@ -185,7 +185,7 @@ skillsets:
         description: '**Integrate** APIs and webhooks using RESTful endpoints and callback handlers, including the use of WebLLM'
         icon: custom/webhook
       - name: 'Chatbot User Interface'
-        description: '**Prototype** responsive chatbots and interactive visualizations using Python libraries (requests, Panel Chat Bot, Gradio, Pyodide, etc.) and Open WebUI'
+        description: '**Prototype** responsive chatbots and interactive visualizations using Python libraries (requests, Panel ChatBot, Gradio, Pyodide, etc.) and Open WebUI'
         icon: custom/gradio-color
       - name: LLM Orchestration
         description: '**Orchestrate** LLM workflows with LangChain, LlamaIndex, and MCP integrations'
@@ -206,25 +206,25 @@ skillsets:
         description: '**Deploy** containerized services using Podman, Kubernetes, HuggingFace and Google Cloud'
         icon: custom/huggingface-color 
       - name: Web Building and Design
-        description: '**Build** multilingual (i18n/L10n)  static sites and interactive docs with integrated knowledge of Hugo, YAML, Markdown (mermaid, markmap, and Mermaid), render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
+        description: '**Build** multilingual (i18n/L10n)  static sites and interactive docs with integrated knowledge of Hugo, YAML, Markdown (e.g., markmap and Mermaid), render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
         icon: devicon/hugo 
   - name: Utilizing Open Knowledge
     description: filtering and disseminating scientific knowledge for sustainable development challenges (with practical scientific writing tutorials ready)
     items:
       - name: Open Science
-        description: "translating scientometric, webometric, bibliometric, and technology roadmapping data for insights"
+        description: "**Translate** scientometric, webometric, bibliometric, and technology roadmapping data for insights"
         icon: custom/OSI
       - name: Open Data
-        description: "empowering progress through actionable, accessible data for infromed, sustainable, and fairer future"
+        description: "**Empower** progress through actionable, accessible data for infromed, sustainable, and fairer future"
         icon: custom/wikidatawiki
       - name: Open Content
-        description: "curating and amplifying knowledge to address global development and sustainability challenges"
+        description: "**Curate** and amplify knowledge to address global development and sustainability challenges"
         icon: custom/Wikimedia
       - name: Free and Open Internet
-        description: "monitoring vital public utility of the Internet for civic engagement, economic growth, and democratic expression"
+        description: "**Monitor** vital public utility of the Internet for civic engagement, economic growth, and democratic expression"
         icon: custom/internet-world
       - name: Free and Open Geo-politics
-        description: "fostring regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and acculumation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
+        description: "**Fostering** regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and accumulation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
         icon: custom/container_ships
   - name: Applying Open Knowledge Tools
     description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation (with practical tutorials ready)
@@ -241,13 +241,13 @@ skillsets:
       - name: Publish or Perish
         icon: custom/academy
         description: "**Curate** content and impact data for  **strategic insights**"
-  - name: Organizaing Design Workshop
+  - name: Organizing Design Workshop
     description: Facilitating collaborative design sessions that unlock value-aligned strategies and adaptive innovation across diverse stakeholder landscapes (with practical tutorials ready)
     items:
       - name: Strategic Technology Roadmapping
         description: "**Roadmap** science and innovation maps based on empirical and conceptual data"
         icon: custom/internet-world
-      - name: Design Thinking and Systems Inoovations
+      - name: Design Thinking and Systems Inovations
         icon: custom/canvas_TBL
         description: "**Ignite** purposeful collaboration through structured design workshops, where systems thinking and human-centered methods converge"
       - name: Design Canvas Customization
