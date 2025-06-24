@@ -186,7 +186,7 @@ skillsets:
         icon: custom/webhook
       - name: 'Chatbot UI'
         description: '**Prototype** responsive chatbots and interactive visualizations using Python libraries (requests, Panel Chat Bot, Gradio, Pyodide, etc.) and Open WebUI'
-        icon: custom/openwebui
+        icon: custom/gradio-color
       - name: LLM Orchestration
         description: '**Orchestrate** LLM workflows with LangChain, LlamaIndex, and MCP integrations'
         icon: custom/MCP
