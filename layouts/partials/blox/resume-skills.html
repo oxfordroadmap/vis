@@ -56,6 +56,8 @@
         <div class="flex flex-col">
           {{ range .items }}
           <div class="skills-content">
+            <div class="skills-name text-xl font-semibold tracking-tight text-gray-700 dark:text-gray-300 leading-8">
+
             {{ $pack := or .icon_pack "fas" }}
             {{ $pack_prefix := $pack }}
 
@@ -69,15 +71,16 @@
             </span>
             {{ end }}
 
-            <span class="skills-name text-xl font-semibold tracking-tight capitalize text-gray-700 dark:text-gray-300 leading-8">
               {{ .name | markdownify | emojify }}
-              {{ with .description }}<p class="skills-description">{{ . | markdownify | emojify }}</p>{{ end }}
-            </span>
+            </div>
+
+            {{ with .description }}
+            <div class="skills-description">{{ . | markdownify | emojify }}</div>{{ end }}
               {{ if .percent | and $show_show_skill_percentage }}
               <div class="skills-wrapper" {{with $color_border}}{{ (printf "style=\"border-color: %s\"" .) | safeHTMLAttr }}{{end}}>
                 <div class="skills-percent" style="width: {{ (printf "%s" (cast.ToString (.percent | default 100))) | safeCSS }}%; {{with $color}}{{ (printf "background-color: %s" .) | safeCSS }}{{end}}">
                 </div></div>
-              {{end}}
+            {{end}}
           </div><!-- class="skills-content" -->
            {{ end }}{{/*  range .items  */}}
         </div>
