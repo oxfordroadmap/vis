@@ -184,14 +184,14 @@ skillsets:
       - name: 'API & Webhooks'
         description: '**Integrate** APIs and webhooks using RESTful endpoints and callback handlers, including the use of WebLLM'
         icon: custom/webhook
-      - name: 'Chatbot UI'
+      - name: 'Chatbot User Interface'
         description: '**Prototype** responsive chatbots and interactive visualizations using Python libraries (requests, Panel Chat Bot, Gradio, Pyodide, etc.) and Open WebUI'
         icon: custom/gradio-color
       - name: LLM Orchestration
         description: '**Orchestrate** LLM workflows with LangChain, LlamaIndex, and MCP integrations'
         icon: custom/MCP
   - name: Managing Software Development
-    description: 'Delivering full-stack AI agent solutions across cloud and web environments'
+    description: 'Delivering full-stack AI agent solutions across cloud and web environments (with practical undergraduate curriculums ready)'
     items:
       - name: Git Version Control
         description: '**Maintain** version control workflows using Git, GitHub, and GitHub Actions'
@@ -201,15 +201,15 @@ skillsets:
         icon: custom/scrum 
       - name: Python
         description: '**Utilize** libraries such as param, pydantic, asyncio, Panel, Pandoc, and Flask'
-        icon: devicon/python'
+        icon: devicon/python
       - name: Container Solutions
         description: '**Deploy** containerized services using Podman, Kubernetes, HuggingFace and Google Cloud'
         icon: custom/huggingface-color 
       - name: Web Building and Design
-        description: 'Hugo, multilingual (i18n/L10n) support, yaml, markdown, mermaid, markmap, render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
+        description: '**Build** multilingual (i18n/L10n)  static sites and interactive docs with integrated knowledge of Hugo, YAML, Markdown (mermaid, markmap, and Mermaid), render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
         icon: devicon/hugo 
   - name: Utilizing Open Knowledge
-    description: filtering and disseminating scientific knowledge for sustainable development challenges
+    description: filtering and disseminating scientific knowledge for sustainable development challenges (with practical scientific writing tutorials ready)
     items:
       - name: Open Science
         description: "translating scientometric, webometric, bibliometric, and technology roadmapping data for insights"
