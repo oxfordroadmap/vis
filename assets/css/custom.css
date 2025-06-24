@@ -52,7 +52,14 @@ li.nav-item.dropdown {
   text-transform: none;
 }
 
-.folded_corner{
+
+.folded-corner-bg {
+  --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
+  background: hsla(from currentColor calc(h) s l 0.3);
+  color: --inverted-color;
+}
+
+.folded-corner {
   color: currentColor;
   --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
   background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.4) 0) no-repeat 100% 0 / 2em 2em,
@@ -60,7 +67,7 @@ li.nav-item.dropdown {
   -webkit-filter: drop-shadow(0.2em 0.3em rgba(0,0,0,0.1));
   filter: drop-shadow(0.2em 0.3em rgba(0,0,0,0.1));
 }
-.folded_corner::before{
+.folded-corner::before {
   content: ' ';
   position: absolute;
   top: 2em; 
