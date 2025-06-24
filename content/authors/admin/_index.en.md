@@ -222,10 +222,10 @@ skillsets:
         icon: custom/Wikimedia
       - name: Free and Open Internet
         description: "monitoring vital public utility of the Internet for civic engagement, economic growth, and democratic expression"
-        icon: custom/OSI
+        icon: custom/internet-world
       - name: Free and Open Geo-politics
         description: "fostring regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and acculumation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
-        icon: fas/anchor
+        icon: custom/container_ships
   - name: Applying Open Knowledge Tools
     description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation
     items:
@@ -244,14 +244,10 @@ skillsets:
     items:
       - name: The Lens
         icon: custom/internet-world
-      - name: Dimensions AI
-        icon: custom/science-mapping
-      - name: Bibliometrix
-        icon: custom/science-mapping
-      - name: VoSViewer
-        icon: custom/science-mapping
-      - name: SciMAT
-        icon: custom/science-mapping
+      - name: Design Thinking and Systems Inoovations
+        icon: custom/canvas_TBL
+      - name: Design Canvas Customization
+        icon: custom/canvas_value
   - name: Delivering Data Science
     description: enabling final decisions in agile discovery-delivery loops with data-driven analysis
     items:
