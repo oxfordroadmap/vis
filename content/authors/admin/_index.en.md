@@ -212,14 +212,20 @@ skillsets:
     description: filtering and disseminating scientific knowledge for sustainable development challenges
     items:
       - name: Open Science
-        description: translating scientometric, webometric, bibliometric, and technology roadmapping data for insights
-        icon: custom/science-mapping
+        description: "translating scientometric, webometric, bibliometric, and technology roadmapping data for insights"
+        icon: custom/OSI
       - name: Open Data
-        description: translating scientometric, webometric, bibliometric, and technology roadmapping insights for insights
-        icon: custom/science-mapping
+        description: "empowering progress through actionable, accessible data for infromed, sustainable, and fairer future"
+        icon: custom/wikidatawiki.svg
       - name: Open Content
-        description: translating scientometric, webometric, bibliometric, and technology roadmapping insights for insights
-        icon: custom/science-mapping
+        description: "curating and amplifying knowledge to address global development and sustainability challenges"
+        icon: custom/Wikimedia
+      - name: Free and Open Internet
+        description: "monitoring vital public utility of the Internet for civic engagement, economic growth, and democratic expression"
+        icon: custom/OSI
+      - name: Free and Open Geo-politics
+        description: "fostring regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and acculumation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
+        icon: fas/anchor
   - name: Applying Open Knowledge Tools
     description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation
     items:
@@ -237,7 +243,7 @@ skillsets:
     description: Facilitating collaborative design sessions to articulate and align value-driven strategies and propositions
     items:
       - name: The Lens
-        icon: custom/science-mapping
+        icon: custom/internet-world
       - name: Dimensions AI
         icon: custom/science-mapping
       - name: Bibliometrix
