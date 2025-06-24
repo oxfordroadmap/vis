@@ -230,7 +230,7 @@ skillsets:
       - name: Bibliometrix
         icon: custom/bibliometrix
       - name: VoSViewer
-        icon: custom/science-mapping
+        icon: custom/VOSViewer
       - name: SciMAT
         icon: custom/science-mapping
   - name: Organizaing Design Workshop
