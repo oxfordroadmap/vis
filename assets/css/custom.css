@@ -59,25 +59,31 @@ li.nav-item.dropdown {
 
 .folded-corner-bg {
   --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
-  background: hsla(from currentColor calc(h) s l 0.3);
+  background: hsla(from currentColor h s l / 0.3);
   color: --inverted-color;
 }
 
 .folded-corner {
-  color: currentColor;
+  color: var(currentColor);
   --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
-  background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,.4) 0) no-repeat 100% 0 / 2em 2em,
-    linear-gradient(-135deg, transparent 1.5em, var(--inverted-color) 0);
-  -webkit-filter: drop-shadow(0.2em 0.3em rgba(0,0,0,0.1));
-  filter: drop-shadow(0.2em 0.3em rgba(0,0,0,0.1));
+  --color-perc-40 : hsla(from currentColor h s l / 0.4);
+  --color-perc-10 : hsla(from currentColor h s l / 0.1);
+  background: linear-gradient(to left bottom, transparent 50%, var(--color-perc-40) 0) no-repeat 100% 0 / 2em 2em, linear-gradient(-135deg, transparent 1.5em, var(--inverted-color) 0);
+  -webkit-filter: drop-shadow(0.2em 0.3em var(--color-perc-10));
+  filter: drop-shadow(0.2em 0.3em var(--color-perc-10));
 }
+
 .folded-corner::before {
-  content: ' ';
+  color: var(currentColor);
+  --inverted-color: hsl(from currentColor calc(h + 180) s calc(100 - l));
+  --color-perc-10 : hsla(from currentColor h s l / 0.1);
+  content: " ";
   position: absolute;
-  top: 2em; 
+  top: 2em;
   right: 0;
-  background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,0.1) 0) 100% 0 no-repeat;
+  background: linear-gradient(to left bottom, transparent 50%, var(--color-perc-10) 0) 100% 0 no-repeat;
   width: 2em;
   height: 0.3em;
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
+
