@@ -23,7 +23,7 @@ li.nav-item.dropdown {
 }
 
 .skills-name {
-  box-shadow: 0.1rem 0.1rem gray;
+  box-shadow: .1rem .1rem rgba(127, 127, 127, 0.2)
   font-size: 0.84rem;
   margin-bottom: 6px;
   text-transform: none;

@@ -20,21 +20,19 @@
 }
 
 .skills-name {
+  box-shadow: .1rem .1rem rgba(127, 127, 127, 0.2)
   font-size: 0.84rem;
   margin-bottom: 6px;
   text-transform: none;
   /* color: #888; */ /* Inaccessible */
 }
 
-/* .dark .skills-name { */
-/*  color: #eee; */
-/* } */
-
 .skills-description {
   font-size: 0.72rem;
   margin-bottom: 6px;
   text-transform: none;
 }
+
 
 .skills-icon {
   margin-right: 0.5em;
