@@ -33,7 +33,7 @@
 
   {{/* One Skillset and Skills */}}
   <div class="px-6 w-full" >
-    <div class="grid grid-cols-3 md:grid-cols-1">
+    <div class="grid grid-cols-1 md:grid-cols-3">
       {{/* w-1/4 Grouped (cols/rows): One Skillset-Description */}}
         {{ with .name }}
         {{ $oneskillset_name := . | markdownify }}
@@ -46,7 +46,7 @@
         {{ with .description }}<div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-8 py-7">{{ . | markdownify | emojify }}</div>{{ end }}
           </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
-      <div class="skillset-content mb-5 col-span-2">
+      <div class="skillset-content mb-5 col-span-2" style="grid-column: span 2 / span 2;" >
         <div class="flex flex-col">
           {{ range .items }}
           <div class="skills-content">
