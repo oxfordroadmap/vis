@@ -50,6 +50,14 @@ sections:
     content:
       title: Awards
       username: admin
+    design:
+      css_class: hbb-section-thin
+      back_ground: 
+        color: hsla(from currentColor h s l, 0.9)
+        gradient_start: hsla(from currentColor h s l, 0.01)
+        gradient_end: hsla(from currentColor h s l, 0.1)
+        gradient_angle: 120
+        css_style: 'background: hsla(from currentColor h s l, 0.1);'
   - block: resume-languages
     content:
       title: Languages
