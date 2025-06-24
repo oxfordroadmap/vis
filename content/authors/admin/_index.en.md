@@ -227,37 +227,40 @@ skillsets:
         description: "fostring regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and acculumation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
         icon: custom/container_ships
   - name: Applying Open Knowledge Tools
-    description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation
+    description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation (with practical tutorials ready)
     items:
       - name: The Lens
         icon: custom/lens_org
       - name: Dimensions AI
         icon: custom/dimensions_ai
+        description: "**Transform** raw scientometric and bibliometric data into visual **strategic narratives**"
       - name: Bibliometrix
         icon: custom/bibliometrix
       - name: VoSViewer
         icon: custom/VOSViewer
       - name: Publish or Perish
         icon: custom/academy
+        description: "**Curate** content and impact data for  **strategic insights**"
   - name: Organizaing Design Workshop
-    description: Facilitating collaborative design sessions to articulate and align value-driven strategies and propositions
+    description: Facilitating collaborative design sessions that unlock value-aligned strategies and adaptive innovation across diverse stakeholder landscapes (with practical tutorials ready)
     items:
       - name: Strategic Technology Roadmapping
+        description: "**Roadmap** science and innovation maps based on empirical and conceptual data"
         icon: custom/internet-world
       - name: Design Thinking and Systems Inoovations
         icon: custom/canvas_TBL
+        description: "**Ignite** purposeful collaboration through structured design workshops, where systems thinking and human-centered methods converge"
       - name: Design Canvas Customization
         icon: custom/canvas_value
+        description: "**Prototype** foresight-driven solutions using selected design canvases tailored to technological, organizational, ecosystem and/or policy contexts"
   - name: Delivering Data Science
-    description: enabling final decisions in agile discovery-delivery loops with data-driven analysis
+    description: Enabling decisive action in agile discovery–delivery cycles through precision analytics and contextual intelligence, or captured nuanced behavioral and cultural insights across digital ecosystems
     items:
       - name: Science mapping
-        description: scientometrics, webometrics, bibliometrics, technology roadmapping,
-          and patent databases
+        description: '**Orchestrate** data science workflows to generate strategic assets, based on rigorous methods from scientometrics, webometrics, bibliometrics, and technology roadmapping'    
         icon: custom/science-mapping
       - name: Digital methods
-        description: sentiment analysis, geo-linguistic analysis, geospatial analysis,
-          digital humanities and platform analysis
+        description: '**Decode** sociotechnical dynamics through methods such as sentiment analysis, geo-linguistic analysis, geospatial analysis, digital humanities and platform analysis'
         icon: hero/hand-thumb-up
       - name: Python
         description: Jupyter, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim
@@ -266,17 +269,21 @@ skillsets:
         description: "R language and libraries: tidyverse, tidyr, dplyr, ggplot2,
           bibliometrix"
         icon: devicon/rstudio
+        description: '**Operationalize** insight-generation processes using Python and R libraries, by transforming data streams into strategic assets through iterations'
   - name: Synthesizing Social Science
-    description: gaining socio-technical understanding from  primary and secondary data
+    description: Extracting socio-technical insight from primary and secondary data to inform innovation, governance, and strategic foresight 
     items:
       - name: 'Mixed-methods inquiry'
-        description: integrating qualitative and quantitative techniques to reveal complex patterns in human and technical systems
+        description: '**Integrating** qualitative and quantitative techniques to reveal patterns in human-machine systems, such as interviews, fieldwork, and statistical modeling'
         icon: devicon/networkx
       - name: 'Evidence-based decision support'
-        description:  Synthesizing socio-technical findings (including market and policy reports) to inform strategic planning, innovation, and value alignment, with awareness of cognitive and knowledge frameworks.
+        description:  '**Synthesize** policy and socio-technical data (including market and policy document analysis) to anchor interventions in real-world context'
         icon: custom/industry-factory-emission
       - name: 'Contextual data interpretation'
-        description: Analyzing behavioral, policy, and cultural data within geopolitical and industrial landscapes, drawing on materials from online and offline environments. 
+        description: '**Decode** behavioral, policy, and cultural data within and across geopolitical and sectoral knowledge frames'
+        icon: custom/speech-bubble
+      - name: 'Stakeholder analysis and alignment'
+        description: '**Leverage** cognitive and knowledge frameworks to anticipate and align **stakeholder** motivations, learning curves, and institutional culture for transformational innovations'
         icon: custom/speech-bubble
 languages:
   - name: English
