@@ -226,7 +226,7 @@ skillsets:
       - name: The Lens
         icon: brands/lens.org
       - name: Dimensions AI
-        icon: custom/science-mapping
+        icon: brands/dimensions.ai
       - name: Bibliometrix
         icon: custom/science-mapping
       - name: VoSViewer
