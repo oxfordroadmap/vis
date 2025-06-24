@@ -37,13 +37,20 @@
   
   {{/* id: anchoring for href */}}
 
-  <div {{ (printf "id=\"%s\"" $oneskillset_name) | safeHTMLAttr }} class="section-sub px-6 w-full" >
+  {{ with $oneskillset_name }}
+  <div {{ (printf "id=\"%s\"" . ) | safeHTMLAttr }} class="section-sub px-6 w-full" >
     <div class="grid grid-cols-1 md:grid-cols-3">
       {{/* w-1/4 Grouped (cols/rows): One Skillset-Description */}}
         {{/* id: anchoring for href */}}
-          <div class="mb-5 mr-3 text-xl font-bold text-gray-900 dark:text-white">{{ $oneskillset_name }}
-        <div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-8 py-7">{{ $oneskillset_desc }}</div>
+          <div class="mb-5 mr-3 text-xl font-bold text-gray-900 dark:text-white">
+            {{ . }}
+  {{ with $oneskillset_desc }}
+            <div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-8 py-7">{{ $oneskillset_desc }}</div>
+  {{ end }}<!-- $oneskillset_desc -->
           </div><!-- /div w-1/4 Grouped (cols/rows): One Skillset and Description -->
+  {{ end }}<!-- $oneskillset_name -->
+
+
       {{/* w-3/4 Grouped (rows): Skills and Description */}}
       <div class="skillset-content mb-5 col-span-2" style="grid-column: span 2 / span 2;" >
         <div class="flex flex-col">
