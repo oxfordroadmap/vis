@@ -171,7 +171,7 @@ work:
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
 skillsets:
-  - name: Building AI Agents
+  - name: 🤖 Building AI Agents
     description: 'Designing and deploying intelligent systems that align with socio-technical goals'
     items:
       - name: 'CI/CD and API'
@@ -189,7 +189,7 @@ skillsets:
       - name: Large Language Models (LLMs) Orchestration
         description: '**Orchestrate** LLM workflows with LangChain, LlamaIndex, and MCP integrations, including prompting, chaining, managing and monitoring LLM'
         icon: custom/MCP
-  - name: Managing Software Development
+  - name: 📦 Managing Software Development
     description: 'Delivering full-stack AI agent solutions across cloud and web environments (with practical undergraduate curriculums ready)'
     items:
       - name: Git Version Control
@@ -207,7 +207,7 @@ skillsets:
       - name: Web Building and Design
         description: '**Build** multilingual (i18n/L10n)  static sites and interactive docs with integrated knowledge of Hugo, YAML, Markdown (e.g., markmap and Mermaid), render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
         icon: devicon/hugo 
-  - name: Utilizing Open Knowledge
+  - name: 📚 Utilizing Open Knowledge
     description: filtering and disseminating scientific knowledge for sustainable development challenges (with practical scientific writing tutorials ready)
     items:
       - name: Open Science
@@ -225,7 +225,7 @@ skillsets:
       - name: Free and Open Geo-politics
         description: "**Fostering** regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and accumulation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
         icon: custom/container_ships
-  - name: Applying Open Knowledge Tools
+  - name: 🧰 Applying Open Knowledge Tools
     description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation (with practical tutorials ready)
     items:
       - name: The Lens
@@ -240,7 +240,7 @@ skillsets:
       - name: Publish or Perish
         icon: custom/academy
         description: "**Curate** content and impact data for  **strategic insights**"
-  - name: Organizing Design Workshop
+  - name: 🧑‍🤝‍🧑 Organizing Design Workshop
     description: Facilitating collaborative design sessions that unlock value-aligned strategies and adaptive innovation across diverse stakeholder landscapes (with practical tutorials ready)
     items:
       - name: Strategic Technology Roadmapping
@@ -252,7 +252,7 @@ skillsets:
       - name: Design Canvas Customization
         icon: custom/canvas_value
         description: "**Prototype** foresight-driven solutions using selected design canvases tailored to technological, organizational, ecosystem and/or policy contexts"
-  - name: Delivering Data Science
+  - name: 🧮 Delivering Data Science
     description: Enabling decisive action in agile discovery–delivery cycles through precision analytics and contextual intelligence, or captured nuanced behavioral and cultural insights across digital ecosystems
     items:
       - name: Science mapping
@@ -266,7 +266,7 @@ skillsets:
       - name: "RStudio and libraries"
         icon: devicon/rstudio
         description: '**Operationalize** insight-generation processes using Python and R libraries (including Jupyter Lab, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim, tidyverse, etc.), by transforming data streams into strategic assets through iterations'
-  - name: Synthesizing Social Science
+  - name: 🕸 Synthesizing Social Science
     description: Extracting socio-technical insight from primary and secondary data to inform innovation, governance, and strategic foresight 
     items:
       - name: 'Mixed-methods inquiry'
@@ -279,7 +279,7 @@ skillsets:
         description: '**Decode** behavioral, policy, and cultural data within and across geopolitical and sectoral knowledge frames'
         icon: custom/speech-bubble
       - name: 'Stakeholder analysis and alignment'
-        description: '**Leverage** cognitive and knowledge frameworks to anticipate and align **stakeholder** motivations, learning curves, and institutional culture for transformational innovations'
+        description: '**Leverage** cognitive and knowledge frameworks to `anticipate` and `align` **stakeholder** `motivations`, `learning curves`, and `institutional culture` for **transformational innovations**'
         icon: custom/speech-bubble
 languages:
   - name: English

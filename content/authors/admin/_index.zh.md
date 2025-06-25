@@ -184,14 +184,12 @@ skillsets:
         description: "**整合对接** 应用程序接口（API）与 网钩（Webhooks），结合 RESTful 接口与回调机制，完成整合。"
         icon: custom/webhook
       - name: 聊天机器人界面原型设计
-        description: "**开发** 响应式聊天机器人与交互式可视化界面，运用 Python 工具 (如 requests, Panel ChatBot,
-          Gradio, Pyodide, etc.) and Open WebUI "
+        description: "**开发** 响应式聊天机器人与交互式可视化界面，运用 Python 工具 (如 requests, Panel ChatBot, Gradio, Pyodide, etc.) and Open WebUI "
         icon: custom/gradio-color
       - name: LLM 大语言模型 指挥编排
-        description: "**指挥编排** 大语言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP
-          来进行提示、串联、管理与监控LLM。"
+        description: "**指挥编排** 大语言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 来进行提示、串联、管理与监控LLM。"
         icon: custom/MCP
-  - name: 管理软件开发
+  - name: 📦 管理软件开发
     description: 交付全栈 AI 智能体应用方案，包括云端与网页环境（备有完整本科生课程）
     items:
       - name: Git 版本控制
@@ -207,10 +205,9 @@ skillsets:
         description: "**部署** 容器化服务，采用 Podman, Kubernetes, HuggingFace 及 Google Cloud 提供解方"
         icon: custom/huggingface-color
       - name: 网站构建与设计
-        description: "**构建** 多语言 (i18n/L10n) 静态网站与交互式文档，使用 Hugo 框架、YAML 与 Markdown（支持
-          mermaid、markmap 等）、渲染钩子（render hooks）与自定义短代码（shortcodes），整合前端框架与资源管理。"
+        description: "**构建** 多语言 (i18n/L10n) 静态网站与交互式文档，使用 Hugo 框架、YAML 与 Markdown（支持 mermaid、markmap 等）、渲染钩子（render hooks）与自定义短代码（shortcodes），整合前端框架与资源管理。"
         icon: devicon/hugo
-  - name: 巧用开放知识
+  - name: 📚 巧用开放知识
     description: 筛选并传播科学知识，以应对可持续发展的挑战（备有完整实用科研写作教程）
     items:
       - name: 开放科学
@@ -226,11 +223,9 @@ skillsets:
         description: "**监测** 互联网作为关键公共资源的角色，在公民参与、经济增长与民主表达中的作用"
         icon: custom/internet-world
       - name: 自由与开放的地缘政治
-        description: "**促进**
-          区域与跨领域对话，保障全球公共领域的跨大陆与跨海洋联系，特别强调在『三海倡议（3SI）』与『自由开放的印太地区』等区域倡议中，建设并累积国\
-          际公共财，以实现安全、繁荣与韧性联通"
+        description: "**促进** 区域与跨领域对话，保障全球公共领域的跨大陆与跨海洋联系，特别强调在『三海倡议（3SI）』与『自由开放的印太地区』等区域倡议中，建设并累积国际公共财，以实现安全、繁荣与韧性联通"
         icon: custom/container_ships
-  - name: 应用开放知识工具
+  - name: 🧰 应用开放知识工具
     description: 赋能个人与机构使用专利数据库与科学计量工具开展洞察驱动的研究与创新（备有完整实作教程）
     items:
       - name: The Lens
@@ -245,7 +240,7 @@ skillsets:
       - name: Publish or Perish
         icon: custom/academy
         description: "**策划** 内容与影响力数据，提炼 **战略洞察**"
-  - name: 组织设计工作坊
+  - name: 🧑‍🤝‍🧑 组织设计工作坊
     description: 促进协作式设计会议，激发与价值对齐的策略与适应性创新，跨越多元利益相关者场景（备有完整实操教程）
     items:
       - name: 战略技术路线图制定
@@ -257,37 +252,35 @@ skillsets:
       - name: 设计画布定制
         icon: custom/canvas_value
         description: "**定制原型产品** 以未来洞察为导向的解决方案，依照技术、组织、生态系统或政策环境定制设计画布"
-  - name: Delivering Data Science
-    description: Enabling decisive action in agile discovery–delivery cycles through precision analytics and contextual intelligence, or captured nuanced behavioral and cultural insights across digital ecosystems
+  - name: 🧮 交付数据科学洞察
+    description: 通过精密分析与情境智能，在敏捷『探索–交付』（discovery–delivery）循环中推动决策，并捕捉数字生态系统中的行为与文化关键差异
     items:
-      - name: Science mapping
-        description: '**Orchestrate** data science workflows to generate strategic assets, based on rigorous methods from scientometrics, webometrics, bibliometrics, and technology roadmapping'    
+      - name: 科学地图（知识图）
+        description: '**指挥编排** 数据科学工作流，生成战略性资产。采用严谨基于科学计量学、网络计量学、文献计量学与技术路线图等方法'   
         icon: custom/science-mapping
-      - name: Digital methods
-        description: '**Decode** sociotechnical dynamics through methods such as sentiment analysis, geo-linguistic analysis, geospatial analysis, digital humanities and platform analysis'
+      - name: 数字方法
+        description: '**解码** 社会技术动态，采用`情感分析`、`地理语言分析`、`地理空间分析`、`数字人文学`与`平台分析`等方法'
         icon: hero/hand-thumb-up
-      - name: "Python and libraries"
+      - name: "Python 及其库"
         icon: custom/jupyter
-      - name: "RStudio and libraries"
+      - name: "RStudio 及其库"
         icon: devicon/rstudio
-        description: '**Operationalize** insight-generation processes using Python and R libraries (including Jupyter Lab, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim, tidyverse, etc.), by transforming data streams into strategic assets through iterations'
-  - name: Synthesizing Social Science
-    description: Extracting socio-technical insight from primary and secondary data to inform innovation, governance, and strategic foresight 
+        description: '**运维实现** `洞察生成`流程，使用 Python 与 R 生态（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通过迭代将`数据流`转化为`战略资产`'
+  - name: 🕸 综合社会科学知识
+    description: 提取一手与二手资料中的社会技术知识，服务于创新、治理与战略前瞻
     items:
-      - name: 'Mixed-methods inquiry'
-        description: '**Integrating** qualitative and quantitative techniques to reveal patterns in human-machine systems, such as interviews, fieldwork, and statistical modeling'
+      - name: 混合方法探究
+        description: '**整合** 质性与量化技术，以揭示人机系统中的模  式，包括访谈、田野调查与统计建模'
         icon: devicon/networkx
-      - name: 'Evidence-based decision support'
-        description:  '**Synthesize** policy and socio-technical data (including market and policy document analysis) to anchor interventions in real-world context'
+      - name: 基于证据支持决策
+        description: '**综合** 政策与社会技术资料（如市场与政策文件分析），将干预措施锚定于现实情境'
         icon: custom/industry-factory-emission
-      - name: 'Contextual data interpretation'
-        description: '**Decode** behavioral, policy, and cultural data within and across geopolitical and sectoral knowledge frames'
+      - name: 脉络化（情境化）数据解读
+        description: '**解码** 不同行业与地缘知识框架中的行为、政策与文化数据'
         icon: custom/speech-bubble
-      - name: 'Stakeholder analysis and alignment'
-        description: '**Leverage** cognitive and knowledge frameworks to anticipate and align **stakeholder** motivations, learning curves, and institutional culture for transformational innovations'
+      - name: 利益相关者分析与对齐
+        description: '**运用** 认知与知识框架，`预判`并`对齐` **利益相关者** 的`动机`、`学习曲线`与`组织文化`，以实现**转型型创新**'
         icon: custom/speech-bubble
-
-
 languages:
   - name: English
     percent: 100
