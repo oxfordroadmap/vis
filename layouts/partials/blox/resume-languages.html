@@ -1,0 +1,112 @@
+{{/* Hugo Blox: Languages */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $author := $block.content.username | default "admin" }}
+
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your Skill block and create an associated author page if one does not already exist. See https://docs.hugoblox.com/page-builder/#about " $person_page_path }}
+{{end}}
+
+{{/*  $skillsets := $person_page.Params.skillsets */}}
+{{ $langs := $person_page.Params.language_skills }}
+
+{{/* Language Skill Section Title */}}
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ i18n "language_skills" | markdownify }}
+  </div>
+  {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+</div><!-- /div Skillset Section Title -->
+
+
+{{/* Grouped (rows): All language_skills and Descriptions */}}
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 px-6 md:px-0">
+  {{ range $langs }}
+  <div class="skills-content">
+        <span class="skills-name text-xl font-semibold tracking-tight text-gray-700 dark:text-gray-300 leading-4">
+
+            {{ $pack := or .icon_pack "fas" }}
+            {{ $pack_prefix := $pack }}
+
+            {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+            {{ $pack_prefix = "fa" }}
+            {{ end }}
+            
+            {{ with .icon }}
+            <span class="skills-icon inline-block leading-8">
+              {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em;\"")  }}
+            </span>
+            {{ end }}
+
+        {{ .name | markdownify | emojify }}
+        </span>
+    {{ with .description }}
+      <div class="skills-description">{{ . | markdownify | emojify }}</div>
+    {{ end }}
+  </div><!-- class="skills-content" -->
+  {{ end }}{{/*  range $langs  */}}
+</div>
+
+
+
+
+
+</div><!-- /div language_skills and Descriptions -->
+
+  <div class="skillset-content mb-1">
+      {{/* w-3/4 Grouped (rows): Skills and Description */}}
+        <div class="flex flex-col">
+          {{ range .items }}
+      </div><!-- w-3/4 skillset-content flex flex-col -->
+    </div><!--   {{/* One Skillsets and Skills */}} -->
+
+  </div>
+  {{ end }}{{/* range $skillsets */}}
+
+
+
+
+
+
+
+
+
+---
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $block.content.title | i18n | markdownify | emojify }}
+  </div>
+
+  {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+
+  <div class="flex items-center flex-col lg:flex-row gap-x-8">
+    {{ range $langs }}
+    <div class="flex flex-col items-center">
+      <div class="flex items-center justify-center w-28 h-28">
+        <svg class="transform -rotate-90" viewBox="0 0 288 288">
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-gray-200 dark:text-gray-700" />
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-primary-600 dark:text-primary-300"
+                  style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc(((2 * 22 / 7 * 120) * {{.percent}}/100) - (2 * 22 / 7 * 120))" />
+        </svg>
+        <span class="absolute text-3xl">{{.percent}}%</span>
+      </div>
+      <span class="text-1xl">{{.name}}</span>
+    </div>
+    {{ end }}
+  </div>
+
+</div>
+
+
+
+
+
+-------------
+

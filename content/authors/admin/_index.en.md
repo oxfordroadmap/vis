@@ -282,9 +282,12 @@ skillsets:
         description: '**Leverage** cognitive and knowledge frameworks to `anticipate` and `align` **stakeholder** `motivations`, `learning curves`, and `institutional culture` for **transformational innovations**'
         icon: custom/alignment
 language_skills:
-  - name: 🗫 Chinese (🇹🇼 🇨🇳) and English (🇬🇧 🇺🇸) Proficiency – applicable in university and high-level academic and professional contexts
-  - name: 🧪 English For Academic Purpose (EAP) Instruction Expertise – with experience teaching in university in-person tutorials and virtual workshops
-  - name: ✍ Literature Review Writing Instruction Expertise – with formal teaching experience in universities and digital platforms
+  - name: 🗫 Chinese (🇹🇼 🇨🇳) and English (🇬🇧 🇺🇸) Proficiency 
+    description: " —— applicable in university and high-level academic and professional contexts"
+  - name: 🧪 English For Academic Purpose (EAP) Instruction Expertise 
+    description: " —— with experience teaching in university in-person tutorials and virtual workshops"
+  - name: ✍ Literature Review Writing Instruction Expertise
+    description: " —— with formal teaching experience in universities and digital platforms"
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
