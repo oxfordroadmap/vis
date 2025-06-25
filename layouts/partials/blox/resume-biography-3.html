@@ -170,7 +170,7 @@
             {{ end }}
 
             {{ with .icon }}
-            <div class="my-auto flex items-center justify-center mr-1" style="height:3.6em; width:3.6em;" >
+            <div class="my-auto w-72 shrink-0 mr-1" style="height:3.6em; width:3.6em;" >
               {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3.3em;width:2.7em;' class='flex-shrink-0 mx-auto'")  }}
             </div>
             {{ end }}
