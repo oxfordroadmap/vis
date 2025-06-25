@@ -253,7 +253,7 @@ skillsets:
         icon: custom/canvas_value
         description: "**定制原型產品**以策略前瞻為核心的解方，根據技術、組織、生態系統或政策環境調整畫布架構"
   - name: 🧮 交付數據科學洞察
-    description: 通過精密分析與情境智能，在敏捷『探索–交付』（discovery–delivery）循環中推動決策，並捕捉數字生態系統中的行為與文化關鍵差異
+    description: 通過精密分析與情境智能，在『探索–交付』(discovery–delivery) 循環中優化敏捷決策，並捕捉數字生態系統中的行為與文化關鍵差異
     items:
       - name: 科學地圖（知識圖）
         description: '**指揮編排** 數據科學工作流，生成戰略性資產。采用嚴謹基於科學計量學、網絡計量學、文獻計量學與技術路線圖等方法'   
