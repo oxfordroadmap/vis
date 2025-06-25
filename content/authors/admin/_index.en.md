@@ -91,7 +91,9 @@ education:
     date_start: 2003-02-01
     date_end: 2003-12-31
     location: Sydney, Australia
-  - area: B.A. Foreign Languages and Literatures / B.Sc. Electrical and Electronic Engineering
+  - area: |-
+      B.A. Foreign Languages and Literatures
+      B.Sc. Electrical and Electronic Engineering
     icon: custom/NTU-uni
     degree: true
     institution: National Taiwan University

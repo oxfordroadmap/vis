@@ -181,7 +181,9 @@
                 {{ index $d 0 }}
                 {{ end }}
             </p>
-            <p class="text-xs">{{ .area }}</p>
+            {{ range (split .area "\n") }}
+            <p class="text-xs">{{ . | markdownify }}</p>
+            {{ end }}
           </div>
         </li>
         {{ end }}<!-- if .degree  -->
