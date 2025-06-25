@@ -60,6 +60,7 @@ interests:
 education:
   - area: 哲学博士（DPhil.） 信息、传播与社会科学
     degree: true
+    icon: custom/oxford-uni
     institution: 牛津大学
     date_start: 2007-10-01
     date_end: 2014-10-31
