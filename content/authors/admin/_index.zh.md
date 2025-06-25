@@ -211,7 +211,7 @@ skillsets:
     description: 筛选并传播科学知识，以应对可持续发展的挑战（备有完整实用科研写作教程）
     items:
       - name: 开放科学
-        description: "**解读** 科学计量学、网络计量学、文献计量学及技术路线图数据，生成洞察"
+        description: "**解析** 科学计量学、网络计量学、文献计量学及技术路线图数据，生成洞察"
         icon: custom/OSI
       - name: 开放数据
         description: "**赋能** 社会进步发展，通过能行动、可获取的数据推动一个公众更知情、社会更可持续与公平的未来"
@@ -220,19 +220,19 @@ skillsets:
         description: "**策划** 并放大知识效应，以应对全球发展与可持续性挑战"
         icon: custom/Wikimedia
       - name: 自由与开放的互联网
-        description: "**监测** 互联网作为关键公共资源的角色，在公民参与、经济增长与民主表达中的作用"
+        description: "**监测** 与倡议互联网作为关键公共资源的角色，在公民参与、经济增长与民主表达中的作用"
         icon: custom/internet-world
       - name: 自由与开放的地缘政治
         description: "**促进** 区域与跨领域对话，保障全球公共领域的跨大陆与跨海洋联系，特别强调在『三海倡议（3SI）』与『自由开放的印太地区』等区域倡议中，建设并累积国际公共财，以实现安全、繁荣与韧性联通"
         icon: custom/container_ships
   - name: 🧰 应用开放知识工具
-    description: 赋能个人与机构使用专利数据库与科学计量工具开展洞察驱动的研究与创新（备有完整实作教程）
+    description: 赋能个人与机构使用专利数据库与科学计量工具，开展洞察驱动的研究与创新（备有完整实作教程）
     items:
       - name: The Lens
         icon: custom/lens_org
       - name: Dimensions AI
         icon: custom/dimensions_ai
-        description: "**转化** 原始科学计量与文献计量数据为可视化的 **战略叙事**"
+        description: "**转化** 原始科学计量与文献计量数据为战略性的 **可视化故事**"
       - name: Bibliometrix
         icon: custom/bibliometrix
       - name: VoSViewer
@@ -241,14 +241,14 @@ skillsets:
         icon: custom/academy
         description: "**策划** 内容与影响力数据，提炼 **战略洞察**"
   - name: 🧑‍🤝‍🧑 组织设计工作坊
-    description: 促进协作式设计会议，激发与价值对齐的策略与适应性创新，跨越多元利益相关者场景（备有完整实操教程）
+    description: 促进协作式设计工作坊，跨领域激发具价值对齐的策略与创新行动，应对多元利益相关者场景（备有完整实操教程）
     items:
       - name: 战略技术路线图制定
         description: "**绘制** 基于实证与概念数据的科学与创新路线图"
         icon: custom/internet-world
       - name: 设计思维 与 系统创新
         icon: custom/canvas_TBL
-        description: "**激发** 结构化设计工作坊中的有目的协作，融合系统思维与以人为本方法"
+        description: "**啟動** 结构化设计工作坊中的有目的协作，整合系统思维与以人为本方法，建立共享策略图像"
       - name: 设计画布定制
         icon: custom/canvas_value
         description: "**定制原型产品** 以未来洞察为导向的解决方案，依照技术、组织、生态系统或政策环境定制设计画布"
@@ -270,16 +270,16 @@ skillsets:
     description: 提取一手与二手数据中的社会技术知识，服务于创新、治理与战略前瞻
     items:
       - name: 混合方法探究
-        description: '**整合** 质性与量化技术，以揭示人机系统中的模  式，包括访谈、田野调查与统计建模'
+        description: '**整合** 质性与量化技术，以揭示人机系统中的模  式，包括使用访谈、田野调查与统计建模等方法'
         icon: devicon/networkx
       - name: 基于证据支持决策
         description: '**综合** 政策与社会技术数据（如市场与政策文件分析），将干预措施锚定于现实情境'
         icon: custom/industry-factory-emission
       - name: 脉络化（情境化）数据解读
-        description: '**解码** 不同行业与地缘知识框架中的行为、政策与文化数据'
+        description: '**解读** 行为丶政策与文化数据，横跨不同产业与地缘的各种知识框架'
         icon: custom/speech-bubble
       - name: 利益相关者分析与对齐
-        description: '**运用** 认知与知识框架，`预判`并`对齐` **利益相关者** 的`动机`、`学习曲线`与`组织文化`，以实现**转型型创新**'
+        description: '**運用** 認知與知識框架，**預判**並**對齊** 利害關係人的 ***動機、學習曲線 與 組織文化***，以實現**轉型型創新**'
         icon: custom/alignment
 
 ---

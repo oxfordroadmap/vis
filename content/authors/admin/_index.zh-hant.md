@@ -174,8 +174,8 @@ skillsets:
   - name: 🤖 構建 AI 智能體（Building AI Agents）
     description: 設計與開發 AI 代理應用 （社會-技術整合技能）
     items:
-      - name: CI/CD 持續集成與持續部署 與 API 集成
-        description: "**實施** 持續集成與持續部署（CI/CD）流程：明確定義目標意圖 （intent），整合應用程序接口（API），並持續更新模型。"
+      - name: CI/CD 持續集成與持續佈署 與 API 集成
+        description: "**實施** 持續集成與持續佈署（CI/CD）流程：明確定義目標意圖 （intent），整合應用程序接口（API），並持續更新模型。"
         icon: custom/CICD
       - name: RAG 檢索增強生成方法
         description: "**構建** 檢索增強生成方法（RAG）管道，利用向量檢索、列感知與圖結構方法，來設計構建 RAG 管道流程"
@@ -190,68 +190,68 @@ skillsets:
         description: "**指揮編排** 大語言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 來進行提示、串聯、管理與監控LLM。"
         icon: custom/MCP
   - name: 📦 管理軟件開發
-    description: 交付全棧 AI 智能體應用方案，包括雲端與網頁環境（備有完整本科生課程）
+    description: 交付全端 AI 應用解決方案，涵蓋雲端與網頁環境（備有完整大學生學程）
     items:
       - name: Git 版本控制
-        description: "**維護** 版本控制工作流，運用Git, GitHub, 與GitHub Actions管理代碼協作與更迭"
+        description: "**維護** 版本工作流程，運用Git, GitHub, 與GitHub Actions管理代碼更新與協作"
         icon: devicon/githubactions
       - name: 產品經理
-        description: "**定義** 產品需求文檔（PRD），采用敏捷開發與 Scrum 框架，規劃並推動產品開發。"
+        description: "**撰寫** 產品需求文件（PRD），應用敏捷開發與 Scrum 框架，規劃並推動產品開發流程。"
         icon: custom/scrum
       - name: Python
-        description: "**熟練操作** param, pydantic, asyncio, Panel, Pandoc, 及Flask等Python庫。"
+        description: "**熟練運用** param, pydantic, asyncio, Panel, Pandoc, 及Flask等Python庫。"
         icon: devicon/python
       - name: 容器化服務及解決方案
-        description: "**部署** 容器化服務，采用 Podman, Kubernetes, HuggingFace 及 Google Cloud 提供解方"
+        description: "**佈署** 容器化服務，采用 Podman, Kubernetes, HuggingFace 及 Google Cloud 提供解方"
         icon: custom/huggingface-color
       - name: 網站構建與設計
         description: "**構建** 多語言 (i18n/L10n) 靜態網站與交互式文檔，使用 Hugo 框架、YAML 與 Markdown（支持 mermaid、markmap 等）、渲染鉤子（render hooks）與自定義短代碼（shortcodes），整合前端框架與資源管理。"
         icon: devicon/hugo
   - name: 📚 巧用開放知識
-    description: 篩選並傳播科學知識，以應對可持續發展的挑戰（備有完整實用科研寫作教程）
+    description: 篩選並傳播科學知識，解決永續發展議題挑戰（備有學術寫作教學資源實做教程）
     items:
       - name: 開放科學
-        description: "**解讀** 科學計量學、網絡計量學、文獻計量學及技術路線圖數據，生成洞察"
+        description: "**解析** 科學計量學、網絡計量學、文獻計量學及技術路線圖數據，生成洞察"
         icon: custom/OSI
-      - name: 開放數據
-        description: "**賦能** 社會進步發展，通過能行動、可獲取的數據推動一個公眾更知情、社會更可持續與公平的未來"
+      - name: 開放資料
+        description: "**賦能** 社會進步發展與知識普及，透過可行動、可獲取的開放資料推動，實現公平且永續的發展願景。"
         icon: custom/wikidatawiki
       - name: 開放內容
-        description: "**策劃** 並放大知識效應，以應對全球發展與可持續性挑戰"
+        description: "**策劃** 與放大知識效應，以應對全球發展與永續性挑戰"
         icon: custom/Wikimedia
       - name: 自由與開放的互聯網
-        description: "**監測** 互聯網作為關鍵公共資源的角色，在公民參與、經濟增長與民主表達中的作用"
+        description: "**監測** 與倡議互聯網作為關鍵公共資源的角色，在公民參與、經濟增長與民主表達中的作用"
         icon: custom/internet-world
       - name: 自由與開放的地緣政治
-        description: "**促進** 區域與跨領域對話，保障全球公共領域的跨大陸與跨海洋聯系，特別強調在『三海倡議（3SI）』與『自由開放的印太地區』等區域倡議中，建設並累積國際公共財，以實現安全、繁榮與韌性聯通"
+        description: "**倡導** 區域與跨領域對話，保障全球公共領域的跨大陸與跨海洋聯系，特別強調在『三海倡議（3SI）』與『自由開放的印太地區』等區域合作倡議中，建設並累積國際公共財，以打造具韌性與共榮的全球連結"
         icon: custom/container_ships
   - name: 🧰 應用開放知識工具
-    description: 賦能個人與機構使用專利數據庫與科學計量工具開展洞察驅動的研究與創新（備有完整實作教程）
+    description: 賦能個人與機構使用專利資料庫與科學計量工具，開展洞察驅動的研究與創新（備有完整實作教程）
     items:
       - name: The Lens
         icon: custom/lens_org
       - name: Dimensions AI
         icon: custom/dimensions_ai
-        description: "**轉化** 原始科學計量與文獻計量數據為可視化的 **戰略敘事**"
+        description: "**轉化** 原始科學計量與文獻計量數據為具 **戰略性的視覺化故事**"
       - name: Bibliometrix
         icon: custom/bibliometrix
       - name: VoSViewer
         icon: custom/VOSViewer
       - name: Publish or Perish
         icon: custom/academy
-        description: "**策劃** 內容與影響力數據，提煉 **戰略洞察**"
+        description: "**編整** 內容與影響力數據，以萃取 **策略洞察**"
   - name: 🧑‍🤝‍🧑 組織設計工作坊
-    description: 促進協作式設計會議，激發與價值對齊的策略與適應性創新，跨越多元利益相關者場景（備有完整實操教程）
+    description: 促進協作式設計工作坊，跨領域激發具價值對齊的策略與創新行動，應對多元利益相關者場景（備有完整實操教程）
     items:
       - name: 戰略技術路線圖制定
         description: "**繪制** 基於實證與概念數據的科學與創新路線圖"
         icon: custom/internet-world
       - name: 設計思維 與 系統創新
         icon: custom/canvas_TBL
-        description: "**激發** 結構化設計工作坊中的有目的協作，融合系統思維與以人為本方法"
+        description: "**激發** 結構化設計工作坊中的有目的協作，融合系統思維與以人为本方法，建立共享策略圖像"
       - name: 設計畫布定制
         icon: custom/canvas_value
-        description: "**定制原型產品** 以未來洞察為導向的解決方案，依照技術、組織、生態系統或政策環境定制設計畫布"
+        description: "**定制原型產品**以策略前瞻為核心的解方，根據技術、組織、生態系統或政策環境調整畫布架構"
   - name: 🧮 交付數據科學洞察
     description: 通過精密分析與情境智能，在敏捷『探索–交付』（discovery–delivery）循環中推動決策，並捕捉數字生態系統中的行為與文化關鍵差異
     items:
@@ -267,19 +267,19 @@ skillsets:
         icon: devicon/rstudio
         description: '**運維實現** `洞察生成`流程，使用 Python 與 R 生態（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通過迭代將`數據流`轉化為`戰略資產`'
   - name: 🕸 綜合社會科學知識
-    description: 提取一手與二手數據中的社會技術知識，服務於創新、治理與戰略前瞻
+    description: 提煉一手與二手資料中的社會技術知識，支援創新、治理與策略前瞻
     items:
       - name: 混合方法探究
-        description: '**整合** 質性與量化技術，以揭示人機系統中的模  式，包括訪談、田野調查與統計建模'
+        description: '**整合** 質性與量化技術，以揭示人機系統交流模式，使用包括訪談、田野調查與統計建模等方法'
         icon: devicon/networkx
       - name: 基於證據支持決策
         description: '**綜合** 政策與社會技術數據（如市場與政策文件分析），將干預措施錨定於現實情境'
         icon: custom/industry-factory-emission
       - name: 脈絡化（情境化）數據解讀
-        description: '**解碼** 不同行業與地緣知識框架中的行為、政策與文化數據'
+        description: '**解讀** 行為、政策與文化數據，橫跨不同產業與地緣的各種知識框架'
         icon: custom/speech-bubble
       - name: 利益相關者分析與對齊
-        description: '**運用** 認知與知識框架，`預判`並`對齊` **利益相關者** 的`動機`、`學習曲線`與`組織文化`，以實現**轉型型創新**'
+        description: '**運用** 認知與知識框架，**預判**並**對齊** 利害關係人的 ***動機、學習曲線 與 組織文化***，以實現**轉型型創新**'
         icon: custom/alignment
 
 ---
