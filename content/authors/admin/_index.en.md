@@ -177,17 +177,17 @@ skillsets:
       - name: 'CI/CD and API'
         description: '**Implement** Continuous Integration and Continuous Deployment (CI/CD) processes by specifying intent, integrating APIs, and updating model improvements'
         icon: custom/CICD
-      - name: 'RAG methods'
-        description: '**Develop** Retrieval-Augmented Generation (RAG) pipelines using vector, column-aware, and graph-based methods'
+      - name: 'Retrieval-Augmented Generation (RAG) methods'
+        description: '**Develop** RAG pipelines using vector, column-aware, and graph-based methods'
         icon: custom/RAG
-      - name: 'API & Webhooks'
+      - name: 'Application Programming Interfaces (APIs) & Webhooks'
         description: '**Integrate** APIs and webhooks using RESTful endpoints and callback handlers, including the use of WebLLM'
         icon: custom/webhook
       - name: 'Chatbot User Interface'
         description: '**Prototype** responsive chatbots and interactive visualizations using Python libraries (requests, Panel ChatBot, Gradio, Pyodide, etc.) and Open WebUI'
         icon: custom/gradio-color
-      - name: LLM Orchestration
-        description: '**Orchestrate** LLM workflows with LangChain, LlamaIndex, and MCP integrations'
+      - name: Large Language Models (LLMs) Orchestration
+        description: '**Orchestrate** LLM workflows with LangChain, LlamaIndex, and MCP integrations, including prompting, chaining, managing and monitoring LLM'
         icon: custom/MCP
   - name: Managing Software Development
     description: 'Delivering full-stack AI agent solutions across cloud and web environments (with practical undergraduate curriculums ready)'

@@ -171,44 +171,117 @@ work:
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
 skillsets:
-  - name: AI代理开发
-    description: 'design and implement AI agent applications (socio-technical skills)'
+  - name: 🤖 构建 AI 智能体（Building AI Agents）
+    description: '设计与开发 AI 代理应用 （社会-技术整合技能）'
     items:
-      - name: Continuous Integration and Continuous Deployment
-        description: 'intent specification, API integrations or model improvements'
-        icon: devicon/python
-      - name: Retrieval-Augmented Generation
-        description: 'Vector, Column-aware, and Graph-based'
-        icon: devicon/rstudio
-      - name: Python
-        description: 'requests, pydantic, asyncio, and langchain'
-        icon: circle-stack
-      - name: API & Webhooks
-        description: 'RESTful APIs and callbacks'
-      - name: Prompt Engineering & LLM Orchestration
-        description: 'LangChain, LlamaIndex, MCP integration'
-  - name: 软件开发
-    description: 'support AI agent application development (cloud and web skills)'
+      - name: 'CI/CD 持续集成与持续部署 与 API 集成'
+        description: '**实施** 持续集成与持续部署（CI/CD）流程：明确定义目标意图 （intent），整合应用程序接口（API），并持续更新模型。'
+        icon: custom/CICD
+      - name: 'RAG 检索增强生成方法'
+        description: '**构建** 检索增强生成方法（RAG）管道，利用向量检索、列感知与图结构方法，来设计构建 RAG 管道流程'
+        icon: custom/RAG
+      - name: 'API 应用程序接口 与 网钩 Webhooks'
+        description: '**整合对接** 应用程序接口（API）与 网钩（Webhooks），结合 RESTful 接口与回调机制，完成整合。'
+        icon: custom/webhook
+      - name: '聊天机器人界面原型设计'
+        description: '**开发** 响应式聊天机器人与交互式可视化界面，运用 Python 工具 (如 requests, Panel ChatBot, Gradio, Pyodide, etc.) and Open WebUI '
+        icon: custom/gradio-color
+      - name: `LLM 大语言模型 指挥编排`
+        description: '**指挥编排** 大语言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 来进行提示、串联、管理与监控LLM。'
+        icon: custom/MCP
+  - name: Managing Software Development
+    description: 'Delivering full-stack AI agent solutions across cloud and web environments (with practical undergraduate curriculums ready)'
     items:
-      - name: Python
-        description: ''
-        icon: devicon/python
-      - name: RStudio
-        description: ''
-        icon: devicon/rstudio
       - name: Git Version Control
-        description: 'Github'
-        icon: circle-stack
+        description: '**Maintain** version control workflows using Git, GitHub, and GitHub Actions'
+        icon: devicon/githubactions
       - name: Product Management
-        description: 'Product Requirements Documents, Agile, Scrum'
-      - name: Container App
-        description: 'Product Requirements Documents, Agile, Scrum'
+        description: '**Define** Product Requirements Documents (PRD) with Agile and Scrum methodology'
+        icon: custom/scrum 
+      - name: Python
+        description: '**Utilize** libraries such as param, pydantic, asyncio, Panel, Pandoc, and Flask'
+        icon: devicon/python
+      - name: Container Solutions
+        description: '**Deploy** containerized services using Podman, Kubernetes, HuggingFace and Google Cloud'
+        icon: custom/huggingface-color 
       - name: Web Building and Design
-        description: 'Hugo, multilingual (i18n/L10n) support, markdown, render hooks, shortcodes, front-end frameworks, asset management, image processing'
-  - name: 数据科学
-  - name: 社会科学
-  - name: 开放知识
-  - name: 设计工作坊
+        description: '**Build** multilingual (i18n/L10n)  static sites and interactive docs with integrated knowledge of Hugo, YAML, Markdown (e.g., markmap and Mermaid), render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
+        icon: devicon/hugo 
+  - name: Utilizing Open Knowledge
+    description: filtering and disseminating scientific knowledge for sustainable development challenges (with practical scientific writing tutorials ready)
+    items:
+      - name: Open Science
+        description: "**Translate** scientometric, webometric, bibliometric, and technology roadmapping data for insights"
+        icon: custom/OSI
+      - name: Open Data
+        description: "**Empower** progress through actionable, accessible data for infromed, sustainable, and fairer future"
+        icon: custom/wikidatawiki
+      - name: Open Content
+        description: "**Curate** and amplify knowledge to address global development and sustainability challenges"
+        icon: custom/Wikimedia
+      - name: Free and Open Internet
+        description: "**Monitor** vital public utility of the Internet for civic engagement, economic growth, and democratic expression"
+        icon: custom/internet-world
+      - name: Free and Open Geo-politics
+        description: "**Fostering** regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and accumulation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
+        icon: custom/container_ships
+  - name: Applying Open Knowledge Tools
+    description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation (with practical tutorials ready)
+    items:
+      - name: The Lens
+        icon: custom/lens_org
+      - name: Dimensions AI
+        icon: custom/dimensions_ai
+        description: "**Transform** raw scientometric and bibliometric data into visual **strategic narratives**"
+      - name: Bibliometrix
+        icon: custom/bibliometrix
+      - name: VoSViewer
+        icon: custom/VOSViewer
+      - name: Publish or Perish
+        icon: custom/academy
+        description: "**Curate** content and impact data for  **strategic insights**"
+  - name: Organizing Design Workshop
+    description: Facilitating collaborative design sessions that unlock value-aligned strategies and adaptive innovation across diverse stakeholder landscapes (with practical tutorials ready)
+    items:
+      - name: Strategic Technology Roadmapping
+        description: "**Roadmap** science and innovation maps based on empirical and conceptual data"
+        icon: custom/internet-world
+      - name: Design Thinking and Systems Inovations
+        icon: custom/canvas_TBL
+        description: "**Ignite** purposeful collaboration through structured design workshops, where systems thinking and human-centered methods converge"
+      - name: Design Canvas Customization
+        icon: custom/canvas_value
+        description: "**Prototype** foresight-driven solutions using selected design canvases tailored to technological, organizational, ecosystem and/or policy contexts"
+  - name: Delivering Data Science
+    description: Enabling decisive action in agile discovery–delivery cycles through precision analytics and contextual intelligence, or captured nuanced behavioral and cultural insights across digital ecosystems
+    items:
+      - name: Science mapping
+        description: '**Orchestrate** data science workflows to generate strategic assets, based on rigorous methods from scientometrics, webometrics, bibliometrics, and technology roadmapping'    
+        icon: custom/science-mapping
+      - name: Digital methods
+        description: '**Decode** sociotechnical dynamics through methods such as sentiment analysis, geo-linguistic analysis, geospatial analysis, digital humanities and platform analysis'
+        icon: hero/hand-thumb-up
+      - name: "Python and libraries"
+        icon: custom/jupyter
+      - name: "RStudio and libraries"
+        icon: devicon/rstudio
+        description: '**Operationalize** insight-generation processes using Python and R libraries (including Jupyter Lab, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim, tidyverse, etc.), by transforming data streams into strategic assets through iterations'
+  - name: Synthesizing Social Science
+    description: Extracting socio-technical insight from primary and secondary data to inform innovation, governance, and strategic foresight 
+    items:
+      - name: 'Mixed-methods inquiry'
+        description: '**Integrating** qualitative and quantitative techniques to reveal patterns in human-machine systems, such as interviews, fieldwork, and statistical modeling'
+        icon: devicon/networkx
+      - name: 'Evidence-based decision support'
+        description:  '**Synthesize** policy and socio-technical data (including market and policy document analysis) to anchor interventions in real-world context'
+        icon: custom/industry-factory-emission
+      - name: 'Contextual data interpretation'
+        description: '**Decode** behavioral, policy, and cultural data within and across geopolitical and sectoral knowledge frames'
+        icon: custom/speech-bubble
+      - name: 'Stakeholder analysis and alignment'
+        description: '**Leverage** cognitive and knowledge frameworks to anticipate and align **stakeholder** motivations, learning curves, and institutional culture for transformational innovations'
+        icon: custom/speech-bubble
+
 
 languages:
   - name: English
