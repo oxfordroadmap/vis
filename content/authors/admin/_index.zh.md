@@ -71,6 +71,7 @@ education:
     #  url: 'https://example.com'
   - area: 工学硕士 计算机科学与信息工程
     degree: true
+    icon: custom/NTU-uni
     institution: 国立台湾大学
     date_start: 2000-08-01
     date_end: 2004-06-30
@@ -78,6 +79,7 @@ education:
     summary: 平均绩点 GPA 3.9
   - area: 社会科学硕士 新闻学
     degree: true
+    icon: custom/NTU-uni
     institution: 国立台湾大学
     date_start: 2000-08-01
     date_end: 2004-06-30
@@ -90,6 +92,7 @@ education:
     location: 澳大利亚悉尼
   - area: 文学学士 外国文学 / 工学学士 电机与电子工程
     degree: true
+    icon: custom/NTU-uni
     institution: 国立台湾大学
     date_start: 1994-08-01
     date_end: 2000-06-30

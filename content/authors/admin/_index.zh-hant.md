@@ -71,6 +71,7 @@ education:
     #  url: 'https://example.com'
   - area: 工學碩士 計算機科學與信息工程
     degree: true
+    icon: custom/NTU-uni
     institution: 國立台灣大學
     date_start: 2000-08-01
     date_end: 2004-06-30
@@ -78,6 +79,7 @@ education:
     summary: 平均績點 GPA 3.9
   - area: 社會科學碩士 新聞學
     degree: true
+    icon: custom/NTU-uni
     institution: 國立台灣大學
     date_start: 2000-08-01
     date_end: 2004-06-30
@@ -90,6 +92,7 @@ education:
     location: 澳大利亞悉尼
   - area: 文學學士 外國文學 / 工學學士 電機與電子工程
     degree: true
+    icon: custom/NTU-uni
     institution: 國立台灣大學
     date_start: 1994-08-01
     date_end: 2000-06-30
