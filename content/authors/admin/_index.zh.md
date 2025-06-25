@@ -192,7 +192,7 @@ skillsets:
           来进行提示、串联、管理与监控LLM。"
         icon: custom/MCP
   - name: 管理软件开发
-    description: 交付全栈 AI 智能体应用方案，包括云端与网页环境（备用本科生课程）
+    description: 交付全栈 AI 智能体应用方案，包括云端与网页环境（备有完整本科生课程）
     items:
       - name: Git 版本控制
         description: "**维护** 版本控制工作流，运用Git, GitHub, 与GitHub Actions管理代码协作与更迭"
@@ -211,7 +211,7 @@ skillsets:
           mermaid、markmap 等）、渲染钩子（render hooks）与自定义短代码（shortcodes），整合前端框架与资源管理。"
         icon: devicon/hugo
   - name: 巧用开放知识
-    description: 筛选并传播科学知识，以应对可持续发展的挑战（附实用科研写作教程）
+    description: 筛选并传播科学知识，以应对可持续发展的挑战（备有完整实用科研写作教程）
     items:
       - name: 开放科学
         description: "**解读** 科学计量学、网络计量学、文献计量学及技术路线图数据，生成洞察"
@@ -230,33 +230,33 @@ skillsets:
           区域与跨领域对话，保障全球公共领域的跨大陆与跨海洋联系，特别强调在『三海倡议（3SI）』与『自由开放的印太地区』等区域倡议中，建设并累积国\
           际公共财，以实现安全、繁荣与韧性联通"
         icon: custom/container_ships
-  - name: Applying Open Knowledge Tools
-    description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation (with practical tutorials ready)
+  - name: 应用开放知识工具
+    description: 赋能个人与机构使用专利数据库与科学计量工具开展洞察驱动的研究与创新（备有完整实作教程）
     items:
       - name: The Lens
         icon: custom/lens_org
       - name: Dimensions AI
         icon: custom/dimensions_ai
-        description: "**Transform** raw scientometric and bibliometric data into visual **strategic narratives**"
+        description: "**转化** 原始科学计量与文献计量数据为可视化的 **战略叙事**"
       - name: Bibliometrix
         icon: custom/bibliometrix
       - name: VoSViewer
         icon: custom/VOSViewer
       - name: Publish or Perish
         icon: custom/academy
-        description: "**Curate** content and impact data for  **strategic insights**"
-  - name: Organizing Design Workshop
-    description: Facilitating collaborative design sessions that unlock value-aligned strategies and adaptive innovation across diverse stakeholder landscapes (with practical tutorials ready)
+        description: "**策划** 内容与影响力数据，提炼 **战略洞察**"
+  - name: 组织设计工作坊
+    description: 促进协作式设计会议，激发与价值对齐的策略与适应性创新，跨越多元利益相关者场景（备有完整实操教程）
     items:
-      - name: Strategic Technology Roadmapping
-        description: "**Roadmap** science and innovation maps based on empirical and conceptual data"
+      - name: 战略技术路线图制定
+        description: "**绘制** 基于实证与概念数据的科学与创新路线图"
         icon: custom/internet-world
-      - name: Design Thinking and Systems Inovations
+      - name: 设计思维 与 系统创新
         icon: custom/canvas_TBL
-        description: "**Ignite** purposeful collaboration through structured design workshops, where systems thinking and human-centered methods converge"
-      - name: Design Canvas Customization
+        description: "**激发** 结构化设计工作坊中的有目的协作，融合系统思维与以人为本方法"
+      - name: 设计画布定制
         icon: custom/canvas_value
-        description: "**Prototype** foresight-driven solutions using selected design canvases tailored to technological, organizational, ecosystem and/or policy contexts"
+        description: "**定制原型产品** 以未来洞察为导向的解决方案，依照技术、组织、生态系统或政策环境定制设计画布"
   - name: Delivering Data Science
     description: Enabling decisive action in agile discovery–delivery cycles through precision analytics and contextual intelligence, or captured nuanced behavioral and cultural insights across digital ecosystems
     items:
