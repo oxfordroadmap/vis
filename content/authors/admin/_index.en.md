@@ -201,7 +201,7 @@ skillsets:
       - name: Python
         description: '**Utilize** libraries such as param, pydantic, asyncio, Panel, Pandoc, and Flask'
         icon: devicon/python
-      - name: Container Solutions
+      - name: Containerized Services and Solutions
         description: '**Deploy** containerized services using Podman, Kubernetes, HuggingFace and Google Cloud'
         icon: custom/huggingface-color 
       - name: Web Building and Design

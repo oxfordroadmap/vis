@@ -189,23 +189,23 @@ skillsets:
       - name: `LLM 大语言模型 指挥编排`
         description: '**指挥编排** 大语言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 来进行提示、串联、管理与监控LLM。'
         icon: custom/MCP
-  - name: Managing Software Development
-    description: 'Delivering full-stack AI agent solutions across cloud and web environments (with practical undergraduate curriculums ready)'
+  - name: 管理软件开发
+    description: '交付全栈 AI 智能体应用方案，包括云端与网页环境（备用本科生课程）'
     items:
-      - name: Git Version Control
-        description: '**Maintain** version control workflows using Git, GitHub, and GitHub Actions'
+      - name: Git 版本控制
+        description: '**维护** 版本控制工作流，运用Git, GitHub, 与GitHub Actions管理代码协作与更迭'
         icon: devicon/githubactions
-      - name: Product Management
-        description: '**Define** Product Requirements Documents (PRD) with Agile and Scrum methodology'
+      - name: 产品经理
+        description: '**定义** 产品需求文档（PRD），采用敏捷开发与 Scrum 框架，规划并推动产品开发。'
         icon: custom/scrum 
       - name: Python
-        description: '**Utilize** libraries such as param, pydantic, asyncio, Panel, Pandoc, and Flask'
+        description: '**熟练操作** param, pydantic, asyncio, Panel, Pandoc, 及Flask等Python库。'
         icon: devicon/python
-      - name: Container Solutions
-        description: '**Deploy** containerized services using Podman, Kubernetes, HuggingFace and Google Cloud'
+      - name: 容器化服务及解决方案
+        description: '**部署** 容器化服务，采用 Podman, Kubernetes, HuggingFace 及 Google Cloud 提供解方'
         icon: custom/huggingface-color 
-      - name: Web Building and Design
-        description: '**Build** multilingual (i18n/L10n)  static sites and interactive docs with integrated knowledge of Hugo, YAML, Markdown (e.g., markmap and Mermaid), render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
+      - name: 网站构建与设计
+        description: '**构建** 多语言 (i18n/L10n) 静态网站与交互式文档，使用 Hugo 框架、YAML 与 Markdown（支持 mermaid、markmap 等）、渲染钩子（render hooks）与自定义短代码（shortcodes），整合前端框架与资源管理。'
         icon: devicon/hugo 
   - name: Utilizing Open Knowledge
     description: filtering and disseminating scientific knowledge for sustainable development challenges (with practical scientific writing tutorials ready)
