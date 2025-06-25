@@ -54,6 +54,8 @@ interests:
   - Net-Zero Industries
   - Geo-politics
   - Sustainable Development
+  - Systems Innovation
+  - Green and Digital Transformation
 
 education:
   - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
