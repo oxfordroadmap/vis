@@ -56,53 +56,57 @@ interests:
   - 永續發展
 
 education:
-  - area: 哲學博士（Ph.D.） 資訊、傳播與社會科學
+  - area: 哲學博士（DPhil.） 信息、傳播與社會科學
+    degree: true
     institution: 牛津大學
     date_start: 2007-10-01
     date_end: 2014-10-31
     location: 英國牛津
     summary: |-
-      博士論文探討[協作式百科全書，對比中文維基百科與百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，指導教授為[拉爾夫·施羅德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
+      博士論文探討[協作式百科全書，對比中文維基百科與百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，`指導教授`為[拉爾夫·施羅德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
     #button:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
-  - area: 資訊工程學碩士
-    institution: 國立臺灣大學
+  - area: 工學碩士 計算機科學與信息工程
+    degree: true
+    institution: 國立台灣大學
     date_start: 2000-08-01
     date_end: 2004-06-30
     location: 臺灣臺北
-    summary: GPA 3.9
-  - area: 新聞學碩士
-    institution: 國立臺灣大學
+    summary: 平均績點 GPA 3.9
+  - area: 社會科學碩士 新聞學
+    degree: true
+    institution: 國立台灣大學
     date_start: 2000-08-01
     date_end: 2004-06-30
     location: 臺灣臺北
-    summary: GPA 4.0
+    summary: 平均績點 GPA 4.0
   - area: 交換學生計畫——國際傳播與文化研究
-    institution: 澳洲麥考瑞大學
+    institution: 麥考瑞大學
     date_start: 2003-02-01
     date_end: 2003-12-31
-    location: 澳洲雪梨
-  - area: 外國語文學學士／電機與電子工程學學士
-    institution: 國立臺灣大學
+    location: 澳大利亞悉尼
+  - area: 文學學士 外國文學 / 工學學士 電機與電子工程
+    degree: true
+    institution: 國立台灣大學
     date_start: 1994-08-01
     date_end: 2000-06-30
     location: 臺灣臺北
   - area: 交換學生計畫——電機工程與英文
-    institution: 加拿大英屬哥倫比亞大學
+    institution: 加拿大英屬哥倫比亞大學（UBC）
     date_start: 1998-09-01
     date_end: 1999-08-31
     location: 加拿大溫哥華
 
 work:
-  - position: 執行長、資料科學家
+  - position: 資料科學家、執行長
     company_name: 牛津路線圖（澳恪森數智科技服務 Oxon8）
     company_url: https://oxon8.netlify.app
     company_logo: 'icons/brands/oxon8.svg'
     date_start: 2023-01-01
     date_end: ''
     summary: |2-
-      * 開發多款視覺化應用與工具組（如 NetBib、visCEADs 和 visNetZero），協助在科學研究影響力、產業經濟學與淨零等領域進行資料驅動決策。
+      * 開發多款視覺化應用與工具組（如 NetBib、visCEADs 和 visNetZero），協助在科學研究影響力、產業經濟學與淨零等領域進行數據驅動決策。
       * 在 *精準減碳路線圖規劃* 研究專案中，於首次專家審查前完成三篇 SCIE 二區期刊論文。
       * 提交關於綠色供應鏈金融科技與數位農業的 ITU 技術輸入文件（FG-AI4A-I-132）。
   - position: 高校影響力研究中心主任
@@ -115,7 +119,7 @@ work:
       * 開設以產品經理能力為導向的「互聯網與新媒體」大學部課程，結合理論與實務，包括平台經濟、使用者體驗、Github、Python、API 及人工智慧。
       * 指導多位學生，其中三人提前畢業。
       * 成立全校最高產出期刊文章的研究中心。
-      * 共同領導 ESG 資料驅動決策實驗室，參與多項跨領域與科研專案。
+      * 共同領導 ESG 數據驅動決策實驗室，參與多項跨領域與科研專案。
       * 主持 2019 永續創新與生態系會議（WEDC）。
   - position: 副教授、兼 互聯網與新媒體專業主任（及系副主任）
     company_name: 中山大學南方學院
@@ -140,7 +144,7 @@ work:
     date_start: 2010-08-01
     date_end: 2011-07-31
     summary: 主持數位語言群體研究；籌辦 2011 年中文網路研究年會。
-  - position: 博士級研究員（訪學）社会学研究所
+  - position: 博士級研究員（訪學）社會學研究所
     company_name: 中央研究院
     company_url: 'https://www.sinica.edu.tw/en'
     company_logo: 'icons/brands/AcademiaSinica.webp'
@@ -161,92 +165,125 @@ work:
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-
-      推動開放平台專案，並組織產業與公民參與活動，涵蓋開源軟體、開放資料與開放內容。
+      推動開放平台專案，並組織產業與公民參與活動，涵蓋開源軟體、開放數據與開放內容。
 
-# Skills
+# Skill Sets
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
-# Skill Sets
 skillsets:
-  - name: AI代理開發
-    description: 'design and implement AI agent applications (socio-technical skills)'
+  - name: 🤖 構建 AI 智能體（Building AI Agents）
+    description: 設計與開發 AI 代理應用 （社會-技術整合技能）
     items:
-      - name: Continuous Integration and Continuous Deployment
-        description: 'intent specification, API integrations or model improvements'
-        icon: devicon/python
-      - name: Retrieval-Augmented Generation
-        description: 'Vector, Column-aware, and Graph-based'
-        icon: devicon/rstudio
-      - name: Python
-        description: 'requests, pydantic, asyncio, and langchain'
-        icon: circle-stack
-      - name: API & Webhooks
-        description: 'RESTful APIs and callbacks'
-      - name: Prompt Engineering & LLM Orchestration
-        description: 'LangChain, LlamaIndex, MCP integration'
-  - name: 軟件開發
-    description: 'support AI agent application development (cloud and web skills)'
+      - name: CI/CD 持續集成與持續部署 與 API 集成
+        description: "**實施** 持續集成與持續部署（CI/CD）流程：明確定義目標意圖 （intent），整合應用程序接口（API），並持續更新模型。"
+        icon: custom/CICD
+      - name: RAG 檢索增強生成方法
+        description: "**構建** 檢索增強生成方法（RAG）管道，利用向量檢索、列感知與圖結構方法，來設計構建 RAG 管道流程"
+        icon: custom/RAG
+      - name: API 應用程序接口 與 網鉤 Webhooks
+        description: "**整合對接** 應用程序接口（API）與 網鉤（Webhooks），結合 RESTful 接口與回調機制，完成整合。"
+        icon: custom/webhook
+      - name: 聊天機器人界面原型設計
+        description: "**開發** 響應式聊天機器人與交互式可視化界面，運用 Python 工具 (如 requests, Panel ChatBot, Gradio, Pyodide, etc.) and Open WebUI "
+        icon: custom/gradio-color
+      - name: LLM 大語言模型 指揮編排
+        description: "**指揮編排** 大語言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 來進行提示、串聯、管理與監控LLM。"
+        icon: custom/MCP
+  - name: 📦 管理軟件開發
+    description: 交付全棧 AI 智能體應用方案，包括雲端與網頁環境（備有完整本科生課程）
     items:
+      - name: Git 版本控制
+        description: "**維護** 版本控制工作流，運用Git, GitHub, 與GitHub Actions管理代碼協作與更迭"
+        icon: devicon/githubactions
+      - name: 產品經理
+        description: "**定義** 產品需求文檔（PRD），采用敏捷開發與 Scrum 框架，規劃並推動產品開發。"
+        icon: custom/scrum
       - name: Python
-        description: ''
+        description: "**熟練操作** param, pydantic, asyncio, Panel, Pandoc, 及Flask等Python庫。"
         icon: devicon/python
-      - name: RStudio
-        description: ''
+      - name: 容器化服務及解決方案
+        description: "**部署** 容器化服務，采用 Podman, Kubernetes, HuggingFace 及 Google Cloud 提供解方"
+        icon: custom/huggingface-color
+      - name: 網站構建與設計
+        description: "**構建** 多語言 (i18n/L10n) 靜態網站與交互式文檔，使用 Hugo 框架、YAML 與 Markdown（支持 mermaid、markmap 等）、渲染鉤子（render hooks）與自定義短代碼（shortcodes），整合前端框架與資源管理。"
+        icon: devicon/hugo
+  - name: 📚 巧用開放知識
+    description: 篩選並傳播科學知識，以應對可持續發展的挑戰（備有完整實用科研寫作教程）
+    items:
+      - name: 開放科學
+        description: "**解讀** 科學計量學、網絡計量學、文獻計量學及技術路線圖數據，生成洞察"
+        icon: custom/OSI
+      - name: 開放數據
+        description: "**賦能** 社會進步發展，通過能行動、可獲取的數據推動一個公眾更知情、社會更可持續與公平的未來"
+        icon: custom/wikidatawiki
+      - name: 開放內容
+        description: "**策劃** 並放大知識效應，以應對全球發展與可持續性挑戰"
+        icon: custom/Wikimedia
+      - name: 自由與開放的互聯網
+        description: "**監測** 互聯網作為關鍵公共資源的角色，在公民參與、經濟增長與民主表達中的作用"
+        icon: custom/internet-world
+      - name: 自由與開放的地緣政治
+        description: "**促進** 區域與跨領域對話，保障全球公共領域的跨大陸與跨海洋聯系，特別強調在『三海倡議（3SI）』與『自由開放的印太地區』等區域倡議中，建設並累積國際公共財，以實現安全、繁榮與韌性聯通"
+        icon: custom/container_ships
+  - name: 🧰 應用開放知識工具
+    description: 賦能個人與機構使用專利數據庫與科學計量工具開展洞察驅動的研究與創新（備有完整實作教程）
+    items:
+      - name: The Lens
+        icon: custom/lens_org
+      - name: Dimensions AI
+        icon: custom/dimensions_ai
+        description: "**轉化** 原始科學計量與文獻計量數據為可視化的 **戰略敘事**"
+      - name: Bibliometrix
+        icon: custom/bibliometrix
+      - name: VoSViewer
+        icon: custom/VOSViewer
+      - name: Publish or Perish
+        icon: custom/academy
+        description: "**策劃** 內容與影響力數據，提煉 **戰略洞察**"
+  - name: 🧑‍🤝‍🧑 組織設計工作坊
+    description: 促進協作式設計會議，激發與價值對齊的策略與適應性創新，跨越多元利益相關者場景（備有完整實操教程）
+    items:
+      - name: 戰略技術路線圖制定
+        description: "**繪制** 基於實證與概念數據的科學與創新路線圖"
+        icon: custom/internet-world
+      - name: 設計思維 與 系統創新
+        icon: custom/canvas_TBL
+        description: "**激發** 結構化設計工作坊中的有目的協作，融合系統思維與以人為本方法"
+      - name: 設計畫布定制
+        icon: custom/canvas_value
+        description: "**定制原型產品** 以未來洞察為導向的解決方案，依照技術、組織、生態系統或政策環境定制設計畫布"
+  - name: 🧮 交付數據科學洞察
+    description: 通過精密分析與情境智能，在敏捷『探索–交付』（discovery–delivery）循環中推動決策，並捕捉數字生態系統中的行為與文化關鍵差異
+    items:
+      - name: 科學地圖（知識圖）
+        description: '**指揮編排** 數據科學工作流，生成戰略性資產。采用嚴謹基於科學計量學、網絡計量學、文獻計量學與技術路線圖等方法'   
+        icon: custom/science-mapping
+      - name: 數字方法
+        description: '**解碼** 社會技術動態，采用`情感分析`、`地理語言分析`、`地理空間分析`、`數字人文學`與`平台分析`等方法'
+        icon: hero/hand-thumb-up
+      - name: "Python 及其庫"
+        icon: custom/jupyter
+      - name: "RStudio 及其庫"
         icon: devicon/rstudio
-      - name: Git Version Control
-        description: 'Github'
-        icon: circle-stack
-      - name: Product Management
-        description: 'Product Requirements Documents, Agile, Scrum'
-      - name: Container App
-        description: 'Product Requirements Documents, Agile, Scrum'
-      - name: Web Building and Design
-        description: 'Hugo, multilingual (i18n/L10n) support, markdown, render hooks, shortcodes, front-end frameworks, asset management, image processing'
-  - name: 數據科學
-  - name: 社會科學
-  - name: 開放知識
-  - name: 設計工作坊
+        description: '**運維實現** `洞察生成`流程，使用 Python 與 R 生態（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通過迭代將`數據流`轉化為`戰略資產`'
+  - name: 🕸 綜合社會科學知識
+    description: 提取一手與二手數據中的社會技術知識，服務於創新、治理與戰略前瞻
+    items:
+      - name: 混合方法探究
+        description: '**整合** 質性與量化技術，以揭示人機系統中的模  式，包括訪談、田野調查與統計建模'
+        icon: devicon/networkx
+      - name: 基於證據支持決策
+        description: '**綜合** 政策與社會技術數據（如市場與政策文件分析），將干預措施錨定於現實情境'
+        icon: custom/industry-factory-emission
+      - name: 脈絡化（情境化）數據解讀
+        description: '**解碼** 不同行業與地緣知識框架中的行為、政策與文化數據'
+        icon: custom/speech-bubble
+      - name: 利益相關者分析與對齊
+        description: '**運用** 認知與知識框架，`預判`並`對齊` **利益相關者** 的`動機`、`學習曲線`與`組織文化`，以實現**轉型型創新**'
+        icon: custom/speech-bubble
 
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
-
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-### 關於我  - [About Me]({{% ref path="/experience" lang="en" %}}) - [关于我]({{% ref path="/experience" lang="zh" %}})
+### 關於我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})
 
-廖漢騰是一位資料科學家與教育工作者，專長於**開放協作**、**中文網際網路研究**以及**技術路線圖規劃**，其研究基礎主要來自**科學計量學**與**設計工作坊**。他結合在中國、美國與歐洲的跨領域經驗，開發**産品原型**與**實作導引教學材料**，協助新一代產品經理、政策制定者與應用開發者掌握將人工智慧能力與人類價值對齊的關鍵洞見。他的工作銜接技術實踐與策略前瞻，賦能未來領導者駕馭日益複雜的社會技術變遷與地緣政治動態。
+廖漢騰是一位資料科學家與教育工作者，專精於**開放式協作**、**中文網際網路研究**以及**技術路線圖規劃**（主要基於**科學計量學**與**設計工作坊**）。憑借在中國、美國和歐洲的跨領域經驗，他開發了**產品原型**和**實作導引教學材料**，幫助新一代產品經理、政策制定者和開發人員深入理解如何將**人工智能的能力**與**人類價值觀**對齊。他的工作融合技術實施與戰略遠見，賦能未來領袖應對日益復雜的社會技術環境與地緣政治風險。

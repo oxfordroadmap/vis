@@ -63,7 +63,7 @@ education:
     date_end: 2014-10-31
     location: 英国牛津
     summary: |-
-      博士论文研究了[协作式百科全书，对比中文维基百科与百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，导师为[拉尔夫·施罗德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
+      博士论文研究了[协作式百科全书，对比中文维基百科与百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，`导师`为[拉尔夫·施罗德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
     #button:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
@@ -93,7 +93,7 @@ education:
     date_end: 2000-06-30
     location: 台湾台北
   - area: 交換学生——电机工程与英语
-    institution: 不列颠哥伦比亚大学
+    institution: 不列颠哥伦比亚大学（UBC）
     date_start: 1998-09-01
     date_end: 1999-08-31
     location: 加拿大温哥华
