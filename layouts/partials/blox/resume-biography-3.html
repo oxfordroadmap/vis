@@ -168,11 +168,11 @@
             {{ if in (slice "fab" "fas" "far" "fal") $pack }}
             {{ $pack_prefix = "fa" }}
             {{ end }}
-            
+
             {{ with .icon }}
-            <span class="my-auto flex items-center justify-center" style="height:3.6em; width:3.6em;" >
+            <div class="my-auto flex items-center justify-center mr-1" style="height:3.6em; width:3.6em;" >
               {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3.3em;width:2.7em;' class='flex-shrink-0 mx-auto'")  }}
-            </span>
+            </div>
             {{ end }}
             
           <div class="description">
