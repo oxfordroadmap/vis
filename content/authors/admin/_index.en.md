@@ -280,7 +280,7 @@ skillsets:
         icon: custom/speech-bubble
       - name: 'Stakeholder analysis and alignment'
         description: '**Leverage** cognitive and knowledge frameworks to `anticipate` and `align` **stakeholder** `motivations`, `learning curves`, and `institutional culture` for **transformational innovations**'
-        icon: custom/speech-bubble
+        icon: custom/alignment
 languages:
   - name: English
     percent: 100

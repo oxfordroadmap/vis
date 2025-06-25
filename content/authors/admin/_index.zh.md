@@ -280,7 +280,7 @@ skillsets:
         icon: custom/speech-bubble
       - name: 利益相关者分析与对齐
         description: '**运用** 认知与知识框架，`预判`并`对齐` **利益相关者** 的`动机`、`学习曲线`与`组织文化`，以实现**转型型创新**'
-        icon: custom/speech-bubble
+        icon: custom/alignment
 
 ---
 
