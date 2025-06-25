@@ -57,6 +57,7 @@ interests:
 
 education:
   - area: 哲学博士（DPhil.） 信息、传播与社会科学
+    degree: true
     institution: 牛津大学
     date_start: 2007-10-01
     date_end: 2014-10-31
@@ -67,12 +68,14 @@ education:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
   - area: 工学硕士 计算机科学与信息工程
+    degree: true
     institution: 国立台湾大学
     date_start: 2000-08-01
     date_end: 2004-06-30
     location: 台湾台北
     summary: 平均绩点 GPA 3.9
   - area: 社会科学硕士 新闻学
+    degree: true
     institution: 国立台湾大学
     date_start: 2000-08-01
     date_end: 2004-06-30
@@ -84,6 +87,7 @@ education:
     date_end: 2003-12-31
     location: 澳大利亚悉尼
   - area: 文学学士 外国文学 / 工学学士 电机与电子工程
+    degree: true
     institution: 国立台湾大学
     date_start: 1994-08-01
     date_end: 2000-06-30
