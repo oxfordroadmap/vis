@@ -170,60 +170,66 @@ work:
 # Skill Sets
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
+---
 skillsets:
   - name: 🤖 构建 AI 智能体（Building AI Agents）
-    description: '设计与开发 AI 代理应用 （社会-技术整合技能）'
+    description: 设计与开发 AI 代理应用 （社会-技术整合技能）
     items:
-      - name: 'CI/CD 持续集成与持续部署 与 API 集成'
-        description: '**实施** 持续集成与持续部署（CI/CD）流程：明确定义目标意图 （intent），整合应用程序接口（API），并持续更新模型。'
+      - name: CI/CD 持续集成与持续部署 与 API 集成
+        description: "**实施** 持续集成与持续部署（CI/CD）流程：明确定义目标意图 （intent），整合应用程序接口（API），并持续更新模型。"
         icon: custom/CICD
-      - name: 'RAG 检索增强生成方法'
-        description: '**构建** 检索增强生成方法（RAG）管道，利用向量检索、列感知与图结构方法，来设计构建 RAG 管道流程'
+      - name: RAG 检索增强生成方法
+        description: "**构建** 检索增强生成方法（RAG）管道，利用向量检索、列感知与图结构方法，来设计构建 RAG 管道流程"
         icon: custom/RAG
-      - name: 'API 应用程序接口 与 网钩 Webhooks'
-        description: '**整合对接** 应用程序接口（API）与 网钩（Webhooks），结合 RESTful 接口与回调机制，完成整合。'
+      - name: API 应用程序接口 与 网钩 Webhooks
+        description: "**整合对接** 应用程序接口（API）与 网钩（Webhooks），结合 RESTful 接口与回调机制，完成整合。"
         icon: custom/webhook
-      - name: '聊天机器人界面原型设计'
-        description: '**开发** 响应式聊天机器人与交互式可视化界面，运用 Python 工具 (如 requests, Panel ChatBot, Gradio, Pyodide, etc.) and Open WebUI '
+      - name: 聊天机器人界面原型设计
+        description: "**开发** 响应式聊天机器人与交互式可视化界面，运用 Python 工具 (如 requests, Panel ChatBot,
+          Gradio, Pyodide, etc.) and Open WebUI "
         icon: custom/gradio-color
-      - name: `LLM 大语言模型 指挥编排`
-        description: '**指挥编排** 大语言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 来进行提示、串联、管理与监控LLM。'
+      - name: LLM 大语言模型 指挥编排
+        description: "**指挥编排** 大语言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP
+          来进行提示、串联、管理与监控LLM。"
         icon: custom/MCP
   - name: 管理软件开发
-    description: '交付全栈 AI 智能体应用方案，包括云端与网页环境（备用本科生课程）'
+    description: 交付全栈 AI 智能体应用方案，包括云端与网页环境（备用本科生课程）
     items:
       - name: Git 版本控制
-        description: '**维护** 版本控制工作流，运用Git, GitHub, 与GitHub Actions管理代码协作与更迭'
+        description: "**维护** 版本控制工作流，运用Git, GitHub, 与GitHub Actions管理代码协作与更迭"
         icon: devicon/githubactions
       - name: 产品经理
-        description: '**定义** 产品需求文档（PRD），采用敏捷开发与 Scrum 框架，规划并推动产品开发。'
-        icon: custom/scrum 
+        description: "**定义** 产品需求文档（PRD），采用敏捷开发与 Scrum 框架，规划并推动产品开发。"
+        icon: custom/scrum
       - name: Python
-        description: '**熟练操作** param, pydantic, asyncio, Panel, Pandoc, 及Flask等Python库。'
+        description: "**熟练操作** param, pydantic, asyncio, Panel, Pandoc, 及Flask等Python库。"
         icon: devicon/python
       - name: 容器化服务及解决方案
-        description: '**部署** 容器化服务，采用 Podman, Kubernetes, HuggingFace 及 Google Cloud 提供解方'
-        icon: custom/huggingface-color 
+        description: "**部署** 容器化服务，采用 Podman, Kubernetes, HuggingFace 及 Google Cloud 提供解方"
+        icon: custom/huggingface-color
       - name: 网站构建与设计
-        description: '**构建** 多语言 (i18n/L10n) 静态网站与交互式文档，使用 Hugo 框架、YAML 与 Markdown（支持 mermaid、markmap 等）、渲染钩子（render hooks）与自定义短代码（shortcodes），整合前端框架与资源管理。'
-        icon: devicon/hugo 
-  - name: Utilizing Open Knowledge
-    description: filtering and disseminating scientific knowledge for sustainable development challenges (with practical scientific writing tutorials ready)
+        description: "**构建** 多语言 (i18n/L10n) 静态网站与交互式文档，使用 Hugo 框架、YAML 与 Markdown（支持
+          mermaid、markmap 等）、渲染钩子（render hooks）与自定义短代码（shortcodes），整合前端框架与资源管理。"
+        icon: devicon/hugo
+  - name: 巧用开放知识
+    description: 筛选并传播科学知识，以应对可持续发展的挑战（附实用科研写作教程）
     items:
-      - name: Open Science
-        description: "**Translate** scientometric, webometric, bibliometric, and technology roadmapping data for insights"
+      - name: 开放科学
+        description: "**解读** 科学计量学、网络计量学、文献计量学及技术路线图数据，生成洞察"
         icon: custom/OSI
-      - name: Open Data
-        description: "**Empower** progress through actionable, accessible data for infromed, sustainable, and fairer future"
+      - name: 开放数据
+        description: "**赋能** 社会进步发展，通过能行动、可获取的数据推动一个公众更知情、社会更可持续与公平的未来"
         icon: custom/wikidatawiki
-      - name: Open Content
-        description: "**Curate** and amplify knowledge to address global development and sustainability challenges"
+      - name: 开放内容
+        description: "**策划** 并放大知识效应，以应对全球发展与可持续性挑战"
         icon: custom/Wikimedia
-      - name: Free and Open Internet
-        description: "**Monitor** vital public utility of the Internet for civic engagement, economic growth, and democratic expression"
+      - name: 自由与开放的互联网
+        description: "**监测** 互联网作为关键公共资源的角色，在公民参与、经济增长与民主表达中的作用"
         icon: custom/internet-world
-      - name: Free and Open Geo-politics
-        description: "**Fostering** regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and accumulation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
+      - name: 自由与开放的地缘政治
+        description: "**促进**
+          区域与跨领域对话，保障全球公共领域的跨大陆与跨海洋联系，特别强调在『三海倡议（3SI）』与『自由开放的印太地区』等区域倡议中，建设并累积国\
+          际公共财，以实现安全、繁荣与韧性联通"
         icon: custom/container_ships
   - name: Applying Open Knowledge Tools
     description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation (with practical tutorials ready)
