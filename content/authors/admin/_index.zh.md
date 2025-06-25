@@ -99,14 +99,14 @@ education:
     location: 加拿大温哥华
 
 work:
-  - position: 资料科学家、执行长
+  - position: 数据科学家、执行长
     company_name: 牛津路线图（澳恪森数智科技服务 Oxon8）
     company_url: https://oxon8.netlify.app
     company_logo: 'icons/brands/oxon8.svg'
     date_start: 2023-01-01
     date_end: ''
     summary: |2-
-      * 开发多款视觉化应用与工具组（如 NetBib、visCEADs 和 visNetZero），协助在科学研究影响力、产业经济学与净零等领域进行资料驱动决策。
+      * 开发多款视觉化应用与工具组（如 NetBib、visCEADs 和 visNetZero），协助在科学研究影响力、产业经济学与净零等领域进行数据驱动决策。
       * 在 *精准减碳路线图规划* 研究专案中，於首次专家审查前完成三篇 SCIE 二区期刊论文。
       * 提交关於绿色供应链金融科技与数位农业的 ITU 技术输入文件（FG-AI4A-I-132）。
   - position: 高校影响力研究中心主任
@@ -119,7 +119,7 @@ work:
       * 开设以产品经理能力为导向的「互联网与新媒体」大学部课程，结合理论与实务，包括平台经济、使用者体验、Github、Python、API 及人工智慧。
       * 指导多位学生，其中三人提前毕业。
       * 成立全校最高产出期刊文章的研究中心。
-      * 共同领导 ESG 资料驱动决策实验室，参与多项跨领域与科研专案。
+      * 共同领导 ESG 数据驱动决策实验室，参与多项跨领域与科研专案。
       * 主持 2019 永续创新与生态系会议（WEDC）。
   - position: 副教授、兼 互联网与新媒体专业主任（及系副主任）
     company_name: 中山大学南方学院
@@ -165,7 +165,7 @@ work:
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-
-      推动开放平台专案，并组织产业与公民参与活动，涵盖开源软体、开放资料与开放内容。
+      推动开放平台专案，并组织产业与公民参与活动，涵盖开源软体、开放数据与开放内容。
 
 # Skill Sets
 # Add your own SVG icons to `assets/media/icons/`
@@ -267,13 +267,13 @@ skillsets:
         icon: devicon/rstudio
         description: '**运维实现** `洞察生成`流程，使用 Python 与 R 生态（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通过迭代将`数据流`转化为`战略资产`'
   - name: 🕸 综合社会科学知识
-    description: 提取一手与二手资料中的社会技术知识，服务于创新、治理与战略前瞻
+    description: 提取一手与二手数据中的社会技术知识，服务于创新、治理与战略前瞻
     items:
       - name: 混合方法探究
         description: '**整合** 质性与量化技术，以揭示人机系统中的模  式，包括访谈、田野调查与统计建模'
         icon: devicon/networkx
       - name: 基于证据支持决策
-        description: '**综合** 政策与社会技术资料（如市场与政策文件分析），将干预措施锚定于现实情境'
+        description: '**综合** 政策与社会技术数据（如市场与政策文件分析），将干预措施锚定于现实情境'
         icon: custom/industry-factory-emission
       - name: 脉络化（情境化）数据解读
         description: '**解码** 不同行业与地缘知识框架中的行为、政策与文化数据'
@@ -281,44 +281,7 @@ skillsets:
       - name: 利益相关者分析与对齐
         description: '**运用** 认知与知识框架，`预判`并`对齐` **利益相关者** 的`动机`、`学习曲线`与`组织文化`，以实现**转型型创新**'
         icon: custom/speech-bubble
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
 ### 关于我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})
