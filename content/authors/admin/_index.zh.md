@@ -281,7 +281,10 @@ skillsets:
       - name: 利益相关者分析与对齐
         description: '**運用** 認知與知識框架，**預判**並**對齊** 利害關係人的 ***動機、學習曲線 與 組織文化***，以實現**轉型型創新**'
         icon: custom/alignment
-
+language_skills:
+  - name: 🗫 中文（🇨🇳 🇹🇼）与英文（🇬🇧 🇺🇸）熟练掌握 —— 适用于高校及高阶学术与高端专业会议场景
+  - name: 🧪 学术英语课程 (EAP, English For Academic Purpose) 教学专长 —— 具备高校面对面辅导与虚拟研讨会教学经验
+  - name: ✍ 中文 与 英文 文献综述写作 (Literature Review Writing) 教学专长 —— 具备高校正式课程与线上平台授课经验
 ---
 
 ### 关于我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})

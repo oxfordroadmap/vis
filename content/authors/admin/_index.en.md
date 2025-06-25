@@ -281,14 +281,10 @@ skillsets:
       - name: 'Stakeholder analysis and alignment'
         description: '**Leverage** cognitive and knowledge frameworks to `anticipate` and `align` **stakeholder** `motivations`, `learning curves`, and `institutional culture` for **transformational innovations**'
         icon: custom/alignment
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
-
+language_skills:
+  - name: 🗫 Chinese (🇹🇼 🇨🇳) and English (🇬🇧 🇺🇸) Proficiency – applicable in university and high-level academic and professional contexts
+  - name: 🧪 English For Academic Purpose (EAP) Instruction Expertise – with experience teaching in university in-person tutorials and virtual workshops
+  - name: ✍ Literature Review Writing Instruction Expertise – with formal teaching experience in universities and digital platforms
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.

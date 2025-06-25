@@ -113,6 +113,12 @@
 - id: user_profile_latest
   translation: 最新
 
+- id: language_skills
+  translation: 語言能力
+
+- id: awards
+  translation: 獲獎
+
 # Accomplishments widget
 
 - id: see_certificate

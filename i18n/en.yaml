@@ -116,6 +116,12 @@
 - id: user_profile_latest
   translation: Latest
 
+- id: language_skills
+  translation: Language Skills
+
+- id: awards
+  translation: Awards
+
 # Countdown widget
 
 - id: days

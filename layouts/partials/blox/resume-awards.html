@@ -14,15 +14,15 @@
 {{end}}
 {{ $awards := $person_page.Params.awards }}
 
+{{/* Awards Section Title */}}
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
-
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
-    {{ $block.content.title | markdownify | emojify }}
+    {{ $block.content.title | i18n | markdownify | emojify }}
   </div>
 
   {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
 
-<div class="w-full flex flex-col gap-6">
+<div class="w-full flex flex-col gap-3">
 {{ if $awards }}
 {{ range $idx, $key := sort $awards ".date_start" "desc" }}
 <div class="w-full p-6 border border-opacity-50 border-gray-500 folded-corner bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
