@@ -41,7 +41,7 @@
   <div {{ (printf "id=\"%s\"" . ) | safeHTMLAttr }} class="section-sub px-6 pb-2 w-full" >
     <div class="grid grid-cols-1 md:grid-cols-3">
       {{/* w-1/4 Grouped (cols/rows): One Skillset-Description */}}
-          <div class="mb-5 mr-3 text-xl font-bold text-gray-900 dark:text-white">
+          <div class="mb-5 mr-3 text-lg font-bold text-gray-900 dark:text-white">
             {{ . }}
   {{ with $oneskillset_desc }}
             <div class="text-xs text-wrap text-gray-600 dark:text-gray-200 leading-8 py-7">{{ . }}</div>
