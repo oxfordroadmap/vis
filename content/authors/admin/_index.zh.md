@@ -167,10 +167,9 @@ work:
     summary: |2-
       推动开放平台专案，并组织产业与公民参与活动，涵盖开源软体、开放资料与开放内容。
 
-# Skills
+# Skill Sets
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
-# Skill Sets
 skillsets:
   - name: AI代理开发
     description: 'design and implement AI agent applications (socio-technical skills)'

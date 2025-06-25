@@ -167,10 +167,9 @@ work:
     summary: |2-
       Delivered open platform projects and facilitated industrial and civic engagement around open source, open data, and open content.
 
-# Skills
+# Skill Sets
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
-# Skill Sets
 skillsets:
   - name: Building AI Agents
     description: 'Designing and deploying intelligent systems that align with socio-technical goals'
