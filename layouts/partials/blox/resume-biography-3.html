@@ -170,8 +170,8 @@
             {{ end }}
             
             {{ with .icon }}
-            <span style="height:3.5em;width:3.5em;padding:0.2em;" >
-              {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3em; width:3em;' class='flex-shrink-0 m-auto'")  }}
+            <span class="mx-auto flex items-center justify-center" style="height:3.6em; width:3.6em;" >
+              {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3.3em;width:2.7em;' class='flex-shrink-0 mx-auto'")  }}
             </span>
             {{ end }}
             
