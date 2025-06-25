@@ -170,7 +170,6 @@ work:
 # Skill Sets
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
----
 skillsets:
   - name: 🤖 构建 AI 智能体（Building AI Agents）
     description: 设计与开发 AI 代理应用 （社会-技术整合技能）
