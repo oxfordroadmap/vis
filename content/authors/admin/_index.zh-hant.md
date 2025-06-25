@@ -70,7 +70,7 @@ education:
     #button:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
-  - area: 工學碩士 計算機科學與信息工程
+  - area: 工學碩士 資訊工程學系
     degree: true
     icon: custom/NTU-uni
     institution: 國立台灣大學
@@ -91,7 +91,9 @@ education:
     date_start: 2003-02-01
     date_end: 2003-12-31
     location: 澳大利亞悉尼
-  - area: 文學學士 外國文學 / 工學學士 電機與電子工程
+  - area: |-
+      文學學士 外國語文學系 
+      工學學士 電機工程學系
     degree: true
     icon: custom/NTU-uni
     institution: 國立台灣大學

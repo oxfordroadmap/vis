@@ -91,7 +91,9 @@ education:
     date_start: 2003-02-01
     date_end: 2003-12-31
     location: 澳大利亚悉尼
-  - area: 文学学士 外国文学 / 工学学士 电机与电子工程
+  - area: |-
+      文学学士 外国语文学系 
+      工学学士 电机工程学系
     degree: true
     icon: custom/NTU-uni
     institution: 国立台湾大学
