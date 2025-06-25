@@ -161,7 +161,20 @@
         {{ range . }}
         {{ if .degree }}
         <li class="flex items-start gap-1">
-          {{ partial "functions/get_icon" (dict "name" "academic-degree" "attributes" "style=\"\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'") }}
+
+            {{ $pack := or .icon_pack "fas" }}
+            {{ $pack_prefix := $pack }}
+
+            {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+            {{ $pack_prefix = "fa" }}
+            {{ end }}
+            
+            {{ with .icon }}
+            <span class="skills-icon inline-block leading-8">
+              {{ partial "functions/get_icon" (dict "name" . "attributes" "style=\"height: 1em;\" class='flex-shrink-0 w-5 h-5 me-2 mt-1'")  }}
+            </span>
+            {{ end }}
+            
           <div class="description">
             <p class="course">{{ .institution }}{{ with .date_end }},
                 {{ $d := split . "-" }} 

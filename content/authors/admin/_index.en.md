@@ -60,6 +60,7 @@ interests:
 education:
   - area: DPhil (Ph.D.) Information, Communication, and the Social Sciences
     degree: true
+    icon: custom/oxford-uni
     institution: University of Oxford
     date_start: 2007-10-01
     date_end: 2014-10-31
@@ -71,6 +72,7 @@ education:
     #  url: 'https://example.com'
   - area: M.Sc. Computer Science and Information Engineering
     degree: true
+    icon: custom/academic-degree
     institution: National Taiwan University
     date_start: 2000-08-01
     date_end: 2004-06-30
@@ -78,6 +80,7 @@ education:
     summary: GPA 3.9
   - area: M.S.S. Journalism
     degree: true
+    icon: custom/academic-degree
     institution: National Taiwan University
     date_start: 2000-08-01
     date_end: 2004-06-30
@@ -89,6 +92,7 @@ education:
     date_end: 2003-12-31
     location: Sydney, Australia
   - area: B.A. Foreign Languages and Literatures / B.Sc. Electrical and Electronic Engineering
+    icon: custom/academy
     degree: true
     institution: National Taiwan University
     date_start: 1994-08-01
