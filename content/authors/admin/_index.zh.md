@@ -171,8 +171,8 @@ work:
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
 skillsets:
-  - name: 🤖 构建 AI 智能体（Building AI Agents）
-    description: 设计与开发 AI 代理应用 （社会-技术整合技能）
+  - name: 🤖 构建 AI 智能体
+    description: 设计与开发 AI 智能体（Agents）应用（社会-技术整合技能）
     items:
       - name: CI/CD 持续集成与持续部署 与 API 集成
         description: "**实施** 持续集成与持续部署（CI/CD）流程：明确定义目标意图 （intent），整合应用程序接口（API），并持续更新模型。"
@@ -267,19 +267,19 @@ skillsets:
         icon: devicon/rstudio
         description: '**运维实现** `洞察生成`流程，使用 Python 与 R 生态（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通过迭代将`数据流`转化为`战略资产`'
   - name: 🕸 综合社会科学知识
-    description: 提取一手与二手数据中的社会技术知识，服务于创新、治理与战略前瞻
+    description: 提取一手与二手数据中的社会技术知识，支持创新、治理与战略前瞻
     items:
       - name: 混合方法探究
-        description: '**整合** 质性与量化技术，以揭示人机系统中的模  式，包括使用访谈、田野调查与统计建模等方法'
+        description: '**集成** 质性与量化技术，以揭示人机系统中的模式，包括使用访谈、田野调查与统计建模等方法'
         icon: devicon/networkx
       - name: 基于证据支持决策
-        description: '**综合** 政策与社会技术数据（如市场与政策文件分析），将干预措施锚定于现实情境'
+        description: '**综合** 政策与社会技术数据（如市场文件），锚定干预措施于现实'
         icon: custom/industry-factory-emission
       - name: 脉络化（情境化）数据解读
         description: '**解读** 行为丶政策与文化数据，横跨不同产业与地缘的各种知识框架'
         icon: custom/speech-bubble
       - name: 利益相关者分析与对齐
-        description: '**運用** 認知與知識框架，**預判**並**對齊** 利害關係人的 ***動機、學習曲線 與 組織文化***，以實現**轉型型創新**'
+        description: '**运用** 认知与知识框架，**预判**并**对齐** 利害关系人的 ***动机丶学习曲线 与 组织文化***，以实现**转型型创新**'
         icon: custom/alignment
 language_skills:
   - name: 🗫 中文（🇨🇳 🇹🇼）与英文（🇬🇧 🇺🇸）熟练掌握

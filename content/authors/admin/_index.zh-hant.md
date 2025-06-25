@@ -171,8 +171,8 @@ work:
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
 skillsets:
-  - name: 🤖 構建 AI 智能體（Building AI Agents）
-    description: 設計與開發 AI 代理應用 （社會-技術整合技能）
+  - name: 🤖 構建 AI 智能體
+    description: 設計與開發 AI 智能體（Agents）應用（社會-技術整合技能）
     items:
       - name: CI/CD 持續整合和持續佈署 與 API 整合
         description: "**實施** 持續整合與持續佈署（CI/CD）流程：明確定義目標意圖 （intent），整合應用程序接口（API），並持續更新模型。"
@@ -273,7 +273,7 @@ skillsets:
         description: '**整合** 質性與量化技術，以揭示人機系統交流模式，使用包括訪談、田野調查與統計建模等方法'
         icon: devicon/networkx
       - name: 基於證據支持決策
-        description: '**綜合** 政策與社會技術數據（如市場與政策文件分析），將干預措施錨定於現實情境'
+        description: '**綜合** 政策與社會技術數據（如市場文件分析），錨定介入行動於現實'
         icon: custom/industry-factory-emission
       - name: 脈絡化（情境化）數據解讀
         description: '**解讀** 行為、政策與文化數據，橫跨不同產業與地緣的各種知識框架'
