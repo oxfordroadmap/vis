@@ -124,9 +124,8 @@ work:
     date_start: 2019-12-01
     date_end: 2023-01-01
     summary: |2-
-      * Designed an undergraduate program in Internet and New Media with a focus on modern skills for Product Managers, integrating conceptual knowledge of the platform economy and user experience with practical tools like GitHub, Python, APIs, and Artificial Intelligence (AI).
-      * Supervised several students, including three who graduated earlier than the standard timeline.
-      * Founded a university-level research center that produced the highest number of indexed articles among peer institutions.
+      * Designed an undergraduate program in ***Internet and New Media*** with a focus on modern **Product Managers** competencies, integrating conceptual and practice knowledge across platform economics, user experience, GitHub, Python, APIs, and artificial intelligence (AI)
+      * Founded a university-level research center that produced the highest number of indexed articles among peer institutions (a record unmatched by any other faculty member at the university)
       * Co-led the ESG Data-Driven Decisions Lab with multiple interdisciplinary and UN-linked academic reporting projects.
       * Chaired the 2019 WEDC conference on sustainable development, innovation, and ecosystems.
   - position: Associate Professor, Vice-Dean of Internet and New Media
@@ -136,8 +135,9 @@ work:
     date_start: 2017-01-01
     date_end: 2021-01-01
     summary: |2-
-      Developed a capstone course titled *API, Machine Learning, and AI*, recognized as “first-class” by the Guangdong Department of Education.
-      Designed and implemented a curriculum of 18 core courses, mentored seven instructors, and led education innovation projects that earned multiple awards.
+      * Developed a capstone course titled *API, Machine Learning, and AI*, recognized as “first-class” by the Guangdong Department of Education.
+      * Designed and implemented a curriculum of 18 core courses, mentored seven instructors, and led education innovation projects that earned multiple awards
+      * Supervised multiple students, including three graduating ahead of schedule (a record unmatched by any other faculty member at the university)
   - position: Research Fellow
     company_name: United Nations University Institute on Computing and Society
     company_url: 'https://unu.edu/'
@@ -151,21 +151,21 @@ work:
     company_logo: 'brands/Georgetown_logo'
     date_start: 2010-08-01
     date_end: 2011-07-31
-    summary: Led research on digital linguistic groupings; organized the 2011 Chinese Internet Research Conference.
+    summary: Led research on digital geolinguistic groupings; organized the 2011 Chinese Internet Research Conference
   - position: Doctoral Fellow, Institute of Sociology
     company_name: Academia Sinica
     company_url: 'https://www.sinica.edu.tw/en'
     company_logo: 'brands/AcademiaSinica'
     date_start: 2009-08-01
     date_end: 2010-06-30
-    summary: Conducted advanced research under a doctoral fellowship.
+    summary: Conducted advanced research under a doctoral fellowship
   - position: Political Warfare Officer (Compulsory Service)
     company_name: Taiwan Military
     company_url: ''
     company_logo: 'brands/ROC_political_warfare'
     date_start: 2005-11-01
     date_end: 2006-12-31
-    summary: Completed mandatory service with assignments in information and communication operations.
+    summary: Completed mandatory services
   - position: Project Manager, Open Source Software Foundry
     company_name: Academia Sinica, Institute of Information Science
     company_url: 'https://www.sinica.edu.tw/en'
@@ -173,7 +173,7 @@ work:
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-
-      Delivered open platform projects and facilitated industrial and civic engagement around open source, open data, and open content.
+      Delivered open platform projects and facilitated industrial and civic engagement around open source, open data, and open content
 
 # Skill Sets
 # Add your own SVG icons to `assets/media/icons/`
