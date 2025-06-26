@@ -15,12 +15,14 @@
 {{ $awards := $person_page.Params.awards }}
 
 {{/* Awards Section Title */}}
+{{ $label := i18n "awards" }}
+{{ $anchor := $label | anchorize }}      
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
-  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
-    {{ $block.content.title | i18n | markdownify | emojify }}
+  <div {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $label }}
   </div>
-
   {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+</div><!-- /div Section Title -->
 
 <div class="w-full flex flex-col gap-3">
 {{ if $awards }}
