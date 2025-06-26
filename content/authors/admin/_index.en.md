@@ -110,7 +110,7 @@ work:
   - position: CEO, Data Scientist
     company_name: Oxford Roadmapping
     company_url: https://oxon8.netlify.app
-    company_logo: 'oxon8'
+    company_logo: 'brands/oxon8'
     date_start: 2023-01-01
     date_end: ''
     summary: |2-
@@ -120,7 +120,7 @@ work:
   - position: Director, Higher Education Impact Assessment Center
     company_name: Nanfang College of Sun Yat-Sen University
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'NFU'
+    company_logo: 'brands/NFU'
     date_start: 2019-12-01
     date_end: 2023-01-01
     summary: |2-
@@ -132,7 +132,7 @@ work:
   - position: Associate Professor, Vice-Dean of Internet and New Media
     company_name: Nanfang College of Sun Yat-Sen University
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'NFU'
+    company_logo: 'brands/NFU'
     date_start: 2017-01-01
     date_end: 2021-01-01
     summary: |2-
@@ -141,35 +141,35 @@ work:
   - position: Research Fellow
     company_name: United Nations University Institute on Computing and Society
     company_url: 'https://unu.edu/'
-    company_logo: 'unu-logo'
+    company_logo: 'brands/unu-logo'
     date_start: 2015-07-01
     date_end: 2016-11-30
     summary: Conducted ICT4D-focused research projects across Asia.
   - position: Yahoo! Fellow, Institute for the Study of Diplomacy
     company_name: Georgetown University
     company_url: 'https://sfs.georgetown.edu/'
-    company_logo: 'icons/brands/Georgetown_logo.webp'
+    company_logo: 'brands/Georgetown_logo'
     date_start: 2010-08-01
     date_end: 2011-07-31
     summary: Led research on digital linguistic groupings; organized the 2011 Chinese Internet Research Conference.
   - position: Doctoral Fellow, Institute of Sociology
     company_name: Academia Sinica
     company_url: 'https://www.sinica.edu.tw/en'
-    company_logo: 'icons/brands/AcademiaSinica.webp'
+    company_logo: 'brands/AcademiaSinica'
     date_start: 2009-08-01
     date_end: 2010-06-30
     summary: Conducted advanced research under a doctoral fellowship.
   - position: Political Warfare Officer (Compulsory Service)
     company_name: Taiwan Military
     company_url: ''
-    company_logo: 'ROC_insignia'
+    company_logo: 'brands/ROC_insignia'
     date_start: 2005-11-01
     date_end: 2006-12-31
     summary: Completed mandatory service with assignments in information and communication operations.
   - position: Project Manager, Open Source Software Foundry
     company_name: Academia Sinica, Institute of Information Science
     company_url: 'https://www.sinica.edu.tw/en'
-    company_logo: 'AcademiaSinica'
+    company_logo: 'brands/AcademiaSinica'
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-
