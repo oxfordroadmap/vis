@@ -42,6 +42,11 @@
 {{ else if $ico := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.ico" $name)) }}
   {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $ico.RelPermalink $name (.attributes | default "") }}
 
+{{/* Fallback to WEBP */}}
+{{ else if $png := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.webp" $name)) }}
+  {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $png.RelPermalink $name (.attributes | default "") }}
+
+
 {{/* Final fallback */}}
 {{ else }}
   {{ $icon = index (index site.Data.icons.brands "icons") "oxon8" }}
