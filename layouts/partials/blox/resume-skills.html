@@ -18,9 +18,11 @@
 {{ $show_show_skill_percentage := $block.design.show_skill_percentage | default true }}
 
 {{/* Skillset Section Title */}}
+{{/* id: anchoring for href ... section ... */}}
+{{ $label := i18n "skillsets" }}      
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
-  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
-    {{ i18n "skillsets" | markdownify }}
+  <div {{ (printf "id=\"%s\"" $label ) | safeHTMLAttr }} class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $label }}
   </div>
   {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
 </div><!-- /div Skillset Section Title -->
