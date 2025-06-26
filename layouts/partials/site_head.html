@@ -284,9 +284,12 @@
     src="{{ $js_bundle.RelPermalink }}"
     integrity="{{ $js_bundle.Data.Integrity }}"
   ></script>
-  {{ with (templates.Defer (dict "key" "global")) }}
+
+  {{/*   {{ with (templates.Defer (dict "key" "global")) }}
     {{ partial "css.html" . }}
   {{ end }}
+  */}}
+  
   {{/* EXTENSIBILITY HOOK: HEAD-END */}}
   {{ partial "functions/get_hook" (dict "hook" "head-end" "context" .) }}
 </head>
