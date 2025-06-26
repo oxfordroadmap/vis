@@ -146,6 +146,9 @@
 - id: present
   translation: Present
 
+- id: details
+  translation: Details
+
 # Pages widget
 
 - id: read_more

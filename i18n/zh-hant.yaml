@@ -132,6 +132,9 @@
 - id: present
   translation: 現在
 
+- id: details
+  translation: 详情
+
 # Pages widget
 
 - id: more_pages
