@@ -43,7 +43,13 @@
       </h3>
       {{ $company_url := .company_url | default "" }}
       <a {{ (printf "href=\"%s\"" $company_url ) | safeHTMLAttr }}>
-      <company_logo style="float:right;">TEST</company_logo>
+      <company_logo style="float:right;"> 
+        {{ with .company_logo }}
+            <div class="my-auto w-72 shrink-0 mr-1" style="height:3.6em; width:3.6em;" >
+              {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3.3em;width:2.7em;' class='flex-shrink-0 mx-auto'")  }}
+            </div>
+        {{ end }}
+      </company_logo>
       <span class="block mb-2 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">{{.company_name}}</span>
       </a>
       <time class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
