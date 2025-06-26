@@ -16,6 +16,26 @@
 {{ $person := $person_page.Params }}
 {{ $is_education_first := $block.design.is_education_first | default false }}
 
+<!-- Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleAll");
+    const allDetails = document.querySelectorAll("details");
+    let expanded = false;
+
+    toggleBtn.addEventListener("click", () => {
+      expanded = !expanded;
+      allDetails.forEach(el => el.open = expanded);
+      toggleBtn.textContent = expanded ? "Collapse All" : "Expand All";
+    });
+  });
+</script>
+
+<!-- Toggle Button -->
+<button id="toggleAll" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+  Expand All
+</button>
+
 <!--  Main Section Block Begins -->
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
 <!--  <article class="prose prose-slate lg:prose-xl dark:prose-invert">-->
