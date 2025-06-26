@@ -42,8 +42,6 @@ jobs:
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
         restore-keys: |
           ${{ runner.os }}-hugomod-
-    - name: Install Tailwind CLI
-      run: npm install -D tailwindcss@latest @tailwindcss/cli
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5
@@ -53,14 +51,18 @@ jobs:
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
-    - name: Build Tailwind CSS
-      run: npx tailwindcss -i ./assets/css/main.css -o ./static/css/output.css --minify
     - name: Generate Pagefind search index
       run: npx pagefind --site "public"
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./public
+
+#   - name: Install Tailwind CLI
+#     run: npm install -D tailwindcss@latest @tailwindcss/cli
+#   - name: Build Tailwind CSS
+#     run: npx tailwindcss -i ./assets/css/main.css -o ./static/css/output.css --minify
+
 
   # Deploy website to GitHub Pages hosting
   deploy:
