@@ -162,14 +162,14 @@ work:
   - position: Political Warfare Officer (Compulsory Service)
     company_name: Taiwan Military
     company_url: ''
-    company_logo: ''
+    company_logo: 'ROC_insignia'
     date_start: 2005-11-01
     date_end: 2006-12-31
     summary: Completed mandatory service with assignments in information and communication operations.
   - position: Project Manager, Open Source Software Foundry
     company_name: Academia Sinica, Institute of Information Science
     company_url: 'https://www.sinica.edu.tw/en'
-    company_logo: 'icons/brands/AcademiaSinica.webp'
+    company_logo: 'AcademiaSinica'
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-
