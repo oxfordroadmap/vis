@@ -106,8 +106,8 @@
       {{ end }}
       <li>
         {{ $link = $link| safeURL }}
-        {{ with $link }}<a {{ printf "href=\"%s\"" .}} {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}"
-           {{ with .label }} data-toggle="tooltip" data-placement="top" title="{{.}}"{{ end }}>
+        {{ with $link }}<a {{ printf "href=\"%s\"" .}} {{ $target | safeHTMLAttr }} {{ printf "aria-label=\"%s\"" .icon}}
+        {{ with .label }} data-toggle="tooltip" data-placement="top" {{ printf "title=\"%s\"" .}}{{ end }}>
           {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}
         {{ end }}
         </a>
