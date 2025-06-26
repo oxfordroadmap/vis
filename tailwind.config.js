@@ -12,13 +12,13 @@ console.log(`content_extra: ${content_extra}`);
     
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),    
     // '../../starters/**/*.md',
-    //     ...content_extra,
 module.exports = {
   content: [
     '**/libs/chroma/*.css',
     './layouts/**/*.{html,js}',
     './**/*.svg',
     './hugo_stats.json',
+    ...content_extra,
   ],
   plugins: [
     require('@tailwindcss/typography'),
