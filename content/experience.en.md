@@ -40,13 +40,6 @@ sections:
       # date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
-  - block: resume-skills
-    content:
-      title: skillsets
-      username: admin
-    design:
-      show_skill_percentage: false
-      css_class: hbb-section
   - block: resume-awards
     content:
       title: Awards
@@ -59,6 +52,13 @@ sections:
         gradient_end: hsla(from currentColor h s l, 0.1)
         gradient_angle: 120
         css_style: 'background: hsla(from currentColor h s l, 0.1);'
+  - block: resume-skills
+    content:
+      title: skillsets
+      username: admin
+    design:
+      show_skill_percentage: false
+      css_class: hbb-section
   - block: resume-languages
     content:
       title: Languages
