@@ -92,10 +92,9 @@
         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
       {{ end }}
       <li>
-        {{ $link = $link | safeURL }}
-        {{ with $link }}<a {{ printf "href=\"%s\"" . | safeHTMLAttr }} {{ $target | safeHTMLAttr }}  {{ end }}{{ printf "aria-label=\"%s\"" .icon}}
-        {{ with .label }} data-toggle="tooltip" data-placement="top" {{ printf "title=\"%s\"" .}}{{ end }}>
-          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}       
+        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}"
+           {{ with .label }} data-toggle="tooltip" data-placement="top" title="{{.}}"{{ end }}>
+          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}
         </a>
       </li>
       {{ end }}
