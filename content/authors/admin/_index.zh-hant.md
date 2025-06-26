@@ -290,7 +290,7 @@ skillsets:
         description: '**運用** 認知與知識框架，**預判**並**對齊** 利害關係人的 ***動機、學習曲線 與 組織文化***，以實現**轉型型創新**'
         icon: custom/alignment
 language_skills:
-  - name: 🗫 中文（🇨🇳 🇹🇼）與英文（🇬🇧 🇺🇸）熟練掌握
+  - name: 🗣 中文（🇨🇳 🇹🇼）與英文（🇬🇧 🇺🇸）熟練掌握
     description: " —— 適用於高校及高階學術與高端專業會議場景"
   - name: 🧪 學術英語課程 (EAP, English For Academic Purpose) 教學專長
     description: " —— 具備高校面對面輔導與虛擬研討會教學經驗"

@@ -290,7 +290,7 @@ skillsets:
         description: '**Leverage** cognitive and knowledge frameworks to `anticipate` and `align` **stakeholder** `motivations`, `learning curves`, and `institutional culture` for **transformational innovations**'
         icon: custom/alignment
 language_skills:
-  - name: 🗫 Chinese (🇹🇼 🇨🇳) and English (🇬🇧 🇺🇸) Proficiency 
+  - name: 🗣 Chinese (🇹🇼 🇨🇳) and English (🇬🇧 🇺🇸) Proficiency 
     description: " —— applicable in university and high-level academic and professional contexts"
   - name: 🧪 English For Academic Purpose (EAP) Instruction Expertise 
     description: " —— with experience teaching in university in-person tutorials and virtual workshops"
