@@ -156,7 +156,8 @@
 
     {{ with $person.education }}
     <div class="col-span-6 pl-6" style="grid-column: 7 / -1;">
-      <div class="section-subheading mb-3">{{ i18n "education" | (printf "[%1s][#%1s]" . .)  | markdownify }}</div>
+      {{ $label := i18n "education" }}      
+      <div class="section-subheading mb-3">{{ printf "[%s][#%s]" $label $label | markdownify }}</div>
       <ul class="text-sm">
         {{ range . }}
         {{ if .degree }}
