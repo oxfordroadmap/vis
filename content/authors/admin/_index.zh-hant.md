@@ -110,7 +110,7 @@ work:
   - position: 資料科學家、執行長
     company_name: 牛津路線圖（澳恪森數智科技服務 Oxon8）
     company_url: https://oxon8.netlify.app
-    company_logo: 'icons/brands/oxon8.svg'
+    company_logo: 'oxon8'
     date_start: 2023-01-01
     date_end: ''
     summary: |2-
@@ -120,7 +120,7 @@ work:
   - position: 高校影響力研究中心主任
     company_name: 中山大學南方學院（廣州南方學院）
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'icons/brands/NFU.jpg'
+    company_logo: 'NFU'
     date_start: 2019-12-01
     date_end: 2023-01-01
     summary: |2-
@@ -132,7 +132,7 @@ work:
   - position: 副教授、兼 互聯網與新媒體專業主任（及系副主任）
     company_name: 中山大學南方學院
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'icons/brands/NFU.jpg'
+    company_logo: 'NFU'
     date_start: 2017-01-01
     date_end: 2021-01-01
     summary: |2-
@@ -141,21 +141,21 @@ work:
   - position: 研究員
     company_name: '聯合國大學—計算與社會研究所'
     company_url: 'https://unu.edu/'
-    company_logo: 'icons/brands/unu-logo.svg'
+    company_logo: 'unu-logo'
     date_start: 2015-07-01
     date_end: 2016-11-30
     summary: 負責資訊與通訊科技促進發展（ICT4D）在亞太地區的研究專案，涵蓋數位創新與永續發展等議題。
   - position: 雅虎研究員, 外交研究所
     company_name: 喬治城大學
     company_url: 'https://sfs.georgetown.edu/'
-    company_logo: 'icons/brands/Georgetown_logo.webp'
+    company_logo: 'Georgetown_logo'
     date_start: 2010-08-01
     date_end: 2011-07-31
     summary: 主持數位語言群體研究；籌辦 2011 年中文網路研究年會。
   - position: 博士級研究員（訪學）社會學研究所
     company_name: 中央研究院
     company_url: 'https://www.sinica.edu.tw/en'
-    company_logo: 'icons/brands/AcademiaSinica.webp'
+    company_logo: 'AcademiaSinica'
     date_start: 2009-08-01
     date_end: 2010-06-30
     summary: 於博士研究期間執行進階社會學研究。
@@ -169,7 +169,7 @@ work:
   - position: 專案經理，開放原始碼推廣計畫 OSSF
     company_name: 中央研究院，資訊科學研究所
     company_url: 'https://www.sinica.edu.tw/en'
-    company_logo: 'icons/brands/AcademiaSinica.webp'
+    company_logo: 'AcademiaSinica'
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-

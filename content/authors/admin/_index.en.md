@@ -110,7 +110,7 @@ work:
   - position: CEO, Data Scientist
     company_name: Oxford Roadmapping
     company_url: https://oxon8.netlify.app
-    company_logo: 'icons/brands/oxon8.svg'
+    company_logo: 'oxon8'
     date_start: 2023-01-01
     date_end: ''
     summary: |2-
@@ -120,7 +120,7 @@ work:
   - position: Director, Higher Education Impact Assessment Center
     company_name: Nanfang College of Sun Yat-Sen University
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'icons/brands/NFU.jpg'
+    company_logo: 'NFU'
     date_start: 2019-12-01
     date_end: 2023-01-01
     summary: |2-
@@ -132,7 +132,7 @@ work:
   - position: Associate Professor, Vice-Dean of Internet and New Media
     company_name: Nanfang College of Sun Yat-Sen University
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'icons/brands/NFU.jpg'
+    company_logo: 'NFU'
     date_start: 2017-01-01
     date_end: 2021-01-01
     summary: |2-
@@ -141,7 +141,7 @@ work:
   - position: Research Fellow
     company_name: United Nations University Institute on Computing and Society
     company_url: 'https://unu.edu/'
-    company_logo: 'icons/brands/unu-logo.svg'
+    company_logo: 'unu-logo'
     date_start: 2015-07-01
     date_end: 2016-11-30
     summary: Conducted ICT4D-focused research projects across Asia.

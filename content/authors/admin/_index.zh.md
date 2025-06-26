@@ -120,7 +120,7 @@ work:
   - position: 高校影响力研究中心主任
     company_name: 中山大学南方学院（广州南方学院）
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'icons/brands/NFU.jpg'
+    company_logo: 'NFU'
     date_start: 2019-12-01
     date_end: 2023-01-01
     summary: |2-
@@ -132,7 +132,7 @@ work:
   - position: 副教授、兼 互联网与新媒体专业主任（及系副主任）
     company_name: 中山大学南方学院
     company_url: 'https://www.nfu.edu.cn/'
-    company_logo: 'icons/brands/NFU.jpg'
+    company_logo: 'NFU'
     date_start: 2017-01-01
     date_end: 2021-01-01
     summary: |2-
@@ -141,21 +141,21 @@ work:
   - position: 研究员
     company_name: '联合国大学—计算与社会研究所'
     company_url: 'https://unu.edu/'
-    company_logo: 'icons/brands/unu-logo.svg'
+    company_logo: 'unu-logo'
     date_start: 2015-07-01
     date_end: 2016-11-30
     summary: 负责资讯与通讯科技促进发展（ICT4D）在亚太地区的研究专案，涵盖数位创新与永续发展等议题。
   - position: 雅虎研究员, 外交研究所
     company_name: 乔治城大学
     company_url: 'https://sfs.georgetown.edu/'
-    company_logo: 'icons/brands/Georgetown_logo.webp'
+    company_logo: 'Georgetown_logo.webp'
     date_start: 2010-08-01
     date_end: 2011-07-31
     summary: 主持数位语言群体研究；筹办 2011 年中文网路研究年会。
   - position: 博士级研究员（访学）社会学研究所
     company_name: 中央研究院
     company_url: 'https://www.sinica.edu.tw/en'
-    company_logo: 'icons/brands/AcademiaSinica.webp'
+    company_logo: 'AcademiaSinica'
     date_start: 2009-08-01
     date_end: 2010-06-30
     summary: 於博士研究期间执行进阶社会学研究。
@@ -169,7 +169,7 @@ work:
   - position: 专案经理，开放原始码推广计画 OSSF
     company_name: 中央研究院，资讯科学研究所
     company_url: 'https://www.sinica.edu.tw/en'
-    company_logo: 'icons/brands/AcademiaSinica.webp'
+    company_logo: 'AcademiaSinica'
     date_start: 2004-10-01
     date_end: 2005-11-30
     summary: |2-
