@@ -66,7 +66,7 @@ education:
     date_end: 2014-10-31
     location: 英國牛津
     summary: |-
-      博士論文探討[協作式百科全書，對比中文維基百科與百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，`指導教授`為[拉爾夫·施羅德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)
+      博士論文探討[協作式百科全書，對比中文維基百科與百度百科](https://www.oii.ox.ac.uk/people/profiles/han-teng-liao/)，***指導教授***為[拉爾夫·施羅德教授](https://www.oii.ox.ac.uk/people/profiles/ralph-schroeder/)(Ralph Schroeder)
     #button:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
