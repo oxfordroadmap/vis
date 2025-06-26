@@ -26,15 +26,13 @@
     toggleBtn.addEventListener("click", () => {
       expanded = !expanded;
       allDetails.forEach(el => el.open = expanded);
-      toggleBtn.textContent = expanded ? "🗀" : "🗁";
+      toggleBtn.textContent = expanded ? "🗁" : "🗀";
     });
   });
 </script>
 
 <!-- Toggle Button -->
-<button aria-label="aria-expanded" id="toggleAll" style="float:left;" class="no-print wx-auto bg-gray-500 text-gray-100 dark:text-gray-800 rounded">
-  🗁
-</button>
+<div class="no-print sticky px-3" ><button aria-label="aria-expanded" id="toggleAll" class="mx-2 text-2xl text-gray-800 dark:text-gray-100 rounded">🗀</button></div>
 
 <!--  Main Section Block Begins -->
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
