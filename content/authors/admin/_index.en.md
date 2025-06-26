@@ -162,7 +162,7 @@ work:
   - position: Political Warfare Officer (Compulsory Service)
     company_name: Taiwan Military
     company_url: ''
-    company_logo: 'brands/ROC_insignia'
+    company_logo: 'brands/ROC_political_warfare'
     date_start: 2005-11-01
     date_end: 2006-12-31
     summary: Completed mandatory service with assignments in information and communication operations.

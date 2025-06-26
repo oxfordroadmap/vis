@@ -162,7 +162,7 @@ work:
   - position: 政治作战官 (义务役)
     company_name: 中华民国国军
     company_url: ''
-    company_logo: 'brands/'
+    company_logo: 'brands/ROC_political_warfare'
     date_start: 2005-11-01
     date_end: 2006-12-31
     summary: 完成义务役服役。
