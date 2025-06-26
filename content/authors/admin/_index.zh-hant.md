@@ -116,7 +116,7 @@ work:
     summary: |2-
       * 開發多款視覺化應用與工具組（如 NetBib、visCEADs 和 visNetZero），協助在科學研究影響力、產業經濟學與淨零等領域進行數據驅動決策。
       * 在 *精準減碳路線圖規劃* 研究專案中，於首次專家審查前完成三篇 SCIE 二區期刊論文。
-      * 提交關於綠色供應鏈金融科技與數位農業的 ITU 技術輸入文件（FG-AI4A-I-132）。
+      * 提交 ITU 技術輸入文件（FG-AI4A-I-132）綠色供應鏈金融科技及數位農業。
   - position: 高校影響力研究中心主任
     company_name: 中山大學南方學院（廣州南方學院）
     company_url: 'https://www.nfu.edu.cn/'

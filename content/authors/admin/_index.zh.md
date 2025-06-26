@@ -116,7 +116,7 @@ work:
     summary: |2-
       * 开发多款视觉化应用与工具组（如 NetBib、visCEADs 和 visNetZero），协助在科学研究影响力、产业经济学与净零等领域进行数据驱动决策。
       * 在 *精准减碳路线图规划* 研究专案中，於首次专家审查前完成三篇 SCIE 二区期刊论文。
-      * 提交关於绿色供应链金融科技与数位农业的 ITU 技术输入文件（FG-AI4A-I-132）。
+      * 提交 ITU 技术输入文件（FG-AI4A-I-132）绿色供应链金融科技与数位农业。
   - position: 高校影响力研究中心主任
     company_name: 中山大学南方学院（广州南方学院）
     company_url: 'https://www.nfu.edu.cn/'
