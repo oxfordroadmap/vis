@@ -76,6 +76,7 @@
     {{/* Row1, Column 1, Social Network Icons */}}
     <ul class="network-icon dark:text-zinc-100">
       {{ range $person.profiles }}
+
       {{ $pack := or .icon_pack "fas" }}
       {{ $pack_prefix := $pack }}
       {{ if in (slice "fab" "fas" "far" "fal") $pack }}
@@ -91,11 +92,10 @@
         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
       {{ end }}
       <li>
-        {{ $link = $link| safeURL }}
-        {{ with $link }}<a {{ printf "href=\"%s\"" . | safeHTMLAttr }} {{ $target | safeHTMLAttr }} {{ printf "aria-label=\"%s\"" .icon}}
+        {{ $link = $link | safeURL }}
+        {{ with $link }}<a {{ printf "href=\"%s\"" . | safeHTMLAttr }} {{ $target | safeHTMLAttr }}  {{ end }}{{ printf "aria-label=\"%s\"" .icon}}
         {{ with .label }} data-toggle="tooltip" data-placement="top" {{ printf "title=\"%s\"" .}}{{ end }}>
-          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}
-        {{ end }}
+          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}       
         </a>
       </li>
       {{ end }}
