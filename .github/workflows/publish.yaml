@@ -42,6 +42,10 @@ jobs:
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
         restore-keys: |
           ${{ runner.os }}-hugomod-
+    - name: Install Tailwind CLI
+      run: npm install -D tailwindcss
+    - name: Build Tailwind CSS
+      run: npx tailwindcss -i ./assets/css/main.css -o ./static/css/output.css --minify
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5
