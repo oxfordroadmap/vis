@@ -123,23 +123,10 @@
 <div class="resume-biography px-1 flex flex-row">
   <div class="resume-biography px-3 grid grid-cols-12  justify-between m-3 text-white dark:text-white  ">
 
-    {{ with $person.interests }}
-    <div class="col-span-3" style="grid-column: 1 / 4;">
-      <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
-      <ul class="text-sm list-disc list-outside space-y-1 pl-1">
-        {{ range . }}
-        <li>
-          {{ . | markdownify | emojify }}
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-    {{ end }}
-
     {{ with $person.skillsets }}
-    <div class="col-span-3" style="grid-column: 4 / 7;">
+    <div class="col-span-3" style="grid-column: 1 / 4;">
       <div class="section-subheading mb-3">{{ i18n "skillsets" | markdownify }}</div>
-      <ul class="text-sm list-disc list-outside space-y-1 pl-1">
+      <ul class="text-sm list-none list-outside space-y-1 pl-1" style="text-indent: -2em; padding-left: 1em; >
         {{ range . }}
         <li>
             {{ with .name }}
@@ -148,6 +135,19 @@
               {{ (printf "<a href=\"#%1s\">%1s</a>" . .) | markdownify }} 
             {{ end }}{{/* with $oneskillset_name */}}
             {{end}}        
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+
+    {{ with $person.interests }}
+    <div class="col-span-3" style="grid-column: 4 / 7;">
+      <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
+      <ul class="text-sm list-disc list-outside space-y-1 pl-1">
+        {{ range . }}
+        <li>
+          {{ . | markdownify | emojify }}
         </li>
         {{ end }}
       </ul>
