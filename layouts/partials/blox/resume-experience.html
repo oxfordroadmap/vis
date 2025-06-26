@@ -28,8 +28,10 @@
 <div class="flex flex-col lg:gap-x-6 w-100 px-6 sm:px-0 {{ if $is_education_first }}flex-col-reverse{{end}}">
 
 {{ if $person.work }}
-<div class="px-6 w-full">
-  <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ i18n "experience" | default "Experience" }}</h3>
+{{ $label := i18n "experience" }}
+{{ $anchor := $label | anchorize }}
+<div class="px-6 w-full" {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} >
+  <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ $label }}</h3>
   <ol class="relative border-s border-gray-200 dark:border-gray-700">
     {{ range $idx, $key := $person.work }}
     <li class="mb-10 ms-6">
@@ -66,8 +68,10 @@
 {{ end }}
 
 {{ if $person.education }}
-<div class="px-6 w-full">
-  <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ i18n "education" | default "Education" }}</h3>
+{{ $label := i18n "education" }}
+{{ $anchor := $label | anchorize }}
+<div class="px-6 w-full" {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} >
+  <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ $label }}</h3>
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       {{ range $idx, $key := $person.education }}
       <li class="mb-10 ms-6">
