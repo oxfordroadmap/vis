@@ -273,7 +273,7 @@ skillsets:
         icon: custom/jupyter
       - name: "RStudio and libraries"
         icon: devicon/rstudio
-        description: '**Operationalize** insight-generation processes using Python and R libraries (including Jupyter Lab, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim, tidyverse, etc.), by transforming data streams into strategic assets through iterations'
+        description: '**Operationalize** insight-generation processes using Python and R libraries (including Jupyter Lab, scikit-learn, XGboost, PyTorch, networkx, NLTK, gensim, tidyverse, etc.), by transforming **data streams** into ***strategic assets*** through iterations'
   - name: 🕸 Synthesizing Social Science
     description: Extracting socio-technical insight from primary and secondary data to inform innovation, governance, and strategic foresight 
     items:
