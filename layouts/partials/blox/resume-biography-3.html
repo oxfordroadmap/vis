@@ -17,9 +17,24 @@
 {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
+<style>
+.avatar-wrapper {
+    position: relative;
+    width: 220px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+.bio-text > p{
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+
+}
+<style/>
+
 {{/* Row1 */}}
 <div class="resume-biography px-3 flex flex-col">
-<div class="flex flex-row justify-center gap-6">
+<div class="flex flex-row justify-center gap-6 items-center mx-auto gap-3 px-3 md:px-0">
   {{/* Row1, Column 1 */}}
   <div class="flex-none m-w-[70px] mx-auto">
   
@@ -101,10 +116,10 @@
   </div>
 
   {{/* Row1, Column 2 */}}
-  <div class="flex-auto max-w-prose px-5 md:mt-3">
+  <div class="flex-auto max-w-prose px-5 mb-5 md:mt-3">
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-      <div class="bio-text" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+      <div class="bio-text space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
       </div>
     </div>
@@ -122,8 +137,8 @@
 </div>
 
   {{/* Row2 */}}
-<div class="resume-biography px-1 flex flex-row">
-  <div class="resume-biography px-3 grid grid-cols-12  justify-between m-3 text-white dark:text-white  ">
+<div class="flex flex-row justify-center items-center mt-3 px-3 md:px-0">
+  <div class="grid grid-cols-12 mx-auto justify-between mb-3 text-white dark:text-white">
 
     {{ with $person.skillsets }}
     <div style="grid-column: 1 / span 3;">
@@ -150,7 +165,7 @@
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-      <ul class="text-sm list-disc space-y-1 pl-7">
+      <ul class="text-sm list-disc space-y-1 pl-5">
         {{ range . }}
         <li>
           {{ . | markdownify | emojify }}
