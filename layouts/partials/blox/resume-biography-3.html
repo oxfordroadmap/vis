@@ -145,7 +145,9 @@
 
     {{ with $person.interests }}
     <div style="grid-column: 4 / span 3;">
-      <div class="section-subheading mb-3">{{ i18n "interests" | markdownify }}</div>
+      {{ $label := i18n "interests" }}
+      {{ $anchor := $label | anchorize }}      
+      <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
       <ul class="text-sm list-disc space-y-1 pl-1">
         {{ range . }}
         <li>
@@ -158,8 +160,9 @@
 
     {{ with $person.education }}
     <div class="pl-6" style="grid-column: 7 / span 6;">
-      {{ $label := i18n "education" }}      
-      <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $label | markdownify }}</div>
+      {{ $label := i18n "education" }}
+      {{ $anchor := $label | anchorize }}      
+      <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
       <ul class="text-sm">
         {{ range . }}
         {{ if .degree }}
