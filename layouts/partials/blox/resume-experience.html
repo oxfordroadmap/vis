@@ -40,8 +40,8 @@
         </span>
       {{ with .company_logo }}
         <company_logo style="float:right;"> 
-            <div class="my-auto w-72 shrink-0 mr-1" style="height:3.6em; width:3.6em;" >
-              {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3.3em;width:2.7em;' class='flex-shrink-0 mx-auto'")  }}
+            <div class="my-auto w-72 shrink-0 mr-1" style="height:3.6em;" >
+              {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3.3em;' class='flex-shrink-0 mx-auto'")  }}
             </div>
         </company_logo>
       {{ end }}
