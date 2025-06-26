@@ -10,15 +10,15 @@ console.log(`content_extra: ${content_extra}`);
 /** @type {import('tailwindcss').Config} */
 
     // ...content_extra,
-    // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),
-    // './hugo_stats.json',
+    // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),    
+    // '../../starters/**/*.md',
 
 module.exports = {
   content: [
-    './layouts/**/*.{html,js}',
     '**/libs/chroma/*.css',
+    './layouts/**/*.{html,js}',
     './**/*.svg',
-    '../../starters/**/*.md',
+    './hugo_stats.json',
   ],
   plugins: [
     require('@tailwindcss/typography'),
