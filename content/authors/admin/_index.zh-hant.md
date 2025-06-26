@@ -273,7 +273,7 @@ skillsets:
         icon: custom/jupyter
       - name: "RStudio 及其庫"
         icon: devicon/rstudio
-        description: '**運維實現** 洞察生成，使用 Python 與 R 生態（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通過迭代流程將 **數據流** 轉化為***戰略資產***'
+        description: '**運維實現** 洞察生成数据流管道，使用 Python 與 R 生態（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通過迭代流程將 **數據流** 轉化為***戰略資產***'
   - name: 🕸 綜合社會科學知識
     description: 提煉一手與二手資料中的社會技術知識，支援創新、治理與策略前瞻
     items:
