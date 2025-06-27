@@ -6,7 +6,7 @@
 {{- $on_this_page := T "on_this_page" }}
 {{- $edit_this_page := T "edit_page" }}
 
-<nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
+<nav class="hb-toc order-last w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
   {{ partial "functions/get_hook" (dict "hook" "toc-start" "context" .) }}
   {{- if $toc }}
   <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
