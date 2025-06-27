@@ -21,15 +21,12 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 
 {{< youtube id=hltLrjabkiY title="API Learning Roadmap (ByteByteGo)" class=yt_learning start=10 >}}
 
-
-![ByteByteGo](icons/brands/ByteByteGo.jpg)
-{.inline  class="network-icon dark:text-zinc-100"}
-[ByteByteGo](https://bytebytego.com/) has successfully summarized what one needs to know before going on a journey to the modern AI and Web ecosystems.
+{{< icon name="brands/ByteByteGo" >}} [ByteByteGo](https://bytebytego.com/) has successfully summarized what one needs to know before going on a journey to the modern AI and Web ecosystems.
 ## Use 
 
 ### API Learning Roadmap (Summary)
 
-```markmap {height="200px"}
+```markmap {height="1200px"}
 # API Concepts
 
 ## Definition
@@ -40,7 +37,7 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 - Private
 - Partner
 
-## Styles
+### Styles
 - REST
 - GraphQL
 - gRPC
@@ -56,14 +53,14 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 - Status Codes
 - Headers & Cookies
 
-## Authentication
+### Authentication
 - Basic Auth
 - Token-based
 - JWT
 - OAuth
 - Session-based
 
-## Documentation
+### Documentation
 - Swagger / OpenAPI
 - Postman
 
@@ -80,12 +77,12 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 - Database Indexing
 - Scaling
 
-## API Gateway
+### API Gateway
 - AWS
 - Kong
 - Apigee
 
-## Frameworks
+### Frameworks
 - Express.js (Node)
 - Spring Boot (Java)
 - Flask / Django (Python)
@@ -100,69 +97,6 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 
 ```
 
-
-## API Learning Roadmap (Summary)
-
-mermaid
-
-```mermaid
-  root((API Concepts))
-    Definition
-      API = interface for systems to communicate
-      Types
-        Public
-        Private
-        Partner
-    Styles
-      REST
-      GraphQL
-      gRPC
-      SOAP
-      WebSockets
-    REST Concepts
-      HTTP Methods
-        GET
-        POST
-        PUT
-        DELETE
-      Status Codes
-      Headers & Cookies
-    Authentication
-      Basic Auth
-      Token-based
-      JWT
-      OAuth
-      Session-based
-    Documentation
-      Swagger / OpenAPI
-      Postman
-    Features
-      Pagination
-      Parameters
-      Idempotency
-      Versioning
-    Performance
-      Caching
-      Rate Limiting
-      Load Balancing
-      Database Indexing
-      Scaling
-    API Gateway
-      AWS
-      Kong
-      Apigee
-    Frameworks
-      Express.js (Node)
-      Spring Boot (Java)
-      Flask/Django (Python)
-      FastAPI (Python)
-    Communication
-      Sync (immediate)
-      Async (background)
-      Webhooks
-      Batch
-      Message Queue
-```
 
 ## API Learning todo lists
 - [x] API Learning Roadmap 
