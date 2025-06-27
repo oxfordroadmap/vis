@@ -267,7 +267,7 @@ skillsets:
         description: '**指挥编排** 数据科学工作流，生成战略性资产。采用严谨基于科学计量学、网络计量学、文献计量学与技术路线图等方法'   
         icon: custom/science-mapping
       - name: 数字方法
-        description: '**解码** 社会技术动态，采用`情感分析`、`地理语言分析`、`地理空间分析`、`数字人文学`与`平台分析`等方法'
+        description: '**解码** 社会技术动态，采用 `情感分析` 、 `地理语言分析` 、 `地理空间分析` 、 `数字人文学` 与 `平台分析`等方法'
         icon: hero/hand-thumb-up
       - name: "Python 及其库"
         icon: custom/jupyter
