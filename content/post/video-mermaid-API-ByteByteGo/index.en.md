@@ -26,7 +26,7 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 
 ### API Learning Roadmap (Summary)
 
-```markmap {height="1200px"}
+```markmap {height="480px"}
 # API Concepts
 
 ## Definition
