@@ -21,10 +21,10 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 
 {{< youtube id=0RKpf3rK57I title='' class='yt_learning' start=10 >}}
 
-[ByteByteGo](https://bytebytego.com/) has successfully summarized what one needs to know before going on a journey to the modern AI and Web ecosystems.
 
 ![ByteByteGo](icons/brands/ByteByteGo.jpg)
-          
+{.inline  class="network-icon dark:text-zinc-100"}
+[ByteByteGo](https://bytebytego.com/) has successfully summarized what one needs to know before going on a journey to the modern AI and Web ecosystems.
 ## Use 
 
 ### API Learning Roadmap (Summary)
