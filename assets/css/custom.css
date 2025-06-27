@@ -24,7 +24,8 @@ li.nav-item.dropdown {
 
 .hb-sidebar-container {
     top: 2rem;
-    width: 8rem 288px;
+    width: 6rem 224px;
+    max-width: 8rem 288px;
 }
 
 /* (hbb) hugo-blox-builder section */ 
