@@ -30,10 +30,6 @@
 
 {{/* Check if we have an SVG icon from built-in packs or user assets */}}
 {{ if $icon }}
-  {{ if .attributes }}
-    {{ $icon = replaceRE "<svg" (printf "<svg %s" .attributes) $icon }}
-  {{ end }}
-
 {{/* Fallback to GIF */}}
 {{ else if $gif := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.gif" $name)) }}
   {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $gif.RelPermalink $name (.attributes | default "") }}
@@ -58,4 +54,10 @@
 {{ else }}
   {{ $icon = index (index site.Data.icons.brands "icons") "oxon8" }}
 {{ end }}
+
+  {{ if .attributes }}
+    {{ $icon = replaceRE "<svg" (printf "<svg %s" .attributes) $icon }}
+    {{ $icon = replaceRE "<img" (printf "<img %s" .attributes) $icon }}
+  {{ end }}
+
 {{- return ($icon | safeHTML) -}}

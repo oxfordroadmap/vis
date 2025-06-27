@@ -30,71 +30,76 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 # API Concepts
 
 ## Definition
-- API = interface for systems to communicate
+- API = interface for systems to communicate with each other
 
-### Types
+### Types (Business Org)
 - Public
 - Private
 - Partner
 
-### Styles
-- REST
+### Styles (Tech)
+- REST (see below)
 - GraphQL
 - gRPC
 - SOAP
 - WebSockets
 
-## REST Concepts
-- HTTP Methods
-  - GET
-  - POST
-  - PUT
-  - DELETE
-- Status Codes
-- Headers & Cookies
-
-### Authentication
+## Terminologies 
+### REST 
+- HTTP 
+  - Methods
+    - GET
+      - create
+    - POST
+      - read
+    - PUT
+      - upate
+    - DELETE
+      - remove
+  - Status Codes
+    - 200-level (Good)
+    - 400-level (Bad)
+    - 500-level (Very Bad)
+  - Context
+    - Headers 
+    - Cookies
+    - Cache-Contrl
+    - ETag
+### Security 
 - Basic Auth
 - Token-based
 - JWT
 - OAuth
 - Session-based
-
 ### Documentation
 - Swagger / OpenAPI
 - Postman
-
 ## Features
 - Pagination
 - Parameters
 - Idempotency
 - Versioning
-
 ## Performance
 - Caching
 - Rate Limiting
 - Load Balancing
 - Database Indexing
 - Scaling
-
 ### API Gateway
 - AWS
 - Kong
 - Apigee
-
 ### Frameworks
 - Express.js (Node)
 - Spring Boot (Java)
 - Flask / Django (Python)
 - FastAPI (Python)
-
 ## Communication
 - Sync (immediate)
 - Async (background)
 - Webhooks
 - Batch
 - Message Queue
-
 ```
 
 
