@@ -21,7 +21,7 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 
 {{< youtube id=hltLrjabkiY title="API Learning Roadmap (ByteByteGo)" class="yt_learning w-[100]" start=10 >}}
 
-{{< icon name="brands/ByteByteGo" attributes="style='height: 1rem'">}} [ByteByteGo](https://bytebytego.com/) has successfully summarized what one needs to know before going on a journey to the modern AI and Web ecosystems.
+{{< icon name="brands/ByteByteGo" >}} [ByteByteGo](https://bytebytego.com/) has successfully summarized what one needs to know before going on a journey to the modern AI and Web ecosystems.
 ## Use 
 
 ### API Learning Roadmap (Summary)
