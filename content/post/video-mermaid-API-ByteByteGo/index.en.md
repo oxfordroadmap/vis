@@ -1,6 +1,6 @@
 ---
 title: 🛂 API Learning Roadmap (ByteByteGo) 📽
-date: 2023-10-23
+date: 2025-06-25T12:18:50+08:00
 authors:
   - admin
 tags:
@@ -22,9 +22,12 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 {{< youtube id=hltLrjabkiY title="API Learning Roadmap (ByteByteGo)" class="yt_learning w-[100]" start=10 >}}
 
 {{< icon name="brands/ByteByteGo" >}} [ByteByteGo](https://bytebytego.com/) has successfully summarized what one needs to know before going on a journey to the modern AI and Web ecosystems.
+
 ## Use 
 
-### API Learning Roadmap (Summary)
+The learning roadmap below summarizes the key content of the video above.
+
+### Roadmap Summary
 
 ```markmap {height="480px"}
 # API Concepts

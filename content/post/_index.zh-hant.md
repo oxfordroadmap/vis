@@ -1,5 +1,5 @@
 ---
-title: 文章
+title: 🤓洞察, 👍推薦, 🧠認知站
 type: landing
 
 design:
@@ -16,37 +16,36 @@ sections:
   - block: collection
     id: posts
     content:
-      title: '1 Hugo Blox 1 '
+      title: '🤓洞察'
       filters:
         folders:
           - post
-        tag: "Hugo Blox"
+        tag: 'insights'
     design:
       view: article-grid
       columns: 2
   - block: collection
     id: posts
     content:
-      title: 2 Markdown 文章
+      title: '👍推薦'
       filters:
         folders:
           - post
-        tag: "Markdown"
+        tag: 'recommendations'
     design:
       view: article-grid
       columns: 3
   - block: collection
     id: posts
     content:
-      title: '3 Hugo '
+      title: '🧠認知站'
       filters:
         folders:
           - post
-        tag: "Hugo"
+        tag: "cognitive-frames"
     design:
       view: card
       #view: date-title-summary
       #spacing:
       #  padding: [0, 0, 0, 0]
 ---
-

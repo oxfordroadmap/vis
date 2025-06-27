@@ -1,94 +1,122 @@
 ---
-title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
-date: 2023-10-23
+title: 🛂 API 學習路線圖 (ByteByteGo) 📽
+date: 2025-06-25T12:18:50+08:00
 authors:
   - admin
 tags:
-  - Hugo Blox
-  - Markdown
+  - recommendations
+  - 'RoadmapLearning'
+  - API
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: '來源：[ByteByteGo](https://bytebytego.com/)'
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+聚焦現代 Web API， [ByteByteGo](https://bytebytego.com/)  整理並當今 API 的核心概念和實現，系統性地更新細節。對於希望深入理解並開啟學習之旅的人而言，這是強烈推薦的資源。
 
-## Ideation
+<!-- more -->
 
-Hugo Blox supports a Markdown extension for mindmaps.
+## 推薦
 
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
+強烈推薦！👍🏽👍🏻👍🏿
 
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
+{{< youtube id=hltLrjabkiY title="API 學習路線圖 (ByteByteGo)" class="yt_learning w-[100]" start=10 >}}
 
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+{{< icon name="brands/ByteByteGo" >}} [ByteByteGo](https://bytebytego.com/) 系統性地總結了進入現代 AI 與 Web 生態系統前需要掌握的 API 知識。
+
+## 用途
+
+以下學習路線圖總結了上方視頻中的核心內容。
+
+### 路線圖摘要
+
+```markmap {height="480px"}
+# API 概念
+
+## 定義
+- API = 系統間通信傳播的接口
+
+### 類型（商業組織角度）
+- 公共 API
+- 私有 API
+- 合作伙伴 API
+
+### 風格（技術角度）
+- REST（見下方）
+- GraphQL
+- gRPC
+- SOAP
+- WebSockets
+
+## 術語
+- REST = 表現層狀態轉換（REpresentational State Transfer）
+- HTTP
+  - HTTP = 超文本傳輸協議（Hypertext Transfer Protocol）
+  - 方法
+    - GET
+      - 創建
+    - POST
+      - 讀取
+    - PUT
+      - 更新
+    - DELETE
+      - 刪除
+  - 狀態碼
+    - 200 段（成功）
+    - 400 段（客戶端錯誤）
+    - 500 段（服務器錯誤）
+  - 上下文
+    - Headers
+    - Cookies
+    - Cache-Control
+    - ETag
+
+### 安全性
+- 基本身份認證
+- Token 認證
+- JWT 認證
+- OAuth 認證
+- 基於會話的認證
+
+## 文檔工具
+- Swagger / OpenAPI
+- Postman
+
+## 常見功能
+- 分頁
+- 參數傳遞
+- 冪等性
+- 接口版本控制
+
+## 性能優化
+- 緩存
+- 限流
+- 負載均衡
+- 數據庫索引
+- 可擴展性
+
+### API 網關
+- AWS
+- Kong
+- Apigee
+
+### 常見框架
+- Express.js（Node）
+- Spring Boot（Java）
+- Flask / Django（Python）
+- FastAPI（Python）
+
+## 通信方式
+- 同步（實時）
+- 異步（後台）
+- Webhooks（回調）
+- 批處理
+- 消息隊列
 ```
-</code>
-</pre>
-</div>
 
-renders as
+## API 學習待辦清單
 
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-
-## Diagrams
-
-Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
-
-An example **Gantt diagram**:
-
-    ```mermaid
-    gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
-    ```
-
-renders as
-
-```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
-
-## Todo lists
-
-You can even write your todo lists in Markdown too:
-
-```markdown
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-```
-
-renders as
-
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-
-## Did you find this page helpful? Consider sharing it 🙌
+- [x] 掌握 API 學習路線圖
+    - [x] 來自 ByteByteGo
+- [ ] 從 API 走向 `平台經濟`（例如 `AI 利益相關者協同`）
+- [ ] 從 API 走向 `AI Agent 設計`（例如鏈式操作與 `MCP`）
+- [ ] 從 API 走向 `可視化 API 編排器`（如 n8n）或其他無代碼 / 低代碼自動化工具
