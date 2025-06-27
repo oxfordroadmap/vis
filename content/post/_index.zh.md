@@ -31,7 +31,7 @@ sections:
       filters:
         folders:
           - post
-        tag: "Markdown"
+        tag: "Insights"
     design:
       view: article-grid
       columns: 3
