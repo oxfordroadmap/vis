@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 漢騰/汉腾 廖
+title: H.-T. Liao
 
 # Name pronunciation (optional)
 name_pronunciation: Han-Teng Liao
 
 # Full name (for SEO)
-first_name: Han-Teng
-last_name: Liao
+first_name: Han-Teng (漢騰/汉腾)
+last_name: Liao (廖)
 
 # Status emoji
 status:
