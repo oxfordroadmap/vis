@@ -9,7 +9,7 @@
         Left padding.
     padding_right : default "1"
         Right padding.
-    attributes : default  "style=\"height: 1em; transform: translateY(0.1em);\""
+    attributes : default  "class=\"icon\" style=\"height: 1em; transform: translateY(0.1em);\""
 */}}
 
 {{- if (.Get "name") -}}
@@ -18,7 +18,7 @@
   <span class="inline-block {{with (.Get "padding_left")}}pl-{{.}}{{end}} {{with $padding_right}}pr-{{.}}{{end}}">
 
     {{- $icon := .Get "name" -}}
-    {{- $attributes := (.Get "attributes") | default "style=\"height: 1em; transform: translateY(0.1em);\"" -}}
+    {{- $attributes := (.Get "attributes") | default "class=\"icon\" style=\"height: 1em; transform: translateY(0.1em);\"" -}}
     {{ partial "functions/get_icon" (dict "name" $icon "attributes" $attributes) }}
   </span>
 {{- end -}}
