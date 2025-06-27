@@ -45,8 +45,9 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 - WebSockets
 
 ## Terminologies 
-### REST 
+- REST =  REpresentational State Transfer
 - HTTP 
+  - HTTP =  Hypertext Transfer Protocol
   - Methods
     - GET
       - create
@@ -71,7 +72,7 @@ Highly Recommended! 👍🏽👍🏻👍🏿
 - JWT
 - OAuth
 - Session-based
-### Documentation
+## Documentation
 - Swagger / OpenAPI
 - Postman
 ## Features
