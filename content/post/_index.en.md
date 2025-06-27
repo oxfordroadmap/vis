@@ -46,6 +46,6 @@ sections:
     design:
       view: card
       #view: date-title-summary
-      spacing:
-        padding: [0, 0, 0, 0]
+      #spacing:
+      #  padding: [0, 0, 0, 0]
 ---
