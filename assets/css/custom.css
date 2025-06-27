@@ -29,6 +29,12 @@ li.nav-item.dropdown {
 }
 
 /* (hbb) hugo-blox-builder section */ 
+.hbb-box-shadow {
+    box-shadow: 5px 9px 9px rgb(107 114 128 / var(--tw-text-opacity, 1));
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
 .hbb-section {
     border-radius: 12px !important;
     border: 3px solid rgb(107 114 128 / var(--tw-text-opacity, 1));
