@@ -35,12 +35,8 @@
   {{ end }}
 
 {{/* Fallback to GIF */}}
-{{ else if $png := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.gif" $name)) }}
-  {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $png.RelPermalink $name (.attributes | default "") }}
-
-{{/* Fallback to WEBP */}}
-{{ else if $png := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.webp" $name)) }}
-  {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $png.RelPermalink $name (.attributes | default "") }}
+{{ else if $gif := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.gif" $name)) }}
+  {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $gif.RelPermalink $name (.attributes | default "") }}
 
 {{/* Fallback to ICO */}}
 {{ else if $ico := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.ico" $name)) }}
@@ -53,6 +49,10 @@
 {{/* Fallback to JPG */}}
 {{ else if $png := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.jpg" $name)) }}
   {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $png.RelPermalink $name (.attributes | default "") }}
+
+{{/* Fallback to WEBP */}}
+{{ else if $webp := resources.GetMatch (path.Join "media" "icons" $pack (printf "%s.webp" $name)) }}
+  {{ $icon = printf `<img src="%s" alt="%s icon" %s>` $webp.RelPermalink $name (.attributes | default "") }}
 
 {{/* Final fallback */}}
 {{ else }}
