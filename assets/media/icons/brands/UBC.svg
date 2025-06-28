@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg style="background:transparent;" width="100%" height="100%" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1 -1 76.8 105" xml:space="preserve">
 <defs><style> 
-  .adaptive { fill: #0c1d3c; } 
+  .adaptive, path { fill: defaultColor; } 
+  @media (prefers-color-scheme: light)  { 
+  .adaptive, path { fill: #0c1d3c; } } 
   @media (prefers-color-scheme: dark)  { 
-  .adaptive { fill: white; } } </style>  </defs>
+  .adaptive, path { fill: white; } } 
+</style>  </defs>
+
 <g class="adaptive">
   <path
    d="m 37.56159,38.042682 4.005052,29.0537 13.162492,-21.995156 -5.584916,24.192699 14.189934,-13.576808 -7.389389,17.923329 11.80724,-8.811418 C 62.25511,79.78537 57.466956,88.170331 37.56159,94.984535 17.656224,88.170331 12.86807,79.78537 7.3726951,64.829028 L 19.178417,73.640446 11.789028,55.717117 25.978962,69.293925 20.394046,45.101226 33.556538,67.096382 Z"
