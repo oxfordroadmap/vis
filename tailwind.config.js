@@ -160,13 +160,14 @@ module.exports = {
             "--tw-prose-invert-th-borders": theme("colors.neutral.500 / 1"),
             "--tw-prose-invert-td-borders": theme("colors.neutral.700 / 1"),
             a: {
-              textDecoration: "underline",
-              textDecorationColor: theme("colors.primary.300 / 1"),
+              textDecoration: "none",
+              borderBottom: "1px dashed",
+              borderColor: theme("colors.primary.300 / 1"),
               fontWeight: "500",
+              transition: "border-color 0.3s ease-in-out",
               "&:hover": {
-                color: theme("colors.primary.600 / 1"),
-                textDecoration: "none",
-                borderRadius: "0.09rem",
+                borderColor: theme("colors.primary.600 / 1"),
+                borderBottomStyle: "solid",
               },
             },
             mark: {
@@ -180,9 +181,9 @@ module.exports = {
         invert: {
           css: {
             a: {
-              textDecorationColor: theme("colors.neutral.500 / 1"),
+              borderColor: theme("colors.neutral.500 / 1"),
               "&:hover": {
-                color: theme("colors.primary.300 / 1"),
+                borderColor: theme("colors.primary.400 / 1"),
               },
             },
             mark: {
