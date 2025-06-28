@@ -132,3 +132,21 @@ yt_learning {
   flex-direction: column;
   overflow: hidden;
 }
+
+/* Custom link style for dashed underlines */
+.link-dashed {
+  text-decoration: none;
+  border-bottom: 1px dashed rgb(var(--color-primary-300));
+}
+
+.link-dashed:hover {
+  border-bottom: 1px solid rgb(var(--color-primary-600));
+}
+
+.dark .link-dashed {
+  border-bottom-color: rgb(var(--color-primary-500));
+}
+
+.dark .link-dashed:hover {
+  border-bottom-color: rgb(var(--color-primary-400));
+}
