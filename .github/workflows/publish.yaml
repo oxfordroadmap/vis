@@ -51,6 +51,12 @@ jobs:
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+    #- name: Install Node.js dependencies
+    #  run: npm install
+    - name: Install tailwindcss@3
+      run: npm install -D tailwindcss@3
+    - name: Build Tailwind CSS
+      run: npx tailwindcss -i ./assets/css/main.css -o ./static/css/output.css --minify
     - name: Generate Pagefind search index
       run: npx pagefind --site "public"
     - name: Upload artifact
@@ -58,10 +64,6 @@ jobs:
       with:
         path: ./public
 
-#   - name: Install Tailwind CLI
-#     run: npm install -D tailwindcss@latest @tailwindcss/cli
-#   - name: Build Tailwind CSS
-#     run: npx tailwindcss -i ./assets/css/main.css -o ./static/css/output.css --minify
 
 
   # Deploy website to GitHub Pages hosting
