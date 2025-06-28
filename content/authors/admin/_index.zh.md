@@ -101,6 +101,7 @@ education:
     date_end: 2000-06-30
     location: 台湾台北
   - area: 交換学生——电机工程与英语
+    icon: brands/UBC
     institution: 不列颠哥伦比亚大学（UBC）
     date_start: 1998-09-01
     date_end: 1999-08-31

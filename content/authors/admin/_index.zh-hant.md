@@ -101,6 +101,7 @@ education:
     date_end: 2000-06-30
     location: 臺灣臺北
   - area: 交換學生計畫——電機工程與英文
+    icon: brands/UBC
     institution: 加拿大英屬哥倫比亞大學（UBC）
     date_start: 1998-09-01
     date_end: 1999-08-31

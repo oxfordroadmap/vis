@@ -101,7 +101,8 @@ education:
     date_end: 2000-06-30
     location: Taipei, Taiwan
   - area: Exchange Program - Electrical Engineering & English
-    institution: University of British Columbia
+    icon: brands/UBC
+    institution: University of British Columbia (UBC)
     date_start: 1998-09-01
     date_end: 1999-08-31
     location: Vancouver, Canada
