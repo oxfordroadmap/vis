@@ -5,13 +5,13 @@ const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.spli
 
 console.log('Current directory: ' + process.cwd());
 console.log(`content_extra: ${content_extra}`);
-// console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
+console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 
-/** @type {import('tailwindcss').Config} */
 
-    
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),    
     // '../../starters/**/*.md',
+
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     '**/libs/chroma/*.css',

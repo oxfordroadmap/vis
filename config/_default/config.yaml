@@ -1,0 +1,14 @@
+# Install blox plugins
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# https://github.com/search?q=repo%3AHugoBlox%2Fhugo-blox-builder%20config.yaml&type=code
+
+# reveal seo 
+module:
+    imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-seo
+
+# Hugo Tailwind integration
+build:
+  writeStats: true
