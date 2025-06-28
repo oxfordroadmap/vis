@@ -49,7 +49,7 @@ tags:
 
 要改進App，必需先有好的有用的評測。特別是RAG的應用，像[[🦜️🛠️ LangSmith (LangChain)](https://docs.smith.langchain.com/evaluation/tutorials/rag)] 及[LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/stable/module)。
 
-{{% callout 註 %}}
+{{% callout note %}}
 在`評測（Evaluation）`這環節，對接下來的`觀察（Observability）`、及`部署（Deployment）`具有指導及指引性的影響，因此是學習及操練的重點。
 {{% /callout %}}
 
