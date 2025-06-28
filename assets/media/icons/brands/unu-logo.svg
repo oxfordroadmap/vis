@@ -1,17 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502.39 135.86" id="UNU">
-  <style>
-    .adaptive {
-      fill: #15234A; /* Light mode default */
-      background: currentColor;
-    }
-    @media (prefers-color-scheme: dark) {
-      .adaptive {
-        fill: white; /* Dark mode override */
-        background-color: #15234A;
-      }
-    }
-  </style>  
-<g class=  "adaptive" >
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502.39 135.86" id="UNU" fill="currentColor" style="background:transparent;" >
+
+<g>
   <g>
     <g>
       <g>
