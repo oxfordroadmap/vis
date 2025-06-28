@@ -179,8 +179,8 @@ work:
 # Add your own SVG icons to `assets/media/icons/`
 # [🧱 Icon Packs](https://docs.hugoblox.com/getting-started/page-builder/#icons) 
 skillsets:
-  - name: 🤖 構建 AI 智能體
-    description: 設計與開發 AI 智能體（Agents）應用（社會-技術整合技能）
+  - name: 🤖 構建 AI 代理
+    description: 設計與開發 AI 代理（AI Agents）應用（社會-技術整合技能）
     items:
       - name: CI/CD 持續整合和持續佈署 與 API 整合
         description: "**實施** 持續整合與持續佈署（CI/CD）流程：明確定義目標意圖 （intent），整合應用程序接口（API），並持續更新模型。"
