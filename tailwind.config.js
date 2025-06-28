@@ -44,26 +44,17 @@ module.exports = {
       pattern: /grid-cols-+/,
       variants: ['md'],
     },
-    {
-      pattern: /bg-white+/,
-    },
-    {
-      pattern: /bg-gray+/,
-    },
-    {
-      pattern: /bg-primary+/,
-    },
-    {
-      pattern: /bg-gradient+/,
-    },
-    {
-      pattern: /from-primary+/,
-    },
-    {
-      pattern: /to-primary+/,
-    },
+    {  pattern: /text-+/,},
+    {  pattern: /ring-+/,},
+    {  pattern: /border-+/,},
+    {  pattern: /bg-white+/,},
+    {  pattern: /bg-gray+/,},
+    {  pattern: /bg-gradient+/,},
+    {  pattern: /bg-primary+/,},
+    {  pattern: /from-primary+/,},
+    {  pattern: /to-primary+/,},
   ],
-    /* /^bg-white/, /^bg-gray-/, /^bg-primary-/, /^bg-gradient-/, /^from-primary-/, /^to-primary-/,
+    /* ,
   /^md:grid-cols-+/], */
   /* /^pl-/ for TOC */
   darkMode: ['class'],
@@ -118,7 +109,7 @@ module.exports = {
         base: '1rem',
         lg: '1.125rem',
         xl: '1.25rem',
-        // '2xl': '1.5rem',
+        '2xl': '1.5rem',
         // '3xl': '1.875rem',
         // '4xl': '2.25rem',
         // '5xl': '3rem',
