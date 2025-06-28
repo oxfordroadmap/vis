@@ -37,4 +37,6 @@
 'uk': 'Українська'
 'vi': 'Tiếng Việt'
 'zh': '中文 (简体)'
-'zh-hant': '中文 (繁體)'
+'zh-hant': '中文 (正體)'
+# Hugo Blox Customization Data for language Selectors (other locations i18n)
+# Hugo Blox 客制化 语言选择器 (其它地方 i18n)
