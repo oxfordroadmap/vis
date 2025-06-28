@@ -24,33 +24,38 @@ module.exports = {
     require('@tailwindcss/typography'),
   ],
   safelist: [
-    'task-list',   /* As it's added via JS */
-    'pl-4', 'pl-8', 'pl-12',   /* TOC indents */
-    'min-h-screen', /* Blox options */
-    'col-span-1',
-    'col-span-2',
-    'col-span-3',
-    'col-span-4',
-    'col-span-5',
-    'col-span-6',
-    'col-span-7',
-    'col-span-8',
-    'col-span-9',
-    'col-span-10',
-    'col-span-11',
-    'col-span-12',
-    {
-      /* For dynamic article-grid.start */
-      pattern: /grid-cols-+/,
-      variants: ['md'],
+    // Static classes used in JS/Markdown/etc.
+    'task-list',                     /* As it's added via JS */
+    'pl-4', 'pl-8', 'pl-12',         /* TOC indents */
+    'min-h-screen',                  /* Blox options */
+    // Grid template columns
+    { pattern: /^grid-cols-(\d+|none|subgrid|\[.*\])$/,
+      variants: ['sm', 'md', 'lg', 'xl', 'hover'],
     },
-    {  pattern: /text-+/,},
-    {  pattern: /ring-+/,},
-    {  pattern: /border-+/,},
-    {  pattern: /bg-white+/,},
-    {  pattern: /bg-gray+/,},
-    {  pattern: /bg-gradient+/,},
-    {  pattern: /bg-primary+/,},
+    // Dynamic grid spans
+    { pattern: /^col-span-(\d+|full|\[.*\])$/,
+    variants: ['sm', 'md', 'lg', 'xl', 'hover', 'focus'],
+    },
+    {   // Matches all Tailwind background colors + optional opacity (e.g., bg-blue-500/80)
+        pattern: /^bg-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|black|white|transparent|current|inherit)(?:-\d{2,3})?(?:\/\d{1,3})?$/,
+        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
+    },
+    {   // Matches all Tailwind text colors + optional opacity
+        pattern: /^text-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|black|white|transparent|current|inherit)(?:-\d{2,3})?(?:\/\d{1,3})?$/,
+        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
+    },  
+    {   // Matches ring, ring-0, ring-1, ..., ring-inset
+        pattern: /^ring(?:-(inset|\d+))?$/,
+        variants: ['hover', 'focus', 'active', 'md', 'lg', 'dark'],  
+    }, 
+    {  // Matches border style (colors not yet)
+        pattern: /^border-(solid|dashed|dotted|double|hidden|none)$/,
+        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
+        },
+    {  // Matches text-primary--
+        pattern: /^text-primary(?:-\d{2,3})?(?:\/\d{1,3})?$/,
+        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
+    },
     {  pattern: /from-primary+/,},
     {  pattern: /to-primary+/,},
   ],
