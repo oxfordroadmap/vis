@@ -150,3 +150,9 @@ yt_learning {
 .dark .link-dashed:hover {
   border-bottom-color: rgb(var(--color-primary-400));
 }
+
+a:hover{
+  padding-bottom: 3px; 
+  border-bottom: dotted 5px 
+  rgba(255, 255, 255, 0.33);
+}
