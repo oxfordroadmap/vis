@@ -13,10 +13,10 @@
 zh:
   languageCode: zh-Hans
   # contentDir: content/zh  # omit contentDir if translating by file name.
-  title: 可视化作品集 by 牛津路线图 Oxford Roadmapping
+  title: 可视化 及 AI 智能体 作品集 by 牛津路线图 Oxford Roadmapping
   weight: 1
   params:
-    description: 本站汇集从科研影响力到净零路线的可视化作品, 展示牛津路线图做战略洞察的实证依据。
+    description: 本站汇集从科研影响力到净零路线的可视化 及 AI Agent (AI 智能体) 作品, 展示牛津路线图做战略洞察的实证依据。
     formats:
       date:
         long: 2006 2月28 周日
@@ -51,10 +51,10 @@ zh-hant:
   languageCode: zh-hant
   languageName: 正體中文
   # contentDir: content/zht  # # omit contentDir if translating by file name.
-  title: 可視化作品集 by 牛津路線圖 Oxford Roadmapping
+  title: 可視化 及 AI Agent 作品集 by 牛津路線圖 Oxford Roadmapping
   weight: 3
   params:
-    description: 本站彙整從科研影響力到淨零路線的可視化作品, 展示牛津路線圖做戰略洞察的實依據
+    description: 本站彙整從科研影響力到淨零路線的 可視化 及 AI Agent (AI 代理) 作品, 展示牛津路線圖做戰略洞察的實依據
     formats:
       date:
         long: 2006 2月28 周日
