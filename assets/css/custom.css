@@ -153,12 +153,12 @@ yt_learning {
 
 a:hover:not(.rounded) {
   padding-bottom: 3px; 
-  border-bottom: dotted 5px 
+  border-bottom: dotted 5px; 
   rgba(255, 255, 255, 0.33);
 }
 a.rounded:hover {
   /* styles here */
-  
+  border: dotted; 
 }
 
 /*  */
