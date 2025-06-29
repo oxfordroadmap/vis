@@ -11,7 +11,7 @@
 ### https://github.com/gohugoio/locales/blob/master/zh_Hans/zh_Hans.go
 
 zh:
-  languageCode: zh-Hans
+  languageCode: zh
   # contentDir: content/zh  # omit contentDir if translating by file name.
   title: 可视化 及 AI 智能体 作品集 by 牛津路线图 Oxford Roadmapping
   weight: 1
