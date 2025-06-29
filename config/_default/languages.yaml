@@ -2,9 +2,6 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Languages
-#   Documentation: https://docs.hugoblox.com/reference/language/
-
 # Default language
 
 ### https://github.com/gohugoio/locales/blob/master/zh_Hant/zh_Hant.go
@@ -47,10 +44,11 @@ en:
       datetime:
         long: Monday, 2 January, 2006 3:04:05 PM
         short: 2006-01-02 3:04 PM
-zh-hant:
-  languageCode: zh-hant
-  languageName: 正體中文
+zh-Hant:
   # contentDir: content/zht  # # omit contentDir if translating by file name.
+  # https://discourse.gohugo.io/t/localizing-date-format/37868 The comparison is case-insensitive. You may use underscores or hyphens.
+  languageCode: zh-Hant
+  languageName: 正體中文
   title: 可視化 及 AI Agent 作品集 by 牛津路線圖 Oxford Roadmapping
   weight: 3
   params:
