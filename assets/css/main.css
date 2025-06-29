@@ -27,11 +27,11 @@
 }
 
 .hbb-section {
-  @apply py-24; /* last:mb-0 */
+  @apply py-12; /* last:mb-0 */
 }
 
 .section-subheading {
-  @apply font-bold text-xl;
+  @apply font-bold text-2xl;
 }
 
 /* Fill padding of `.home-section` parent */
@@ -41,7 +41,7 @@
    left: 0;
    height: 100%; /* Or fill-available when supported. */
    width: 100%; /* Or fill-available when supported. */
-   z-index: -1; /* Place bg div behind content. */
+   z-index: -5; /* Place bg div behind content. */
  }
 
 /* Default background image properties for home sections. */
@@ -74,7 +74,7 @@
 }
 */
 
-
+/* HyperLinks. */
 @layer components {
   a {
     @apply bg-gradient-to-r from-primary-200 to-primary-100 
@@ -84,11 +84,22 @@
            dark:from-primary-800 dark:to-primary-900;
   }
 
+  a.button, a.rounded, a.rounded-full, a.rounded-lg {
+    @apply bg-blue-500 hover:bg-blue-700 text-white border-solid hover:border-dotted font-bold py-2 px-4 rounded    
+  }
+
   .powered-by a {
   @apply underline text-blue-800 hover:text-blue-900 dark:text-blue-100 dark:hover:text-blue-200;
   text-decoration: underline;
   text-decoration-style: dotted;
   }
+}
+
+a.rounded:hover,
+a.rounded-full:hover,
+a.rounded-lg:hover {
+  /* styles here */
+  border: dotted; 
 }
 
 
