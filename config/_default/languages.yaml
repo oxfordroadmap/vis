@@ -16,16 +16,16 @@ zh:
     description: 本站汇集从科研影响力到净零路线的可视化 及 AI Agent (AI 智能体) 作品, 展示牛津路线图做战略洞察的实证依据。
     formats:
       date:
-        long: 2006 2月28 周日
-        medium: 2006 2月28
+        long: 2006 2月28日 周日
+        medium: 2006 2月28日
         short: 2006/02/28
       time:
         long: 3:04:05 下午
         medium: 3:04 下午
         short: 3:04 PM
       datetime:
-        long: 2006 2月28 周日 3:04:05 下午
-        medium: 2006 2月28 3:04 下午
+        long: 2006 2月28日 周日 3:04:05 下午
+        medium: 2006 2月28日 3:04 下午
         short: 2006/02/28 3:04 PM    
 en:
   languageCode: en
@@ -37,13 +37,16 @@ en:
     formats:
       date:
         long: Monday, 2 January, 2006
+        medium: 2 January, 2006
         short: 2006-01-02
       time:
         long: 3:04:05 PM
-        short: 3:04 PM
+        medium: 3:04 PM
+        short: 3:04PM
       datetime:
         long: Monday, 2 January, 2006 3:04:05 PM
-        short: 2006-01-02 3:04 PM
+        medium: 2 January, 2006 3:04 PM
+        short: 2006-01-02 3:04PM
 zh-Hant:
   # contentDir: content/zht  # # omit contentDir if translating by file name.
   # https://discourse.gohugo.io/t/localizing-date-format/37868 The comparison is case-insensitive. You may use underscores or hyphens.
