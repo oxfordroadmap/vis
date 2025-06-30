@@ -21,15 +21,13 @@
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script type="text/javascript"> document.addEventListener('DOMContentLoaded', function () {
     var myChart = echarts.init(document.getElementById('{{ $id }}'));
-    var data = JSON.parse({{ $graph.nodes | jsonify | safeJS }});
-    var links = JSON.parse({{ $graph.nodes | jsonify | safeJS }});
     var option;
     option = {
       series: [{
         type: 'graph',
         layout: 'force',
-        data: data,
-        links: links,
+        data: {{ $graph.nodes | jsonify | safeJS }},
+        links: {{ $graph.nodes | jsonify | safeJS }},
         roam: true,
         label: { show: true, position: "right" },
         edgeSymbol: ['none', 'arrow'],
