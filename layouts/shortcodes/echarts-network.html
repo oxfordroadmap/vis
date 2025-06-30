@@ -15,17 +15,21 @@
 {{- if gt (len $matches) 0 }}
   {{- $res := index $matches 0 -}}
   {{- $graph := $res | transform.Unmarshal -}}
+  {{- $graph := $res | transform.Unmarshal -}}
+  {{- $graph := $res | transform.Unmarshal -}}
   <div id="{{ $id }}" style="width:100%;max-width:800px;height:600px;margin:auto;"></div>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script type="text/javascript"> document.addEventListener('DOMContentLoaded', function () {
     var myChart = echarts.init(document.getElementById('{{ $id }}'));
+    var data = JSON.parse({{ $graph.nodes | jsonify | safeJS }});
+    var links = JSON.parse({{ $graph.nodes | jsonify | safeJS }});
     var option;
     option = {
       series: [{
         type: 'graph',
         layout: 'force',
-        data: {{ $graph.nodes | jsonify }},
-        links: {{ $graph.links | jsonify }},
+        data: data,
+        links: links,
         roam: true,
         label: { show: true, position: "right" },
         edgeSymbol: ['none', 'arrow'],
