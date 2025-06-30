@@ -17,35 +17,26 @@
   {{- $graph := $res | transform.Unmarshal -}}
   <div id="{{ $id }}" style="width:100%;max-width:800px;height:600px;margin:auto;"></div>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-  <script>
-    import * as echarts from 'echarts';
-
-    var chartDom = document.getElementById('{{ $id }}');
-    var myChart = echarts.init(chartDom);
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    var myChart = echarts.init(document.getElementById('{{ $id }}'));
     var option;
-
-    myChart.showLoading();
     option = {
-        title: {
-        text: {{ $name }}',
-        left: 'center'
-    },
-    tooltip: {},
-    series: [{
-      type: 'graph',
-      layout: 'force',
-      data: {{ $graph.nodes | jsonify }},
-      links: {{ $graph.links | jsonify }},
-      roam: true,
-      label: { show: true, position: "right" },
-      edgeSymbol: ['none', 'arrow'],
-      edgeSymbolSize: [4, 10],
-      lineStyle: { color: 'source', curveness: 0.25 },
-      force: { repulsion: 120, edgeLength: [30, 120] }
-    }]
-    };
-    myChart.setOption(option);
+      series: [{
+        type: 'graph',
+        layout: 'force',
+        data: {{ $graph.nodes | jsonify | trim "'"}},
+        links: {{ $graph.links | jsonify | trim "'"}},
+        roam: true,
+        label: { show: true, position: "right" },
+        edgeSymbol: ['none', 'arrow'],
+        edgeSymbolSize: [4, 10],
+        lineStyle: { color: 'source', curveness: 0.25 },
+        force: { repulsion: 120, edgeLength: [30, 120] }
+      }]
+    }
     option && myChart.setOption(option);    
+  });
   </script>
 {{ else }}
   <p><strong>Error:</strong> Resource file <code>{{ $yamlfile }}</code> not found.</p>
