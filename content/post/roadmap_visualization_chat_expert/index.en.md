@@ -2,6 +2,7 @@
 title: 'Data Visualization AI agent-- a roadmap'
 date: 2025-06-30
 tags:
+  - 'insights'
   - 'Chatbots'
   - 'AI agents'
   - RAG
