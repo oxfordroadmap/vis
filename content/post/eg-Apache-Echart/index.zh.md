@@ -13,4 +13,4 @@ tags:
 
 本图基于[该数据集](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv)绘制而成。
 
-{{< echarts-network name="人物关系网络图：红楼梦 (Dream of the Red Chamber)" id="Network_Dream_of_the_Red_Chamber" data="red_chamber_charaters.yaml" >}}
+{{< echarts-network name="人物关系网络图：红楼梦 (Dream of the Red Chamber)" id="Network_Dream_of_the_Red_Chamber" data="red_chamber_characters.yaml" >}}

@@ -23,6 +23,7 @@
     var option;
     option = {
       series: [{
+        name: '{{ $name }}',
         type: 'graph',
         layout: 'force',
         data: {{ $graph.nodes | jsonify }},
