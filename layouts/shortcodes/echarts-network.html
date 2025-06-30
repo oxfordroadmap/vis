@@ -5,18 +5,14 @@
     ----------
     name :
         Icon name / ID.
-    padding_left : default "0"
-        Left padding.
-    padding_right : default "1"
-        Right padding.
-    attributes : default  "class=\"icon\" style=\"height: 1em; transform: translateY(0.1em);\""
 */}}
 
 {{- $name := .Get "name" | default "Network Graph" -}}
 {{- $id := .Get "id" | default (replaceRE "[^a-zA-Z0-9]" "_" $name) -}}
 
 {{- $yamlfile := .Get "data" -}}
-{{- $res := (.Page.Resources.Match $yamlfile) | first -}}
+{{- $matches := .Page.Resources.Match $yamlfile -}}
+{{- $res := first 1 $matches | index 0 -}}
 
 {{- if not $res }}
   <p><strong>Error:</strong> Could not find resource "{{ $yamlfile }}".</p>
