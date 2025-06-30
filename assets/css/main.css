@@ -25,6 +25,25 @@
   --color-secondary-900: 24 24 27;
   --color-secondary-950: 9 9 11;
 }
+h1 {
+  @apply text-3xl; 
+}
+h2 {
+  @apply text-2xl; 
+}
+h3 {
+  @apply text-xl; 
+}
+h4 {
+  @apply text-lg; 
+}
+h5 {
+  @apply text-base/7 font-black; 
+}
+h5 {
+  @apply text-base/7 font-semibold; 
+}
+
 
 .hbb-section {
   @apply py-12; /* last:mb-0 */
