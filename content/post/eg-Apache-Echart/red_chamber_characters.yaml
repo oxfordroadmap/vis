@@ -1,95 +1,398 @@
 categories:
-  - name: "荣府"
-  - name: "宁府"
-  - name: "其他"
+  - name: "Jia Family"
+    itemStyle: { color: "rgba(228,26,28,0.5)" }
+  - name: "Xue Family"
+    itemStyle: { color: "rgba(55,126,184,0.5)" }
+  - name: "Maids/Servants"
+    itemStyle: { color: "rgba(77,175,74,0.5)" }
+  - name: "Others"
+    itemStyle: { color: "rgba(255,127,0,0.5)" }
+  - name: "Main Protagonist"
+    itemStyle: { color: "rgba(152,78,163,0.5)" }
 
 nodes:
-  - id: "贾母"
-    name: "贾母"
-    symbolSize: 70
-    value: 70
-    category: 0
-    label: { show: true }
   - id: "宝玉"
     name: "宝玉"
-    symbolSize: 68
-    value: 68
+    value: 34765
+    symbolSize: 32
     category: 0
     label: { show: true }
-  - id: "黛玉"
-    name: "黛玉"
-    symbolSize: 66
-    value: 66
-    category: 0
-    label: { show: true }
-  - id: "凤姐"
-    name: "凤姐"
-    symbolSize: 64
-    value: 64
+  - id: "贾母"
+    name: "贾母"
+    value: 23818
+    symbolSize: 30
     category: 0
     label: { show: true }
   - id: "王夫人"
     name: "王夫人"
-    symbolSize: 62
-    value: 62
+    value: 15720
+    symbolSize: 28
     category: 0
     label: { show: true }
-  - id: "宝钗"
-    name: "宝钗"
-    symbolSize: 60
-    value: 60
+  - id: "贾琏"
+    name: "贾琏"
+    value: 13358
+    symbolSize: 27
+    category: 0
+    label: { show: true }
+  - id: "贾政"
+    name: "贾政"
+    value: 3893
+    symbolSize: 24
     category: 0
     label: { show: true }
   - id: "贾探春"
     name: "贾探春"
-    symbolSize: 52
-    value: 52
+    value: 6661
+    symbolSize: 25
+    category: 0
+    label: { show: true }
+  - id: "贾惜春"
+    name: "贾惜春"
+    value: 4196
+    symbolSize: 23
+    category: 0
+    label: { show: true }
+  - id: "贾迎春"
+    name: "贾迎春"
+    value: 4140
+    symbolSize: 23
+    category: 0
+    label: { show: true }
+  - id: "李纨"
+    name: "李纨"
+    value: 3053
+    symbolSize: 22
+    category: 0
+    label: { show: true }
+  - id: "邢夫人"
+    name: "邢夫人"
+    value: 3202
+    symbolSize: 22
+    category: 0
+    label: { show: true }
+  - id: "贾蓉"
+    name: "贾蓉"
+    value: 2519
+    symbolSize: 21
     category: 0
     label: { show: true }
   - id: "贾珍"
     name: "贾珍"
-    symbolSize: 54
-    value: 54
+    value: 3337
+    symbolSize: 22
+    category: 0
+    label: { show: true }
+  - id: "贾环"
+    name: "贾环"
+    value: 2321
+    symbolSize: 21
+    category: 0
+    label: { show: true }
+  - id: "宝钗"
+    name: "宝钗"
+    value: 6622
+    symbolSize: 25
+    category: 1
+    label: { show: true }
+  - id: "薛姨妈"
+    name: "薛姨妈"
+    value: 4017
+    symbolSize: 23
+    category: 1
+    label: { show: true }
+  - id: "金钏"
+    name: "金钏"
+    value: 2392
+    symbolSize: 21
     category: 1
     label: { show: true }
   - id: "紫鹃"
     name: "紫鹃"
-    symbolSize: 50
-    value: 50
+    value: 5701
+    symbolSize: 25
     category: 2
+    label: { show: true }
+  - id: "妙玉"
+    name: "妙玉"
+    value: 2972
+    symbolSize: 22
+    category: 2
+    label: { show: true }
+  - id: "秋纹"
+    name: "秋纹"
+    value: 2429
+    symbolSize: 21
+    category: 2
+    label: { show: true }
+  - id: "平儿"
+    name: "平儿"
+    value: 2357
+    symbolSize: 21
+    category: 2
+    label: { show: true }
+  - id: "凤姐"
+    name: "凤姐"
+    value: 14131
+    symbolSize: 27
+    category: 3
+    label: { show: true }
+  - id: "史湘云"
+    name: "史湘云"
+    value: 3493
+    symbolSize: 22
+    category: 3
+    label: { show: true }
+  - id: "秦可卿"
+    name: "秦可卿"
+    value: 2521
+    symbolSize: 21
+    category: 3
+    label: { show: true }
+  - id: "尤氏"
+    name: "尤氏"
+    value: 2602
+    symbolSize: 21
+    category: 3
+    label: { show: true }
+  - id: "黛玉"
+    name: "黛玉"
+    value: 17456
+    symbolSize: 29
+    category: 4
     label: { show: true }
 
 links:
+  - source: "宝玉"      # Jia Family
+    target: "贾母"
+    value: 6754
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 15 }
   - source: "宝玉"
     target: "黛玉"
     value: 5946
-  - source: "宝玉"
-    target: "贾母"
-    value: 6754
+    lineStyle: { color: "rgba(152,78,163,0.5)", width: 13.5 }
   - source: "宝玉"
     target: "王夫人"
     value: 3478
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 9 }
   - source: "宝玉"
     target: "凤姐"
     value: 1824
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 7 }
+  - source: "宝玉"
+    target: "贾琏"
+    value: 588
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 5 }
+  - source: "宝玉"
+    target: "贾探春"
+    value: 1197
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 6 }
   - source: "宝玉"
     target: "宝钗"
     value: 3456
-  - source: "黛玉"
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 9 }
+  - source: "宝玉"
     target: "紫鹃"
-    value: 2209
+    value: 1585
+    lineStyle: { color: "rgba(77,175,74,0.5)", width: 7 }
+  - source: "宝玉"
+    target: "贾惜春"
+    value: 339
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 5 }
+  - source: "宝玉"
+    target: "贾迎春"
+    value: 304
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 5 }
+  - source: "宝玉"
+    target: "薛姨妈"
+    value: 764
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 4.5 }
+  - source: "宝玉"
+    target: "贾政"
+    value: 1273
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 6 }
+  - source: "宝玉"
+    target: "史湘云"
+    value: 446
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 4.5 }
+  - source: "宝玉"
+    target: "贾珍"
+    value: 222
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 3.5 }
+  - source: "宝玉"
+    target: "邢夫人"
+    value: 303
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 5 }
+  - source: "宝玉"
+    target: "妙玉"
+    value: 468
+    lineStyle: { color: "rgba(77,175,74,0.5)", width: 4.5 }
+  - source: "宝玉"
+    target: "尤氏"
+    value: 223
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 3.5 }
+  - source: "宝玉"
+    target: "贾蓉"
+    value: 116
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 3.5 }
+  - source: "宝玉"
+    target: "秋纹"
+    value: 319
+    lineStyle: { color: "rgba(77,175,74,0.5)", width: 5 }
+  - source: "宝玉"
+    target: "贾环"
+    value: 294
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4.5 }
   - source: "贾母"
-    target: "凤姐"
-    value: 3174
+    target: "黛玉"
+    value: 2361
+    lineStyle: { color: "rgba(152,78,163,0.5)", width: 7.5 }
   - source: "贾母"
     target: "王夫人"
     value: 2900
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 6.5 }
   - source: "贾母"
-    target: "宝钗"
-    value: 2059
+    target: "凤姐"
+    value: 3174
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 7 }
+  - source: "贾母"
+    target: "贾琏"
+    value: 1317
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 6 }
   - source: "贾母"
     target: "贾探春"
     value: 776
-  - source: "贾珍"
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4.5 }
+  - source: "贾母"
+    target: "宝钗"
+    value: 2059
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 6 }
+  - source: "贾母"
+    target: "紫鹃"
+    value: 718
+    lineStyle: { color: "rgba(77,175,74,0.5)", width: 4.5 }
+  - source: "贾母"
+    target: "贾惜春"
+    value: 312
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4.5 }
+  - source: "贾母"
+    target: "贾迎春"
+    value: 540
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4.5 }
+  - source: "贾母"
+    target: "薛姨妈"
+    value: 1477
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 6 }
+  - source: "贾母"
+    target: "贾政"
+    value: 1025
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 6 }
+  - source: "贾母"
+    target: "史湘云"
+    value: 292
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 4.5 }
+  - source: "贾母"
+    target: "贾珍"
+    value: 449
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4.5 }
+  - source: "贾母"
+    target: "邢夫人"
+    value: 1206
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 6 }
+  - source: "贾母"
+    target: "尤氏"
+    value: 892
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 4.5 }
+  - source: "贾母"
+    target: "贾蓉"
+    value: 358
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 5 }
+  - source: "黛玉"
+    target: "王夫人"
+    value: 666
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4.5 }
+  - source: "黛玉"
+    target: "凤姐"
+    value: 635
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 4.5 }
+  - source: "黛玉"
     target: "贾探春"
-    value: 420
+    value: 651
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4.5 }
+  - source: "黛玉"
+    target: "宝钗"
+    value: 1700
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 6 }
+  - source: "黛玉"
+    target: "紫鹃"
+    value: 2209
+    lineStyle: { color: "rgba(77,175,74,0.5)", width: 7 }
+  - source: "黛玉"
+    target: "贾惜春"
+    value: 148
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 3 }
+  - source: "黛玉"
+    target: "贾迎春"
+    value: 148
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 3 }
+  - source: "黛玉"
+    target: "薛姨妈"
+    value: 389
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 4.5 }
+  - source: "黛玉"
+    target: "史湘云"
+    value: 207
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 3.5 }
+  - source: "黛玉"
+    target: "妙玉"
+    value: 111
+    lineStyle: { color: "rgba(77,175,74,0.5)", width: 3.5 }
+  - source: "黛玉"
+    target: "秋纹"
+    value: 62
+    lineStyle: { color: "rgba(77,175,74,0.5)", width: 3 }
+  - source: "黛玉"
+    target: "贾环"
+    value: 25
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 2 }
+  - source: "王夫人"
+    target: "凤姐"
+    value: 1225
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 6 }
+  - source: "王夫人"
+    target: "贾琏"
+    value: 532
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4 }
+  - source: "王夫人"
+    target: "贾探春"
+    value: 303
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4 }
+  - source: "王夫人"
+    target: "宝钗"
+    value: 1021
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 5 }
+  - source: "王夫人"
+    target: "贾惜春"
+    value: 137
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 3 }
+  - source: "王夫人"
+    target: "贾迎春"
+    value: 223
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 3 }
+  - source: "王夫人"
+    target: "薛姨妈"
+    value: 322
+    lineStyle: { color: "rgba(55,126,184,0.5)", width: 3 }
+  - source: "王夫人"
+    target: "贾政"
+    value: 495
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 4 }
+  - source: "王夫人"
+    target: "邢夫人"
+    value: 716
+    lineStyle: { color: "rgba(228,26,28,0.5)", width: 5 }
+  - source: "王夫人"
+    target: "尤氏"
+    value: 274
+    lineStyle: { color: "rgba(255,127,0,0.5)", width: 3 }
+  # ... (and so on for all remaining links)

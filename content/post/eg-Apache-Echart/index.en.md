@@ -12,41 +12,29 @@ Explore the character relationships in a Chinese novel written in 18th century 
 
 <!-- more -->
 
-This character network graph is based on [the dataset](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv).
+This character network graph is based on [the dataset](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv). Only **the top 25** nodes by weighted degree are included, and only links value equal or larger than 25 are kept.  
 
+### Graph
 
+Note that the node size is scaled proportionally. 
 
-<!-- Load ECharts from CDN -->
-<div id="echart-network" style="width: 600px; height: 400px;"></div>
-<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-<script>
-  var chartDom = document.getElementById('echart-network');
-  var myChart = echarts.init(chartDom);
-  var option = {
-    title: { text: 'Simple Network Graph' },
-    tooltip: {},
-    animationDurationUpdate: 1500,
-    animationEasingUpdate: 'quinticInOut',
-    series: [{
-      type: 'graph',
-      layout: 'force',
-      symbolSize: 50,
-      roam: true,
-      label: { show: true },
-      edgeSymbol: ['circle', 'arrow'],
-      edgeSymbolSize: [4, 10],
-      edgeLabel: { fontSize: 12 },
-      data: [
-        { name: 'Node 1', draggable: true },
-        { name: 'Node 2', draggable: true },
-        { name: 'Node 3', draggable: true }
-      ],
-      links: [
-        { source: 'Node 1', target: 'Node 2' },
-        { source: 'Node 2', target: 'Node 3' }
-      ],
-      lineStyle: { opacity: 0.9, width: 2, curveness: 0 }
-    }]
-  };
-  myChart.setOption(option);
-</script>
+{{< echarts-network name="Character Network Graph: Dream of the Red Chamber" id="Network_Dream_of_the_Red_Chamber" data="red_chamber_characters.yaml" >}}
+
+ Clusters are constructed according to their family or role (e.g., Jia family main branch, Jia family Ning branch, Xue family, maids/servants, and others). Each cluster is assigned a unique color/category. This approach is intuitive for this novel’s characters and visually meaningful, without running a full community-detection algorithm.
+
+### Cluster assignments and colors
+
+- Red: Jia family main branch 
+  - 宝玉, 贾母, 王夫人, 贾琏, 贾政, 贾探春, 贾惜春, 贾迎春, 李纨, 邢夫人, 贾蓉, 贾珍, 贾环 
+- Blue: Xue family 
+  - 宝钗, 薛姨妈, 金钏
+- Green: Maids/servants 
+  - 紫鹃, 妙玉, 秋纹, 平儿
+- Orange: Other close kin/friends 
+  - 凤姐, 史湘云, 秦可卿, 尤氏 
+- Purple: Main protagonist 
+  - 黛玉
+
+## In short
+
+Insights can be gained through network, including new perspectives from this case of a Chinese novel.

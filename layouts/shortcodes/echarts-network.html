@@ -15,8 +15,6 @@
 {{- if gt (len $matches) 0 }}
   {{- $res := index $matches 0 -}}
   {{- $graph := $res | transform.Unmarshal -}}
-  {{- $graph := $res | transform.Unmarshal -}}
-  {{- $graph := $res | transform.Unmarshal -}}
   <div id="{{ $id }}" style="width:100%;max-width:800px;height:600px;margin:auto;"></div>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script type="text/javascript"> document.addEventListener('DOMContentLoaded', function () {
@@ -27,13 +25,25 @@
         type: 'graph',
         layout: 'force',
         data: {{ $graph.nodes | jsonify | safeJS }},
-        links: {{ $graph.nodes | jsonify | safeJS }},
+        links: {{ $graph.links | jsonify | safeJS }},
+        categories: {{ $graph.categories | jsonify | safeJS }},
         roam: true,
-        label: { show: true, position: "right" },
-        edgeSymbol: ['none', 'arrow'],
-        edgeSymbolSize: [4, 10],
+        label: { show: true, position: "center" },
+        edgeSymbol: ['none', 'none'],
         lineStyle: { color: 'source', curveness: 0.25 },
-        force: { repulsion: 120, edgeLength: [30, 120] }
+        force: { repulsion: 350, edgeLength: [20, 70] },
+        tooltip: {
+            show: true,
+            formatter: function (params) {
+                // Customize the tooltip content as you wish
+                if (params.dataType === 'node') {
+                return params.data.name + "<br>Value: " + params.data.value;
+                } else if (params.dataType === 'edge') {
+                return params.data.source + " → " + params.data.target + "<br>Value: " + (params.data.value || "");
+                }
+                return "";
+            }
+        },
       }]
     }
     option && myChart.setOption(option);    
