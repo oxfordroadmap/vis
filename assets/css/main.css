@@ -54,7 +54,7 @@ h5 {
 }
 
 /* Fill padding of `.home-section` parent */
- .home-section-bg {
+.home-section-bg {
    position: absolute;
    top: 0;
    left: 0;

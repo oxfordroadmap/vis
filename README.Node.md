@@ -1,4 +1,19 @@
 
+[hugo-blox-builder/modules/blox-tailwind/package.json at 44e75541f7be16116e80e5c71ff98f6997d63fe5 · HugoBlox/hugo-blox-builder](https://github.com/HugoBlox/hugo-blox-builder/blob/44e75541f7be16116e80e5c71ff98f6997d63fe5/modules/blox-tailwind/package.json#L30)
+```
+  "scripts": {
+    "build:styles": "npx tailwindcss -i ./assets/css/styles.css -o ./assets/dist/wc.min.css --minify",
+    "build:starter:styles": "npx tailwindcss -i ./assets/css/styles.css -o ../../starters/${HB_TPL}/assets/dist/wc.min.css --minify",
+    "assets:dist": "vite build"
+  },
+
+```
+
+
+* input ./assets/css/styles.css 
+* output ./assets/dist/wc.min.css
+
+---
 My search for output.css in the layouts directory yielded no results, but searching for
   wc.min in layouts found a reference in partials/site_head.html.
 
