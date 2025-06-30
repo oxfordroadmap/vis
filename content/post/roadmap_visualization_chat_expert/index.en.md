@@ -9,6 +9,8 @@ tags:
   - 'AI Engineering'
   - 'Service Design'
   - 'AI capabilities'
+image:
+  caption: 'Image credit: [Tableau Agent](https://www.tableau.com/zh-tw/products/tableau-agent)'
 ---
 
 '🤔' Integrating chatbot interfaces and functionalities into digital systems enables insight generation across diverse operational contexts.  
@@ -23,6 +25,14 @@ tags:
 Modern enterprises are turning to Retrieval-augmented Generation (RAG) technique to bridge gaps between raw data and actionable insights. Unlike standalone LLMs, RAG systems combine the generative power of language models with targeted retrieval from trusted sources like knowledge bases, databases, and documentation. This architecture ensures that AI-driven responses are grounded in accurate, organization-specific context.  Such "groundedness" is ensured by providing enterprise knowledge and information in both structured and unstructured data in RAG systems. 
 
 This "groundedness" through RAG technique, can contribute to the notion of “Agentic Analytics”, a critical AI capability defined in by Gartner’s [_Top Trends in Data & Analytics for 2025_](https://www.gartner.com/en/newsroom/press-releases/2025-03-05-gartner-identifies-top-trends-in-data-and-analytics-for-2025).  
+
+
+{{< figure
+  src="UI_Dashbord_Chatbot.png"
+  alt="UI_Dashbord_Chatbot.png"
+  caption="Dashboard plus AI Agents：Critical touchpoints between AI and humans"
+  class="ma0 w-75"
+>}}
 
 
 ### 📈 Industrial Deployment Examples 📊 
