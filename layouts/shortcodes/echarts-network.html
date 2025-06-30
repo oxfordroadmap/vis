@@ -15,10 +15,6 @@
 {{- if gt (len $matches) 0 }}
   {{- $res := index $matches 0 -}}
   {{- $graph := $res | transform.Unmarshal -}}
-
-{{- $res := .Resources.GetMatch "network" -}}
-{{- $graph := $res | transform.Unmarshal -}}
- 
   <div id="{{ $id }}" style="width:100%;max-width:800px;height:600px;margin:auto;"></div>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script>
