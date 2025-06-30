@@ -96,12 +96,10 @@ h5 {
 /* HyperLinks. */
 @layer components {
   a.button {
-    @apply bg-primary-500 hover:bg-primary-700 text-white border-solid hover:border-dotted font-bold py-2 px-4 rounded;
+    @apply text-white bg-primary-600 hover:bg-primary-950 border-solid hover:border-dotted border-solid hover:border-dotted font-bold py-2 px-4 rounded;
   }
   .powered-by a {
-  @apply underline text-blue-800 hover:text-blue-900 dark:text-blue-100 dark:hover:text-blue-200;
-  text-decoration: underline;
-  text-decoration-style: dotted;
+    @apply underline text-blue-800 hover:text-blue-950 dark:text-blue-200 dark:hover:text-blue-50;
   }
   .blox-collection a, .nav-item a {
     @apply bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900;
