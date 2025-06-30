@@ -11,10 +11,12 @@ CSS3 Box Shadows Effects
 
 */
 
+/*
 li.nav-item {
-    font-size: 0.75rem;
-    /* font-size: var(--text-xsm); */
+    font-size: 0.75rem;  //* font-size: var(--text-xsm); 
 }
+   
+*/
 
 /* Custom nav-item size for i18n */
 li.nav-item.dropdown {
@@ -153,8 +155,7 @@ yt_learning {
 
 .prose a:hover:not(.rounded):not(.rounded-full):not(.rounded-lg) {
   padding-bottom: 3px; 
-  border-bottom: dotted 5px; 
-  rgba(255, 255, 255, 0.33);
+  border-bottom: dotted 5px rgba(255, 255, 255, 0.33);
 }
 
 /*  */
