@@ -5,8 +5,10 @@ authors:
   - admin
 tags:
   - recommendations
-  - AI
+  - 'AI Engineering'
+  - 'AI capabilities'
   - 'AI agents'  
+  - RAG
   - 'Free and Open Source' 
 image:
   caption: "Credit: [**O'Reilly**](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)"

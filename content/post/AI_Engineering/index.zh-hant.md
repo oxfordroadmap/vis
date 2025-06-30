@@ -5,9 +5,11 @@ authors:
   - admin
 tags:
   - recommendations
-  - AI  
+  - 'AI工程'
+  - 'AI能力'
   - 'AI代理'  
-  - 自由開源  
+  - RAG
+  - 自由開源 
 image:
   caption: "圖片來源: [**O'Reilly**](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)"
 ---

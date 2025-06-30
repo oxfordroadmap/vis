@@ -13,7 +13,6 @@ authors:
   - Ted
 
 tags:
-  - 'insights'
   - 'cognitive-frames'
   - Academic
   - Hugo Blox
