@@ -104,6 +104,18 @@ h5 {
   .blox-collection a, .nav-item a {
     @apply bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900;
   }
+  .skills-name {
+    font-size: 0.84rem;
+    margin-bottom: 6px;
+    text-transform: none;
+  }
+
+  .skills-description {
+    font-size: 0.72rem;
+    margin-bottom: 6px;
+    text-transform: none;
+  }
+
 }
 
 a.rounded:hover,
