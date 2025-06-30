@@ -11,6 +11,12 @@ CSS3 Box Shadows Effects
 
 */
 
+
+/* blox/ all = biography skills override!! */
+.skills-name, .skills-description {
+  text-transform: none;
+}
+
 /*
 li.nav-item {
     font-size: 0.75rem;  //* font-size: var(--text-xsm); 
