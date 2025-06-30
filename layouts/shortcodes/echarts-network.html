@@ -17,16 +17,15 @@
   {{- $graph := $res | transform.Unmarshal -}}
   <div id="{{ $id }}" style="width:100%;max-width:800px;height:600px;margin:auto;"></div>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-  <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function () {
+  <script type="text/javascript"> document.addEventListener('DOMContentLoaded', function () {
     var myChart = echarts.init(document.getElementById('{{ $id }}'));
     var option;
     option = {
       series: [{
         type: 'graph',
         layout: 'force',
-        data: {{ $graph.nodes | jsonify | trim "'"}},
-        links: {{ $graph.links | jsonify | trim "'"}},
+        data: {{ $graph.nodes | jsonify }},
+        links: {{ $graph.links | jsonify }},
         roam: true,
         label: { show: true, position: "right" },
         edgeSymbol: ['none', 'arrow'],
