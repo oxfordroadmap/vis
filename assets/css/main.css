@@ -85,7 +85,7 @@
   }
 
   a.button, a.rounded, a.rounded-full, a.rounded-lg {
-    @apply bg-blue-500 hover:bg-blue-700 text-white border-solid hover:border-dotted font-bold py-2 px-4 rounded    
+    @apply bg-primary-500 hover:bg-primary-700 text-white border-solid hover:border-dotted font-bold py-2 px-4 rounded    
   }
 
   .powered-by a {
