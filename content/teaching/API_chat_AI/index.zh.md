@@ -8,6 +8,7 @@ tags:
   - Python
   - API
   - 项目管理
+  - RAG
 ---
 
 ***《API对话AI》*** 课程旨在带领学习者，完成具`检索增强生成（RAG）`功能的智能产品原型，一方面掌握从界面到评测各环节的 `LLM 大语言模型` 流程架构及理论知识，另一方面透过代码及文档实践并记录已有成果及引发想法的 `LLM应用` 实践课程。
@@ -47,7 +48,7 @@ tags:
 
 ## 评测 Evaluating LLM apps 
 
-要改进App，必需先有好的有用的评测。特别是RAG的应用，像[[🦜️🛠️ LangSmith (LangChain)](https://docs.smith.langchain.com/evaluation/tutorials/rag)] 及[LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/evaluating/)都有相关的评测实践文档。
+要改进App，必需先有好的有用的评测。特别是RAG的应用，像[🦜️🛠️ LangSmith (LangChain)](https://docs.smith.langchain.com/evaluation/tutorials/rag) 及[LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/evaluating/)都有相关的评测实践文档。
 
 {{% callout note %}}
 在`评测（Evaluation）`这环节，对接下来的`观察（Observability）`、及`部署（Deployment）`具有指导及指引性的影响，因此是学习及操练的重点。

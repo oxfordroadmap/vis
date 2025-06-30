@@ -1,140 +1,153 @@
 ---
-title: API, Chat & AI
-summary: From chats to panels of experts, how can we leverage the LLM generative AI ecosystems to prototype smart products that create values?
+title: 'API, Chat & AI'
+summary: From chats to expert panels —- how to harness generative AI ecosystems to create valuable intelligent product prototypes?
 date: 2025-06-01
 type: docs
 math: false
 tags:
   - Python
-  - AI
-  - ProjectManagement
+  - API
+  - 'Project Management'
+  - RAG
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+_**“API Dialogue AI”**_ is a course designed to guide learners in building intelligent product prototypes featuring **Retrieval-Augmented Generation (RAG)**. It covers theoretical and architectural workflows involving **Large Language Models (LLMs)**—from interface to evaluation—and emphasizes hands-on coding, documentation, and idea generation through applied **LLM applications**.
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+<!--more-->
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+This page outlines and showcases the knowledge and practical components of the course.
 
-## Video
+## MCP: The Model Context Protocol Emerging from APIs
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+How do we practically integrate smart applications? Whether cloud-based or local Q&A, intelligent APIs can act like building blocks for constructing useful, tangible smart apps.
 
-{{< youtube D2vj0WcvH5c >}}
+As in storytelling, it’s sometimes best to start in medias res. Let’s dive straight into the **Model Context Protocol (MCP)**.
 
-**Youtube**:
+### Core Concepts: Grasping the Ideas
 
-    {{</* youtube w7Ft2ymGmfc */>}}
+While watching the video below, note down unfamiliar nouns on one side and the verbs you understand on the other.
 
-**Bilibili**:
+{{< youtube 7j1t3UZA1TY >}}
 
-    {{</* bilibili id="BV1WV4y1r7DF" */>}}
+Based on this video: How does MCP enhance AI? How does it simplify the LLM workflow? What role do APIs play?
 
-**Video file**
+### Foundational Practice: Understanding Code Blocks
 
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
+Watch the next video focusing solely on identifying nouns and verbs related to each code section. Skip the detailed implementation.
 
-    {{</* video src="my_video.mp4" controls="yes" */>}}
+{{< youtube EyYJI8TPIj8 >}}
 
-## Podcast
+## Reinforcement Learning Through Self-Assessment
 
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
+Learning is personal—it’s about improving your ability to solve problems, not proving yourself to a teacher.
 
-    {{</* audio src="ambient-piano.mp3" */>}}
+This course includes interactive prompts to strengthen understanding and retention.
 
-Try it out:
+{{< spoiler text="👉 ⁉ What open standard did Anthropic propose at the end of 2024?" >}} While API-based LLM Q&A workflows existed, the lack of streamlined context delivery and standardization led to the proposal of the open **Model Context Protocol (MCP)**. 🎉 {{< /spoiler >}}
 
-{{< audio src="ambient-piano.mp3" >}}
+{{< spoiler text="👉 ❓ What pain points does MCP aim to resolve?" >}} LLM applications (especially AI agents) rely heavily on **content** (e.g. databases, knowledge bases) and **tools** (e.g. search, visualization, generation). MCP standardizes how these are packaged—tools, resources, and prompt templates—into machine-discoverable registries, offering more structured alternatives to single API calls. 🎉 {{< /spoiler >}}
 
-## Test students
+## Evaluation: Evaluating LLM Apps
 
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
+To improve an app, it must first be evaluable. For RAG-based applications, platforms like [🦜️🛠️ LangSmith (LangChain)](https://docs.smith.langchain.com/evaluation/tutorials/rag) and[LlamaIndex](https://docs.llamaindex.ai/en/stable/module_guides/evaluating/)
 
-```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
-{{</* /spoiler */>}}
-```
+provide evaluation guidance.
 
-renders as
+{{% callout note %}} The **Evaluation** phase informs both **Observability** and **Deployment**, making it a crucial area for study and practice. {{% /callout %}}
 
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
+### Basic Evaluation Metrics
 
-## Math
+Common machine learning and document-retrieval metrics include **Recall** and **Precision**:
 
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
+**Recall** – the proportion of actual positives correctly identified (True Positive Rate):
 
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
+{{< math >}} $$ Recall = \frac{ TP }{TP + FN}= \frac{Correctly Labeled Actual Positives}{All Actual Positive} $$ {{< /math >}}
 
-{{% callout note %}}
-We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
-{{% /callout %}}
+**Precision** – the proportion of predicted positives that are actually correct:
 
-Example **math block**:
+{{< math >}} $$ Precision = \frac{ TP }{TP + FP}= \frac{Correctly Labeled Actual Positives }{All Labeled As Positive} $$ {{< /math >}}
 
-```latex
-{{</* math */>}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{</* /math */>}}
-```
+### RAG-Specific Evaluation Metrics
 
-renders as
+Evaluating LLM-powered RAG applications may include:
 
-{{< math >}}
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-{{< /math >}}
+- **Relevance (Question)**
+    
+- **Relevance (Context)**
+    
+- **Groundedness**
+    
+- **LLM-as-a-Judge**
+    
 
-Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
+## Skills: Code-Based Practice
 
-Example **multi-line math** using the math linebreak (`\\`):
+To develop and refine LLM app development skills, this course uses {{< icon name="python" >}} Python in two areas: **LLM pipelines** and **Sequential UI**.
 
-```latex
-{{</* math */>}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-{{</* /math */>}}
-```
+{{% callout note %}} Building an **LLM pipeline** locally (especially with GPU) presents challenges but offers critical insight into deployment differences. While more advanced, **Sequential UI** is essential for workflow-oriented apps. {{% /callout %}}
 
-renders as
+### LLM: Building a Prompt-to-Model Pipeline
 
-{{< math >}}
+LLM app development starts with constructing a data pipeline from input to LLM invocation.
 
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
-
-{{< /math >}}
-
-## Code
-
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
-
-renders as
+Here’s a simplified example using Hugging Face models locally via 🦜️🔗 LangChain:
 
 ```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
+### 模型加载
+from langchain_huggingface.llms import HuggingFacePipeline  
+  
+hf = HuggingFacePipeline.from_model_id(  
+model_id="gpt2",  
+task="text-generation",  
+pipeline_kwargs={"max_new_tokens": 10},  
+)
+
+### 创建语言链，使用提问句模板（提示工程）
+from langchain_core.prompts import PromptTemplate
+template = """Question: {question}Answer: Let's think step by step."""
+prompt = PromptTemplate.from_template(template)
+chain = prompt | hf
+question = "What is electroencephalography?"
+print(chain.invoke({"question": question}))
 ```
 
-## Inline Images
+This example demonstrates model loading, prompting, and chaining logic using LangChain.
 
-```go
-{{</* icon name="python" */>}} Python
+### UI: Connecting LLM to the User
+
+LLM app user interfaces require structured, sequential interaction channels. This course uses Python’s Panel library to build a starter chatbot app: [Panel Chat Bot](https://github.com/holoviz-topics/panel-chat-examples)：
+
+![](./featured3.jpg)
+
+##  🗺 Learning Map
+
+```mermaid
+graph LR
+    WebLLM_Panel[WebLLM Panel Demo] -. Panel Technology .-> PanelChatBot( Panel Chatbot )
+    WebLLM_Panel -- LLM Tech --> LangChain( 🦜🔗 LangChain )
+    WebLLM_Panel -- LLM Tech --> LlamaIndex( 🦙 LlamaIndex )
+    WebLLM_Panel -- Innovation Mgmt --> API((API))--> MCP((MCP))
+    WebLLM_Panel -- Innovation Mgmt --> AI_Wrappers>AI Wrappers Biz Models]
+    LangChain -- LLM --> RAG{{RAG App}}
+    LlamaIndex -- LLM --> RAG{{RAG App}}
+    PanelChatBot -. UI .-> RAG{{RAG App}}
+    RAG -. Ecosystem .-> API_based_AI_ecosystems([API-Based AI Ecosystems])
+    MCP -. Ecosystem .-> API_based_AI_ecosystems([API-Based AI Ecosystems])
+    AI_Wrappers -. Ecosystem .-> API_based_AI_ecosystems([API-Based AI Ecosystems])
 ```
 
-renders as
 
-{{< icon name="python" >}} Python
+## Project-Based Learning
 
-## Did you find this page helpful? Consider sharing it 🙌
+Learners are encouraged to demonstrate **transferable skills** through custom projects based on the course:
+
+1. A refined or extended **LLM application** (e.g. adding bilingual prompts, upgrading evaluation, adding visual outputs)
+    
+2. A concise and informative **LLM technical documentation**—using scaffolding to help both experts and newcomers
+    
+3. A 150-character **project summary** for community sharing (GitHub, LinkedIn, forums), linking to the app and docs。
+
+Example project summary:
+
+> Thanks to the [Panel Chat Examples](https://holoviz-topics.github.io/panel-chat-examples/), I’ve built a bilingual Chinese-English RAG-enabled chatbot for _The Art of War_. See [App Demo](#AppDemo) and [Technical Docs](#TechnicalDocs). Any tips to improve its documentation to highlight Panel + LangChain integration?
+
