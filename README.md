@@ -1,3 +1,54 @@
+# Academic Icons for Writing
+### 🔰 **Introduction**
+- 🧭 `U+1F9ED` Compass – Setting direction
+- 📌 `U+1F4CC` Pushpin – Anchoring context
+- 🗺️ `U+1F5FA` World Map – Framing the landscape
+- 📖 `U+1F4D6` Open Book – Background reading
+- 🕰️ `U+231A` Watch – Temporal context
+
+### 🎯 **Objectives**
+- 🎯 `U+1F3AF` Direct Hit – Goals or aims
+- ✅ `U+2705` Checkmark – Criteria or intent
+- 🔍 `U+1F50D` Magnifying Glass – Investigative focus
+- 🧠 `U+1F9E0` Brain – Cognitive purpose
+- 🗝️ `U+1F5DD` Key – Central focus
+
+### ⚙️ **Methods**
+- ⚙️ `U+2699` Gear – Mechanism or procedure
+- 🧪 `U+1F9EA` Test Tube – Experimental setup
+- 🧰 `U+1F9F0` Toolbox – Tools used
+- 📐 `U+1F4D0` Triangular Ruler – Design or framework
+- 📊 `U+1F4CA` Bar Chart – Analytical strategy
+
+### 📈 **Results**
+- 📈 `U+1F4C8` Upward Trend – Positive findings
+- 🧾 `U+1F9FE` Receipt – Recorded outcomes
+- 📉 `U+1F4C9` Downward Trend – Negative/declining results
+- 🧮 `U+1F9EE` Abacus – Quantitative data
+- 📊 `U+1F4CA` Bar Chart – Summary statistics
+    
+
+### 💬 **Discussion**
+- 💬 `U+1F4AC` Speech Bubble – Interpretation
+- 🧩 `U+1F9E9` Puzzle Piece – Piecing insights together
+- 🤔 `U+1F914` Thinking Face – Reflection
+- 🧭 `U+1F9ED` Compass – Re-orienting understanding
+- 🔄 `U+1F501` Arrows in Circle – Revisiting assumptions
+
+### 🔚 **Conclusion**
+- 🔚 `U+1F51A` END Arrow – Wrap-up
+- 🧾 `U+1F9FE` Summary – Final statement
+- 🎓 `U+1F393` Graduation Cap – Learning outcomes
+- 📌 `U+1F4CC` Pushpin – Key takeaway
+- 🏁 `U+1F3C1` Checkered Flag – Completion
+
+### 🎁 **Contribution**
+- 🎁 `U+1F381` Gift – What’s added
+- 💡 `U+1F4A1` Lightbulb – Original insight
+- 🛠️ `U+1F6E0` Hammer and Wrench – Practical impact
+- 📘 `U+1F4D8` Blue Book – Knowledge contribution
+- 🧬 `U+1F9EC` DNA – Novelty and originality
+
 # [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
 
 [![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
