@@ -11,7 +11,7 @@ tags:
   - RAG
 ---
 
-_**“API Dialogue AI”**_ is a course designed to guide learners in building intelligent product prototypes featuring **Retrieval-Augmented Generation (RAG)**. It covers theoretical and architectural workflows involving **Large Language Models (LLMs)**—from interface to evaluation—and emphasizes hands-on coding, documentation, and idea generation through applied **LLM applications**.
+_**“API, Chat & AI”**_ is a course designed to guide learners in building intelligent product prototypes featuring **Retrieval-Augmented Generation (RAG)**. It covers theoretical and architectural workflows involving **Large Language Models (LLMs)**—from interface to evaluation—and emphasizes hands-on coding, documentation, and idea generation through applied **LLM applications**.
 
 <!--more-->
 

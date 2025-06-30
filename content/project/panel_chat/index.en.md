@@ -6,6 +6,7 @@ tags:
   - '🚧Extensions'
   - 'Chatbots'
   - 'AI agents'
+  - RAG
   - 'AI capabilities'
 ---
 

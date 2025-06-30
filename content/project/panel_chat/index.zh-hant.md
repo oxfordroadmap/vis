@@ -7,6 +7,7 @@ tags:
   - '聊天机器人'
   - '人工智能代理人'
   - 'AI能力'
+  - RAG
   - 'theme_extensions'
 ---
 
