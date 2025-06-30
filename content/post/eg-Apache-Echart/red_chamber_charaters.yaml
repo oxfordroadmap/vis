@@ -1,0 +1,148 @@
+nodes:
+  - name: "贾母"        # Grandmother Jia
+    symbolSize: 70
+  - name: "宝玉"        # Jia Baoyu
+    symbolSize: 68
+  - name: "黛玉"        # Lin Daiyu
+    symbolSize: 66
+  - name: "凤姐"        # Wang Xifeng
+    symbolSize: 64
+  - name: "王夫人"      # Lady Wang
+    symbolSize: 62
+  - name: "宝钗"        # Xue Baochai
+    symbolSize: 60
+  - name: "贾琏"        # Jia Lian
+    symbolSize: 58
+  - name: "贾政"        # Jia Zheng
+    symbolSize: 56
+  - name: "贾珍"        # Jia Zhen
+    symbolSize: 54
+  - name: "贾探春"      # Jia Tanchun
+    symbolSize: 52
+  - name: "紫鹃"        # Zijuan
+    symbolSize: 50
+  - name: "贾迎春"
+    symbolSize: 48
+  - name: "贾惜春"
+    symbolSize: 46
+  - name: "史湘云"
+    symbolSize: 44
+  - name: "薛姨妈"
+    symbolSize: 42
+  - name: "贾环"
+    symbolSize: 40
+  - name: "秦钟"
+    symbolSize: 38
+  - name: "李纨"
+    symbolSize: 36
+  - name: "贾蓉"
+    symbolSize: 34
+  - name: "贾兰"
+    symbolSize: 32
+  - name: "贾芸"
+    symbolSize: 30
+  - name: "赵姨娘"
+    symbolSize: 28
+  - name: "尤氏"
+    symbolSize: 26
+  - name: "妙玉"
+    symbolSize: 24
+  - name: "雪雁"
+    symbolSize: 22
+  - name: "秋纹"
+    symbolSize: 20
+  - name: "司棋"
+    symbolSize: 20
+  - name: "巧姐儿"
+    symbolSize: 20
+  - name: "贾芹"
+    symbolSize: 20
+  - name: "贾琼"
+    symbolSize: 20
+  - name: "贾敕"
+    symbolSize: 20
+  - name: "贾效"
+    symbolSize: 20
+  - name: "贾琛"
+    symbolSize: 20
+  - name: "贾蔷"
+    symbolSize: 20
+  - name: "贾菌"
+    symbolSize: 20
+  - name: "贾琮"
+    symbolSize: 20
+  - name: "贾蓁"
+    symbolSize: 20
+  - name: "贾萍"
+    symbolSize: 20
+  - name: "贾藻"
+    symbolSize: 20
+  - name: "贾蘅"
+    symbolSize: 20
+  - name: "贾芬"
+    symbolSize: 20
+  - name: "贾芳"
+    symbolSize: 20
+  - name: "贾芝"
+    symbolSize: 20
+  - name: "贾源"
+    symbolSize: 20
+
+links:
+  - source: "宝玉"
+    target: "黛玉"
+    value: 5946
+  - source: "宝玉"
+    target: "贾母"
+    value: 6754
+  - source: "宝玉"
+    target: "王夫人"
+    value: 3478
+  - source: "宝玉"
+    target: "凤姐"
+    value: 1824
+  - source: "宝玉"
+    target: "宝钗"
+    value: 3456
+  - source: "黛玉"
+    target: "紫鹃"
+    value: 2209
+  - source: "贾母"
+    target: "凤姐"
+    value: 3174
+  - source: "贾母"
+    target: "王夫人"
+    value: 2900
+  - source: "贾母"
+    target: "宝钗"
+    value: 2059
+  - source: "贾母"
+    target: "贾探春"
+    value: 776
+  - source: "贾母"
+    target: "贾惜春"
+    value: 312
+  - source: "贾母"
+    target: "贾迎春"
+    value: 540
+  - source: "贾母"
+    target: "尤氏"
+    value: 892
+  - source: "凤姐"
+    target: "贾琏"
+    value: 1285
+  - source: "贾政"
+    target: "宝玉"
+    value: 1273
+  - source: "贾探春"
+    target: "宝玉"
+    value: 1197
+  - source: "贾珍"
+    target: "贾蓉"
+    value: 474
+  - source: "贾琏"
+    target: "贾蓉"
+    value: 539
+  - source: "贾母"
+    target: "贾琏"
+    value: 1317

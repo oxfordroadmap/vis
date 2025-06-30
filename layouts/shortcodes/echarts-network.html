@@ -1,0 +1,41 @@
+{{/*
+    Docs: https://docs.hugoblox.com/reference/markdown/#inline-image
+
+    Parameters
+    ----------
+    name :
+        Icon name / ID.
+    padding_left : default "0"
+        Left padding.
+    padding_right : default "1"
+        Right padding.
+    attributes : default  "class=\"icon\" style=\"height: 1em; transform: translateY(0.1em);\""
+*/}}
+
+{{- $name := .Get "name" | default "Network Graph" -}}
+{{- $id := .Get "id" | default (replaceRE "[^a-zA-Z0-9]" "_" $name) -}}
+{{- $datafile := .Get "data" -}}
+{{- $resource := .Page.Resources.Match $datafile -}}
+{{- $data := $resource | transform.Unmarshal -}}
+
+<div id="{{ $id }}" style="width: 100%; height: 600px;"></div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script>
+  const chart = echarts.init(document.getElementById('{{ $id }}'));
+  chart.setOption({
+    title: {
+      text: '{{ $name }}',
+      left: 'center'
+    },
+    tooltip: {},
+    series: [{
+      type: 'graph',
+      layout: 'force',
+      roam: true,
+      label: { show: true, position: 'right' },
+      force: { repulsion: 250, edgeLength: [50, 150] },
+      data: {{ $data.nodes | jsonify }},
+      links: {{ $data.links | jsonify }}
+    }]
+  });
+</script>
