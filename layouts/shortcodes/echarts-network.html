@@ -17,19 +17,25 @@
   {{- $graph := $res | transform.Unmarshal -}}
   <div id="{{ $id }}" style="width: 100%; height: 600px;"></div>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const chart = echarts.init(document.getElementById('{{ $id }}'));
-    chart.setOption({
-      series: [{
-        type: 'graph',
-        layout: 'force',
-        data: {{ $graph.nodes | jsonify }},
-        links: {{ $graph.links | jsonify }}
-      }]
-    });
-  });
-  </script>
+    <script>
+    function renderEChart_{{ $id }}() {
+        const dom = document.getElementById('{{ $id }}');
+        if (typeof echarts === 'undefined' || !dom) {
+        setTimeout(renderEChart_{{ $id }}, 100);
+        return;
+        }
+        const chart = echarts.init(dom);
+        chart.setOption({
+        series: [{
+            type: 'graph',
+            layout: 'force',
+            data: {{ $graph.nodes | jsonify }},
+            links: {{ $graph.links | jsonify }}
+        }]
+        });
+    }
+    renderEChart_{{ $id }}();
+    </script>
 {{ else }}
   <p><strong>Error:</strong> Resource file <code>{{ $yamlfile }}</code> not found.</p>
 {{- end }}
