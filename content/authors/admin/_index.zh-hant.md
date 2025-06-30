@@ -186,7 +186,7 @@ skillsets:
       - name: CI/CD 持續整合和持續佈署 與 API 整合
         description: "**實施** 持續整合與持續佈署（CI/CD）流程：明確定義目標意圖 （intent），整合應用程序接口（API），並持續更新模型。"
         icon: custom/CICD
-      - name: RAG 檢索增強生成方法
+      - name: RAG 檢索增強生成
         description: "**構建** 檢索增強生成方法（RAG）管道，利用向量檢索、列感知與圖結構方法，來設計構建 RAG 管道流程"
         icon: custom/RAG
       - name: API 應用程序接口 與 網鉤 Webhooks

@@ -187,7 +187,7 @@ skillsets:
         description: "**实施** 持续集成与持续部署（CI/CD）流程：明确定义目标意图 （intent），整合应用程序接口（API），并持续更新模型。"
         icon: custom/CICD
       - name: RAG 检索增强生成方法
-        description: "**构建** 检索增强生成方法（RAG）管道，利用向量检索、列感知与图结构方法，来设计构建 RAG 管道流程"
+        description: "**构建** 检索增强生成（RAG）管道，利用向量检索、列感知与图结构方法，来设计构建 RAG 管道流程"
         icon: custom/RAG
       - name: API 应用程序接口 与 网钩 Webhooks
         description: "**整合对接** 应用程序接口（API）与 网钩（Webhooks），结合 RESTful 接口与回调机制，完成整合。"
