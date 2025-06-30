@@ -18,20 +18,29 @@
   <div id="{{ $id }}" style="width: 100%; height: 600px;"></div>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var myChart = echarts.init(document.getElementById('{{ $id }}'));
+    import * as echarts from 'echarts';
+
+    var chartDom = document.getElementById('{{ $id }}');
+    var myChart = echarts.init(chartDom);
     var option;
+
+    myChart.showLoading();
     option = {
-      series: [{
+        title: {
+        text: {{ $name }}',
+        top: 'top',
+        left: 'left'
+    },
+    series: [{
         name: '{{ $name }}',
         type: 'graph',
         layout: 'force',
         data: {{ $graph.nodes | jsonify }},
         links: {{ $graph.links | jsonify }}
-      }]
-    }
+        }]
+    };
+    myChart.setOption(option);
     option && myChart.setOption(option);    
-  });
   </script>
 {{ else }}
   <p><strong>Error:</strong> Resource file <code>{{ $yamlfile }}</code> not found.</p>
