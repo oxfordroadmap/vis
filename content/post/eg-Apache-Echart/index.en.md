@@ -14,4 +14,4 @@ Explore the character relationships in a Chinese novel written in 18th century 
 
 This character network graph is based on [the dataset](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv).
 
-{{< echarts-network name="Character Relationship Network: 红楼梦 (Dream of the Red Chamber)" id="Network_Dream_of_the_Red_Chamber" data="red_chamber_charaters.yaml">}}
+{{< echarts-network name="Character Relationship Network: 红楼梦 (Dream of the Red Chamber)" id="Network_Dream_of_the_Red_Chamber" data="red_chamber_characters.yaml">}}
