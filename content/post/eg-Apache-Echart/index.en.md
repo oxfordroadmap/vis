@@ -6,6 +6,8 @@ tags:
   - 'insights'
   - 'Social Network Analysis'
   - 'Dream of the Red Chamber'
+image:
+  preview_only: true
 ---
 
 Explore the character relationships in a Chinese novel written in 18th century China called [_**Dream of the Red Chamber**_《红楼梦》](https://en.wikipedia.org/wiki/Dream_of_the_Red_Chamberusing) with a network graph.
