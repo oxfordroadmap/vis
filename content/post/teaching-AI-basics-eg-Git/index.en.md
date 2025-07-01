@@ -91,56 +91,60 @@ By the end of this course, students will be able to:
 - 📑 **Compose** entry-level Product Requirements Documents (PRDs) aligned with professional standards including W3C accessibility and sustainable web design principles
 - 🔍 **Identify** the foundational Web components (.html, .css, .js), webpage structure, core modules of a Hugo-based portfolio site and organize content logically
 - 🧰 **Apply** structured web documentation and data file construction practices using markdown, YAML/JSON, and Hugo layouts
-
-    
-
-
+ 
 #### 🌐 **Technology & Online Tools**
-#### ✏️ **Final Project (Capstone)**
-#### 📅 **Weekly Breakdown**
-#### 🧮 **Grading Criteria**
 
-####  Revised Learning Objectives (with PRD literacy emphasis)
+Learners must use and deploy **Github** platform resources. Learners are expected to star, curate, document, and apply software, UI and data projects that interest them.
 
+Focusing on improving and polishing both the Web site and PRD, learners must gather, curate, revise, and reflect on all useful resources that lead them to valuable communities and leaders in the related professional fields.  However, these records and documentations must be recorded through Github commits. 
 
+#### 📅 **Weekly Breakdown** 🗂
 
-#### 🧩 Final Project Assignment Brief (Based on Web PRD + W3C Accessibility & Sustainability)
+#### 🧩 Final Project Assignment Brief 
 
-**Title:** _Designing a Sustainable and Accessible Personal Web Portfolio with PRD_
+(Based on Web PRD + W3C Accessibility & Sustainability)
 
-**Goal:** Develop and publish a static Hugo portfolio site that documents your learning journey and demonstrates technical writing skill through a companion PRD.
+> ** `🧩 Project Template` **
 
-#####  **Deliverables:**
+##### 🏷️ Title
+- 🧱 **Design** a Sustainable and Accessible Web Portfolio 🧩
+   
+##### 🎯 Goal
+- 🛠️ **Build** and 📄 **Document** a static portfolio site using **Hugo**, representing your learning journey and showcasing professional communication via a companion **Product Requirements Document (PRD)**.    
+- The project functions as a self-curation artifact for your professional identity in a **Community of Practice (CoP)**.
 
-1. 🧭 **Hugo-Based Site**, deployed via GitHub Pages, featuring:
-    
-    - Clear semantic structure
-        
-    - Accessible navigation (e.g. keyboard support, ARIA labels)
-        
-    - Responsive Tailwind-based layout
-        
-    - Sustainable design principles (e.g. optimized assets, low-carbon fonts, dark mode)
-        
-2. 📘 **PRD Document (2–3 pages)** outlining:
-    
-    - **Project Summary**: Purpose, audience, and content scope
-        
-    - **User Needs & Accessibility Goals**: Personas, accessibility features, WCAG compliance consideration
-        
-    - **Sustainability Commitments**: Use of optimized SVGs, performance budgets, green hosting rationale
-        
-    - **Feature Scope**: Pages, components, shortcodes, animations
-        
-    - **Non-Functional Goals**: Performance, browser compatibility, language toggle
-        
-3. ✅ **Reflection Section** (1 page):
-    
-    - What decisions did you make to enhance accessibility or minimize environmental impact?
-        
-    - Peer evaluation insights and self-improvement areas
-        
-- Visualize data and model outputs using **Apache ECharts**
+##### 📦 Deliverables
+**1. 🧭 Deploy** a GitHub-hosted **portfolio site** 🛫 featuring:
+- 📲 **Implement** clear semantic structure and accessible navigation with semantic HTML and WAI-ARIA landmarks ♼
+- 👀 **Support** search functionality, keyboard navigation and screen reader accessibility 📎
+- ⛏ **Style** responsive layouts using TailwindCSS 🧩and sustainable design principles (e.g. optimized assets, low-carbon fonts, dark mode)
+- 🌱 **Apply** sustainable design strategies (e.g. optimized assets, dark mode, green fonts) 💡
+- 📊 **Visualize** data with Apache ECharts (e.g. interactions, contribution timelines, tag maps, or other relevant resources) 🌀
+**💬 Github-Hosted  Hugo-Based Site ** should:
+-  **Implement** an API-powered or local LLM **chatbot interface** 👀
+-  **Construct** a retrieval **pipeline** or scripted automation flow 📎
+- 📊 **Visualize** data pipelines using **Markmap,  Mermaid, **Apache ECharts**, or other diagrams/graphs** to demonstrate data literacy 🌀
+- ⚙️ **Automate** CI/CD **integration** via GitHub Actions 🛫
+**2. 📘 Write** a PRD **Document** (2–3 pages) 🗄 Outlining:
+- 🔖 **Define** Purpose, audience, content scope, and user experience  goals (including personas)🎯 
+- 🧭 **Commit** to accessibility and sustainability standards ♿ 🌍 
+- 🧱 **Scope** all featured Hugo and Web components (e.g. pages, shortcodes, UI widgets, animation logic, SVG, and icon packs) 🧰    
+- 🛠️ **Specify** other technical expectations: performance,  browser compatibility, language toggles, ⏿
+**3. 📝 Reflect** in a series of personal **blog posts** (1 page) 📎
+- 🔍 **Explain** design trade-offs related to accessibility and environmental impact ♼
+- 🧑‍🤝‍🧑 **Incorporate** peer feedback and highlight key self-revisions 👀
+- 📖 **Publish** your reflections (blog post or README) with citations/links to valuable resources 📚
+
+#### 🧭 Project Evaluation & Reflection
+
+Final assessment emphasizes evidence-based iteration and individual growth over time. Students are expected to:
+
+- 🧑‍🤝‍🧑 **Evaluate** Web **design** and **development processes**📎 —  by articulating accessibility, sustainability, and technical trade-offs 🛠️  
+- 👁 **Analyze** feedback from **peer reviewers** 📎 — by identifying actionable suggestions, implementing changes, and reflecting on improvement loops.
+- 📊 **Present** personal measurable **progress** over time🧮 — including tracked version control (Git commits, pull requests), deployment iterations, and visual evidence of CI/CD practices 🧷    
+- 🤝 **Acknowledge** and **attribute** borrowed **assets or ideas**  — with thoughtful attribution and reward for value-added context-specific reuse, preferably within your own creative vision
+- 💬 **Communicate** their personal **learning journey** 🗄 — by highlighting key skills gained, resources used, challenges overcome, and moments of insight or iteration.
+- 📝 **Document** accessibility and sustainability **outcomes** ♼ — including any audits performed, performance benchmarks, or tooling used for optimization.
 
 #### 🧮 **Grading Criteria**
 |Component|Description|Weight|
