@@ -68,7 +68,7 @@ Two course syllabus are provided as follows:
 
 After finishing the _this course series_, each learner will align their interests and practices, growing with the world-leading projects and contributors on platforms such as Github and Huggingface. 
 
-### 💪1️⃣ Foundations and CI/CD using Github
+## 💪1️⃣ Foundations and CI/CD using Github
 
 _The first course_, called ***"Web Development—  Foundations and CI/CD using Github*** integrates essential `Web Design`, `Web Development`, and relevant `software & AI engineering` knowledge, with strong focus on practical applications using modern coding and deployment platforms such as Github.  
 
@@ -83,7 +83,7 @@ _The first course_
 * requires learners to compose a Product Requirements Document (PRD)
 {{% /callout %}}
 
-#### 🎯 **Learning Objectives**
+### 🎯 **Learning Objectives**
 
 By the end of this course, students will be able to:
 
@@ -94,17 +94,17 @@ By the end of this course, students will be able to:
 - 🔍 **Identify** the foundational Web components (.html, .css, .js), webpage structure, core modules of a Hugo-based portfolio site and organize content logically
 - 🧰 **Apply** structured web documentation and data file construction practices using markdown, YAML/JSON, and Hugo layouts
  
-#### 🌐 **Technology & Online Tools**
+### 🌐 **Technology & Online Tools**
 
 Learners must use and deploy **Github** platform resources. Learners are expected to star, curate, document, and apply software, UI and data projects that interest them.
 
 Focusing on improving and polishing both the Web site and PRD, learners must gather, curate, revise, and reflect on all useful resources that lead them to valuable communities and leaders in the related professional fields.  However, these records and documentations must be recorded through Github commits. 
 
-#### 📅 **Weekly Breakdown** 🗂
+### 📅 **Weekly Breakdown** 🗂
 
 The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
 
-  {{< details summary="details" name="Weekly Breakdown1" >}}
+{{< details summary="details" name="Weekly Breakdown1" >}}
 
 |Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
@@ -123,21 +123,22 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
   {{< /details >}}
   
-#### 🧩 Final Project Assignment Brief 
+### 🧩 Final Project Assignment Brief 
 
 (Based on Web PRD + W3C Accessibility & Sustainability)
 
 > ** `🧩 Project Template` **
 
-##### 🏷️ Title
+{{< details summary="details" name="Final Project1" >}}  
+#### 🏷️ Title
 
 - 🧱 **Design** a Sustainable and Accessible Web Portfolio 🧩
    
-##### 🎯 Goal
+#### 🎯 Goal
 - 🛠️ **Build** and 📄 **Document** a static portfolio site using **Hugo**, representing your learning journey and showcasing professional communication via a companion **Product Requirements Document (PRD)**.    
 - The project functions as a self-curation artifact for your professional identity in a **Community of Practice (CoP)**.
 
-##### 📦 Deliverables
+#### 📦 Deliverables
 **1. 🧭 Deploy** a GitHub-hosted **portfolio site** 🛫 featuring:
 - 📲 **Implement** clear semantic structure and accessible navigation with semantic HTML and WAI-ARIA landmarks ♼
 - 👀 **Support** search functionality, keyboard navigation and screen reader accessibility 📎
@@ -158,8 +159,9 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 - 🔍 **Explain** design trade-offs related to accessibility and environmental impact ♼
 - 🧑‍🤝‍🧑 **Incorporate** peer feedback and highlight key self-revisions 👀
 - 📖 **Publish** your reflections (blog post or README) with citations/links to valuable resources 📚
-
-#### 🧭 Project Evaluation & Reflection
+ {{< /details >}}
+ 
+### 🧭 Project Evaluation & Reflection
 
 Final assessment emphasizes evidence-based iteration and individual growth over time. Students are expected to:
 
@@ -170,7 +172,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 - 💬 **Communicate** their personal **learning journey** 🗄 — by highlighting key skills gained, resources used, challenges overcome, and moments of insight or iteration.
 - 📝 **Document** accessibility and sustainability **outcomes** ♼ — including any audits performed, performance benchmarks, or tooling used for optimization.
 
-#### 🧮 **Grading Criteria**
+### 🧮 **Grading Criteria**
 |Component|Description|Weight|
 |---|---|---|
 |🎯 **Web Quality & Site Structure**|Github usage, and working deployments|30%|
@@ -180,7 +182,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 
 ---
 
-### 🏋2️⃣  Foundations for LLM-Powered Apps
+## 🏋2️⃣  Foundations for LLM-Powered Apps
 
 _The second course_, called ***"Web Development—  LLM-Powered Apps"*** integrates essential  `API services`, `LLM`, and relevant `software & AI engineering` knowledge, with strong focus on practical applications using modern coding and deployment platforms such as Github and Huggingface.  
 
@@ -196,7 +198,7 @@ _The second course_
 {{% /callout %}}
 
 
-#### 🎯 **Learning Objectives**
+### 🎯 **Learning Objectives**
 
 By the end of this course, students will be able to:
 
@@ -207,15 +209,15 @@ By the end of this course, students will be able to:
 - 🔍 **Explain** and **integrate** foundational LLM APIs (e.g., OpenAI, Gemini) and UI components and how chat-based agents and retrieval methods (e.g. 📚RAG) serve specific interaction goals
 - 🔁 **Automate** site, resource, code and content updates and deployments using dynamic web workflows (e.g. n8n) and GitHub CI/CD pipelines, with scaling cost and performance in mind
 
-#### 🌐 **Technology & Online Tools**
+### 🌐 **Technology & Online Tools**
 
 Learners must use and deploy **Github** and **Huggingface** platform resources.  Exceptions can be made for advanced students seeking local LLM or WebLLM implementations. 
 
-#### 📅 **Weekly Breakdown** 🗂
+### 📅 **Weekly Breakdown** 🗂
 
 The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
 
-  {{< details summary="see details" name="Weekly Breakdown2" >}}
+{{< details summary="see details" name="Weekly Breakdown2" >}}
 
 |Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
@@ -234,7 +236,7 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
   {{< /details >}}
   
-#### 🧩 **Final Capstone Project**
+### 🧩 **Final Capstone Project**
 
 The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)
 
@@ -243,13 +245,14 @@ The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ 
 
 This project leverages a Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI) and provides students with an applied format for integrating documentation and deployment best practices.
 
-##### 🏷️ Title
+ {{< details summary="details" name="Final Project2" >}}
+#### 🏷️ Title
 - 🧱 **Design** an AI-Powered Hugo **App & PRD** 🧩
    
-##### 🎯 Goal
+#### 🎯 Goal
 - 🛠️ **Build** and 📄 **Document** a conversational agent or AI-powered integration that delivers clear value through a structured PRD—adapting Miqdad Jaffer’s example.
 
-##### 📦 Deliverables
+#### 📦 Deliverables
 **💬 AI-Enabled Apps** should:
 - 📲 **Implement** an API-powered or local LLM **chatbot interface** 👀
 - ⛏ **Construct** a retrieval **pipeline** or scripted automation flow 📎
@@ -260,9 +263,9 @@ This project leverages a Proven AI PRD Template by Miqdad Jaffer (Product Lead @
 - 🗺️ **Frame** the **Strategic Context** 🧭 — including an executive summary and its (AI and AI capabilities) alignment to organizational strategy 
 - 💡 **Define** **Product & Technical Excellence** 🧰 — identifying customer needs, value proposition, and agent logic blueprints    
 - 💱 **Outline** the **Rollout Plan / Go-To-Market Strategy** 📢 — use cases, evaluation metrics (e.g. CSAT, grounding accuracy), and non-functional concerns like latency or hallucination mitigation
-    
+  {{< /details >}}    
 
-#### 🧭 Project Evaluation & Reflection
+### 🧭 Project Evaluation & Reflection
 
 Final assessment emphasizes evidence-based iteration and individual growth over time. Students are expected to:
 
@@ -271,7 +274,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 - 📝 **Compose** personal **reflections** 🗄 — including GitHub commit histories, blog posts, or technical documentation 🧷    
 - 🧾 **Credit** referenced **code and sources** 📚 — with thoughtful attribution and reward for value-added context-specific reuse
 
-#### 🧮 **Grading Criteria**
+### 🧮 **Grading Criteria**
 |Component|Description|Weight|
 |---|---|---|
 |🎯 **App Functionality & Integration**|AI features, LLM API usage, chatbot logic, data flow execution, and working deployments|30%|
@@ -281,7 +284,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 
 ---
 
-### 🧑‍🏫 An Education Technical Note on Syllabus Components📓
+## 🧑‍🏫 An Education Technical Note on Syllabus Components📓
 
 Using and extending [Syllabus Components by Harvard](https://bokcenter.harvard.edu/syllabus-design), this post focuses on the following in the university learning context:
 - 🎯 **Course Goals / Learning Objectives**
@@ -299,3 +302,6 @@ The following details are beyond the scope of this post:
 - 🛠 **Support Resources**
 - 📖 **Academic Integrity**
 
+## 🧑‍🏫 Learning Roadmap for intelligent API, ML, and AI 📓
+
+TBA
