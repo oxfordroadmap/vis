@@ -72,13 +72,15 @@ After finishing the _this course series_, each learner will align their interest
 
 _The first course_, called ***"Web Development—  Foundations and CI/CD using Github*** integrates essential `Web Design`, `Web Development`, and relevant `software & AI engineering` knowledge, with strong focus on practical applications using modern coding and deployment platforms such as Github.  
 
-Learners are also expected to **observe, learn, and practice** critical software engineering skills in **Continuous Integration** and **Continuous Delivery/Deployment** (CI/CD),  aiming at automating and streamlining software/Web development lifecycles.
+Learners are also expected to **observe, learn, and practice** critical software engineering skills in **Continuous Integration** and **Continuous Delivery/Deployment** (CI/CD),  aiming at automating and streamlining software/Web development lifecycles.  
 
 {{% callout note %}}
 ##### 1️⃣. Web Development Foundations
+_The first course_ 
 * integrates essential `Web Design`, `Web Development`, and relevant `software & AI engineering` knowledge
 * prepares learners to **observe, learn, and practice** on Github
-* train learners to orchestrate their skillsets in the overall **Continuous Integration** and **Continuous Delivery/Deployment** (CI/CD) development processes
+* trains learners to orchestrate their skillsets in the overall **Continuous Integration** and **Continuous Delivery/Deployment** (CI/CD) development processes
+* requires learners to compose a Product Requirements Document (PRD)
 {{% /callout %}}
 
 #### 🎯 **Learning Objectives**
@@ -100,6 +102,21 @@ Focusing on improving and polishing both the Web site and PRD, learners must gat
 
 #### 📅 **Weekly Breakdown** 🗂
 
+|Week|Topics 🧩|Tools & Concepts|Specific Capabilities|
+|---|---|---|---|
+|1|Course Intro + GitHub 🗃️|Hugo, Git basics, site archetypes|🔍 **Identify** site structure and workflow components|
+|2|Markdown & Hugo Basics 📄|Content pages, frontmatter|✍️ **Apply** markdown standards to author posts|
+|3|Markmap & Mermaid 🧠|Mindmaps, flowcharts, Hugo diagram blocks|🎯 **Visualize** project logic or personal narratives|
+|4|YAML & JSON 📦|Hugo `data/`, multilingual config, DevTools|🗂️ **Structure** reusable, localized content sources|
+|5|HTML & Semantics 🧩|`<section>`, ARIA, semantic hierarchy|🧩 **Recognize** accessible layouts using semantic tags|
+|6|Typography, Color Harmony & Font Accents 🖍️|Tailwind typography, 🎨 contrast, palettes|🌈 **Integrate** harmonious visual styles and fonts|
+|7|TailwindCSS Animation + UI Motion ✨|Hover, pulse, icon transitions|⚙️ **Construct** intuitive interactions with animations|
+|8|Responsive Design + Code Assistants 📱|Gemini CLI, grid, flexbox|🧰 **Adapt** layouts for mobile and diverse viewports|
+|9|Hugo Shortcodes & Embeds 🎬|Modular blocks, YouTube, diagrams|🔧 **Embed** reusable shortcodes and media elements|
+|10|SVG, Iconography & Theming 🎨|Inline SVG, dark/light mode, hover FX|🖼️ **Customize** visual branding and dynamic theming|
+|11|Taxonomies + PRD Writing 🔖|Tags, categories, ✍️ PRD basics|📑 **Outline** UI and content behavior using verbs + nouns|
+|12|Showcase & Peer Review 🎓|Deployment, rubric, walkthrough|🧪 **Evaluate** self + peer portfolios using clarity + UX metrics|
+
 #### 🧩 Final Project Assignment Brief 
 
 (Based on Web PRD + W3C Accessibility & Sustainability)
@@ -107,6 +124,7 @@ Focusing on improving and polishing both the Web site and PRD, learners must gat
 > ** `🧩 Project Template` **
 
 ##### 🏷️ Title
+
 - 🧱 **Design** a Sustainable and Accessible Web Portfolio 🧩
    
 ##### 🎯 Goal
@@ -158,11 +176,17 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 
 ### 🏋2️⃣  Foundations for LLM-Powered Apps
 
+_The second course_, called ***"Web Development—  LLM-Powered Apps"*** integrates essential  `API services`, `LLM`, and relevant `software & AI engineering` knowledge, with strong focus on practical applications using modern coding and deployment platforms such as Github and Huggingface.  
+
+Learners are also expected to **observe, learn, and practice** critical **Continuous Integration** and **Continuous Deployment** (CI/CD) software/AI engineering skills,  aiming at automating and streamlining AI agent development lifecycles.  
+
 {{% callout note %}}
 ##### 2️⃣ LLM-Powered App Foundations
+_The second course_ 
 * integrates essential `API services`, `LLM`, and relevant `software & AI engineering` knowledge
 * prepares learners to **observe, learn, and practice** on Github and Huggingface platforms
 * train learners to orchestrate their skillsets in the overall **Continuous Integration** and **Continuous Delivery/Deployment** (CI/CD) development processes for AI-agent development and deployment
+* requires learners to compose a Product Requirements Document (PRD), following a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)
 {{% /callout %}}
 
 
