@@ -102,7 +102,11 @@ Focusing on improving and polishing both the Web site and PRD, learners must gat
 
 #### 📅 **Weekly Breakdown** 🗂
 
-|Week|Topics 🧩|Tools & Concepts|Specific Capabilities|
+The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
+
+  {{< details summary="details" name="Weekly Breakdown1" >}}
+
+|Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
 |1|Course Intro + GitHub 🗃️|Hugo, Git basics, site archetypes|🔍 **Identify** site structure and workflow components|
 |2|Markdown & Hugo Basics 📄|Content pages, frontmatter|✍️ **Apply** markdown standards to author posts|
@@ -117,6 +121,8 @@ Focusing on improving and polishing both the Web site and PRD, learners must gat
 |11|Taxonomies + PRD Writing 🔖|Tags, categories, ✍️ PRD basics|📑 **Outline** UI and content behavior using verbs + nouns|
 |12|Showcase & Peer Review 🎓|Deployment, rubric, walkthrough|🧪 **Evaluate** self + peer portfolios using clarity + UX metrics|
 
+  {{< /details >}}
+  
 #### 🧩 Final Project Assignment Brief 
 
 (Based on Web PRD + W3C Accessibility & Sustainability)
@@ -207,7 +213,11 @@ Learners must use and deploy **Github** and **Huggingface** platform resources. 
 
 #### 📅 **Weekly Breakdown** 🗂
 
-|Week|Topics 🧩|Tools & Concepts|Specific Capabilities|
+The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
+
+  {{< details summary="see details" name="Weekly Breakdown2" >}}
+
+|Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
 |1|PRD Writing for Chat UX 🧾|Lobe Icons, interface verbs/nouns|📝 **Author** a PRD to define chatbot roles and expected flows|
 |2|Markmap & Mermaid for System Logic 📊|Diagrams, Markdown pipelines|💡 **Map** LLM workflows visually via sequence maps|
@@ -222,6 +232,8 @@ Learners must use and deploy **Github** and **Huggingface** platform resources. 
 |11|CI/CD for AI Apps ⚙️|Auto build, GitHub Actions|🔁 **Implement** auto-deploy and rebuild flows|
 |12|Live Demo + Peer Reflection 🎓|Rubric, screen capture, presentation|🧠 **Evaluate** peer apps using PRD and UX performance metrics|
 
+  {{< /details >}}
+  
 #### 🧩 **Final Capstone Project**
 
 The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)
@@ -269,7 +281,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 
 ---
 
-### An Education Technical Note on Syllabus Components
+### 🧑‍🏫 An Education Technical Note on Syllabus Components📓
 
 Using and extending [Syllabus Components by Harvard](https://bokcenter.harvard.edu/syllabus-design), this post focuses on the following in the university learning context:
 - 🎯 **Course Goals / Learning Objectives**
