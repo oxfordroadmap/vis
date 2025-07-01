@@ -14,6 +14,10 @@ image:
 透过一张关系网络图，探索18世纪中国古典小说《[_**红楼梦**_](https://zh.wikipedia.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2)》中人物之间的情感与互动关系。
 
 <!-- more -->
+{{% callout note %}}
+##### 小结
+`关系网络图`可产出`洞察`，中国古典小说亦能有新角度观察。
+{{% /callout %}}
 
 这张人物网络图基於[这份资料集](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv)所绘制。仅包含加权度数最高的前 25 位人物，并且仅保留连结值大於等於 25 的关系。
 
@@ -37,6 +41,6 @@ image:
 - 紫色：主要主角
   - 黛玉
 
-## 小結
+## 小结
 
 关系网络图可产出洞察，中国古典小说亦能有新角度观察。

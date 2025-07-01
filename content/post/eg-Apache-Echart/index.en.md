@@ -13,6 +13,10 @@ image:
 Explore the character relationships in a Chinese novel written in 18th century China called [_**Dream of the Red Chamber**_《红楼梦》](https://en.wikipedia.org/wiki/Dream_of_the_Red_Chamberusing) with a network graph.
 
 <!-- more -->
+{{% callout note %}}
+##### In short
+Insights can be gained through `network graph`, including new perspectives from this case of a Chinese novel.
+{{% /callout %}}
 
 This character network graph is based on [the dataset](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv). Only **the top 25** nodes by weighted degree are included, and only links value equal or larger than 25 are kept.  
 
