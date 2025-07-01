@@ -195,8 +195,8 @@ skillsets:
       - name: 聊天機器人界面原型設計
         description: "**開發** 響應式聊天機器人與交互式可視化界面，運用 Python 工具 (如 requests, Panel ChatBot, Gradio, Pyodide, etc.) and Open WebUI "
         icon: custom/gradio-color
-      - name: LLM 大語言模型 指揮編排
-        description: "**指揮編排** 大語言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 來進行提示、串聯、管理與監控LLM。"
+      - name: LLM 大語言模型 編排
+        description: "**編排** 大語言模型（LLM）工作流，使用LangChain, LlamaIndex, and MCP 來進行提示、串聯、管理與監控LLM。"
         icon: custom/MCP
   - name: 📦 管理軟件開發
     description: 交付全端 AI 應用解決方案，涵蓋雲端與網頁環境（備有完整大學生學程）
@@ -265,7 +265,7 @@ skillsets:
     description: 通過精密分析與情境智能，在『探索–交付』(discovery–delivery) 循環中優化敏捷決策，並捕捉數字生態系統中的行為與文化關鍵差異
     items:
       - name: 科學地圖（知識圖）
-        description: '**指揮編排** 數據科學工作流，生成戰略性資產。采用嚴謹基於科學計量學、網絡計量學、文獻計量學與技術路線圖等方法'   
+        description: '**編排** 數據科學工作流，生成戰略性資產。采用嚴謹基於科學計量學、網絡計量學、文獻計量學與技術路線圖等方法'   
         icon: custom/science-mapping
       - name: 數字方法
         description: '**解碼** 社會技術動態，采用 `情感分析` 、 `地理語言分析` 、 `地理空間分析` 、 `數字人文學` 與 `平台分析` 等方法'
@@ -274,7 +274,7 @@ skillsets:
         icon: custom/jupyter
       - name: "RStudio 及其庫"
         icon: devicon/rstudio
-        description: '**運維實現** 洞察生成数据流管道，使用 Python 與 R 生態（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通過迭代流程將 **數據流** 轉化為***戰略資產***'
+        description: '**實現運維** 洞察生成数据流管道，使用 Python 與 R 生態（如 Jupyter Lab、scikit-learn、XGboost、PyTorch、networkx、NLTK、gensim、tidyverse 等），通過迭代流程將 **數據流** 轉化為***戰略資產***'
   - name: 🕸 綜合社會科學知識
     description: 提煉一手與二手資料中的社會技術知識，支援創新、治理與策略前瞻
     items:
