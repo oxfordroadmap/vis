@@ -4,7 +4,6 @@ date: 2025-06-30
 tags:
   - 'insights'
   - 'Chatbots'
-  - 'AI agents'
   - RAG
   - 'AI Engineering'
   - 'Service Design'
@@ -87,32 +86,84 @@ With the aim to contribute to the "Groundedness" scores when developing an intel
 3. **UI and Narrative Layer**: Design high-level **Explain Data** and **Data Stories** groundedness in the overall data-driven decision workflows
 4. **Organizational Layer**: Design the overall organization-level of human and agentic decision-making process that ensures timing, traceability, and accountability requirements, preferably using clear service design on continuous integration and continuous delivery (CI/CD) of digital data dashboard and AI agentic objects. 
 
-#### ✅ Final Thought: Where Industry Is Headed
+#### ✅ Final Thought: A Roadmap
 
-The future of analytics lies in _actionable conversations_, especially by integrating data dashboards with chatbots that **apply critical expert and organizational knowledge to well-curated data and data processes**.  
+The future of analytics lies in _actionable conversations_, or what IBM coined as [Conversational Analytics](https://www.ibm.com/think/topics/conversational-analytics) in active operations, especially by integrating data dashboards with chatbots that **apply critical expert and organizational knowledge to well-curated data and data processes**.  
 
-Designing and deploying AI agents thus require cross-disciplinary integration of AI engineering and service design, monitoring positive outcomes and feedbacks at strategic touchpoints of human and agentic interactions.  AI Agents can work with clarity, foresight, and assurance with measurable groundedness across model, retrieval, UI, and organizational layers.
+
+```markmap {height="400px"}
+- 🤖 + 📊
+  - Definition 🏷️
+    - 🔗 Integrate
+      - Chatbots 🤖
+      - Dashboards 📊
+  - Goals 🥅
+    - 🔓 Unlock
+      - AI Capabilities 🧠
+        - _Actionable Conversations_💬
+        - [Conversational Analytics📡](https://www.ibm.com/think/topics/conversational-analytics)
+    - 🤝 [Co-design](https://link.springer.com/chapter/10.1007/978-3-031-93733-0_25)
+      - with LLM-Based Multi-agents 🧑‍🚀
+  - 🛠️ Actions
+    - 🤔 Consider
+      - Touchpoints 🎯
+        - Organizational 🏢
+        - Social 🧑‍🤝‍🧑
+        - Technical 🛠️
+      - Layers 🧩
+        - **Language Model** 🧬
+        - **Retrieval** 🔍
+        - **UI and Narrative** 🖼️
+        - **Organizational** 🏛️
+    - 🧲 Apply
+      - Integrating Metrics 📐
+        - _Groundedness_ ⚓
+      - With Expertise From 🤹
+        - AI Engineering 🧑‍💻
+          - Model "Groundedness" 🧭
+          - Chatbot "Groundedness" 🤖
+          - Model as a Service (MaaS) 🧰
+          - CI/CD 🔄🚀
+        - Service Design 🎨
+          - 📌identify
+            - UI "Groundedness"
+            - UX "Groundedness"
+            - strategic touchpoints
+          - 🎼orchestrate
+            - system design "Groundedness"🎯
+            - service blueprints 🔄🗺️
+    - 🧵 Produce
+      - Just-in-time Narratives ⏱️
+      - Visual Drilldowns 📊
+      - Actionable Suggestions 💡
+    - 🔋Optimize For 🎛️
+      - Positive Impact in the Loop 🌟
+      - Positive User Experience 😊
+      - Other KPIs 📈
+        - Timing ⏰
+        - Traceability 🔍
+        - Accountability ⚖️🚨
+  - Knowledge 📚
+    - ⚙️ Generate
+      - Socio-technical Design 🧯
+    - 🤝 [Co-design](https://link.springer.com/chapter/10.1007/978-3-031-93733-0_25)
+      - with LLM-Based Multi-agents 🛰️
+      - [Interdisciplinary](https://link.springer.com/chapter/10.1007/978-3-031-93733-0_25) 🎓
+        - CI/CD 🔄🚀
+        - service blueprints 🔄🗺️
+        - "Human-in-the-loop" (HITL)🌟😊
+        - "causal loop" (system thinking)🔄
+```
+
+Designing and deploying AI agents thus require cross-disciplinary integration of **AI engineering** and **service design**, monitoring positive outcomes and feedbacks at strategic touchpoints of human and agentic interactions.  
+
+AI Agents can work with clarity, foresight, and assurance with measurable groundedness across model, retrieval, UI, and organizational layers.
+
+---
 
 ## Related Projects at Oxon8
 
 Oxon8 has several dashboards (including projects such as [🍃💵visNetZero]({{% ref path="/project/visNetZero" %}}), [🍃🏭visCEADs]({{% ref path="/project/visCEADs" %}}), [🏫NFU.edu.cn]({{% ref path="/project/NetBib_NFU.edu.cn" %}}), and [🧰NetBib]({{% ref path="/project/NetBib"  %}})) that will be implemented with AI agents that deliver Question-Answering and RAG functionalities:
-
-```markmap {height="320px"}
-* [🍃NetZero Industry and Economy Roadmap]({{% ref path="/project#theme_NetZero" %}})
-  * [🍃💵visNetZero]({{% ref path="/project/visNetZero" %}})
-  * [🍃🏭visCEADs]({{% ref path="/project/visCEADs" %}})
-* [🔬 Science Outcome and Impact Analysis]({{% ref path="/project#CaseNetBib" %}}) 
-  * [🧰NetBib]({{% ref path="/project/NetBib"  %}})
-  * [🏫NFU.edu.cn]({{% ref path="/project/NetBib_NFU.edu.cn" %}})
-    * [📈Trend]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App00/App00.html" >}})
-    * [🏢Org02]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App01/App01.html" >}})
-    * [🕵🏻Authors]({{< link_site_static "/NetBib/NFU.edu.cn/zh/App02/App02.html" >}})
-* [⚖️🪙 Global Civic Service Performance]({{% ref path="/project#theme_public_adm" %}})
-  * [🏛️Oxford University bipa2024]({{% ref path="/project/bipa2024" %}})
-* [🚧 Smart Application Extensions]({{% ref path="/project#theme_extensions" %}}) 
-  * [🤖panel_chat]({{% ref path="/project/panel_chat" %}})
-  * [🧬pybibx]({{% ref path="/project/pybibx" %}})
-```
 
 {{% include "/_snippet_/projects_all" %}}
 

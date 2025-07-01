@@ -1,11 +1,10 @@
 ---
-title: '資料視覺化AI代理人——藍圖規劃'
+title: '資料視覺化AI代理人——路徑圖'
 date: 2025-06-30
 tags:
   - 'insights'
   - '聊天機器人'
-  - 'AI代理人'
-  - '檢索增強生成（RAG）'
+  - RAG
   - 'AI工程'
   - '服務設計'
   - 'AI能力'
@@ -48,7 +47,7 @@ Oracle在生成式AI生態中持續佔有領先地位，其RAG架構整合 **互
 
 Tableau於2025推出的核心功能為內嵌的 **Tableau Agent** 多語AI助手，讓使用者以自然語言提問、得到語境化答案，並直接從圖表界面觸發互動。另一套系統 **Tableau Pulse** 則可在用戶提問前主動推送洞察。透過 **VizQL Data Service API**，開發者可更細緻地控制RAG邏輯在Tableau語意層的應用。
 
-聊天與RAG功能強化Tableau核心的 **Explain Data** 與 **Data Stories**，為決策流程即時提供敘事與視覺化鑽取能力。
+聊天與RAG功能強化Tableau核心的 **Explain Data** 與 **Data Stories**，為決策流程提供提供**即時敘事**與**視覺化下鑽/鑽取（「由廣入深/見樹見林」）**能力。
 
 #### 工業案例總結
 
@@ -73,7 +72,7 @@ Gartner也[預測，至2027年將有逾40%的代理式AI專案遭到中止](http
 
 這正凸顯Gartner提出的「多模資料織體（Multimodal Data Fabric）」之必要性，為RAG系統涵蓋結構化與非結構化資料提供基礎。
 
-## 儀表板與聊天代理人整合藍圖
+## 儀表板與聊天代理人整合路徑圖
 
 透過整合 **AI工程** 與 [服務設計](https://www.nngroup.com/articles/service-blueprints-definition/)，可系統性地設計出 _**高AI能力**_ 的數位轉型方案。
 
@@ -99,6 +98,90 @@ Gartner也[預測，至2027年將有逾40%的代理式AI專案遭到中止](http
 4. **組織層級**：設計具CI/CD流程的決策架構，符合時效、可溯與問責要求
     
 
-### ✅ 結語
+#### ✅ 結語：路徑圖
 
-未來的資料分析聚焦在 **可行的對話**，尤其是整合關鍵知識與清晰資料流程的聊天儀表板。部署AI代理人需跨越AI工程與服務設計兩大領域，並監控人機互動中的正向結果與回饋。真正「接地氣」的代理人將在模型、檢索、介面與組織各層面展現清晰度、前瞻性與可信度。
+數據分析的未來將聚焦於 _可行動的對話_ （actionable conversations, c.f. _可行動情報_ actionable intelligence  ），或 IBM 創的新詞 [ 對話型分析情報 （Conversational Analytics）](https://www.ibm.com/think/topics/conversational-analytics)，特別是在集成聊天機器人與數據儀表板的系統中——這些AI代理/智能體將針對**組織的關鍵知識與完善的數據處理流程進行應用**。
+
+```markmap {height="400px"}
+- 🤖 + 📊
+  - 定義 🏷️
+    - 🔗 集成
+      - 聊天機器人 🤖
+      - 數據儀表板 📊
+  - 目標 🥅
+    - 🔓 解鎖
+      - AI 能力 🧠
+        - _可行動的對話_  💬
+        - [對話型分析情報📡](https://www.ibm.com/think/topics/conversational-analytics)
+    - 🤝 [共同設計](https://link.springer.com/chapter/10.1007/978-3-031-93733-0_25)
+      - 基於LLM的多智能體 🧑‍🚀
+  - 🛠️ 行動
+    - 🤔 考慮
+      - 接觸點 🎯
+        - 組織 🏢
+        - 社會 🧑‍🤝‍🧑
+        - 技術 🛠️
+      - 層級 🧩
+        - **語言模型層** 🧬
+        - **檢索層** 🔍
+        - **界面與敘事層** 🖼️
+        - **組織層** 🏛️
+    - 🧲 應用
+      - 集成指標 📐
+        - _扎根性_ ⚓
+      - 專業知識 🤹
+        - AI 工程 🧑‍💻
+          - 模型扎根 🧭
+          - 機器人扎根 🤖
+          - 模型即服務 (MaaS) 🧰
+          - 持續集成與部署 CI/CD 🔄🚀
+        - 服務設計 🎨
+          - 📌 識別
+            - 界面扎根性
+            - 用戶體驗扎根性
+            - 戰略接觸點
+          - 🎼 協調
+            - 系統設計扎根性 🎯
+            - 服務藍圖 🔄🗺️
+    - 🧵 生成
+      - 即時敘述 ⏱️
+      - 視覺化下鑽/鑽取 📊
+      - 可操作建議 💡
+    - 🔋 優化 🎛️
+      - 閉環正面影響 🌟
+      - 用戶正面體驗 😊
+      - 其他關鍵指標 📈
+        - 時效性 ⏰
+        - 可追溯性 🔍
+        - 問責性 ⚖️🚨
+  - 知識 📚
+    - ⚙️ 生成
+      - 社會技術設計 🧯
+    - 🤝 [共同設計](https://link.springer.com/chapter/10.1007/978-3-031-93733-0_25)
+      - 基於LLM的多智能體 🛰️
+      - [跨學科](https://link.springer.com/chapter/10.1007/978-3-031-93733-0_25) 🎓
+        - CI/CD 🔄🚀
+        - 服務藍圖 🔄🗺️
+        - 人機協同 (HITL)🌟😊
+        - 因果循環（系統思維）🔄
+```
+
+部署 AI 代理需跨足**AI 工程**與**服務設計**兩個領域，密切監測人機交互的正向反饋與成果。 
+
+**扎根性**良好，真正「接地氣」的AI代理，將在模型、檢索、用戶界面與組織層展現出清晰性、前瞻性與可靠性。
+
+{{% callout note %}}
+##### ✅ 結語：路徑圖
+數據分析的未來將聚焦於 _可行動的對話。
+**扎根性**良好，真正「接地氣」的AI代理，將在模型、檢索、用戶界面與組織層展現出清晰性、前瞻性與可靠性。
+{{% /callout %}}
+
+---
+
+## Oxon8 的相關專案
+
+Oxon8 擁有多個儀表板專案（包括 [🍃💵visNetZero]({{% ref path="/project/visNetZero" %}})、[🍃🏭visCEADs]({{% ref path="/project/visCEADs" %}})、[🏫NFU.edu.cn]({{% ref path="/project/NetBib_NFU.edu.cn" %}})、以及 [🧰NetBib]({{% ref path="/project/NetBib" %}})），這些專案將導入 AI 代理人，實現問答功能與 RAG 架構：
+
+{{% include "/_snippet_/projects_all" %}}
+
+這些 [🚧 智慧應用擴展]({{% ref path="/project#theme_extensions" %}}) 預計將會使用 [多種 Python 框架建構 AI 應用的使用者介面](https://getstream.io/blog/ai-chat-ui-tools/#3-chainlit-build-uis-for-conversational-ai)，如 Panel（Holoviz）、[`Gradio Python 用戶端`](https://www.gradio.app/docs/python-client/introduction) 與 [`Vercel 推出的 ai-chatbot`](https://github.com/vercel/ai-chatbot)。
