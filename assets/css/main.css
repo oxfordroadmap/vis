@@ -11,19 +11,6 @@
   --color-neutral-800: 38 38 38;
   --color-neutral-900: 23 23 23;
   --color-neutral-950: 10 10 10;
-
-  /* TW Zinc */
-  --color-secondary-50: 250 250 250;
-  --color-secondary-100: 244 244 245;
-  --color-secondary-200: 228 228 231;
-  --color-secondary-300: 212 212 216;
-  --color-secondary-400: 161 161 170;
-  --color-secondary-500: 113 113 122;
-  --color-secondary-600: 82 82 91;
-  --color-secondary-700: 63 63 70;
-  --color-secondary-800: 39 39 42;
-  --color-secondary-900: 24 24 27;
-  --color-secondary-950: 9 9 11;
 }
 h1 {
   @apply text-3xl; 
@@ -96,10 +83,10 @@ h5 {
 /* HyperLinks and misc */
 @layer components {
   a.button {
-    @apply text-white bg-primary-600 hover:bg-primary-950 border-solid hover:border-dotted border-solid hover:border-dotted font-bold py-2 px-4 rounded;
+    @apply py-2 px-4 rounded font-bold text-white bg-primary-500 border-solid hover:bg-primary-500/50 hover:border-dotted;
   }
   .powered-by a {
-    @apply underline text-blue-800 hover:text-blue-950 dark:text-blue-200 dark:hover:text-blue-50;
+    @apply underline text-secondary-800 hover:text-secondary-950 hover:bg-primary-500/50 dark:text-secondary-200;
   }
   .blox-collection a, .nav-item a {
     @apply bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900;
