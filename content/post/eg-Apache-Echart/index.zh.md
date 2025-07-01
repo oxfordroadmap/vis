@@ -5,13 +5,15 @@ type: post
 tags:
   - 'insights'
   - '洞察'
+  - Apache-Echart
   - '社交网络分析'
+  - '数位人文'
   - '红楼梦'
 image:
   preview_only: true
 ---
 
-透过一张关系网络图，探索18世纪中国古典小说《[_**红楼梦**_](https://zh.wikipedia.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2)》中人物之间的情感与互动关系。
+透过一张关系网络图，探索18世纪中国古典小说《[_**红楼梦**_](https://zh.wikipedia.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2)》中人物之间的情感与互动关系，使用[Apache-Echart](https://echarts.apache.org/)。
 
 <!-- more -->
 {{% callout note %}}
