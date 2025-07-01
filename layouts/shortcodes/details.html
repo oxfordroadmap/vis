@@ -54,7 +54,7 @@ Renders an HTML details element.
 {{- /* Get arguments. */}}
 {{- $class := or (.Get "class") "" }}
 {{- $name := or (.Get "name") "" }}
-{{- $summary := or (.Get "summary")   {{ $i18n "details" }} }}
+{{- $summary := or (.Get "summary")  {{ i18n "details" }}  }}
 {{- $title := or (.Get "title") "" }}
 {{- $open := false }}
 {{- if in (slice "false" false 0) (.Get "open") }}
