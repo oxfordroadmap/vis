@@ -13,6 +13,9 @@ tags:
 
 <!-- more -->
 
+> [!IDEA] 小結
+> `關係網絡圖`可產出`洞察`，中國古典小說亦能有新角度觀察。
+
 這張人物網絡圖基於[這份資料集](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv)所繪製。僅包含加權度數最高的前 25 位人物，並且僅保留連結值大於等於 25 的關係。
 
 ### 網絡圖

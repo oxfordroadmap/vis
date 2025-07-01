@@ -7,6 +7,11 @@
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+  - path: github.com/KKKZOZ/hugo-admonitions
+
+#  - path: my-admonitions-theme
+theme: ["hugo-admonitions"]
+# , "my-admonitions-theme"
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
