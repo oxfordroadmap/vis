@@ -12,6 +12,12 @@ tags:
 透過一張關係網絡圖，探索18世紀中國古典小說《[_**紅樓夢**_](https://zh.wikipedia.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2)》中人物之間的情感與互動關係。
 
 <!-- more -->
+{{% callout note %}}
+
+##### 小結
+`關係網絡圖`可產出`洞察`，中國古典小說亦能有新角度觀察。
+
+{{% /callout %}}
 
 這張人物網絡圖基於[這份資料集](https://github.com/XianWoo/SNA_Dream_of_the_Red_Chamber/blob/main/relationship.csv)所繪製。僅包含加權度數最高的前 25 位人物，並且僅保留連結值大於等於 25 的關係。
 
