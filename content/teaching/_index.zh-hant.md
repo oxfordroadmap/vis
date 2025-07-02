@@ -24,6 +24,7 @@ sections:
         tag: 'AI 工程'
     design:
       view: article-grid
+      css_class: 'bg-red-100 dark:bg-red-900'
       columns: 3
   - block: collection
     id: posts
@@ -35,6 +36,7 @@ sections:
         tag: '寫作'
     design:
       view: article-grid
+      css_class: 'bg-gray-100 dark:bg-gray-900'
       columns: 2
   - block: collection
     id: posts
@@ -46,5 +48,6 @@ sections:
         tag: '學習路徑'
     design:
       view: card
+      css_class: 'bg-primary-100 dark:bg-primary-900'
       #view: date-title-summary
 ---
