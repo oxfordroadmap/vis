@@ -14,7 +14,7 @@ image:
 
 💓 Motivate students to learn by doing their own portfolios of PRDs📋, prototypes, and AI agents 🤖! 
 
-Based on my teaching and curriculum-developing experiences in China that features modern web development using <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), I have carefully designed a full foundational course of "Web Development for LLM-Powered Apps" that features building intelligent Apps using LLM.  
+Based on my teaching and curriculum-developing experiences in China that features modern web development using <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), I have carefully designed a full foundational course of "Web Development for LLM-Powered Apps" that features building intelligent Apps using LLM, and producing AI agents within 24 weeks.
 
 It aims to replace or complement CS 101 courses for all disciplines, including management and humanities background.  
 
@@ -31,9 +31,9 @@ Aimed at entry-level undergraduate students from diverse disciplinary background
 ### Course Series Structure
 Spanning **two semesters** (12–18 weeks each, depending on institutional scheduling), the course is structured as follows:
 
-* Web Development — 
-  * Foundations and CI/CD using Github
-  * Foundations for LLM-Powered Apps
+* Web Development — 💪
+  * 1️⃣ Foundations and CI/CD using Github
+  * 2️⃣ Foundations for LLM-Powered Apps
 
 This course emphasizes applied practice, technical fluency, and ethical awareness through the integration of LLMs into accessible, user-centric web platforms.
 
@@ -75,7 +75,7 @@ Two course syllabus are provided as follows:
 After finishing the _this course series_, each learner will align their interests and practices, growing with the world-leading projects and contributors on platforms such as <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), both of which provide extra education resources:
 
 * <i class="fab fa-github" aria-hidden="true">Github</i>[GitHub Education](https://github.com/education)
-* [🤗Introducing Hugging Face for Education ](https://huggingface.co/blog/education)
+* [🤗Hugging Face for Education ](https://huggingface.co/blog/education)
 
 ![](course_AI_Agent_Foudations.png)
 
@@ -153,28 +153,25 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 - The project functions as a self-curation artifact for your professional identity in a **Community of Practice (CoP)**.
 
 #### 📦 Deliverables
-**1. 🧭 Deploy** a GitHub-hosted **portfolio site** 🛫 featuring:
-- 📲 **Implement** clear semantic structure and accessible navigation with semantic HTML and WAI-ARIA landmarks ♼
-- 👀 **Support** search functionality, keyboard navigation and screen reader accessibility 📎
-- ⛏ **Style** responsive layouts using TailwindCSS 🧩and sustainable design principles (e.g. optimized assets, low-carbon fonts, dark mode)
-- 🌱 **Apply** sustainable design strategies (e.g. optimized assets, dark mode, green fonts) 💡
-- 📊 **Visualize** data with Apache ECharts (e.g. interactions, contribution timelines, tag maps, or other relevant resources) 🌀
-**💬 Github-Hosted  Hugo-Based Site ** should:
--  **Implement** an API-powered or local LLM **chatbot interface** 👀
--  **Construct** a retrieval **pipeline** or scripted automation flow 📎
-- 📊 **Visualize** data pipelines using **Markmap,  Mermaid, **Apache ECharts**, or other diagrams/graphs** to demonstrate data literacy 🌀
-- ⚙️ **Automate** CI/CD **integration** via GitHub Actions 🛫
-**2. 📘 Write** a PRD **Document** (2–3 pages) 🗄 Outlining:
-- 🔖 **Define** Purpose, audience, content scope, and user experience  goals (including personas)🎯 
-- 🧭 **Commit** to accessibility and sustainability standards ♿ 🌍 
-- 🧱 **Scope** all featured Hugo and Web components (e.g. pages, shortcodes, UI widgets, animation logic, SVG, and icon packs) 🧰    
-- 🛠️ **Specify** other technical expectations: performance,  browser compatibility, language toggles, ⏿
-**3. 📝 Reflect** in a series of personal **blog posts** (1 page) 📎
-- 🔍 **Explain** design trade-offs related to accessibility and environmental impact ♼
-- 🧑‍🤝‍🧑 **Incorporate** peer feedback and highlight key self-revisions 👀
-- 📖 **Publish** your reflections (blog post or README) with citations/links to valuable resources 📚
+* 1. **🧭 Deploy** a GitHub-hosted **portfolio site** 🛫 featuring:
+  - 📲 **Implement** clear semantic structure and accessible navigation with semantic HTML and WAI-ARIA landmarks ♼
+  - 👀 **Support** search functionality, keyboard navigation and screen reader accessibility 📎
+  - ⛏ **Style** responsive layouts using TailwindCSS 🧩and sustainable design principles (e.g. optimized assets, low-carbon fonts, dark mode)
+  - 🌱 **Apply** sustainable design strategies (e.g. optimized assets, dark mode, green fonts) 💡
+  - 📊 **Visualize** data with **Markmap、Mermaid、Apache ECharts or other interactive graphs**, demonstrating data literacy 🌀
+  - 🛠️ **Construct** a retrieval **pipeline** or scripted automation flow 📎
+  - ⚙️ **Automate** CI/CD  integration using **GitHub Actions** 🛫 
+* 2. **📝Write** a PRD **Document** (2–3 pages) 🗄 outlining:
+  - 🔖 **Define** Purpose, audience, content scope, and user experience goals (including personas)🎯 
+  - 🧭 **Commit** to accessibility 🌍and sustainability standards ♿ 
+  - 🧱 **Scope** all featured Hugo and Web components (e.g. pages, shortcodes, UI widgets, animation logic, SVG, and icon packs) 🧰    
+  - 🛠️ **Specify** other technical expectations: performance,  browser compatibility, language toggles 💱
+* 3. **⚖️ Reflect** n a series of personal **blog posts** (1 page) 📎
+  - 🔍 **Explain** design trade-offs related to accessibility and environmental impact ♼
+  - 🧑‍🤝‍🧑 **Incorporate** peer feedback and highlight key self-revisions 👀
+  - ⏿  **Publish** your reflections (blog post or README) with citations/links to valuable resources 📚
  {{< /details >}}
- 
+
 ### 🧭 Project Evaluation & Reflection
 
 Final assessment emphasizes evidence-based iteration and individual growth over time. Students are expected to:
@@ -187,6 +184,8 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 - 📝 **Document** accessibility and sustainability **outcomes** ♼ — including any audits performed, performance benchmarks, or tooling used for optimization.
 
 ### 🧮 **Grading Criteria**
+Grading Criteria focuses on the grasp of AI capabilities and professional expertise.
+
 |Component|Description|Weight|
 |---|---|---|
 |🎯 **Web Quality & Site Structure**|Github usage, and working deployments|30%|
@@ -290,6 +289,9 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 - 🧾 **Credit** referenced **code and sources** 📚 — with thoughtful attribution and reward for value-added context-specific reuse
 
 ### 🧮 **Grading Criteria**
+
+Grading Criteria focuses on the grasp of AI capabilities and professional expertise.
+
 |Component|Description|Weight|
 |---|---|---|
 |🎯 **App Functionality & Integration**|AI features, LLM API usage, chatbot logic, data flow execution, and working deployments|30%|
@@ -319,26 +321,49 @@ The following details are beyond the scope of this post:
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
-## 🚢Learning Roadmap for intelligent API, ML, and AI 🗿  
-
-(TBA)
+## 🚢Learning Roadmap for API, ML, and AI 🗿  
 
 This section first contextualize AI capabilities in the emerging job markets, covering academic disciplines, including `engineering`, `management`, `marketing`, `psychology`, `design` and `new media`, and then summarize as one overall learning roadmap.
 {id="LearningRoadmap"}
 
-### general track with basic `AI engineering` understanding
-* AI Product Manager track (technical product and project management)
+### Roadmap
 
-### leaning `management`, `accounting` and `audit`
-* AI Data Context Architect (operations and management context)
-* AI Integrity Analyst (QA, risk management, and compliance)
+```markmap {height="240px"}
+* ⚙️
+  * General
+	* 💡 AI Product Manager
+* 🛄 leaning 
+  * *Engineering*🏗️ 
+	 * ⛑ AI Engineer
+	 * 🧪 AI Research Scientist
+  * *Management*, *Accounting* and *Audit*🎯 
+ 	 * 🎛 AI Data Context Architect
+ 	 * ⚖️ AI Integrity Analyst
+  * *Marketing*, *Psychology* and *Design*💓 
+	 * 🤝 AI Behavior Architect
+	 * 💃🏻 AI Audience Strategist Track
+  * *New Media*, *Content* and *HCI*📳 
+	 * 🤣 Multimodal AI Designer
+* 🧑‍🚀 
+  * Senior Position
+	 * 🚀 AI Agent Orchestration Lead
+```
 
-### leaning `marketing`, `psychology` and `design`
-* AI Behavior Architect (UX design focusing on user adoption)
-* AI Audience Strategist track (story marketing)
+### Details
 
-### leaning `new media` `content` and `HCI`
-* Multimodal AI Designer (UX design focusing on interfaces across voice, gesture, text, image, and touch)
-
-### enterprise senior position
-*  AI Agent Orchestration Lead
+* ⚙️ general track with basic *AI engineering* understanding
+	 * 💡 AI Product Manager
+* 🛄 leaning 
+  * 🏗️*Engineering* 
+	 * ⛑ AI Engineer
+	 * 🧪 AI Research Scientist
+  * 🎯*Management*, *Accounting* and *Audit* 
+	 * 🎛 AI Data Context Architect (operations and management context)
+	 * ⚖️ AI Integrity Analyst (QA, risk management, and compliance)
+  * 💓*Marketing*, *Psychology* and *Design* 
+	* 🤝 AI Behavior Architect (UX design focusing on user adoption)
+	* 💃🏻 AI Audience Strategist Track (story marketing)
+  * 📳*New Media*, *Content* and *HCI* 
+	* 🤣 Multimodal AI Designer (UX design focusing on interfaces across voice, gesture, text, image, and touch)
+* 🧑‍🚀 enterprise senior position
+	 * 🚀 AI Agent Orchestration Lead
