@@ -8,7 +8,7 @@ tags:
   - 'AI agent'
   - 'Web Development'
   - 'teaching'
-image: Web_Development_Github_HF.webp
+image: 
   preview_only: true
 ---
 
@@ -27,6 +27,8 @@ image: Web_Development_Github_HF.webp
 本系列课程 🤖📲 _面向 LLM 驱动应用的网页开发_ （以下简称 _本系列_）面向具有不同学科背景的入门级本科生，在 **大型语言模型 (LLM)** 的背景下，为现代网页开发的理论和实践方面提供全面的基础。
 
 > 要了解 _本系列_ 如何根据 AI 能力的新兴就业市场，涵盖包括 `工程`、`管理`、`营销`、`心理学`、`设计` 和 `新媒体` 等在内的多学科背景，请见：[🚢智能 API、ML 和 AI 学习路线图 🗿](#LearningRoadmap)
+
+![Web Development with Github and Hugging Face](Web_Development_Github_HF.webp)
 
 ### _系列课程结构_
 
@@ -192,6 +194,9 @@ _第一门课程_
 |🎨 **用户体验与可访问性**|响应式 UI、多语言支持、可访问性合规性 (WCAG) 和可持续性设计考虑|15%|
 |✨ **创新与价值创造**|独特的功能、创造性的解决方案、对新兴趋势的整合以及对作品集的整体价值贡献|5%|
 
+
+{{< youtube 00GKzGyWFEs >}}
+
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 
@@ -290,6 +295,9 @@ _第二门课程_
 |📄 **PRD 结构与清晰度**|与 Miqdad Jaffer 的 AI PRD 模板的一致性、战略框架、技术深度和视觉效果|30%|
 |🗣️ **沟通与反思**|同行评审、修订周期、自我反思博客/文档以及深思熟虑的引用|20%|
 |🧭 **评估意识**|对偏差、负责任的 AI 担忧和评估指标（包括缓解策略）的认识|20%|
+
+![Github Edu](Github_Edu.webp)
+
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 ## 🧑‍🏫 说明：教学大纲组成部分📓

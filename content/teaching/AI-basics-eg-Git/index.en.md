@@ -8,7 +8,7 @@ tags:
   - 'AI agent'
   - 'Web Development'
   - 'teaching'
-image: Web_Development_Github_HF.webp
+image: 
   preview_only: true
 ---
 
@@ -27,6 +27,8 @@ It aims to replace or complement CS 101 courses for all disciplines, including m
 Aimed at entry-level undergraduate students from diverse disciplinary backgrounds, the course series 🤖📲 *Web Development for LLM-Powered Apps* (hereafter  _this series_) provides a comprehensive foundation in both conceptual and practical aspects of modern web development in the context of **Large Language Models (LLMs)**.
 
 > See how  _this series_ covers diverse disciplinary backgrounds including `engineering`, `management`, `marketing`, `psychology`, `design` and `new media` based on emerging job markets of AI capabilities: [🚢Learning Roadmap for intelligent API, ML, and AI 🗿](#LearningRoadmap)
+
+![Web Development with Github and Hugging Face](Web_Development_Github_HF.webp)
 
 ### Course Series Structure
 Spanning **two semesters** (12–18 weeks each, depending on institutional scheduling), the course is structured as follows:
@@ -193,6 +195,8 @@ Grading Criteria focuses on the grasp of AI capabilities and professional expert
 |🗣️ **PRD Clarity & Verb/Noun Precision**|Self and Peer Review Quality, revision cycles, self-reflection blogs/docs, and thoughtful citations|20%|
 |🎨 **UX & Accessibility**|Responsive UI, multilingual support, accessibility compliance (WCAG), and sustainability design considerations|15%|
 
+{{< youtube 00GKzGyWFEs >}}
+
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 ## 🏋2️⃣  Foundations for LLM-Powered Apps
@@ -298,6 +302,8 @@ Grading Criteria focuses on the grasp of AI capabilities and professional expert
 |📄 **PRD Structure & Clarity**|Alignment with Miqdad Jaffer’s AI PRD template, strategic framing, technical depth, and visuals|30%|
 |🗣️ **Communication & Reflection**|Peer reviews, revision cycles, self-reflection blogs/docs, and thoughtful citations|20%|
 |🧭 **Evaluation Awareness**|Recognition of bias, responsible AI concerns, and evaluation metrics with mitigation strategies|20%|
+
+![Github Edu](Github_Edu.webp)
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
