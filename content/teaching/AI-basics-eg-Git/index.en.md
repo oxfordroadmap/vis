@@ -7,7 +7,6 @@ tags:
   - Github
   - 'AI agent'
   - 'Web Development'
-  - 'teaching'
 image: 
   preview_only: true
 ---
