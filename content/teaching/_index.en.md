@@ -25,7 +25,7 @@ sections:
         tag: 'AI_Engineering'
     design:
       view: article-grid
-      columns: 2
+      columns: 3
   - block: collection
     id: posts
     content:
@@ -36,7 +36,7 @@ sections:
         tag: 'Writing'
     design:
       view: article-grid
-      columns: 3
+      columns: 2
   - block: collection
     id: posts
     content:
@@ -48,6 +48,4 @@ sections:
     design:
       view: card
       #view: date-title-summary
-      #spacing:
-      #  padding: [0, 0, 0, 0]
 ---
