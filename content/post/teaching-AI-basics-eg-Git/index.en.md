@@ -20,7 +20,9 @@ Based on my teaching and curriculum-developing experiences in China that feature
 
 ## Course Info and Features
 
-Aimed at entry-level undergraduate students from a broad range of disciplinary backgrounds, the course series **🤖📲** _**Web Development for LLM-Powered Apps**_ (hereafter _This series_) provides a comprehensive foundation in both the conceptual and practical aspects of modern web development in the context of **Large Language Models (LLMs)**.
+Aimed at entry-level undergraduate students from diverse disciplinary backgrounds, the course series 🤖📲 *Web Development for LLM-Powered Apps* (hereafter  _this series_) provides a comprehensive foundation in both conceptual and practical aspects of modern web development in the context of **Large Language Models (LLMs)**.
+
+> See how  _this series_ covers diverse disciplinary backgrounds including `engineering`, `management`, `marketing`, `psychology`, `design` and `new media` based on emerging job markets of AI capabilities: [🚢Learning Roadmap for intelligent API, ML, and AI 🗿](#LearningRoadmap)
 
 ### Course Series Structure
 Spanning **two semesters** (12–18 weeks each, depending on institutional scheduling), the course is structured as follows:
@@ -70,6 +72,8 @@ After finishing the _this course series_, each learner will align their interest
 
 * [<i class="fa fa-github" aria-hidden="true">Github</i>GitHub Education](https://github.com/education)
 * [🤗Introducing Hugging Face for Education ](https://huggingface.co/blog/education)
+
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 ## 💪1️⃣ Foundations and CI/CD using Github
 
@@ -183,7 +187,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 |🗣️ **PRD Clarity & Verb/Noun Precision**|Self and Peer Review Quality, revision cycles, self-reflection blogs/docs, and thoughtful citations|20%|
 |🎨 **UX & Accessibility**|Responsive UI, multilingual support, accessibility compliance (WCAG), and sustainability design considerations|15%|
 
----
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 ## 🏋2️⃣  Foundations for LLM-Powered Apps
 
@@ -285,7 +289,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 |🗣️ **Communication & Reflection**|Peer reviews, revision cycles, self-reflection blogs/docs, and thoughtful citations|20%|
 |🧭 **Evaluation Awareness**|Recognition of bias, responsible AI concerns, and evaluation metrics with mitigation strategies|20%|
 
----
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 ## 🧑‍🏫 An Education Technical Note on Syllabus Components📓
 
@@ -305,25 +309,27 @@ The following details are beyond the scope of this post:
 - 🛠 **Support Resources**
 - 📖 **Academic Integrity**
 
-## 🚢Learning Roadmap for intelligent API, ML, and AI 🗿  
+<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
+## 🚢Learning Roadmap for intelligent API, ML, and AI 🗿  
+{id="LearningRoadmap"}
 (TBA)
 
-Contextualizing AI capabilities in the emerging job markets
+This section first contextualize AI capabilities in the emerging job markets, covering academic disciplines, including `engineering`, `management`, `marketing`, `psychology`, `design` and `new media`, and then summarize as one overall learning roadmap.
 
-### general track
+### general track with basic `AI engineering` understanding
 * AI Product Manager track (technical product and project management)
 
-### leaning management, accounting and audit
+### leaning `management`, `accounting` and `audit`
 * AI Data Context Architect (operations and management context)
 * AI Integrity Analyst (QA, risk management, and compliance)
 
-### leaning psychology and design
+### leaning `marketing`, `psychology` and `design`
 * AI Behavior Architect (UX design focusing on user adoption)
 * AI Audience Strategist track (story marketing)
 
-### leaning new media content and interactions
+### leaning `new media` `content` and `HCI`
 * Multimodal AI Designer (UX design focusing on interfaces across voice, gesture, text, image, and touch)
 
-### senior position
+### enterprise senior position
 *  AI Agent Orchestration Lead
