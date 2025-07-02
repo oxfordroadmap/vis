@@ -5,7 +5,7 @@ date: 2025-06-01
 type: docs
 math: false
 tags:
-  - Python
+  - 'AI_Engineering'
   - API
   - 'Project Management'
   - RAG

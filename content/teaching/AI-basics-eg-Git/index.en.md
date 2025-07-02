@@ -3,7 +3,7 @@ title: "Web Development for LLM-Powered Apps"
 date: 2025-06-30
 type: post
 tags:
-  - 'insights'
+  - 'AI_Engineering'
   - Github
   - 'AI agent'
   - 'Web Development'
