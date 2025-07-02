@@ -45,6 +45,9 @@
   {{ end }}
   <link rel="alternate" hreflang="{{ site.LanguageCode | default "en-us" }}" href="{{ .Permalink }}" />
 
+  {{/* Font Awesome Initialization: Load all style  https://docs.fontawesome.com/v5/web/use-with/wordpress/install-manually */}}
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
   {{/* Hugo Blox Color Theme Initialization */}}
   {{ $theme_name := (lower site.Params.appearance.color) | default "blue" }}
   {{ $theme_path := printf "css/themes/%s.css" $theme_name }}
