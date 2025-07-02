@@ -3,7 +3,7 @@ title: "网站应用开发--含大语言模型驱动应用"
 date: 2025-06-30
 type: post
 tags:
-  - 'AI_Engineering'
+  - 'AI 工程'
   - Github
   - 'AI agent'
   - 'Web Development'

@@ -17,33 +17,33 @@ sections:
   - block: collection
     id: posts
     content:
-      title: '🛠️AI Engineering'
+      title: '🛠️AI 工程'
       filters:
         folders:
           - teaching
-        tag: 'AI_Engineering'
+        tag: 'AI 工程'
     design:
       view: article-grid
       columns: 3
   - block: collection
     id: posts
     content:
-      title: '📝Writing'
+      title: '📝写作'
       filters:
         folders:
           - teaching
-        tag: 'Writing'
+        tag: '写作'
     design:
       view: article-grid
       columns: 2
   - block: collection
     id: posts
     content:
-      title: '🛣️Roadmaps'
+      title: '🛣️学习路径'
       filters:
         folders:
           - teaching
-        tag: 'Roadmaps'
+        tag: '学习路径'
     design:
       view: card
       #view: date-title-summary

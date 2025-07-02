@@ -5,7 +5,7 @@ date: 2023-10-23
 authors:
   - admin
 tags:
-  - 'Roadmaps'
+  - '学习路径'
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
