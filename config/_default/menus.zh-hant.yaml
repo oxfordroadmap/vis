@@ -14,7 +14,7 @@ main:
     url: 'teaching/'
     weight: 50
   - name: 📜論文
-    url: 'papers/'
+    url: 'publication/'
     weight: 88
   - name: 🔗CV
     url: 'experience/'

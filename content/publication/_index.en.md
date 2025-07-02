@@ -40,3 +40,9 @@ sections:
       view: article-grid
       columns: 1
 ---
+
+### Peer-reviewed papers, presentations and institutional reports
+
+
+<span style="color: #b2c046;"><i class="ai ai-orcid ai-3x ai-figshare fa-pulse"></i></span>
+<i class="ai ai-doi ai-3x"></i>
