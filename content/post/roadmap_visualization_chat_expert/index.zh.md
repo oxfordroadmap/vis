@@ -1,15 +1,15 @@
 ---
-title: '数据可视化AI代理人——路线图'
+title: 数据可视化AI代理人——路线图
 date: 2025-06-30
 tags:
-  - 'insights'
-  - '聊天机器人'
+  - insights
+  - 聊天机器人
   - RAG
-  - AI工程
-  - '服务设计'
-  - 'AI能力'
+  - AI_Engineering
+  - 服务设计
+  - AI能力
 image:
-  caption: 'Image credit: [Tableau Agent](https://www.tableau.com/zh-tw/products/tableau-agent)'
+  caption: "Image credit: [Tableau Agent](https://www.tableau.com/zh-tw/products/tableau-agent)"
 ---
 🤔 将聊天机器人界面与功能集成到数字系统中，有助于在多样化情境中生成洞察。
 

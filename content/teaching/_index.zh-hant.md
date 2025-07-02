@@ -21,7 +21,7 @@ sections:
       filters:
         folders:
           - teaching
-        tag: AI工程
+        tag: 'AI_Engineering'
     design:
       view: article-grid
       css_class: 'bg-red-100 dark:bg-red-900'
@@ -33,7 +33,7 @@ sections:
       filters:
         folders:
           - teaching
-        tag: '寫作'
+        tag: 'Writing'
     design:
       view: article-grid
       css_class: 'bg-gray-100 dark:bg-gray-900'
@@ -45,7 +45,7 @@ sections:
       filters:
         folders:
           - teaching
-        tag: '學習路徑'
+        tag: 'Roadmaps'
     design:
       view: card
       css_class: 'bg-primary-100 dark:bg-primary-900'

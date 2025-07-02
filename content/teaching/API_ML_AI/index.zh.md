@@ -5,7 +5,7 @@ date: 2023-10-24
 type: post
 math: false
 tags:
-  - 'AI 工程'
+  - AI_Engineering
 image:
   caption: Embed rich media such as videos and LaTeX math
 ---

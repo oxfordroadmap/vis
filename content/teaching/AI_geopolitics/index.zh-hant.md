@@ -5,7 +5,7 @@ date: 2025-05-04
 type: docs
 math: false
 tags:
-  - 写作
+  - writing
   - 人工智能
   - 地緣政治
 image:

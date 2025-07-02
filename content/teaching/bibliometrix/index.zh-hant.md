@@ -5,7 +5,7 @@ date: 2023-10-24
 type: docs
 math: false
 tags:
-  - 写作
+  - writing
 image:
   caption: Embed rich media such as videos and LaTeX math
 ---

@@ -1,15 +1,15 @@
 ---
-title: '🤖AI 工程（AI Engineering）：建构智慧应用的 2025 年必读书籍📖'
+title: 🤖AI 工程（AI Engineering）：建构智慧应用的 2025 年必读书籍📖
 date: 2025-06-24
 authors:
   - admin
 tags:
   - recommendations
-  - AI工程
-  - 'AI能力'
-  - 'AI代理'  
+  - AI_Engineering
+  - AI能力
+  - AI代理
   - RAG
-  - 自由开源  
+  - 自由开源
 image:
   caption: "图片来源: [**O'Reilly**](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)"
 ---

@@ -1,15 +1,15 @@
 ---
-title: '資料視覺化AI代理人——路徑圖'
+title: 資料視覺化AI代理人——路徑圖
 date: 2025-06-30
 tags:
-  - 'insights'
-  - '聊天機器人'
+  - insights
+  - 聊天機器人
   - RAG
-  - AI工程
-  - '服務設計'
-  - 'AI能力'
+  - AI_Engineering
+  - 服務設計
+  - AI能力
 image:
-  caption: 'Image credit: [Tableau Agent](https://www.tableau.com/zh-tw/products/tableau-agent)'
+  caption: "Image credit: [Tableau Agent](https://www.tableau.com/zh-tw/products/tableau-agent)"
 ---
 
 - 🤔 整合聊天機器人介面與功能至數位系統中，有助於在多元情境中產生洞察力。

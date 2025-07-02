@@ -5,7 +5,7 @@ date: 2025-06-01
 type: post
 math: false
 tags:
-  - AI工程
+  - AI_Engineering
   - Python
   - API
   - 项目管理
