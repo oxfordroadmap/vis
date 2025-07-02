@@ -28,6 +28,7 @@ module.exports = {
     'task-list',                     /* As it's added via JS */
     'pl-4', 'pl-8', 'pl-12',         /* TOC indents */
     'min-h-screen',                  /* Blox options */
+    'line-clamp-8',                  /* Summary/Abstract line lengths in article_grid+collections?! */
     // Grid template columns
     { pattern: /^grid-cols-(\d+|none|subgrid|\[.*\])$/,
       variants: ['sm', 'md', 'lg', 'xl', 'hover'],
