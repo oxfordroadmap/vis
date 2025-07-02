@@ -34,7 +34,7 @@ sections:
         tag: 'recommendations'
     design:
       view: article-grid
-      columns: 3
+      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90'      columns: 3
   - block: collection
     id: posts
     content:

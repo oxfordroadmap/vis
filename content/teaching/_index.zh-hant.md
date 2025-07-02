@@ -24,7 +24,7 @@ sections:
         tag: 'AI_Engineering'
     design:
       view: article-grid
-      css_class: 'bg-primary-100/25 dark:bg-primary-900/75'
+      css_class: 'bg-primary-100/10 dark:bg-primary-900/90'
       columns: 3
   - block: collection
     id: posts
@@ -36,7 +36,7 @@ sections:
         tag: 'Writing'
     design:
       view: article-grid
-      css_class: 'bg-gray-500/50'
+      css_class: 'bg-gray-500/10 dark:bg-gray-500/90'
       columns: 2
   - block: collection
     id: posts
@@ -48,7 +48,7 @@ sections:
         tag: 'Roadmaps'
     design:
       view: card
-      css_class: 'bg-primary-100/25 dark:bg-primary-900/75'
+      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50'
       #view: date-title-summary
 ---
 
