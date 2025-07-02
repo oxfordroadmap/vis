@@ -66,7 +66,10 @@ Two course syllabus are provided as follows:
 * First, learners build a modern responsive website using Github, learning the fundamental components, Web knowledge, design practices, and basic deployment operations.
 * Second, learners build several LLM-powered Apps (and other projects) that feature intelligent value-adds to their well-curated portfolio of documents, projects, interactive data dashboards, etc.
 
-After finishing the _this course series_, each learner will align their interests and practices, growing with the world-leading projects and contributors on platforms such as Github and Huggingface. 
+After finishing the _this course series_, each learner will align their interests and practices, growing with the world-leading projects and contributors on platforms such as [<i class="fa fa-github" aria-hidden="true">Github</i>GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), both of which provide extra education resources:
+
+* [<i class="fa fa-github" aria-hidden="true">Github</i>GitHub Education](https://github.com/education)
+* [🤗Introducing Hugging Face for Education ](https://huggingface.co/blog/education)
 
 ## 💪1️⃣ Foundations and CI/CD using Github
 
@@ -184,7 +187,7 @@ Final assessment emphasizes evidence-based iteration and individual growth over 
 
 ## 🏋2️⃣  Foundations for LLM-Powered Apps
 
-_The second course_, called ***"Web Development—  LLM-Powered Apps"*** integrates essential  `API services`, `LLM`, and relevant `software & AI engineering` knowledge, with strong focus on practical applications using modern coding and deployment platforms such as Github and Huggingface.  
+_The second course_, called ***"Web Development—  LLM-Powered Apps"*** integrates essential  `API services`, `LLM`, and relevant `software & AI engineering` knowledge, with strong focus on practical applications using modern coding and deployment platforms such as Github and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index).  
 
 Learners are also expected to **observe, learn, and practice** critical **Continuous Integration** and **Continuous Deployment** (CI/CD) software/AI engineering skills,  aiming at automating and streamlining AI agent development lifecycles.  
 
@@ -192,7 +195,7 @@ Learners are also expected to **observe, learn, and practice** critical **Contin
 ##### 2️⃣ LLM-Powered App Foundations
 _The second course_ 
 * integrates essential `API services`, `LLM`, and relevant `software & AI engineering` knowledge
-* prepares learners to **observe, learn, and practice** on Github and Huggingface platforms
+* prepares learners to **observe, learn, and practice** on Github and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index) platforms
 * train learners to orchestrate their skillsets in the overall **Continuous Integration** and **Continuous Delivery/Deployment** (CI/CD) development processes for AI-agent development and deployment
 * requires learners to compose a Product Requirements Document (PRD), following a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)
 {{% /callout %}}
@@ -211,7 +214,7 @@ By the end of this course, students will be able to:
 
 ### 🌐 **Technology & Online Tools**
 
-Learners must use and deploy **Github** and **Huggingface** platform resources.  Exceptions can be made for advanced students seeking local LLM or WebLLM implementations. 
+Learners must use and deploy **Github** and **[🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index)** platform resources.  Exceptions can be made for advanced students seeking local LLM or WebLLM implementations. 
 
 ### 📅 **Weekly Breakdown** 🗂
 
@@ -302,6 +305,25 @@ The following details are beyond the scope of this post:
 - 🛠 **Support Resources**
 - 📖 **Academic Integrity**
 
-## 🧑‍🏫 Learning Roadmap for intelligent API, ML, and AI 📓
+## 🚢Learning Roadmap for intelligent API, ML, and AI 🗿  
 
-TBA
+(TBA)
+
+Contextualizing AI capabilities in the emerging job markets
+
+### general track
+* AI Product Manager track (technical product and project management)
+
+### leaning management, accounting and audit
+* AI Data Context Architect (operations and management context)
+* AI Integrity Analyst (QA, risk management, and compliance)
+
+### leaning psychology and design
+* AI Behavior Architect (UX design focusing on user adoption)
+* AI Audience Strategist track (story marketing)
+
+### leaning new media content and interactions
+* Multimodal AI Designer (UX design focusing on interfaces across voice, gesture, text, image, and touch)
+
+### senior position
+*  AI Agent Orchestration Lead
