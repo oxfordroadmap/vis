@@ -8,7 +8,7 @@ tags:
   - 'AI agent'
   - 'Web Development'
   - 'teaching'
-image:
+image: Web_Development_Github_HF.webp
   preview_only: true
 ---
 
