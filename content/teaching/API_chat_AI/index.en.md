@@ -2,7 +2,7 @@
 title: 'API, Chat & AI'
 summary: From chats to expert panels —- how to harness generative AI ecosystems to create valuable intelligent product prototypes?
 date: 2025-06-01
-type: docs
+type: post
 math: false
 tags:
   - 'AI_Engineering'

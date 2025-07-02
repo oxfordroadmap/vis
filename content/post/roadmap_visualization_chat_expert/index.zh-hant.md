@@ -5,7 +5,7 @@ tags:
   - 'insights'
   - '聊天機器人'
   - RAG
-  - 'AI工程'
+  - AI工程
   - '服務設計'
   - 'AI能力'
 image:

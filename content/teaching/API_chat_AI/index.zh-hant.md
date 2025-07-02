@@ -2,10 +2,10 @@
 title: API對話AI
 summary: 從閑聊到專家組，如何高效借力生成式AI生態，產出有價值的智能產品原型？
 date: 2025-06-01
-type: docs
+type: post
 math: false
 tags:
-  - 'AI 工程'
+  - AI工程
   - Python
   - API
   - 項目管理

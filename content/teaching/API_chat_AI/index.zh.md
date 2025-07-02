@@ -2,10 +2,10 @@
 title: API对话AI
 summary: 从闲聊到专家组，如何高效借力生成式AI生态，产出有价值的智能产品原型？
 date: 2025-06-01
-type: docs
+type: post
 math: false
 tags:
-  - 'AI 工程'
+  - AI工程
   - Python
   - API
   - 项目管理

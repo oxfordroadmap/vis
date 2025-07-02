@@ -2,7 +2,7 @@
 title: API, ML & AI
 summary: From writing PRDs to prototyping, how can we leverage the AI ecosystems to prototype smart products that create values?
 date: 2023-10-24
-type: docs
+type: post
 math: false
 tags:
   - 'AI 工程'

@@ -5,7 +5,7 @@ authors:
   - admin
 tags:
   - recommendations
-  - 'AI工程'
+  - AI工程
   - 'AI能力'
   - 'AI代理'  
   - RAG

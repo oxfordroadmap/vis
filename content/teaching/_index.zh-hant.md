@@ -21,7 +21,7 @@ sections:
       filters:
         folders:
           - teaching
-        tag: 'AI 工程'
+        tag: AI工程
     design:
       view: article-grid
       css_class: 'bg-red-100 dark:bg-red-900'
