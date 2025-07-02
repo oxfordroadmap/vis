@@ -49,5 +49,7 @@ sections:
     design:
       view: card
       css_class: 'bg-primary-100 dark:bg-primary-900'
-	  #view: date-title-summary
+      #view: date-title-summary
 ---
+
+<!-- $block.design. background | spacing.padding | clip_path | css_style | css_class | columns | {{/* Special case: Slider widget. */}} loop | interval -->
