@@ -1,6 +1,5 @@
 import 'dotenv/config'
 const defaultTheme = require('tailwindcss/defaultTheme')
-
 const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
 
 console.log('Current directory: ' + process.cwd());
@@ -80,6 +79,7 @@ module.exports = {
           700: "rgb(var(--color-neutral-700) / <alpha-value>)",
           800: "rgb(var(--color-neutral-800) / <alpha-value>)",
           900: "rgb(var(--color-neutral-900) / <alpha-value>)",
+          900: "rgb(var(--color-neutral-950) / <alpha-value>)",
         },
         primary: {
           50: "rgb(var(--color-primary-50) / <alpha-value>)",
@@ -92,6 +92,7 @@ module.exports = {
           700: "rgb(var(--color-primary-700) / <alpha-value>)",
           800: "rgb(var(--color-primary-800) / <alpha-value>)",
           900: "rgb(var(--color-primary-900) / <alpha-value>)",
+          950: "rgb(var(--color-primary-950) / <alpha-value>)",
         },
         secondary: {
           50: "rgb(var(--color-secondary-50) / <alpha-value>)",
@@ -104,6 +105,7 @@ module.exports = {
           700: "rgb(var(--color-secondary-700) / <alpha-value>)",
           800: "rgb(var(--color-secondary-800) / <alpha-value>)",
           900: "rgb(var(--color-secondary-900) / <alpha-value>)",
+          950: "rgb(var(--color-secondary-950) / <alpha-value>)",
         },
       },
       fontFamily: {
