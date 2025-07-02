@@ -1,6 +1,6 @@
 ---
-title: 教学与培训课
-summary: AI 相关的一流课程及培训材料
+title: AI 与 平台 创新的教学相长
+summary: 就`工程`, `写作`, 与`创新` 的教学及培训材料及学习路径图，含一流课程材料 **API, ML & AI**，以及 **EAP写作**, **AI 代理** 与 **AI 工程** 的内容。
 type: landing
 
 cascade:
