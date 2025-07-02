@@ -134,7 +134,8 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
 (Based on Web PRD + W3C Accessibility & Sustainability)
 
-> ** `🧩 Project Template` **
+>  🧩 Project Template
+{class="inline-block"}
 
 {{< details summary="details" name="Final Project1" >}}  
 #### 🏷️ Title
@@ -248,7 +249,8 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)
 
 
-> ** `🧩 Project Template` **
+>  🧩 Project Template
+{class="inline-block"}
 
 This project leverages a Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI) and provides students with an applied format for integrating documentation and deployment best practices.
 
@@ -312,10 +314,11 @@ The following details are beyond the scope of this post:
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 ## 🚢Learning Roadmap for intelligent API, ML, and AI 🗿  
-{id="LearningRoadmap"}
+
 (TBA)
 
 This section first contextualize AI capabilities in the emerging job markets, covering academic disciplines, including `engineering`, `management`, `marketing`, `psychology`, `design` and `new media`, and then summarize as one overall learning roadmap.
+{id="LearningRoadmap"}
 
 ### general track with basic `AI engineering` understanding
 * AI Product Manager track (technical product and project management)
