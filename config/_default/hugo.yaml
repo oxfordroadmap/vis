@@ -60,7 +60,7 @@ module:
     source: hugo_stats.json
     target: assets/notwatching/hugo_stats.json
 enableGitInfo: false
-summaryLength: 200
+summaryLength: 500
 pagination:
   pagerSize: 10
 enableEmoji: true
