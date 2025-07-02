@@ -12,7 +12,7 @@ image:
   preview_only: true
 ---
 
-💓 Motivate students to learn by doing their own portfolios of PRDs📋, prototypes, and AI agents 🤖! Based on my teaching and curriculum-developing experiences in China that features modern web development using <i class="fa fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), I have carefully designed a full foundational course of "Web Development for LLM-Powered Apps" that features building intelligent Apps using LLM.  It aims to replace or complement CS 101 courses for all disciplines, including management and humanities background.  
+💓 Motivate students to learn by doing their own portfolios of PRDs📋, prototypes, and AI agents 🤖! Based on my teaching and curriculum-developing experiences in China that features modern web development using <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), I have carefully designed a full foundational course of "Web Development for LLM-Powered Apps" that features building intelligent Apps using LLM.  It aims to replace or complement CS 101 courses for all disciplines, including management and humanities background.  
 
 <!-- more -->
 
@@ -68,9 +68,9 @@ Two course syllabus are provided as follows:
 * First, learners build a modern responsive website using Github, learning the fundamental components, Web knowledge, design practices, and basic deployment operations.
 * Second, learners build several LLM-powered Apps (and other projects) that feature intelligent value-adds to their well-curated portfolio of documents, projects, interactive data dashboards, etc.
 
-After finishing the _this course series_, each learner will align their interests and practices, growing with the world-leading projects and contributors on platforms such as <i class="fa fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), both of which provide extra education resources:
+After finishing the _this course series_, each learner will align their interests and practices, growing with the world-leading projects and contributors on platforms such as <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), both of which provide extra education resources:
 
-* <i class="fa fa-github" aria-hidden="true">Github</i>[GitHub Education](https://github.com/education)
+* <i class="fab fa-github" aria-hidden="true">Github</i>[GitHub Education](https://github.com/education)
 * [🤗Introducing Hugging Face for Education ](https://huggingface.co/blog/education)
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
