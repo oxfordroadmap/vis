@@ -77,7 +77,11 @@ _本系列課程_ 強調以下 **以行動為導向** 的學習成果，每個�
 * <i class="fab fa-github" aria-hidden="true">Github</i>[GitHub Education](https://github.com/education)
 * [🤗Hugging Face for Education ](https://huggingface.co/blog/education)
 
-![](course_AI_Agent_Foudations.png)
+```markmap
+* 網站應用開發 —💪
+  * 1️⃣ 使用 Github 進行 CI/CD 基礎
+  * 2️⃣ 大語言模型驅動應用基礎
+```
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 

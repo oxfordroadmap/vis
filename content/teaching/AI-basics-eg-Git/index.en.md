@@ -78,8 +78,11 @@ After finishing the _this course series_, each learner will align their interest
 * <i class="fab fa-github" aria-hidden="true">Github</i>[GitHub Education](https://github.com/education)
 * [🤗Hugging Face for Education ](https://huggingface.co/blog/education)
 
-![](course_AI_Agent_Foudations.png)
-
+```markmap
+* Web Development — 💪
+  * 1️⃣ Foundations and CI/CD using Github
+  * 2️⃣ Foundations for LLM-Powered Apps
+```
 {{% hr %}}
 
 ## 💪1️⃣ Foundations and CI/CD using Github

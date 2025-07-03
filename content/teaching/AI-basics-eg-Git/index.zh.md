@@ -77,7 +77,11 @@ _本系列课程_ 强调以下 **以行动为导向** 的学习成果，每个�
 * <i class="fab fa-github" aria-hidden="true">Github</i>[GitHub Education](https://github.com/education)
 * [🤗Hugging Face for Education ](https://huggingface.co/blog/education)
 
-![](course_AI_Agent_Foudations.png)
+```markmap
+* 网站应用开发 —💪
+  * 1️⃣ 使用 Github 进行 CI/CD 基础
+  * 2️⃣ 大语言模型驱动应用基础
+```
 
 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
