@@ -51,16 +51,21 @@ jobs:
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
-    
+    - name: Check for hugo_stats.json
+      run: |
+        echo "Looking for hugo_stats.json in root directory:"
+        ls -l hugo_stats.json || echo "Not found"
+    - name: Upload hugo_stats.json
+      uses: actions/upload-artifact@v3
+      with:
+        name: hugo-stats
+        path: hugo_stats.json
     - name: Generate Pagefind search index
       run: npx pagefind --site "public"
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: ./public
-
-
-
   # Deploy website to GitHub Pages hosting
   deploy:
     if: github.repository_owner != 'HugoBlox'
