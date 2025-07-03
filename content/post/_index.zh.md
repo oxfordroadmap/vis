@@ -23,7 +23,7 @@ sections:
         tag: 'insights'
     design:
       view: article-grid
-      columns: 2
+      columns: 3
   - block: collection
     id: posts
     content:
