@@ -13,7 +13,7 @@
 */}}
 {{ $icon := "information-circle" }}
 {{ $class := "bg-primary-50/20 dark:bg-primary-900/80" }}
-{{ $class_text := "text-primary-900 dark:text-primary-100" }}
+{{ $class_text := "text-primary-900 dark:text-white" }}
 {{ with (.Get 0) }}
   {{ if eq . "note" }}
     {{ $icon = "information-circle" }}
@@ -23,21 +23,21 @@
     {{ $class_text = "text-red-500" }}
   {{ else if eq . "tip" }}
     {{ $icon = "callout/lightbulb-solid" }}
-    {{ $class = "bg-yellow-100/20 dark:bg-yellow-900/80" }}
-    {{ $class_text = "text-blue-100/20 dark:text-blue-900/80" }}
+    {{ $class = "bg-primary-100/20 dark:bg-primary-900/80" }}
+    {{ $class_text = "text-primary-100/20 dark:text-primary-900/80" }}
   {{ else if eq . "task" }}
     {{ $icon = "callout/list-check-solid" }}
-    {{ $class = "bg-blue-100/20 dark:bg-blue-900/80" }}
-    {{ $class_text = "text-amber-900 dark:text-amber-100" }}
+    {{ $class = "bg-primary-100/20 dark:bg-primary-900/80" }}
+    {{ $class_text = "text-black dark:text-white" }}
   {{ else }}
     {{ $icon = . }}
   {{end}}
 {{end}}
-<div class="flex px-4 py-3 mb-6 rounded-md {{$class}}">
-<span class="pr-3 pt-1 {{$class_text}}">
-  {{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"24\"") }}
+<div class="flex items-center px-4 py-3 mb-6 rounded-md {{$class}}">
+<span class="pr-3 pt-5 {{$class_text}}">
+  {{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"36\"") }}
 </span>
-  <span class="dark:text-neutral-300">
+  <span class="text-base/6 leading-6">
   {{- .Inner | markdownify | emojify -}}
 </span>
 </div>
