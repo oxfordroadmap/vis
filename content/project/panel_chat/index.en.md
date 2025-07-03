@@ -1,6 +1,6 @@
 ---
 title: Panel Chat (Holoviz)
-date: 2025-03-01
+date: 2025-07-01
 tags:
   - 'theme_extensions'
   - 'Chatbots'

@@ -1,6 +1,6 @@
 ---
 title: Panel Chat 面板聊天示例
-date: 2025-03-01
+date: 2025-07-01
 tags:
   - 'theme_extensions'
   - '聊天机器人'
