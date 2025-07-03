@@ -41,6 +41,9 @@ cascade:
     
 ############################
 ## ADVANCED
+## You need to add this to your `config.yaml` to enable Hugo's Tailwind integration:
+#  build:
+#    writeStats: true
 ############################
 
 build:
