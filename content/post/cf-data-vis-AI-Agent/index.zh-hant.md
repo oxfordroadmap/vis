@@ -1,5 +1,5 @@
 ---
-title: "Viable Learning Paths: Dashboards🎛️ + AI Agents🤖"
+title: "🤓 Learning Paths: 🎛️🤖 Dashboard AI Agents 🛤️"
 date: 2025-06-01
 type: post
 tags:

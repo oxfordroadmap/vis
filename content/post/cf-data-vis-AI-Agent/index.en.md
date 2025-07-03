@@ -1,5 +1,5 @@
 ---
-title: "Viable Learning Paths: Dashboards🎛️ + AI Agents🤖"
+title: "🤓 Learning Paths: 🎛️🤖 Dashboard AI Agents 🛤️"
 date: 2025-06-01
 type: post
 tags:
@@ -79,7 +79,7 @@ For undergraduate learners without prior background, the core capability for int
 
 To prioritize **hands-on experience**, **gradual complexity**, and **practical tools**, only the development ecosystems of Python and JavaScript are considered here.
 
-## What are viable learning-by-doing paths?
+## What are viable learning-by-doing paths 🛤️?
 
 As of mid-2025, three top-choice learning paths are viable: 1️⃣ Python-Gradio|Streamlit, 2️⃣ JavaScript, and 3️⃣ Python-Panel. 
 
