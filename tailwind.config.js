@@ -27,7 +27,7 @@ module.exports = {
     // through Hugo Pipes, ensure those output directories are also scanned
     './assets/**/*.{css,js}',
     // If you use shortcodes that directly render Tailwind classes, include them
-    './shortcodes/**/*.{html}', // Adjust path if your shortcodes are elsewhere
+    './layouts/shortcodes/**/*.{html}', // Adjust path if your shortcodes are elsewhere
     // You might also need to include archetype files if you define initial classes there
     ...content_extra,
   ],

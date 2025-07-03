@@ -83,7 +83,7 @@ _本系列課程_ 強調以下 **以行動為導向** 的學習成果，每個�
   * 2️⃣ 大語言模型驅動應用基礎
 ```
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{< hr >}}
 
 ## 💪1️⃣ 基礎知識與使用 GitHub 進行 CI/CD
 
@@ -203,7 +203,7 @@ _第一門課程_
 
 {{< youtube 00GKzGyWFEs >}}
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{< hr >}}
 
 
 ## 🏋2️⃣ LLM 驅動應用基礎
@@ -304,7 +304,7 @@ _第二門課程_
 
 ![Github Edu](Github_Edu.webp)
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{< hr >}}
 
 ## 🧑‍🏫 說明：教學大綱組成部分📓
 本文借鑒並擴展了 [哈佛大學的教學大綱組成部分 (Syllabus Components by Harvard)](https://bokcenter.harvard.edu/syllabus-design)，重點關注大學學習環境中的以下方面：
@@ -323,7 +323,7 @@ _第二門課程_
 - 🛠 **支持資源**
 - 📖 **學術誠信**
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{< hr >}}
 
 ## 🚢 API、機器學習和人工智能學習路線圖 🗿 
 
