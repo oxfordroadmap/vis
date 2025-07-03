@@ -33,7 +33,7 @@ Some alternatives to `Panel Chat Examples`:
 * [Vercel AI chatbots](https://github.com/vercel/ai-chatbot)
 {{% /callout %}}
 
-{{< hr icon="fa-solid fa-star" >}}
+{{< hr icon="fa fa-dumbbell" >}}
 
 ## Outcomes: 🎛️🤖 Dashboard AI Agents
 
@@ -59,7 +59,7 @@ A list of the available examples:
 * ***interconnect*** _interactive data visualization_ and _LLM-based chatbots_, and thus 
 * ***orchestrate*** data pipelines and interactions.
 {{% /callout %}}
-{{< hr >}}
+<hr class="w-48 h-1 my-1 md:my-3 mx-auto border-8 border-black/80 dark:border-white/80 ">
 
 ## Tasks
 
@@ -83,6 +83,8 @@ Applying Panel Chat Examples to:
   * [🧰NetBib]({{% ref path="/project/NetBib"  %}}), and 
   * [⚖️🪙 Global Civic Service Performance bipa2024]({{% ref path="/project/bipa2024" %}})
 {{% /callout %}}
+
+{{< hr >}}
 
 ## External Links
 {id="external_link"}
