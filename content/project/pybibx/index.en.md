@@ -3,7 +3,7 @@ title: pybibx (Valdecy Pereira)
 date: 2025-06-11
 external_link: https://github.com/Valdecy/pybibx
 tags:
-  - 🚧Extensions
+  - 'theme_extensions'
   - Bibliometrics
   - 'AI capabilities'
   - 'Network Analysis'

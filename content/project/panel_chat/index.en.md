@@ -1,9 +1,8 @@
 ---
 title: Panel Chat (Holoviz)
 date: 2025-03-01
-external_link: https://holoviz-topics.github.io/panel-chat-examples/
 tags:
-  - '🚧Extensions'
+  - 'theme_extensions'
   - 'Chatbots'
   - 'AI agents'
   - RAG
@@ -17,3 +16,5 @@ tags:
 <!--more-->
 
 While there are [several Python Frameworks to build UIs for AI Apps](https://getstream.io/blog/ai-chat-ui-tools/#3-chainlit-build-uis-for-conversational-ai), Panel (Holoviz) features a few chatbot UIs within its browser-based data visualization ecosystems.  Thus, although more general tools such as [`Gradio Python Client`](https://www.gradio.app/docs/python-client/introduction) and [`ai-chatbot by Vercel`](https://github.com/vercel/ai-chatbot) exist to build AI Apps with chatbots, it is still useful to learn and do "smart" interactive data-visualization using Panel (Holoviz).
+
+external_link: https://holoviz-topics.github.io/panel-chat-examples/

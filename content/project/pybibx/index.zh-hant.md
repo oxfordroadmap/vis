@@ -3,7 +3,7 @@ title: pybibx（文獻計量）
 date: 2025-06-11
 external_link: https://github.com/Valdecy/pybibx
 tags:
-  - 🚧擴充延伸
+  - 'theme_extensions'
   - 文獻計量
   - 'AI能力'
   - '網絡分析'
