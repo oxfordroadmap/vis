@@ -1,6 +1,6 @@
 import 'dotenv/config'
 const defaultTheme = require('tailwindcss/defaultTheme')
-const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
+const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : [];
 
 console.log('Current directory: ' + process.cwd());
 console.log(`content_extra: ${content_extra}`);
@@ -9,18 +9,18 @@ console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),    
     // '../../starters/**/*.md',
+    // '**/libs/chroma/*.css',
+    // './**/*.svg',
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    '**/libs/chroma/*.css',
     // Look for Tailwind classes in all your Hugo layouts (HTML templates)
-    './layouts/**/*.{html,js}',
-    './**/*.svg',
+    './layouts/**/*.html',
+    './hugo_stats.json', 
     // Look for Tailwind classes within your Markdown content files
     // This is important if you embed HTML with Tailwind classes directly in your .md files
     './content/**/*.{html,md}',
-    // ************ './hugo_stats.json', ******************
     // Look in static files if you have any hand-written HTML or JS there
     './static/**/*.{html,js}',
     // If you're processing assets (like JS or custom CSS with @apply)
