@@ -34,6 +34,8 @@ Some alternatives to `Panel Chat Examples`:
 * [Vercel AI chatbots](https://github.com/vercel/ai-chatbot)
 {{% /callout %}}
 
+{{< hr icon="fa-solid fa-star" >}}
+
 ## Outcomes: 🎛️🤖 Dashboard AI Agents
 
 `Panel Chat Examples`, integrate powerful capabilities of data visualization, UI widgets, python libraries, and LLM AI capabilities.  
@@ -58,13 +60,13 @@ A list of the available examples:
 * ***interconnect*** _interactive data visualization_ and _LLM-based chatbots_, and thus 
 * ***orchestrate*** data pipelines and interactions.
 {{% /callout %}}
-
-![](featured.png)
 {{< hr >}}
 
 ## Tasks
 
 [Han-Teng Liao](/experience) seeks the useful extensions of `Panel Chat Examples` for doing and learning AI-powered interactive data visualization for insights:
+
+![](featured.png)
 
 For 2025:
 
