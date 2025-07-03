@@ -1,23 +1,34 @@
 {{/*
     Docs: https://docs.hugoblox.com/reference/markdown/#callouts
-
+    Icons: hugo-blox-builder/modules/blox-tailwind/data/icons
+/hb.yaml https://github.com/HugoBlox/hugo-blox-builder/blob/44e75541f7be16116e80e5c71ff98f6997d63fe5/modules/blox-tailwind/data/icons/hb.yaml
     Parameters
     ----------
     #0 : optional, positional
         Name of the icon to display in the callout component.
         Default Hugo Blox Builder available options include "note" and "warning".
         Otherwise, you can add your own icon to assets/media/icons/ and reference its name when calling the shortcode.
+
+    Future: https://github.com/KKKZOZ/hugo-admonitions The minimum required Hugo version is 0.140.0. 
 */}}
 {{ $icon := "information-circle" }}
-{{ $class := "bg-primary-100 dark:bg-primary-900" }}
-{{ $class_text := "text-primary-600 dark:text-primary-300" }}
+{{ $class := "bg-primary-50/20 dark:bg-primary-900/80" }}
+{{ $class_text := "text-primary-900 dark:text-primary-100" }}
 {{ with (.Get 0) }}
   {{ if eq . "note" }}
     {{ $icon = "information-circle" }}
   {{ else if eq . "warning" }}
     {{ $icon = "exclamation-triangle" }}
-    {{ $class = "bg-yellow-100 dark:bg-yellow-900" }}
-    {{ $class_text = "text-red-400" }}
+    {{ $class = "bg-yellow-100/20 dark:bg-yellow-900/80" }}
+    {{ $class_text = "text-red-500" }}
+  {{ else if eq . "tip" }}
+    {{ $icon = "callout/lightbulb-solid" }}
+    {{ $class = "bg-yellow-100/20 dark:bg-yellow-900/80" }}
+    {{ $class_text = "text-blue-100/20 dark:text-blue-900/80" }}
+  {{ else if eq . "task" }}
+    {{ $icon = "callout/list-check-solid" }}
+    {{ $class = "bg-blue-100/20 dark:bg-blue-900/80" }}
+    {{ $class_text = "text-amber-900 dark:text-amber-100" }}
   {{ else }}
     {{ $icon = . }}
   {{end}}
