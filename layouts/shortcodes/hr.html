@@ -1,0 +1,18 @@
+{{/*
+
+✅ When icon is set: displays a full-width line with an icon centered over it.
+   {{< hr icon="fa-solid fa-star" >}}
+🚫 When icon is missing: uses a compact, decorative separator with Tailwind styling.
+   {{< hr >}}
+*/}}
+
+<div class="relative flex items-center justify-center my-3">
+  {{ with .Get "icon" }}
+    <hr class="w-full border-t border-gray-300 dark:border-gray-600">
+    <div class="absolute px-2 bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 text-xl">
+      <i class="{{ . }}"></i>
+    </div>
+  {{ else }}
+    <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+  {{ end }}
+</div>

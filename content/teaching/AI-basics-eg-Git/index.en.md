@@ -80,7 +80,7 @@ After finishing the _this course series_, each learner will align their interest
 
 ![](course_AI_Agent_Foudations.png)
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{% hr %}}
 
 ## 💪1️⃣ Foundations and CI/CD using Github
 
@@ -196,7 +196,7 @@ Grading Criteria focuses on the grasp of AI capabilities and professional expert
 
 {{< youtube 00GKzGyWFEs >}}
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{% hr %}}
 
 ## 🏋2️⃣  Foundations for LLM-Powered Apps
 
@@ -304,7 +304,7 @@ Grading Criteria focuses on the grasp of AI capabilities and professional expert
 
 ![Github Edu](Github_Edu.webp)
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{% hr %}}
 
 ## 🧑‍🏫 An Education Technical Note on Syllabus Components📓
 
@@ -324,7 +324,7 @@ The following details are beyond the scope of this post:
 - 🛠 **Support Resources**
 - 📖 **Academic Integrity**
 
-<hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+{{% hr %}}
 
 ## 🚢Learning Roadmap for API, ML, and AI 🗿  
 

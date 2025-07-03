@@ -11,7 +11,7 @@ image:
   preview_only: true
 ---
 
-`Panel Chat Examples` feature  _multi modal_ chat components that support various LLM and RAG tools.  The useful extensions lead to doing and learning 🎛️🤖 Dashboard AI Agents for interactive, continuously improving insights.
+`Panel Chat Examples` feature *multi-modal* chat components that support various LLM and RAG tools.  The useful extensions lead to doing and learning 🎛️🤖 Dashboard AI Agents for interactive, continuously improving insights.
 
 <!--more-->
 
@@ -59,7 +59,9 @@ A list of the available examples:
 * ***orchestrate*** data pipelines and interactions.
 {{% /callout %}}
 
-![](featured.webp)
+![](featured.png)
+
+{{< hr >}}
 
 ## Tasks
 
