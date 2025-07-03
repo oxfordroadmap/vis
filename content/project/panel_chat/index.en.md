@@ -10,7 +10,6 @@ tags:
 image:
   preview_only: true
 ---
-
 `Panel Chat Examples` feature *multi-modal* chat components that support various LLM and RAG tools.  The useful extensions lead to doing and learning 🎛️🤖 Dashboard AI Agents for interactive, continuously improving insights.
 
 <!--more-->
