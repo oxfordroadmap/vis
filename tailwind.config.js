@@ -14,9 +14,21 @@ console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 module.exports = {
   content: [
     '**/libs/chroma/*.css',
+    // Look for Tailwind classes in all your Hugo layouts (HTML templates)
     './layouts/**/*.{html,js}',
     './**/*.svg',
-    './hugo_stats.json',
+    // Look for Tailwind classes within your Markdown content files
+    // This is important if you embed HTML with Tailwind classes directly in your .md files
+    './content/**/*.{html,md}',
+    // ************ './hugo_stats.json', ******************
+    // Look in static files if you have any hand-written HTML or JS there
+    './static/**/*.{html,js}',
+    // If you're processing assets (like JS or custom CSS with @apply)
+    // through Hugo Pipes, ensure those output directories are also scanned
+    './assets/**/*.{css,js}',
+    // If you use shortcodes that directly render Tailwind classes, include them
+    './shortcodes/**/*.{html}', // Adjust path if your shortcodes are elsewhere
+    // You might also need to include archetype files if you define initial classes there
     ...content_extra,
   ],
   plugins: [
