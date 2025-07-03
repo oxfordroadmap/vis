@@ -43,8 +43,20 @@ Do Panel Chat Examples can:
 * ***interconnect*** _interactive data visualization_ and _LLM-based chatbots_, and thus
 * ***orchestrate*** data pipelines and interactions
 
+![](panel-chat-examples-index-page.png)
+
+A list of the available examples:
+- Basic Chat, including Basic Streaming Chat, Basic Streaming Chat Async
+- Component: Component Chat Input, Component Environment Widget, Component Status
+- Features: Feature Chained Response, Feature Replace Response, Feature Slim Interface
+- Langchain: Chat Pandas DF, Llama And Mistral, Math Assistant, Pdf Assistant, Langchain With Memory
+- LLMs: Mistral And Llama, Mistral Chat, Mistral With Memory, Openai Async Chat, Openai Authentication, Openai Chat, Openai Chat With Hvplot, Openai Hvplot, Openai Image Generation
+
 {{% callout tip %}}
-`Panel Chat Examples` can ***prototype*** working 🎛️🤖 Dashboard AI Agents, ***interconnect*** _interactive data visualization_ and _LLM-based chatbots_, and thus ***orchestrate*** data pipelines and interactions.
+`Panel Chat Examples` can 
+* ****prototype*** working 🎛️🤖 Dashboard AI Agents, 
+* ***interconnect*** _interactive data visualization_ and _LLM-based chatbots_, and thus 
+* ***orchestrate*** data pipelines and interactions.
 {{% /callout %}}
 
 ![](featured.webp)
