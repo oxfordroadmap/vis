@@ -33,7 +33,7 @@ Some alternatives to `Panel Chat Examples`:
 * [Vercel AI chatbots](https://github.com/vercel/ai-chatbot)
 {{% /callout %}}
 
-{{< hr icon="fa fa-dumbbell" >}}
+{{< hr />}}
 
 ## Outcomes: 🎛️🤖 Dashboard AI Agents
 
@@ -84,7 +84,7 @@ Applying Panel Chat Examples to:
   * [⚖️🪙 Global Civic Service Performance bipa2024]({{% ref path="/project/bipa2024" %}})
 {{% /callout %}}
 
-{{< hr >}}
+{{< hr >}}★{{< hr />}}
 
 ## External Links
 {id="external_link"}
