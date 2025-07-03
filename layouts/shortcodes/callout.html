@@ -23,7 +23,7 @@
     {{ $class_text = "text-red-500" }}
   {{ else if eq . "tip" }}
     {{ $icon = "callout/lightbulb-solid" }}
-    {{ $class = "bg-primary-100/20 dark:bg-primary-900/80" }}
+    {{ $class = "bg-amber-100/20 dark:bg-amber-900/80" }}
     {{ $class_text = "text-primary-100/20 dark:text-primary-900/80" }}
   {{ else if eq . "task" }}
     {{ $icon = "callout/list-check-solid" }}
@@ -33,8 +33,8 @@
     {{ $icon = . }}
   {{end}}
 {{end}}
-<div class="flex items-top px-4 py-3 mb-3 rounded-md {{$class}}">
-<span class="pr-3 {{$class_text}}">
+<div class="flex items-top px-4 pb-3 mb-5 rounded-md {{$class}}">
+<span class="pr-3 mt-7 {{$class_text}}">
   {{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"32\"") }}
 </span>
   <span class="text-base/8">

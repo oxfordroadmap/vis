@@ -60,7 +60,6 @@ A list of the available examples:
 {{% /callout %}}
 
 ![](featured.png)
-
 {{< hr >}}
 
 ## Tasks
