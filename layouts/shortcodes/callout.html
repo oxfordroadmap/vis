@@ -27,17 +27,15 @@
     {{ $class_text = "text-primary-100/20 dark:text-primary-900/80" }}
   {{ else if eq . "task" }}
     {{ $icon = "callout/list-check-solid" }}
-    {{ $class = "bg-primary-100/20 dark:bg-primary-900/80" }}
+    {{ $class = "bg-blue-100/20 dark:bg-blue-900/80" }}
     {{ $class_text = "text-black dark:text-white" }}
   {{ else }}
     {{ $icon = . }}
   {{end}}
 {{end}}
-<div class="flex items-top px-4 pb-3 mb-5 rounded-md {{$class}}">
-<span class="pr-3 mt-7 {{$class_text}}">
-  {{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"32\"") }}
-</span>
-  <span class="text-base/8">
-  {{- .Inner | markdownify | emojify -}}
-</span>
+
+{{/*<div class="flex items-top p-3 mb-5 rounded-md bg-blue-50/20 dark:bg-blue-900/80">*/}}
+<div class="flex items-top p-3 mb-5 rounded-md {{$class}}">
+<span class="pr-3 {{$class_text}}">{{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"32\"") }}</span>
+<span class="text-base/8">  {{- .Inner | markdownify | emojify -}}</span>
 </div>
