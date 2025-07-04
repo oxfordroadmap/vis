@@ -2,7 +2,9 @@ import 'dotenv/config'
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 const content_templ = process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'
-const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
+//const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
+const content_extra = process.env.HB_TW_CONTENT?.split(', ') ?? [];
+
 
 console.log('Current directory: ' + process.cwd());
 console.log(`content_extra: ${content_extra}`);
@@ -11,9 +13,11 @@ console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    ...content_extra,
     './hugo_stats.json',
     './layouts/**/*.html',
+    '**/libs/chroma/*.css',
+    './**/*.svg',
+    ...content_extra,
   ],
   plugins: [
     require('@tailwindcss/typography'),
