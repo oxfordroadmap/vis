@@ -35,7 +35,7 @@
 {{end}}
 
 {{/*<div class="flex items-top p-3 mb-5 rounded-md bg-blue-50/20 dark:bg-blue-900/80">*/}}
-<div class="not-prose flex items-top p-3 mb-5 rounded-md {{$class}}">
+<div class="flex items-top p-3 mb-5 rounded-md {{$class}}">
 <span class="pr-3 {{$class_text}}">{{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"32\"") }}</span>
 <span class="text-base/8">  {{- .Inner | markdownify | emojify -}}</span>
 </div>
