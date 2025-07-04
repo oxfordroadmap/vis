@@ -17,6 +17,7 @@ module.exports = {
   ],
   plugins: [
     require('@tailwindcss/typography'),
+    require('@tailwindcss/nesting'),
   ],
   safelist: [
     'task-list',   /* As it's added via JS */
