@@ -4,7 +4,7 @@ go 1.19
 
 //✅ “Use my fork of hugo-blox-builder for all references to github.com/HugoBlox/hugo-blox-builder.”
 // Override HugoBlox builder core module with oxfordroadmap fork
-replace github.com/HugoBlox/hugo-blox-builder => github.com/oxfordroadmap/hugo-blox-builder v0.0.1-20250704104204-c0c24e7f7ce69ca223a56ffbaaf59e77a780d55a
+replace github.com/HugoBlox/hugo-blox-builder => github.com/oxfordroadmap/hugo-blox-builder v0.0.2-20250704122556-8b683644319a931af94fb5d8b65f637ced7fd4c4
 
 //✅ “Still resolve plugins like blox-plugin-netlify and blox-tailwind using the versions specified.”
 // Plugin modules maintained by HugoBlox (used as-is)
