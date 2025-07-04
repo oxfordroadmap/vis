@@ -304,7 +304,7 @@ language_skills:
 awards:
   - title: _Certificate of Merit_
     url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2021'
+    date: '2021-07-01'
     awarder:  _IEEE TEMSMET Conference 2021_
     icon: ieee
     summary: |
