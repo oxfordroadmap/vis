@@ -83,7 +83,7 @@ After finishing the _this course series_, each learner will align their interest
   * 1️⃣ Foundations and CI/CD using Github
   * 2️⃣ Foundations for LLM-Powered Apps
 ```
-{{< hr >}}
+{{< hr />}}
 
 ## 💪1️⃣ Foundations and CI/CD using Github
 
@@ -199,7 +199,7 @@ Grading Criteria focuses on the grasp of AI capabilities and professional expert
 
 {{< youtube 00GKzGyWFEs >}}
 
-{{< hr >}}
+{{< hr />}}
 
 ## 🏋2️⃣  Foundations for LLM-Powered Apps
 
@@ -307,7 +307,7 @@ Grading Criteria focuses on the grasp of AI capabilities and professional expert
 
 ![Github Edu](Github_Edu.webp)
 
-{{< hr >}}
+{{< hr />}}
 
 ## 🧑‍🏫 An Education Technical Note on Syllabus Components📓
 
@@ -327,7 +327,7 @@ The following details are beyond the scope of this post:
 - 🛠 **Support Resources**
 - 📖 **Academic Integrity**
 
-{{< hr >}}
+{{< hr />}}
 
 ## 🚢Learning Roadmap for API, ML, and AI 🗿  
 

@@ -84,7 +84,7 @@ Applying Panel Chat Examples to:
   * [⚖️🪙 Global Civic Service Performance bipa2024]({{% ref path="/project/bipa2024" %}})
 {{% /callout %}}
 
-{{< hr >}}★{{< hr />}}
+{{< hr >}}★{{< /hr >}}
 
 ## External Links
 {id="external_link"}
