@@ -51,6 +51,7 @@ jobs:
       env:
         HUGO_ENVIRONMENT: production
       run: |
+        hugo mod clean --all
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
     - name: Check for hugo_stats.json
