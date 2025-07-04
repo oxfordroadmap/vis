@@ -1,22 +1,19 @@
 import 'dotenv/config'
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+const content_templ = process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'
 const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
 
 console.log('Current directory: ' + process.cwd());
 console.log(`content_extra: ${content_extra}`);
-// console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
+console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // './hugo_stats.json',
-    './layouts/**/*.html',
-    '**/libs/chroma/*.css',
-    './**/*.svg',
-    '../../starters/**/*.md',
     ...content_extra,
-    // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),
+    './hugo_stats.json',
+    './layouts/**/*.html',
   ],
   plugins: [
     require('@tailwindcss/typography'),
@@ -40,6 +37,21 @@ module.exports = {
       pattern: /bg-primary+/,
     },
     {
+      pattern: /text-primary+/,
+    },
+    {
+      pattern: /bg-secondary+/,
+    },
+    {
+      pattern: /text-secondary+/,
+    },
+    {
+      pattern: /bg-amber+/,
+    },
+    {
+      pattern: /text-amber+/,
+    },
+    {
       pattern: /bg-gradient+/,
     },
     {
@@ -47,6 +59,12 @@ module.exports = {
     },
     {
       pattern: /to-primary+/,
+    },
+    {
+      pattern: /from-secondary+/,
+    },
+    {
+      pattern: /to-secondary+/,
     },
   ],
     /* /^bg-white/, /^bg-gray-/, /^bg-primary-/, /^bg-gradient-/, /^from-primary-/, /^to-primary-/,
