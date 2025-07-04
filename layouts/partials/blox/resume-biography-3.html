@@ -18,122 +18,143 @@
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
 
-{{/* Row1 */}}
-<div class="resume-biography px-3 flex flex-col">
-<div class="flex flex-row justify-center gap-6 items-center mx-auto gap-3 px-3 md:px-0">
-  {{/* Row1, Column 1 */}}
-  <div class="flex-none m-w-[70px] mx-auto">
-  
-  {{/* Row1, Column 1, Banner -- design.banner.filename */}}
-    {{ $img := "" }}
-      {{with $block.design.banner.filename}}
-      {{- $img = resources.Get (path.Join "media" .) -}}
-        {{ if $img }}
-          {{- $img = $img.Process "webp" -}}
-          <div class="w-full bg-gray-200 dark:bg-gray-900 flex flex-wrap items-center justify-center">
-            <div class="w-full bg-white rounded dark:bg-gray-800">
-              <div class="h-2/4 sm:h-64 overflow-hidden w-full">
-                <img class="w-full object-cover"
-                    src="{{$img.RelPermalink}}"
-                    width="{{$img.Width}}" height="{{$img.Height}}"
-                    alt="" />
-              </div>
-            </div>
-          </div>
-        {{ end }}
-      {{ end }}
+{{/* TailwindCss Play:  https://play.tailwindcss.com/INArT4cDNw  */}}
 
-  {{/* Row1, Column 1, Surrounding Portrait Photo */}}
-  <div id="profile" class="flex justify-center items-center flex-col">
+<div class="resume-biography px-3 md:px-0 grid col-span-6 md:grid-cols-12 grid-flow-row justify-center gap-6 items-center content-stretch mx-auto h-auto" >
+  
+  {{/* 01 Portrait + 02 Name+Position col-span-4/12 */}}   
+  <div class="col-span-4 mx-auto justify-self-center">  
+
+  {{/* 00 Banner -- design.banner.filenam == If the banner is set, display it */}}
+  {{ $img := "" }}
+  {{with $block.design.banner.filename}}
+  {{- $img = resources.Get (path.Join "media" .) -}}
+  {{ if $img }}
+    {{- $img = $img.Process "webp" -}}
+    <div class="w-full bg-gray-200 dark:bg-gray-900 flex flex-wrap items-center justify-center">
+      <div class="w-full bg-white rounded dark:bg-gray-800">
+        <div class="h-2/4 sm:h-64 overflow-hidden w-full">
+          <img class="w-full object-cover"
+               src="{{$img.RelPermalink}}"
+               width="{{$img.Width}}" height="{{$img.Height}}"
+               alt="" />
+        </div>
+      </div>
+    </div>
+  {{ end }}
+  {{ end }}  
+
+  {{/* 01-02, id="profile" Surrounding Portrait Photo */}}
+  <div id="profile" class="flex flex-row md:flex-col gap-3 justify-center items-center">
+
+    {{/* 01 _flex_1/2_ Portrait == avatar-wrapper */}} 
     {{ if $avatar }}
-    <div class="avatar-wrapper {{ if $img }}-mt-[105px]{{else}}mt-2{{end}}">
+    <div class="avatar-wrapper flex-1/2 justify-self-right">
       {{ $avatar_image := $avatar.Fill "250x250 Center" }}
-      <img class="avatar rounded-full bg-white dark:bg-gray-800 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
+      <img class="avatar rounded-full bg-white dark:bg-gray-900 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
            width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
       {{with $person.status.icon}}<span class="avatar-emoji">{{.|emojify}}</span>{{end}}
     </div>
-    {{ end }}
-    <div class="portrait-title dark:text-white">
+    {{ end }}{{/* End of 01 Portrait */}}
+
+    {{/* 02 _flex-1/2_  Name+Position == portrait */}} 
+    <div class="portrait-title dark:text-white flex-1/2 justify-self-right">
+
+      {{/* 02.A Name: https://developer.mozilla.org/zh-TW/docs/Web/HTML/Reference/Elements/ruby */}} 
       <div class="text-3xl font-bold mb-2 mt-6">
         {{- if $person.name_pronunciation -}}
-          <ruby>
-            <rb>{{ $person_page.Title }}</rb>
-            <rt>{{ $person.name_pronunciation }}</rt>
+          <ruby> 
+            {{ $person_page.Title }}
+            <rp>(</rp><rt>{{ $person.name_pronunciation }}</rt><rp>)</rp>
           </ruby>
         {{- else -}}
           {{- $person_page.Title -}}
         {{- end -}}
       </div>
+      {{/* 02.B Role */}} 
       {{ with $person.role }}<h3 class="font-semibold mb-1">{{ . | markdownify | emojify }}</h3>{{ end }}
-      {{ range $person.organizations }}      
+
+      <div class="flex justify-center py-5" style="letter-spacing: -0.72em; font-size:32px; isolation: isolate; text-align: center;"> 
+        <div style="mix-blend-mode: darken; color: Magenta;">♞</div> 
+        <div style="mix-blend-mode: darken; color: Cyan;">♜</div> 
+      </div>
+
+      {{/* 02.C Organizations */}} 
+      {{ range $person.organizations }}
       <div class="mb-2">
         {{ with .url }}<a {{ printf "href=\"%s\"" . | safeHTMLAttr }} target="_blank" rel="noopener">{{ end }}
         <div>{{ .name }}</div>
         {{ if .url }}</a>{{ end }}
       </div>
       {{ end }}
-    </div>
-    {{/* Row1, Column 1, Social Network Icons */}}
-    <ul class="network-icon dark:text-zinc-100">
-      {{ range $person.profiles }}
 
-      {{ $pack := or .icon_pack "fas" }}
-      {{ $pack_prefix := $pack }}
-      {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-        {{ $pack_prefix = "fa" }}
-      {{ end }}
-      {{ $link := .url | default .link }}
-      {{ $scheme := (urls.Parse $link).Scheme }}
-      {{ $target := "" }}
-      {{ if not $scheme }}
-        {{ $link = (.url | default .link) | relLangURL }}
-        {{ if eq (path.Ext $link) ".pdf" }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
-      {{ else if in (slice "http" "https") $scheme }}
-        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-      {{ end }}
-      <li>
-        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}"
-           {{ with .label }} data-toggle="tooltip" data-placement="top" title="{{.}}"{{ end }}>
-          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}
-        </a>
-      </li>
-      {{ end }}
-    </ul>
-  </div>
-  </div>
+      {{/* 02.X ----- Social Network Icons ----- */}} 
+      <ul class="network-icon dark:text-zinc-100">
+        {{ range $person.profiles }}
+          {{ $pack := or .icon_pack "fas" }}
+          {{ $pack_prefix := $pack }}
+          {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+            {{ $pack_prefix = "fa" }}
+        {{ end }}
+        {{ $link := .url | default .link }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = (.url | default .link) | relLangURL }}
+          {{ if eq (path.Ext $link) ".pdf" }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        <li>
+          <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }} aria-label="{{ .icon }}"
+            {{ with .label }} data-toggle="tooltip" data-placement="top" title="{{.}}"{{ end }}>
+            {{ partial "functions/get_icon" (dict "name" .icon "attributes" "style=\"height: 1.5rem;\"")  }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>{{/* End of 02.X */}}      
 
-  {{/* Row1, Column 2 */}}
-  <div class="flex-auto max-w-prose px-5 mb-5 md:mt-3">
-    {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
-    <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-      <div class="bio-text space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
-        {{ . }}
+    </div>{{/* End of 02.A-X */}}
+
+
+
+  </div>{{/* 01-02, id="profile" Surrounding Portrait Photo */}}
+
+
+
+    {{/* 03 Biography Text */}}{{/* This is the main content area for the biography */}}
+    <div class="col-span-8 justify-self-left max-w-prose px-7 mb-3 md:mt-3">
+
+      {{/* 03.A Content Text */}} 
+      {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
+      <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
+        <div class="bio-text space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+          {{ . }}
+        </div>
       </div>
-    </div>
-    {{ end }}
-    
-    {{/* Download CV Button */}}
-    {{ with $block.content.button }}
-    <div id="download_cv" class = "m-0 p-0 scale-90 group-hover:scale-100 transition-all duration-300 ease-in-out font-medium">
-    <a href="{{.url}}" target="_blank" class="mt-5 inline-flex items-center px-5 py-3 text-gray-900 bg-white border border-gray-200 border-solid rounded-lg hover:bg-gray-50 hover:text-primary-700 hover:border-dotted focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">      
-      <span id='svg_icon_download' class="w-7 h-7 flex items-center justify-center rounded-full ring-1 ring-slate-900 dark:ring-slate-200/20">
-        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>
-      </span>
-      <span class="px-5"> {{.text}} </span>
-    </a></div>
-    {{ end }}
+      {{ end }}{{/* 03.A Content Text */}}
 
-  </div>
-</div>
+      {{/* 03.B `Button` Download CV */}}
+      {{/* To Simplify!!   */}}
+      {{ with $block.content.button }}
+      <div id="download_cv" class = "m-0 p-0 scale-90 group-hover:scale-100 transition-all duration-300 ease-in-out font-medium">
+      <a href="{{.url}}" target="_blank" class="mt-5 inline-flex items-center px-5 py-3 text-gray-900 bg-white border border-gray-200 border-solid rounded-lg hover:bg-gray-50 hover:text-primary-700 hover:border-dotted focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">      
+        <span id='svg_icon_download' class="w-7 h-7 flex items-center justify-center rounded-full ring-1 ring-slate-900 dark:ring-slate-200/20">
 
-  {{/* Row2 */}}
-<div class="flex flex-row justify-center items-center mt-3 px-3 md:px-0">
-  <div class="grid grid-cols-12 mx-auto justify-between mb-3 text-white dark:text-white">
+          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+          <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+          </svg>
 
+        </span>
+        <span class="px-5"> {{.text}} </span>
+      </a></div>
+      {{ end }}
+    </div>{{/* End of 03 Biography Text */}}
+
+    {{/* 04 Skills */}} 
     {{ with $person.skillsets }}
-    <div style="grid-column: 1 / span 3;">
+    <div class="XXX col-span-3 justify-self-stretch">
       {{ $label := i18n "skillsets" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -150,10 +171,11 @@
         {{ end }}
       </ul>
     </div>
-    {{ end }}
+    {{ end }}{{/* End of 04 Skills */}}
 
+    {{/* 05 Interests */}} 
     {{ with $person.interests }}
-    <div style="grid-column: 4 / span 3;">
+    <div class="XXX col-span-3 justify-self-stretch">
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -165,10 +187,11 @@
         {{ end }}
       </ul>
     </div>
-    {{ end }}
+    {{ end }}{{/* End of 05 Interests */}}
 
+    {{/* 06 Education */}}
     {{ with $person.education }}
-    <div class="pl-6" style="grid-column: 7 / span 6;">
+    <div class="XXX col-span-6 justify-self-left">    
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -206,9 +229,7 @@
         {{ end }}<!-- range -->
       </ul>
     </div>
-    {{ end }}
-</div>
+    {{ end }}{{/* End of 06 Education */}}
+  </div>{{/* End of 01-06 */}}
 
-
-</div>
-</div>
+</div>{{/* End of resume-biography */}}
