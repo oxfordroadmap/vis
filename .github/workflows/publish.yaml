@@ -45,6 +45,8 @@ jobs:
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5
+    - name: Instaill tailwindcss
+      run: npm install -D tailwindcss@3.4.17 postcss autoprefixer
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
