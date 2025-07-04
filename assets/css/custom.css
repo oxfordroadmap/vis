@@ -150,4 +150,7 @@ a:hover:not(.button):not(.rounded):not(.rounded-full):not(.rounded-lg) {
   border-bottom: dotted 5px rgba(255, 255, 255, 0.33);
 }
 
-/*  */
+/* fix topography excessive margin */
+p {
+  margin-top:0 !important;
+}
