@@ -51,17 +51,14 @@ build:
   buildStats:
     enable: true
   cachebusters:
-  - source: hugo_stats\.json
-    target: css
-  - source: (postcss|tailwind)\.config\.js
-    target: css
-module:
-  mounts:
-  - source: assets
-    target: assets
-  - disableWatch: true
-    source: hugo_stats.json
-    target: assets/notwatching/hugo_stats.json
+    - source: assets/watching/hugo_stats\.json
+      target: styles\.css
+    - source: (postcss|tailwind)\.config\.js
+      target: css
+    - source: assets/.*\.(js|ts|jsx|tsx)
+      target: js
+    - source: assets/.*\.(.*)$
+      target: $1
 enableGitInfo: false
 summaryLength: 150
 pagination:

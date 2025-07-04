@@ -11,24 +11,24 @@ console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
     // '../../starters/**/*.md',
     // '**/libs/chroma/*.css',
     // './**/*.svg',
+    // Look for Tailwind classes in all your Hugo layouts (HTML templates)
+    //'./layouts/**/*.html',
+    // Look for Tailwind classes within your Markdown content files
+    // This is important if you embed HTML with Tailwind classes directly in your .md files
+    // './content/**/*.{html,md}',
+    // Look in static files if you have any hand-written HTML or JS there
+    // './static/**/*.{html,js}',
+    // If you're processing assets (like JS or custom CSS with @apply)
+    // through Hugo Pipes, ensure those output directories are also scanned
+    // './assets/**/*.{css,js}',
+    // If you use shortcodes that directly render Tailwind classes, include them
+    // './layouts/shortcodes/**/*.{html}', // Adjust path if your shortcodes are 
+    // You might also need to include archetype files if you define initial classes there
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // Look for Tailwind classes in all your Hugo layouts (HTML templates)
-    './layouts/**/*.html',
     './hugo_stats.json', 
-    // Look for Tailwind classes within your Markdown content files
-    // This is important if you embed HTML with Tailwind classes directly in your .md files
-    './content/**/*.{html,md}',
-    // Look in static files if you have any hand-written HTML or JS there
-    './static/**/*.{html,js}',
-    // If you're processing assets (like JS or custom CSS with @apply)
-    // through Hugo Pipes, ensure those output directories are also scanned
-    './assets/**/*.{css,js}',
-    // If you use shortcodes that directly render Tailwind classes, include them
-    './layouts/shortcodes/**/*.{html}', // Adjust path if your shortcodes are 
-    // You might also need to include archetype files if you define initial classes there
     ...content_extra,
   ],
   plugins: [
@@ -40,34 +40,6 @@ module.exports = {
     'pl-4', 'pl-8', 'pl-12',         /* TOC indents */
     'min-h-screen',                  /* Blox options */
     'line-clamp-8',                  /* Summary/Abstract line lengths in article_grid+collections?! */
-    // Grid template columns
-    { pattern: /^grid-cols-(\d+|none|subgrid|\[.*\])$/,
-      variants: ['sm', 'md', 'lg', 'xl', 'hover'],
-    },
-    // Dynamic grid spans
-    { pattern: /^col-span-(\d+|full|\[.*\])$/,
-    variants: ['sm', 'md', 'lg', 'xl', 'hover', 'focus'],
-    },
-    {   // Matches all Tailwind background colors + optional opacity (e.g., bg-blue-500/80)
-        pattern: /^bg-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|black|white|transparent|current|inherit)(?:-\d{2,3})?(?:\/\d{1,3})?$/,
-        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
-    },
-    {   // Matches all Tailwind text colors + optional opacity
-        pattern: /^text-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose|black|white|transparent|current|inherit)(?:-\d{2,3})?(?:\/\d{1,3})?$/,
-        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
-    },  
-    {   // Matches ring, ring-0, ring-1, ..., ring-inset
-        pattern: /^ring(?:-(inset|\d+))?$/,
-        variants: ['hover', 'focus', 'active', 'md', 'lg', 'dark'],  
-    }, 
-    {  // Matches border style (colors not yet)
-        pattern: /^border-(solid|dashed|dotted|double|hidden|none)$/,
-        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
-        },
-    {  // Matches text-primary--
-        pattern: /^text-primary(?:-\d{2,3})?(?:\/\d{1,3})?$/,
-        variants: ['hover', 'focus', 'md', 'lg', 'dark'],
-    },
     {  pattern: /from-primary+/,},
     {  pattern: /to-primary+/,},
   ],
