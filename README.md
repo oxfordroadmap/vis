@@ -1,3 +1,13 @@
+# Why learning/doing Hugo site
+## Why using `go`?
+* see [go.md] (go 1.19)
+* See [The Go Programming Language](https://go.dev/)
+    - An open-source programming language supported by Google
+    - Easy to learn and great for teams
+    - Built-in concurrency and a robust standard library
+    - Large ecosystem of partners, communities, and tools
+---
+
 # Academic Icons for Writing
 ### 🔰 **Introduction**
 - 🧭 `U+1F9ED` Compass – Setting direction

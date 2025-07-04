@@ -304,7 +304,7 @@ language_skills:
 awards:
   - title: _Certificate of Merit_
     url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-07-01'
+    date: '2021'
     awarder:  _IEEE TEMSMET Conference 2021_
     icon: ieee
     summary: |
@@ -325,38 +325,6 @@ awards:
     icon: datacamp
     summary: |
       2020 National College Art & Design Awards, Best Teaching for the Capstone Project Course “**API, machine learning and AI**”.
-  - title: 'University Teaching Awards, OxTALENT Awards'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Best Interactive Infographics.
-  - title: 'Best Student Paper Award'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Chinese Internet Research Conference 2009.
-  - title: 'PGP Corporation and OII Scholarship'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Chinese Internet Research Conference 2009.
-  - title: 'Taiwan Merit Scholarships'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Digital Content.
 ---
 
 ### About Me - [关于我]({{% ref path="/experience" lang="zh" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}}) 
