@@ -27,7 +27,7 @@ h4 {
 h5 {
   @apply text-base/7 font-black; 
 }
-h5 {
+h6 {
   @apply text-base/7 font-semibold; 
 }
 
@@ -79,11 +79,6 @@ h5 {
   }
 }
 */
-
-/* Summary line lengths line-clamp-X */
-.hb-card-subtitle {
-  @apply line-clamp-3 text-sm font-normal text-gray-500 dark:text-gray-400 px-4 mb-4 mt-2;
-}
 
 /* HyperLinks and misc */
 @layer components {
