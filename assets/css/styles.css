@@ -3,7 +3,11 @@
 
 /*! Hugo Blox Components | https://hugoblox.com */
 @import "main.css";
+/* no customization needed yet
 @import "./components/all.css";
+*/
 @import "./blox/all.css";
+/* no customization needed yet
 @import "./views/attachments.css";
 @import "chroma.css";
+*/
