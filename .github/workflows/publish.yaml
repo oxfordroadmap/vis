@@ -63,6 +63,11 @@ jobs:
       with:
         name: hugo-stats
         path: hugo_stats.json
+    - name: Generate Tailwind CSS
+      env:
+        HB_TW_CONTENT: "./layouts/**/*.html, ./content/**/*.md"
+      run: |
+        npx tailwindcss -i ./assets/css/styles.css -o ./assets/dist/wc.min.css --minify
     - name: Generate Pagefind search index
       run: npx pagefind --site "public"
     - name: Upload artifact
