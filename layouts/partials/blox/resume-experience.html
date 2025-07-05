@@ -31,7 +31,13 @@
   });
 </script>
 
-{{ partial "components/toggles/toggle-details.html" . }}
+{{ partial "components/toggles/toggle-details.html" (dict
+    "page" .Page
+    "icon_set" "folder_outline"
+    "section_id" "section-resume-experience"
+    "target_selector" ".cv_work_details details"
+    "aria_label" "Toggle details section"
+) }}
 <!-- 
 ✅ The partial now includes:
 * Alpine state management

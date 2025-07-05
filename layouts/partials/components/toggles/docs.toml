@@ -1,0 +1,28 @@
+[[partials.components.toggles.toggle-details]]
+usage = '''
+{{ partial "components/toggles/toggle-details.html" (dict
+    "page" .Page
+    "icon_set" "folder_outline"
+    "section_id" "section-resume-experience"
+    "target_selector" ".cv_work_details details"
+    "aria_label" "Toggle details section"
+) }}
+'''
+
+description = "Creates a sticky toggle button powered by Alpine.js to expand/collapse scoped <details> blocks."
+
+[partials.components.toggles.toggle-details.parameters]
+page            = "Required. Pass .Page object to enable Alpine.js."
+icon_set        = "Optional. Icon pair for toggle states. Default: 'folder_outline'."
+section_id      = "Optional. DOM container ID for scoped query. Default: 'section-resume-experience'."
+target_selector = "Optional. CSS selector for targeted <details>. Default: '.cv_work_details details'."
+aria_label      = "Optional. Accessibility label. Default: 'Toggle details'."
+
+[partials.components.toggles.toggle-details.icon_sets]
+book            = "📖 / 📕"
+news            = "📰 / 🗞️"
+folder          = "📂 / 📁"
+folder_outline  = "🗁 / 🗀"
+gesture         = "👐 / 🙏"
+finger          = "👉 / 👇"
+caret           = "🔽 / ▶️"
