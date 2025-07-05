@@ -159,7 +159,7 @@
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-        <ul class="text-sm list-none space-y-1 pl-3" style="text-indent: -2em; padding-left: 1em;">
+        <ul class="text-base text-white font-medium leading-tight tracking-normal m-3 p-3 list-none space-y-1 pl-3" style="text-indent: -2em; padding-left: 1em;">
         {{ range . }}
         <li>
             {{ with .name }}
@@ -181,7 +181,7 @@
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-      <ul class="text-sm list-disc space-y-1 pl-5">
+      <ul class="text-base text-white font-medium leading-tight tracking-normal m-3 p-3 list-disc space-y-1 pl-5">
         {{ range . }}
         <li>
           {{ . | markdownify | emojify }}
@@ -198,7 +198,7 @@
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-      <ul class="text-sm">
+      <ul class="text-base">
         {{ range . }}
         {{ if .degree }}
         <li class="flex items-start gap-1">
@@ -212,19 +212,19 @@
 
             {{/* Education Icons */}}
             {{ with .icon }}
-            <div class="my-auto w-72 shrink-0 mr-1" style="height:3.6em; width:3.6em;" >
+            <div class="text-white my-auto w-72 shrink-0 mr-1" style="height:3.6em; width:3.6em;" >
               {{ partial "functions/get_icon" (dict "name" . "attributes" "style='height:3.3em;width:2.7em;' class='flex-shrink-0 mx-auto'")  }}
             </div>
             {{ end }}
             
-          <div class="description">
-            <p class="course">{{ .institution }}{{ with .date_end }},
+          <div class="m-0 p-0">
+            <p class="uni text-xl font-serif font-extrabold leading-tight m-0 p-0">{{ .institution }}{{ with .date_end }},
                 {{ $d := split . "-" }} 
                 {{ index $d 0 }}
                 {{ end }}
             </p>
             {{ range (split .area "\n") }}
-            <p class="text-xs">{{ . | markdownify }}</p>
+            <p class="degree text-base text-white font-medium leading-tight tracking-normal m-0 p-0">{{ . | markdownify }}</p>
             {{ end }}
           </div>
         </li>
