@@ -299,7 +299,8 @@ language_skills:
     description: " —— 具備高校正式課程與線上平台授課經驗"
 ---
 
-### 關於我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})
+## 關於我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})
+{class="text-3xl"}
 
 廖漢騰是一位資料科學家與教育工作者，專精於**智能開放協作**、**中文網際網路研究**以及**技術路線圖**規劃（主要基於**科學計量學**與**設計工作坊**）。
 

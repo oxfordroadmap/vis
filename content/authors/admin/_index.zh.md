@@ -299,7 +299,8 @@ language_skills:
     description: " —— 具备高校正式课程与线上平台授课经验"
 ---
 
-### 关于我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})
+## 关于我 - [About Me]({{% ref path="/experience" lang="en" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}})
+{class="text-3xl"}
 
 廖汉腾是一位数据科学家和教育工作者，专注于**智能开放协作**、**中国互联网**以及**技术路线图**规划（主要基于**科学计量学**与**设计工作坊**）。
 

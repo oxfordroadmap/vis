@@ -46,11 +46,11 @@
 
 
     {{/* 01-02, id="profile" Surrounding Portrait Photo */}}
-    <div id="profile" class="flex flex-row md:flex-col gap-3 justify-center items-center">
+    <div id="profile" class="flex flex-col gap-3 justify-center items-center">
 
         {{/*  01 _flex_1/2_ Portrait == avatar-wrapper: w-1/2 2/3 full  */}}
         {{ if $avatar }}
-        <div class="relative flex-none w-2/3 sm:w-1/2 md:w-full  justify-self-center text-center">
+        <div class="relative flex-none w-full justify-self-center text-center">
             {{ $avatar_image := $avatar.Fill "250x250 Center" }}
             <img class="avatar mx-auto rounded-full bg-white dark:bg-gray-900 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
@@ -59,7 +59,7 @@
         {{ end }}{{/* End of 01 Portrait */}}
 
         {{/* 02 _flex-1/2_  Name+Position == portrait */}} 
-        <div class="flex-1 w-1/3 sm:w-1/2 md:w-full portrait-title dark:text-white justify-self-center text-center">
+        <div class="flex-1 w-full portrait-title dark:text-white justify-self-center text-center">
 
             {{/* 02.A Name: https://developer.mozilla.org/zh-TW/docs/Web/HTML/Reference/Elements/ruby */}} 
             <div class="text-3xl font-bold mb-2 mt-6">
@@ -127,7 +127,7 @@
     {{/* 03.A Content Text */}} 
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-    <div class="bio-text text-xl space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+    <div class="bio-text text-2xl space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
     </div>
     </div>
