@@ -18,9 +18,9 @@
 {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
 
 
-{{/* TailwindCss Play:  https://play.tailwindcss.com/INArT4cDNw  */}}
+{{/* TailwindCss Play:  https://play.tailwindcss.com/y4tjBmSxB4  */}}
 
-<div class="resume-biography px-3 md:px-0 grid grid-cols-6 md:grid-cols-12 grid-flow-row justify-center gap-6 items-center content-stretch mx-auto h-auto" >
+<div class="resume-biography sm:px-7 px-5 md:px-3 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-center content-stretch mx-auto h-auto" >
   
   {{/* 00 Banner -- design.banner.filenam == If the banner is set, display it */}}
   {{ $img := "" }}
@@ -41,25 +41,25 @@
   {{ end }}
   {{ end }}  
 
-  {{/* 01 Portrait + 02 Name+Position col-span-4/12 */}}   
-  <div class="col-span-4 mx-auto justify-self-center">  
+  {{/*  01 Portrait + 02 Name+Position col-span: 6/6 8/8 4/12  */}}
+  <div class="sm:col-span-6 col-span-8 md:col-span-4 mx-auto justify-self-center">  
 
 
     {{/* 01-02, id="profile" Surrounding Portrait Photo */}}
     <div id="profile" class="flex flex-row md:flex-col gap-3 justify-center items-center">
 
-        {{/* 01 _flex_1/2_ Portrait == avatar-wrapper */}} 
+        {{/*  01 _flex_1/2_ Portrait == avatar-wrapper: w-1/2 2/3 full  */}}
         {{ if $avatar }}
-        <div class="avatar-wrapper flex-1/2 justify-self-right">
+        <div class="flex-none sm:w-1/2 w-2/3 md:w-full  justify-self-center text-center">
             {{ $avatar_image := $avatar.Fill "250x250 Center" }}
-            <img class="avatar rounded-full bg-white dark:bg-gray-900 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
+            <img class="avatar mx-auto rounded-full bg-white dark:bg-gray-900 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
             {{with $person.status.icon}}<span class="avatar-emoji">{{.|emojify}}</span>{{end}}
         </div>
         {{ end }}{{/* End of 01 Portrait */}}
 
         {{/* 02 _flex-1/2_  Name+Position == portrait */}} 
-        <div class="portrait-title dark:text-white flex-1/2 justify-self-right">
+        <div class="flex-1 sm:w-1/2 w-1/3 md:w-full portrait-title dark:text-white justify-self-center text-center">
 
             {{/* 02.A Name: https://developer.mozilla.org/zh-TW/docs/Web/HTML/Reference/Elements/ruby */}} 
             <div class="text-3xl font-bold mb-2 mt-6">
@@ -122,7 +122,7 @@
   </div>{{/* End of 01 Portrait + 02 Name+Position*/}} 
 
   {{/* 03 Biography Text */}}{{/* This is the main content area for the biography */}}
-  <div class="col-span-8 justify-self-left max-w-prose px-7 mb-3 md:mt-3">
+  <div class="sm:col-span-6 col-span-8 md:col-span-8 justify-self-left text-left max-w-prose mx-3 mb-3 md:mt-5">
 
     {{/* 03.A Content Text */}} 
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
@@ -155,7 +155,7 @@
 
   {{/* 04 Skills */}} 
     {{ with $person.skillsets }}
-    <div class="col-span-3 justify-self-stretch prose prose-slate dark:prose-invert">
+    <div class="sm:col-span-3 col-span-4 md:col-span-3 justify-self-center text-left ml-3 prose prose-slate dark:prose-invert">
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -177,7 +177,7 @@
 
   {{/* 05 Interests */}} 
     {{ with $person.interests }}
-    <div class="col-span-3 justify-self-stretch prose prose-slate dark:prose-invert">
+    <div class="sm:col-span-3 col-span-4 md:col-span-3 justify-self-center text-left ml-3 prose prose-slate dark:prose-invert">
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -194,7 +194,7 @@
 
   {{/* 06 Education */}}
     {{ with $person.education }}
-    <div class="col-span-6 justify-self-left prose prose-slate dark:prose-invert">    
+    <div class="sm:col-span-6 col-span-8 md:col-span-6 justify-self-left text-left mx-3 prose prose-slate dark:prose-invert">    
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
