@@ -194,7 +194,7 @@
 
   {{/* 06 Education */}}
     {{ with $person.education }}
-    <div class="col-span-8 sm:col-span-6 md:col-span-6 justify-self-left text-left mx-3 prose prose-slate dark:prose-invert">    
+    <div class="col-span-8 sm:col-span-6 md:col-span-6 justify-self-left text-left mx-3 not-prose text-white">    
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -218,7 +218,7 @@
             {{ end }}
             
           <div class="m-0 p-0">
-            <p class="uni text-xl font-serif font-extrabold leading-tight m-0 p-0">{{ .institution }}{{ with .date_end }},
+            <p class="uni text-xl text-amber-50 font-serif font-semibold leading-tight m-0 p-0">{{ .institution }}{{ with .date_end }},
                 {{ $d := split . "-" }} 
                 {{ index $d 0 }}
                 {{ end }}
