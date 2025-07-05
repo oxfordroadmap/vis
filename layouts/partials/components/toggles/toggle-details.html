@@ -19,14 +19,14 @@
     "caret"           (dict "open" "🔽" "closed" "▶️")
 }}
 
-{{ $icon_set := .icon_set | default "folder_outline" }}
-{{ $section_id := .section_id | default "section-resume-experience" }}
+{{ $icon_set       := .icon_set | default "folder_outline" }}
+{{ $section_id     := .section_id | default "section-resume-experience" }}
 {{ $target_selector := .target_selector | default ".cv_work_details details" }}
 {{ $aria_label     := .aria_label | default "Toggle details" }}
-
-{{ $icon := index $icons $icon_set | default (dict "open" "🗁" "closed" "🗀") }}
+{{ $icon           := index $icons $icon_set | default (dict "open" "🗁" "closed" "🗀") }}
 
 {{ .page.Store.Set "has_alpine" true }}
+
 <div x-data="{ expanded: true }"
      class="no-print sticky z-500 shadow-xl"
      style="top: 2rem; left: 1rem;">
