@@ -20,7 +20,7 @@
 
 {{/* TailwindCss Play:  https://play.tailwindcss.com/y4tjBmSxB4  */}}
 
-<div class="resume-biography sm:px-7 px-5 md:px-3 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-center content-stretch mx-auto h-auto" >
+<div class="resume-biography sm:px-7 px-5 md:px-3 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-start content-stretch mx-auto h-auto" >
   
   {{/* 00 Banner -- design.banner.filenam == If the banner is set, display it */}}
   {{ $img := "" }}
@@ -127,7 +127,7 @@
     {{/* 03.A Content Text */}} 
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-    <div class="bio-text text-2xl space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+    <div class="bio-text text-2xl leading-normal space-y-3" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
     </div>
     </div>
@@ -159,7 +159,7 @@
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-        <ul class="text-base md:text-xl text-white font-medium leading-normal tracking-normal m-3 py-0 pl-3 list-none" style="text-indent: -2em; padding-left: 1em;">
+        <ul class="text-base md:text-xl text-white font-medium leading-tight tracking-normal m-3 py-0 pl-3 list-none" style="text-indent: -2em; padding-left: 1em;">
         {{ range . }}
         <li>
             {{ with .name }}
@@ -181,7 +181,7 @@
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-      <ul class="text-base md:text-xl text-white font-medium leading-normal tracking-normal m-3 py-0 pl-5 list-disc">
+      <ul class="text-base md:text-xl text-white font-medium leading-tight tracking-normal m-3 py-0 pl-5 list-disc">
         {{ range . }}
         <li>
           {{ . | markdownify | emojify }}
@@ -198,7 +198,7 @@
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-      <ul class="text-base">
+      <ul class="text-base mt-3 py-3 pl-5">
         {{ range . }}
         {{ if .degree }}
         <li class="flex items-start gap-1">
@@ -224,7 +224,7 @@
                 {{ end }}
             </p>
             {{ range (split .area "\n") }}
-            <p class="degree text-base text-white font-medium leading-tight tracking-normal m-0 p-0">{{ . | markdownify }}</p>
+            <p class="degree text-base text-white font-medium leading-tight tracking-normal my-2 py-2">{{ . | markdownify }}</p>
             {{ end }}
           </div>
         </li>
