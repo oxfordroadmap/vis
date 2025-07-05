@@ -127,7 +127,7 @@
     {{/* 03.A Content Text */}} 
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-    <div class="bio-text formal-content text-2xl leading-normal space-y-3" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+    <div class="bio-text formal-content text-2xl leading-relaxed space-y-5" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
     </div>
     </div>
@@ -155,7 +155,7 @@
 
   {{/* 04 Skills */}} 
     {{ with $person.skillsets }}
-    <div class="col-span-4 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 leading-normal space-y-5 not-prose text-white">
+    <div class="col-span-4 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 not-prose text-white">
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -177,7 +177,7 @@
 
   {{/* 05 Interests */}} 
     {{ with $person.interests }}
-    <div class="col-span-4 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 leading-normal space-y-3 not-prose text-white">
+    <div class="col-span-4 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 not-prose text-white">
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
