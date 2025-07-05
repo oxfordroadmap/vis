@@ -1,0 +1,45 @@
+{{/*
+  Usage:
+    {{ partial "components/toggles/toggle-toc.html" (dict
+        "page" .Page
+        "icon_set" "book"
+        "section_id" "section-toc"
+        "target_selector" ".toc"
+        "aria_label" "Toggle table of contents"
+    ) }}
+*/}}
+
+{{ $icon_set        := .icon_set | default "book" }}
+{{ $section_id      := .section_id | default "section-toc" }}
+{{ $target_selector := .target_selector | default ".toc" }}
+{{ $aria_label      := .aria_label | default "Toggle table of contents" }}
+{{ $icons := dict
+    "book"            (dict "open" "📖" "closed" "📕")
+    "news"            (dict "open" "📰" "closed" "🗞️")
+    "folder"          (dict "open" "📂" "closed" "📁")
+    "folder_outline"  (dict "open" "🗁" "closed" "🗀")
+    "gesture"         (dict "open" "👐" "closed" "🙏")
+    "finger"          (dict "open" "👉" "closed" "👇")
+    "caret"           (dict "open" "🔽" "closed" "▶️")
+}}
+{{ $icon := index $icons $icon_set | default (dict "open" "📖" "closed" "📕") }}
+
+{{ .page.Store.Set "has_alpine" true }}
+
+<div x-data="{ expanded: true }"
+     class="no-print sticky z-500 shadow-xl"
+     style="top: 1.5rem; right: 1rem;">
+  <button id="toggleToc"
+          @click="
+            expanded = !expanded;
+            $el.closest('#{{ $section_id }}')
+                .querySelectorAll('{{ $target_selector }}')
+                .forEach(el => el.hidden = !expanded)"
+          aria-label="{{ $aria_label }}"
+          :aria-expanded="expanded.toString()"
+          class="mx-2 text-2xl text-gray-800 dark:text-gray-100 rounded
+                 focus:outline-none focus:ring focus:ring-sky-300
+                 hover:text-sky-600 transition-colors duration-200">
+    <span x-text="expanded ? '{{ $icon.open }}' : '{{ $icon.closed }}'">{{ $icon.open }}</span>
+  </button>
+</div>
