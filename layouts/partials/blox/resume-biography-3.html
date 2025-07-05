@@ -20,7 +20,7 @@
 
 {{/* TailwindCss Play:  https://play.tailwindcss.com/y4tjBmSxB4  */}}
 
-<div class="resume-biography sm:px-7 px-5 md:px-3 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-start content-stretch mx-auto h-auto" >
+<div class="resume-biography px-12 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-start content-stretch mx-auto h-auto" >
   
   {{/* 00 Banner -- design.banner.filenam == If the banner is set, display it */}}
   {{ $img := "" }}
@@ -155,7 +155,7 @@
 
   {{/* 04 Skills */}} 
     {{ with $person.skillsets }}
-    <div class="col-span-4 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 not-prose text-white">
+    <div class="col-span-5 sm:col-span-3 md:col-span-4 justify-self-center text-left ml-3 not-prose text-white">
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -177,7 +177,7 @@
 
   {{/* 05 Interests */}} 
     {{ with $person.interests }}
-    <div class="col-span-4 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 not-prose text-white">
+    <div class="col-span-3 sm:col-span-3 md:col-span-2 justify-self-center text-left ml-3 not-prose text-white">
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
