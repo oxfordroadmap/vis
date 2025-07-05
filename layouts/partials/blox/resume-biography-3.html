@@ -20,7 +20,7 @@
 
 {{/* TailwindCss Play:  https://play.tailwindcss.com/y4tjBmSxB4  */}}
 
-<div class="resume-biography px-12 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-start content-stretch mx-auto h-auto" >
+<div class="resume-biography px-6 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-start content-stretch mx-auto h-auto" >
   
   {{/* 00 Banner -- design.banner.filenam == If the banner is set, display it */}}
   {{ $img := "" }}
@@ -136,17 +136,21 @@
     {{/* 03.B `Button` Download CV */}}
     {{/* To Simplify!!   */}}
     {{ with $block.content.button }}
-    <div id="download_cv" class = "m-0 p-0 scale-90 group-hover:scale-100 transition-all duration-300 ease-in-out font-medium">
-    <a href="{{.url}}" target="_blank" class="mt-5 inline-flex items-center px-5 py-3 text-gray-900 bg-white border border-gray-200 border-solid rounded-lg hover:bg-gray-50 hover:text-primary-700 hover:border-dotted focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">      
-        <span id='svg_icon_download' class="w-7 h-7 flex items-center justify-center rounded-full ring-1 ring-slate-900 dark:ring-slate-200/20">
+    <div id="download_cv" class = "m-3 justify-self-center text-center scale-90 group-hover:scale-100 transition-all duration-300 ease-in-out font-medium">
 
-        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-        <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-        </svg>
 
+        {{ .Page.RenderString "{{< abutton id="download_cv" href="{{.url}}"  target="_blank" class="mx-auto"    color="amber" >}}🚀 Download CV Now 🚀{{< /abutton >}}" }}
+
+
+        <span id="svg_icon_download"
+              class="w-7 h-7 flex items-center justify-center rounded-full ring-1 ring-slate-900 dark:ring-slate-200/20">
+          <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M14.707 7.793a1 1 0 00-1.414.0L11 10.086V1.5a1 1 0 00-2 0v8.586L6.707 7.793A1 1 0 105.293 9.207l4 4a1 1 0 001.416.0l4-4a1 1 0 00-.002-1.414z"></path>
+            <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 01-4.95.0L4.55 12H2a2 2 0 00-2 2v4a2 2 0 002 2h16a2 2 0 002-2v-4a2 2 0 00-2-2zm-3 5a1 1 0 110-2 1 1 0 010 2z"></path>
+          </svg>
         </span>
-        <span class="px-5"> {{.text}} </span>
+
+        <span class="px-5 font-semibold">{{.text}}</span>
     </a>
     </div>
     {{ end }}
@@ -155,7 +159,7 @@
 
   {{/* 04 Skills */}} 
     {{ with $person.skillsets }}
-    <div class="col-span-5 sm:col-span-3 md:col-span-4 justify-self-center text-left ml-3 not-prose text-white">
+    <div class="col-span-4 sm:col-span-3 md:col-span-4 justify-self-center text-left ml-3 not-prose text-white">
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -194,7 +198,7 @@
 
   {{/* 06 Education */}}
     {{ with $person.education }}
-    <div class="col-span-8 sm:col-span-6 md:col-span-6 justify-self-left text-left mx-3 not-prose text-white">    
+    <div class="col-span-5 sm:col-span-6 md:col-span-6 justify-self-left text-left mx-3 not-prose text-white">    
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>

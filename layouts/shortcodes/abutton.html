@@ -1,0 +1,23 @@
+{{/*
+    Parameters
+    ----------
+    id :
+        Button id.
+    href : 
+        href.
+    target : default "_blank"
+        <a target="_blank|_self|_parent|_top|framename">
+    class : default ""
+        additional class names.
+    color : default "primary"
+        additional class names.
+*/}}
+{{ $id := {{- .Get "id" -}} | default "na" }}
+{{ $href := {{- .Get "href" -}} | default "#" }}
+{{ $target := {{- .Get "target" -}} | default "_blank" }}
+{{ $class := {{- .Get "class" -}} | default "" }}
+{{ $color := .Get "color" | default "primary" }} {{/* pre-defined by Tailwind: primary, secondary, amber *}}
+<a id="{{ $id }}" href="{{ $href }}" target="{{ $target }}"
+   class="rounded-lg text-base px-3 py-2.5 text-center me-1 mb-1 font-medium text-amber-900 hover:font-bold border-2 hover:outline-dotted  focus:outline-dashed   text-{{ $color }} hover:text-white bg-white hover:bg-{{ $color }}-900 border-{{ $color }}-500 focus:ring-{{ $color }}-300 focus:ring-4 {{ $class }}">
+  {{ .Inner | markdownify | emojify}}
+</a>
