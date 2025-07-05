@@ -20,7 +20,7 @@
 
 {{/* TailwindCss Play:  https://play.tailwindcss.com/INArT4cDNw  */}}
 
-<div class="resume-biography px-3 md:px-0 grid col-span-6 md:grid-cols-12 grid-flow-row justify-center gap-6 items-center content-stretch mx-auto h-auto" >
+<div class="resume-biography px-3 md:px-0 grid grid-cols-6 md:grid-cols-12 grid-flow-row justify-center gap-6 items-center content-stretch mx-auto h-auto" >
   
   {{/* 00 Banner -- design.banner.filenam == If the banner is set, display it */}}
   {{ $img := "" }}
@@ -155,7 +155,7 @@
 
   {{/* 04 Skills */}} 
     {{ with $person.skillsets }}
-    <div class="col-span-3 justify-self-stretch">
+    <div class="col-span-3 justify-self-stretch prose prose-slate dark:prose-invert">
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -177,7 +177,7 @@
 
   {{/* 05 Interests */}} 
     {{ with $person.interests }}
-    <div class="XXX col-span-3 justify-self-stretch">
+    <div class="col-span-3 justify-self-stretch prose prose-slate dark:prose-invert">
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -194,7 +194,7 @@
 
   {{/* 06 Education */}}
     {{ with $person.education }}
-    <div class="XXX col-span-6 justify-self-left">    
+    <div class="col-span-6 justify-self-left prose prose-slate dark:prose-invert">    
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
