@@ -75,7 +75,7 @@
             {{/* 02.B Role */}} 
             {{ with $person.role }}<h3 class="font-semibold mb-1">{{ . | markdownify | emojify }}</h3>{{ end }}
 
-            <div class="flex justify-center py-5" style="letter-spacing: -0.72em; font-size:32px; isolation: isolate; text-align: center;"> 
+            <div class="flex justify-center py-1" style="letter-spacing:-.72em;font-size:36px;isolation:isolate;text-align:center;translate: -0.5em;"> 
                 <div style="mix-blend-mode: darken; color: Magenta;">♞</div> 
                 <div style="mix-blend-mode: darken; color: Cyan;">♜</div> 
             </div>
@@ -127,7 +127,7 @@
     {{/* 03.A Content Text */}} 
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-    <div class="bio-text space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+    <div class="bio-text text-xl space-y-1" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
     </div>
     </div>
