@@ -58,7 +58,7 @@ interests:
   - 双化转型
 
 education:
-  - area: 哲学博士（DPhil.） 信息、传播与社会科学
+  - area: 🧭哲学博士（DPhil.） 信息、传播与社会科学
     degree: true
     icon: custom/oxford-uni
     institution: 牛津大学
@@ -70,7 +70,7 @@ education:
     #button:
     #  text: 'Read Thesis'
     #  url: 'https://example.com'
-  - area: 工学硕士 计算机科学与信息工程
+  - area: 💻工学硕士 计算机科学与信息工程
     degree: true
     icon: custom/NTU-uni
     institution: 国立台湾大学
@@ -78,7 +78,7 @@ education:
     date_end: 2004-06-30
     location: 台湾台北
     summary: 平均绩点 GPA 3.9
-  - area: 社会科学硕士 新闻学
+  - area: 🔍社会科学硕士 新闻学
     degree: true
     icon: custom/NTU-uni
     institution: 国立台湾大学
@@ -92,8 +92,8 @@ education:
     date_end: 2003-12-31
     location: 澳大利亚悉尼
   - area: |-
-      文学学士 外国语文学系 
-      工学学士 电机工程学系
+      🗺️文学学士 外国语文学系 
+      📶工学学士 电机工程学系
     degree: true
     icon: custom/NTU-uni
     institution: 国立台湾大学
