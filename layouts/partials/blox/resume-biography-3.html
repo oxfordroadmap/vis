@@ -136,12 +136,12 @@
     {{/* 03.B `Button` Download CV */}}
     {{/* To Simplify!!   */}}
     {{ with $block.content.button }}
-    <div id="download_cv" class = "m-3 justify-self-center text-center scale-90 group-hover:scale-100 transition-all duration-300 ease-in-out font-medium">
-
-
-        {{ .Page.RenderString "{{< abutton id="download_cv" href="{{.url}}"  target="_blank" class="mx-auto"    color="amber" >}}🚀 Download CV Now 🚀{{< /abutton >}}" }}
-
-
+    <div id="download_cv" class="m-3 justify-self-center text-center scale-90 group-hover:scale-100 transition-all duration-300 ease-in-out font-medium">
+      {{/* ✅ The backtick (\) syntax is Hugo’s preferred way to handle multi-line or nested template strings insideRenderString`. It avoids quote collisions and parses cleanly. */}}
+      {{ .Page.RenderString `
+            {{< abutton id="download_cv" href="{{ .url }}" target="_blank" class="mx-auto" color="amber" >}}🚀 Download CV Now 🚀{{< /abutton >}}
+          `
+      }}
         <span id="svg_icon_download"
               class="w-7 h-7 flex items-center justify-center rounded-full ring-1 ring-slate-900 dark:ring-slate-200/20">
           <svg class="w-4 h-4" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
