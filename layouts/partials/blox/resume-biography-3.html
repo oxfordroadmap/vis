@@ -50,11 +50,11 @@
 
         {{/*  01 _flex_1/2_ Portrait == avatar-wrapper: w-1/2 2/3 full  */}}
         {{ if $avatar }}
-        <div class="flex-none sm:w-1/2 w-2/3 md:w-full  justify-self-center text-center">
+        <div class="relative flex-none sm:w-1/2 w-2/3 md:w-full  justify-self-center text-center">
             {{ $avatar_image := $avatar.Fill "250x250 Center" }}
             <img class="avatar mx-auto rounded-full bg-white dark:bg-gray-900 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
-            {{with $person.status.icon}}<span class="avatar-emoji">{{.|emojify}}</span>{{end}}
+            {{with $person.status.icon}}<span class="avatar-emoji absolute bottom-0 right-0 text-3xl" style="transform: translate(-25%, -25%); font-size: 2rem;">{{.|emojify}}</span>{{end}}
         </div>
         {{ end }}{{/* End of 01 Portrait */}}
 
