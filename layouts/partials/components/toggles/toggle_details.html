@@ -1,0 +1,37 @@
+{{/*-----------------------------------------------
+  toggle-details.html
+
+  Purpose:
+    Reusable toggle button to expand/collapse <details>
+    blocks inside a scoped section using Alpine.js.
+
+  Usage:
+    {{ partial "components/toggles/toggle-details.html" . }}
+
+  Requirements:
+    - Host section must have an ID (e.g. #section-resume-experience)
+    - <details> blocks must be inside .cv_work_details elements
+
+  Dependencies:
+    - Alpine.js enabled via .Page.Store.Set "has_alpine" true
+--------------------------------------------------*/}}
+
+{{ .Page.Store.Set "has_alpine" true }}
+
+<div x-data="{ expanded: true }"
+     class="no-print sticky z-500 shadow-xl"
+     style="top:35%; left:5%; float:left;">
+  <button id="toggleAll"
+          @click="
+            expanded = !expanded;
+            $el.closest('#section-resume-experience')
+                .querySelectorAll('.cv_work_details details')
+                .forEach(el => el.open = expanded)"
+          aria-label="Toggle experience details"
+          :aria-expanded="expanded.toString()"
+          class="mx-2 text-2xl text-gray-800 dark:text-gray-100 rounded
+                 focus:outline-none focus:ring focus:ring-amber-300
+                 hover:text-amber-600 transition-colors duration-200">
+    <span x-text="expanded ? '🗁' : '🗀'"></span>
+  </button>
+</div>

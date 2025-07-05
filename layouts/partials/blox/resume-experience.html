@@ -31,9 +31,15 @@
   });
 </script>
 
-<!-- Toggle Button -->
-<div class="no-print sticky z-500 shadow-xl" style="top:35%;left:5%;float:left;" ><button aria-label="aria-expanded" id="toggleAll" class="mx-2 text-2xl text-gray-800 dark:text-gray-100 rounded">🗁</button></div>
-
+{{ partial "components/toggles/toggle-details.html" . }}
+<!-- 
+✅ The partial now includes:
+* Alpine state management
+* Click behavior, Icon switching (🗁 / 🗀), Accessibility enhancements (aria-label, aria-expanded)
+* Scoped targeting of .cv_work_details details within the same section
+🧭 Why Placement Matters
+* Alpine’s expanded state and the closest('#section-resume-experience') query rely on the button being a descendant of the section. If it’s placed outside the container, it won’t resolve .closest() properly—and your toggle won’t find the <details> elements to expand or collapse.-->
+<!-- experience content begins here -->
 
 <!--  Main Section Block Begins -->
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
