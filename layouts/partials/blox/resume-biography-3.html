@@ -201,7 +201,7 @@
       <ul class="text-base mt-3 py-3 pl-5">
         {{ range . }}
         {{ if .degree }}
-        <li class="flex items-start gap-1">
+        <li class="flex items-start gap-1 py-1">
 
             {{ $pack := or .icon_pack "fas" }}
             {{ $pack_prefix := $pack }}
@@ -217,14 +217,14 @@
             </div>
             {{ end }}
             
-          <div class="m-0 p-0">
+          <div class="m-0 py-1">
             <p class="uni text-xl text-amber-50 font-serif font-semibold leading-tight m-0 p-0">{{ .institution }}{{ with .date_end }},
                 {{ $d := split . "-" }} 
                 {{ index $d 0 }}
                 {{ end }}
             </p>
             {{ range (split .area "\n") }}
-            <p class="degree text-base text-white font-medium leading-tight tracking-normal my-2 py-2">{{ . | markdownify }}</p>
+            <p class="degree text-base text-white font-medium leading-tight tracking-normal my-0 pt-1">{{ . | markdownify }}</p>
             {{ end }}
           </div>
         </li>
