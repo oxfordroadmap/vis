@@ -159,7 +159,7 @@
         {{ $label := i18n "skillsets" }}
         {{ $anchor := $label | anchorize }}      
         <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-        <ul class="text-base md:text-xl text-white font-medium leading-tight tracking-normal m-3 py-0 pl-3 list-none" style="text-indent: -2em; padding-left: 1em;">
+        <ul class="text-base md:text-xl text-white font-medium leading-relaxed space-y-3 tracking-normal m-3 py-0 pl-3 list-none" style="text-indent: -2em; padding-left: 1em;">
         {{ range . }}
         <li>
             {{ with .name }}
@@ -181,7 +181,7 @@
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
-      <ul class="text-base md:text-xl text-white font-medium leading-tight tracking-normal m-3 py-0 pl-5 list-disc">
+      <ul class="text-base md:text-xl text-white font-medium leading-relaxed space-y-3 tracking-normal m-3 py-0 pl-5 list-disc">
         {{ range . }}
         <li>
           {{ . | markdownify | emojify }}
