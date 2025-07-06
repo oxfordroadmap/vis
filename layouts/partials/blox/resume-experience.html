@@ -17,13 +17,12 @@
 {{ $is_education_first := $block.design.is_education_first | default false }}
 
 <!-- a "wrapper dict" that defines the real Hugo Page object, passed down by the upstream template vs. .Page is only available at the top layout level (like single.html) -->
-{{ partial "components/toggles/toggle-details.html" (dict
-    "page" $page        
-    "icon_set" "folder_outline"
-    "section_id" "section-resume-experience"
-    "target_selector" ".cv_work_details details"
-    "aria_label" "Toggle details section"
-) }}
+  {{ partial "components/toggles/toggle-details.html" (dict
+      "page" $page
+      "icon_set" "folder_outline"
+      "target_selector" "#section-resume-experience details"
+      "aria_label" "Toggle details section"
+  ) }}
 <!-- 
 ✅ The partial now includes:
 * Alpine state management
@@ -42,12 +41,12 @@
 <!--  </article>-->
 
 <!-- Need Gap >= 3 when flex-row due to negative margin on cols (-start-3) -->
-<div class="flex flex-col lg:gap-x-6 w-100 px-6 sm:px-0 {{ if $is_education_first }}flex-col-reverse{{end}}">
+<div class="flex flex-col lg:gap-x-6 w-100 px-3 sm:px-0 md:px-3 lg:px-6 {{ if $is_education_first }}flex-col-reverse{{end}}">
 
 {{ if $person.work }}
 {{ $label := i18n "experience" }}
 {{ $anchor := $label | anchorize }}
-<div class="px-6 w-full" {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} >
+<div class="px-3 w-full" {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} >
   <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ $label }}</h3>
   <ol class="relative border-s border-gray-200 dark:border-gray-700">
     {{ range $idx, $key := $person.work }}
@@ -109,7 +108,7 @@
 {{ if $person.education }}
 {{ $label := i18n "education" }}
 {{ $anchor := $label | anchorize }}
-<div class="px-6 w-full" {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} >
+<div class="px-3 w-full" {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} >
   <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ $label }}</h3>
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
       {{ range $idx, $key := $person.education }}
