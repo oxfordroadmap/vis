@@ -3,8 +3,8 @@
 {{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
 
 {{/* Initialise */}}
-{{ $page := .wcPage }}
-{{ $block := .wcBlock }}
+{{ $page := .wcPage }} <!-- a "wrapper dict" that defines the real Hugo Page object, passed down by the upstream template -->
+{{ $block := .wcBlock }} <!-- to avoid shadowing Hugo’s built-in .Page. -->
 {{ $text := $block.content.text | emojify | $page.RenderString }}
 
 {{ $author := $block.content.username | default "admin" }}
@@ -31,8 +31,9 @@
   });
 </script>
 
+<!-- a "wrapper dict" that defines the real Hugo Page object, passed down by the upstream template vs. .Page is only available at the top layout level (like single.html) -->
 {{ partial "components/toggles/toggle-details.html" (dict
-    "page" .Page
+    "page" .page        
     "icon_set" "folder_outline"
     "section_id" "section-resume-experience"
     "target_selector" ".cv_work_details details"
