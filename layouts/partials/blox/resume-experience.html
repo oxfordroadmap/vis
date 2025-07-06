@@ -33,7 +33,7 @@
 
 <!-- a "wrapper dict" that defines the real Hugo Page object, passed down by the upstream template vs. .Page is only available at the top layout level (like single.html) -->
 {{ partial "components/toggles/toggle-details.html" (dict
-    "page" .page        
+    "page" $page        
     "icon_set" "folder_outline"
     "section_id" "section-resume-experience"
     "target_selector" ".cv_work_details details"
