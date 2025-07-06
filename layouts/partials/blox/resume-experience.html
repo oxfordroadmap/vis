@@ -16,21 +16,6 @@
 {{ $person := $person_page.Params }}
 {{ $is_education_first := $block.design.is_education_first | default false }}
 
-<!-- Script -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("toggleAll");
-    const allDetails = document.querySelectorAll("details");
-    let expanded = true;
-
-    toggleBtn.addEventListener("click", () => {
-      expanded = !expanded;
-      allDetails.forEach(el => el.open = expanded);
-      toggleBtn.textContent = expanded ? "🗁" : "🗀";
-    });
-  });
-</script>
-
 <!-- a "wrapper dict" that defines the real Hugo Page object, passed down by the upstream template vs. .Page is only available at the top layout level (like single.html) -->
 {{ partial "components/toggles/toggle-details.html" (dict
     "page" $page        
