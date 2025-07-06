@@ -31,7 +31,7 @@
 {{ .page.Store.Set "has_alpine" true }}
 
 <div x-data="{ expanded: false }"
-     class="no-print sticky top-4 right-4 z-50 shadow-xl">
+     class="no-print sticky top-4 right-4 z-50 shadow-xl border-2 rounded bg-primary-500/50">
   <button id="toggleToc"
           @click="expanded = !expanded"
           aria-label="{{ $aria_label }}"
