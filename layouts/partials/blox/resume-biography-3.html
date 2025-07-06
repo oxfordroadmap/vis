@@ -181,7 +181,7 @@
 
   {{/* 05 Interests */}} 
     {{ with $person.interests }}
-    <div class="col-span-3 sm:col-span-3 md:col-span-2 justify-self-center text-left ml-3 not-prose text-white">
+    <div class="col-span-3 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 not-prose text-white">
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -198,7 +198,7 @@
 
   {{/* 06 Education */}}
     {{ with $person.education }}
-    <div class="col-span-5 sm:col-span-6 md:col-span-6 justify-self-left text-left mx-3 not-prose text-white">    
+    <div class="col-span-5 sm:col-span-6 md:col-span-5 justify-self-left text-left mx-3 not-prose text-white">    
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
