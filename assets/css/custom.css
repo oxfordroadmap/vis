@@ -109,8 +109,7 @@ li.nav-item.dropdown {
     margin-right: auto;
 }  
 .bio-text > p{
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
 
 }
 
@@ -152,9 +151,11 @@ a:hover:not(.button):not(.rounded):not(.rounded-full):not(.rounded-lg) {
 
 /* fix tailwind topography excessive margin */
 p, h1, h2, h3, h4, h5, h6 {
-  margin-top:0 !important;
+  margin-top:1rem !important;
 }
-
+.uni, .degree {
+  margin-top:0rem !important;
+}
 .formal-content p:nth-of-type(n+2) {
   text-indent: 2em;
 }
