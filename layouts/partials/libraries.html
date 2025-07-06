@@ -1,9 +1,19 @@
 {{/* Load Alpine JS extension? */}}
 {{ if (.Scratch.Get "has_alpine") }}
   {{ $alpine_js := resources.Get "dist/lib/alpinejs/cdn.min.js" }}
-  {{ $alpine_js = $alpine_js | resources.Fingerprint "sha256" }}
-  <script src="{{ $alpine_js.RelPermalink }}" integrity="{{ $alpine_js.Data.Integrity }}" defer></script>
+  {{ if $alpine_js }}
+    {{ $alpine_js = $alpine_js | resources.Fingerprint "sha256" }}
+    <script 
+      src="{{ $alpine_js.RelPermalink }}" 
+      integrity="{{ $alpine_js.Data.Integrity }}" 
+      defer
+    ></script>
+  {{ else }}
+  <!-- 🐛 Alpine.js NOT FOUND: Please check assets/dist/lib/alpinejs/cdn.min.js -->
+  {{ end }}
 {{ end }}
+
+
 
 {{/* Show site search? */}}
 {{ $show_search := site.Params.header.navbar.show_search | default false }}
