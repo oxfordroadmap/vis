@@ -28,7 +28,7 @@
 
 {{ $icon := index $icons $icon_set | default (dict "open" "➕" "closed" "➖") }}
 
-{{ .page.Store.Set "has_alpine" true }}
+{{ .page.Scratch.Set "has_alpine" true }}  {{/* Safer API for flagging Alpine use; avoids undefined .Store errors. */}}
 
 <!-- partials/components/toggles/toggle-toc.html -->
 <div 

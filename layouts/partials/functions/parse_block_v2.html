@@ -21,14 +21,13 @@
 {{ end }}
 
 {{/* Markmap block: Workaround to make Hugo's .Page.Store.Set cascade up to the parent of headless pages */}}
-{{ if (or ($page.Page.Store.Get "has_markmap") $page.Params.has_markmap) }}
-  {{ warnf "BLOCK - promoting has_markmap: %v" ($block.Page.Store.Get "has_markmap") }}
-  {{ $page.Page.Store.Set "has_markmap" true }}
+{{ if (or ($page.Scratch.Get "has_markmap") $page.Params.has_markmap) }}
+  {{ $page.Page.Scratch.Set "has_markmap" true }}
 {{ end }}
 
 {{/* Mermaid block: Workaround to make Hugo's .Page.Store.Set cascade up to the parent of headless pages */}}
-{{ if (or ($page.Page.Store.Get "has_mermaid") $page.Params.has_mermaid) }}
-  {{ $page.Page.Store.Set "has_mermaid" true }}
+{{ if (or ($page.Page.Scratch.Get "has_mermaid") $page.Params.has_mermaid) }}
+  {{ $page.Page.Scratch.Set "has_mermaid" true }}
 {{ end }}
 
 {{/* Gallery block: Workaround to make Hugo's .Page.Store.Set cascade up from page blocks to the page context */}}

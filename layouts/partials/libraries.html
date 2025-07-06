@@ -1,5 +1,5 @@
 {{/* Load Alpine JS extension? */}}
-{{ if (.Page.Store.Get "has_alpine") }}
+{{ if (.Scratch.Get "has_alpine") }}
   {{ $alpine_js := resources.Get "dist/lib/alpinejs/cdn.min.js" }}
   {{ $alpine_js = $alpine_js | resources.Fingerprint "sha256" }}
   <script src="{{ $alpine_js.RelPermalink }}" integrity="{{ $alpine_js.Data.Integrity }}" defer></script>
@@ -93,7 +93,7 @@
 {{ end }}
 
 {{/* Mermaid */}}
-{{ if (or (.Page.Store.Get "has_mermaid") .Params.has_mermaid) }}
+{{ if (or (.Scratch.Get "has_mermaid") .Params.has_mermaid) }}
   {{ $mermaid_js := resources.Get "dist/lib/mermaid/mermaid.min.js" }}
   {{ $mermaid_config_js := resources.Get "js/hb-mermaid-config.js" }}
   {{ $mermaid_config_js = $mermaid_config_js | resources.Minify }}
@@ -102,7 +102,7 @@
 {{ end }}
 
 {{/* Markmap */}}
-{{ if (or (.Page.Store.Get "has_markmap") .Params.has_markmap) }}
+{{ if (or (.Scratch.Get "has_markmap") .Params.has_markmap) }}
 <style>
   .markmap > svg {
     width: 100%;
