@@ -360,7 +360,7 @@ awards:
 ---
 <p x-data="{ msg: 'Alpine is working!' }" x-text="msg" class="text-green-600 font-semibold"></p>
 
-## About Me - [关于我]({{% ref path="/experience" lang="zh" %}}) - [關於我]({{% ref path="/experience" lang="zh-hant" %}}) 
+## About Me - [关于]({{% ref path="/experience" lang="zh" %}}) - [關於]({{% ref path="/experience" lang="zh-hant" %}}) 我
 {class="text-3xl"}
 
 Han-Teng Liao is a data scientist and educator specializing in **intelligent open collaboration**, **the Chinese Internet**, and **technology roadmapping**—primarily grounded in **scientometrics** and **design workshops**. 
