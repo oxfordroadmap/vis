@@ -3,6 +3,7 @@ aliases: ["/zh-hant/廖漢騰/"]
 title: '經歷'
 date: 2025-01-25
 type: landing
+has_alpine: true
 
 design:
   spacing: '1.2rem'

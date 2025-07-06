@@ -3,6 +3,7 @@ aliases: ["/zh/廖汉腾/"]
 title: '经历'
 date: 2025-01-25
 type: landing
+has_alpine: true
 
 design:
   spacing: '1.2rem'
