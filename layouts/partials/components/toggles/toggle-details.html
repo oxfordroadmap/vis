@@ -29,9 +29,8 @@
 {{ .page.Scratch.Set "has_alpine" true }}
 <!-- {{ .page.Store.Set "has_alpine" true }} --> <!-- uses Hugo’s public API and avoids the risk of .Store being undefined. -->
 
-<div x-data="{ expanded: true }"
-     class="no-print sticky z-500 shadow-xl"
-     style="top: 2rem; left: 1rem;">
+<div x-data="{ expanded: false }"
+     class="no-print sticky z-500 top-80 left-10" style="top:3rem; padding-left:3rem;">
   <button id="toggleAll"
           @click="
             expanded = !expanded;
@@ -40,9 +39,9 @@
                 .forEach(el => el.open = expanded)"
           aria-label="{{ $aria_label }}"
           :aria-expanded="expanded.toString()"
-          class="mx-2 text-2xl text-gray-800 dark:text-gray-100 rounded
+          class= "mr-5 text-3xl text-primary-800 bg-primary-100/10 dark:text-white rounded
                  focus:outline-none focus:ring focus:ring-amber-300
-                 hover:text-amber-600 transition-colors duration-200">
+                 hover:text-amber-500 transition-colors duration-200">
     <span x-text="expanded ? '{{ $icon.open }}' : '{{ $icon.closed }}'">{{ $icon.open }}</span>
   </button>
 </div>
