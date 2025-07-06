@@ -20,7 +20,7 @@
 
 {{/* TailwindCss Play:  https://play.tailwindcss.com/y4tjBmSxB4  */}}
 
-<div class="resume-biography px-6 grid sm:grid-cols-6 grid-cols-8 md:grid-cols-12 grid-flow-row justify-center gap-3 items-start content-stretch mx-auto h-auto" >
+<div class="resume-biography px-6 grid grid-cols-8 sm:grid-cols-6 md:grid-cols-12 grid-flow-row justify-center gap-3 items-start content-stretch mx-auto h-auto" >
   
   {{/* 00 Banner -- design.banner.filenam == If the banner is set, display it */}}
   {{ $img := "" }}
@@ -42,7 +42,7 @@
   {{ end }}  
 
   {{/*  01 Portrait + 02 Name+Position col-span: 6/6 8/8 4/12  */}}
-  <div class="sm:col-span-6 col-span-8 md:col-span-4 mx-auto justify-self-center">  
+  <div class="col-span-8 sm:col-span-6 md:col-span-4 mx-auto justify-self-center">  
 
 
     {{/* 01-02, id="profile" Surrounding Portrait Photo */}}
@@ -127,7 +127,7 @@
     {{/* 03.A Content Text */}} 
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
     <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-    <div class="bio-text formal-content text-2xl leading-relaxed space-y-5" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+    <div class="bio-text formal-content text-xl leading-relaxed space-y-5" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
     </div>
     </div>
@@ -181,7 +181,7 @@
 
   {{/* 05 Interests */}} 
     {{ with $person.interests }}
-    <div class="col-span-3 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 not-prose text-white">
+    <div class="col-span-4 sm:col-span-3 md:col-span-3 justify-self-center text-left ml-3 not-prose text-white">
       {{ $label := i18n "interests" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
@@ -198,7 +198,7 @@
 
   {{/* 06 Education */}}
     {{ with $person.education }}
-    <div class="col-span-5 sm:col-span-6 md:col-span-5 justify-self-left text-left mx-3 not-prose text-white">    
+    <div class="col-span-8 sm:col-span-6 md:col-span-5 justify-self-left text-left mx-3 not-prose text-white">    
       {{ $label := i18n "education" }}
       {{ $anchor := $label | anchorize }}      
       <div class="section-subheading mb-3">{{ printf "[%s](#%s)" $label $anchor | markdownify }}</div>
