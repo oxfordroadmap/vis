@@ -9,14 +9,21 @@
   {{ end }}
 {{ end }}
 
-{{ partial "components/toggles/toggle-toc.html" (dict
-    "page" .Page
-    "icon_set" "toc"
-    "section_id" "section-toc"
-    "target_selector" "nav.hb-toc"
-    "aria_label" "Toggle Table of Contents (TOC)"
-) }}
+<!-- Alpine scope for TOC -->
+<div x-data="{ expanded: false }" class="relative">
 
+  <!-- TOC toggle button -->
+  <div class="no-print sticky top-4 right-4 z-50 flex justify-end">
+    {{ partial "components/toggles/toggle-toc.html" (dict
+        "page"      .Page
+        "icon_set"  "toc"
+        "section_id" "section-toc"
+        "target_selector" "nav.hb-toc"
+        "aria_label" "Toggle Table of Contents (TOC)"
+    ) }}
+  </div>
+
+<!-- The two-column layout starts here -->
 <div class="mx-auto flex max-w-screen-xl">
   {{ partial "components/sidebar.html" (dict "context" . "no_sidebar" true) }}
   <section id="section-toc">
@@ -173,5 +180,7 @@
 
     </main>
   </article>
-</div>
+</div><!-- **end**: The two-column layout -->
+
+</div><!-- **end**: Alpine scope for TO -->
 {{ end }}
