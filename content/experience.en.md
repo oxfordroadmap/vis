@@ -37,6 +37,7 @@ sections:
     content:
       username: admin
     design:
+      css_style: 'margin: 1rem 2rem;'
       # Hugo date format
       # date_format: 'January 2006'
       # Education or Experience section first?
