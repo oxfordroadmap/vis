@@ -84,7 +84,7 @@
       {{ with .summary }}
       {{ $label := i18n "details" }}
       <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300 text-wrap prose prose-slate dark:prose-invert">
-        <details class="cv_work_details" open>
+        <details class="cv_work_details" x-bind:open="expanded">
             <summary>{{ $label }}</summary>
             {{. | $page.RenderString }}
         </details>

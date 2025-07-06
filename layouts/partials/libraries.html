@@ -1,19 +1,33 @@
+{{/* ─── DEBUG START ─── */}}
+{{/* dump page info and Alpine flags */}}
+{{ $scratch := .Scratch.Get "has_alpine" }}
+{{ $store   := .Page.Store.Get "has_alpine" }}
+{{ $params  := .Params.has_alpine }}
+{{ if hugo.IsServer }}  <!-- only show during `hugo server` -->
+<div 
+  style="position:fixed;bottom:0;left:0;background:#000;color:#0f0;
+         padding:4px;font-size:12px;z-index:9999;"
+>
+  kind={{ .Kind }}
+  layout={{ .Layout }}
+  section={{ .Section }}
+  scratch={{ .Scratch.Get "has_alpine" }}
+  param={{ .Params.has_alpine }}
+</div>
+{{ end }}
+{{/* ─── DEBUG END ─── */}}
+
 {{/* Load Alpine JS extension? */}}
-{{ if (.Scratch.Get "has_alpine") }}
+{{ if or $params $scratch $store }} {{/*  if (.Scratch.Get "has_alpine") */}}
   {{ $alpine_js := resources.Get "dist/lib/alpinejs/cdn.min.js" }}
   {{ if $alpine_js }}
     {{ $alpine_js = $alpine_js | resources.Fingerprint "sha256" }}
-    <script 
-      src="{{ $alpine_js.RelPermalink }}" 
-      integrity="{{ $alpine_js.Data.Integrity }}" 
-      defer
-    ></script>
+    <script src="{{ $alpine_js.RelPermalink }}" integrity="{{ $alpine_js.Data.Integrity }}" defer></script>
   {{ else }}
   <!-- 🐛 Alpine.js NOT FOUND: Please check assets/dist/lib/alpinejs/cdn.min.js -->
+    <script>console.warn("🐛 alpine.js missing from assets")</script>
   {{ end }}
 {{ end }}
-
-
 
 {{/* Show site search? */}}
 {{ $show_search := site.Params.header.navbar.show_search | default false }}
