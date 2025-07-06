@@ -8,7 +8,7 @@
         "aria_label" "Toggle details section"
     ) }}
 */}}
-
+{{ warnf "ToggleDetails: page is of type %T" .page }}
 {{ $icons := dict
     "toc"             (dict "open" "➕" "closed" "➖")
     "book"            (dict "open" "📖" "closed" "📕")
@@ -26,7 +26,8 @@
 {{ $aria_label     := .aria_label | default "Toggle details" }}
 {{ $icon           := index $icons $icon_set | default (dict "open" "🗁" "closed" "🗀") }}
 
-{{ .page.Store.Set "has_alpine" true }}
+{{ .page.Scratch.Set "has_alpine" true }}
+<!-- {{ .page.Store.Set "has_alpine" true }} --> <!-- uses Hugo’s public API and avoids the risk of .Store being undefined. -->
 
 <div x-data="{ expanded: true }"
      class="no-print sticky z-500 shadow-xl"
