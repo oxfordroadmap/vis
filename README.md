@@ -110,3 +110,70 @@ We're an open source movement that depends on your support to stay online and th
 * [Hugo vs Quarto: Which One is Better for 2024?](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;quarto&#x2F;)
 * [Easily make an academic CV website to get more cites and grow your audience 🚀](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;easily-make-academic-website&#x2F;)
 <!--END_SECTION:news-->
+
+## Icons for Degrees
+
+### 🎓 DPhil (Ph.D.) – Information, Communication, and the Social Sciences 🧭
+Represents research, discourse, and societal systems:
+
+🧠 (U+1F9E0) – cognitive insight
+
+🗣️ (U+1F5E3) – speech and communication
+
+🌐 (U+1F310) – global and digital perspectives
+
+📊 (U+1F4CA) – data and societal analysis
+
+🧭 (U+1F9ED) – navigating complexity and values
+
+### 🖥️ M.Sc. – Computer Science and Information Engineering 🧑‍💻
+Captures software, logic, and computational structure:
+
+💻 (U+1F4BB) – computing and programming
+
+🧮 (U+1F9EE) – algorithms and calculations
+
+🧬 (U+1F9EC) – digital systems and AI modeling
+
+📡 (U+1F4E1) – networks and transmissions
+
+🧱 (U+1F9F1) – modular architecture (like your Hugo workflows!)
+
+### 📰 M.S.S. – Journalism 🔍
+Highlights media, narrative, and reporting:
+
+📰 (U+1F4F0) – news and articles
+
+📷 (U+1F4F7) – photojournalism
+
+✍️ (U+270D) – writing and storytelling
+
+🎙️ (U+1F399) – broadcasting and interviews
+
+🔍 (U+1F50D) – investigation and inquiry
+
+### 📚 B.A. – Foreign Languages and Literatures 🗺️
+Symbolizes multilingual study and cultural expression:
+
+📖 (U+1F4D6) – literature and interpretation
+
+🈺 (U+1F23A) – East Asian scripts
+
+🗺️ (U+1F5FA) – global linguistic geography
+
+🎭 (U+1F3AD) – theatrical and literary arts
+
+🗨️ (U+1F5E8) – dialogue and translation
+
+### ⚡ B.Sc. – Electrical and Electronic Engineering 📶
+Emphasizes circuitry, energy, and signal systems:
+
+⚙️ (U+2699) – mechanisms and hardware
+
+🔋 (U+1F50B) – energy and batteries
+
+📶 (U+1F4F6) – signal strength
+
+🔌 (U+1F50C) – connectors and flow
+
+🛠️ (U+1F6E0) – tools and assembly
