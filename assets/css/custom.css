@@ -148,3 +148,9 @@ img.icon {
   margin:0 !important;
  
 }
+
+.markmap svg {
+    max-width: 95vw !important;
+    min-width: 84vw !important;
+    height:100%;
+}

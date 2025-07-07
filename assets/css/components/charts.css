@@ -1,11 +1,22 @@
+/* markmap.js diagram div */
+div.markmap {
+    max-width: 95vw;
+    margin-bottom: 1rem;    
+  svg {
+    max-width: 95vw;
+    min-width: 88vw;
+  }
+}
+
+
 /* Mermaid.js diagram div */
 div.mermaid {
   width: 100%;
   margin-bottom: 1rem;
 
   svg {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
