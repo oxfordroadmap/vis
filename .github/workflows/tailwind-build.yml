@@ -1,0 +1,45 @@
+# .github/workflows/tailwind-build.yml
+name: Build TailwindCSS
+
+on:
+  push:
+    paths:
+      - 'assets/css/**'
+      - 'tailwind.config.js'
+      - 'postcss.config.js'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  buildTailwind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build TailwindCSS
+        run: |
+          mkdir -p assets/dist
+          npx tailwindcss -c tailwind.config.js -i ./assets/css/styles.css -o ./assets/dist/wc.min.css --minify
+        # -c tailwind.config.js: explicitly uses your Tailwind config file.
+        # -i ./assets/css/styles.css: points to your custom entry file.
+        # -o ./assets/dist/wc.min.css: outputs minified CSS to the correct dist location.
+      - name: Commit compiled CSS
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add assets/dist/wc.min.css
+          git commit -m "Build TailwindCSS: wc.min.css"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_DEPLOY }}
