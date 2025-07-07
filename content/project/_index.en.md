@@ -11,6 +11,7 @@ sections:
     id: 'top'
     content:
       title: 'Overview'
+      css_class: "items-start max-w-prose gap-3 justify-start px-3"
       text: |-
         {{< details summary="👉(Clickable) Project mindmap" open=true class="w-full md:w-auto">}}
         {{% include "/_snippet_/projects_all" %}}

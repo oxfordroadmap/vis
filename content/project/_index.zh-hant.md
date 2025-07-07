@@ -11,6 +11,7 @@ sections:
     id: 'top'
     content:
       title: '項目概覽'
+      css_class: "items-start max-w-prose gap-3 justify-start px-3"
       text: |-
         {{< details summary="👉所有項目思維導圖" open=true class="w-full md:w-auto">}}
         {{% include "/_snippet_/projects_all" %}}
