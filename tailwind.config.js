@@ -11,10 +11,10 @@ console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 module.exports = {
   content: [
     './hugo_stats.json',
-    './layouts/**/*.html',
     '**/libs/chroma/*.css',
     './**/*.svg',
     ...content_extra,
+    //    './layouts/**/*.html',
     // '../../starters/**/*.md',
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),
   ],
