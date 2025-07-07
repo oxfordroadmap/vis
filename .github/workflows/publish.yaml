@@ -57,11 +57,12 @@ jobs:
         run: npx pagefind --site "public"
       - name: Upload artifact only
         uses: actions/upload-pages-artifact@v3
+        #uses: actions/deploy-pages@v4
+        #uses: peaceiris/actions-gh-pages@v4
         with:
-        path: ./public
+          github_token: ${{ secrets.PAT_DEPLOY }}
+          path: ./public
   # when using "Upload artifact only" above, this step is needed
-  # This step is used to deploy the website to GitHub Pages hosting
-  # Deploy website to GitHub Pages hosting
 
   deploy:
    if: github.repository_owner != 'HugoBlox'
