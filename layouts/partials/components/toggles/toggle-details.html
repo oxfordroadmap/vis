@@ -24,9 +24,6 @@
 {{ $aria_label     := .aria_label | default "Toggle details" }}
 {{ $icon           := index $icons $icon_set | default (dict "open" "🗁" "closed" "🗀") }}
 
-{{ .page.Scratch.Set "has_alpine" true }}
-<!-- {{ .page.Store.Set "has_alpine" true }} --> <!-- uses Hugo’s public API and avoids the risk of .Store being undefined. -->
-
 <div x-data="{ expanded: false }"
      x-init="
        $el.querySelectorAll('{{ $target_selector }}')
