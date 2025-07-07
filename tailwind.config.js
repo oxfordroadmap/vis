@@ -14,7 +14,7 @@ module.exports = {
     '**/libs/chroma/*.css',
     './**/*.svg',
     ...content_extra,
-    //    './layouts/**/*.html',
+        './layouts/**/*.html',
     // '../../starters/**/*.md',
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),
   ],

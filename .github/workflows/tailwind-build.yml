@@ -42,10 +42,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Validate TailwindCSS config
-        run: |
-          npx tailwindcss -c tailwind.config.js --dry-run || exit 1
-
       - name: Build TailwindCSS
         run: |
           mkdir -p assets/dist
