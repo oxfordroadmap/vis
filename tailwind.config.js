@@ -9,7 +9,7 @@ console.log('content_extra: ${content_extra}');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    //'./hugo_stats.json',
+    './hugo_stats.json',
     '**/libs/chroma/*.css',
     './**/*.svg',
     './layouts/**/*.html',
@@ -52,12 +52,6 @@ module.exports = {
     },
     {
       pattern: /bg-white+/,
-    },
-    {
-      pattern: /bg-gray+/,
-    },
-    {
-      pattern: /bg-primary+/,
     },
     {
       pattern: /bg-gradient+/,
