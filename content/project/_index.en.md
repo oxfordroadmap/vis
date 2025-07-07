@@ -13,9 +13,12 @@ sections:
       title: 'Overview'
       css_class: "items-start max-w-prose gap-3 justify-start px-3"
       text: |-
-        {{< details summary="👉(Clickable) Project mindmap" open=true class="w-full md:w-auto">}}
+        {{< details summary="👉(Clickable) Project mindmap" open=true class="w-max" >}}
         {{% include "/_snippet_/projects_all" %}}
         {{< /details >}}
+    design:
+      css_style: "border: 1px dotted;"
+      css_class: "bg-amber-500/20"
   - block: collection
     id: 'CaseNetBib'
     content:
