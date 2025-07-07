@@ -1,9 +1,10 @@
 import 'dotenv/config'
 const defaultTheme = require('tailwindcss/defaultTheme')
 const typographyPlugin = require('@tailwindcss/typography');
+const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
 
 console.log('Current directory: ' + process.cwd());
-console.log('content_extra: ${content_extra}');
+//console.log('content_extra: ${content_extra}' + content_extra);
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,6 +14,7 @@ module.exports = {
     './assets/media/**/*.svg',
     './layouts/**/*.html',
     './content/**/*.md',
+    //...content_extra,
     //'../../starters/**/*.md',
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),
   ],
