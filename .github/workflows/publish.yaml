@@ -64,6 +64,12 @@ jobs:
       - name: Generate Pagefind search index
         run: npx pagefind --site "public"
 
+      #- name: Commit Hugo stats           #	📦 Prepares for TailwindCSS
+      #  run: |
+      #    git add public/hugo_stats.json
+      #    git commit -m "Save hugo_stats.json"
+      #    git push
+
       - name: Upload Hugo stats
         uses: actions/upload-artifact@v4   #	📦 Prepares for TailwindCSS         with:
           name: hugo-stats
