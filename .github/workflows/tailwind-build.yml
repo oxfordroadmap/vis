@@ -49,12 +49,18 @@ jobs:
         # -c tailwind.config.js: explicitly uses your Tailwind config file.
         # -i ./assets/css/styles.css: points to your custom entry file.
         # -o ./assets/dist/wc.min.css: outputs minified CSS to the correct dist location.
+        
+      - name: Pull latest changes from origin
+        run: |
+            git config --global user.name "GitHub Actions"
+            git config --global user.email "actions@github.com"
+            git fetch origin
+            git reset --soft origin/main
+
       - name: Commit compiled CSS
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add assets/dist/wc.min.css
-          git commit -m "Build TailwindCSS: wc.min.css"
-          git push
+            git add assets/dist/wc.min.css
+            git commit -m "Build TailwindCSS: wc.min.css" || echo "No changes to commit"
+            git push origin HEAD:main
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_DEPLOY }}
+            GITHUB_TOKEN: ${{ secrets.PAT_DEPLOY }}
