@@ -63,18 +63,12 @@ jobs:
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"  --gc --cleanDestinationDir
       - name: Generate Pagefind search index
         run: npx pagefind --site "public"
-
-      #- name: Commit Hugo stats           #	📦 Prepares for TailwindCSS
-      #  run: |
-      #    git add public/hugo_stats.json
-      #    git commit -m "Save hugo_stats.json"
-      #    git push
-
       - name: Upload Hugo stats
-        uses: actions/upload-artifact@v4   #	📦 Prepares for TailwindCSS         with:
+        #	📦 Prepares for TailwindCSS
+        uses: actions/upload-artifact@v4
+        with:
           name: hugo-stats
           path: ./public/hugo_stats.json
-
       - name: Upload artifact only
         uses: actions/upload-pages-artifact@v3  #	📦 Prepares your site for GitHub Pages deployment by uploading the static site as an artifact
         with:
