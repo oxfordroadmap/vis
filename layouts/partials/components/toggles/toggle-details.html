@@ -41,7 +41,7 @@
   :aria-expanded="expanded.toString()"
 x-on:click="
   expanded = !expanded;
-  document.querySelectorAll('#section-resume-experience details')
+  document.querySelectorAll('{{ $target_selector }}')
           .forEach(e => e.open = expanded)
 "
 >
