@@ -50,6 +50,7 @@ build:
   writeStats: true
   buildStats:
     enable: true
+    output: hugo_stats.json  # 👈 writes to root instead of /public/
   cachebusters:
     - source: assets/watching/hugo_stats\.json
       target: styles\.css
