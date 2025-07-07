@@ -358,8 +358,6 @@ awards:
     summary: |
       Digital Content.
 ---
-<p x-data="{ msg: 'Alpine is working!' }" x-text="msg" class="text-green-600 font-semibold"></p>
-
 ## About Me - [关于]({{% ref path="/experience" lang="zh" %}}) - [關於]({{% ref path="/experience" lang="zh-hant" %}}) 我
 {class="text-3xl"}
 
