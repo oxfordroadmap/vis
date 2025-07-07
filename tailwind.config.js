@@ -1,4 +1,4 @@
-//import 'dotenv/config'
+import 'dotenv/config'
 const defaultTheme = require('tailwindcss/defaultTheme')
 const typographyPlugin = require('@tailwindcss/typography');
 const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
@@ -10,12 +10,12 @@ console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // './hugo_stats.json',
+    './hugo_stats.json',
     './layouts/**/*.html',
     '**/libs/chroma/*.css',
     './**/*.svg',
-    '../../starters/**/*.md',
     ...content_extra,
+    // '../../starters/**/*.md',
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),
   ],
   plugins: [
