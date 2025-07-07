@@ -15,8 +15,8 @@ on:
         required: false
         default: 'false'
 
-# Provide permission to clone the repo and deploy it to GitHub Pages
 permissions:
+  # Provide permission to clone the repo and deploy it to GitHub Pages
   contents: read
   pages: write
   id-token: write
@@ -24,6 +24,7 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
+  # Ensures that only one deployment is active at a time
 
 jobs:
   buildHugo:
@@ -34,7 +35,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: true
-            # Fetch history for Hugo's .GitInfo and .Lastmod
+          # Fetch history for Hugo's .GitInfo and .Lastmod
           fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -65,29 +66,26 @@ jobs:
       - name: Upload artifact only
         uses: actions/upload-pages-artifact@v3  #	📦 Prepares your site for GitHub Pages deployment by uploading the static site as an artifact
         with:
-          github_token: ${{ secrets.PAT_DEPLOY }}
           path: ./public
   # when using "Upload artifact only" above, this step is needed
 
   deploy:
-   if: github.repository_owner != 'HugoBlox'
-   environment:
-     name: github-pages
-     url: ${{ steps.deployment.outputs.page_url }}
-   runs-on: ubuntu-latest
-   needs: Hugobulid
+    if: github.repository_owner != 'HugoBlox'
+    needs: buildHugo
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
     steps:
       - name: Prepare tag
         id: prepare_tag
         if: startsWith(github.ref, 'refs/tags/')
         run: |
-          TAG_NAME=$(echo "${GITHUB_REF}" | sed 's/refs\/tags\///')
+          TAG_NAME="${GITHUB_REF#refs/tags/}"
           echo "DEPLOY_TAG_NAME=deploy-${TAG_NAME}" >> "${GITHUB_OUTPUT}"
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # 🚢 Deploys the Pages artifact uploaded earlier via GitHub’s official deployment API
-        with:          
-          publish_dir: ./public
-          github_token: ${{ secrets.PAT_DEPLOY }}
+        uses: actions/deploy-pages@v4
+        with:
           tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
           tag_message: 'Deployment ${{ github.ref_name }}'  
