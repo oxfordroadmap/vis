@@ -5,7 +5,6 @@ const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.spli
 
 console.log('Current directory: ' + process.cwd());
 console.log('content_extra: ${content_extra}');
-console.log('../../starters/'+process.env.HB_TPL+'/hugo_stats.json')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,9 +12,10 @@ module.exports = {
     './hugo_stats.json',
     '**/libs/chroma/*.css',
     './**/*.svg',
+    './layouts/**/*.html',
+    './content/**/*.md',
     ...content_extra,
-        './layouts/**/*.html',
-    // '../../starters/**/*.md',
+    //'../../starters/**/*.md',
     // ...(process.env.HB_TPL ? '../../starters/'+process.env.HB_TPL+'/hugo_stats.json' : './hugo_stats.json'),
   ],
   plugins: [
@@ -69,17 +69,14 @@ module.exports = {
       pattern: /to-primary+/,
     },
     {
-      pattern: /(hover:)?border-primary-\d{3}/,
+      pattern: /(bg|border|text)-(primary|amber|gray)-(50|100|200|300|400|500|600|700|800|900|950)/,
+      variants: ['hover', 'focus', 'active', 'group-hover'],
     },
     {
-      pattern: /(hover:)?border-amber-\d{3}/,
+      pattern: /bg-transparent/,
+      variants: ['hover', 'focus', 'active', 'group-hover'],
     },
-    {
-      pattern: /(hover:)?bg-amber-\d{3}/,
-    },
-    {
-      pattern: /(hover:)?text-amber-\d{3}/,
-    },
+    'bg-transparent',
     {
       pattern: /space-y-(1|3|5|7|9)/,
     },
