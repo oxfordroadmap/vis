@@ -101,22 +101,6 @@ li.nav-item.dropdown {
   transform: rotate(180deg);
 }
 
-.avatar-wrapper {
-    position: relative;
-    width: 220px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}  
-.bio-text > p{
-  margin-bottom: 0.5em;
-
-}
-
-img.icon {
-  margin:0 !important;
-  
-}
 
 yt_learning {
   display: flex;
@@ -158,4 +142,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .formal-content p:nth-of-type(n+2) {
   text-indent: 2em;
+}
+
+img.icon {
+  margin:0 !important;
+ 
 }
