@@ -1,4 +1,4 @@
-import 'dotenv/config'
+//import 'dotenv/config'
 const defaultTheme = require('tailwindcss/defaultTheme')
 const typographyPlugin = require('@tailwindcss/typography');
 const content_extra = process.env.HB_TW_CONTENT ? process.env.HB_TW_CONTENT.split(', ') : '';
