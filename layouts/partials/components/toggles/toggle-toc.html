@@ -2,8 +2,7 @@
   Usage:
     {{ partial "components/toggles/toggle-toc.html" (dict
         "page" .Page
-        "icon_set" "toc"
-        "section_id" "section-toc"
+        "icon_set" "folder_outline"
         "target_selector" "nav.hb-toc"
         "aria_label" "Toggle table of contents"
     ) }}
@@ -20,48 +19,36 @@
     "caret"           (dict "open" "🔽" "closed" "▶️")
 }}
 
-
 {{ $icon_set        := .icon_set | default "toc" }}
-{{ $section_id      := .section_id | default "section-toc" }}
 {{ $target_selector := .target_selector | default "nav.hb-toc" }}
 {{ $aria_label      := .aria_label | default "Toggle table of contents" }}
 
 {{ $icon := index $icons $icon_set | default (dict "open" "➕" "closed" "➖") }}
 
-{{ .page.Scratch.Set "has_alpine" true }}  {{/* Safer API for flagging Alpine use; avoids undefined .Store errors. */}}
+{{ .page.Scratch.Set "has_alpine" true }}
+<!-- {{ .page.Store.Set "has_alpine" true }} --> <!-- uses Hugo’s public API and avoids the risk of .Store being undefined. -->
 
 <!-- partials/components/toggles/toggle-toc.html -->
-<div 
-  x-data="{ expanded: false }"
-  class="no-print fixed top-4 right-4 z-50 border-2 rounded bg-primary-500/50"
->
+<div x-data="{ expanded: false }"
+     x-init="
+       $el.querySelectorAll('{{ $target_selector }}')
+         .forEach(e => e.removeAttribute('open'))
+     "
+     class="no-print sticky top-[8rem] z-[199] border-2 rounded bg-primary-500/50"
+     style="top:8rem; margin-left:-2rem;">
   <!-- ① The toggle button -->
-  <button id="toggleToc"
-          @click="expanded  = !expanded "
-          aria-label="{{ $aria_label }}"
-          :aria-expanded="expanded.toString()"
-          class="ml-5 text-3xl text-gray-800 bg-primary-100/25 dark:text-gray-100 rounded
-                 focus:outline-none focus:ring focus:ring-sky-300
-                 hover:text-sky-600 transition-colors duration-200 transition">
-    <span x-text="expanded ? '{{ $icon.open }}' : '{{ $icon.closed }}'">{{ $icon.closed }}</span>
+    <button style="top:8rem; z-index:1000;"
+            class="mr-5 rounded-full text-2xl font-extrabold text-primary-900 bg-amber-500/50 dark:text-white focus:outline-none focus:ring focus:ring-amber-300 hover:text-amber-500 hover:bg-primary-500/50 transition-colors duration-200"
+    aria-label="{{ $aria_label }}"
+    :aria-expanded="expanded.toString()"
+    x-on:click="
+    expanded = !expanded;
+    const els = document.querySelectorAll('{{ $target_selector }}');
+    els.forEach(el => el.classList.toggle('hidden', !value));
+    els.forEach(el => el.classList.toggle('block', value));
+    "
+    >
+    <span x-text="expanded ? '{{ $icon.open }}' : '{{ $icon.closed }}'">{{ $icon.open }}</span>
+    </button>
   </button>
-
-  <template x-if="true">
-    <script>
-     document.addEventListener('alpine:init', () => {
-       Alpine.data('tocToggle', () => ({
-         expanded: false,
-         init() {
-           this.$watch('expanded', value => {
-             const els = this.$root
-               .closest('#{{ $section_id }}')
-               .querySelectorAll('{{ $target_selector }}');
-             els.forEach(el => el.classList.toggle('hidden', !value));
-             els.forEach(el => el.classList.toggle('block', value));
-            });
-          }
-        }));
-      });
-    </script>
-  </template>
 </div>
