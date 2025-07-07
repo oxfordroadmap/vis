@@ -55,15 +55,10 @@ jobs:
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"  --gc --cleanDestinationDir
       - name: Generate Pagefind search index
         run: npx pagefind --site "public"
-      - name: Deploy to GitHub Pages hosting
-        uses: peaceiris/actions-gh-pages@v4.0.0
+      - name: Upload artifact only
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-      #- name: Upload artifact only
-      # uses: actions/upload-pages-artifact@v3
-      #with:
-      #  path: ./public
+        path: ./public
   # when using "Upload artifact only" above, this step is needed
   # This step is used to deploy the website to GitHub Pages hosting
   # Deploy website to GitHub Pages hosting
@@ -83,10 +78,9 @@ jobs:
           echo "DEPLOY_TAG_NAME=deploy-${TAG_NAME}" >> "${GITHUB_OUTPUT}"
       - name: Deploy to GitHub Pages
         id: deployment
-        #uses: actions/deploy-pages@v4
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/deploy-pages@v4
+        #uses: peaceiris/actions-gh-pages@v4
+        with:          
           publish_dir: ./public
           tag_name: ${{ steps.prepare_tag.outputs.DEPLOY_TAG_NAME }}
           tag_message: 'Deployment ${{ github.ref_name }}'  
