@@ -216,7 +216,7 @@ skillsets:
       - name: 网站构建与设计
         description: "**构建** 多语言 (i18n/L10n) 静态网站与交互式文档，使用 Hugo 框架、YAML 与 Markdown（支持 mermaid、markmap 等）、渲染钩子（render hooks）与自定义短代码（shortcodes），整合前端框架与资源管理。"
         icon: devicon/hugo
-  - name: 📚 巧用开放知识
+  - name: 📚 应用开放知识
     description: 筛选并传播科学知识，以应对可持续发展的挑战（备有完整实用科研写作教程）
     items:
       - name: 开放科学
@@ -234,7 +234,7 @@ skillsets:
       - name: 自由与开放的地缘政治
         description: "**促进** 区域与跨领域对话，保障全球公共领域的跨大陆与跨海洋联系，特别强调在『三海倡议（3SI）』与『自由开放的印太地区』等区域倡议中，建设并累积国际公共财，以实现安全、繁荣与韧性联通"
         icon: custom/container_ships
-  - name: 🧰 应用开放知识工具
+  - name: 🧰 撬动开放知识工具
     description: 赋能个人与机构使用专利数据库与科学计量工具，开展洞察驱动的研究与创新（备有完整实作教程）
     items:
       - name: The Lens

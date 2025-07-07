@@ -216,7 +216,7 @@ skillsets:
       - name: Web Building and Design
         description: '**Build** multilingual (i18n/L10n)  static sites and interactive docs with integrated knowledge of Hugo, YAML, Markdown (e.g., markmap and Mermaid), render hooks, shortcodes, front-end frameworks, asset management, image processing, etc.'
         icon: devicon/hugo 
-  - name: 📚 Utilizing Open Knowledge
+  - name: 📚 Amplifying Open Knowledge
     description: filtering and disseminating scientific knowledge for sustainable development challenges (with practical scientific writing tutorials ready)
     items:
       - name: Open Science
@@ -234,7 +234,7 @@ skillsets:
       - name: Free and Open Geo-politics
         description: "**Fostering** regional and cross-sectoral dialogues for securing a global commons across continents and oceans by highlighting the needs for the building and accumulation of internatonal public goods, especially for secure, prosperous and resilient connections in regional initiatives such as Three Seas Initiative (3SI) and Free and Open Indo-Pacific."
         icon: custom/container_ships
-  - name: 🧰 Applying Open Knowledge Tools
+  - name: 🧰 Leveraging Open Knowledge Tools
     description: Empowering individuals to utilize patent databases and scientometric tools for insight-driven research and innovation (with practical tutorials ready)
     items:
       - name: The Lens
