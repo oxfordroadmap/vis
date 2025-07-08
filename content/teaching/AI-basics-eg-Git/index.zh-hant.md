@@ -13,8 +13,7 @@ tags:
 image:
   preview_only: true
 ---
-
-💓 激勵學生通過制作自己的 PRD📋 組合、原型和 AI 代理🤖 來實踐學習！
+💓 激勵學生實踐！ 制作 AI 代理🤖！展示自己的作品集（包括原型和 PRD📋）
 
 基於我在中國教授和開發課程的經驗，該課程以使用 <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) 和 [🤗Hugging Face Hub](https://huggingface.co/docs/hub/index) 的現代網頁開發為特色，我精心設計了一門名為“面向 LLM 驅動應用的網頁開發”的完整基礎課程，其特點是利用 LLM 構建智能應用， 在共 24 周的課程後，開始入門 `AI 工程` 並產出 LLM 應用**AI 代理🤖** 項目。
 

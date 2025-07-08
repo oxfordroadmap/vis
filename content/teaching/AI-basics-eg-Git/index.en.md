@@ -11,7 +11,7 @@ image:
   preview_only: true
 ---
 
-💓 Motivate students to learn by doing their own portfolios of PRDs📋, prototypes, and AI agents 🤖! 
+💓 Motivate students to do! Learn by doing AI agents 🤖! Curate their own portfolios of prototypes and PRDs📋. 
 
 Based on my teaching and curriculum-developing experiences in China that features modern web development using <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) and [🤗Hugging Face Hub ](https://huggingface.co/docs/hub/index), I have carefully designed a full foundational course of "Web Development for LLM-Powered Apps" that features building intelligent Apps using LLM, and producing AI agents within 24 weeks.
 

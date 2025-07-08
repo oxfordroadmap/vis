@@ -14,7 +14,7 @@ image:
   preview_only: true
 ---
 
-💓 激励学生通过制作自己的 PRD📋 组合、原型和 AI 代理🤖 来实践学习！
+💓 激励学生实践！ 制作AI 代理🤖 ！展示自己的作品集（包括产品原型 和PRD 📋）
 
 基于我在中国教授和开发课程的经验，该课程以使用 <i class="fab fa-github" aria-hidden="true"></i>[GitHub](https://github.com/) 和 [🤗Hugging Face Hub](https://huggingface.co/docs/hub/index) 的现代网页开发为特色，我精心设计了一门名为“面向 LLM 驱动应用的网页开发”的完整基础课程，其特点是利用 LLM 构建智能应用， 在共 24 周的课程后，开始入门 `AI 工程` 并产出 LLM 应用**AI 代理🤖** 项目。
 
