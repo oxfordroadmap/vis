@@ -1,0 +1,15 @@
+/* Default Base */
+nav.hb-toc {
+  @apply bg-gray-500/10;
+}
+
+/* Article Text: by default 'block' showing */
+nav#TableOfContents {
+  @apply bg-primary-500/10 hb-toc order-last basis-1/3 sm:basis-1/2 md:basis-1/4 print:hidden px-3 block;
+}
+
+/* Navigator-Header ToC: by default 'hidden' */
+nav#nav-toc {
+  @apply bg-amber-500/10 hb-toc order-last basis-1/3 sm:basis-1/2 md:basis-1/4 print:hidden px-3 hidden;
+}
+

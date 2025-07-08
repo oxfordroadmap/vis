@@ -109,4 +109,4 @@ a.rounded-lg:hover {
 
 
 @import "tailwindcss";
-@source "hugo_stats.json";
+/* imports all Tailwind layers (base, components, utilities) */

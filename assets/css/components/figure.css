@@ -1,0 +1,20 @@
+/* Responsive Width */
+/* ✅ 1. Define Default Float in Your CSS */
+figure {
+  @apply float-left w-full md:w-1/2 lg:w-1/3 mb-4 mr-4;
+}
+
+/* 🎛️ 2. Override for Right-Floating When Needed*/
+figure.img_right {
+  @apply float-right ml-4 mr-0;
+}
+
+figure img {
+  @apply w-full rounded;
+}
+
+figcaption {
+  @apply text-sm text-gray-600 mt-2;
+}
+
+

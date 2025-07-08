@@ -3,10 +3,13 @@
 
 /*! Hugo Blox Components | https://hugoblox.com */
 @import "main.css";
-/* no customization needed yet
+
 @import "./components/all.css";
-*/
+/* Customization Added */
+
 @import "./blox/all.css";
+/* Customization Added */
+
 /* no customization needed yet
 @import "./views/attachments.css";
 @import "chroma.css";
