@@ -10,9 +10,10 @@ console.log('Current directory: ' + process.cwd());
 module.exports = {
   content: [
     './hugo_stats.json',
-    '**/libs/chroma/*.css',
-    './assets/media/**/*.svg',
     './layouts/**/*.html',
+    './assets/**/*.css',
+    './assets/media/**/*.svg',
+    '**/libs/chroma/*.css',
     './content/**/*.md',
     //...content_extra,
     //'../../starters/**/*.md',
@@ -29,6 +30,10 @@ module.exports = {
     'task-list',   /* As it's added via JS */
     'pl-4', 'pl-8', 'pl-12',   /* TOC indents */
     'min-h-screen', /* Blox options */
+    {      
+      pattern: /justify-(start|end|center|between|around|evenly|normal|stretch)/,
+      variants: ['hover', 'focus', 'md'], 
+    },
     {
       pattern: /^list-(none|disc|decimal|square|roman)$/,
     },
