@@ -121,7 +121,7 @@ Focusing on improving and polishing both the Web site and PRD, learners must gat
 
 The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
 
-{{< details summary="details" name="Weekly Breakdown1" title="📅每周安排🗂" class="bg-gray-500/20" >}}
+{{< details summary="details" name="Weekly Breakdown1" title="📅每周安排🗂" class="bg-gray-500/25" >}}
 
 |Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
@@ -144,7 +144,7 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
 (Based on Web PRD + W3C Accessibility & Sustainability)
 
-{{< details summary="details" title="💼🧾 Personal Portfolio Project Template" name="Final Project1" class="bg-primary-500/20" >}}
+{{< details summary="details" title="💼🧾 Personal Portfolio Project Template" name="Final Project1" class="bg-primary-500/25" >}}
 
 #### 🏷️ Title
 - 🧱 **Design** a Sustainable and Accessible Web Portfolio 💼🧾
@@ -234,7 +234,7 @@ Learners must use and deploy **Github** and **[🤗Hugging Face Hub ](https://hu
 
 The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
 
-{{< details summary="see details" name="Weekly Breakdown2" title="📅每周安排🗂" class="bg-gray-500/20" >}}
+{{< details summary="see details" name="Weekly Breakdown2" title="📅每周安排🗂" class="bg-gray-500/25" >}}
 
 |Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
@@ -257,7 +257,7 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
 The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template) and provides students with an applied format for integrating documentation and deployment best practices.
 
-{{< details summary="details" title="🤖🧾 Personal AI PRD Project Template" name="Final Project2" class="bg-primary-500/20" >}}
+{{< details summary="details" title="🤖🧾 Personal AI PRD Project Template" name="Final Project2" class="bg-primary-500/25" >}}
 
 #### 🏷️ Title
 - 🧱 **Design** an AI-Powered Hugo **App & PRD** 🤖🧾

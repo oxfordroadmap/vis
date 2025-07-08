@@ -121,7 +121,7 @@ _第一門課程_
 
 下表描述了每周的主題、工具、概念和能力，所有這些都詳細說明了學習路徑的進展。
 
-{{< details summary="details" name="Weekly Breakdown1"  title="📅每周安排🗂" class="bg-gray-500/20" >}}
+{{< details summary="details" name="Weekly Breakdown1"  title="📅每周安排🗂" class="bg-gray-500/25" >}}
 
 |周📅|主題 🧩|工具🔧 & 概念🧠|具體能力💪|
 |---|---|---|---|
@@ -143,7 +143,7 @@ _第一門課程_
 
 （基於 Web PRD + W3C 可訪問性與可持續性）
 
-{{< details summary="details" title="💼🧾 個人作品集項目模板" name="Final Project1" class="bg-primary-500/20" >}}
+{{< details summary="details" title="💼🧾 個人作品集項目模板" name="Final Project1" class="bg-primary-500/25" >}}
 
 #### 🏷️ 標題
 
@@ -235,7 +235,7 @@ _第二門課程_
 
 下表描述了每周的主題、工具、概念和能力，所有這些都詳細說明了學習路徑的進展。
 
-{{< details summary="see details" name="Weekly Breakdown2"  title="📅每周安排🗂" class="bg-gray-500/20" >}}
+{{< details summary="see details" name="Weekly Breakdown2"  title="📅每周安排🗂" class="bg-gray-500/25" >}}
 
 |周📅|主題 🧩|工具🔧 & 概念🧠|具體能力💪|
 |---|---|---|---|
@@ -257,7 +257,7 @@ _第二門課程_
 
 本項目特色為使用 [Miqdad Jaffer (OpenAI 產品負責人) 的 AI PRD 模板](https://www.productcompass.pm/p/ai-prd-template) ，此模板經企業市場實戰驗證。
 
-{{< details summary="details" title="🤖🧾 個人 AI PRD 項目模板" name="Final Project2" class="bg-primary-500/20" >}}
+{{< details summary="details" title="🤖🧾 個人 AI PRD 項目模板" name="Final Project2" class="bg-primary-500/25" >}}
 
 #### 🏷️ 標題
 - 🧱 **設計** 一個由 AI 驅動的 Hugo **應用與 PRD** ⛳
