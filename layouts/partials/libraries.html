@@ -134,7 +134,6 @@
 {{ if (or (.Params.has_markmap) (.Scratch.Get "has_markmap") (.Page.Store.Get "has_markmap") ) }}
 {{ $markmap_js := resources.Get "dist/lib/markmap/index.js" }}
 {{ $markmap_js = $markmap_js | resources.Minify | resources.Fingerprint "sha256" }}
-{{< rawhtml >}}
   <style>
     .markmap {
   		position: relative;
@@ -159,7 +158,6 @@
     };
   </script>
 <script defer src="{{ $markmap_js.RelPermalink }}" integrity="{{ $markmap_js.Data.Integrity }}"></script>
-{{</ rawhtml >}}
 {{ end }}
 
 {{/* Katex */}}
