@@ -22,6 +22,7 @@
     </div>
     <div class="page-body {{if ne .Type "landing"}} my-2{{end}}">
       {{ block "main" . }}{{ end }}
+      {{/* see  define "main"  */}}
     </div>
     <div class="page-footer">
       {{ partial "site_footer" . }}
