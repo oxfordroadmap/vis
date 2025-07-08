@@ -2,7 +2,7 @@
   Usage:
     {{ partial "components/toggles/toggle-toc.html" (dict
         "page" .Page
-        "icon_set" "folder_outline"
+        "icon_set" "gesture"
         "target_selector" "nav.hb-toc"
         "aria_label" "Toggle table of contents"
     ) }}
@@ -29,26 +29,20 @@
 <!-- {{ .page.Store.Set "has_alpine" true }} --> <!-- uses Hugo’s public API and avoids the risk of .Store being undefined. -->
 
 <!-- partials/components/toggles/toggle-toc.html -->
-<div x-data="{ expanded: false }"
-     x-init="
-       $el.querySelectorAll('{{ $target_selector }}')
-         .forEach(e => e.removeAttribute('open'))
-     "
-     class="no-print sticky top-[8rem] z-[199] border-2 rounded bg-primary-500/50"
-     style="top:8rem; margin-left:-2rem;">
+<span x-data="{ expanded: false }">
   <!-- ① The toggle button -->
-    <button style="top:8rem; z-index:1000;"
-            class="mr-5 rounded-full text-2xl font-extrabold text-primary-900 bg-amber-500/50 dark:text-white focus:outline-none focus:ring focus:ring-amber-300 hover:text-amber-500 hover:bg-primary-500/50 transition-colors duration-200"
+    <button id="toggle-toc" class="border-2 p-2 text-2xl font-extrabold text-primary-900 bg-amber-500/50 rounded-full focus:outline-none focus:ring focus:ring-amber-300 hover:text-white hover:bg-amber-500 transition-colors duration-200"
     aria-label="{{ $aria_label }}"
     :aria-expanded="expanded.toString()"
     x-on:click="
     expanded = !expanded;
     const els = document.querySelectorAll('{{ $target_selector }}');
-    els.forEach(el => el.classList.toggle('hidden', !value));
-    els.forEach(el => el.classList.toggle('block', value));
+    els.forEach(el => el.classList.toggle('hidden', !expanded));
+    els.forEach(el => el.classList.toggle('block', expanded));
     "
     >
+    <i class="fas fa-list-ul"></i>
     <span x-text="expanded ? '{{ $icon.open }}' : '{{ $icon.closed }}'">{{ $icon.open }}</span>
     </button>
   </button>
-</div>
+</span>

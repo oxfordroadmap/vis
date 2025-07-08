@@ -6,7 +6,8 @@
 {{- $on_this_page := T "on_this_page" }}
 {{- $edit_this_page := T "edit_page" }}
 
-<nav class="hb-toc order-last basis-1/4 md:basis-1/3 xl:block print:hidden px-3 block"
+{{/* Navigator-Header ToC: by default 'hidden'(cf. block) */}}
+<nav id="nav-toc" class="hb-toc hidden order-last basis-1/2" 
      x-show="expanded"
      aria-label="table of contents">
 
@@ -14,7 +15,7 @@
   {{- if $toc }}
   <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-3 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-3 rtl:-ml-3">
     {{- with .Fragments.Headings -}}
-    <p class="mb- font-semibold tracking-tight">{{ $on_this_page }}</p>
+    <span id="toc_icon_label" class="mb- font-semibold tracking-tight">{{ $on_this_page }}</span>
     {{- range . -}}
     <ul>
       {{- with .Headings -}}{{ template "toc-headings" (dict "headings" . "level" 0) }}{{- end -}}
