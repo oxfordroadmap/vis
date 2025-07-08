@@ -21,7 +21,7 @@ image:
 
 <!-- more -->
 
-{{< toc mobile_only=false is_open=true >}}
+{{< toc is_open=false >}}
 
 ## 系列課程信息與特點
 

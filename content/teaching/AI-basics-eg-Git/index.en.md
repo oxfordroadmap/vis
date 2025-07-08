@@ -19,7 +19,7 @@ It aims to replace or complement CS 101 courses for all disciplines, including m
 
 <!-- more -->
 
-{{< toc mobile_only=false is_open=true >}}
+{{< toc is_open=false >}}
 
 ## Course Info and Features
 

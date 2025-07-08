@@ -23,7 +23,7 @@ image:
 
 <!-- more -->
 
-{{< toc mobile_only=false is_open=true >}}
+{{< toc is_open=false >}}
 
 ## 系列课程信息与特点
 
@@ -32,6 +32,8 @@ image:
 > 要了解 _本系列_ 如何根据 AI 能力的新兴就业市场，涵盖包括 `工程`、`管理`、`营销`、`心理学`、`设计` 和 `新媒体` 等在内的多学科背景，请见：[🚢智能 API、ML 和 AI 学习路线图 🗿](#LearningRoadmap)
 
 ![Web Development with Github and Hugging Face](Web_Development_Github_HF.webp)
+{.float-left}
+
 
 ### _系列课程结构_
 
