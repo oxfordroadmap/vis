@@ -121,7 +121,7 @@ _第一門課程_
 
 下表描述了每周的主題、工具、概念和能力，所有這些都詳細說明了學習路徑的進展。
 
-{{< details summary="details" name="Weekly Breakdown1" >}}
+{{< details summary="details" name="Weekly Breakdown1"  title="📅每周安排🗂" class="bg-gray-500/20" >}}
 
 |周📅|主題 🧩|工具🔧 & 概念🧠|具體能力💪|
 |---|---|---|---|
@@ -235,7 +235,7 @@ _第二門課程_
 
 下表描述了每周的主題、工具、概念和能力，所有這些都詳細說明了學習路徑的進展。
 
-{{< details summary="see details" name="Weekly Breakdown2" >}}
+{{< details summary="see details" name="Weekly Breakdown2"  title="📅每周安排🗂" class="bg-gray-500/20" >}}
 
 |周📅|主題 🧩|工具🔧 & 概念🧠|具體能力💪|
 |---|---|---|---|

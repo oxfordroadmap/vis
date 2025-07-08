@@ -121,7 +121,7 @@ Focusing on improving and polishing both the Web site and PRD, learners must gat
 
 The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
 
-{{< details summary="details" name="Weekly Breakdown1" >}}
+{{< details summary="details" name="Weekly Breakdown1" title="📅每周安排🗂" class="bg-gray-500/20" >}}
 
 |Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
@@ -138,7 +138,7 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 |11|Taxonomies + PRD Writing 🔖|Tags, categories, ✍️ PRD basics|📑 **Outline** UI and content behavior using verbs + nouns|
 |12|Showcase & Peer Review 🎓|Deployment, rubric, walkthrough|🧪 **Evaluate** self + peer portfolios using clarity + UX metrics|
 
-  {{< /details >}}
+{{< /details >}}
   
 ### ⛳ Final Project Assignment Brief 
 
@@ -171,7 +171,8 @@ The table below describes, for each week, the topics, tools, concepts and capabi
   - 🔍 **Explain** design trade-offs related to accessibility and environmental impact ♼
   - 🧑‍🤝‍🧑 **Incorporate** peer feedback and highlight key self-revisions 👀
   - ⏿  **Publish** your reflections (blog post or README) with citations/links to valuable resources 📚
- {{< /details >}}
+
+{{< /details >}}
 
 ### 🧭 Project Evaluation & Reflection
 
@@ -233,7 +234,7 @@ Learners must use and deploy **Github** and **[🤗Hugging Face Hub ](https://hu
 
 The table below describes, for each week, the topics, tools, concepts and capabilities, all of which details the progression of the learning paths.
 
-{{< details summary="see details" name="Weekly Breakdown2" >}}
+{{< details summary="see details" name="Weekly Breakdown2" title="📅每周安排🗂" class="bg-gray-500/20" >}}
 
 |Week📅|Topics 🧩|Tools🔧 & Concepts🧠|Specific Capabilities💪|
 |---|---|---|---|
@@ -275,7 +276,7 @@ The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ 
 - 🗺️ **Frame** the **Strategic Context** 🧭 — including an executive summary and its (AI and AI capabilities) alignment to organizational strategy 
 - 💡 **Define** **Product & Technical Excellence** 🧰 — identifying customer needs, value proposition, and agent logic blueprints    
 - 💱 **Outline** the **Rollout Plan / Go-To-Market Strategy** 📢 — use cases, evaluation metrics (e.g. CSAT, grounding accuracy), and non-functional concerns like latency or hallucination mitigation
-  {{< /details >}}    
+{{< /details >}}    
 
 ### 🧭 Project Evaluation & Reflection
 
