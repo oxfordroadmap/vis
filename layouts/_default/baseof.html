@@ -5,8 +5,10 @@
 <html lang="{{$language_code}}" {{ if in site.Data.i18n.rtl.rtl $language_code }}dir="rtl"{{else}}dir="ltr"{{end}}
       data-wc-theme-default="{{ (lower site.Params.appearance.mode) | default "system" }}">
   {{ partial "site_head" . }}
+  {{ "<!-- HTML Structure: Body -->" | safeHTML }}
   <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
     <div id="page-bg"></div>
+    {{ "<!-- page-header: Div as if Semantic HTML elements: <header> , <footer> and <article>  -->" | safeHTML }}
     <div class="page-header {{ if site.Params.header.navbar.fixed_to_top }}sticky top-0 z-30{{ end }}">
       {{/* Load header block */}}
       {{ $show_navbar := ((site.Params.header.navbar.enable | default true) | and (ne .Params.header.navbar.enable false)) | or .Params.header.navbar.enable }}
@@ -20,10 +22,22 @@
         {{ end }}
       {{ end }}
     </div>
+    {{ "<!-- page-header: EXTRA Sticky ToC -->" | safeHTML }}
+    <div class="page-header sticky top-20 z-30 px-3 flex justify-end">
+      {{/* Load ToC block */}}
+    {{ partial "components/toggles/toggle-toc.html" (dict
+        "page" .Page
+        "icon_set" "gesture"
+        "target_selector" "nav.hb-toc"
+        "aria_label" "Toggle table of contents"
+    ) }}
+    </div>
+    {{ "<!-- page-body: Div to include block main -->" | safeHTML }}
     <div class="page-body {{if ne .Type "landing"}} my-2{{end}}">
       {{ block "main" . }}{{ end }}
       {{/* see  define "main"  */}}
     </div>
+    {{ "<!-- page-footer: Div as if Semantic HTML elements: <header> , <footer> and <article>  -->" | safeHTML }}
     <div class="page-footer">
       {{ partial "site_footer" . }}
     </div>
