@@ -135,7 +135,7 @@ a:hover:not(.button):not(.rounded):not(.rounded-full):not(.rounded-lg) {
 
 /* fix tailwind topography excessive margin */
 p, h1, h2, h3, h4, h5, h6 {
-  margin-top:1rem !important;
+  margin-top:0rem !important;
 }
 .uni, .degree {
   margin-top:0rem !important;
@@ -161,4 +161,14 @@ img.icon {
     right: 12px;
     margin: 0;
     z-index: 50;
+}
+
+div.callout_inner p,
+div.callout_inner h1,
+div.callout_inner h2,
+div.callout_inner h3,
+div.callout_inner h4,
+div.callout_inner h5,
+div.callout_inner h6 {
+  margin-top: 0rem !important;
 }
