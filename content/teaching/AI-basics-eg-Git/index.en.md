@@ -140,17 +140,14 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
   {{< /details >}}
   
-### 🧩 Final Project Assignment Brief 
+### ⛳ Final Project Assignment Brief 
 
 (Based on Web PRD + W3C Accessibility & Sustainability)
 
->  🧩 Project Template
-{class="inline-block"}
+{{< details summary="details" title="💼🧾 Personal Portfolio Project Template" name="Final Project1" >}}
 
-{{< details summary="details" name="Final Project1" >}}  
 #### 🏷️ Title
-
-- 🧱 **Design** a Sustainable and Accessible Web Portfolio 🧩
+- 🧱 **Design** a Sustainable and Accessible Web Portfolio 💼🧾
    
 #### 🎯 Goal
 - 🛠️ **Build** and 📄 **Document** a static portfolio site using **Hugo**, representing your learning journey and showcasing professional communication via a companion **Product Requirements Document (PRD)**.    
@@ -255,19 +252,14 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
   {{< /details >}}
   
-### 🧩 **Final Capstone Project**
+### ⛳ **Final Capstone Project**
 
-The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template)
+The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template) and provides students with an applied format for integrating documentation and deployment best practices.
 
+{{< details summary="details" title="🤖🧾 Personal AI PRD Project Template" name="Final Project2" >}}
 
->  🧩 Project Template
-{class="inline-block"}
-
-This project leverages a Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI) and provides students with an applied format for integrating documentation and deployment best practices.
-
- {{< details summary="details" name="Final Project2" >}}
 #### 🏷️ Title
-- 🧱 **Design** an AI-Powered Hugo **App & PRD** 🧩
+- 🧱 **Design** an AI-Powered Hugo **App & PRD** 🤖🧾
    
 #### 🎯 Goal
 - 🛠️ **Build** and 📄 **Document** a conversational agent or AI-powered integration that delivers clear value through a structured PRD—adapting Miqdad Jaffer’s example.
@@ -314,7 +306,7 @@ Grading Criteria focuses on the grasp of AI capabilities and professional expert
 Using and extending [Syllabus Components by Harvard](https://bokcenter.harvard.edu/syllabus-design), this post focuses on the following in the university learning context:
 - 🎯 **Course Goals / Learning Objectives**
 - 📅 **Weekly Breakdown / Course Schedule**
-- 🧩 **Final Project / Capstone (if applicable)**
+- ⛳ **Final Project / Capstone (if applicable)**
 - 🧮 **Grading Criteria / Assessment**
 - 🌐 **Technology & Online Tools**
 

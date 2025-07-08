@@ -139,18 +139,15 @@ _第一門課程_
 |12|展示與同行評審 🎓|部署, 評分標准, 演示|🧪 **評估** 個人 + 同行作品集，使用清晰度和用戶體驗指標|
 {{< /details >}}
   
-### 🧩 期末項目作業說明
+### ⛳ 期末項目作業說明
 
 （基於 Web PRD + W3C 可訪問性與可持續性）
 
->  🧩 項目模板
-{class="inline-block"}
-
-{{< details summary="details" name="Final Project1" >}}  
+{{< details summary="details" title="💼🧾 個人作品集項目模板" name="Final Project1" >}}
 
 #### 🏷️ 標題
 
-- 🧱 **設計** 一個可持續且可訪問的 Web 作品集 🧩
+- 🧱 **設計** 一個可持續且可訪問的 Web 作品集 💼
 
 #### 🎯 目標
 - 🛠️ **構建** 並 📄 **文檔化** 一個使用 **Hugo** 的靜態作品集網站，展示您的學習歷程，並通過配套的 **產品需求文檔 (PRD)** 展示專業溝通能力。
@@ -256,16 +253,15 @@ _第二門課程_
 |12|現場演示 + 同行反思 🎓|評分標准, 屏幕截圖, 演示|🧠 **使用** PRD 和用戶體驗性能指標評估同行應用|
 {{< /details >}}
 
-### 🧩 **期末頂點項目**說明
+### ⛳ **期末頂點項目**說明
 
 本項目特色為使用 [Miqdad Jaffer (OpenAI 產品負責人) 的 AI PRD 模板](https://www.productcompass.pm/p/ai-prd-template) ，此模板經企業市場實戰驗證。
 
->  🧩 項目模板
-{class="inline-block"}
+{{< details summary="details" title="🤖🧾 個人 AI PRD 項目模板" name="Final Project2" >}}
 
- {{< details summary="details" name="Final Project2" >}}
 #### 🏷️ 標題
-- 🧱 **設計** 一個由 AI 驅動的 Hugo **應用與 PRD** 🧩
+- 🧱 **設計** 一個由 AI 驅動的 Hugo **應用與 PRD** ⛳
+
 
 #### 🎯 目標
 - 🛠️ **構建** 並 📄 **文檔化** 一個會話代理或 AI 驅動的整合，通過結構化的 PRD 傳遞清晰的價值 — 借鑒 Miqdad Jaffer 的示例。    
@@ -309,7 +305,7 @@ _第二門課程_
 本文借鑒並擴展了 [哈佛大學的教學大綱組成部分 (Syllabus Components by Harvard)](https://bokcenter.harvard.edu/syllabus-design)，重點關注大學學習環境中的以下方面：
 - 🎯 **課程目標 / 學習目標**    
 - 📅 **每周安排 / 課程表**    
-- 🧩 **期末項目 / 畢業設計（如適用）**    
+- ⛳ **期末項目 / 畢業設計（如適用）**    
 - 🧮 **評分標准 / 評估**    
 - 🌐 **技術與在線工具**
 

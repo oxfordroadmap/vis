@@ -52,18 +52,23 @@ Renders an HTML details element.
 */}}
 
 {{- /* Get arguments. */}}
+{{- /* Get arguments. */}}
 {{- $class := or (.Get "class") "" }}
 {{- $name := or (.Get "name") "" }}
-{{- $summary_default := "details"  }}
-{{- $summary := or (.Get "summary")  $summary_default  }}
-{{- $summary := i18n $summary_default  }}
-{{- $title := or (.Get "title") "" }}
+{{- $summary_default := "details" }}
+{{- $summary_key := or (.Get "summary") $summary_default }}
+{{- $summary := i18n $summary_key }}
+
 {{- $open := false }}
 {{- if in (slice "false" false 0) (.Get "open") }}
   {{- $open = false }}
 {{- else if in (slice "true" true 1) (.Get "open") }}
   {{- $open = true }}
 {{- end }}
+
+{{- $title := .Get "title" | default "" }}
+{{- $summary_title := cond (ne $title "") (printf "%s — %s" $summary $title) $summary }}
+{{/* 🧠 Used cond (ne $title "") ... to avoid scoping pitfalls—no need to reassign inside an if. */}}
 
 {{- /* Render. */}}
 <details
@@ -72,6 +77,6 @@ Renders an HTML details element.
   {{- with $open }} open {{- end }}
   {{- with $title }} title="{{ . }}" {{- end -}}
 >
-  <summary>{{ $summary | .Page.RenderString }}</summary>
+  <summary>{{ $summary_title | .Page.RenderString }}</summary>
   {{ .Inner | .Page.RenderString (dict "display" "block") -}}
 </details>

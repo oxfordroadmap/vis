@@ -1,4 +1,5 @@
 ---
+has_alpine: true
 title: 网站应用开发--含大语言模型驱动应用
 date: 2025-06-30
 type: post
@@ -140,18 +141,15 @@ _第一门课程_
 |12|展示与同行评审 🎓|部署, 评分标准, 演示|🧪 **评估** 个人 + 同行作品集，使用清晰度和用户体验指标|
 {{< /details >}}
   
-### 🧩 期末项目作业说明
+### ⛳ 期末项目作业说明
 
 （基于 Web PRD + W3C 可访问性与可持续性）
 
->  🧩 项目模板
-{class="inline-block"}
-
-{{< details summary="details" name="Final Project1" >}}  
+{{< details summary="details" title="💼 个人作品集项目模板" name="Final Project1" >}}
 
 #### 🏷️ 标题
 
-- 🧱 **设计** 一个可持续且可访问的 Web 作品集 🧩
+- 🧱 **设计** 一个可持续且可访问的 Web 作品集 💼
 
 #### 🎯 目标
 - 🛠️ **构建** 并 📄 **文档化** 一个使用 **Hugo** 的静态作品集网站，展示您的学习历程，并通过配套的 **产品需求文档 (PRD)** 展示专业沟通能力。
@@ -257,16 +255,14 @@ _第二门课程_
 |12|现场演示 + 同行反思 🎓|评分标准, 屏幕截图, 演示|🧠 **使用** PRD 和用户体验性能指标评估同行应用|
 {{< /details >}}
 
-### 🧩 **期末顶点项目**说明
+### ⛳ **期末顶点项目**说明
 
 本项目特色为使用 [Miqdad Jaffer (OpenAI 产品负责人) 的 AI PRD 模板](https://www.productcompass.pm/p/ai-prd-template) ，此模板经企业市场实战验证。
 
->  🧩 项目模板
-{class="inline-block"}
+{{< details summary="details" title="🤖🧾 个人 AI PRD 项目模板" name="Final Project2" >}}
 
- {{< details summary="details" name="Final Project2" >}}
 #### 🏷️ 标题
-- 🧱 **设计** 一个由 AI 驱动的 Hugo **应用与 PRD** 🧩
+- 🧱 **设计** 一个由 AI 驱动的 Hugo **应用与 PRD** 🤖🧾
 
 #### 🎯 目标
 - 🛠️ **构建** 并 📄 **文档化** 一个会话代理或 AI 驱动的集成，通过结构化的 PRD 传递清晰的价值 — 借鉴 Miqdad Jaffer 的示例。    
@@ -310,7 +306,7 @@ _第二门课程_
 本文借鉴并扩展了 [哈佛大学的教学大纲组成部分 (Syllabus Components by Harvard)](https://bokcenter.harvard.edu/syllabus-design)，重点关注大学学习环境中的以下方面：
 - 🎯 **课程目标 / 学习目标**    
 - 📅 **每周安排 / 课程表**    
-- 🧩 **期末项目 / 毕业设计（如适用）**    
+- ⛳ **期末项目 / 毕业设计（如适用）**    
 - 🧮 **评分标准 / 评估**    
 - 🌐 **技术与在线工具**
 
