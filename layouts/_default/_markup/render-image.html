@@ -23,9 +23,8 @@
   {{- end -}}
 {{- end -}}
 
-<figure {{ with $fig_class }}class="{{.}}"{{end}} {{ with $id }}id="figure-{{ . }}"{{ end }}>
-  <div class="flex justify-center	">
-    <div class="w-100" {{ with $max_width }}style="max-width: {{.}}"{{end}}>
+<figure {{ with $fig_class }}class="{{ . }}"{{ end }} {{ with $id }}id="figure-{{ . }}"{{ end }}>
+  <div {{ with $max_width }}style="max-width: {{ . }};"{{ end }}>
       {{- if $img -}}
         {{- $isSVG := eq $img.MediaType.SubType "svg" -}}
         {{- $isGIF := eq $img.MediaType.SubType "gif" -}}
@@ -60,7 +59,6 @@
              {{- with $img_class }} class="{{.}}"{{end}} />
       {{- end -}}
     </div>
-  </div>
 
   {{- if $caption -}}
     {{/* Localize the figure numbering (if enabled). */}}
