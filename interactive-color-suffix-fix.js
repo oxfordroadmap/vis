@@ -160,7 +160,7 @@ function nearest(target, list) {
     final = `${newColor}-${newScale}${newOpacity ? '/' + newOpacity : ''}`;
   }
 
-  const replacement = `${prefix}${final}`;
+  const replacement = `${final}`;
   applyReplacement(file, full, replacement);
   console.log(`   ✔ replaced → ${replacement}\n`);
 }

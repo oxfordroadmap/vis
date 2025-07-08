@@ -8,12 +8,12 @@
 }
 
 .hb-card {
-  @apply flex flex-col justify-start overflow-hidden rounded-lg border border-gray-200 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200;
-  @apply hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-700 hover:bg-slate-50 hover:shadow-md dark:hover:border-neutral-600 dark:hover:bg-neutral-800;
+  @apply flex flex-col justify-start overflow-hidden rounded-lg border border-gray-300 text-current no-underline dark:shadow-none hover:shadow-gray-100 dark:hover:shadow-none shadow-gray-100 active:shadow-sm active:shadow-gray-200 transition-all duration-200;
+  @apply hover:border-gray-300 bg-transparent shadow-sm dark:border-neutral-700 hover:bg-gray-50 hover:shadow-md dark:hover:border-neutral-500 dark:hover:bg-neutral-700;
 }
 
 .hb-card-title {
-  @apply flex font-semibold items-start gap-2 text-gray-700 hover:text-gray-900 dark:text-neutral-200 dark:hover:text-neutral-50 items-center;
+  @apply flex font-semibold items-start gap-2 text-gray-700 hover:text-gray-950 dark:text-neutral-300 dark:hover:text-neutral-50 items-center;
 }
 
 .hb-card:hover svg {

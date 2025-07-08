@@ -18,7 +18,7 @@
 {{ $label := i18n "awards" }}
 {{ $anchor := $label | anchorize }}      
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
-  <div {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+  <div {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} class="mb-6 text-3xl font-bold text-gray-950 dark:text-white">
     {{ $label }}
   </div>
   {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
@@ -27,7 +27,7 @@
 <div class="w-full flex flex-col gap-3">
 {{ if $awards }}
 {{ range $idx, $key := sort $awards ".date_start" "desc" }}
-<div class="w-full p-6 border border-opacity-50 border-gray-500 folded-corner bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+<div class="w-full p-6 border border-gray-50 border-gray-500 folded-corner bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-50">
   {{- $icon := .icon }}
   {{ with $icon }}
   <div class="w-7 h-7 text-gray-700 dark:text-gray-300 mb-3">
@@ -35,7 +35,7 @@
   </div>
   {{ end}}
   {{with .url}}<a href={{.}} target="_blank" rel="noopener">{{end}}
-    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{{.title | markdownify | emojify}}</h5>
+    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-950 dark:text-white">{{.title | markdownify | emojify}}</h5>
   {{with .url}}</a>{{end}}
 
   <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
@@ -48,11 +48,11 @@
   </div>
 
   {{with .summary}}
-  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose">{{. | markdownify | emojify}}</div>
+  <div class="mb-3 font-normal text-gray-500 dark:text-gray-300 prose">{{. | markdownify | emojify}}</div>
   {{end}}
 
   {{ with .certificate_url }}
-  <a href="{{.}}" target="_blank" rel="noopener" class="inline-flex items-center text-primary-600 dark:text-primary-300 hover:underline">
+  <a href="{{.}}" target="_blank" rel="noopener" class="inline-flex items-center text-primary-500 dark:text-primary-300 hover:underline">
     {{ i18n "see_certificate" | default "See certificate" }}
     <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>

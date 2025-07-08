@@ -16,13 +16,13 @@
   @apply invisible absolute right-0 top-0 z-10 w-20 py-1
   cursor-pointer font-mono text-sm whitespace-nowrap
   rounded-bl-md rounded-tr-md
-  bg-neutral-200 text-neutral-700 opacity-90
-  dark:bg-neutral-600 dark:text-neutral-200;
+  bg-neutral-300 text-neutral-700 opacity-90
+  dark:bg-neutral-500 dark:text-neutral-300;
 }
 
 .copy-button:hover,
 .copy-button:focus,
 .copy-button:active,
 .copy-button:active:hover {
-  @apply bg-primary-100 dark:bg-primary-600;
+  @apply bg-primary-50 dark:bg-primary-500;
 }

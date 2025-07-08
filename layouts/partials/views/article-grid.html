@@ -21,7 +21,7 @@
     {{ $image = .Fit (printf "960x540 %s" $anchor) }}
   {{end}}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
-  <div class="overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800">
+  <div class="overflow-hidden rounded-md bg-gray-50 transition-all hover:scale-105 dark:bg-gray-700">
 
     <a
       class="relative block aspect-video"
@@ -53,13 +53,13 @@
           </span></a>
       </h2>
       <!--          </div>-->
-      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-400"><a
+      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-300"><a
         href="{{ $link }}" {{ $target | safeHTMLAttr }}>
         {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape -}}
       </a></p>
       </div>
       <div class="flex-none">
-        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-400 cursor-default">
+        <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-300 cursor-default">
           <!--          <a href="">-->
           {{ if $item.Params.authors }}
           <div class="flex items-center gap-3">
@@ -87,7 +87,7 @@
           </div>
           {{end}}
           <!--          </a>-->
-          <span class="text-xs text-gray-300 dark:text-gray-600">•</span>
+          <span class="text-xs text-gray-300 dark:text-gray-500">•</span>
           {{end}}
           <time class="truncate text-sm" datetime="{{ time.Format "2006-01-02" $item.Date }}">
           {{- $item.Date | time.Format (site.Params.locale.date_format | default ":date_long") -}}

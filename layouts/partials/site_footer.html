@@ -1,4 +1,4 @@
-<footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+<footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-gray-700 dark:text-gray-300">
 
   {{ partial "functions/get_hook" (dict "hook" "footer-start" "context" .) }}
 
@@ -10,7 +10,7 @@
   {{ end }}
   {{ partial $footer_section_path . }}
 
-  <p class="powered-by text-center text-xs/6 text-gray-600 dark:text-slate-400">
+  <p class="powered-by text-center text-xs/6 text-gray-500 dark:text-gray-300">
     {{ $is_sponsor := site.Params.i_am_a_sponsor | default false }}
     {{ $hide_published_with_footer := site.Params.power_ups.hide_published_with | default true }}
     {{ if not (and $is_sponsor $hide_published_with_footer) }}

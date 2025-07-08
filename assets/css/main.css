@@ -86,7 +86,7 @@ h6 {
     @apply py-2 px-4 rounded font-bold text-white bg-primary-500 border-solid hover:bg-primary-500/50 hover:border-dotted;
   }
   .powered-by a {
-    @apply underline text-secondary-800 hover:text-secondary-950 hover:bg-primary-500/50 dark:text-secondary-200;
+    @apply underline text-secondary-700 hover:text-secondary-950 hover:bg-primary-500/50 dark:text-secondary-300;
   }
   .blox-collection a, .nav-item a {
     @apply bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900;

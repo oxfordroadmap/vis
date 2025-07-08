@@ -28,8 +28,8 @@
   {{- $img = resources.Get (path.Join "media" .) -}}
   {{ if $img }}
     {{- $img = $img.Process "webp" -}}
-    <div class="w-full bg-gray-200 dark:bg-gray-900 flex flex-wrap items-center justify-center">
-      <div class="w-full bg-white rounded dark:bg-gray-800">
+    <div class="w-full bg-gray-300 dark:bg-gray-950 flex flex-wrap items-center justify-center">
+      <div class="w-full bg-white rounded dark:bg-gray-700">
         <div class="h-2/4 sm:h-64 overflow-hidden w-full">
           <img class="w-full object-cover"
                src="{{$img.RelPermalink}}"
@@ -52,7 +52,7 @@
         {{ if $avatar }}
         <div class="relative flex-none w-full justify-self-center text-center">
             {{ $avatar_image := $avatar.Fill "250x250 Center" }}
-            <img class="avatar mx-auto rounded-full bg-white dark:bg-gray-900 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
+            <img class="avatar mx-auto rounded-full bg-white dark:bg-gray-950 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
             {{with $person.status.icon}}<span class="avatar-emoji absolute p-1 text-3xl" style="transform: translate(-25%, -25%); font-size: 2rem;">{{.|emojify}}</span>{{end}}
         </div>
@@ -90,7 +90,7 @@
             {{ end }}
 
             {{/* 02.X ----- Social Network Icons ----- */}} 
-            <ul class="network-icon dark:text-zinc-100">
+            <ul class="network-icon dark:text-neutral-50">
                 {{ range $person.profiles }}
                 {{ $pack := or .icon_pack "fas" }}
                 {{ $pack_prefix := $pack }}
