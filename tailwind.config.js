@@ -12,8 +12,8 @@ module.exports = {
     './hugo_stats.json',
     './layouts/**/*.html',
     './assets/**/*.css',
-    './assets/media/**/*.svg',
-    '**/libs/chroma/*.css',
+    //'./assets/media/**/*.svg',
+    //'**/libs/chroma/*.css',
     //'./content/**/*.md',
     //...content_extra,
     //'../../starters/**/*.md',
@@ -68,9 +68,8 @@ module.exports = {
       pattern: /to-primary+/,
     },
     {
-      pattern: /(bg|border|text|ring)-(primary|secondary|neutral|amber|gray)-(50|100|300|500|700|900|950)/,
-      variants: ['','hover','focus','group-hover','dark','dark:hover','dark:focus',
-        'dark:group-hover'],
+      pattern: /(bg|border|text|ring)-(primary|secondary|neutral|amber|hb-dark)-(50|300|500|700|950)(\/(10|25|50|75|90))?/,
+      variants: ['','hover','focus','dark','dark:hover','dark:focus'],
     },
     {
       pattern: /bg-transparent/,
