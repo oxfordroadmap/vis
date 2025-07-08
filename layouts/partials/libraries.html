@@ -8,10 +8,14 @@
   style="position:fixed;bottom:0;left:0;background:#000;color:#0f0;
          padding:4px;font-size:12px;z-index:9999;"
 >
-  kind={{ .Kind }}
-  layout={{ .Layout }}
   section={{ .Section }}
-  scratch={{ .Scratch.Get "has_alpine" }}
+  type={{ .Type }}
+  kind={{ .Kind }}
+  Params_markmap={{ .Params.has_markmap }}
+  Params_alpine={{ .Params.has_alpine }}
+  layout={{ .Layout }}
+  scratch_alpine={{ .Scratch.Get "has_alpine" }}
+  store_alpine={{ .Page.Store.Get "has_alpine" }}
   param={{ .Params.has_alpine }}
 </div>
 {{ end }}
