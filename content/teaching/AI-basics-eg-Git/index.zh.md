@@ -145,7 +145,7 @@ _第一门课程_
 
 （基于 Web PRD + W3C 可访问性与可持续性）
 
-{{< details summary="details" title="💼 个人作品集项目模板" name="Final Project1" >}}
+{{< details summary="details" title="💼 个人作品集项目模板" name="Final Project1" class="bg-primary-500/20" >}}
 
 #### 🏷️ 标题
 
@@ -259,7 +259,7 @@ _第二门课程_
 
 本项目特色为使用 [Miqdad Jaffer (OpenAI 产品负责人) 的 AI PRD 模板](https://www.productcompass.pm/p/ai-prd-template) ，此模板经企业市场实战验证。
 
-{{< details summary="details" title="🤖🧾 个人 AI PRD 项目模板" name="Final Project2" >}}
+{{< details summary="details" title="🤖🧾 个人 AI PRD 项目模板" name="Final Project2" class="bg-primary-500/20" >}}
 
 #### 🏷️ 标题
 - 🧱 **设计** 一个由 AI 驱动的 Hugo **应用与 PRD** 🤖🧾

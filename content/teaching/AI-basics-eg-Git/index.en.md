@@ -144,7 +144,7 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
 (Based on Web PRD + W3C Accessibility & Sustainability)
 
-{{< details summary="details" title="💼🧾 Personal Portfolio Project Template" name="Final Project1" >}}
+{{< details summary="details" title="💼🧾 Personal Portfolio Project Template" name="Final Project1" class="bg-primary-500/20" >}}
 
 #### 🏷️ Title
 - 🧱 **Design** a Sustainable and Accessible Web Portfolio 💼🧾
@@ -257,7 +257,7 @@ The table below describes, for each week, the topics, tools, concepts and capabi
 
 The project features a [Proven AI PRD Template by Miqdad Jaffer (Product Lead @ OpenAI)](https://www.productcompass.pm/p/ai-prd-template) and provides students with an applied format for integrating documentation and deployment best practices.
 
-{{< details summary="details" title="🤖🧾 Personal AI PRD Project Template" name="Final Project2" >}}
+{{< details summary="details" title="🤖🧾 Personal AI PRD Project Template" name="Final Project2" class="bg-primary-500/20" >}}
 
 #### 🏷️ Title
 - 🧱 **Design** an AI-Powered Hugo **App & PRD** 🤖🧾

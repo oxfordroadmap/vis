@@ -143,7 +143,7 @@ _第一門課程_
 
 （基於 Web PRD + W3C 可訪問性與可持續性）
 
-{{< details summary="details" title="💼🧾 個人作品集項目模板" name="Final Project1" >}}
+{{< details summary="details" title="💼🧾 個人作品集項目模板" name="Final Project1" class="bg-primary-500/20" >}}
 
 #### 🏷️ 標題
 
@@ -257,7 +257,7 @@ _第二門課程_
 
 本項目特色為使用 [Miqdad Jaffer (OpenAI 產品負責人) 的 AI PRD 模板](https://www.productcompass.pm/p/ai-prd-template) ，此模板經企業市場實戰驗證。
 
-{{< details summary="details" title="🤖🧾 個人 AI PRD 項目模板" name="Final Project2" >}}
+{{< details summary="details" title="🤖🧾 個人 AI PRD 項目模板" name="Final Project2" class="bg-primary-500/20" >}}
 
 #### 🏷️ 標題
 - 🧱 **設計** 一個由 AI 驅動的 Hugo **應用與 PRD** ⛳
