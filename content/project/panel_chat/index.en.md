@@ -59,7 +59,7 @@ A list of the available examples:
 * ***interconnect*** _interactive data visualization_ and _LLM-based chatbots_, and thus 
 * ***orchestrate*** data pipelines and interactions.
 {{% /callout %}}
-<hr class="w-48 h-1 my-1 md:my-3 mx-auto border-8 border-black/80 dark:border-white/80 ">
+<hr class="w-48 h-1 my-1 md:my-3 mx-auto border-8 border-black/75 dark:border-white/80 ">
 
 ## Tasks
 

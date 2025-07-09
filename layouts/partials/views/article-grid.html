@@ -11,7 +11,7 @@
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ end }}
 
-<div class="group cursor-pointer">
+<div class="grid-item group">
 
   {{ with $resource }}
   {{ $image := "" }}
@@ -36,16 +36,16 @@
            width="{{ $image.Width }}"></a>
   </div>
   {{end}}
-  <div class="">
-    <div class="">
-      <div class="flex gap-3">
+  <div class="grid-item-textbox">
+    <div class="text-justify">
+      <div class="text-right">
         {{ range $index, $value := first 1 ($item.GetTerms "tags") }}
         <a href="{{.RelPermalink}}"><span
-          class="inline-block text-xs font-medium tracking-wider uppercase mt-5 text-primary-700 dark:text-primary-300">{{ .Page.LinkTitle }}</span></a>
+          class="grid-item-tag">{{ .Page.LinkTitle }}</span></a>
         {{end}}
       </div>
       <!--          <div class="relative line-clamp-2" style="display: block; height: 4em">-->
-      <h2 class="text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
+      <h2 class="grid-item-title text-lg font-semibold leading-snug tracking-tight mt-2 dark:text-white"><a
         href="{{ $link }}" {{ $target | safeHTMLAttr }}><span
         class="bg-gradient-to-r from-primary-200 to-primary-100 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px] dark:from-primary-800 dark:to-primary-900">
            {{- $item.Title -}}
@@ -53,15 +53,13 @@
           </span></a>
       </h2>
       <!--          </div>-->
-      <div class="grow"><p class="mt-2 line-clamp-3 text-sm text-gray-500 dark:text-gray-300"><a
-        href="{{ $link }}" {{ $target | safeHTMLAttr }}>
-        {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape -}}
-      </a></p>
+      <div class="grow"><p class="grid-item-text">
+        {{ ($item.Params.summary | default $item.Summary)  -}}
+      </p>
       </div>
-      <div class="flex-none">
+      {{ if $item.Params.authors }}
+      <div class="grid-item-author">
         <div class="mt-3 flex items-center space-x-3 text-gray-500 dark:text-gray-300 cursor-default">
-          <!--          <a href="">-->
-          {{ if $item.Params.authors }}
           <div class="flex items-center gap-3">
             {{ range $index, $value := first 1 ($item.GetTerms "authors") }}
             <div class="relative h-5 w-5 flex-shrink-0">
@@ -81,20 +79,20 @@
                 {{ warnf "An image named `avatar` was not found in the `%s` folder" $value.Path }}
               {{ end }}
             </div>
-            <span class="truncate text-sm">
-                {{- .Page.LinkTitle -}}
-              </span>
+            <span class="truncate text-sm">{{- .Page.LinkTitle -}}</span>
           </div>
           {{end}}
           <!--          </a>-->
           <span class="text-xs text-gray-300 dark:text-gray-500">•</span>
-          {{end}}
-          <time class="truncate text-sm" datetime="{{ time.Format "2006-01-02" $item.Date }}">
-          {{- $item.Date | time.Format (site.Params.locale.date_format | default ":date_long") -}}
-          </time>
         </div>
       </div>
-
+      {{end}}
+      <div class="grid-item-date">
+          <time class="truncate" datetime="{{ time.Format "2006-01-02" $item.Date }}">
+          {{- $item.Date | time.Format ":date_long" -}}  
+          <!-- Hugo uses CLDR-based formatters internally, which work with your language’s languageCode. -->        
+          </time>
+      </div>
     </div>
   </div>
 </div>

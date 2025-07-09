@@ -12,7 +12,7 @@
     Future: https://github.com/KKKZOZ/hugo-admonitions The minimum required Hugo version is 0.140.0. 
 */}}
 {{ $icon := "information-circle" }}
-{{ $class := "bg-primary-50/20 dark:bg-primary-950" }}
+{{ $class := "bg-primary-50/25 dark:bg-primary-950" }}
 {{ $class_text := "text-primary-950 dark:text-white" }}
 {{ with (.Get 0) }}
   {{ if eq . "note" }}
@@ -24,7 +24,7 @@
   {{ else if eq . "tip" }}
     {{ $icon = "callout/lightbulb-solid" }}
     {{ $class = "bg-amber-50 dark:bg-amber-950" }}
-    {{ $class_text = "text-primary-50 dark:text-primary-950/80" }}
+    {{ $class_text = "text-primary-50 dark:text-primary-950/75" }}
   {{ else if eq . "task" }}
     {{ $icon = "callout/list-check-solid" }}
     {{ $class = "bg-primary-50 dark:bg-primary-950" }}
@@ -37,5 +37,5 @@
 {{/*<div class="flex items-top p-3 mb-5 rounded-md bg-primary-50 dark:bg-primary-950">*/}}
 <div class="flex items-top p-3 mb-5 rounded-md {{$class}}">
 <span class="pr-3 {{$class_text}}">{{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"32\"") }}</span>
-<span class="text-base/8">  {{- .Inner | markdownify | emojify -}}</span>
+<span class="text-base/10">  {{- .Inner | markdownify | emojify -}}</span>
 </div>

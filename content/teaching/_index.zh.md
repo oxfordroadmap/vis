@@ -24,7 +24,7 @@ sections:
         tag: 'AI_Engineering'
     design:
       view: article-grid
-      css_class: 'bg-amber-50/10 dark:bg-amber-950'
+      css_class: 'bg-secondary-500/50'
       columns: 3
   - block: collection
     id: posts
