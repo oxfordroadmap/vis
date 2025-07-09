@@ -17,7 +17,7 @@ Based on my teaching and curriculum-developing experiences in China that feature
 
 It aims to replace or complement CS 101 courses for all disciplines, including management and humanities background.  
 
-<!-- more -->
+<!--more-->
 
 {{< toc is_open=false >}}
 

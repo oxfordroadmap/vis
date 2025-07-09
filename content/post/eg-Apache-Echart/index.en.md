@@ -14,7 +14,7 @@ image:
 
 Explore the character relationships in a Chinese novel written in 18th century China called [_**Dream of the Red Chamber**_《红楼梦》](https://en.wikipedia.org/wiki/Dream_of_the_Red_Chamberusing) with a network graph, using [Apache-Echart](https://echarts.apache.org/).
 
-<!-- more -->
+<!--more-->
 {{% callout note %}}
 ##### In short
 Insights can be gained through `network graph`, including new perspectives from this case of a Chinese novel.

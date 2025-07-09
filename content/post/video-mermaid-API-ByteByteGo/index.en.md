@@ -13,7 +13,7 @@ image:
 
 Focusing on modern Web APIs, [ByteByteGo](https://bytebytego.com/) has successfully summarized and updated the modern details regarding API in a systematic fashion.  Highly recommended for anyone who wants to go deeper and start learning.
 
-<!-- more -->
+<!--more-->
 
 ## Recommendations
 

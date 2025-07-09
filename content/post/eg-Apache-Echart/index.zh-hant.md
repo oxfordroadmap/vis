@@ -15,7 +15,7 @@ image:
 
 透過一張關係網絡圖，探索18世紀中國古典小說《[_**紅樓夢**_](https://zh.wikipedia.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2)》中人物之間的情感與互動關係，使用[Apache-Echart](https://echarts.apache.org/)。
 
-<!-- more -->
+<!--more-->
 {{% callout note %}}
 ##### 小結
 `關係網絡圖`可產出`洞察`，中國古典小說亦能有新角度觀察。

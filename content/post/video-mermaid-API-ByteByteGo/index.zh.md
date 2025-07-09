@@ -13,7 +13,7 @@ image:
 
 聚焦现代 Web API， [ByteByteGo](https://bytebytego.com/)  整理并当今 API 的核心概念和实现，系统性地更新细节。对于希望深入理解并开启学习之旅的人而言，这是强烈推荐的资源。
 
-<!-- more -->
+<!--more-->
 
 ## 推荐
 

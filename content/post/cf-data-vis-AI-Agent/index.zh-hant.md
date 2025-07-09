@@ -12,7 +12,7 @@ image:
 <!--Path_Python-Panel.svg-->
 To learn the integration of dashboards🎛️ and AI agents🤖, three learning paths are viable: 1️⃣ Python-Gradio|Streamlit, 2️⃣ JavaScript, and 3️⃣ Python-Panel.  The outcomes of "Dashboard AI Agents" enable leaners to improve AI agents with data, visualization, and the whole data life-cycles involved.
 
-<!-- more -->
+<!--more-->
 ```markmap
 * 🎛️🤖
   * =Dashboards AI Agents

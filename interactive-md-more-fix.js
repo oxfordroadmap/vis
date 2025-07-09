@@ -2,9 +2,10 @@
 
 const fs = require('fs');
 const path = require('path');
-const readline = require('readline');
+const readline = require('readline/promises');
 
 const regex = /<!--\s*more\s*-->/gi;
+const correctForm = '<!--more-->';
 const targetDir = process.argv[2];
 
 if (!targetDir) {
@@ -12,20 +13,17 @@ if (!targetDir) {
   process.exit(1);
 }
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
-const normalizeLine = line => line.replace(regex, '<!--more-->');
+const normalizeLine = (line) => regex.test(line) ? line.replace(regex, correctForm) : line;
 
 const getAllMarkdownFiles = (dir) => {
   let results = [];
   const list = fs.readdirSync(dir);
-  list.forEach(file => {
+  list.forEach((file) => {
     const fullPath = path.join(dir, file);
     const stat = fs.statSync(fullPath);
-    if (stat && stat.isDirectory()) {
+    if (stat.isDirectory()) {
       results = results.concat(getAllMarkdownFiles(fullPath));
     } else if (file.endsWith('.md')) {
       results.push(fullPath);
@@ -34,52 +32,42 @@ const getAllMarkdownFiles = (dir) => {
   return results;
 };
 
-const processFile = (filePath, done) => {
-  const lines = fs.readFileSync(filePath, 'utf8').split('\n');
+const processFile = async (filePath) => {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const lines = content.split('\n');
   let modified = false;
 
-  const checkLine = (i) => {
-    if (i >= lines.length) {
-      if (modified) {
-        fs.writeFileSync(filePath, lines.join('\n'), 'utf8');
-        console.log(`✅ Updated: ${filePath}\n`);
-      } else {
-        console.log(`📎 No changes in: ${filePath}\n`);
-      }
-      return done();
-    }
-
-    if (regex.test(lines[i])) {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (regex.test(line) && line.trim() !== correctForm) {
       console.log(`\n🗂 File: ${filePath}`);
-      console.log(`📌 Line ${i + 1}: ${lines[i]}`);
+      console.log(`📌 Line ${i + 1}: ${line}`);
       if (i > 0) console.log(`⬆️ Prev: ${lines[i - 1]}`);
       if (i < lines.length - 1) console.log(`⬇️ Next: ${lines[i + 1]}`);
 
-      rl.question(`🔧 Replace with "<!--more-->"? (y/n): `, (answer) => {
-        if (answer.toLowerCase() === 'y') {
-          lines[i] = normalizeLine(lines[i]);
-          modified = true;
-        }
-        checkLine(i + 1); // move to next line
-      });
-    } else {
-      checkLine(i + 1);
+      const answer = await rl.question(`🔧 Replace with "${correctForm}"? (Y/n): `);
+      if (answer.trim().toLowerCase() !== 'n') {
+        lines[i] = normalizeLine(line);
+        modified = true;
+      }
     }
-  };
+  }
 
-  checkLine(0);
-};
-
-const markdownFiles = getAllMarkdownFiles(path.resolve(targetDir));
-let fileIndex = 0;
-
-const nextFile = () => {
-  if (fileIndex < markdownFiles.length) {
-    processFile(markdownFiles[fileIndex++], nextFile);
+  if (modified) {
+    fs.writeFileSync(filePath, lines.join('\n'), 'utf8');
+    console.log(`✅ Updated: ${filePath}\n`);
   } else {
-    rl.close();
-    console.log('🎉 Done! All files checked.');
+    console.log(`📎 No changes in: ${filePath}\n`);
   }
 };
 
-nextFile();
+const run = async () => {
+  const markdownFiles = getAllMarkdownFiles(path.resolve(targetDir));
+  for (const file of markdownFiles) {
+    await processFile(file);
+  }
+  rl.close();
+  console.log('🎉 Done! All files processed.');
+};
+
+run();
