@@ -37,7 +37,7 @@
   </div>
   {{end}}
   <div class="grid-item-textbox">
-    <div class="text-justify">
+    <div class="text-left">
       <div class="text-right">
         {{ range $index, $value := first 1 ($item.GetTerms "tags") }}
         <a href="{{.RelPermalink}}"><span
@@ -53,9 +53,8 @@
           </span></a>
       </h2>
       <!--          </div>-->
-      <div class="grow"><p class="grid-item-text">
+      <div class="grow grid-item-text summary">
         {{ ($item.Params.summary | default $item.Summary)  -}}
-      </p>
       </div>
       {{ if $item.Params.authors }}
       <div class="grid-item-author">
