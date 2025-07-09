@@ -71,10 +71,10 @@
       </a>
       <time class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
         {{ if .date_start}}
-          {{ (time .date_start) | time.Format ($block.design.date_format | default "January 2006") }} –
+          {{ (time .date_start) | time.Format ":date_short" }} –
         {{ end }}
         {{ if .date_end}}
-          {{ (time .date_end) | time.Format ($block.design.date_format | default "January 2006") }}
+          {{ (time .date_end) | time.Format ":date_short" }}
         {{else}}
           {{ i18n "present" | default "Present" }}
         {{end}}
