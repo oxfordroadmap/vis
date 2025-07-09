@@ -1,0 +1,19 @@
+/* Navigation Styles */
+.grid-item {
+  @apply p-3 rounded-lg bg-neutral-50 dark:bg-neutral-950 cursor-pointer transform hover:translate-y-4 hover:shadow-2xl transition duration-500;
+}
+.grid-item-textbox {
+  @apply min-h-48 p-3 rounded-md bg-amber-50 dark:bg-amber-950 transform hover:translate-y-2 hover:shadow-2xl transition duration-500;
+}
+.grid-item-tag {
+  @apply uppercase inline-block text-xs font-medium leading-tight px-3 my-1 text-amber-300 hover:text-white rounded-md bg-primary-700;
+}
+.grid-item-title {
+  @apply my-3 text-lg font-semibold tracking-tight text-primary-700 dark:text-primary-300/50;
+}
+.grid-item-text {
+  @apply my-3 line-clamp-5 text-base leading-snug text-gray-950 dark:text-gray-50;
+}
+.grid-item-date {
+  @apply mt-3 text-right text-gray-500 text-sm;
+}

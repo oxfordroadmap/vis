@@ -128,7 +128,7 @@ yt_learning {
   border-bottom-color: rgb(var(--color-primary-400));
 }
 
-a:hover:not(.button):not(.rounded):not(.rounded-full):not(.rounded-lg) {
+prose a:hover {
   padding-bottom: 3px; 
   border-bottom: dotted 5px rgba(255, 255, 255, 0.33);
 }
@@ -163,12 +163,6 @@ img.icon {
     z-index: 50;
 }
 
-div.callout_inner p,
-div.callout_inner h1,
-div.callout_inner h2,
-div.callout_inner h3,
-div.callout_inner h4,
-div.callout_inner h5,
-div.callout_inner h6 {
+div.callout_inner {
   margin-top: 0rem !important;
 }

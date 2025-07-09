@@ -1,5 +1,5 @@
 #site-header.header {
-  @apply bg-white dark:bg-neutral-700 py-3 shadow;
+  @apply bg-neutral-50 dark:bg-neutral-700 py-3 shadow;
 }
 
 /* Navigation Styles */
@@ -11,6 +11,11 @@
 .nav-choosers {
   @apply px-1 sm:px-2 md:px-3 block rounded-md font-bold hover:bg-primary-500 hover:text-white transition-colors [&.active]:text-black [&.active]:text-primary-500/50 dark:[&.active]:text-white;
 }
+
+.navbar-nav-language{
+  @apply text-neutral-700 dark:text-neutral-300;
+}
+
 /* Navbar UL Main Menu Items: adjust width px-5  */
 .nav-item {
   @apply py-1 px-1 md:px-2 text-xl ;

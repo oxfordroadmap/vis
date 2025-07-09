@@ -10,7 +10,7 @@
 @import "./blox/all.css";
 /* Customization Added */
 
+@import "./views/all.css";
 /* no customization needed yet
-@import "./views/attachments.css";
 @import "chroma.css";
 */
