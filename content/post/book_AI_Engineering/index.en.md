@@ -13,12 +13,15 @@ tags:
 image:
   caption: "Credit: [**O'Reilly**](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)"
 ---
+Written by Chip Huyen, "[AI Engineering: Building Applications with Foundation Models]((https://www.oreilly.com/library/view/ai-engineering/9781098166298/))" is the top 
+book in 2025 for building intelligent applications: implementation essentials, common terminology, and a foundational framework with engineering fundamentals.
+
+<!--more-->
+## Overview
 
 If one can only recommend one book in 2025 for building intelligent applications, Chip Huyen’s "[AI Engineering: Building Applications with Foundation Models]((https://www.oreilly.com/library/view/ai-engineering/9781098166298/))" would be the clear top choice.
 
 This book achieves three major goals in summarizing the development of AI applications: (1) generalizing key concepts and implementation essentials, (2) establishing common terminology for AI engineering, and (3) articulating a foundational framework for the engineering of AI-driven applications.
-
-## Overview
 
 ```markmap
  AI Engr.

@@ -1,5 +1,5 @@
 ---
-title: 🤖AI 工程（AI Engineering）：建構智慧應用的 2025 年必讀書籍📖
+title: 🤖AI 工程：建構智慧應用的 2025 年必讀書籍📖
 date: 2025-06-24
 authors:
   - admin
@@ -14,7 +14,11 @@ image:
   caption: "圖片來源: [**O'Reilly**](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)"
 ---
 
-如果 2025 年只能推薦一本關於智慧應用的書籍，那麼由 Chip Huyen 撰寫的這本[《AI 工程：使用基礎模型建構應用程式》（Building Applications with Foundation Models）](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)，無疑地是最佳選擇。
+由 Chip Huyen 撰寫的[《AI 工程：使用基礎模型建構應用程式》（Building Applications with Foundation Models）](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)，是最佳 2025 年 AI 工程的必讀書籍：通用實作、共通術語、工程應用基礎。
+
+<!--more-->
+
+如果 2025 年只能推薦一本關於智慧應用的書籍，那麼《AI 工程》無疑地是最佳選擇。
 
 在總結 AI 應用程式 開發方面，該書已達成三項成果：(1) 應用及實作的精要通用化、 (2) AI 工程的共通術語、 (3) 辯證了AI 應用的工程學基礎。
 
