@@ -1,0 +1,48 @@
+{{/*
+Renders an embedded YouTube video with TailwindCSS layout enhancements.
+    (Custom YouTube shortcode wrapper)
+    Supports float, width, caption, and alt/title attributes with TailwindCSS classes.
+
+@param {string} [id] The YouTube video ID. Required. Can also be passed as the first positional argument.
+@param {string} [float] Tailwind float class (e.g., "float-right", "float-left"). Applied to the <figure> element.
+@param {string} [width] Tailwind width class (e.g., "w-1/2", "w-full"). Applied to the <figure> element.
+@param {string} [alt] Title text for the iframe. Used for accessibility and SEO.
+@param {string} [caption] Optional caption rendered inside <figcaption> below the video.
+@param {string} [class] Additional Tailwind classes applied to the <figure> element.
+
+@returns {template.HTML}
+
+@example {{< youtubewrap id="0RKpf3rK57I" float="float-right" width="w-1/2" alt="Demo video" caption="This video explains our system." >}}
+
+@reference https://developers.google.com/youtube/player_parameters
+
+✍️ Usage: 
+  {{< youtubewrap id="0RKpf3rK57I" float="float-right" width="w-1/2" caption="My video" alt="Demo video" >}}
+
+*/}}
+
+{{ $id := or (.Get "id") (.Get 0) }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $alt := .Get "alt" | default "YouTube video" }}
+{{ $float := .Get "float" | default "" }}
+{{ $width := .Get "width" | default "w-full" }}
+{{ $class := printf "prose figure %s %s" $float $width }}
+
+<figure class="{{ $class }}">
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe 
+      src="https://www.youtube-nocookie.com/embed/{{ $id }}"
+      title="{{ $alt }}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      class="w-full h-full border-0"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  {{ if $caption }}
+    <figcaption>{{ $caption | markdownify | emojify }}</figcaption>
+  {{ end }}
+</figure>
+
