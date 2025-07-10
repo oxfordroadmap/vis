@@ -1,94 +1,74 @@
 ---
-title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
-date: 2023-10-23
+title: "🛣️⚓ Conquer Context Game: Master Grounded AI Innovations"
+summary: Key to scaling success, a seemingly _muddy_ context anchors meaning in use, forges links with situations, builds trust through friction, and returns language to the rough ground. This roadmap tackles the strategic layer of AI innovation for ideating and crafting value propositions. `Context is King.` `Value is God.`
+date: 2025-07-10
 type: docs
 authors:
   - admin
 tags:
   - Roadmaps
+  - language-game
+  - ContextEngineering
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com)"
+  caption: "Duck-Rabbit: Context is King."
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
-
-## Ideation
-
-Hugo Blox supports a Markdown extension for mindmaps.
-
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
-
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
-
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-</code>
-</pre>
-</div>
-
-renders as
+Learn and master contextual grounding for AI innovation.
 
 ```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+- 🔗 Contextual grounding
+  - ⚓ **Anchor** meaning in real use 🧭.   
+  - 🔨 **Forge** links with real situations 🐾.    
+  - 🛠️ **Build** trust through friction 🙈🙉🙊.    
+  - 🏗 **Ground** language in use contexts 🗂️🧪🔔.
 ```
 
-## Diagrams
+This roadmap guides you through strategic AI ideation and value-proposition design.
 
-Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
+- 🧭 `Context is King.` 👑
+- 🤝 `Value is God.` 💞
 
-An example **Gantt diagram**:
+{{% callout warning %}}
+This document is a work in progress. 
+{{% /callout %}}
 
-    ```mermaid
-    gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
-    ```
+## 🔗Contextual grounding: propose values through `language-games`
 
-renders as
+Key to scaling success, a seemingly _muddy_ context anchors meaning in use, forges links with situations, builds trust through friction, and returns language to the rough ground.
 
-```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
+Understanding LLM-driven innovations through the lens of `language-games`, the action to `ground values` of linguistic interactions seeks `contextual use`.
 
+The seemingly _muddy_ context anchors meaning in use, forges links with situations, builds trust through friction, and restores language to the rough ground. 
+
+###  ⚓ **Anchor** meaning
+TBA
+
+###  🔨 **Forge** links
+TBA
+
+###  🛠️ **Build** trust
+TBA
+
+###  🏗 **Ground** language 
+TBA
+
+
+## In short
+
+ This roadmap tackles the strategic layer of AI innovation for ideating and crafting value propositions. `Context is King.` `Value is God.`
+
+---
 ## Todo lists
 
-You can even write your todo lists in Markdown too:
+- [ ] 📐Write a framework piece
+- [ ] 🗂️ Curate a resource list
+- [ ] 🗺️ Create a diagram/roadmap
+- [ ] 🧵 Prototype a design canvas
+- [ ] 🏷️ Draft an example MRD (Marketing Required Documents)
+- [ ] 🧑‍💼 Draft an example BRD (Business Required Documents)
+- [ ] 🧑‍🏫 Construct a course syllabus
 
-```markdown
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-```
+## Find this page interesting?  Please come and discuss 🤗
 
-renders as
+TBA <!-- https://substack.com/ -->
 
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-
-## Did you find this page helpful? Consider sharing it 🙌

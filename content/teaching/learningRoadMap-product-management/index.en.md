@@ -1,94 +1,73 @@
 ---
-title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
-date: 2023-10-23
+title: "🛣️🚚 Deliver Design Values: Master AI Product Management and System"
+summary: "Key to delivering success, the appearing *complex* pipelines and chains anchor actions in API calls, bind events to triggers, and restore agency to designated users or collaborating AI agents. This roadmap tackle the operation layer of AI innovations. This roadmap tackle the operational layer of AI innovations in value delivery through CI/CD. `Context is King.` `Process is Queen.`"
+date: 2025-07-10
 type: docs
 authors:
   - admin
 tags:
-  - 'Roadmaps'
+  - Roadmaps
+  - CI/CD
+  - ServiceJourney
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
+  caption: "Duck-Rabbit: Process is Queen. Design is Knight."
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
-
-## Ideation
-
-Hugo Blox supports a Markdown extension for mindmaps.
-
-Simply insert a Markdown code block labelled as `markmap` and optionally set the height of the mindmap as shown in the example below.
-
-Mindmaps can be created by simply writing the items as a Markdown list within the `markmap` code block, indenting each item to create as many sub-levels as you need:
-
-<div class="highlight">
-<pre class="chroma">
-<code>
-```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
-```
-</code>
-</pre>
-</div>
-
-renders as
+Deliver and refine design values for scalable AI products.
 
 ```markmap {height="200px"}
-- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+- 🔄 Pipeline orchestration
+  - ⚡ **Spark** API actions 🚀📲  
+  - 🔗 **Bind** events/touchpoints to triggers 🚨🔄    
+  - 👐 **Enable** user agency 🧑‍💻🤝🗝    
+  - 🪄 **Map** CI/CD flows and service journeys 🗂️🚦📦
 ```
 
-## Diagrams
+This roadmap guides you through strategic AI ideation and value-proposition design.
 
-Hugo Blox supports the _Mermaid_ Markdown extension for diagrams.
+- 🧭 `Context is King.` 👑
+- 🔁 `Process is Queen.` ♛
+- 🧑‍🎨 `Design is Knight.` ♞
 
-An example **Gantt diagram**:
+{{% callout warning %}}
+This document is a work in progress. 
+{{% /callout %}}
 
-    ```mermaid
-    gantt
-    section Section
-    Completed :done,    des1, 2014-01-06,2014-01-08
-    Active        :active,  des2, 2014-01-07, 3d
-    Parallel 1   :         des3, after des1, 1d
-    Parallel 2   :         des4, after des1, 1d
-    Parallel 3   :         des5, after des3, 1d
-    Parallel 4   :         des6, after des4, 1d
-    ```
+## Pipeline orchestration: deliver values through `interaction-chains`
 
-renders as
+Key to delivering success, seemingly _complex_ pipelines and chains anchor actions in API calls, forge links with events, and restore agency to designated users or collaborating AI agents.
 
-```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
+Understanding AI products through the lens of `interaction-chains`, the design imperative to _deliver services_ depends on actionable triggers, fluid event binding, empowered users (or agents), and seamless CI/CD flows.
 
+###  ⚡ **Spark** API actions
+TBA
+
+###  🔗 **Bind** events/touchpoints
+TBA
+
+###  👐 **Enable** user agency
+TBA
+
+### 🪄  **Map** flows and journeys 
+TBA
+
+
+## In short
+
+This roadmap tackles the operational layer of AI innovation for value delivery through CI/CD flows and service journeys . `Context is King.` `Process is Queen.` `Design is Knight.`
+
+---
 ## Todo lists
 
-You can even write your todo lists in Markdown too:
+- [ ] 📐Write a framework piece
+- [ ] 🗂️ Curate a resource list
+- [ ] 🗺️ Create a diagram/roadmap
+- [ ] 🧵 Prototype a design canvas
+- [ ] 👨‍🎨 Draft an example service journey
+- [ ] 👷 Draft an example PRD (Product Required Documents)
+- [ ] 🧑‍🏫 Construct a course syllabus
 
-```markdown
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-```
+## Find this page interesting?  Please come and discuss 🤗
 
-renders as
+TBA <!-- https://substack.com/ -->
 
-- [x] Write math example
-  - [x] Write diagram example
-- [ ] Do something else
-
-## Did you find this page helpful? Consider sharing it 🙌
