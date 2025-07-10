@@ -3,11 +3,14 @@
 {{ $scratch := .Scratch.Get "has_alpine" }}
 {{ $store   := .Page.Store.Get "has_alpine" }}
 {{ $params  := .Params.has_alpine }}
+{{ $block  := .Params.header.navbar.blox }}
+
 {{ if hugo.IsServer }}  <!-- only show during `hugo server` -->
 <div 
   style="position:fixed;bottom:0;left:0;background:#000;color:#0f0;
          padding:4px;font-size:12px;z-index:9999;"
 >
+  block={{ $block }}
   section={{ .Section }}
   type={{ .Type }}
   kind={{ .Kind }}
