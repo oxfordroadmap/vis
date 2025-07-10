@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@pagefind/default-ui": "^1.3.0",
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
     "alpinejs": "^3.13.10",
     "dotenv": "^16.3.1",
@@ -8,8 +9,8 @@
     "medium-zoom": "1.1.0",
     "mermaid": "11.8.1",
     "plotly.js": "^2.27.0",
-    "vite": "^4.5.0",
-    "vite-plugin-static-copy": "^0.17.0"
+    "vite": "^7.0.4",
+    "vite-plugin-static-copy": "^3.1.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
@@ -29,7 +30,8 @@
   },
   "scripts": {
     "build:styles": "npx tailwindcss -i ./assets/css/styles.css -o ./assets/dist/wc.min.css --minify",
-    "assets:dist": "vite build"
+    "assets:dist": "vite build",
+    "build:site": "hugo --minify"
   },
   "browserslist": "last 2 versions",
   "version": "0.1.0"
