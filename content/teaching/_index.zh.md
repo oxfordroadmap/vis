@@ -29,6 +29,18 @@ sections:
   - block: collection
     id: posts
     content:
+      title: '🛣️学习路径'
+      filters:
+        folders:
+          - teaching
+        tag: 'Roadmaps'
+    design:
+      view: article-grid
+      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90'
+      columns: 2
+  - block: collection
+    id: posts
+    content:
       title: '📝写作'
       filters:
         folders:
@@ -36,20 +48,9 @@ sections:
         tag: 'Writing'
     design:
       view: article-grid
+      # view: card | date-title-summary
       css_class: 'bg-gray-500/10 dark:bg-gray-500/90'
-      columns: 2
-  - block: collection
-    id: posts
-    content:
-      title: '🛣️学习路径'
-      filters:
-        folders:
-          - teaching
-        tag: 'Roadmaps'
-    design:
-      view: card
-      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90'
-      #view: date-title-summary
+      columns: 3
 ---
 
 <!-- $block.design. background | spacing.padding | clip_path | css_style | css_class | columns | {{/* Special case: Slider widget. */}} loop | interval -->

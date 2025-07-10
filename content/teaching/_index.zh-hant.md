@@ -24,8 +24,20 @@ sections:
         tag: 'AI_Engineering'
     design:
       view: article-grid
-      css_class: 'bg-amber-50/10 dark:bg-amber-950'
+      css_class: 'bg-secondary-500/50'
       columns: 3
+  - block: collection
+    id: posts
+    content:
+      title: '🛣️學習路徑'
+      filters:
+        folders:
+          - teaching
+        tag: 'Roadmaps'
+    design:
+      view: article-grid
+      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90'
+      columns: 2
   - block: collection
     id: posts
     content:
@@ -36,20 +48,9 @@ sections:
         tag: 'Writing'
     design:
       view: article-grid
+      # view: card | date-title-summary
       css_class: 'bg-gray-500/10 dark:bg-gray-500/90'
-      columns: 2
-  - block: collection
-    id: posts
-    content:
-      title: '🛣️學習路徑'
-      filters:
-        folders:
-          - teaching
-        tag: 'Roadmaps'
-    design:
-      view: card
-      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50'
-      #view: date-title-summary
+      columns: 3
 ---
 
 <!-- $block.design. background | spacing.padding | clip_path | css_style | css_class | columns | {{/* Special case: Slider widget. */}} loop | interval -->
