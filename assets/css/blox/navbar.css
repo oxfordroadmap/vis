@@ -4,7 +4,7 @@
 
 /* Navigation Styles */
 .navbar {
-  @apply relative flex flex-wrap items-center justify-between text-black dark:text-white font-semibold;
+  @apply relative flex flex-wrap items-center justify-between text-neutral-500 font-semibold;
 }
 
 /* Navbar Main chooser Items: px-1 mobile phones .... adjust width px-3 */

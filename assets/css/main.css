@@ -80,8 +80,21 @@ h6 {
 }
 */
 
-/* HyperLinks and misc */
+/* 📦 Why @layer components?
+    🧩 These styles are context-aware and semantically meaningful—not atomic utilities, but scoped visual decisions.
+    🎨 You're defining a design “chunk” that applies in real-world layout scenarios (.prose vs .not-prose).
+    🧼 Helps prevent Tailwind's purge from removing it, since @layer ensures inclusion during build.
+/* 
+
+/* @layer components */
 @layer components {
+  .prose code {
+    @apply font-mono bg-amber-300/50 dark:bg-amber-700 rounded px-1 py-0.5;
+  }
+  .not-prose code {
+    @apply font-mono bg-secondary-300/50 dark:bg-secondary-700 rounded px-1 py-0.5;
+  }
+  /* HyperLinks and misc */
   a.button {
     @apply py-2 px-4 rounded font-bold text-white bg-primary-500 border-solid hover:bg-primary-500/50 hover:border-dotted;
   }
@@ -94,6 +107,10 @@ h6 {
   .skills-description {
     @apply text-sm mb-6 normal-case
   }
+
+
+
+
 }
 
 /* To clean up!
@@ -106,14 +123,11 @@ h6 {
 
 */
 
-
-a.rounded:hover,
-a.rounded-full:hover,
-a.rounded-lg:hover {
-  /* styles here */
-  border: dotted; 
+@layer utilities {
+  .underline-dotted {
+    text-decoration-style: dotted;
+  }
 }
-
 
 
 @import "tailwindcss";
