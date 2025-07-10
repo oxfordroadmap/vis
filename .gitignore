@@ -8,3 +8,4 @@ hugo_stats.json
 node_modules
 history.txt
 /.archived_assets
+install-pagefind-ui.js
