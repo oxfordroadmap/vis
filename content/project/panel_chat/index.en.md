@@ -70,13 +70,13 @@ A list of the available examples:
 For 2025:
 
 * A reading AI agent: learning [AI Engineering Book]({{% ref path= "/post/book_AI_Engineering" %}})
-* A writing AI agent: writing undergraduate-level papers using [pybibx]({{% ref path= "/project/pybibx" %}}), [Bibliometrix]({{% ref path= "teaching/Bibliometrix" %}})
+* A writing AI agent: writing undergraduate-level papers using [pybibx]({{% ref path= "/project/pybibx" %}}), [Bibliometrix]({{% ref path= "teaching/Writing_with_Bibliometrix" %}})
 * Several visualization AI agents: visualizing data as part of the intelligent responses, such as [🍃💵visNetZero]({{% ref path="/project/visNetZero" %}}),  [🍃🏭visCEADs]({{% ref path="/project/visCEADs" %}}), [🧰NetBib]({{% ref path="/project/NetBib"  %}}), and [⚖️🪙 Global Civic Service Performance --🏛️Oxford University bipa2024]({{% ref path="/project/bipa2024" %}})
 
 {{% callout task %}}
 Applying Panel Chat Examples to:
 * reading [AI Engineering]({{% ref path= "/post/book_AI_Engineering" %}})
-* writing papers using [pybibx]({{% ref path= "/project/pybibx" %}}), [Bibliometrix]({{% ref path= "teaching/Bibliometrix" %}})
+* writing papers using [pybibx]({{% ref path= "/project/pybibx" %}}), [Bibliometrix]({{% ref path= "teaching/Writing_with_Bibliometrix" %}})
 * visualizing data as part of intelligent responses
   * [🍃💵visNetZero]({{% ref path="/project/visNetZero" %}}),
   * [🍃🏭visCEADs]({{% ref path="/project/visCEADs" %}}), 
