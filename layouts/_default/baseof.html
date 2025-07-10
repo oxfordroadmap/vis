@@ -22,6 +22,11 @@
         {{ end }}
       {{ end }}
     </div>
+
+    <!--In Hugo templates like baseof.html, .Kind and .Type are always available because they’re part of the built-in .Page object. -->
+    <!-- if you're inside a partial, and you want to use .Kind or .Type there, you need to pass either the entire page context or at least the .Page key. You’re already doing that correctly in your ToC partial: -->
+    <!-- (dict "page" .Page ... ) -->
+    {{ if and (eq .Kind "page") (or (eq .Type "post") (eq .Type "docs")) }}
     {{ "<!-- page-header: EXTRA Sticky ToC -->" | safeHTML }}
     <div class="page-header sticky top-20 z-30 px-3 flex justify-end">
       {{/* Load ToC block */}}
@@ -32,8 +37,22 @@
         "aria_label" "Toggle table of contents"
     ) }}
     </div>
+    {{ end }}
+
     {{ "<!-- page-body: Div to include block main -->" | safeHTML }}
-    <div class="page-body {{if ne .Type "landing"}} my-2{{end}}">
+
+    <!-- Body content: layout top  -->
+    {{ if and (eq .Kind "page") (eq .Type "post") }}
+      <div class="page-body {{ if ne .Type "landing" }} -mt-[64px] pt-[64px]{{ end }}">
+    {{ else if and (eq .Kind "page") (eq .Type "docs") }}
+      <div class="page-body {{ if ne .Type "landing" }} -mt-[64px] pt-[64px]{{ end }}">
+    {{ else if ne .Type "landing" }}
+      <div class="page-body my-2">
+    {{ else }}
+      <div class="page-body">
+    {{ end }}
+
+    
       {{ block "main" . }}{{ end }}
       {{/* see  define "main"  */}}
     </div>
