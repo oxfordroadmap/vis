@@ -4,6 +4,7 @@ summary: From writing PRDs to prototyping, how can we leverage the AI ecosystems
 date: 2023-10-24
 type: post
 math: false
+has_mermaid: true
 tags:
   - 'AI_Engineering'
 image:
