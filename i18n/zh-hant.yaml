@@ -1,7 +1,7 @@
 # Navigation
 
 - id: toggle_navigation
-  translation: 切換導航
+  translation: 導航切換
 
 - id: table_of_contents
   translation: 目錄
