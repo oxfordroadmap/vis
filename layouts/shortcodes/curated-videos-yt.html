@@ -1,0 +1,117 @@
+{{/* 
+  a robust diagnostic-friendly shortcode that:
+- ✅ Directly matches video `.md` files in `content/{{ path }}/` by filename (e.g. `GgKjYzKJ4I.md`)
+- ✅ Avoids relying on frontmatter like `youtubeID`
+- ✅ Adds diagnostic messages for:
+  1. Section path lookup  
+  2. Matched IDs  
+  3. Unmatched IDs  
+- ✅ Provides safe fallback rendering if no videos are matched  
+- ✅ Compatible with Hugo pages that include shortcode like `{{< curated-videos-yt ids="GgKjYzKJ4I,PpKxYzKJ9I" path="videos_youtube" >}}`
+
+---
+
+### ✅ Ensure your files are structured like:
+
+```plaintext
+content/
+└── videos_youtube/
+    ├── GgKjYzKJ4I.md
+    └── PpKxYzKJ9I.md
+```
+
+
+---------------------------------------------
+  */}}
+
+{{- $rawIDs := split (.Get "ids") "," -}}
+{{- $path := .Get "path" | default "videos_youtube" -}}
+
+{{- $ids := slice -}}
+{{- range $rawIDs }}
+  {{- $ids = $ids | append (trim . " ") -}}
+{{- end }}
+
+<!-- 🧱 Show section path used -->
+<p>🧱 Searching in section: <code>{{ $path }}</code></p>
+
+<!-- 📦 Get all pages in the section -->
+<!-- headless: true, they’re excluded from site.Pages -->
+{{- $all := where site.AllPages "Section" $path -}}
+
+<!-- 🔍 Extract base filenames of available files -->
+<p>📚 Available files in <code>content/{{ $path }}</code>:</p>
+<ul>
+  {{- range $all }}
+
+    {{ with .File }}
+      <li>{{ .BaseFileName }}</li>
+    {{ else }}
+      <li>⚠️ Missing file object</li>
+    {{ end }}
+
+  {{- else }}
+    <li>⚠️ No files found in section <code>{{ $path }}</code>.</li>
+  {{- end }}
+</ul>
+
+<!-- 🏷️ Prepare matches + unmatched -->
+{{- $matched := slice -}}
+{{- $unmatched := slice -}}
+
+{{- range $ids }}
+  {{- $page := site.GetPage (printf "%s/%s" $path .) -}}
+  
+  {{- if $page }}
+    {{- $matched = $matched | append $page -}}
+  {{- else }}
+    {{- $unmatched = $unmatched | append . -}}
+  {{- end }}
+{{- end }}
+
+<!-- 🧪 Diagnostic report -->
+<ul>
+  <li>✅ Matched IDs:
+    <ul>
+      {{- range $matched }}
+        <li>{{ .File.BaseFileName }}</li>
+      {{- else }}
+        <li>❌ None matched</li>
+      {{- end }}
+    </ul>
+  </li>
+  <li>🚫 Unmatched IDs:
+    <ul>
+      {{- range $unmatched }}
+        <li>{{ . }}</li>
+      {{- else }}
+        <li>✅ All IDs matched</li>
+      {{- end }}
+    </ul>
+  </li>
+</ul>
+
+<!-- 🎬 Render matched videos -->
+{{- if gt (len $matched) 0 }}
+  <div class="curated-videos-grid">
+    {{- range $matched }}
+      <div class="video-card">
+        <h3>{{ .Params.title }}</h3>
+        {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        <div class="youtube">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/{{ .File.BaseFileName }}"
+            title="YouTube video"
+            frameborder="0"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    {{- end }}
+  </div>
+{{- else }}
+  <p>⚠️ No valid video files found for the IDs provided. Please check filenames in <code>content/{{ $path }}</code>.</p>
+{{- end }}
