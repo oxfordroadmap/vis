@@ -14,12 +14,12 @@
   section={{ .Section }}
   type={{ .Type }}
   kind={{ .Kind }}
-  Params_markmap={{ .Params.has_markmap }}
-  Params_alpine={{ .Params.has_alpine }}
+  P_mermaid={{ .Params.has_mermaid }}
+  P_markmap={{ .Params.has_markmap }}
+  P_alpine={{ .Params.has_alpine }}
+  s_alpine={{ .Scratch.Get "has_alpine" }}
+  st_alpine={{ .Page.Store.Get "has_alpine" }}
   layout={{ .Layout }}
-  scratch_alpine={{ .Scratch.Get "has_alpine" }}
-  store_alpine={{ .Page.Store.Get "has_alpine" }}
-  param={{ .Params.has_alpine }}
 </div>
 {{ end }}
 {{/* ─── DEBUG END ─── */}}
@@ -124,6 +124,15 @@
 </script>
 {{ end }}
 
+{{/* Medium-Zoom */}}
+{{ if (or (.Params.has_zoom) (.Scratch.Get "has_zoom") (.Page.Store.Get "has_zoom")) }}
+  {{ $zoom_js := resources.Get "dist/lib/medium-zoom/medium-zoom.min.js" }}
+  {{ $zoom_config := `mediumZoom('[data-zoomable]', { background: '#fff', margin: 24, scrollOffset: 40 })` | resources.FromString "js/hb-medium-zoom-config.js" }}
+  {{ $zoom_config = $zoom_config | resources.Minify }}
+  {{ $zoom_bundle := slice $zoom_js $zoom_config | resources.Concat "js/medium-zoom.bundle.js" | resources.Fingerprint "sha256" }}
+  <script defer src="{{ $zoom_bundle.RelPermalink }}" integrity="{{ $zoom_bundle.Data.Integrity }}"></script>
+{{ end }}
+
 {{/* Mermaid */}}
 {{ if (or (.Params.has_mermaid) (.Scratch.Get "has_mermaid") (.Page.Store.Get "has_markmap") ) }}
   {{ $mermaid_js := resources.Get "dist/lib/mermaid/mermaid.min.js" }}
@@ -137,29 +146,38 @@
 {{ if (or (.Params.has_markmap) (.Scratch.Get "has_markmap") (.Page.Store.Get "has_markmap") ) }}
 {{ $markmap_js := resources.Get "dist/lib/markmap/index.js" }}
 {{ $markmap_js = $markmap_js | resources.Minify | resources.Fingerprint "sha256" }}
-  <style>
-    .markmap {
-  		position: relative;
-      width: 88vw;
+<script>
+  window.markmap = {
+    autoLoader: {
+      manual: false,
+      toolbar: true, // Enable toolbar
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
 
-	  }
-    .markmap > svg {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-  <script>
-    window.markmap = {
-      autoLoader: {
-        manual: false,
-        onReady() {
-          const { autoLoader, builtInPlugins } = window.markmap;
-          // Disable Prism highlighting plugin as it conflicts and attempts to re-render code blocks outside of Markmap.
-          autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
-        },
-      },
-    };
-  </script>
+        // Disable Prism plugin to avoid conflicts
+        autoLoader.transformPlugins = builtInPlugins.filter(p => p.name !== 'prism');
+    },
+  };
+}
+
+// Wait for DOM to render, then adjust transform
+requestAnimationFrame(() => {
+  const gEl = document.querySelector('.markmap > svg g');
+  if (gEl) {
+    // Reset scale to 1 and translate to origin
+    gEl.setAttribute('transform', 'translate(0, 0) scale(1)');
+
+    // Optional: center based on bounding box
+    const bbox = gEl.getBBox();
+    const svg = document.querySelector('.markmap > svg');
+    const x = (svg.clientWidth - bbox.width) / 2 - bbox.x;
+    const y = (svg.clientHeight - bbox.height) / 2 - bbox.y;
+    gEl.setAttribute('transform', `translate(${x}, ${y}) scale(1)`);
+  }
+});
+    
+</script>
+
 <script defer src="{{ $markmap_js.RelPermalink }}" integrity="{{ $markmap_js.Data.Integrity }}"></script>
 {{ end }}
 

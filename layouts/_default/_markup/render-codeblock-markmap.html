@@ -1,5 +1,10 @@
-<div class="markmap" style="height: {{.Attributes.height | default "500px"}};">
+{{/* Markmap with zoom enabled */}}
+{{/* Markmap container that survives DOM replacement */}}
+<div class="markmap [&>svg]:w-full [&>svg]:h-auto [&>svg]:block markmap-container flex flex-col overflow-hidden w-full object-contain" 
+     style="height: {{ .Attributes.height | default "500px" }}" data-zoomable>
 {{/* No indentation before PRE and .Inner otherwise mindmap first item will be indented */}}
 <pre>{{- .Inner | safeHTML -}}</pre>
 </div>
+
 {{ .Page.Store.Set "has_markmap" true }}
+{{ .Page.Store.Set "has_zoom" true }}
