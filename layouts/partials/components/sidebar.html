@@ -4,89 +4,175 @@
 {{- $pad_sidebar := true -}}
 {{- $sidebar_dynamic_class := cond $no_sidebar (cond $pad_sidebar "lg:hidden xl:block" "lg:hidden") "lg:sticky" -}}
 
+{{/* UI Text */}}
+{{- $table_of_contents := T "table_of_contents" }}
+{{- $toggle_navigation := T "toggle_navigation" }}
+
 {{- $root_section := cond (eq site.Home.Type "docs") site.Home $context.FirstSection -}}
 {{- $page_url := $context.RelPermalink -}}
 
 {{/* Only replace explicit mobile menu links with automated links for Docs pages */}}
 {{ if not $no_sidebar }}
   {{/* Classes appended to `hb-sidebar-mobile-menu` are modified via sidebar JS, so do not @apply them to `hb-sidebar-mobile-menu` */}}
-  <div class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/80 hidden"></div>
+  <div class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/75 hidden"></div>
 {{ end }}
 
-<!-- Explicit `transform` class as we toggle it in JS -->
-<aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] {{ $sidebar_dynamic_class }}">
-  <!-- Search bar on small screen -->
-  <div class="px-4 pt-4 lg:hidden">
-    <!-- Currently, use the navbar search button instead -->
-    {{/* partial "search.html" */}}
-  </div>
-  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
-    <ul class="flex flex-col gap-1 lg:hidden">
-      <!-- Navigation links -->
-      {{ template "menu-links" (dict "context" site.Home "pageURL" $page_url "page" $context "toc" true) -}}
+<!-- Explicit `transform` class as we toggle it in JS: id="nav-sidebar" c.f. "nav-bar" "nav-toc"-->
+<!-- Removed: hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)]   {{ $sidebar_dynamic_class }}  -->
+<aside id="nav-sidebar" class="overflow-visible mt-16 hidden order-first text-sm sm:text-base basis-1/2 sm:basis-1/3" x-show="expanded">
+  
+  <div class="hb-scrollbar bg-secondary-100 dark:bg-secondary-900 [hyphens:auto] sticky top-36 overflow-y-auto pr-3 pt-6 lg:h-[calc(100vh-2*var(--navbar-height))] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -ml-3 rtl:-mr-3">
+    <!-- Search bar on small screen -->
+    <div class="px-3 pt-3 lg:hidden">
+      <!-- Currently, use the navbar search button instead -->
+      {{/* partial "search.html" */}}
+    </div>
+
+    <p id="toc_icon_label" class="mb-4 font-semibold tracking-tight text-right">🗐 {{ $toggle_navigation }}- {{$table_of_contents}}</p>    
+
+    <ul id="nav-sidebar-home" class="flex flex-col gap-1">
+      <!-- Navigation links: "context" site.Home|$root_section-->
+{{ template "menu-links" (dict
+  "context" $context.FirstSection
+  "page" $context
+  "pageURL" $page_url
+  "toc" true
+) -}}
+
+      
       {{ template "custom-menu-links" }}
     </ul>
 
-    <!-- Sidebar on large screen -->
+    <!-- Sidebar on large screen 
     {{- if $no_sidebar -}}
       <div class="max-xl:hidden h-0 w-64 shrink-0"></div>
     {{- else -}}
-      <ul class="flex flex-col gap-1 max-lg:hidden">
+      <ul id="nav-sidebar-section" class="flex flex-col gap-1">
         {{ template "menu-links" (dict "context" $root_section "page" $context  "pageURL" $page_url) }}
         {{ template "custom-menu-links" }}
       </ul>
-    {{ end -}}
+    {{ end -}}-->
   </div>
 
 </aside>
+{{/*------------------------------------------------------------------------------
+  Menu links for the sidebar
+  - .context → the current section context
+  - .page   → the current page
+  - .pageURL → the URL of the current page
+  - .toc    → whether to include a table of contents
+------------------------------------------------------------------------------*/}}
 
 {{- define "menu-links" -}}
-  {{ template "link-tree" (dict "context" .context "level" 0 "page" .page "pageURL" .pageURL "toc" (.toc | default false)) }}
+  {{- $section := .context.FirstSection -}}
+  {{- $items := union $section.Sections $section.RegularPages -}}
+
+  {{ template "link-tree" (dict
+    "items" $items
+    "level" 0
+    "page" .page
+    "pageURL" .pageURL
+    "toc" (.toc | default false)
+  ) }}
 {{- end -}}
 
-{{- define "link-tree" -}}
-  {{- if ge .level 4 -}}
-    {{- return -}}
-  {{- end -}}
 
-  {{- $context := .context -}}
-  {{- $page := .page }}
-  {{- $page_url := .page.RelPermalink -}}
+{{- define "link-tree" -}}
+  {{- if ge .level 3 }}{{ return }}{{ end }}
+
+  {{- $items := .items -}}
   {{- $level := .level -}}
+  {{- $page := .page -}}
+  {{- $pageURL := .pageURL -}}
   {{- $toc := .toc | default false -}}
 
-  {{- with $items := union .context.RegularPages .context.Sections -}}
-    {{- $items = where $items "Params.sidebar.hidden" "!=" true -}}
-    {{- if eq $level 0 -}}
-      {{- range $items.ByWeight }}
-        {{- $active := eq $page_url .RelPermalink -}}
-        {{- $is_expanded := or (.Params.sidebar.open) (.IsAncestor $page) $active | default false }}
-        <li class="{{ if $is_expanded }}open{{ end }}">
-          {{- template "custom-menu-link" dict "context" . "active" $active "title" .LinkTitle "link" .RelPermalink -}}
-          {{- if and $toc $active -}}
-            {{- template "mobile-toc" dict "page" . -}}
-          {{- end -}}
-          {{- template "link-tree" dict "context" . "page" $page "pageURL" $page_url "level" (add $level 1) "toc" $toc -}}
-        </li>
-      {{- end -}}
-    {{- else -}}
-      <div class="ltr:pr-0 overflow-hidden">
-        <ul class="hb-sidebar-list">
-          {{- range $items.ByWeight }}
-            {{- $active := eq $page_url .RelPermalink -}}
-            {{- $is_expanded := or (.Params.sidebar.open) (.IsAncestor $page) $active | default false }}
-            {{- $title := .LinkTitle | default .File.BaseFileName -}}
-            <li class="flex flex-col {{ if $is_expanded }}open{{ end }}">
-              {{- template "custom-menu-link" dict "context" . "active" $active "title" $title "link" .RelPermalink -}}
-              {{- if and $toc $active -}}
-                {{ template "mobile-toc" dict "page" . }}
+  {{- $group := slice -}}
+
+  {{- range $items }}
+    {{- $w := .Params.weight | default 0 | int -}}
+    {{- $active := eq $pageURL .RelPermalink -}}
+
+    {{- $title := .LinkTitle -}}
+    {{- if not $title }}
+      {{- with .File }}
+        {{- $title = .BaseFileName -}}
+      {{- else }}
+        {{- $title = .Title -}}
+      {{- end }}
+    {{- end }}
+
+    {{- $include := false -}}
+    {{- if eq $level 0 }}
+      {{- $include = modBool $w 100 -}}
+    {{- else if eq $level 1 }}
+      {{- $include = and (modBool $w 10) (not (modBool $w 100)) -}}
+    {{- else }}
+      {{- $include = and (ge $w 0) (not (modBool $w 10)) (not (modBool $w 100)) -}}
+    {{- end }}
+
+    {{- if $include }}
+      {{- $entry := dict "node" . "weight" $w "active" $active "title" $title -}}
+      {{- $group = $group | append $entry -}}
+    {{- end }}
+  {{- end }}
+
+  {{- if gt (len $group) 0 }}
+    <ul class="hb-sidebar-list">
+      {{- range sort $group "weight" }}
+        {{- $item := .node -}}
+        {{- $itemWeight := $item.Params.weight | default 0 | int -}}
+        {{- $itemKey := printf "%03d" $itemWeight -}}
+        {{- $currentWeight := $page.Params.weight | default 0 | int -}}
+        {{- $currentKey := printf "%03d" $currentWeight -}}
+        {{- $prefixLength := add $level 1 -}}
+        {{- $itemPrefix := substr $itemKey 0 $prefixLength -}}
+        {{- $currentPrefix := substr $currentKey 0 $prefixLength -}}
+        {{- $is_expanded := eq $itemPrefix $currentPrefix -}}
+
+        <li x-data="{ open: {{ if $is_expanded }}true{{ else }}false{{ end }} }" class="flex flex-col">
+          <div class="flex items-center justify-between">
+            <div @click="open = !open" class="cursor-pointer w-full">
+              {{- template "custom-menu-link" dict "context" $item "active" .active "title" .title "link" $item.RelPermalink -}}
+            </div>
+            <button @click="open = !open" class="ml-2 text-xs">              <svg
+                aria-hidden="true"
+                class="w-4 h-4 transform rotate-0 transition-transform duration-150"
+                :class="open ? 'rotate-90' : 'rotate-0'"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                  <g opacity="0.2"><polygon points="56 48 136 128 56 208 56 48"/></g><g><path d="M141.65674,122.34326l-80-80A7.99981,7.99981,0,0,0,48,48V208a7.99984,7.99984,0,0,0,13.65674,5.65674l80-80A7.99915,7.99915,0,0,0,141.65674,122.34326ZM64,188.686V67.314L124.686,128Z"/><path d="M221.65674,122.34326l-80-80a7.99984,7.99984,0,0,0-11.31348,11.31348L204.686,128l-74.34278,74.34326a7.99984,7.99984,0,1,0,11.31348,11.31348l80-80A7.99915,7.99915,0,0,0,221.65674,122.34326Z"/></g></svg></button>
+          </div>
+
+          <div x-show="open" x-transition>
+            {{- if and $toc .active }}
+              {{ template "mobile-toc" dict "page" $item }}
+            {{- end }}
+
+            {{- $nextItems := slice -}}
+            {{- $parentPrefix := substr $itemKey 0 $prefixLength -}}
+
+            {{- range $items }}
+              {{- $w := .Params.weight | default 0 | int -}}
+              {{- $wKey := printf "%03d" $w -}}
+              {{- $wPrefix := substr $wKey 0 $prefixLength -}}
+              {{- if and (gt $w $itemWeight) (eq $wPrefix $parentPrefix) }}
+                {{- $nextItems = $nextItems | append . -}}
               {{- end }}
-              {{ template "link-tree" dict "context" . "page" $page "pageURL" $page_url "level" (add $level 1) "toc" $toc }}
-            </li>
-          {{- end -}}
-        </ul>
-      </div>
-    {{- end -}}
+            {{- end }}
+
+            {{- template "link-tree" dict
+                "items" $nextItems
+                "level" (add $level 1)
+                "page" $page
+                "pageURL" $pageURL
+                "toc" $toc
+            }}
+          </div>
+        </li>
+      {{- end }}
+    </ul>
   {{- end }}
 {{- end -}}
 
@@ -129,11 +215,9 @@
   {{- $is_external := strings.HasPrefix .link "http" -}}
   {{- $open := .open | default false -}}
   <a
-    class="hb-sidebar-custom-link
+    class="hb-sidebar-custom-link 
     {{- if .active }}
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900
-    {{- else }}
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50
+      sidebar-active-item text-neutral-500 border border-secondary-300 border-dashed border-[1px] rounded-md font-semibold  
     {{- end -}}"
     href="{{ .link }}"
     {{ if $is_external }}target="_blank" rel="noreferer"{{ end }}
@@ -142,7 +226,7 @@
     {{- with .context }}
       {{- if or .RegularPages .Sections }}
         <span data-hb-sidebar-toggle>
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-700 dark:hover:bg-gray-100/25"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
       {{- end }}
     {{ end -}}
