@@ -32,171 +32,89 @@
 
     <ul id="nav-sidebar-home" class="flex flex-col gap-1">
       <!-- Navigation links: "context" site.Home|$root_section-->
-{{ template "menu-links" (dict
-  "context" $context.FirstSection
-  "page" $context
-  "pageURL" $page_url
-  "toc" true
-) -}}
-
-      
-      {{ template "custom-menu-links" }}
+      {{ template "menu-links" (dict
+        "context" $context.FirstSection
+        "page" $context
+        "pageURL" $page_url
+        "toc" true
+      ) -}}      
     </ul>
-
-    <!-- Sidebar on large screen 
-    {{- if $no_sidebar -}}
-      <div class="max-xl:hidden h-0 w-64 shrink-0"></div>
-    {{- else -}}
-      <ul id="nav-sidebar-section" class="flex flex-col gap-1">
-        {{ template "menu-links" (dict "context" $root_section "page" $context  "pageURL" $page_url) }}
-        {{ template "custom-menu-links" }}
-      </ul>
-    {{ end -}}-->
   </div>
 
 </aside>
-{{/*------------------------------------------------------------------------------
-  Menu links for the sidebar
-  - .context → the current section context
-  - .page   → the current page
-  - .pageURL → the URL of the current page
-  - .toc    → whether to include a table of contents
-------------------------------------------------------------------------------*/}}
 
 {{- define "menu-links" -}}
-  {{- $section := .context.FirstSection -}}
-  {{- $items := union $section.Sections $section.RegularPages -}}
+  {{- $items := union .context.RegularPages .context.Sections -}}
+  {{- $items = where $items "Params.sidebar.hidden" "!=" true -}}
 
-  {{ template "link-tree" (dict
-    "items" $items
-    "level" 0
-    "page" .page
-    "pageURL" .pageURL
-    "toc" (.toc | default false)
-  ) }}
+{{- $activeURL := .RelPermalink -}}
+{{- $tree := partial "functions/build_tree.html" (dict "items" $items) -}}
+
+<h2>Modern Tree</h2>
+{{- template "recursive-tree" (dict "nodes" $tree "level" 0 "activeURL" $activeURL) }}
+
+<h2>Flat List Debug</h2>
+<ul>
+  {{- range $items.ByWeight }}
+    <li>{{ .LinkTitle | truncate 12}} — w: {{ .Params.weight }}</li>
+  {{- end }}
+</ul>
+  
+
+<h2>Tree Recursive</h2>
+
+    {{- range $tree }}
+      {{- template "link-tree" (dict "node" .) -}}
+    {{- end }}
+
+<h2>Tree Debug</h2>
+<ul>
+  {{- range $tree }}
+    <li>
+      {{ .item.LinkTitle | truncate 6}} — w: {{ .item.Params.weight }}
+      {{- if gt (len .children) 0 }}
+        <ul>
+          {{- range .children }}
+            <li>
+              {{ .item.LinkTitle | truncate 6}} — w: {{ .item.Params.weight }}
+              {{- if gt (len .children) 0 }}
+                <ul>
+                  {{- range .children }}
+                    <li>{{ .item.LinkTitle | truncate 6}} — w: {{ .item.Params.weight }}</li>
+                  {{- end }}
+                </ul>
+              {{- end }}
+            </li>
+          {{- end }}
+        </ul>
+      {{- else }}
+        <span style="color:gray;">(no children)</span>
+      {{- end }}
+    </li>
+  {{- end }}
+</ul>
+
+  
 {{- end -}}
 
 
 {{- define "link-tree" -}}
-  {{- if ge .level 3 }}{{ return }}{{ end }}
+  {{- $node := .node -}}
+  {{- $item := $node.item -}}
+  {{- $children := $node.children -}}
 
-  {{- $items := .items -}}
-  {{- $level := .level -}}
-  {{- $page := .page -}}
-  {{- $pageURL := .pageURL -}}
-  {{- $toc := .toc | default false -}}
-
-  {{- $group := slice -}}
-
-  {{- range $items }}
-    {{- $w := .Params.weight | default 0 | int -}}
-    {{- $active := eq $pageURL .RelPermalink -}}
-
-    {{- $title := .LinkTitle -}}
-    {{- if not $title }}
-      {{- with .File }}
-        {{- $title = .BaseFileName -}}
-      {{- else }}
-        {{- $title = .Title -}}
-      {{- end }}
+  <li>
+    <a href="{{ $item.RelPermalink }}">{{ $item.LinkTitle }}</a>
+    {{- if gt (len $children) 0 }}
+      <ul>
+        {{- range $children }}
+          {{- template "link-tree" (dict "node" .) -}}
+        {{- end }}
+      </ul>
     {{- end }}
-
-    {{- $include := false -}}
-    {{- if eq $level 0 }}
-      {{- $include = modBool $w 100 -}}
-    {{- else if eq $level 1 }}
-      {{- $include = and (modBool $w 10) (not (modBool $w 100)) -}}
-    {{- else }}
-      {{- $include = and (ge $w 0) (not (modBool $w 10)) (not (modBool $w 100)) -}}
-    {{- end }}
-
-    {{- if $include }}
-      {{- $entry := dict "node" . "weight" $w "active" $active "title" $title -}}
-      {{- $group = $group | append $entry -}}
-    {{- end }}
-  {{- end }}
-
-  {{- if gt (len $group) 0 }}
-    <ul class="hb-sidebar-list">
-      {{- range sort $group "weight" }}
-        {{- $item := .node -}}
-        {{- $itemWeight := $item.Params.weight | default 0 | int -}}
-        {{- $itemKey := printf "%03d" $itemWeight -}}
-        {{- $currentWeight := $page.Params.weight | default 0 | int -}}
-        {{- $currentKey := printf "%03d" $currentWeight -}}
-        {{- $prefixLength := add $level 1 -}}
-        {{- $itemPrefix := substr $itemKey 0 $prefixLength -}}
-        {{- $currentPrefix := substr $currentKey 0 $prefixLength -}}
-        {{- $is_expanded := eq $itemPrefix $currentPrefix -}}
-
-        <li x-data="{ open: {{ if $is_expanded }}true{{ else }}false{{ end }} }" class="flex flex-col">
-          <div class="flex items-center justify-between">
-            <div @click="open = !open" class="cursor-pointer w-full">
-              {{- template "custom-menu-link" dict "context" $item "active" .active "title" .title "link" $item.RelPermalink -}}
-            </div>
-            <button @click="open = !open" class="ml-2 text-xs">              <svg
-                aria-hidden="true"
-                class="w-4 h-4 transform rotate-0 transition-transform duration-150"
-                :class="open ? 'rotate-90' : 'rotate-0'"
-                viewBox="0 0 256 256"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                  <g opacity="0.2"><polygon points="56 48 136 128 56 208 56 48"/></g><g><path d="M141.65674,122.34326l-80-80A7.99981,7.99981,0,0,0,48,48V208a7.99984,7.99984,0,0,0,13.65674,5.65674l80-80A7.99915,7.99915,0,0,0,141.65674,122.34326ZM64,188.686V67.314L124.686,128Z"/><path d="M221.65674,122.34326l-80-80a7.99984,7.99984,0,0,0-11.31348,11.31348L204.686,128l-74.34278,74.34326a7.99984,7.99984,0,1,0,11.31348,11.31348l80-80A7.99915,7.99915,0,0,0,221.65674,122.34326Z"/></g></svg></button>
-          </div>
-
-          <div x-show="open" x-transition>
-            {{- if and $toc .active }}
-              {{ template "mobile-toc" dict "page" $item }}
-            {{- end }}
-
-            {{- $nextItems := slice -}}
-            {{- $parentPrefix := substr $itemKey 0 $prefixLength -}}
-
-            {{- range $items }}
-              {{- $w := .Params.weight | default 0 | int -}}
-              {{- $wKey := printf "%03d" $w -}}
-              {{- $wPrefix := substr $wKey 0 $prefixLength -}}
-              {{- if and (gt $w $itemWeight) (eq $wPrefix $parentPrefix) }}
-                {{- $nextItems = $nextItems | append . -}}
-              {{- end }}
-            {{- end }}
-
-            {{- template "link-tree" dict
-                "items" $nextItems
-                "level" (add $level 1)
-                "page" $page
-                "pageURL" $pageURL
-                "toc" $toc
-            }}
-          </div>
-        </li>
-      {{- end }}
-    </ul>
-  {{- end }}
+  </li>
 {{- end -}}
 
-{{- define "mobile-toc" -}}
-  {{ $page := .page }}
-  {{ with $page.Fragments.Headings }}
-    <ul class="hb-sidebar-mobile-toc">
-      {{- range . }}
-        {{- with .Headings }}
-          {{- range . -}}
-            <li>
-              <a
-                href="#{{ anchorize .ID }}"
-                class="hb-docs-link"
-              >
-                {{- .Title -}}
-              </a>
-            </li>
-          {{ end -}}
-        {{ end -}}
-      {{ end -}}
-    </ul>
-  {{ end }}
-{{- end -}}
 
 {{- define "custom-menu-links" -}}
   {{- range site.Menus.sidebar -}}
@@ -211,22 +129,97 @@
   {{- end -}}
 {{- end -}}
 
+{{- define "recursive-tree" }}
+  {{- $nodes := .nodes -}}
+  {{- $level := .level | default 0 -}}
+  {{- $page := .page -}}
+
+  <ul class="pl-4 mt-1 space-y-1">
+    {{- range $nodes }}
+      {{- $hasChildren := gt (len .children) 0 -}}
+      {{- $active := eq $page.RelPermalink .item.RelPermalink -}}
+      {{- $is_expanded := or (.item.Params.sidebar.open) (.item.IsAncestor $page) $active | default false }}
+
+      <li
+        x-data="{ open: {{ if $is_expanded }}true{{ else }}false{{ end }} }"
+        class="my-2 scroll-my-6 scroll-py-6"
+        x-init="if ({{ $active }}) $el.scrollIntoView({ behavior: 'smooth', block: 'center' })"
+      >
+        <div class="flex items-center justify-start w-full">
+          
+          {{- if $hasChildren }}
+            <button
+              type="button"
+              @click="open = !open"
+              class="p-1 flex-none mr-2 focus:outline-none"
+              aria-label="Toggle section {{ .item.LinkTitle }}"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 transform rotate-0 transition-transform duration-150"
+                :class="open ? 'rotate-90' : 'rotate-0'"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.2"><polygon points="56 48 136 128 56 208 56 48"/></g>
+                <g>
+                  <path d="M141.65674,122.34326l-80-80A7.99981,7.99981,0,0,0,48,48V208a7.99984,7.99984,0,0,0,13.65674,5.65674l80-80A7.99915,7.99915,0,0,0,141.65674,122.34326ZM64,188.686V67.314L124.686,128Z"/>
+                  <path d="M221.65674,122.34326l-80-80a7.99984,7.99984,0,0,0-11.31348,11.31348L204.686,128l-74.34278,74.34326a7.99984,7.99984,0,1,0,11.31348,11.31348l80-80A7.99915,7.99915,0,0,0,221.65674,122.34326Z"/>
+                </g>
+              </svg>
+            </button>
+          {{- end }}
+
+          <a
+            href="{{ .item.RelPermalink }}"
+            class="inline-block w-full break-words rounded-md px-1 py-0.5
+                   {{ if $active }}
+                     bg-amber-500 text-white font-semibold
+                   {{ else }}
+                     text-gray-500 hover:text-gray-900 hover:bg-amber-500 dark:text-gray-300 dark:hover:text-gray-100
+                   {{ end }}"
+          >
+            {{ .item.LinkTitle | plainify | htmlUnescape }}
+          </a>
+        </div>
+
+        {{- if $hasChildren }}
+          <ul
+            x-show="open"
+            x-transition
+            class="pl-4 mt-1 space-y-1"
+          >
+            {{- template "recursive-tree" (dict "nodes" .children "level" (add $level 1) "page" $page) }}
+          </ul>
+        {{- end }}
+      </li>
+    {{- end }}
+  </ul>
+{{- end }}
+
+
+
+
 {{- define "custom-menu-link" -}}
   {{- $is_external := strings.HasPrefix .link "http" -}}
   {{- $open := .open | default false -}}
+  {{- /* 2️⃣ Anchor link */ -}}
   <a
-    class="hb-sidebar-custom-link 
+    class="hb-sidebar-custom-link
     {{- if .active }}
-      sidebar-active-item text-neutral-500 border border-secondary-300 border-dashed border-[1px] rounded-md font-semibold  
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900
+    {{- else }}
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50
     {{- end -}}"
     href="{{ .link }}"
     {{ if $is_external }}target="_blank" rel="noreferer"{{ end }}
   >
-    {{- .title -}}
+    {{- .title | plainify | htmlUnescape -}}
     {{- with .context }}
       {{- if or .RegularPages .Sections }}
         <span data-hb-sidebar-toggle>
-            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-700 dark:hover:bg-gray-100/25"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
       {{- end }}
     {{ end -}}
