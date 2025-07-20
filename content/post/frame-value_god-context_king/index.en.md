@@ -21,11 +21,15 @@ for the next generation of AI engineers and innovators, it can inspire a few pla
 
 <!--more-->
 
-In short, the overall thinking framework can be condensed into three following sentences, each of which explains the essence of `game`, `Large Language Models`, and `Language Games`.
+## AI engineers meets Wittgenstein in a Bar
+
+Imagine AI engineers meets Wittgenstein in a Bar, and a red-pill-minded LLM in the middle.
 
 1. I have ***game***!
 2. You read my mind?
 3. Game on.
+
+In short, the overall thinking framework can be condensed into three sentences above, each of which explains the essence of `game`, `Large Language Models`, and `Language Games`.
 
 ## Essence of Game
 
@@ -33,9 +37,13 @@ In short, the overall thinking framework can be condensed into three following s
 
 These three words sum up the values of humans (and relationships), with all its playfulness and seriousness.
 
-`Muscles, money, game, (and frame)` have been the core belief and observations of men for a thriving life. [Build muscle, make money, learn game](https://x.com/RationalMale/status/1355328296779710466). Life's playbook appear trite. 
+`Muscles, money, game, (and frame)` have been the core belief and observations of men for a thriving life. [Build muscle, make money, learn game](https://x.com/RationalMale/status/1355328296779710466). 
 
-They nevertheless point to the [fundamental of relationships, the values of others](https://www.amazon.com/Value-Others-Understanding-Relationships-Marketplace-ebook/dp/B0D1Q5LHNV). People compete, and people collaborate.  Be useful to others.  
+Life's playbook appear trite. 
+
+They nevertheless point to the [fundamental of relationships, the values of others](https://www.amazon.com/Value-Others-Understanding-Relationships-Marketplace-ebook/dp/B0D1Q5LHNV). 
+
+People compete, and people collaborate.  (Man up.) Be useful to others.  
 
 The essence of game thus, in the forms of muscles in hunter-gather communities, in the forms of money in market relationships, and in the various dating, war-fighting, and power-grabbing games, marks the endless ingenuity of the same game: human values and relationships.
 
@@ -51,7 +59,7 @@ They do generate prose, compose essays, translate languages, or answer questions
 
 They however, do not follow logician and mathematician (e.g., Bertrand Russell) rules, but mimic human language expressions.  
 
-LLMs can now beat human beings in human expressions, on the grounds of the vast existing corpora and the fast speed.  
+LLMs can now beat human beings in human expressions (at least provide [flatteries of emotional values]({{% ref "/post/insights-shipping_sycophancy_erodes_trust" %}})), on the grounds of the vast existing corpora and the fast speed.  
 
 Machines almost read our minds by guessing our next words.  
 
