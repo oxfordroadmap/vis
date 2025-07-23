@@ -124,7 +124,7 @@ Stage 1 introduces learners to the foundational literacies of the agentic intern
 
 ### 🦾 Stage 2: Practical Foundation — _🐙 AG101, ♞🧱AG201, 📊 INFOV, 🧮 ONSUR_
 
-Stage 2 features applied exploration across code, communication, and computational thinking. Learners begin deploying intelligent systems in real-world contexts—constructing responsive web interfaces, designing agentic prompts, visualizing data, and analyzing survey feedback. These modules strengthen sociotechnical awareness and set the stage for purposeful, ethical, and design-sensitive development.
+Stage 2 features applied exploration across code, communication, and user experience thinking. Learners begin deploying intelligent systems in real-world contexts—constructing responsive web interfaces, designing agentic prompts, visualizing data, and analyzing survey feedback. These modules strengthen sociotechnical awareness and set the stage for purposeful, ethical, and design-sensitive development.
 
 This stage cultivates the ability to **apply**, **design**, and **construct** systems that reflect both technical proficiency and sociotechnical awareness.
 
@@ -135,7 +135,7 @@ This stage cultivates the ability to **apply**, **design**, and **construct** sy
 - 🐙 **GitHub Versioning & Collaboration**: Students use GitHub for version control, project documentation, and sharing modular templates that evolve into public-facing portfolios.
 - 📦 **Delivery & Demonstration**: Students deliver personal portfolio websites—functional, multilingual, and scalable—marking their entry into web-based agentic creation.
     
-#### ♞🧱 **AG201: Structured Communication in Agentic Systems**
+#### ♞🧱 **AG201: Agentic Structured Communication **
 
 - 🧠 **Structured Expression**: Students develop expressive inputs and outputs through structured LLM model specs, markdown graphs, product requirement documents (PRDs), interactive storytelling, and multilingual frameworks.
 - 🤝 **Community of Practice (CoP)**: They share experimentations and outcomes across technical ecosystems and sector-facing CoPs—highlighting design choices, contextual nuances, and communicative clarity.
@@ -245,8 +245,8 @@ Stage 4 advances learners into data-rich agentic systems, integrating Retrieval-
 The final phase centers on synthesis and public-facing engagement, challenging learners to **evaluate**, **construct**, and **communicate** the long-term significance of their projects through agentic applications, responsible forecasting, and multilingual outreach. Through structured self- and peer-review, professional presentations, and feedback loops, students refine their portfolios within a rigorous **Outcomes-Based Assessment** guided by a **Community of Practice (CoP)**. This stage activates innovation mindsets and demands that learners **defend** their decisions, **articulate** their value propositions, and **interpret** impact across collaborative, cross-cultural, and interdisciplinary contexts.
 
 
-#### 🧑‍🤝‍🧑🧬 **AG303: Capstone Project**
-
+#### 🧑‍🤝‍🧑🧬 **AG303: AI Engineering**
+Also known as Capstone Project
 - 🧵 **Portfolio Integration**: Students consolidate prior learnings into public-facing final portfolios, curating agentic UI flows, prompt strategies, and documentation ecosystems to **synthesize** their cumulative growth across roles and modules.
     
 - 📬 **Professional & Multilingual Outreach**: Capstone outputs emphasize strategic communication and resource deployment, tailored for specific **Communities of Practice (CoPs)**—thereby **demonstrating** agentic storytelling and knowledge transfer across multilingual and professional platforms.
@@ -255,8 +255,8 @@ The final phase centers on synthesis and public-facing engagement, challenging l
     
 - 📦 **Delivery & Demonstration**: Final projects are presented through structured peer walkthroughs and community review cycles. With guidance from CoP-oriented assessment, these showcases emphasize UX clarity, accessibility, and domain-specific relevance—thereby **evaluating** impact narratives, design trade-offs, and collaborative knowledge value within role-aligned networks.
 
-#### 📚🦠 **AG302: Science Mapping and AI Impact**
-
+#### 📚🦠 **AG302: AI Impact**
+Also known as Science Mapping and AI Impact
 This module equips learners with advanced literature review skills and scientometric methodologies—including patent and academic datasets—to ground capstone work in evidence, while broadening cross-disciplinary and cross-regional perspectives for deeper insights and innovative applications.
 
 - 🗺️ **Technological Foresight**: Learners conduct science mapping to evaluate trends and identify innovation trajectories—thereby **analyzing** agentic technologies and **forecasting** emergent epistemologies.
