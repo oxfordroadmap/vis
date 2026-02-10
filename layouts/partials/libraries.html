@@ -134,7 +134,7 @@
 {{ end }}
 
 {{/* Mermaid */}}
-{{ if (or (.Params.has_mermaid) (.Scratch.Get "has_mermaid") (.Page.Store.Get "has_markmap") ) }}
+{{ if (or (.Params.has_mermaid) (.Scratch.Get "has_mermaid") (.Page.Store.Get "has_mermaid") ) }}
   {{ $mermaid_js := resources.Get "dist/lib/mermaid/mermaid.min.js" }}
   {{ $mermaid_config_js := resources.Get "js/hb-mermaid-config.js" }}
   {{ $mermaid_config_js = $mermaid_config_js | resources.Minify }}
@@ -158,23 +158,8 @@
         autoLoader.transformPlugins = builtInPlugins.filter(p => p.name !== 'prism');
     },
   };
-}
+};
 
-// Wait for DOM to render, then adjust transform
-requestAnimationFrame(() => {
-  const gEl = document.querySelector('.markmap > svg g');
-  if (gEl) {
-    // Reset scale to 1 and translate to origin
-    gEl.setAttribute('transform', 'translate(0, 0) scale(1)');
-
-    // Optional: center based on bounding box
-    const bbox = gEl.getBBox();
-    const svg = document.querySelector('.markmap > svg');
-    const x = (svg.clientWidth - bbox.width) / 2 - bbox.x;
-    const y = (svg.clientHeight - bbox.height) / 2 - bbox.y;
-    gEl.setAttribute('transform', `translate(${x}, ${y}) scale(1)`);
-  }
-});
     
 </script>
 

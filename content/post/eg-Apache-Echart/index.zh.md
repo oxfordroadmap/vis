@@ -3,8 +3,7 @@ title: "红楼梦人物关系图"
 date: 2025-06-30
 type: post
 tags:
-  - 'insights'
-  - '洞察'
+  - 'action-notes'
   - Apache-Echart
   - '社交网络分析'
   - '数位人文'

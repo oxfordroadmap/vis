@@ -3,8 +3,7 @@ title: "紅樓夢人物關係圖"
 date: 2025-05-30
 type: post
 tags:
-  - 'insights'
-  - '洞察'
+  - 'action-notes'
   - Apache-Echart
   - '社交網絡分析'
   - '數位人文'

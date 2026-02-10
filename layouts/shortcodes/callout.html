@@ -12,30 +12,30 @@
     Future: https://github.com/KKKZOZ/hugo-admonitions The minimum required Hugo version is 0.140.0. 
 */}}
 {{ $icon := "information-circle" }}
-{{ $class := "bg-primary-50/25 dark:bg-primary-950" }}
-{{ $class_text := "text-primary-950 dark:text-white" }}
+{{ $class := "bg-primary-100 dark:bg-primary-900" }}
+{{ $class_text := "text-primary-900 dark:text-white" }}
 {{ with (.Get 0) }}
   {{ if eq . "note" }}
     {{ $icon = "information-circle" }}
   {{ else if eq . "warning" }}
     {{ $icon = "exclamation-triangle" }}
-    {{ $class = "bg-amber-50 dark:bg-amber-950" }}
+    {{ $class = "bg-amber-100 dark:bg-amber-900" }}
     {{ $class_text = "text-secondary-500" }}
   {{ else if eq . "tip" }}
     {{ $icon = "callout/lightbulb-solid" }}
-    {{ $class = "bg-amber-50 dark:bg-amber-950" }}
-    {{ $class_text = "text-primary-50 dark:text-primary-950/75" }}
+    {{ $class = "bg-amber-100 dark:bg-amber-900" }}
+    {{ $class_text = "text-primary-100 dark:text-primary-900/75" }}
   {{ else if eq . "task" }}
     {{ $icon = "callout/list-check-solid" }}
-    {{ $class = "bg-primary-50 dark:bg-primary-950" }}
+    {{ $class = "bg-primary-100 dark:bg-primary-900" }}
     {{ $class_text = "text-black dark:text-white" }}
   {{ else }}
     {{ $icon = . }}
   {{end}}
 {{end}}
 
-{{/*<div class="flex items-top p-3 mb-5 rounded-md bg-primary-50 dark:bg-primary-950">*/}}
+{{/*<div class="flex items-top p-3 mb-5 rounded-md bg-primary-100 dark:bg-primary-900">*/}}
 <div class="flex items-top p-3 mb-5 rounded-md {{$class}}">
 <span class="pr-3 {{$class_text}}">{{ partial "functions/get_icon" (dict "name" $icon "attributes" "height=\"32\"") }}</span>
-<span class="text-base/10">  {{- .Inner | markdownify | emojify -}}</span>
+<span class="text-base">  {{- .Inner | markdownify | emojify -}}</span>
 </div>

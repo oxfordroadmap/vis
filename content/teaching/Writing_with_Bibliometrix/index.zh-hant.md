@@ -1,5 +1,6 @@
 ---
-title: Learn Python
+weight: 7500
+title: ⤷✍Bibliometrix 寫作🦠
 summary: Easily learn Python in 10 minutes!
 date: 2023-10-24
 type: docs

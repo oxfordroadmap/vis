@@ -24,7 +24,7 @@ They demonstrate the support of various LLM and RAG tools: [LangChain](https://
 ### Alternatives
 Thus, although more general tools, such as [Gradio Python Client](https://www.gradio.app/docs/python-client/introduction), [Streamlit LLM chatbots](https://docs.streamlit.io/develop/tutorials/chat-and-llm-apps/build-conversational-apps), and [Vercel AI chatbots](https://github.com/vercel/ai-chatbot) exist to build AI Apps with chatbots, it is still useful to learn and do "smart" interactive data-visualization using Panel (Holoviz).
 
-For a more detailed technical and educational discussion on the alternatives in building LLM chatbots, please refer to [🤓 Learning Paths 🛤️:  Dashboard AI Agents 🎛️🤖]({{% ref path= "post/cf-data-vis-ai-agent" %}})
+For a more detailed technical and educational discussion on the alternatives in building LLM chatbots, please refer to [🤓 Learning Paths 🛤️:  Dashboard AI Agents 🎛️🤖]({{% ref path= "teaching/cf-data-vis-ai-agent" %}})
 
 {{% callout note %}}
 Some alternatives to `Panel Chat Examples`:
@@ -59,13 +59,13 @@ A list of the available examples:
 * ***interconnect*** _interactive data visualization_ and _LLM-based chatbots_, and thus 
 * ***orchestrate*** data pipelines and interactions.
 {{% /callout %}}
-<hr class="w-48 h-1 my-1 md:my-3 mx-auto border-8 border-black/75 dark:border-white/80 ">
+<hr class="w-48 h-1 my-1 md:my-3 mx-auto border-8 border-black/75 dark:border-white/75 ">
 
 ## Tasks
 
 [Han-Teng Liao](/experience) seeks the useful extensions of `Panel Chat Examples` for doing and learning AI-powered interactive data visualization for insights:
 
-![](featured.png)
+![](content/project/panel_chat/featured.png)
 
 For 2025:
 

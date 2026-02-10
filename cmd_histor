@@ -1,0 +1,21 @@
+cd assets
+dir
+cd dist
+dir
+dir lib
+cd ..
+dir
+cd ..
+dir
+npm run assets:dist
+more history.txt
+npx tailwindcss -c tailwind.config.js -i ./assets/css/main.css -o ./assets/dist/wc.min.css --minify
+npx tailwindcss -c tailwind.config.js -i ./assets/css/styles.css -o ./assets/dist/wc.min.css --minify
+npm run assets:dist
+more history.txt
+hugo serve --bind 127.0.0.1 --port 1313
+hugo -v server --path-warnings --ignoreCache --disableFastRender --renderToDisk --cleanDestinationDir --bind 127.0.0.1 --port 1313
+dir public
+rmdir -r public
+doskey /h > c:\cmd_histor
+doskey /h > cmd_histor

@@ -1,0 +1,51 @@
+{{/*
+  Usage:
+    {{ partial "components/toggles/toggle-nav.html" (dict
+        "page" .Page
+        "icon_set" "finger"
+        "target_selector" "aside#nav-sidebar"
+        "aria_label" "Toggle Navigation Sidebar"
+    ) }}
+*/}}
+
+{{ $icons := dict
+    "toc"             (dict "open" "➕" "closed" "➖")
+    "book"            (dict "open" "📖" "closed" "📕")
+    "news"            (dict "open" "📰" "closed" "🗞️")
+    "folder"          (dict "open" "📂" "closed" "📁")
+    "folder_outline"  (dict "open" "🗁" "closed" "🗀")
+    "gesture"         (dict "open" "👐" "closed" "🙏")
+    "finger"          (dict "open" "👇" "closed" "👉")
+    "caret"           (dict "open" "🔽" "closed" "▶️")
+}}
+
+{{ $icon_set        := .icon_set | default "toc" }}
+{{ $target_selector := .target_selector | default "aside#nav-sidebar" }}
+{{ $aria_label      := .aria_label | default "Toggle table of contents" }}
+
+{{ $icon := index $icons $icon_set | default (dict "open" "➕" "closed" "➖") }}
+
+<!-- partials/components/toggles/toggle-toc.html -->
+<span x-data="{ expanded: false }" 
+     x-init="
+     $el.querySelectorAll('{{ $target_selector }}')
+      .forEach(e => e.classList.add('hidden'))
+     "
+>
+  <!-- ① The toggle button 
+*  @click: Toggles sidebar visibility state.   
+  -->
+    <button id="toggle-nav" class="border-2 p-2 text-2xl font-extrabold text-secondary-500 bg-secondary-100 dark:bg-secondary-900 rounded-full focus:outline-none focus:ring focus:ring-secondary-300 hover:text-white hover:bg-secondary-700 dark:hover:text-black dark:hover:bg-secondary-300 transition-colors duration-300"
+    aria-label="{{ $aria_label }}"
+    :aria-expanded="expanded.toString()"
+    x-on:click="
+    expanded = !expanded;
+    const els = document.querySelectorAll('{{ $target_selector }}');
+    els.forEach(el => el.classList.toggle('hidden', !expanded));
+    els.forEach(el => el.classList.toggle('block', expanded));
+    "
+    >
+    <i class="fas fa-list-ul"></i><br/>
+    <span x-text="expanded ? '{{ $icon.open }}' : '{{ $icon.closed }}'">{{ $icon.open }}</span>
+    </button>
+</span>

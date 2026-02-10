@@ -1,0 +1,182 @@
+---
+title: 【Agentic New Media & Internet】Curriculum
+---
+flowchart LR
+%%{ init: { 'flowchart': { 'curve': 'monotoneX' } } }%%
+%% Agentic New Media & Internet/智能體時代下的網路與新媒體
+%% params:
+%%  emoji: 🎄
+%%  id: Core (16+2)
+%%  curriculum: Agentic New Media & Internet
+%%  slug: AgenticNMInternet
+%%    (cf. 🪴Bare精簡版;🎍Core核心版;🎋Core+核心版;🎄Full完整版;🌲Base基礎版=====🪴🎍🎋🎄🌲) 
+
+    %% [Pink] UI/Design Core (Next for Top Placement)
+    INFOV eUI1@==UI==> FRONT["⚙️ FRONT: <br/>Front-End <br/>Frameworks"]
+    FRONT eUI2@==UI==> UIVIS["🎨 UIVIS: User and <br/>Visual Interface Design"] 
+
+    %% Phase 1-2
+    COPYE["✍️ COPYE: <br/>Copy-editing and<br/> Creative Writing"] --> INFOV["📊 INFOV: Information Visualization"]
+    INTRO -.-> INFOV
+    COPYE -.->  WEBDN
+    INTRO --> WEBDN
+    TECHC["🌐 TECHC: Internet &<br/> New Media <br/>Technologies and Collaboration"] --> WEBDN 
+    INTRO["📡 INTRO: <br/>Introduction<br/> to New Media"] --> PRODM
+    COPYE -.-> PRODM
+    TECHC --> PRODM 
+    TECHC ==> ONSUR["🧮 ONSUR: Online Surveys and Statistics"]
+    INTRO -.-> ONSUR
+
+    %% Phase 2-3     
+    WEBDN["🐙 AG101<br/>Web_Dev<br/><strong>with</strong>-ai<br/>🧭<br/>🖥️ WEBDN"] --⚡UI reactive to users & agents--> FRONT 
+    INFOV -.🛂 socio-technical: data-driven decisions.-> OPERS 
+    %% [Yellow] Technical Core (Declared First for Center Anchoring)   
+    %% old: WEBDN["🖥️ WEBDN: Web Design and Production"] e1@==technical core==> PYTHN["🐍 PYTHN:<br/> Python Language"] e2@==technical core==> MLAPI["🤖 MLAPI: API, Machine Learning, and Artificial Intelligence"] 
+    WEBDN e1@==🧩technical core:modular Web programming==> PYTHN["🐍 PYTHN:<br/> Python <br/> Language"] 
+    WEBDN e2@==♻️technical core: Agile & CI/CD==> OPERS["🤗 AG102<br/>Web_Dev<br/><strong>Agentic</strong><br/>🤖<br/>🔧 OPERS"]
+    %% [Green] PM/Socio-Technical Core (Middle Spread)
+    PRODM["♞🧱 AG201<br/>Agentic<br/><strong>StrCOMM</strong><br/>📌 PRODM"] ePM1@==🧞PM as Context Weaver==>  OPERS
+    %% [Green -- Blue] Management informed by Research
+    PRODM -.💞PM/UX as Experience Composer.-> USRES["🔍 USRES: <br/>User Research"]     
+    %% [Blue] Social Science Core (Declared Later for Bottom Placement)
+    ONSUR -.😭 socio-technical: user-centered design.-> OPERS 
+    ONSUR eUX1@==❤‍🩹UX/User Research==> USRES 
+
+    %% Phase 3-4
+    %% [Pink] 
+    %% Integrate APPUI & MLAPI into ♝🍞 AG202<br/>Web_Dev<br/><strong>RAG-SYS</strong>"
+    %% <br/>📱 APPUI 
+    FRONT -.🌉App design: adaptive interface for users & agents.-> APPUI
+    PYTHN e3@--🐍App design: data and library ecosystems--> APPUI["♛🖼️ AG203<br/>Agentic<br/><strong>DataVIS</strong><br/>📱 APPUI"] 
+    OPERS e4@==🤖technical core: chatbots==> APPUI
+    
+    %% <br/>🤖 MLAPI
+    OPERS ePM2@==🏦 socio-technical: knowledge and organizations㊭==> MLAPI
+    PYTHN e5@==📡technical core: APIs both cloud and local LLM==> MLAPI["♝🍞 AG202<br/>Web_Dev<br/><strong>RAG-SYS</strong><br/>🤖 MLAPI"]
+
+    %% [Blue] Social Science Core (Declared Later for Bottom Placement)    
+    %% transitions
+    OPERS --⚖PM: AI & stakeholder alignment--> PLNFM["💡 PLNFM: Platform <br/>Economy and <br/>Innovations"]
+    USRES -.🛄 service design: service journey.-> APPUI
+    USRES -.🧭 service design: service blueprints.-> MLAPI
+    USRES -.🎯 service design: value and growth propositions.-> PLNFM
+    USRES eUX2@==🙈🙉🙊UX: groundedness ==> UXANA["🧠 UXANA: <br/>New Media <br/>Analysis and <br/>User Experience"]
+
+    %% Final Phase
+    %%     COMMU["🧑‍🤝‍🧑🧬 COMMU: Community of Practice and Self-Curation"]  ~~~ MLAPI
+    %%     MLAPI ~~~ LITRV["📚🦠 LITRV: Literature Review and Writing"]
+
+
+
+    %% Final Phase Core
+    UIVIS --> COMMU     
+    UIVIS -.-> LITRV
+    APPUI --> COMMU
+    APPUI -.-> LITRV
+    MLAPI e3@==job==> COMMU["🧑‍🤝‍🧑🧬 AG303<br/>Capstone<br/><strong>AI-Engr</strong><br/>🏗<br/>aka Community of Practice and Self-Curation<br/>🧑‍🤝‍🧑🧬COMMU"]  
+    MLAPI ==> LITRV["📚🦠 AG302<br/>SciDisc<br/><strong>AI-Impa</strong><br/>🌈<br/>aka Literature Review and Writing<br/>📚🦠 LITRV"]
+
+
+    %% Final Phase: Green
+    PLNFM -.-> COMMU
+    PLNFM ==> LITRV
+
+    %% Final Phase: Blue
+    UXANA -.-> COMMU
+    UXANA ==> LITRV
+
+    %% Balancing
+    %% Hidden Links 
+    %% COPYE ~~~ WEBDN
+    %% COPYE ~~~ WEBDN
+    %% TECHC ~~~ PRODM
+    %% TECHC ~~~ PRODM
+
+click TECHC callback "Github"
+
+
+%% Edge Tooltips
+%% eUI1 eUI2
+linkStyle 0,1 stroke:red, stroke-width:5px
+%% eUX1 eUX2
+linkStyle 19,29 stroke:blue, stroke-width:5px
+
+linkStyle 14,15,21,22,24 stroke:brown, stroke-width:5px
+linkStyle 16,23 stroke:purple, stroke-width:5px
+
+
+eUI1@{ animate: true }
+eUI2@{ animate: true }
+eUX1@{ animate: true }
+eUX2@{ animate: true }
+e1@{ animate: true } 
+e2@{ animate: true }
+e3@{ animate: true }
+e4@{ animate: true }
+e5@{ animate: true }
+ePM1@{ animate: true }
+ePM2@{ animate: true }
+
+
+%% Node Shapes
+PYTHN@{ shape: flag}
+COMMU@{ shape: trap-t}
+LITRV@{ shape: trap-t}
+TECHC@{ shape: trap-b}
+INTRO@{ shape: trap-b}
+COPYE@{ shape: trap-b}
+
+%% Node Styles
+
+%% Styling 🪾 Bare Minimum (Core) Agentic learning 
+%% Shape declarations
+%% AG101@{ shape: hex }
+%% AG102@{ shape: hex }
+%% style AG101 fill:#fff589,stroke:#448aff,stroke-width:2px,color:#222
+%% style AG102 fill:#fff589,stroke:#448aff,stroke-width:2px,color:#222
+WEBDN@{ shape: trap-b}
+OPERS@{ shape: hex }
+style WEBDN fill:#fff589,stroke:#448aff,stroke-width:5px,color:#222
+style OPERS fill:#fff589,stroke:#448aff,stroke-width:5px,color:#222
+%% AG203 ... OPERS
+APPUI@{ shape: hex}
+%% AG202 ... MLAPI
+MLAPI@{ shape: hex}  
+style APPUI fill:#fbcfe8,stroke:#002147,stroke-width:5px,color:#222
+style MLAPI fill:#cbeafe,stroke:#002147,stroke-width:5px,color:#222
+%% AG201 ... PRODM
+PRODM@{ shape: hex} 
+style PRODM fill:#bbf7d0,stroke:#002147,stroke-width:5px,color:#222
+
+
+%% Foundational Nodes
+style TECHC fill:#C3F1E7,stroke:#333,stroke-width:1px,stroke-dasharray:4
+style INTRO fill:#FDE2B9,stroke:#333,stroke-width:1px,stroke-dasharray:4
+style COPYE fill:#fbcfe8,stroke:#333,stroke-width:1px,stroke-dasharray:4
+
+%% Final Nodes
+style COMMU fill:#ffecd1,stroke:#ff5f5f,stroke-width:5px,stroke-dasharray:8,color:#222
+style LITRV fill:#ffecd1,stroke:#e38d00,stroke-width:5px,color:#222
+
+%% Green Socio-Technical/Business/Management
+%% style PRODM fill:#bbf7d0,stroke:#333,stroke-width:1px
+%% style OPERS fill:#bbf7d0,stroke:#333,stroke-width:1px
+style PLNFM fill:#bbf7d0,stroke:#333,stroke-width:1px
+
+%% Blue Social Science/UX
+style ONSUR fill:#cbeafe,stroke:#333,stroke-width:1px
+style USRES fill:#cbeafe,stroke:#333,stroke-width:1px
+style UXANA fill:#cbeafe,stroke:#333,stroke-width:1px
+
+%% Pink Design Core
+style INFOV fill:#fbcfe8,stroke:#333,stroke-width:1px
+style FRONT fill:#fbcfe8,stroke:#333,stroke-width:1px
+style UIVIS fill:#fbcfe8,stroke:#333,stroke-width:1px
+%% style APPUI fill:#fbcfe8,stroke:#333,stroke-width:1px
+
+%% Yellow Technical Core
+style PYTHN fill:#fff589,stroke:#bbf7d0,stroke-width:5px,stroke-dasharray:4,color:#222
+%% style WEBDN fill:#fff589,stroke:#333,stroke-width:2px
+%% style MLAPI fill:#fff589,stroke:#333,stroke-width:2px
+
+

@@ -1,6 +1,9 @@
 /* Navigator-Header ToC: by default 'hidden'(set in template) */
-aside#nav-sidebar {
-  @apply bg-secondary-500/10 print:hidden pl-3;  
+aside div.hb-scrollbar {
+  @apply print:hidden px-3;  
+}
+div#docs-toc {
+  @apply rounded-2xl bg-secondary-500/25 dark:bg-secondary-900;  
 }
 
 /* Match Tailwind lg (default 1024px): https://tailwindcss.com/docs/screens */
@@ -63,7 +66,7 @@ aside#nav-sidebar {
 }
 
 .hb-docs-link {
-  @apply flex rounded pl-1 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-50 hover:text-gray-950 dark:text-gray-300 dark:hover:bg-primary-50 dark:hover:text-gray-50;
+  @apply flex rounded pl-1 py-1.5 text-sm transition-colors [word-break:break-word] cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] gap-2 before:opacity-25 before:content-['#'] text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-100 dark:hover:text-gray-100;
 }
 
 .hb-sidebar-mobile-menu {
@@ -75,5 +78,9 @@ aside#nav-sidebar {
 }
 
 .hb-sidebar-custom-link {
-  @apply flex items-center justify-between gap-2 cursor-pointer rounded pl-1 py-1.5 text-sm transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word];
+  @apply flex items-center justify-between gap-2 cursor-pointer rounded pl-1 py-1.5 
+         text-sm md:text-base transition-colors  w-full break-words
+         text-gray-700 hover:text-gray-900 hover:bg-tertiary-300 rounded-md 
+         dark:text-gray-300 dark:hover:text-gray-100
+         [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word];
 }

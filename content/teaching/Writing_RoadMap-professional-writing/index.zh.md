@@ -1,12 +1,13 @@
 ---
-title: "🛣️ Manage your projects"
+weight: 7100
+title: ⤷✍写清楚💭
 summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
 date: 2023-10-23
 type: docs
 authors:
   - admin
 tags:
-  - Roadmaps
+  - Writing
 image:
   caption: "Image credit: [**Unsplash**](https://unsplash.com)"
 ---

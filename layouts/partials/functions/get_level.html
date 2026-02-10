@@ -1,0 +1,5 @@
+{{- $w := .weight | default 1 | int -}}
+
+{{- if eq (mod $w 1000) 0 }}0
+{{- else if eq (mod $w 100) 0 }}1
+{{- else }}2{{- end -}}

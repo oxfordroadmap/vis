@@ -3,26 +3,28 @@
 {{- $toc := .Params.toc | default true -}}
 
 {{/* UI Text */}}
+{{- $table_of_contents := T "table_of_contents" }}
 {{- $on_this_page := T "on_this_page" }}
 {{- $edit_this_page := T "edit_page" }}
 
 {{/* Navigator-Header ToC: by default 'hidden'(cf. block) */}}
-<nav id="nav-toc" class="hb-toc hidden order-last basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5" 
+<nav id="nav-toc" class="hidden hb-toc order-last text-sm sm:text-base basis-1/2 sm:basis-1/3" 
      x-show="expanded"
      aria-label="table of contents">
 
   {{ partial "functions/get_hook" (dict "hook" "toc-start" "context" .) }}
   {{- if $toc }}
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-3 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-3 rtl:-ml-3">
-    {{- with .Fragments.Headings -}}
-    <span id="toc_icon_label" class="mb- font-semibold tracking-tight">{{ $on_this_page }}</span>
-    {{- range . -}}
-    <ul>
-      {{- with .Headings -}}{{ template "toc-headings" (dict "headings" . "level" 0) }}{{- end -}}
-    </ul>
-    {{- end -}}
-    {{- end -}}
+  <div id="page-toc" class="hb-scrollbar [hyphens:auto] fixed top-24 overflow-y-auto pr-3 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-3 rtl:-ml-3">
 
+    {{- with .Fragments.Headings -}}
+    <p class="mb-4 font-semibold tracking-tight">🗏 {{ $on_this_page }}</p>
+      {{- range . -}}
+      <ul class="pl-0 mt-1 space-y-1">
+        {{- with .Headings -}}{{ template "toc-headings" (dict "headings" . "level" 0) }}{{- end -}}
+      </ul>
+      {{- end -}}
+    {{- end -}}
+    
     {{- $class := "" -}}
     {{- if .Fragments.Headings -}}
       {{- $class = "mt-8 border-t dark:border-neutral-700 pt-8" -}}
@@ -37,7 +39,7 @@
         {{ $dir := site.Params.features.repository.content_dir | default "content" }}
         {{- with .File -}}{{ $edit_url = urls.JoinPath $edit_url "edit" $branch $dir (replace .Path "\\" "/") }}{{- end -}}
         {{- with .Params.edit_url -}}{{ $edit_url = . }}{{- end -}}
-        <a class="text-xs font-medium text-gray-500 hover:text-gray-950 dark:text-gray-300 dark:hover:text-gray-50 contrast-more:text-gray-700 contrast-more:dark:text-gray-50" href="{{ $edit_url }}" target="_blank" rel="noreferer">{{ $edit_this_page }}</a>
+        <a class="font-medium text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 contrast-more:text-gray-700 contrast-more:dark:text-gray-100" href="{{ $edit_url }}" target="_blank" rel="noreferer">{{ $edit_this_page }}</a>
 
     </div>
     {{- end -}}
@@ -50,29 +52,98 @@
   {{ end -}}
 </nav>
 
-{{/* Render Headings */}}
+{{/*------------------------------------------------------------------------------
+  Recursive template for each ToC node
+  - .node  → a single Heading object (.ID, .Title, .Headings)
+  - .level → depth (0 = top, stops at ≥4)
+------------------------------------------------------------------------------*/}}
 {{- define "toc-headings" -}}
   {{- $headings := .headings -}}
-  {{- $level := .level -}}
+  {{- $level    := .level -}}
+
+  {{- /* Stop at depth 4 */ -}}
   {{- if ge $level 4 -}}
-    {{ return }}
+    {{- return -}}
   {{- end -}}
 
-  {{- $padding := (mul $level 4) -}}{{/* Requires inclusion in Tailwind safelist!! */}}
-  {{- $class := cond (eq $level 0) "font-semibold" (printf "pl-%d rtl:pr-%d" $padding $padding) -}}
+  {{- /* Compute padding (for safelisted pl-0,pl-4,pl-8…) */ -}}
+  {{- $padding := mul $level 8 -}}
+  {{- $font := cond (eq $level 0) "font-black"
+              (cond (eq $level 1) "font-bold"
+                (cond (eq $level 2) "font-semibold"
+                  (cond (eq $level 3) "text-sm" ""))) -}}
+  {{- $paddingClass := printf "pl-%d rtl:pr-%d" $padding $padding -}}
+  {{- $class := printf "%s" $font  -}}
+
+
 
   {{- range $headings }}
     {{- if .Title }}
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="{{ $class }} inline-block text-gray-500 hover:text-gray-950 dark:text-gray-300 dark:hover:text-gray-300 w-full break-words" href="#{{ anchorize .ID }}">
-          {{- .Title | plainify | htmlUnescape -}}
-        </a>
+      {{- /* x-data = le $level 1 returns a boolean: true if $level ≤ 1, false otherwise. */ -}}
+      <li
+        x-data="{ open: {{ le $level 0 }} }" 
+        class="my-2 scroll-my-6 scroll-py-6"
+      >{{- /* debug 1️⃣ x-init="console.log('ToC init:', '{{ anchorize .ID }}', open)" */ -}}
+        <div class="{{ $class }} py-0 my-0 flex items-center justify-start w-full">
+          
+          {{- /* 1️⃣ Caret toggle, only if this node has children */ -}}
+          {{- with .Headings }}
+            <button
+              type="button"
+              @click="open = !open"
+              class="flex-none focus:outline-none"
+              aria-label="Toggle section {{ anchorize $.ID }}"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-4 h-4 transform rotate-0 transition-transform duration-150"
+                :class="open ? 'rotate-90' : 'rotate-0'"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                  <g opacity="0.2"><polygon points="56 48 136 128 56 208 56 48"/></g><g><path d="M141.65674,122.34326l-80-80A7.99981,7.99981,0,0,0,48,48V208a7.99984,7.99984,0,0,0,13.65674,5.65674l80-80A7.99915,7.99915,0,0,0,141.65674,122.34326ZM64,188.686V67.314L124.686,128Z"/><path d="M221.65674,122.34326l-80-80a7.99984,7.99984,0,0,0-11.31348,11.31348L204.686,128l-74.34278,74.34326a7.99984,7.99984,0,1,0,11.31348,11.31348l80-80A7.99915,7.99915,0,0,0,221.65674,122.34326Z"/></g></svg>
+            </button>
+          {{- else }}
+          <button
+            type="button"
+            disabled
+            class="flex-none text-gray-300"
+            aria-label="No headings"
+          >
+            <span class="w-4 h-4">▪️</span>
+          </button>
+          {{- end }}
+
+          {{- /* 2️⃣ Anchor link (always present) */ -}}
+          <a
+            href="#{{ anchorize .ID }}"
+            class="inline-block text-gray-500 hover:text-gray-900 rounded-md hover:bg-amber-500
+                   dark:text-gray-300 dark:hover:text-gray-100 w-full break-words"
+          >
+            {{- $title := .Title | plainify | htmlUnescape -}}
+            {{- $parts := split $title "—" -}}
+            {{- if gt (len $parts) 1 -}}
+              {{- index $parts 0 -}}
+            {{- else -}}
+              {{- $title -}}
+            {{- end -}}
+          </a>
+        </div>
+
+        {{- /* 3️⃣ Child list: shown/hidden by open */ -}}
+        {{- with .Headings }}
+          <ul
+            x-show="open"
+            x-transition
+            class="pl-4 mt-1 space-y-1"
+          >
+          {{- /*  Add identions -- pl-4 */ -}}
+
+            {{- template "toc-headings" (dict "headings" . "level" (add $level 1)) }}
+          </ul>
+        {{- end }}
       </li>
-    {{- end -}}
-
-    {{- with .Headings -}}
-      {{ template "toc-headings" (dict "headings" . "level" (add $level 1)) }}
-    {{- end -}}
-
-  {{- end -}}
+    {{- end }}
+  {{- end }}
 {{- end -}}

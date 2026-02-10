@@ -24,94 +24,51 @@ content/
 ---------------------------------------------
   */}}
 
-{{- $rawIDs := split (.Get "ids") "," -}}
-{{- $path := .Get "path" | default "videos_youtube" -}}
-
-{{- $ids := slice -}}
-{{- range $rawIDs }}
+{{- /* 1. Parse & trim comma-separated IDs */ -}}
+{{- $raw   := split (.Get "ids") "," -}}
+{{- $ids   := slice -}}
+{{- range $raw -}}
   {{- $ids = $ids | append (trim . " ") -}}
-{{- end }}
+{{- end -}}
 
-<!-- 🧱 Show section path used -->
-<p>🧱 Searching in section: <code>{{ $path }}</code></p>
+{{- /* 2. Section folder where your .md files live */ -}}
+{{- $section := .Get "path" | default "videos_youtube" -}}
 
-<!-- 📦 Get all pages in the section -->
-<!-- headless: true, they’re excluded from site.Pages -->
-{{- $all := where site.AllPages "Section" $path -}}
+{{- /* 3. Lookup pages by filename, collect hits & misses */ -}}
+{{- $matches := slice -}}
+{{- $missed  := slice -}}
+{{- range $ids -}}
+  {{- with site.GetPage (printf "%s/%s" $section .) -}}
+    {{- $matches = $matches | append . -}}
+  {{- else -}}
+    {{- $missed = $missed  | append . -}}
+  {{- end -}}
+{{- end -}}
 
-<!-- 🔍 Extract base filenames of available files -->
-<p>📚 Available files in <code>content/{{ $path }}</code>:</p>
-<ul>
-  {{- range $all }}
+{{- /* 4. Warn if any IDs didn’t resolve */ -}}
+{{- if gt (len $missed) 0 }}
+  <p class="alert-warning">
+    ⚠️ Could not find pages for IDs: {{ delimit $missed ", " }}  
+    (check <code>content/{{ $section }}</code>)
+  </p>
+{{- end -}}
 
-    {{ with .File }}
-      <li>{{ .BaseFileName }}</li>
-    {{ else }}
-      <li>⚠️ Missing file object</li>
-    {{ end }}
-
-  {{- else }}
-    <li>⚠️ No files found in section <code>{{ $path }}</code>.</li>
-  {{- end }}
-</ul>
-
-<!-- 🏷️ Prepare matches + unmatched -->
-{{- $matched := slice -}}
-{{- $unmatched := slice -}}
-
-{{- range $ids }}
-  {{- $page := site.GetPage (printf "%s/%s" $path .) -}}
-  
-  {{- if $page }}
-    {{- $matched = $matched | append $page -}}
-  {{- else }}
-    {{- $unmatched = $unmatched | append . -}}
-  {{- end }}
-{{- end }}
-
-<!-- 🧪 Diagnostic report -->
-<ul>
-  <li>✅ Matched IDs:
-    <ul>
-      {{- range $matched }}
-        <li>{{ .File.BaseFileName }}</li>
-      {{- else }}
-        <li>❌ None matched</li>
-      {{- end }}
-    </ul>
-  </li>
-  <li>🚫 Unmatched IDs:
-    <ul>
-      {{- range $unmatched }}
-        <li>{{ . }}</li>
-      {{- else }}
-        <li>✅ All IDs matched</li>
-      {{- end }}
-    </ul>
-  </li>
-</ul>
-
-<!-- 🎬 Render matched videos -->
-{{- if gt (len $matched) 0 }}
-  <div class="curated-videos-grid">
-    {{- range $matched }}
-      <div class="video-card">
-        <h3>{{ .Params.title }}</h3>
-        {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-        <div class="youtube">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/{{ .File.BaseFileName }}"
-            title="YouTube video"
-            frameborder="0"
-            loading="lazy"
-            allowfullscreen>
-          </iframe>
+{{- /* 5. Render each page’s .Content (bullet list + youtube shortcode) */ -}}
+{{- if gt (len $matches) 0 }}
+  <div class="curated-videos-list">
+    {{- range $matches }}
+      <article class="video-entry">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          {{ .Summary | safeHTML }}
+        <div class="video-body">
+          {{ .Content | safeHTML }}
         </div>
-      </div>
+      </article>
     {{- end }}
   </div>
 {{- else }}
-  <p>⚠️ No valid video files found for the IDs provided. Please check filenames in <code>content/{{ $path }}</code>.</p>
-{{- end }}
+  <p>
+    ℹ️ No videos matched for IDs: {{ delimit $ids ", " }}  
+    (check your shortcode call or filenames)
+  </p>
+{{- end -}}

@@ -3,7 +3,7 @@ title: "Dream of the Red Chamber Graph"
 date: 2025-06-30
 type: post
 tags:
-  - 'insights'
+  - 'action-notes'
   - Apache-Echart
   - 'Social Network Analysis'
   - 'Digital Humanities'

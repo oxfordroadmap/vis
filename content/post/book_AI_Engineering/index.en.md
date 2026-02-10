@@ -1,6 +1,6 @@
 ---
 title: '🤖 AI Engineering: The Must-Read Book for Building Intelligent Applications in 2025 📖'
-date: 2025-06-24
+date: 2025-07-04
 authors:
   - admin
 tags:

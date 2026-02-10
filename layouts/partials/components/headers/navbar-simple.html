@@ -4,7 +4,7 @@
 {{ $show_search := site.Params.header.navbar.show_search | default false }}
 
 <nav id="navbar-simple"
-  class="relative flex w-full flex-nowrap items-center justify-between bg-white py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-gray-950 lg:flex-wrap lg:justify-start lg:py-4"
+  class="relative flex w-full flex-nowrap items-center justify-between bg-white py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-gray-900 lg:flex-wrap lg:justify-start lg:py-4"
   data-te-navbar-ref>
   <div class="flex w-full flex-wrap items-center justify-between px-3">
     <!-- Hamburger button for mobile view -->
@@ -46,13 +46,13 @@
         {{- $page_url:= $currentPage.Permalink | absLangURL }}
         {{- $active := eq $menu_item_url $page_url -}}
         {{- $activeClass := cond $active "active" "" -}}
-        <!-- Home link [&.active]:text-bold [&.active]:text-black/90 dark:[&.active]:text-neutral-300-->
+        <!-- Home link [&.active]:text-bold [&.active]:text-black/75 dark:[&.active]:text-neutral-300-->
         <li
           class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
           data-te-nav-item-ref>
           <a
             class="lg:px-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300
-            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white {{ $activeClass }}"
+            [&.active]:font-bold [&.active]:text-black/75 dark:[&.active]:text-white {{ $activeClass }}"
             aria-current="page"
             href="{{ .URL | relLangURL }}"
             data-te-nav-link-ref
@@ -64,7 +64,7 @@
         <li class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1">
           <a
             class="lg:px-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300
-            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white"
+            [&.active]:font-bold [&.active]:text-black/75 dark:[&.active]:text-white"
             aria-current="page"
             href="#"
             id="search_toggle"
@@ -75,7 +75,7 @@
         {{ $show_theme_chooser := site.Params.header.navbar.show_theme_chooser | default true }}
         {{ if $show_theme_chooser }}
         <li class="lg:px-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300
-            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+            [&.active]:font-bold [&.active]:text-black/75 dark:[&.active]:text-white">
           <button class="theme-toggle mt-1" accesskey="t" title="">
             <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -101,7 +101,7 @@
         {{ $show_translations := site.Params.header.navbar.show_translations | default true }}
         {{ if .IsTranslated | and $show_translations }}
         <li class="lg:px-2 text-gray-500 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300
-            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+            [&.active]:font-bold [&.active]:text-black/75 dark:[&.active]:text-white">
           {{- partial "components/language-chooser.html" (dict "page" .) -}}
         </li>
         {{ end }}

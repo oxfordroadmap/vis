@@ -6,10 +6,10 @@ const readline = require('readline')
 // ─── CONFIG ────────────────────────────────────────────────────────────────
 const ROOT_DIRS     = ['./layouts','./content','./assets']
 const FILE_REGEX    = /\.(html|md|tmpl|css)$/
-const EXCLUDE_PATHS = ['assets/dist/']    // skip final output
+const EXCLUDE_PATHS = ['assets/dist/', 'assets/css/themes/']    // skip final output
 const ALLOWED_COLORS = ['primary','secondary','neutral','amber','hb-dark','gray']
-const ALLOWED_SCALES = [50, 300, 500, 700, 950]
-const ALLOWED_OPACITIES = [10, 25, 50, 75, 90]
+const ALLOWED_SCALES = [100, 300, 500, 700, 900]
+const ALLOWED_OPACITIES = [25, 50, 75]
 
 
 // default suggestions for common Tailwind colors

@@ -1,11 +1,11 @@
 ---
 weight: 3100
-title: "⤷🪴Bare: Agentic Web Development `AgenticWebDev`"
+title: "⤷🪴Bare 5﹢2: Agentic Web Development—`AgenticWebDev`"
 date: 2025-07-10
 type: docs
 params:
   emoji: 🪴
-  id: Bare (5+2)
+  id: Bare (5﹢2)
   curriculum: Agentic Web Development
   slug: AgenticWebDev
 authors:
@@ -17,7 +17,7 @@ tags:
   - ContextEngineering
   - AIEngineering
 ---
-
+- 🪴 Develop modern Web development skills with AI and Agent capabilities. 
 - 🌐 Develop Web skills to build multilingual and multimodal intelligent agent systems 
 - 🧪 Refine your personal portfolio through hands-on projects featuring application-oriented RAG (Retrieval-Augmented Generation), large language models (LLMs), and responsive interface design    
 - 🧠 Master knowledge workflows —from prompt engineering and knowledge graph construction to interactive data dashboards—accurately defining context, data pipelines, and work flows to solve real-world problems    
@@ -33,7 +33,7 @@ tags:
 - Name:  `{{% param "emoji" %}}{{% param "curriculum" %}}`
 
 - Slug: `{{% param "slug" %}}`
-
+- Stages: `{{% param "id" %}}`
 - Target specialization: AI Agent-oriented talent development program for students across various disciplines
 
 ---
@@ -42,13 +42,13 @@ tags:
 
 The `{{% param "emoji" %}}{{% param "curriculum" %}}` curriculum guides learners through the frontier of AI-integrated web systems, emphasizing agentic design, multilingual adaptability, and Retrieval-Augmented Generation (RAG) logic. Through hands-on modules and impact-driven projects, students learn not only how to build web applications—but how to design intelligence, model decision contexts, and anticipate futures within ethical, participatory, and data-responsive frameworks.
 
-📚 The curriculum unfolds in **three progressive stages** across **5+2 modules**, adaptable to semester-based or self-paced formats:
+📚 The curriculum unfolds in **3 progressive stages** across **5+2 modules**, adaptable to semester-based or self-paced formats:
 
 - 🧭 **Stage 1: Foundation** — _AG101 to AG102_: Students master web fundamentals, deploy agentic features using APIs, and integrate LLMs via platforms like 🤗 Hugging Face and 🐙 GitHub.
     
 - 🔁 **Stage 2: Production** — _AG201 to AG203_: Structured communication, RAG systems, and agentic data dashboards empower learners to create reactive, multilingual, and interpretive applications.
     
-- 🚀 **Stage 3: Capstone Impact** — _AG301 and AG302_: Students synthesize their work into public-facing portfolios, conduct science mapping, and articulate AI impact using forecasting and responsible innovation tools.
+- 🚀 **Stage 3: Capstone Impact** — _AG303 and AG302_: Students synthesize their work into public-facing portfolios, conduct science mapping, and articulate AI impact using forecasting and responsible innovation tools.
     
 
 ### ✨ Highlights
@@ -90,7 +90,7 @@ Stage 1 features API-based Web Development and foundational LLM integration. Stu
 - 📦 **Delivery & Demonstration**: Students deliver personal portfolio websites—functional, multilingual, and scalable—marking their entry into web-based agentic creation.
     
 
-#### 🤗 **AG102: Agentic Web Design**
+#### 🤗 **AG102: Agentic Web Development**
 
 - 🛠️ **LLM API Integration**: Students apply API-based LLMs both locally and in the cloud, experimenting with three scaffolding options: (1) Public Website + Chatbot, (2) Private Smart Notebook + Local LLM, and (3) YouTube Curation Site + Automation.    
 - 🔄 **Agentic Web Features**: Projects explore Web components that are reactive, proactive, and iterative—shaping flows that adapt to user needs and ethical considerations.
@@ -102,7 +102,7 @@ Stage 1 features API-based Web Development and foundational LLM integration. Stu
 
 Building upon foundational LLM integrations, this stage focuses on agentic capabilities of AI systems. Students consolidate core skills across three thematic strands: **Structured Communication**, **RAG Systems**, and **Agentic Data Visualization**, culminating in applied and interpretive outputs that highlight human-AI collaboration.
 
-#### ♞🧱 **AG201: Structured Communication in Agentic Systems**
+#### ♞🧱 **AG201: Agentic Structured Communication**
 
 - 🧠 **Structured Expression**: Students develop expressive inputs and outputs through structured LLM model specs, markdown graphs, product requirement documents (PRDs), interactive storytelling, and multilingual frameworks.
 - 🤝 **Community of Practice (CoP)**: They share experimentations and outcomes across technical ecosystems and sector-facing CoPs—highlighting design choices, contextual nuances, and communicative clarity.
@@ -122,12 +122,12 @@ Building upon foundational LLM integrations, this stage focuses on agentic capab
 - 🧬 **Symbolic & Epistemic Structures**: Students explore narrative agency, epistemic modeling, and cultural symbolism as they apply visual languages to interpretive frames.
 - 📦 **Delivery & Demonstration**: Final dashboards are presented as agentic systems—tools that empower users to question, co-author, and operationalize data in ethically reflective ways.
 
-### 🚀 Stage 3: Capstone Impact — _AG301 and AG302_
+### 🚀 Stage 3: Capstone Impact — _AG303 and AG302_
 
 The final stage centers on synthesis, professional/public engagement, technological forecasting and societal foresight. Students activate innovation mindsets and consolidate reflective documentation through agentic applications, responsible forecasting, and multilingual outreach. The emphasis is on linking learning outcomes to instances of **Community of Practice (CoP)** and articulating impact through structured rubrics and peer walkthroughs.
 
 
-#### 🧑‍🤝‍🧑🧬 **AG301: Capstone Project**
+#### 🧑‍🤝‍🧑🧬 **AG303: Capstone Project**
 
 - 🧵 **Portfolio Integration**: Students assemble prior learnings into tangible, public-facing final portfolios summarizing all projects and documentation relevant to their learning outcomes.
 - 📬 **Professional & Multilingual Outreach**: Capstone outputs emphasize communication strategies and resource deployment tailored for specific CoPs, drawing on professional engagement.    

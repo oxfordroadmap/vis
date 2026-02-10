@@ -1,6 +1,6 @@
 ---
 title: 🤖AI 工程：建構智慧應用的 2025 年必讀書籍📖
-date: 2025-06-24
+date: 2025-07-04
 authors:
   - admin
 tags:

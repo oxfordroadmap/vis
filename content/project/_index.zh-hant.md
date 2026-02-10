@@ -18,7 +18,7 @@ sections:
         {{< /details >}}
     design:
       css_style: "border: 1px dotted;"
-      css_class: "bg-amber-500/20"
+      css_class: "bg-amber-500/25"
   - block: collection
     id: 'CaseNetBib'
     content:

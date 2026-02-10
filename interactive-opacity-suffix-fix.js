@@ -7,7 +7,7 @@ const readline = require('readline')
 const ROOT_DIRS       = ['./layouts','./content','./assets']
 const FILE_REGEX      = /\.(html|md|tmpl|css)$/
 const EXCLUDE_PATHS   = ['assets/dist/']
-const ALLOWED_OPACITY = [10,25,50,75,90]
+const ALLOWED_OPACITY = [25,50,75]
 
 // capture <utility>/<opacity>
 const OP_REGEX = /((?:bg|text|border|ring)-[\w-]+)\/(\d{1,3})/g

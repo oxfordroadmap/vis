@@ -25,7 +25,7 @@
         {{ ($item.Params.summary | default $item.Summary) | plainify | htmlUnescape | chomp -}}
       </p>
       <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">
-        {{- $item.Date | time.Format ":date_long"  -}}
+        {{- $item.Date | time.Format ":date_long" -}}
       </p>
     </div>
   </div>

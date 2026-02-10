@@ -1,15 +1,15 @@
 <!doctype html>
 {{ "<!-- This site was created with Hugo Blox. https://hugoblox.com -->" | safeHTML }}
-{{ printf "<!-- Last Published: %s -->" (now | time.Format ":date_long") | safeHTML }}
+{{ printf "<!-- Last Stamped: %s -->" (now | time.Format ":date_long") | safeHTML }}
 {{- $language_code := site.LanguageCode | default "en-us" -}}
 <html lang="{{$language_code}}" {{ if in site.Data.i18n.rtl.rtl $language_code }}dir="rtl"{{else}}dir="ltr"{{end}}
       data-wc-theme-default="{{ (lower site.Params.appearance.mode) | default "system" }}">
   {{ partial "site_head" . }}
-  {{ "<!-- HTML Structure: Body -->" | safeHTML }}
+  {{ "<!-- HTML Structure: Body (Note. z-50 for page-header and toggle widgets)-->" | safeHTML }}
   <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
     <div id="page-bg"></div>
     {{ "<!-- page-header: Div as if Semantic HTML elements: <header> , <footer> and <article>  -->" | safeHTML }}
-    <div class="page-header {{ if site.Params.header.navbar.fixed_to_top }}sticky top-0 z-30{{ end }}">
+    <div class="page-header {{ if site.Params.header.navbar.fixed_to_top }}sticky top-0 z-50{{ end }}">
       {{/* Load header block */}}
       {{ $show_navbar := ((site.Params.header.navbar.enable | default true) | and (ne .Params.header.navbar.enable false)) | or .Params.header.navbar.enable }}
       {{ if $show_navbar }}
@@ -26,10 +26,23 @@
     <!--In Hugo templates like baseof.html, .Kind and .Type are always available because they’re part of the built-in .Page object. -->
     <!-- if you're inside a partial, and you want to use .Kind or .Type there, you need to pass either the entire page context or at least the .Page key. You’re already doing that correctly in your ToC partial: -->
     <!-- (dict "page" .Page ... ) -->
+
+    {{ if and (eq .Kind "page")  (eq .Type "docs") }}
+    {{ "<!-- toggle widgets: EXTRA Sticky Navigation Sidebar -->" | safeHTML }}
+    <div class="fixed top-20 left-3 z-50 px-3 bg-white/75 dark:bg-black/75 rounded-full">
+    {{ partial "components/toggles/toggle-nav.html" (dict
+        "page" .Page
+        "icon_set" "finger"
+        "target_selector" "aside#nav-sidebar"
+        "aria_label" "Toggle Navigation Sidebar"
+    ) }}
+    </div>
+    {{ end }}
+
+
     {{ if and (eq .Kind "page") (or (eq .Type "post") (eq .Type "docs")) }}
-    {{ "<!-- page-header: EXTRA Sticky ToC -->" | safeHTML }}
-    <div class="page-header sticky top-20 z-30 px-3 flex justify-end">
-      {{/* Load ToC block */}}
+    {{ "<!-- toggle widgets: EXTRA Sticky ToC -->" | safeHTML }}
+    <div class="fixed top-20 right-3 z-50 px-3 bg-white/75 dark:bg-black/75 rounded-full">
     {{ partial "components/toggles/toggle-toc.html" (dict
         "page" .Page
         "icon_set" "gesture"
@@ -38,6 +51,8 @@
     ) }}
     </div>
     {{ end }}
+
+    {{ .Page.Store.Set "has_alpine" true }}<!-- uses Hugo’s public API and avoids the risk of .Store being undefined. -->
 
     {{ "<!-- page-body: Div to include block main -->" | safeHTML }}
 

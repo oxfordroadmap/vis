@@ -29,60 +29,22 @@ module.exports = {
     'hidden', 'block', 
     'task-list',   /* As it's added via JS */
     'pl-4', 'pl-8', 'pl-12',   /* TOC indents */
+    'z-0','z-10','z-20','z-30','z-40','z-50','z-auto',  /* Default */
     'min-h-screen', /* Blox options */
-    {      
-      pattern: /justify-(start|end|center|between|around|evenly|normal|stretch)/,
-      variants: ['hover', 'focus', 'md'], 
-    },
-    {
-      pattern: /^list-(none|disc|decimal|square|roman)$/,
-    },
-    {
-      pattern: /grid-cols-+/,
-      variants: ['md'],
-    },
-    {
-      pattern: /w-1\/(2|3|4|5)/,
-      variants: ['sm', 'md', 'lg', 'hover'],
-    },
-    {
-      pattern: /col-span-+/,
-      variants: ['md'],
-    },
-    {
-      pattern: /^line-clamp-(1|2|3|4|5|6)$/,
-    },    
-    { 
-      pattern: /^leading-(none|tight|snug|normal|relaxed|loose)$/ 
-    },
-    {
-      pattern: /bg-white+/,
-    },
-    {
-      pattern: /bg-gradient+/,
-    },
-    {
-      pattern: /from-primary+/,
-    },
-    {
-      pattern: /to-primary+/,
-    },
-    {
-      pattern: /(bg|border|text|ring)-(primary|secondary|neutral|amber|hb-dark)-(50|300|500|700|950)(\/(10|25|50|75|90))?/,
-      variants: ['','hover','focus','dark','dark:hover','dark:focus'],
-    },
-    {
-      pattern: /bg-transparent/,
-      variants: ['hover', 'focus', 'active', 'group-hover'],
-    },
-    'bg-transparent',
-    {
-      pattern: /space-y-(1|3|5|7|9)/,
-    },
-    ],
-    /* /^bg-white/, /^bg-gray-/, /^bg-primary-/, /^bg-gradient-/, /^from-primary-/, /^to-primary-/,
-  /^md:grid-cols-+/], */
-  /* /^pl-/ for TOC */
+    { pattern: /justify-(start|end|center|between|around|evenly|normal|stretch)/, variants: ['hover', 'focus', 'md'] },
+    { pattern: /^list-(none|disc|decimal|square|roman)$/ },
+    { pattern: /grid-cols-+/, variants: ['md'] },
+    { pattern: /w-1\/(2|3|4|5)/, variants: ['sm', 'md', 'lg', 'hover'] },
+    { pattern: /col-span-+/, variants: ['md'] },
+    { pattern: /^line-clamp-(1|2|3|4|5|6)$/ },
+    { pattern: /^leading-(none|tight|normal|loose)$/ },
+    { pattern: /bg-white+/ },
+    { pattern: /bg-gradient+/ },
+    { pattern: /from-primary+/ },
+    { pattern: /to-primary+/ },
+    { pattern: /(bg|text)-(primary|secondary|tertiary|amber|neutral|hb-dark)-(100|300|500|700|900)(\/(25|50|75))?/, variants: ['', 'hover', 'focus', 'dark', 'dark:hover', 'dark:focus'] },
+    { pattern: /bg-transparent/, variants: ['hover', 'focus', 'active', 'group-hover'] },
+    { pattern: /space-y-(1|3|5|7|9)/ },  ],
   darkMode: ['class'],
   theme: {
     extend: {
@@ -132,6 +94,19 @@ module.exports = {
           900: "rgb(var(--color-secondary-900) / <alpha-value>)",
           950: "rgb(var(--color-secondary-950) / <alpha-value>)",
         },
+        tertiary: {
+          50:  "rgb(var(--color-tertiary-50) / <alpha-value>)",
+          100: "rgb(var(--color-tertiary-100) / <alpha-value>)",
+          200: "rgb(var(--color-tertiary-200) / <alpha-value>)",
+          300: "rgb(var(--color-tertiary-300) / <alpha-value>)",
+          400: "rgb(var(--color-tertiary-400) / <alpha-value>)",
+          500: "rgb(var(--color-tertiary-500) / <alpha-value>)",
+          600: "rgb(var(--color-tertiary-600) / <alpha-value>)",
+          700: "rgb(var(--color-tertiary-700) / <alpha-value>)",
+          800: "rgb(var(--color-tertiary-800) / <alpha-value>)",
+          900: "rgb(var(--color-tertiary-900) / <alpha-value>)",
+          950: "rgb(var(--color-tertiary-950) / <alpha-value>)",
+        },
       },
         fontFamily: {
           // inner double quotes for font names that contain spaces to ensure they’re handled as single units by both Tailwind and the browser.
@@ -166,10 +141,8 @@ module.exports = {
         DEFAULT: {
           css: {
             "--tw-prose-body": theme("colors.neutral.700 / 1"),
-            "--tw-prose-headings": theme("colors.neutral.800 / 1"),
             "--tw-prose-lead": theme("colors.neutral.500 / 1"),
-            "--tw-prose-links": theme("colors.primary.600 / 1"),
-            "--tw-prose-bold": theme("colors.neutral.900 / 1"),
+            "--tw-prose-links": theme("colors.primary.900 / 1"),
             "--tw-prose-counters": theme("colors.neutral.800 / 1"),
             "--tw-prose-bullets": theme("colors.neutral.500 / 1"),
             "--tw-prose-hr": theme("colors.neutral.200 / 1"),
@@ -184,7 +157,7 @@ module.exports = {
             "--tw-prose-invert-body": theme("colors.neutral.300 / 1"),
             "--tw-prose-invert-headings": theme("colors.neutral.50 / 1"),
             "--tw-prose-invert-lead": theme("colors.neutral.500 / 1"),
-            "--tw-prose-invert-links": theme("colors.primary.400 / 1"),
+            "--tw-prose-invert-links": theme("colors.primary.100 / 1"),
             "--tw-prose-invert-bold": theme("colors.neutral.DEFAULT / 1"),
             "--tw-prose-invert-counters": theme("colors.neutral.400 / 1"),
             "--tw-prose-invert-bullets": theme("colors.neutral.600 / 1"),
@@ -206,6 +179,18 @@ module.exports = {
                 textDecoration: "none",
                 borderRadius: "0.09rem",
               },
+              // Dark mode overrides
+              'html.dark &': {
+                color: theme('colors.secondary.50'),
+                textDecorationColor: theme('colors.secondary.50'),
+                '&:hover': {
+                  backgroundColor: theme('colors.secondary.700'),
+                  color: theme('colors.secondary.50'),
+                },
+              },
+
+
+
             },
             mark: {
               color: theme("colors.neutral.100 / 1"),

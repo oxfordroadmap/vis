@@ -28,7 +28,7 @@
   {{- $img = resources.Get (path.Join "media" .) -}}
   {{ if $img }}
     {{- $img = $img.Process "webp" -}}
-    <div class="w-full bg-gray-300 dark:bg-gray-950 flex flex-wrap items-center justify-center">
+    <div class="w-full bg-gray-300 dark:bg-gray-900 flex flex-wrap items-center justify-center">
       <div class="w-full bg-white rounded dark:bg-gray-700">
         <div class="h-2/4 sm:h-64 overflow-hidden w-full">
           <img class="w-full object-cover"
@@ -52,7 +52,7 @@
         {{ if $avatar }}
         <div class="relative flex-none w-full justify-self-center text-center">
             {{ $avatar_image := $avatar.Fill "250x250 Center" }}
-            <img class="avatar mx-auto rounded-full bg-white dark:bg-gray-950 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
+            <img class="avatar mx-auto rounded-full bg-white dark:bg-gray-900 p-1" src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}"
                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}">
             {{with $person.status.icon}}<span class="avatar-emoji absolute p-1 text-3xl" style="transform: translate(-25%, -25%); font-size: 2rem;">{{.|emojify}}</span>{{end}}
         </div>
@@ -90,7 +90,7 @@
             {{ end }}
 
             {{/* 02.X ----- Social Network Icons ----- */}} 
-            <ul class="network-icon dark:text-neutral-50">
+            <ul class="network-icon dark:text-neutral-100">
                 {{ range $person.profiles }}
                 {{ $pack := or .icon_pack "fas" }}
                 {{ $pack_prefix := $pack }}
@@ -126,8 +126,8 @@
 
     {{/* 03.A Content Text */}} 
     {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
-    <div class="pt-2 justify-content-center prose prose-slate dark:prose-invert">        
-    <div class="bio-text formal-content text-xl leading-relaxed space-y-5" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
+    <div class="pt-2 justify-content-center prose-invert">  {{/* REMOVE dark:prose-invert for its consistent dark background */}}      
+    <div class="bio-text formal-content text-xl text-white leading-relaxed space-y-5" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
         {{ . }}
     </div>
     </div>
@@ -222,7 +222,7 @@
             {{ end }}
             
           <div class="m-0 py-1">
-            <p class="uni text-xl text-amber-50 font-serif font-semibold leading-tight m-0 p-0">{{ .institution }}{{ with .date_end }},
+            <p class="uni text-xl text-amber-100 font-serif font-semibold leading-tight m-0 p-0">{{ .institution }}{{ with .date_end }},
                 {{ $d := split . "-" }} 
                 {{ index $d 0 }}
                 {{ end }}

@@ -1,6 +1,6 @@
 ---
 weight: 3800
-title: "⤷🎄Full: Agentic ...—`AgenticNMInternet`"
+title: "⤷🎄Full 16➕2: Agentic (any domain)—`AgenticNMInternet`"
 date: 2025-07-22
 type: docs
 params:
@@ -15,24 +15,20 @@ tags:
   - ContextEngineering
   - AIEngineering
 ---
-
-- 🎄 Develop fully-integrated Web, content, and product management skills for the future generation of Product Managers, UI specialists, UX designers, and AI engineers. 
-- 🧪 Refine your personal portfolio through hands-on projects featuring application-oriented RAG (Retrieval-Augmented Generation), large language models (LLMs), and responsive interface design    
+- 🎄 Develop fully-integrated skills for the future generation of Web Developers, Product Managers, UI specialists, UX designers, and AI engineers. 
+- 🧪 Refine your personal portfolio through hands-on projects featuring application-oriented RAG (Retrieval-Augmented Generation), large language models (LLMs), and responsive interface design     
 - 🚀 No programming experience required—just the ambition to create intelligent agent applications with impact
-- 🧠 Master knowledge workflows —from prompt engineering and knowledge graph construction to interactive data dashboards—accurately defining context, data pipelines, and work flows to solve real-world problems    
+- 🧠 Master organizational learning and knowledge workflows —from prompt engineering and knowledge graph construction to interactive data dashboards—accurately defining context, data pipelines, and human-agent orchestration to solve real-world problems    
 
 
 <!--more-->
 
-## 📚Curriculum 
+## 📚Curriculum `{{% param "id" %}}`
 
-- Name:  `{{% param "emoji" %}}{{% param "curriculum" %}}`
-
-- Slug: `{{% param "slug" %}}`
-
-- Stages: `{{% param "id" %}}`
-
-- Target specialization: AI Agent-oriented talent development program for students who seek job positions among Product Managers, UI specialists, UX designers, and AI engineers. It is especially suitable for **New Media and Internet （网络与新媒体）**, **Intelligent Product Development and Applications（智能产品开发与应用）**, and **Intelligent Science and Technology（智能科学与技术专业）**  programs in mainland Chinese context.
+- 🔰Name:  `{{% param "emoji" %}}{{% param "curriculum" %}}`
+- 🏷Slug: `{{% param "slug" %}}`
+- 🪜Stages: `{{% param "id" %}}`
+- 🔭Target specialization: AI Agent-oriented talent development program for students who seek job positions among Web Developers, Product Managers, UI specialists, UX designers, and AI engineers. It is especially suitable for **Intelligent Product Development and Applications（智能产品开发与应用）**,  **Intelligent Science and Technology（智能科学与技术专业）** and **New Media and Internet （网络与新媒体）** programs in mainland Chinese context.
 
 ---
 
@@ -40,6 +36,7 @@ tags:
 
 The `{{% param "emoji" %}}{{% param "curriculum" %}}` curriculum guides learners through the frontier of AI-integrated web systems, emphasizing agentic design, multilingual adaptability, and Retrieval-Augmented Generation (RAG) logic. Through hands-on modules and impact-driven projects, students learn not only how to build web applications—but how to design intelligence, model decision contexts, and anticipate futures within ethical, participatory, and data-responsive frameworks.
 
+### 🪜 Stages
 📚 The curriculum unfolds in **5 progressive stages** across **16+2 modules**, adaptable to semester-based or self-paced formats:
 
 - 🧭 **Stage 1: Conceptual Foundation** — _🌐 TECHC, 📡 INTRO, ✍️ COPYE_: Students build critical digital literacy through open-source exploration, version-controlled writing, and sociotechnical reflection—laying the groundwork for structured communication and networked authorship using 🐙 GitHub.
@@ -54,6 +51,10 @@ The `{{% param "emoji" %}}{{% param "curriculum" %}}` curriculum guides learners
     
 
 ### ✨ Highlights
+
+- 🧭 **Adopt and operationalize** AI agents in targeted domains—such as counseling, education, or civic planning—to bridge sector-specific knowledge with scalable agentic interfaces and interaction chains
+
+- 🔄 **Flexible & Cross-Role Skills**:  Portfolios help learners to _show_, _share_, and _transfer_ their role-based skills across career paths and team environments. They support lifelong learning and adaptability to _analyze_ how different roles contribute to a project, _connect_ ideas across disciplines, and _collaborate_ effectively with peers in tech, design, management, and research.
 
 - 🔧 **Build** agentic web apps integrating LLMs via 🤗 Hugging Face and 🐙 GitHub for real-world functionality
     
@@ -76,9 +77,15 @@ By the end of this course, students will be able to:
     
 - 🧪 **Evaluate** innovation scenarios and impact through AI assessment methods, science mapping, responsible AI frameworks, and foresight methodologies
 
+## 🧮 Comparisons: Systematic Agent Mastery 🌐🤖
+
+This curriculum provides a full, university-level undergraduate program that delivers systematic agent mastery for scalable innovation
+
+{{% include "/_snippet_/tbl_curriculum" %}}
+
 ## 🔖 Curriculum Details
 
-Progressively enriching learners' portfolios through project documentation and interpretive outcomes, this curriculum guides students through a three-stage learning journey. Each stage deepens their technical fluency, innovative imagination, agentic design capacity, and ethical considerations—***regardless of prior programming experience***. Learners begin by mastering Web fundamentals, then evolve agentic interfaces, and finally synthesize innovations with societal impact.
+Progressively enriching learners' portfolios through project documentation and interpretive outcomes, this curriculum guides students through a three-stage learning journey. Covering web, content, and product management, each stage deepens their technical fluency, innovative imagination, agentic design capacity, and ethical considerations—***regardless of prior programming experience***. Learners begin by mastering Web fundamentals, then evolve agentic interfaces, and finally synthesize innovations with societal impact.
 
 This five-stage curriculum begins with three foundational courses and builds toward two final capstone projects, moving from basic skills to advanced, real-world applications.
 
@@ -160,7 +167,7 @@ This stage cultivates the ability to **apply**, **design**, and **construct** sy
 ### 🔁Stage 3: Front-end Production — _🤗 AG102, ⚙️ FRONT, 🐍 PYTHN, 🔍 USRES_
 Stage 3 features hands-on development of intelligent front-end applications that combine modular UI frameworks, Python-based data tooling, and user-centered research. Learners begin architecting responsive interfaces and agentic web components—bridging technical infrastructure with adaptive experiences that reflect ethical and contextual awareness.
 
-#### 🤗 **AG102: Agentic Web Design**
+#### 🤗 **AG102: Web Development (with AI)**
 
 - 🛠️ **LLM API Integration**: Students apply API-based LLMs both locally and in the cloud, experimenting with three scaffolding options: (1) Public Website + Chatbot, (2) Private Smart Notebook + Local LLM, and (3) YouTube Curation Site + Automation.    
 - 🔄 **Agentic Web Features**: Projects explore Web components that are reactive, proactive, and iterative—shaping flows that adapt to user needs and ethical considerations.
@@ -281,23 +288,6 @@ This module equips learners with advanced literature review skills and scientome
     
 - **So what**: Learners demonstrate professional readiness and societal impact—crafting intelligent systems grounded in research, contributing to global communities of practice, and communicating insights across platforms and disciplines. {{% /callout %}}
 
-## 🧮 Comparisons
-
-### Table
-
-{{% include "/_snippet_/tbl_curriculum" %}}
-
-### Note
-
-Unlike other offerings listed here, this curriculum provides a complete, university-level undergraduate program focused on the practical development, design, evaluation, and deployment of AI agent applications.
-
-- For a simplified version (Core: 5 stages, 10+2 modules), refer to `AI Agent & Internet`
-    
-- For the most basic format (Bare: 3 stages, 5+2 modules), see `Agentic Web Development`
-    
-
-This curriculum is informed by the author's teaching experience in China, serving as both instructor and vice-dean for the undergraduate program in `New Media & Internet`, which includes the award-winning courses such as the first-class `API, Machine Learning, and Artificial Intelligence`.
-
 ---
 
 ## 🗒️ Notes to Educators and Self-Learners
@@ -414,7 +404,7 @@ Together, these foundational capabilities interface with adjacent PM, UI, and UX
 #### 2. 🎨UI or Front-End (Pink)
 The UI thread features **integrated design thinking** across visual and interactive dimensions, supporting learners as they move from expressive content creation to modular interface engineering. Positioned at the top of the curriculum map, these pink nodes align with industry roles such as frontend developers, UI designers, and creative technologists.
 
-##### 🧩 Core Modules
+##### 🧩 UI Modules
 
 This thread comprises interactive visualization courses and app prototyping modules that cultivate responsive, user-centered design practices:
 
@@ -474,7 +464,7 @@ Positioned centrally within the curriculum map, this thread bridges frontend pro
 
 ---
 
-##### 🧩 Core Modules
+##### 🧩 PM Modules
 
 This thread equips learners to lead projects from ideation to deployment, enabling them to act as thoughtful stewards of collaborative production and align technology capabilities with value-driven innovations.
 
@@ -525,27 +515,16 @@ The UX thread, represented by **blue nodes**, anchors the curriculum’s **human
 
 Positioned at the bottom of the curriculum map, these nodes form the research foundation and feedback pathways that inform upstream design, development, and platform coordination.
 
-##### 🧩 Core Modules
+##### 🧩 UX Modules
 
 This thread equips learners to empathize with users through surveys and qualitative studies, translate data into actionable UX insights, and iterate designs that enhance usability, satisfaction, and long-term engagement:
 
-- 🧮 `ONSUR`: **Online Surveys and Statistics**
-    
-    - Guides survey design, sampling techniques, and statistical analysis for actionable research
-        
-    - Links infrastructural logic (`TECHC`) with research methodology and social insight
-        
-- 🔍 `USRES`: **User Research**
-    
-    - Conducts ethnographic interviews, contextual inquiries, and usability tests to uncover user behaviors and service gaps
-        
-    - Cross-links the PM and Design threads through experience evaluation and value modeling
-        
-- 🧠 `UXANA`: **New Media Analysis and User Experience**
-    
-    - Transitions from raw data to UX insights using sentiment analysis, journey mapping, and RAG-based interpretations
-        
-    - Supports platform critiques and interface evolution grounded in sociotechnical literacy
+This thread cultivates learner expertise in gathering user insights, converting data into actionable design strategies, and refining agentic interactions for usability, trust, and long-term engagement. The courses **AGNUX: Agent User Experience** and **AGNEV: Agent Evaluation** reframe traditional UX coursework (**USRES** and **UXANA**) by integrating modern frameworks such as [Microsoft’s Agent UX principles](https://microsoft.design/articles/ux-design-for-agents/) and [IBM’s agent evaluation framework](https://www.ibm.com/think/topics/ai-agent-evaluation).
+
+- 🧮 **ONSUR: Online Surveys and Statistics** _Design, implement, and interpret_ user surveys and quantitative studies to uncover behavioral patterns. This module **establishes foundational knowledge** in sampling, data collection, and statistical inference, supporting rigorous evaluation of user and agent interactions.
+- 🔍 **AGNUX: Agent User Experience** _Investigate, analyze, and design_ agentic experiences through ethnographic inquiry, usability testing, and multimodal engagement. Learners apply agent UX principles to conceptualize interfaces that adapt across temporal contexts, embody trust and transparency, and transition fluidly between active and passive roles. Ethical, inclusive design frameworks shape final outputs.
+- 🧠 **AGNEV: Agent Evaluation** _Evaluate, critique, and optimize_ agent behavior through a suite of assessment methodologies including benchmark testing, human-in-the-loop protocols, and LLM-as-a-judge. Learners assess task success, resource efficiency, and safety while integrating user intent and policy alignment. Emphasis is placed on identifying system bias, functional breakdowns, and opportunities for improvement within dynamic workflows.
+
 
 ---
 

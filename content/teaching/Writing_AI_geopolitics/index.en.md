@@ -1,5 +1,6 @@
 ---
-title: AI & Geopolitics
+weight: 7900
+title: ⤷✍Write Geopolitics &AI🥷
 summary: AI & Geopolitics
 date: 2025-05-04
 type: docs
@@ -9,7 +10,7 @@ tags:
   - 人工智能
   - 地缘政治
 image:
-  caption: 'Submarine cables in the Indo-Pacific Region'
+  caption: Submarine cables in the Indo-Pacific Region
 ---
 
 全球人工智能的竞争与合作，要如何系统地面对风险找到机会？

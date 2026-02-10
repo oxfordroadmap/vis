@@ -14,12 +14,12 @@
   {{ partial "components/sidebar.html" (dict "context" . "no_sidebar" true) }}
   
   {{ partial "components/toc.html" . }}
-  <article class="flex-1 break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">    
-    <main class="w-full min-w-0 max-w-5xl px-5 pt-4 md:px-7">
+  <article class="flex-1 break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]"> 
+    <main class="w-full min-w-0 max-w-5xl px-3 pt-3 md:px-6 prose prose-neutral lg:prose-xl prose-lg lg:prose-xl dark:prose-invert prose-img:rounded-xl dark:prose-a:text-primary-100 hover:prose-a:text-black hover:prose-a:bg-primary-100 prose-a:text-primary-500 hover:prose-a:text-white hover:prose-a:bg-primary-500" >
 
       {{ if .Params.show_breadcrumb }}
-      <div class="mb-4">
-        {{ partial "components/breadcrumb.html" . }}
+      <div class="my-5 not-prose text-right z-50">
+        {{ partial "components/breadcrumb.html" . }}🥐<!--🥐🥪🥯-->
       </div>
       {{ end }}
 

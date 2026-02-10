@@ -16,8 +16,8 @@ title: 【Agentic...】Curriculum (Full) e.g. Intelligent Product Development an
 INFOV eUI1@==UI==> FRONT["⚙️ FRONT: <br/>Front-End Frameworks"]
 FRONT eUI2@==UI==> UIVIS["🎨 UIVIS: <br/>User and Visual Interface Design"]
 
-COPYE["✍️ COPYE: <br/>Copy-editing and<br/>Creative Writing"] --> INFOV["📊 INFOV: Information Visualization"]
-INTRO -.-> INFOV
+COPYE["✍️ COPYE: <br/>Copy-editing and<br/>Creative Writing"] --> INFOV
+INTRO -.-> INFOV["📊 INFOV: <br/>Information Visualization"]
 COPYE -.-> WEBDN
 INTRO --> WEBDN
 TECHC["🌐 TECHC: Internet &<br/>Intelligent Agent Technologies and Collaboration"] --> WEBDN

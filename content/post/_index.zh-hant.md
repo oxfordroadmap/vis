@@ -1,5 +1,5 @@
 ---
-title: 🤓洞察, 👍推薦, 🧠認知站
+title: 🤓洞察, 🧠認知站, 👍推薦
 type: landing
 
 design:
@@ -27,18 +27,6 @@ sections:
   - block: collection
     id: posts
     content:
-      title: '👍推薦'
-      filters:
-        folders:
-          - post
-        tag: 'recommendations'
-    design:
-      view: article-grid
-      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90'
-      columns: 3
-  - block: collection
-    id: posts
-    content:
       title: '🧠認知站'
       filters:
         folders:
@@ -49,4 +37,16 @@ sections:
       #view: date-title-summary
       #spacing:
       #  padding: [0, 0, 0, 0]
+  - block: collection
+    id: posts
+    content:
+      title: '👍推薦'
+      filters:
+        folders:
+          - post
+        tag: 'recommendations'
+    design:
+      view: article-grid
+      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90'
+      columns: 3
 ---

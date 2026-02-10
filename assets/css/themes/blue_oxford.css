@@ -1,28 +1,164 @@
 /* Hugo Blox color theme: BLUE */
 :root {
-  /* TW Blue Palette -- Oxford Blue 0 33 71 ---  */
-  --color-primary-50: 0 119 255;
-  --color-primary-100: 0 113 242;
-  --color-primary-200: 0 108 232;
-  --color-primary-300: 0 100 214;
-  --color-primary-400: 0 92 196;
-  --color-primary-500: 0 83 179;
-  --color-primary-600: 0 75 161;
-  --color-primary-700: 0 50 107;
-  --color-primary-800: 0 42 89;
-  --color-primary-900: 0 33 71;
-  --color-primary-950: 0 17 36;
-  /* TW Cyan Palette  -- Oxford Blue complementary Red 71 6 0  #470600*/
-  --color-secondary-50: 255 21 0;
-  --color-secondary-100: 242 20 0;
-  --color-secondary-200: 232 19 0;
-  --color-secondary-300: 214 18 0;
-  --color-secondary-400: 179 15 0;
-  --color-secondary-500: 161 13 0;
-  --color-secondary-600: 125 10 0;
-  --color-secondary-700: 107 9 0;
-  --color-secondary-800: 89 7 0;
-  --color-secondary-900: 71 6 0;
-  --color-secondary-950: 36 3 0;
+  /* TW Blue Palette — Oxford Blue */
+  --color-primary-50: 230 236 245;
+  --color-primary-100: 204 217 235;
+  --color-primary-200: 166 186 213;
+  --color-primary-300: 124 154 189;
+  --color-primary-400: 86 125 167;
+  --color-primary-500: 0 33 71;
+  --color-primary-600: 0 28 60;
+  --color-primary-700: 0 23 51;
+  --color-primary-800: 0 18 42;
+  --color-primary-900: 0 13 32;
+  --color-primary-950: 0 8 21;
+
+  /* TW Red Palette — Oxblood Complement */
+  --color-secondary-50: 251 236 231;
+  --color-secondary-100: 245 213 198;
+  --color-secondary-200: 232 168 142;
+  --color-secondary-300: 208 120 89;
+  --color-secondary-400: 180 80 52;
+  --color-secondary-500: 71 6 0;
+  --color-secondary-600: 57 4 0;
+  --color-secondary-700: 47 3 0;
+  --color-secondary-800: 36 2 0;
+  --color-secondary-900: 27 1 0;
+  --color-secondary-950: 19 0 0;
+
+  /* TW Green-Cyan Palette — Viridian Analog (Third Triadic Color) */
+
+  --color-tertiary-50: 225 244 241;
+  --color-tertiary-100: 194 230 224;
+  --color-tertiary-200: 155 210 204;
+  --color-tertiary-300: 107 180 176;
+  --color-tertiary-400: 62 151 147;
+  --color-tertiary-500: 19 109 100;
+  --color-tertiary-600: 15 87 80;
+  --color-tertiary-700: 11 69 63;
+  --color-tertiary-800: 8 52 47;
+  --color-tertiary-900: 6 37 33;
+  --color-tertiary-950: 4 24 21;
+
 }
-/*another complementary Green #d9ff00 */
+/* Exactly the same, only for checking colors 
+:root {
+  --color-primary-50: #e6ecf5;
+  --color-primary-100: #ccd9eb;
+  --color-primary-200: #a6bad5;
+  --color-primary-300: #7c9abd;
+  --color-primary-400: #567da7;
+  --color-primary-500: #002147;
+  --color-primary-600: #001c3c;
+  --color-primary-700: #001733;
+  --color-primary-800: #00122a;
+  --color-primary-900: #000d20;
+  --color-primary-950: #000815;
+  --color-secondary-50: #fbece7;
+  --color-secondary-100: #f5d5c6;
+  --color-secondary-200: #e8a88e;
+  --color-secondary-300: #d07859;
+  --color-secondary-400: #b45034;
+  --color-secondary-500: #470600;
+  --color-secondary-600: #390400;
+  --color-secondary-700: #2f0300;
+  --color-secondary-800: #240200;
+  --color-secondary-900: #1b0100;
+  --color-secondary-950: #130000;
+}
+*/
+
+/*Triadic Harmony colors:
+
+A Triadic Harmony scheme based on Oxford Blue (#002147 / RGB 0 33 71) are:
+
+* 🔵 Primary:  🎓 Oxford Blue = intellect and authority
+* 🔴 Secondary:🔥 Oxblood = emotion and intensity
+* 🟢 Tertiary:  🌿 Viridian Teal = growth, balance, and modern contrast
+ — in green-cyan range roughly Viridian, Cadmium Green, or Teal Shadow. 
+
+ Each shade was tuned to match the OKLCH-inspired lightness progression
+
+#d9ff00 */
+
+
+/*
+ Oxford Blue (RGB: 0, 33, 71 / Hex: #002147) is a deep, academic navy with a formal and timeless elegance. Let’s build a theme scale from bg-secondary-100 to bg-secondary-900 that captures its depth and luminosity progression using OKLCH-style lightness steps:
+Absolutely! Let's generate a full Tailwind-style semantic scale where `--color-primary-500` is pinned exactly to Oxford Blue (`#002147`, RGB: 0, 33, 71). We'll interpolate lighter and darker variants while preserving hue and chroma as much as possible.
+
+### 🎯 Target
+- `--color-primary-500`: `#002147` (Oxford Blue)
+
+### ⚙️ Custom Primary Scale (`bg-primary-100` → `bg-primary-900`)
+
+| Class              | Hex       | Approx OKLCH Lightness | Description                      |
+|-------------------|-----------|-------------------------|----------------------------------|
+| `bg-primary-50`   | `#e6ecf5` | ~98%                    | Whisper of Oxford mist          |
+| `bg-primary-100`  | `#ccd9eb` | ~95%                    | Frosted archival blue           |
+| `bg-primary-200`  | `#a6bad5` | ~90%                    | Faded alumni parchment           |
+| `bg-primary-300`  | `#7c9abd` | ~83%                    | Muted scholarly wash            |
+| `bg-primary-400`  | `#567da7` | ~75%                    | Coastal university hue          |
+| `bg-primary-500`  | `#002147` | ~65% **Exact tone**     | Classic Oxford Blue             |
+| `bg-primary-600`  | `#001c3c` | ~55%                    | Deep ink tradition              |
+| `bg-primary-700`  | `#001733` | ~45%                    | Historic navy shadow            |
+| `bg-primary-800`  | `#00122a` | ~35%                    | Reserved midnight navy          |
+| `bg-primary-900`  | `#000d20` | ~28%                    | Obsidian academia               |
+| `bg-primary-950`  | `#000815` | ~20%                    | Blackened heritage fade         |
+
+### 🎨 Custom `bg-secondary` scale based on `#470600`
+
+| `bg-primary-50`   | `#e6ecf5` | ~98%                    | Whisper of Oxford mist          |
+| `bg-primary-100`  | `#ccd9eb` | ~95%                    | Frosted archival blue           |
+| `bg-primary-200`  | `#a6bad5` | ~90%                    | Faded alumni parchment           |
+| `bg-primary-300`  | `#7c9abd` | ~83%                    | Muted scholarly wash            |
+| `bg-primary-400`  | `#567da7` | ~75%                    | Coastal university hue          |
+| `bg-primary-500`  | `#002147` | ~65% **Exact tone**     | Classic Oxford Blue             |
+| `bg-primary-600`  | `#001c3c` | ~55%                    | Deep ink tradition              |
+| `bg-primary-700`  | `#001733` | ~45%                    | Historic navy shadow            |
+| `bg-primary-800`  | `#00122a` | ~35%                    | Reserved midnight navy          |
+| `bg-primary-900`  | `#000d20` | ~28%                    | Obsidian academia               |
+| `bg-primary-950`  | `#000815` | ~20%                    | Blackened heritage fade         |
+
+
+### 🌿 Viridian Teal Palette 
+| Class               | Hex       | Approx OKLCH Lightness | Description                    |
+|---------------------|-----------|-------------------------|-------------------------------|
+| `bg-tertiary-50`    | `#e1f4f1` | ~98%                    | Cool misted aqua              |
+| `bg-tertiary-100`   | `#c2e6e0` | ~95%                    | Soft mint highlight           |
+| `bg-tertiary-200`   | `#9bd2cc` | ~90%                    | Gentle seafoam                |
+| `bg-tertiary-300`   | `#6bb4b0` | ~83%                    | Misty bay teal                |
+| `bg-tertiary-400`   | `#3e9793` | ~75%                    | Weathered Viridian            |
+| `bg-tertiary-500`   | `#136d64` | ~65%                    | Core Viridian Teal            |
+| `bg-tertiary-600`   | `#0f574f` | ~55%                    | Deep garden green             |
+| `bg-tertiary-700`   | `#0b453f` | ~45%                    | Teal shadow                   |
+| `bg-tertiary-800`   | `#08342f` | ~35%                    | Dark foliage blend            |
+| `bg-tertiary-900`   | `#062521` | ~28%                    | Midnight forest tint          |
+| `bg-tertiary-950`   | `#041815` | ~20%                    | Blackened teal hush           |
+
+---
+
+### 🌐 Usage in Tailwind Config
+You can add this to your Tailwind config like:
+
+```js
+theme: {
+  extend: {
+    colors: {
+      primary: {
+        50:  '#e6ecf5',
+        100: '#ccd9eb',
+        200: '#a6bad5',
+        300: '#7c9abd',
+        400: '#567da7',
+        500: '#002147', // exact Oxford Blue
+        600: '#001c3c',
+        700: '#001733',
+        800: '#00122a',
+        900: '#000d20',
+        950: '#000815',
+      }
+    }
+  }
+}
+
+

@@ -18,7 +18,7 @@
 
 {{/* Language Skill Section Title */}}
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
-  <div class="mb-6 text-3xl font-bold text-gray-950 dark:text-white">
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     {{ i18n "language_skills" | markdownify }}
   </div>
   {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}

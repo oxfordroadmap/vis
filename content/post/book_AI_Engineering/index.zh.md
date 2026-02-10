@@ -1,6 +1,6 @@
 ---
 title: 🤖AI 工程：建构智慧应用的 2025 年必读书籍📖
-date: 2025-06-24
+date: 2025-07-04
 authors:
   - admin
 tags:

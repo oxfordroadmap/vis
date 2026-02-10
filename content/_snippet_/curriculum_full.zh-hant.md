@@ -4,11 +4,12 @@ title: 【智能體時代下的...】課程地圖 (人才培育計畫) 如 智�
 subtitle: 
 config:
   layout: dagre
-  look: handDrawn
 ---
 flowchart LR
 %%{ init: { 'flowchart': { 'curve': 'monotoneX' } } }%%
 %% Agentic New Media & Internet/智能體時代下的網路與新媒體／智能體時代下的網路與新媒體
+%% config:
+%%   look: handDrawn
 %% params:
 %%  emoji: 🎄
 %%  id: Full (16+2)
@@ -19,8 +20,8 @@ flowchart LR
     INFOV eUI1@==UI==> FRONT["⚙️ FRONT: <br/>前端框架"]
     FRONT eUI2@==UI==> UIVIS["🎨 UIVIS: <br/>用戶與視覺界面設計"]
 
-    COPYE["✍️ COPYE: <br/>文案編輯與<br/>創意寫作"] --> INFOV["📊 INFOV: 信息可視化"]
-    INTRO -.-> INFOV
+    COPYE["✍️ COPYE: <br/>文案編輯與<br/>創意寫作"] --> INFOV
+    INTRO -.-> INFOV["📊 INFOV:<br/> 信息可視化"]
     COPYE -.-> WEBDN
     INTRO --> WEBDN
     TECHC["🌐 TECHC: 網絡與<br/>智能體技術及協作"] --> WEBDN
@@ -119,27 +120,22 @@ INTRO@{ shape: trap-b}
 COPYE@{ shape: trap-b}
 
 %% Node Styles
-
-%% Styling 🪾 Bare Minimum (Core) Agentic learning 
 %% Shape declarations
-%% AG101@{ shape: hex }
-%% AG102@{ shape: hex }
-%% style AG101 fill:#fff589,stroke:#448aff,stroke-width:2px,color:#222
-%% style AG102 fill:#fff589,stroke:#448aff,stroke-width:2px,color:#222
+%% Styling 🪾 Bare Minimum (Core) Agentic learning 
 WEBDN@{ shape: trap-b}
-OPERS@{ shape: hex }
+OPERS@{ shape: hex}
+APPUI@{ shape: hex}
+MLAPI@{ shape: hex}  
+PRODM@{ shape: hex} 
+%% MLAPI cbeafe (blue) or fff589 (yellow)
+%% style AG101 ... WEBDN
+%% style AG102 ... OPERS
+%% style AG201 ... PRODM
+style MLAPI fill:#fff589,stroke:#002147,stroke-width:5px,color:#222
 style WEBDN fill:#fff589,stroke:#448aff,stroke-width:5px,color:#222
 style OPERS fill:#fff589,stroke:#448aff,stroke-width:5px,color:#222
-%% AG203 ... OPERS
-APPUI@{ shape: hex}
-%% AG202 ... MLAPI
-MLAPI@{ shape: hex}  
 style APPUI fill:#fbcfe8,stroke:#002147,stroke-width:5px,color:#222
-style MLAPI fill:#cbeafe,stroke:#002147,stroke-width:5px,color:#222
-%% AG201 ... PRODM
-PRODM@{ shape: hex} 
 style PRODM fill:#bbf7d0,stroke:#002147,stroke-width:5px,color:#222
-
 
 %% Foundational Nodes
 style TECHC fill:#C3F1E7,stroke:#333,stroke-width:1px,stroke-dasharray:4

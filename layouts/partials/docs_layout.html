@@ -2,10 +2,13 @@
   {{ partial "components/sidebar.html" (dict "context" . "no_sidebar" false) }}
   {{ partial "components/toc.html" . }}
   <article class="flex-1 break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
-    <main class="prose prose-slate lg:prose-xl dark:prose-invert w-full min-w-0 max-w-5xl px-6 pt-4 md:px-12">
+    <main class="w-full min-w-0 max-w-5xl px-3 pt-3 md:px-6 prose prose-neutral lg:prose-xl prose-lg lg:prose-xl dark:prose-invert prose-img:rounded-xl prose-a:text-primary-500 hover:prose-a:text-white hover:prose-a:bg-primary-600">
       {{ if (.Params.show_breadcrumb | default true) }}
-      <div class="mb-1">
+      <div class="my-5 not-prose z-50 flex flex-row justify-end">
+        <div class="flex text-right ml-auto mr-0">🥪<!--🥐🥪🥯--></div>
+        <div class="flex text-right ml-5 mr-0">
         {{ partial "components/breadcrumb.html" . }}
+        </div>
       </div>
       {{ end }}
 

@@ -1,30 +1,21 @@
 ---
 title: headless page snippet
 ---
-| 🌱 Version                                               | 🗓️ Course Type   | 🎯 Target Audience / Use Case                                                                  | 📘 Curriculum Focus                                                              |
-| -------------------------------------------------------- | ----------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| 🪴 [Agentic Web Development]({{% ref path="/teaching/curriculum-agentic_webdev" %}})   | Bare 3-stage (5+2)        | Hackathons, summer schools, continuous education                                               | Condensed, integrated Web & AI Agent development                                 |
-| 🌲 AI Agent & Internet (Undergraduate programs)          | Core 5-stage (10+2)       | Undergraduate programs                                                                         | Condensed, integrated Web & AI Agent development                                 |
-| 🎄 Agentic New Media & Internet (Undergraduate programs) | Full 5-stage (16+2) | Product Managers, UI/UX Designers, Front-End Developers (Undergraduate programs)               | Updated Web & AI Agent learning; integrates AI agents and APIs to solve problems |
-| 🌲 New Media & Internet (Undergraduate programs)         | Base (19 courses) | Product Managers, UI/UX Designers, Front-End Developers (Implemented at a university in China) | Original curriculum; focuses on API cloud resource integration                   |
+From bare minimum to full, the table below organizes all available curriculums, lead by the **Learning Outcomes**. 
 
-Four versions are also available for learners without any software development knowledge:
-* 🪴`Agentic Web Development` 
-  * 🗓️(Bare) 5+2 course 
-	  * the most condensed and updated curriculum that deliver integrated Web and AI Agent development learning
-	  * suitable for hackathons, summer schools, or continuous education 
-* 🌲`AI agent & Internet`
-  * 🗓️ (Core) 10+2 course
-    * the condensed and updated curriculum
-    * deliver integrated Web and AI Agent development learning
-    * suitable for any undergraduate program
-* 🎄`Agentic New Media & Internet`
-  * 🗓️ (Full) the revised full 18-course 
-	* updated with the latest Web and AI Agent development learning
-	* suitable for cultivating Internet **Product Managers**, **UI/UX designers**, and **front-end developers** who can ***integrate AI agentic and other API resources*** to apply AI agents to solve problems.
-* 🌲`New Media & Internet`
-  * 🗓️ (Base) the original full 19-course version
-    * implemented and executed in a university in China.
-    * focused on cultivating Internet **Product Managers**, **UI/UX designers**, and **front-end developers** who can ***integrate API cloud resources***
+| 🚀 Learning Outcomes                                                   | 🌱 Version                                                                                  | 🗓️ Course Type      | 🎯 Target Audience / Use Case / Job Roles                                                         |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------- |
+| 🪶🔧 Learn to scaffold minimal agents for role-readiness               | 🪴 [Agentic Web Development]({{% ref path="/teaching/curriculum-agentic_webdev" %}})        | Bare 5﹢2 (3 stages)  | Hackathons, summer schools, continuous education, or innovation programs                          |
+| 🧠💼 Build agent capabilities for strategic, multi-role execution      | 🎍 [AI Agent & Internet]({{% ref path="/teaching/curriculum-agentic_internet/" %}})         | Core 10＋2 (5 stages) | Undergraduate programs across disciplines; suited for PMs, UX designers, and front-end developers |
+| 🌐🤖Master systematic agent design for scalable domain integration     | 🎄 [Agentic (any domain)]({{% ref path="/teaching/curriculum-agentic_newmediainternet" %}}) | Full 16➕2 (5 stages) | Undergraduate programs across disciplines; suited for PMs, UX designers, and front-end developers |
+| 🧭🧬 Integrate cloud-based APIs for applied web and mobile development | 🌲 [New Media & Internet]({{% ref path="/teaching/curriculum-newmediainternet/" %}})        | Base 17➕2 (5 stages) | Product Managers, UI/UX Designers, Front-End Developers (deployed at a university in China)       |
+All is informed by the author's teaching experience in China, serving as both the  instructor and vice-dean for an undergraduate program in New Media & Internet, including the award-winning courses such as the first-class API, Machine Learning, and Artificial Intelligence.
 
+### 🧩 Agentic Capability Building
+*  🎓 Educators: **How can your current curriculum evolve to include agentic capabilities—without overwhelming existing course structures?**
+* 🚀 Innovation Leads: **Which role-based AI fluencies are critical for your team’s next innovation cycle—and are your talent pipelines equipped to deliver them?**
+* 🧑‍🎓 Student Cohorts: **What skill pathways give you an edge in collaborating with intelligent systems—not just using them?**
 
+Custom program design and advisory services are available—supporting both **university planning** and **organizational training** needs, via free consultation or paid curriculum modeling.
+
+Explore, adapt, and build intelligent systems—step by step.

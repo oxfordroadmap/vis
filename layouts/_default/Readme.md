@@ -13,7 +13,7 @@
 ## Extended -- hugoblox
  [hugo-blox-builder](https://github.com/HugoBlox/hugo-blox-builder/tree/44e75541f7be16116e80e5c71ff98f6997d63fe5) > [modules](https://github.com/HugoBlox/hugo-blox-builder/tree/44e75541f7be16116e80e5c71ff98f6997d63fe5/modules) > [blox-tailwind](https://github.com/HugoBlox/hugo-blox-builder/tree/44e75541f7be16116e80e5c71ff98f6997d63fe5/modules/blox-tailwind) / layouts
 
-*  docs
+* docs
       * list.html
       * single.html
 * landing

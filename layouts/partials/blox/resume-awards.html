@@ -18,7 +18,7 @@
 {{ $label := i18n "awards" }}
 {{ $anchor := $label | anchorize }}      
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
-  <div {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} class="mb-6 text-3xl font-bold text-gray-950 dark:text-white">
+  <div {{ (printf "id=\"%s\"" $anchor ) | safeHTMLAttr }} class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     {{ $label }}
   </div>
   {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
@@ -27,7 +27,7 @@
 <div class="w-full flex flex-col gap-3">
 {{ if $awards }}
 {{ range $idx, $key := sort $awards ".date_start" "desc" }}
-<div class="w-full p-6 border border-gray-50 border-gray-500 folded-corner bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-50">
+<div class="w-full p-6 border border-gray-100 border-gray-500 folded-corner bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
   {{- $icon := .icon }}
   {{ with $icon }}
   <div class="w-7 h-7 text-gray-700 dark:text-gray-300 mb-3">
@@ -35,7 +35,7 @@
   </div>
   {{ end}}
   {{with .url}}<a href={{.}} target="_blank" rel="noopener">{{end}}
-    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-950 dark:text-white">{{.title | markdownify | emojify}}</h5>
+    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{{.title | markdownify | emojify}}</h5>
   {{with .url}}</a>{{end}}
 
   <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">

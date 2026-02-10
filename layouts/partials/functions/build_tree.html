@@ -1,0 +1,74 @@
+{{- $items := .items -}}
+{{- $tree := slice -}}
+
+{{- range $items.ByWeight }}
+  {{- $weight := .Params.weight | default 1 | int -}}
+  {{- $level := partial "functions/get_level.html" (dict "weight" $weight) | int -}}
+  {{- $node := dict "item" . "children" slice -}}
+
+  {{- $parentFound := false -}}
+
+  {{- if eq $level 1 }}
+    {{- $parentWeight := (div $weight 1000) | mul 1000 -}}
+    {{- $newTree := slice -}}
+    {{- range $tree }}
+      {{- if eq .item.Params.weight $parentWeight }}
+        {{- $updated := dict "item" .item "children" (.children | append $node) -}}
+        {{- $newTree = $newTree | append $updated -}}
+        {{- $parentFound = true -}}
+      {{- else }}
+        {{- $newTree = $newTree | append . -}}
+      {{- end }}
+    {{- end }}
+    {{- $tree = $newTree -}}
+
+  {{- else if eq $level 2 }}
+    {{- $parentWeight := (div $weight 100) | mul 100 -}}
+    {{- $newTree := slice -}}
+    {{- range $tree }}
+      {{- $newChildren := slice -}}
+      {{- range .children }}
+        {{- if eq .item.Params.weight $parentWeight }}
+          {{- $updated := dict "item" .item "children" (.children | append $node) -}}
+          {{- $newChildren = $newChildren | append $updated -}}
+          {{- $parentFound = true -}}
+        {{- else }}
+          {{- $newChildren = $newChildren | append . -}}
+        {{- end }}
+      {{- end }}
+      {{- $updatedParent := dict "item" .item "children" $newChildren -}}
+      {{- $newTree = $newTree | append $updatedParent -}}
+    {{- end }}
+    {{- $tree = $newTree -}}
+
+  {{- else if eq $level 3 }}
+    {{- $parentWeight := (div $weight 10) | mul 10 -}}
+    {{- $newTree := slice -}}
+    {{- range $tree }}
+      {{- $newChildren := slice -}}
+      {{- range .children }}
+        {{- $newGrandChildren := slice -}}
+        {{- range .children }}
+          {{- if eq .item.Params.weight $parentWeight }}
+            {{- $updated := dict "item" .item "children" (.children | append $node) -}}
+            {{- $newGrandChildren = $newGrandChildren | append $updated -}}
+            {{- $parentFound = true -}}
+          {{- else }}
+            {{- $newGrandChildren = $newGrandChildren | append . -}}
+          {{- end }}
+        {{- end }}
+        {{- $updatedChild := dict "item" .item "children" $newGrandChildren -}}
+        {{- $newChildren = $newChildren | append $updatedChild -}}
+      {{- end }}
+      {{- $updatedParent := dict "item" .item "children" $newChildren -}}
+      {{- $newTree = $newTree | append $updatedParent -}}
+    {{- end }}
+    {{- $tree = $newTree -}}
+  {{- end }}
+
+  {{- if not $parentFound }}
+    {{- $tree = $tree | append $node -}}
+  {{- end }}
+{{- end }}
+
+{{- return $tree -}}

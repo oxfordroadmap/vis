@@ -8,20 +8,23 @@
 {{- $table_of_contents := T "table_of_contents" }}
 {{- $toggle_navigation := T "toggle_navigation" }}
 
-{{- $root_section := cond (eq site.Home.Type "docs") site.Home $context.FirstSection -}}
+{{- $root_section := cond (eq site.Home.Type "docs") site.Home $context.CurrentSection -}}
 {{- $page_url := $context.RelPermalink -}}
 
 {{/* Only replace explicit mobile menu links with automated links for Docs pages */}}
 {{ if not $no_sidebar }}
   {{/* Classes appended to `hb-sidebar-mobile-menu` are modified via sidebar JS, so do not @apply them to `hb-sidebar-mobile-menu` */}}
-  <div class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/75 hidden"></div>
+  <div x-init="console.log(
+            '▶️R{{ $root_section }}', 
+            '▶️P{{ $page_url }}', 
+                    );" class="hb-sidebar-mobile-menu fixed inset-0 z-10 bg-white dark:bg-black/75 hidden"></div>
 {{ end }}
 
 <!-- Explicit `transform` class as we toggle it in JS: id="nav-sidebar" c.f. "nav-bar" "nav-toc"-->
 <!-- Removed: hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)]   {{ $sidebar_dynamic_class }}  -->
 <aside id="nav-sidebar" class="overflow-visible mt-16 hidden order-first text-sm sm:text-base basis-1/2 sm:basis-1/3" x-show="expanded">
   
-  <div class="hb-scrollbar bg-secondary-100 dark:bg-secondary-900 [hyphens:auto] sticky top-36 overflow-y-auto pr-3 pt-6 lg:h-[calc(100vh-2*var(--navbar-height))] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -ml-3 rtl:-mr-3">
+  <div id="docs-toc" class="hb-scrollbar [hyphens:auto] sticky top-36 overflow-y-auto pr-3 pt-6 lg:h-[calc(100vh-2*var(--navbar-height))] max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -ml-3 rtl:-mr-3">
     <!-- Search bar on small screen -->
     <div class="px-3 pt-3 lg:hidden">
       <!-- Currently, use the navbar search button instead -->
@@ -33,127 +36,72 @@
     <ul id="nav-sidebar-home" class="flex flex-col gap-1">
       <!-- Navigation links: "context" site.Home|$root_section-->
       {{ template "menu-links" (dict
-        "context" $context.FirstSection
+        "context" $root_section
         "page" $context
         "pageURL" $page_url
         "toc" true
       ) -}}      
     </ul>
   </div>
-
 </aside>
 
+{{/* ────────────────────────────────────────────────────────────────────────────
+     menu-links: invoked from your sidebar with `template "menu-links" .`
+   ──────────────────────────────────────────────────────────────────────────── */}}
 {{- define "menu-links" -}}
   {{- $items := union .context.RegularPages .context.Sections -}}
   {{- $items = where $items "Params.sidebar.hidden" "!=" true -}}
+  {{- $context := .context -}}
+  {{- $page := .page }}
+  {{- $pageURL := .pageURL -}}
 
-{{- $activeURL := .RelPermalink -}}
-{{- $tree := partial "functions/build_tree.html" (dict "items" $items) -}}
+  {{- $tree  := partial "functions/build_tree.html" (dict "items" $items) -}}
+  {{/* Kick off the recursion, passing along $page */}}
+  {{- template "recursive-tree" (dict "nodes" $tree "level" 0 "page" .page "pageURL" $pageURL) -}}
+{{- end -}}
 
-<h2>Modern Tree</h2>
-{{- template "recursive-tree" (dict "nodes" $tree "level" 0 "activeURL" $activeURL) }}
 
-<h2>Flat List Debug</h2>
-<ul>
-  {{- range $items.ByWeight }}
-    <li>{{ .LinkTitle | truncate 12}} — w: {{ .Params.weight }}</li>
-  {{- end }}
-</ul>
+{{/* ────────────────────────────────────────────────────────────────────────────
+     recursive-tree:
+   ──────────────────────────────────────────────────────────────────────────── */}}
+{{- define "recursive-tree" -}}
+  {{- $nodes := .nodes                   -}}
+  {{- $level := .level | default 0       -}}
+  {{- $page := .page }}
+  {{- $pageURL := .pageURL -}} {{/* ✅ Ancestor Expansion Fix: 
+     $page and $pageURL are passed through recursion to preserve active context.
+     $open is correctly computed using .IsAncestor, .RelPermalink, and Params.sidebar.open.
+     This ensures that all ancestor nodes expand when viewing a child page.
+*/}}
+
+  <ul x-init="/* Console‐debug: */console.log('📌{{ $pageURL }} ');"  
+  class="{{ if eq $level 0 }}space-y-2{{ else }}p3-6 space-y-1{{ end }}">
   
-
-<h2>Tree Recursive</h2>
-
-    {{- range $tree }}
-      {{- template "link-tree" (dict "node" .) -}}
-    {{- end }}
-
-<h2>Tree Debug</h2>
-<ul>
-  {{- range $tree }}
-    <li>
-      {{ .item.LinkTitle | truncate 6}} — w: {{ .item.Params.weight }}
-      {{- if gt (len .children) 0 }}
-        <ul>
-          {{- range .children }}
-            <li>
-              {{ .item.LinkTitle | truncate 6}} — w: {{ .item.Params.weight }}
-              {{- if gt (len .children) 0 }}
-                <ul>
-                  {{- range .children }}
-                    <li>{{ .item.LinkTitle | truncate 6}} — w: {{ .item.Params.weight }}</li>
-                  {{- end }}
-                </ul>
-              {{- end }}
-            </li>
-          {{- end }}
-        </ul>
-      {{- else }}
-        <span style="color:gray;">(no children)</span>
-      {{- end }}
-    </li>
-  {{- end }}
-</ul>
-
-  
-{{- end -}}
-
-
-{{- define "link-tree" -}}
-  {{- $node := .node -}}
-  {{- $item := $node.item -}}
-  {{- $children := $node.children -}}
-
-  <li>
-    <a href="{{ $item.RelPermalink }}">{{ $item.LinkTitle }}</a>
-    {{- if gt (len $children) 0 }}
-      <ul>
-        {{- range $children }}
-          {{- template "link-tree" (dict "node" .) -}}
-        {{- end }}
-      </ul>
-    {{- end }}
-  </li>
-{{- end -}}
-
-
-{{- define "custom-menu-links" -}}
-  {{- range site.Menus.sidebar -}}
-    {{- $name := .Name -}}
-    {{ if eq .Params.type "separator" }}
-      <li class="[word-break:break-word] mt-5 mb-2 px-2 py-1.5 text-sm font-semibold text-gray-900 first:mt-0 dark:text-gray-100 cursor-default">
-        <span>{{ $name }}</span>
-      </li>
-    {{ else }}
-      <li>{{ template "custom-menu-link" dict "active" false "title" $name "link" (.URL | relLangURL) }}</li>
-    {{ end }}
-  {{- end -}}
-{{- end -}}
-
-{{- define "recursive-tree" }}
-  {{- $nodes := .nodes -}}
-  {{- $level := .level | default 0 -}}
-  {{- $page := .page -}}
-
-  <ul class="pl-4 mt-1 space-y-1">
     {{- range $nodes }}
-      {{- $hasChildren := gt (len .children) 0 -}}
-      {{- $active := eq $page.RelPermalink .item.RelPermalink -}}
-      {{- $is_expanded := or (.item.Params.sidebar.open) (.item.IsAncestor $page) $active | default false }}
+      {{- $item      := .item                              -}}
+      {{- $kids      := .children                          -}}
+      {{- $hasKids   := gt (len $kids) 0                   -}}
+      {{- $itemURL    := .item.RelPermalink -}}     
+      {{- $isActive := (eq $pageURL $itemURL) -}}
+      {{- $isAncestor := strings.HasPrefix $pageURL $itemURL    -}}
+      {{- $explicit   := .item.Params.sidebar.open | default false -}}
+      {{- $open       := true -}}
 
-      <li
-        x-data="{ open: {{ if $is_expanded }}true{{ else }}false{{ end }} }"
-        class="my-2 scroll-my-6 scroll-py-6"
-        x-init="if ({{ $active }}) $el.scrollIntoView({ behavior: 'smooth', block: 'center' })"
-      >
-        <div class="flex items-center justify-start w-full">
-          
-          {{- if $hasChildren }}
+      <li x-data="{ open: {{ if $open }}true{{ else }}false{{ end }} }"
+          x-init="console.log(
+              '▶️L{{ $level }} → {{ $itemURL }}',
+              'active=' + {{ if $isActive }}true{{ else }}false{{ end }},
+              'anc='    + {{ if $isAncestor }}true{{ else }}false{{ end }},
+              'open='   + open
+            );
+            ">        
+      <div class="flex items-center w-full">
+          {{- if $hasKids }}
             <button
-              type="button"
               @click="open = !open"
-              class="p-1 flex-none mr-2 focus:outline-none"
-              aria-label="Toggle section {{ .item.LinkTitle }}"
-            >
+              aria-label="Toggle {{ $item.Title }}"
+              class="w-4 h-4 flex-none mr-2 "
+            ><!-- simple caret, you can swap your SVG here -->              
               <svg
                 aria-hidden="true"
                 class="w-4 h-4 transform rotate-0 transition-transform duration-150"
@@ -161,8 +109,7 @@
                 viewBox="0 0 256 256"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.2"><polygon points="56 48 136 128 56 208 56 48"/></g>
+              ><g opacity="0.2"><polygon points="56 48 136 128 56 208 56 48"/></g>
                 <g>
                   <path d="M141.65674,122.34326l-80-80A7.99981,7.99981,0,0,0,48,48V208a7.99984,7.99984,0,0,0,13.65674,5.65674l80-80A7.99915,7.99915,0,0,0,141.65674,122.34326ZM64,188.686V67.314L124.686,128Z"/>
                   <path d="M221.65674,122.34326l-80-80a7.99984,7.99984,0,0,0-11.31348,11.31348L204.686,128l-74.34278,74.34326a7.99984,7.99984,0,1,0,11.31348,11.31348l80-80A7.99915,7.99915,0,0,0,221.65674,122.34326Z"/>
@@ -172,32 +119,46 @@
           {{- end }}
 
           <a
-            href="{{ .item.RelPermalink }}"
+            href="{{ $itemURL }}"
             class="inline-block w-full break-words rounded-md px-1 py-0.5
-                   {{ if $active }}
-                     bg-amber-500 text-white font-semibold
-                   {{ else }}
-                     text-gray-500 hover:text-gray-900 hover:bg-amber-500 dark:text-gray-300 dark:hover:text-gray-100
-                   {{ end }}"
+              {{- if eq $level 0 }}text-base font-black text-black 
+              {{- else if eq $level 1 }}text-sm stext-gray-500 
+              {{- else if eq $level 2 }}text-xs font-semibold text-gray-700 
+              {{- else if eq $level 3 }}text-xs text-gray-900 
+              {{- else }}text-xs
+              {{- end }}
+              {{- if $isActive }}
+                border border-primary-500 bg-primary-100 text-primary-800 dark:bg-primary-300 dark:text-primary-900
+              {{- else }}
+                hover:text-gray-900 hover:bg-secondary-300 dark:text-gray-300 dark:hover:text-gray-100
+              {{- end }}"
           >
-            {{ .item.LinkTitle | plainify | htmlUnescape }}
+            {{- $title := $item.LinkTitle | plainify | htmlUnescape -}}
+            {{- $parts := split $title "—" -}}
+            {{- if gt (len $parts) 1 -}}
+              {{- index $parts 0 -}}
+            {{- else -}}
+              {{- $title -}}
+            {{- end -}}
+
           </a>
         </div>
 
-        {{- if $hasChildren }}
-          <ul
-            x-show="open"
-            x-transition
-            class="pl-4 mt-1 space-y-1"
-          >
-            {{- template "recursive-tree" (dict "nodes" .children "level" (add $level 1) "page" $page) }}
+        {{- if $hasKids }}
+          {{- /*  Add identions */ -}}
+          <ul x-show="open" x-transition class="pl-4 mt-1 space-y-1">
+            {{- template "recursive-tree" (dict
+                "nodes"    $kids
+                "level"    (add $level 1)
+                "page"     $page
+                "pageURL"  $pageURL
+            ) -}}
           </ul>
         {{- end }}
       </li>
     {{- end }}
   </ul>
-{{- end }}
-
+{{- end -}}
 
 
 
@@ -225,3 +186,18 @@
     {{ end -}}
   </a>
 {{- end -}}
+
+
+{{- define "custom-menu-links" -}}
+  {{- range site.Menus.sidebar -}}
+    {{- $name := .Name -}}
+    {{ if eq .Params.type "separator" }}
+      <li class="[word-break:break-word] mt-5 mb-2 px-2 py-1.5 text-sm font-semibold text-gray-900 first:mt-0 dark:text-gray-100 cursor-default">
+        <span>{{ $name }}</span>
+      </li>
+    {{ else }}
+      <li>{{ template "custom-menu-link" dict "active" false "title" $name "link" (.URL | relLangURL) }}</li>
+    {{ end }}
+  {{- end -}}
+{{- end -}}
+

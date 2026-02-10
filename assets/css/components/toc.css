@@ -1,15 +1,8 @@
-/* Default Base */
-nav.hb-toc {
-  @apply bg-gray-500/10 print:hidden px-3;
-}
-
-/* Article Text: by default 'block' showing */
-nav#TableOfContents {
-  @apply bg-primary-500/10 print:hidden px-3;
-}
-
 /* Navigator-Header ToC: by default 'hidden'(set in template) */
 nav#nav-toc {
-  @apply bg-amber-500/10 print:hidden px-3;  
+  @apply print:hidden px-3;  
+}
+div#page-toc {
+  @apply rounded-2xl bg-amber-100 dark:bg-amber-900;  
 }
 

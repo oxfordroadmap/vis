@@ -19,8 +19,8 @@ flowchart LR
     INFOV eUI1@==UI==> FRONT["⚙️ FRONT: <br/>前端框架"]
     FRONT eUI2@==UI==> UIVIS["🎨 UIVIS: <br/>用户与视觉界面设计"]
 
-    COPYE["✍️ COPYE: <br/>文案编辑与<br/>创意写作"] --> INFOV["📊 INFOV: 信息可视化"]
-    INTRO -.-> INFOV
+    COPYE["✍️ COPYE: <br/>文案编辑与<br/>创意写作"] --> INFOV
+    INTRO -.-> INFOV["📊 INFOV: <br/>信息可视化"]
     COPYE -.-> WEBDN
     INTRO --> WEBDN
     TECHC["🌐 TECHC: 网络与<br/>智能体技术及协作"] --> WEBDN

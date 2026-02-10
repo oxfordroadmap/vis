@@ -3,8 +3,8 @@ div.markmap {
     max-width: 95vw;
     margin-bottom: 1rem;    
   svg {
-    max-width: 95vw;
-    min-width: 88vw;
+    width: 100% !important;
+    display: block;
   }
 }
 
