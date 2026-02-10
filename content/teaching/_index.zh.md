@@ -1,5 +1,5 @@
 ---
-title: 教学相长 AI 工程🛠️, 写作📝, 学习路径🛣️ 
+title: 教学相长 AI 工程🛠️, 写作📝 ...
 summary: 就`工程`，`写作`，与`创新`的教学及培训材料及学习路径图，含一流课程材料 **API, ML & AI**，以及 **EAP写作📝**, **AI 代理** 与 **AI 工程🛠️** 的内容 （含总览的 **学习路径🛣️**）。
 type: landing
 
@@ -14,42 +14,58 @@ cascade:
       show_breadcrumb: true
 
 sections:
-  - block: collection
-    id: posts
+  - block: collection   
+    id: docs
     content:
-      title: '🛠️AI 工程'
+      count: 3  # Show only 3 items
+      title: 🛠️AI 工程 课程 🤗
+      subtitle: Start your learning journey here with Copilot...
       filters:
         folders:
           - teaching
-        tag: 'AI_Engineering'
+        tag: AIE_course
     design:
       view: article-grid
-      css_class: 'bg-secondary-500/50'
+      css_class: bg-gradient-to-r from-secondary-500/50 via-secondary-100/10 to-secondary-500/50 dark:bg-gradient-to-r dark:via-secondary-900/90
       columns: 3
   - block: collection
-    id: posts
+    id: docs
     content:
-      title: '🛣️学习路径'
+      count: 3  # Show only 3 items
+      title: 🛠️AI 工程 人培方案 🪴
       filters:
         folders:
           - teaching
-        tag: 'Roadmaps'
+        tag: AIE_curriculum
     design:
       view: article-grid
-      css_class: 'bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90'
+      css_class: bg-gradient-to-r from-primary-500/50 via-primary-100/10 to-primary-500/50 dark:bg-gradient-to-r dark:via-primary-900/90
       columns: 3
   - block: collection
-    id: posts
+    id: docs
     content:
-      title: '📝写作'
+      count: 3  # Show only 3 items
+      title: 🛣️学思
       filters:
         folders:
           - teaching
-        tag: 'Writing'
+        tag: Essay_teaching
     design:
       view: article-grid
-      # view: card | date-title-summary
-      css_class: 'bg-gray-500/10 dark:bg-gray-500/90'
+      css_class: bg-secondary-500/50
+      columns: 3
+  - block: collection
+    id: docs
+    content:
+      count: 3  # Show only 3 items
+      title: 📝写作
+      filters:
+        folders:
+          - teaching
+        tag: Writing
+    design:
+      view: article-grid
+      css_class: bg-gray-500/25 dark:bg-gray-500/75
       columns: 3
 ---
 

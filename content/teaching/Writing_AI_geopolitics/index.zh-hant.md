@@ -1,5 +1,6 @@
 ---
-title: 人工智能與地緣政治
+weight: 7900
+title: ⤷✍人工智能與地緣政治🥷
 summary: 人工智能與地緣政治
 date: 2025-05-04
 type: docs
