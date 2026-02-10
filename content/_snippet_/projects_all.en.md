@@ -1,7 +1,7 @@
 ```markmap {height="320px"}
 * [🍃NetZero Industry and Economy Roadmap]({{% ref path="/project#theme_NetZero" %}})
-  * [🍃💵visNetZero]({{% ref path="/project/visNetZero" %}})
-  * [🍃🏭visCEADs]({{% ref path="/project/visCEADs" %}})
+  * [🍃💵 visNetZero]({{% ref path="/project/visNetZero" %}})
+  * [🍃🏭 visCEADs]({{% ref path="/project/visCEADs" %}})
 * [🔬 Science Outcome and Impact Analysis]({{% ref path="/project#CaseNetBib" %}}) 
   * [🧰NetBib]({{% ref path="/project/NetBib"  %}})
   * [🏫NFU.edu.cn]({{% ref path="/project/NetBib_NFU.edu.cn" %}})
